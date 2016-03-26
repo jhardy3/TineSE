@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		748FFCAC1CA7174D00111EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748FFCAA1CA7174D00111EFE /* LaunchScreen.storyboard */; };
+		748FFCB51CA7178400111EFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCB41CA7178400111EFE /* AppDelegate.swift */; };
+		748FFCCA1CA717A000111EFE /* Shed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCB61CA717A000111EFE /* Shed.swift */; };
+		748FFCCB1CA717A000111EFE /* Hunter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCB71CA717A000111EFE /* Hunter.swift */; };
+		748FFCCC1CA717A000111EFE /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCB81CA717A000111EFE /* Comment.swift */; };
+		748FFCCD1CA717A000111EFE /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCB91CA717A000111EFE /* AppearanceController.swift */; };
+		748FFCCE1CA717A000111EFE /* UIColor+AppColorPallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCBA1CA717A000111EFE /* UIColor+AppColorPallete.swift */; };
+		748FFCCF1CA717A000111EFE /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCBB1CA717A000111EFE /* FirebaseController.swift */; };
+		748FFCD01CA717A000111EFE /* HunterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCBC1CA717A000111EFE /* HunterController.swift */; };
+		748FFCD11CA717A000111EFE /* ShedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCBD1CA717A000111EFE /* ShedController.swift */; };
+		748FFCD21CA717A000111EFE /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCBE1CA717A000111EFE /* LocationController.swift */; };
+		748FFCD31CA717A000111EFE /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCBF1CA717A000111EFE /* PhotoController.swift */; };
+		748FFCD41CA717A000111EFE /* ImageUitilies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCC01CA717A000111EFE /* ImageUitilies.swift */; };
+		748FFCD51CA717A000111EFE /* TinelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCC11CA717A000111EFE /* TinelineViewController.swift */; };
+		748FFCD61CA717A000111EFE /* ShedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCC21CA717A000111EFE /* ShedTableViewCell.swift */; };
+		748FFCD71CA717A000111EFE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCC31CA717A000111EFE /* LogInViewController.swift */; };
+		748FFCD81CA717A000111EFE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCC41CA717A000111EFE /* ProfileViewController.swift */; };
+		748FFCD91CA717A000111EFE /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCC51CA717A000111EFE /* ImageCollectionViewCell.swift */; };
+		748FFCDA1CA717A000111EFE /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCC61CA717A000111EFE /* LeaderboardViewController.swift */; };
+		748FFCDB1CA717A000111EFE /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCC71CA717A000111EFE /* CameraViewController.swift */; };
+		748FFCDC1CA717A000111EFE /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCC81CA717A000111EFE /* SearchResultsTableViewController.swift */; };
+		748FFCDD1CA717A000111EFE /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCC91CA717A000111EFE /* SearchTableViewController.swift */; };
+		748FFCDF1CA717D200111EFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748FFCDE1CA717D200111EFE /* Main.storyboard */; };
+		748FFCE11CA717D800111EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748FFCE01CA717D800111EFE /* LaunchScreen.storyboard */; };
+		748FFCE31CA717F200111EFE /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCE21CA717F200111EFE /* Firebase.framework */; };
+		748FFCE51CA7180100111EFE /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCE41CA7180100111EFE /* AWSCore.framework */; };
+		748FFCE71CA7180E00111EFE /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCE61CA7180E00111EFE /* AWSS3.framework */; };
+		748FFCE91CA7181800111EFE /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCE81CA7181800111EFE /* AWSCognito.framework */; };
+		748FFCED1CA7187600111EFE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCEC1CA7187600111EFE /* CFNetwork.framework */; };
+		748FFCEF1CA7188000111EFE /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCEE1CA7188000111EFE /* libicucore.tbd */; };
+		748FFCF11CA7188700111EFE /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCF01CA7188700111EFE /* libc++.tbd */; };
+		748FFCF31CA7188C00111EFE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCF21CA7188C00111EFE /* Security.framework */; };
+		748FFCF51CA718DE00111EFE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCF41CA718DE00111EFE /* CoreLocation.framework */; };
+		748FFCF71CA718EC00111EFE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCF61CA718EC00111EFE /* SystemConfiguration.framework */; };
+		748FFD001CA71CD500111EFE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCFF1CA71CD500111EFE /* libsqlite3.tbd */; };
+		748FFD021CA71CDF00111EFE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFD011CA71CDF00111EFE /* libz.tbd */; };
+		748FFD041CA71F5700111EFE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFD031CA71F5700111EFE /* MapKit.framework */; };
+		748FFD051CA71FDF00111EFE /* GeoFire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCEA1CA7183D00111EFE /* GeoFire.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		748FFC9E1CA7174D00111EFE /* TineSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TineSE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		748FFCAB1CA7174D00111EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		748FFCAD1CA7174D00111EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		748FFCB31CA7178400111EFE /* TineSE-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TineSE-Bridging-Header.h"; sourceTree = "<group>"; };
+		748FFCB41CA7178400111EFE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		748FFCB61CA717A000111EFE /* Shed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shed.swift; sourceTree = "<group>"; };
+		748FFCB71CA717A000111EFE /* Hunter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hunter.swift; sourceTree = "<group>"; };
+		748FFCB81CA717A000111EFE /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		748FFCB91CA717A000111EFE /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
+		748FFCBA1CA717A000111EFE /* UIColor+AppColorPallete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColorPallete.swift"; sourceTree = "<group>"; };
+		748FFCBB1CA717A000111EFE /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		748FFCBC1CA717A000111EFE /* HunterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HunterController.swift; sourceTree = "<group>"; };
+		748FFCBD1CA717A000111EFE /* ShedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShedController.swift; sourceTree = "<group>"; };
+		748FFCBE1CA717A000111EFE /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
+		748FFCBF1CA717A000111EFE /* PhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
+		748FFCC01CA717A000111EFE /* ImageUitilies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUitilies.swift; sourceTree = "<group>"; };
+		748FFCC11CA717A000111EFE /* TinelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinelineViewController.swift; sourceTree = "<group>"; };
+		748FFCC21CA717A000111EFE /* ShedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShedTableViewCell.swift; sourceTree = "<group>"; };
+		748FFCC31CA717A000111EFE /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		748FFCC41CA717A000111EFE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		748FFCC51CA717A000111EFE /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		748FFCC61CA717A000111EFE /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		748FFCC71CA717A000111EFE /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		748FFCC81CA717A000111EFE /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
+		748FFCC91CA717A000111EFE /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		748FFCDE1CA717D200111EFE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		748FFCE01CA717D800111EFE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		748FFCE21CA717F200111EFE /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		748FFCE41CA7180100111EFE /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
+		748FFCE61CA7180E00111EFE /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
+		748FFCE81CA7181800111EFE /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = "<group>"; };
+		748FFCEA1CA7183D00111EFE /* GeoFire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoFire.framework; sourceTree = "<group>"; };
+		748FFCEC1CA7187600111EFE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		748FFCEE1CA7188000111EFE /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		748FFCF01CA7188700111EFE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		748FFCF21CA7188C00111EFE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		748FFCF41CA718DE00111EFE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		748FFCF61CA718EC00111EFE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		748FFCFF1CA71CD500111EFE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		748FFD011CA71CDF00111EFE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		748FFD031CA71F5700111EFE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		748FFC9B1CA7174D00111EFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748FFD041CA71F5700111EFE /* MapKit.framework in Frameworks */,
+				748FFD021CA71CDF00111EFE /* libz.tbd in Frameworks */,
+				748FFD051CA71FDF00111EFE /* GeoFire.framework in Frameworks */,
+				748FFD001CA71CD500111EFE /* libsqlite3.tbd in Frameworks */,
+				748FFCF71CA718EC00111EFE /* SystemConfiguration.framework in Frameworks */,
+				748FFCF51CA718DE00111EFE /* CoreLocation.framework in Frameworks */,
+				748FFCF31CA7188C00111EFE /* Security.framework in Frameworks */,
+				748FFCF11CA7188700111EFE /* libc++.tbd in Frameworks */,
+				748FFCEF1CA7188000111EFE /* libicucore.tbd in Frameworks */,
+				748FFCED1CA7187600111EFE /* CFNetwork.framework in Frameworks */,
+				748FFCE31CA717F200111EFE /* Firebase.framework in Frameworks */,
+				748FFCE51CA7180100111EFE /* AWSCore.framework in Frameworks */,
+				748FFCE91CA7181800111EFE /* AWSCognito.framework in Frameworks */,
+				748FFCE71CA7180E00111EFE /* AWSS3.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		748FFC951CA7174D00111EFE = {
+			isa = PBXGroup;
+			children = (
+				748FFD031CA71F5700111EFE /* MapKit.framework */,
+				748FFD011CA71CDF00111EFE /* libz.tbd */,
+				748FFCFF1CA71CD500111EFE /* libsqlite3.tbd */,
+				748FFCF61CA718EC00111EFE /* SystemConfiguration.framework */,
+				748FFCF41CA718DE00111EFE /* CoreLocation.framework */,
+				748FFCF21CA7188C00111EFE /* Security.framework */,
+				748FFCF01CA7188700111EFE /* libc++.tbd */,
+				748FFCEE1CA7188000111EFE /* libicucore.tbd */,
+				748FFCEC1CA7187600111EFE /* CFNetwork.framework */,
+				748FFCEA1CA7183D00111EFE /* GeoFire.framework */,
+				748FFCE81CA7181800111EFE /* AWSCognito.framework */,
+				748FFCE61CA7180E00111EFE /* AWSS3.framework */,
+				748FFCE41CA7180100111EFE /* AWSCore.framework */,
+				748FFCE21CA717F200111EFE /* Firebase.framework */,
+				748FFCB41CA7178400111EFE /* AppDelegate.swift */,
+				748FFCA01CA7174D00111EFE /* TineSE */,
+				748FFC9F1CA7174D00111EFE /* Products */,
+				748FFCB31CA7178400111EFE /* TineSE-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		748FFC9F1CA7174D00111EFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				748FFC9E1CA7174D00111EFE /* TineSE.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		748FFCA01CA7174D00111EFE /* TineSE */ = {
+			isa = PBXGroup;
+			children = (
+				748FFCE01CA717D800111EFE /* LaunchScreen.storyboard */,
+				748FFCDE1CA717D200111EFE /* Main.storyboard */,
+				748FFCB61CA717A000111EFE /* Shed.swift */,
+				748FFCB71CA717A000111EFE /* Hunter.swift */,
+				748FFCB81CA717A000111EFE /* Comment.swift */,
+				748FFCB91CA717A000111EFE /* AppearanceController.swift */,
+				748FFCBA1CA717A000111EFE /* UIColor+AppColorPallete.swift */,
+				748FFCBB1CA717A000111EFE /* FirebaseController.swift */,
+				748FFCBC1CA717A000111EFE /* HunterController.swift */,
+				748FFCBD1CA717A000111EFE /* ShedController.swift */,
+				748FFCBE1CA717A000111EFE /* LocationController.swift */,
+				748FFCBF1CA717A000111EFE /* PhotoController.swift */,
+				748FFCC01CA717A000111EFE /* ImageUitilies.swift */,
+				748FFCC11CA717A000111EFE /* TinelineViewController.swift */,
+				748FFCC21CA717A000111EFE /* ShedTableViewCell.swift */,
+				748FFCC31CA717A000111EFE /* LogInViewController.swift */,
+				748FFCC41CA717A000111EFE /* ProfileViewController.swift */,
+				748FFCC51CA717A000111EFE /* ImageCollectionViewCell.swift */,
+				748FFCC61CA717A000111EFE /* LeaderboardViewController.swift */,
+				748FFCC71CA717A000111EFE /* CameraViewController.swift */,
+				748FFCC81CA717A000111EFE /* SearchResultsTableViewController.swift */,
+				748FFCC91CA717A000111EFE /* SearchTableViewController.swift */,
+				748FFCAA1CA7174D00111EFE /* LaunchScreen.storyboard */,
+				748FFCAD1CA7174D00111EFE /* Info.plist */,
+			);
+			path = TineSE;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		748FFC9D1CA7174D00111EFE /* TineSE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 748FFCB01CA7174D00111EFE /* Build configuration list for PBXNativeTarget "TineSE" */;
+			buildPhases = (
+				748FFC9A1CA7174D00111EFE /* Sources */,
+				748FFC9B1CA7174D00111EFE /* Frameworks */,
+				748FFC9C1CA7174D00111EFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TineSE;
+			productName = TineSE;
+			productReference = 748FFC9E1CA7174D00111EFE /* TineSE.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		748FFC961CA7174D00111EFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = NSDesert;
+				TargetAttributes = {
+					748FFC9D1CA7174D00111EFE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 748FFC991CA7174D00111EFE /* Build configuration list for PBXProject "TineSE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 748FFC951CA7174D00111EFE;
+			productRefGroup = 748FFC9F1CA7174D00111EFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				748FFC9D1CA7174D00111EFE /* TineSE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		748FFC9C1CA7174D00111EFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748FFCE11CA717D800111EFE /* LaunchScreen.storyboard in Resources */,
+				748FFCAC1CA7174D00111EFE /* LaunchScreen.storyboard in Resources */,
+				748FFCDF1CA717D200111EFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		748FFC9A1CA7174D00111EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748FFCD91CA717A000111EFE /* ImageCollectionViewCell.swift in Sources */,
+				748FFCB51CA7178400111EFE /* AppDelegate.swift in Sources */,
+				748FFCD41CA717A000111EFE /* ImageUitilies.swift in Sources */,
+				748FFCCF1CA717A000111EFE /* FirebaseController.swift in Sources */,
+				748FFCDA1CA717A000111EFE /* LeaderboardViewController.swift in Sources */,
+				748FFCCE1CA717A000111EFE /* UIColor+AppColorPallete.swift in Sources */,
+				748FFCD51CA717A000111EFE /* TinelineViewController.swift in Sources */,
+				748FFCD01CA717A000111EFE /* HunterController.swift in Sources */,
+				748FFCD81CA717A000111EFE /* ProfileViewController.swift in Sources */,
+				748FFCCA1CA717A000111EFE /* Shed.swift in Sources */,
+				748FFCDD1CA717A000111EFE /* SearchTableViewController.swift in Sources */,
+				748FFCD61CA717A000111EFE /* ShedTableViewCell.swift in Sources */,
+				748FFCD71CA717A000111EFE /* LogInViewController.swift in Sources */,
+				748FFCDC1CA717A000111EFE /* SearchResultsTableViewController.swift in Sources */,
+				748FFCD31CA717A000111EFE /* PhotoController.swift in Sources */,
+				748FFCCB1CA717A000111EFE /* Hunter.swift in Sources */,
+				748FFCCC1CA717A000111EFE /* Comment.swift in Sources */,
+				748FFCCD1CA717A000111EFE /* AppearanceController.swift in Sources */,
+				748FFCDB1CA717A000111EFE /* CameraViewController.swift in Sources */,
+				748FFCD21CA717A000111EFE /* LocationController.swift in Sources */,
+				748FFCD11CA717A000111EFE /* ShedController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		748FFCAA1CA7174D00111EFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				748FFCAB1CA7174D00111EFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		748FFCAE1CA7174D00111EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		748FFCAF1CA7174D00111EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		748FFCB11CA7174D00111EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TineSE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TineSE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TineSE-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		748FFCB21CA7174D00111EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TineSE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TineSE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TineSE-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		748FFC991CA7174D00111EFE /* Build configuration list for PBXProject "TineSE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				748FFCAE1CA7174D00111EFE /* Debug */,
+				748FFCAF1CA7174D00111EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		748FFCB01CA7174D00111EFE /* Build configuration list for PBXNativeTarget "TineSE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				748FFCB11CA7174D00111EFE /* Debug */,
+				748FFCB21CA7174D00111EFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 748FFC961CA7174D00111EFE /* Project object */;
+}
