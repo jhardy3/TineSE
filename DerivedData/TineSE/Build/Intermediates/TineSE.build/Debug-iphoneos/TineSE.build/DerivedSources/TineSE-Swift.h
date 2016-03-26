@@ -122,20 +122,20 @@ SWIFT_CLASS("_TtC6TineSE11AppDelegate")
 @class UITextView;
 @class NSError;
 @class CLLocation;
+@class UIPickerView;
 @class UIImageView;
-@class UIScrollView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6TineSE20CameraViewController")
-@interface CameraViewController : UIViewController <UIScrollViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate, UITextViewDelegate>
+@interface CameraViewController : UIViewController <UIScrollViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate, UIPickerViewDataSource, UIPickerViewDelegate, UITextViewDelegate>
 @property (nonatomic, strong) UIImage * __nullable image;
 @property (nonatomic, strong) CLLocationManager * __null_unspecified locationManager;
 @property (nonatomic) BOOL postButtonTapped;
 @property (nonatomic, weak) IBOutlet UITextView * __null_unspecified shedMessageTextView;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified shedImageView;
-@property (nonatomic, weak) IBOutlet UIScrollView * __null_unspecified shedColorScrollView;
-@property (nonatomic, weak) IBOutlet UIScrollView * __null_unspecified deerTypeScrollView;
+@property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified shedColorPickerView;
+@property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified shedTypePickerView;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (IBAction)postButtonTapped:(UIButton * __nonnull)sender;
@@ -145,6 +145,9 @@ SWIFT_CLASS("_TtC6TineSE20CameraViewController")
 - (void)textViewDidEndEditing:(UITextView * __nonnull)textView;
 - (void)locationManager:(CLLocationManager * __nonnull)manager didFailWithError:(NSError * __nonnull)error;
 - (void)locationManager:(CLLocationManager * __nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * __nonnull)locations;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -17,6 +17,8 @@ class Shed: FirebaseType {
     private let messageIdKey = "messagesKey"
     private let usernameKey = "usernameKey"
     private let shedMessageKey = "shedMessage"
+    private let shedColorKey = "shedColorKey"
+    private let shedTypeKey = "shedTypeKey"
     
     // Firebase type identifiers and variables
     var identifier: String?
@@ -26,11 +28,15 @@ class Shed: FirebaseType {
     var messageIdentifiers = [String]()
     var shedImage: UIImage?
     var shedMessage: String?
+    var shedColor: String
+    var shedType: String
     
     let endpoint = "/shed/"
     
     var jsonValue : [String : AnyObject] {
         return [
+            shedTypeKey : shedType,
+            shedColorKey : shedColor,
             shedMessageKey : shedMessage ?? "",
             usernameKey : username,
             imageKey : imageIdentifier,
@@ -41,15 +47,25 @@ class Shed: FirebaseType {
     
     // Firebase Type required initializer
     required init?(json: [String : AnyObject], identifier: String) {
-        guard let imageIdentifier = json[imageKey] as? String, username = json[usernameKey] as? String, hunterIdentifier = json[hunterKey] as? String else {
-            self.imageIdentifier = ""
-            self.hunterIdentifier = ""
-            self.messageIdentifiers = []
-            self.shedImage = nil
-            self.username = ""
-            return nil
+        guard let imageIdentifier = json[imageKey] as? String,
+            username = json[usernameKey] as? String,
+            hunterIdentifier = json[hunterKey] as? String,
+            shedColor = json[shedColorKey] as? String,
+            shedType = json[shedTypeKey] as? String
+            else {
+                self.imageIdentifier = ""
+                self.hunterIdentifier = ""
+                self.messageIdentifiers = []
+                self.shedImage = nil
+                self.username = ""
+                self.shedType = ""
+                self.shedColor = ""
+                return nil
         }
         
+        
+        self.shedType = shedType
+        self.shedColor = shedColor
         self.username = username
         self.imageIdentifier = imageIdentifier
         self.hunterIdentifier = hunterIdentifier
@@ -68,10 +84,12 @@ class Shed: FirebaseType {
     }
     
     // Class Initializer
-    init(hunterID: String, imageID: String?, username: String, shedMessage: String?) {
+    init(hunterID: String, imageID: String?, username: String, shedMessage: String?, shedType: String, shedColor: String) {
         self.hunterIdentifier = hunterID
         self.imageIdentifier = imageID ?? ""
         self.username = username
+        self.shedColor = shedColor
+        self.shedType = shedType
         
         if let shedMessage = shedMessage {
             self.shedMessage = shedMessage

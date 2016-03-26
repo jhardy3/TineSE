@@ -15,10 +15,15 @@ class ShedController {
     // MARK: - Post Creation and deletion ( modification )
     
     // Create new shed
-    static func createShed(image: UIImage, hunterIdentifier: String, shedMessage: String?, completion: (success: Bool, shed: Shed?) -> Void) {
+    static func createShed(image: UIImage, hunterIdentifier: String, shedMessage: String?, shedColor: String, shedType: String, completion: (success: Bool, shed: Shed?) -> Void) {
         
         // guard for current hunter or complete false and return
         guard var currentHunter = HunterController.sharedInstance.currentHunter else { completion(success: false, shed: nil) ; return }
+        
+        
+        
+
+        
         
         // Upload the image to S3 and receive a specific url back if successful
         PhotoController.sharedInstance.uploadImageToS3(image) { (url) -> () in
@@ -27,7 +32,7 @@ class ShedController {
             if let url = url {
                 
                 // If URL is present instantiate a Shed and save it.
-                var shed = Shed(hunterID: hunterIdentifier, imageID: url, username: currentHunter.username,shedMessage: shedMessage)
+                var shed = Shed(hunterID: hunterIdentifier, imageID: url, username: currentHunter.username,shedMessage: shedMessage, shedType: shedType, shedColor: shedColor)
                 shed.save()
                 
                 // Check for obviously present identifier
@@ -35,6 +40,19 @@ class ShedController {
                 
                 // Add Shed ID to currentHunters Shed IDs and save it
                 currentHunter.shedIDs.append(shedID)
+                
+                switch shedColor {
+                case "Brown" :
+                    currentHunter.brownCount++
+                case "White" :
+                    currentHunter.whiteCount++
+                case "Chalk" :
+                    currentHunter.chalkCount++
+                default :
+                    return
+                }
+                currentHunter.shedCount++
+                
                 currentHunter.save()
                 
                 // Complete true
@@ -45,6 +63,9 @@ class ShedController {
                 completion(success: false, shed: nil)
             }
         }
+
+        
+        
     }
     
     // Delete post

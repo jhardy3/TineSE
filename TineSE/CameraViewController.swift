@@ -9,7 +9,21 @@
 import UIKit
 import CoreLocation
 
-class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
+
+enum AnimalType {
+    case Elk
+    case Deer
+    case Moose
+}
+
+enum ShedType {
+    case Brown
+    case White
+    case Chalk
+}
+
+
+class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     
     // MARK: - Properties
     
@@ -21,8 +35,9 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     
     @IBOutlet weak var shedMessageTextView: UITextView!
     @IBOutlet weak var shedImageView: UIImageView!
-    @IBOutlet weak var shedColorScrollView: UIScrollView!
-    @IBOutlet weak var deerTypeScrollView: UIScrollView!
+    @IBOutlet weak var shedColorPickerView: UIPickerView!
+    @IBOutlet weak var shedTypePickerView: UIPickerView!
+    
     
     // MARK: - Class Functions
     
@@ -45,7 +60,8 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
         super.viewDidLoad()
         
         
-        
+        shedColorPickerView.delegate = self
+        shedTypePickerView.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -59,7 +75,7 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
             postButtonTapped = true
             // Guard for image and hunterID and create a new shed
             if let image = image, hunterID = HunterController.sharedInstance.currentHunter?.identifier {
-                ShedController.createShed(image, hunterIdentifier: hunterID, shedMessage: self.shedMessageTextView.text, completion: { (success, shed) -> Void in
+                ShedController.createShed(image, hunterIdentifier: hunterID, shedMessage: self.shedMessageTextView.text, shedColor: "Brown", shedType: "Deer", completion: { (success, shed) -> Void in
                     
                     // If shed creation is successful remove image and (eventually kick to timeline)
                     if success {
@@ -67,14 +83,14 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
                             LocationController.setLocation(shedID, location: location, completion: { (success) -> Void in
                                 if success {
                                     print("yay succes posting location")
-                                
+                                    
                                 }
                             })
                         }
                         
                         NSNotificationCenter.defaultCenter().postNotificationName("shedAdded", object: self)
                         self.image = nil
-
+                        
                         self.postButtonTapped = false
                         
                         dispatch_async(dispatch_get_main_queue(), { () -> Void in
@@ -139,6 +155,36 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
         print("Location found in camera view")
     }
     
+    // MARK: - PickerView
     
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if pickerView === shedColorPickerView {
+            return 3
+        } else {
+            return 3
+        }
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if pickerView === shedColorPickerView {
+            switch row {
+            case 0: return "Brown"
+            case 1: return "White"
+            case 2: return "Chalk"
+            default: return "Mystery Shed"
+            }
+        } else {
+            switch row {
+            case 0: return "Deer"
+            case 1: return "Elk"
+            case 2: return "Moose"
+            default: return "Mystery Shed"
+            }
+        }
+    }
     
 }
