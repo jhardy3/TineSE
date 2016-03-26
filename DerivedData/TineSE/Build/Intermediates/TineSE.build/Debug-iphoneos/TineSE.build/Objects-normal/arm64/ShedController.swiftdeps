@@ -7,29 +7,31 @@ provides-member:
 - ["C6TineSE14ShedController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "dispatch_group_create"
-- !private "Int"
-- "String"
 - !private "Array"
-- "ShedController"
-- !private "=="
-- "UIImage"
-- !private "StringLiteralType"
-- !private "PhotoController"
-- !private "FirebaseController"
-- !private "AnyObject"
-- !private "dispatch_group_leave"
-- "Comment"
 - !private "HunterController"
 - !private "dispatch_get_main_queue"
-- !private "dispatch_group_enter"
-- "Bool"
-- !private "..<"
-- "Void"
 - !private "dispatch_group_notify"
-- !private "BooleanLiteralType"
-- "Shed"
+- !private "=="
+- !private "~="
+- !private "AnyObject"
+- "StringLiteralType"
+- "Void"
+- !private "..<"
 - !private "<="
+- !private "dispatch_group_create"
+- "Bool"
+- !private "++"
+- "ShedController"
+- "Shed"
+- "String"
+- !private "Int"
+- !private "dispatch_group_enter"
+- !private "PhotoController"
+- !private "dispatch_group_leave"
+- "Comment"
+- !private "FirebaseController"
+- "UIImage"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "Comment"]
 - !private ["PSs9AnyObject", "FirebaseController"]
@@ -38,6 +40,8 @@ depends-member:
 - !private ["PSs9AnyObject", "Shed"]
 - !private ["PSs9AnyObject", "ShedController"]
 - !private ["PSs9AnyObject", "String"]
+- !private ["PSs9AnyObject", "brownCount"]
+- !private ["PSs9AnyObject", "chalkCount"]
 - !private ["PSs9AnyObject", "currentHunter"]
 - !private ["PSs9AnyObject", "dataAtEndPoint"]
 - !private ["PSs9AnyObject", "delete"]
@@ -53,11 +57,13 @@ depends-member:
 - !private ["PSs9AnyObject", "messageIdentifiers"]
 - !private ["PSs9AnyObject", "save"]
 - !private ["PSs9AnyObject", "sharedInstance"]
+- !private ["PSs9AnyObject", "shedCount"]
 - !private ["PSs9AnyObject", "shedIDs"]
 - !private ["PSs9AnyObject", "subscript"]
 - !private ["PSs9AnyObject", "trackingIDs"]
 - !private ["PSs9AnyObject", "uploadImageToS3"]
 - !private ["PSs9AnyObject", "username"]
+- !private ["PSs9AnyObject", "whiteCount"]
 - ["PSs9AnyObject", ""]
 - !private ["Sa", "Element"]
 - !private ["Sa", "Generator"]
@@ -171,14 +177,18 @@ depends-member:
 - !private ["PSs9Equatable", "init"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["C6TineSE18FirebaseController", "dataAtEndPoint"]
+- !private ["P6TineSE12FirebaseType", "brownCount"]
+- !private ["P6TineSE12FirebaseType", "chalkCount"]
 - !private ["P6TineSE12FirebaseType", "delete"]
 - !private ["P6TineSE12FirebaseType", "identifier"]
 - !private ["P6TineSE12FirebaseType", "init"]
 - !private ["P6TineSE12FirebaseType", "messageIdentifiers"]
 - !private ["P6TineSE12FirebaseType", "save"]
+- !private ["P6TineSE12FirebaseType", "shedCount"]
 - !private ["P6TineSE12FirebaseType", "shedIDs"]
 - !private ["P6TineSE12FirebaseType", "trackingIDs"]
 - !private ["P6TineSE12FirebaseType", "username"]
+- !private ["P6TineSE12FirebaseType", "whiteCount"]
 - !private ["Sf", "deinit"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
@@ -191,11 +201,15 @@ depends-member:
 - !private ["PSs8Hashable", "_DisabledRangeIndex"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "init"]
+- !private ["C6TineSE6Hunter", "brownCount"]
+- !private ["C6TineSE6Hunter", "chalkCount"]
 - !private ["C6TineSE6Hunter", "deinit"]
 - !private ["C6TineSE6Hunter", "save"]
+- !private ["C6TineSE6Hunter", "shedCount"]
 - !private ["C6TineSE6Hunter", "shedIDs"]
 - !private ["C6TineSE6Hunter", "trackingIDs"]
 - !private ["C6TineSE6Hunter", "username"]
+- !private ["C6TineSE6Hunter", "whiteCount"]
 - !private ["C6TineSE16HunterController", "currentHunter"]
 - !private ["C6TineSE16HunterController", "sharedInstance"]
 - !private ["SQ", "deinit"]
@@ -284,9 +298,11 @@ depends-member:
 - !private ["PSo9NSCopying", "deinit"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "init"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - ["PSs21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
@@ -298,6 +314,7 @@ depends-member:
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["PSs21RandomAccessIndexType", "_DisabledRangeIndex"]
 - !private ["VSs5Range", "Generator"]
+- !private ["VSs5Range", "deinit"]
 - !private ["VSs14RangeGenerator", "Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "Generator"]
@@ -436,6 +453,7 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "keys"]
 - !private ["PSs21_ObjectiveCBridgeable", "removeAtIndex"]
 - !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs22_RandomAccessAmbiguity", "Distance"]
 - !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["PSs22_RandomAccessAmbiguity", "_DisabledRangeIndex"]
@@ -561,6 +579,7 @@ depends-nominal:
 - !private "PSs22_IntegerArithmeticType"
 - !private "PSs12_IntegerType"
 - !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
 - !private "PSs22_RandomAccessAmbiguity"
 - "PSs12_Reflectable"
 - !private "PSs18_SignedIntegerType"
@@ -657,4 +676,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "f423bcd4f360622f131a1307fcc55b29"
+interface-hash: "418232818a32f7de75852ab72e56a3d8"

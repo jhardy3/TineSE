@@ -7,17 +7,17 @@ provides-member:
 - ["C6TineSE4Shed", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Void"
-- !private "Dictionary"
-- !private "Array"
 - "AnyObject"
-- "FirebaseType"
-- !private "??"
-- "StringLiteralType"
-- !private "PhotoController"
 - "Shed"
-- "UIImage"
+- "FirebaseType"
+- !private "Array"
+- !private "PhotoController"
+- !private "Dictionary"
 - "String"
+- !private "Void"
+- !private "??"
+- "UIImage"
+- "StringLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "Array"]
 - !private ["PSs9AnyObject", "PhotoController"]
@@ -36,9 +36,13 @@ depends-member:
 - !private ["PSs9AnyObject", "messageIdKey"]
 - !private ["PSs9AnyObject", "messageIdentifiers"]
 - ["PSs9AnyObject", "save"]
+- !private ["PSs9AnyObject", "shedColor"]
+- !private ["PSs9AnyObject", "shedColorKey"]
 - !private ["PSs9AnyObject", "shedImage"]
 - !private ["PSs9AnyObject", "shedMessage"]
 - !private ["PSs9AnyObject", "shedMessageKey"]
+- !private ["PSs9AnyObject", "shedType"]
+- !private ["PSs9AnyObject", "shedTypeKey"]
 - !private ["PSs9AnyObject", "username"]
 - !private ["PSs9AnyObject", "usernameKey"]
 - ["PSs9AnyObject", ""]
@@ -127,9 +131,13 @@ depends-member:
 - !private ["P6TineSE12FirebaseType", "messageIdKey"]
 - !private ["P6TineSE12FirebaseType", "messageIdentifiers"]
 - ["P6TineSE12FirebaseType", "save"]
+- !private ["P6TineSE12FirebaseType", "shedColor"]
+- !private ["P6TineSE12FirebaseType", "shedColorKey"]
 - !private ["P6TineSE12FirebaseType", "shedImage"]
 - !private ["P6TineSE12FirebaseType", "shedMessage"]
 - !private ["P6TineSE12FirebaseType", "shedMessageKey"]
+- !private ["P6TineSE12FirebaseType", "shedType"]
+- !private ["P6TineSE12FirebaseType", "shedTypeKey"]
 - !private ["P6TineSE12FirebaseType", "username"]
 - !private ["P6TineSE12FirebaseType", "usernameKey"]
 - ["P6TineSE12FirebaseType", ""]
@@ -206,9 +214,13 @@ depends-member:
 - !private ["C6TineSE4Shed", "messageIdKey"]
 - ["C6TineSE4Shed", "messageIdentifiers"]
 - ["C6TineSE4Shed", "save"]
+- ["C6TineSE4Shed", "shedColor"]
+- !private ["C6TineSE4Shed", "shedColorKey"]
 - ["C6TineSE4Shed", "shedImage"]
 - ["C6TineSE4Shed", "shedMessage"]
 - !private ["C6TineSE4Shed", "shedMessageKey"]
+- ["C6TineSE4Shed", "shedType"]
+- !private ["C6TineSE4Shed", "shedTypeKey"]
 - ["C6TineSE4Shed", "username"]
 - !private ["C6TineSE4Shed", "usernameKey"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
@@ -407,4 +419,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "75d68f03404912a9e03cbad0ba8f5e78"
+interface-hash: "675d5a6f36587bc7187e208d51713e27"
