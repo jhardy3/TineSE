@@ -30,7 +30,6 @@
 		748FFCDC1CA717A000111EFE /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCC81CA717A000111EFE /* SearchResultsTableViewController.swift */; };
 		748FFCDD1CA717A000111EFE /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FFCC91CA717A000111EFE /* SearchTableViewController.swift */; };
 		748FFCDF1CA717D200111EFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748FFCDE1CA717D200111EFE /* Main.storyboard */; };
-		748FFCE11CA717D800111EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748FFCE01CA717D800111EFE /* LaunchScreen.storyboard */; };
 		748FFCE31CA717F200111EFE /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCE21CA717F200111EFE /* Firebase.framework */; };
 		748FFCE51CA7180100111EFE /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCE41CA7180100111EFE /* AWSCore.framework */; };
 		748FFCE71CA7180E00111EFE /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCE61CA7180E00111EFE /* AWSS3.framework */; };
@@ -45,6 +44,7 @@
 		748FFD021CA71CDF00111EFE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFD011CA71CDF00111EFE /* libz.tbd */; };
 		748FFD041CA71F5700111EFE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFD031CA71F5700111EFE /* MapKit.framework */; };
 		748FFD051CA71FDF00111EFE /* GeoFire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCEA1CA7183D00111EFE /* GeoFire.framework */; };
+		748FFD071CA72F2D00111EFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748FFD061CA72F2D00111EFE /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,7 +74,6 @@
 		748FFCC81CA717A000111EFE /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
 		748FFCC91CA717A000111EFE /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		748FFCDE1CA717D200111EFE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		748FFCE01CA717D800111EFE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		748FFCE21CA717F200111EFE /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		748FFCE41CA7180100111EFE /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
 		748FFCE61CA7180E00111EFE /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
@@ -89,6 +88,7 @@
 		748FFCFF1CA71CD500111EFE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		748FFD011CA71CDF00111EFE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		748FFD031CA71F5700111EFE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		748FFD061CA72F2D00111EFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,24 +119,11 @@
 		748FFC951CA7174D00111EFE = {
 			isa = PBXGroup;
 			children = (
-				748FFD031CA71F5700111EFE /* MapKit.framework */,
-				748FFD011CA71CDF00111EFE /* libz.tbd */,
-				748FFCFF1CA71CD500111EFE /* libsqlite3.tbd */,
-				748FFCF61CA718EC00111EFE /* SystemConfiguration.framework */,
-				748FFCF41CA718DE00111EFE /* CoreLocation.framework */,
-				748FFCF21CA7188C00111EFE /* Security.framework */,
-				748FFCF01CA7188700111EFE /* libc++.tbd */,
-				748FFCEE1CA7188000111EFE /* libicucore.tbd */,
-				748FFCEC1CA7187600111EFE /* CFNetwork.framework */,
-				748FFCEA1CA7183D00111EFE /* GeoFire.framework */,
-				748FFCE81CA7181800111EFE /* AWSCognito.framework */,
-				748FFCE61CA7180E00111EFE /* AWSS3.framework */,
-				748FFCE41CA7180100111EFE /* AWSCore.framework */,
-				748FFCE21CA717F200111EFE /* Firebase.framework */,
 				748FFCB41CA7178400111EFE /* AppDelegate.swift */,
 				748FFCA01CA7174D00111EFE /* TineSE */,
+				748FFD081CA7305800111EFE /* Frameworks */,
+				748FFD091CA7306A00111EFE /* Bridging Header */,
 				748FFC9F1CA7174D00111EFE /* Products */,
-				748FFCB31CA7178400111EFE /* TineSE-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,32 +138,133 @@
 		748FFCA01CA7174D00111EFE /* TineSE */ = {
 			isa = PBXGroup;
 			children = (
-				748FFCE01CA717D800111EFE /* LaunchScreen.storyboard */,
+				748FFD061CA72F2D00111EFE /* Assets.xcassets */,
+				748FFD0A1CA7323A00111EFE /* Model */,
+				748FFD0B1CA7324300111EFE /* UIAppearance */,
+				748FFD0D1CA7326000111EFE /* Network Controllers */,
+				748FFD0C1CA7325600111EFE /* Model Controllers */,
+				748FFD0E1CA7327000111EFE /* Image Utility */,
+				748FFD0F1CA7329500111EFE /* Table View Controllers */,
+				748FFD111CA732B400111EFE /* Profile & Login View Controllers */,
+				748FFD121CA732D500111EFE /* Camera View Controllers */,
+				748FFD101CA732A000111EFE /* Search Controllers */,
+				748FFCAD1CA7174D00111EFE /* Info.plist */,
+				748FFCAA1CA7174D00111EFE /* LaunchScreen.storyboard */,
 				748FFCDE1CA717D200111EFE /* Main.storyboard */,
+			);
+			path = TineSE;
+			sourceTree = "<group>";
+		};
+		748FFD081CA7305800111EFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				748FFD031CA71F5700111EFE /* MapKit.framework */,
+				748FFD011CA71CDF00111EFE /* libz.tbd */,
+				748FFCFF1CA71CD500111EFE /* libsqlite3.tbd */,
+				748FFCF61CA718EC00111EFE /* SystemConfiguration.framework */,
+				748FFCF41CA718DE00111EFE /* CoreLocation.framework */,
+				748FFCF21CA7188C00111EFE /* Security.framework */,
+				748FFCF01CA7188700111EFE /* libc++.tbd */,
+				748FFCEE1CA7188000111EFE /* libicucore.tbd */,
+				748FFCEC1CA7187600111EFE /* CFNetwork.framework */,
+				748FFCEA1CA7183D00111EFE /* GeoFire.framework */,
+				748FFCE81CA7181800111EFE /* AWSCognito.framework */,
+				748FFCE61CA7180E00111EFE /* AWSS3.framework */,
+				748FFCE41CA7180100111EFE /* AWSCore.framework */,
+				748FFCE21CA717F200111EFE /* Firebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		748FFD091CA7306A00111EFE /* Bridging Header */ = {
+			isa = PBXGroup;
+			children = (
+				748FFCB31CA7178400111EFE /* TineSE-Bridging-Header.h */,
+			);
+			name = "Bridging Header";
+			sourceTree = "<group>";
+		};
+		748FFD0A1CA7323A00111EFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				748FFCB61CA717A000111EFE /* Shed.swift */,
 				748FFCB71CA717A000111EFE /* Hunter.swift */,
 				748FFCB81CA717A000111EFE /* Comment.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		748FFD0B1CA7324300111EFE /* UIAppearance */ = {
+			isa = PBXGroup;
+			children = (
 				748FFCB91CA717A000111EFE /* AppearanceController.swift */,
 				748FFCBA1CA717A000111EFE /* UIColor+AppColorPallete.swift */,
-				748FFCBB1CA717A000111EFE /* FirebaseController.swift */,
+			);
+			name = UIAppearance;
+			sourceTree = "<group>";
+		};
+		748FFD0C1CA7325600111EFE /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				748FFCBC1CA717A000111EFE /* HunterController.swift */,
 				748FFCBD1CA717A000111EFE /* ShedController.swift */,
+			);
+			name = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		748FFD0D1CA7326000111EFE /* Network Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				748FFCBB1CA717A000111EFE /* FirebaseController.swift */,
 				748FFCBE1CA717A000111EFE /* LocationController.swift */,
 				748FFCBF1CA717A000111EFE /* PhotoController.swift */,
+			);
+			name = "Network Controllers";
+			sourceTree = "<group>";
+		};
+		748FFD0E1CA7327000111EFE /* Image Utility */ = {
+			isa = PBXGroup;
+			children = (
 				748FFCC01CA717A000111EFE /* ImageUitilies.swift */,
+			);
+			name = "Image Utility";
+			sourceTree = "<group>";
+		};
+		748FFD0F1CA7329500111EFE /* Table View Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				748FFCC11CA717A000111EFE /* TinelineViewController.swift */,
 				748FFCC21CA717A000111EFE /* ShedTableViewCell.swift */,
+				748FFCC61CA717A000111EFE /* LeaderboardViewController.swift */,
+			);
+			name = "Table View Controllers";
+			sourceTree = "<group>";
+		};
+		748FFD101CA732A000111EFE /* Search Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				748FFCC81CA717A000111EFE /* SearchResultsTableViewController.swift */,
+				748FFCC91CA717A000111EFE /* SearchTableViewController.swift */,
+			);
+			name = "Search Controllers";
+			sourceTree = "<group>";
+		};
+		748FFD111CA732B400111EFE /* Profile & Login View Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				748FFCC31CA717A000111EFE /* LogInViewController.swift */,
 				748FFCC41CA717A000111EFE /* ProfileViewController.swift */,
 				748FFCC51CA717A000111EFE /* ImageCollectionViewCell.swift */,
-				748FFCC61CA717A000111EFE /* LeaderboardViewController.swift */,
-				748FFCC71CA717A000111EFE /* CameraViewController.swift */,
-				748FFCC81CA717A000111EFE /* SearchResultsTableViewController.swift */,
-				748FFCC91CA717A000111EFE /* SearchTableViewController.swift */,
-				748FFCAA1CA7174D00111EFE /* LaunchScreen.storyboard */,
-				748FFCAD1CA7174D00111EFE /* Info.plist */,
 			);
-			path = TineSE;
+			name = "Profile & Login View Controllers";
+			sourceTree = "<group>";
+		};
+		748FFD121CA732D500111EFE /* Camera View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				748FFCC71CA717A000111EFE /* CameraViewController.swift */,
+			);
+			name = "Camera View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +325,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				748FFCE11CA717D800111EFE /* LaunchScreen.storyboard in Resources */,
 				748FFCAC1CA7174D00111EFE /* LaunchScreen.storyboard in Resources */,
+				748FFD071CA72F2D00111EFE /* Assets.xcassets in Resources */,
 				748FFCDF1CA717D200111EFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

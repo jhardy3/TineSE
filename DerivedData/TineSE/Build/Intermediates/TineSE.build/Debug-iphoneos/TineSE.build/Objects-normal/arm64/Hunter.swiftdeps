@@ -12,16 +12,16 @@ provides-dynamic-lookup:
 depends-top-level:
 - "String"
 - !private "=="
-- "Int"
-- "StringLiteralType"
-- "Hunter"
 - !private "??"
+- "StringLiteralType"
 - "FirebaseType"
-- "AnyObject"
+- "Hunter"
 - !private "..<"
+- "Int"
 - !private "Dictionary"
 - "Array"
 - !private "BooleanLiteralType"
+- "AnyObject"
 depends-member:
 - !private ["PSs9AnyObject", "Array"]
 - ["PSs9AnyObject", "String"]

@@ -9,17 +9,20 @@
 import UIKit
 import CoreLocation
 
-class CameraViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
+class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
     
     // MARK: - Properties
     
     var image: UIImage?
     var locationManager: CLLocationManager!
+    var postButtonTapped = false
     
     // MARK: - IBOutlet Properties
     
-    @IBOutlet weak var shedMessageTextField: UITextField!
+    @IBOutlet weak var shedMessageTextView: UITextView!
     @IBOutlet weak var shedImageView: UIImageView!
+    @IBOutlet weak var shedColorScrollView: UIScrollView!
+    @IBOutlet weak var deerTypeScrollView: UIScrollView!
     
     // MARK: - Class Functions
     
@@ -35,14 +38,14 @@ class CameraViewController: UIViewController, UITextFieldDelegate, UIImagePicker
             locationManager.requestLocation()
             displayCamera()
         }
-        shedMessageTextField.delegate = self
+        shedMessageTextView.delegate = self
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-
+        
+        
         
         // Do any additional setup after loading the view.
     }
@@ -52,30 +55,36 @@ class CameraViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     // Posts a new shed
     @IBAction func postButtonTapped(sender: UIButton) {
         
-        // Guard for image and hunterID and create a new shed
-        if let image = image, hunterID = HunterController.sharedInstance.currentHunter?.identifier {
-            ShedController.createShed(image, hunterIdentifier: hunterID, shedMessage: self.shedMessageTextField.text, completion: { (success, shed) -> Void in
-                
-                // If shed creation is successful remove image and (eventually kick to timeline)
-                if success {
-                    if let shedID = shed?.identifier, let location = self.locationManager.location {
-                        LocationController.setLocation(shedID, location: location, completion: { (success) -> Void in
-                            if success {
-                                print("yay succes posting location")
-                            }
+        if !postButtonTapped {
+            postButtonTapped = true
+            // Guard for image and hunterID and create a new shed
+            if let image = image, hunterID = HunterController.sharedInstance.currentHunter?.identifier {
+                ShedController.createShed(image, hunterIdentifier: hunterID, shedMessage: self.shedMessageTextView.text, completion: { (success, shed) -> Void in
+                    
+                    // If shed creation is successful remove image and (eventually kick to timeline)
+                    if success {
+                        if let shedID = shed?.identifier, let location = self.locationManager.location {
+                            LocationController.setLocation(shedID, location: location, completion: { (success) -> Void in
+                                if success {
+                                    print("yay succes posting location")
+                                
+                                }
+                            })
+                        }
+                        
+                        NSNotificationCenter.defaultCenter().postNotificationName("shedAdded", object: self)
+                        self.image = nil
+
+                        self.postButtonTapped = false
+                        
+                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                            self.tabBarController?.selectedIndex = 0
                         })
+                        
+                        return
                     }
-                    
-                    NSNotificationCenter.defaultCenter().postNotificationName("shedAdded", object: self)
-                    self.image = nil
-    
-                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                        self.tabBarController?.selectedIndex = 0
-                    })
-                    
-                    return
-                }
-            })
+                })
+            }
         }
     }
     
@@ -116,6 +125,10 @@ class CameraViewController: UIViewController, UITextFieldDelegate, UIImagePicker
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    func textViewDidEndEditing(textView: UITextView) {
+        textView.resignFirstResponder()
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {

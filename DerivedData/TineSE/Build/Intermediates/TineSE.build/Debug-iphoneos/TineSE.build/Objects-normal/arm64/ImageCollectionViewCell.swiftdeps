@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["C6TineSE23ImageCollectionViewCell", ""]
 provides-dynamic-lookup:
-- "shedImage"
 - "awakeFromNib"
+- "shedImage"
 - "delegate"
 depends-top-level:
 - "ImageCollectionViewCell"

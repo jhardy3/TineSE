@@ -7,11 +7,11 @@ provides-member:
 - ["C6TineSE20AppearanceController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UIColor"
-- "AppearanceController"
-- !private "UISegmentedControl"
 - !private "UIToolbar"
+- "AppearanceController"
 - !private "UINavigationBar"
+- !private "UIColor"
+- !private "UISegmentedControl"
 depends-member:
 - !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UINavigationBar"]
