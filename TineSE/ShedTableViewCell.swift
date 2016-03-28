@@ -18,8 +18,6 @@ class ShedTableViewCell: UITableViewCell {
     @IBOutlet weak var shedImageView: UIImageView!
     
     @IBOutlet weak var reportButton: UIButton!
-    @IBOutlet weak var usernameSmallButton: UIButton!
-    @IBOutlet weak var shedTextLabel: UILabel!
     @IBOutlet weak var shedTypeTextLabel: UILabel!
     @IBOutlet weak var shedColorTextLabel: UILabel!
     
@@ -59,14 +57,13 @@ class ShedTableViewCell: UITableViewCell {
         self.shedColorTextLabel.text = "SHED COLOR: \(shed.shedColor.uppercaseString)"
         self.shedTypeTextLabel.text = "Shed Type: \(shed.shedType)"
         self.usernameTextField.text = shed.username
-        self.usernameSmallButton.setTitle(shed.username, forState: .Normal)
-        if let shedMessage = shed.shedMessage where shedMessage.isEmpty == false {
-            self.shedTextLabel.text = shedMessage
-        } else {
-            self.usernameSmallButton.hidden = true
-            self.shedTextLabel.hidden = true
-        }
+        
     }
+    
+    @IBAction func utilitiesButtonTapped(sender: UIButton) {
+        
+    }
+
 }
 
 extension UIImageView {

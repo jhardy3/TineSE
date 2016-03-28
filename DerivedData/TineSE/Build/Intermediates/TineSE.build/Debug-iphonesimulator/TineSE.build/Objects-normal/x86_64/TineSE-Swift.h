@@ -197,6 +197,14 @@ SWIFT_CLASS("_TtC6TineSE21ProfileViewController")
 @property (nonatomic, weak) IBOutlet UICollectionView * __null_unspecified collectionView;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified usernameLabel;
 @property (nonatomic, weak) IBOutlet UICollectionViewFlowLayout * __null_unspecified flowLayout;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified hunterProfileImage;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified brownsCountLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified whitesCountLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified chalksCountLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified trackersCountLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified shedCountLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified trackingCountLabel;
+@property (nonatomic) BOOL viewLoaded;
 @property (nonatomic, readonly) BOOL isFollowing;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
@@ -258,12 +266,11 @@ SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified usernameTextField;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified shedImageView;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified reportButton;
-@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified usernameSmallButton;
-@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified shedTextLabel;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified shedTypeTextLabel;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified shedColorTextLabel;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (void)prepareForReuse;
+- (IBAction)utilitiesButtonTapped:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

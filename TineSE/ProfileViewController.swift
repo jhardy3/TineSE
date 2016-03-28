@@ -23,6 +23,19 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
+    @IBOutlet weak var hunterProfileImage: UIImageView!
+    
+    @IBOutlet weak var brownsCountLabel: UILabel!
+    @IBOutlet weak var whitesCountLabel: UILabel!
+    @IBOutlet weak var chalksCountLabel: UILabel!
+    
+    @IBOutlet weak var trackersCountLabel: UILabel!
+    @IBOutlet weak var shedCountLabel: UILabel!
+    @IBOutlet weak var trackingCountLabel: UILabel!
+    
+    var viewLoaded = false
+    
+    
     // is Following Bool checks for following status based on button title text
     var isFollowing: Bool {
         get {
@@ -44,12 +57,22 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             self.updateWithIdentifier(currentHunterID)
         }
         
+        if viewLoaded == false {
+            NSThread.sleepForTimeInterval(0.3)
+        }
+        
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.hunter = nil
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        
+        self.followButton.layer.borderColor = UIColor.hunterOrange().CGColor
+        self.followButton.layer.borderWidth = 1
         
         flowLayout.sectionInset = UIEdgeInsetsMake(0, kMargin, 0, kMargin)
         flowLayout.minimumLineSpacing = 0
@@ -113,6 +136,12 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             if let hunter = hunter {
                 self.hunter = hunter
                 self.usernameLabel.text = hunter.username
+                self.brownsCountLabel.text = "Browns: " + (String(hunter.brownCount))
+                self.whitesCountLabel.text = "Whites: " + (String(hunter.whiteCount))
+                self.chalksCountLabel.text = "Chalks: " + (String(hunter.chalkCount))
+                self.trackersCountLabel.text = (String(hunter.trackedIDs.count))
+                self.trackingCountLabel.text = (String(hunter.trackingIDs.count))
+                self.shedCountLabel.text = (String(hunter.shedCount))
                 print("Hunter Received")
             }
             dispatch_group_leave(groupNew)
@@ -121,6 +150,8 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         
         
         dispatch_group_notify(groupNew, dispatch_get_main_queue()) { () -> Void in
+            self.viewLoaded = true
+            self.view.reloadInputViews()
             // Checks current hunter for profile hunter ID. If exists sets title to untrack otherwise sets to track
             if let hunterTrackIDs = HunterController.sharedInstance.currentHunter?.trackingIDs, let hunterID = self.hunter?.identifier {
                 if hunterTrackIDs.contains(hunterID) {
@@ -131,7 +162,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
                 
                 // If viewing own profile, sets follow button to hidden
                 if HunterController.sharedInstance.currentHunter?.identifier == hunterID {
-                    self.followButton.hidden = true
+                    self.followButton.setTitle("Edit Hunter", forState: .Normal)
                 }
             }
             

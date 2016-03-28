@@ -173,15 +173,19 @@ SWIFT_CLASS("_TtC6TineSE13ImageUitilies")
 @class UITableView;
 @class NSIndexPath;
 @class UITableViewCell;
+@class UISegmentedControl;
 
 SWIFT_CLASS("_TtC6TineSE25LeaderboardViewController")
 @interface LeaderboardViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified segmentedControl;
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
+@property (nonatomic) BOOL isTracking;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (IBAction)segmentedControlChanged:(UISegmentedControl * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -197,8 +201,17 @@ SWIFT_CLASS("_TtC6TineSE21ProfileViewController")
 @property (nonatomic, weak) IBOutlet UICollectionView * __null_unspecified collectionView;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified usernameLabel;
 @property (nonatomic, weak) IBOutlet UICollectionViewFlowLayout * __null_unspecified flowLayout;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified hunterProfileImage;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified brownsCountLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified whitesCountLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified chalksCountLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified trackersCountLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified shedCountLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified trackingCountLabel;
+@property (nonatomic) BOOL viewLoaded;
 @property (nonatomic, readonly) BOOL isFollowing;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (UICollectionViewCell * __nonnull)collectionView:(UICollectionView * __nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
@@ -229,7 +242,6 @@ SWIFT_CLASS("_TtC6TineSE32SearchResultsTableViewController")
 @end
 
 @class UISearchController;
-@class UISegmentedControl;
 @class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC6TineSE25SearchTableViewController")
@@ -258,12 +270,11 @@ SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified usernameTextField;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified shedImageView;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified reportButton;
-@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified shareButton;
-@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified likeShedButton;
-@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified usernameSmallButton;
-@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified shedTextLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified shedTypeTextLabel;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified shedColorTextLabel;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (void)prepareForReuse;
+- (IBAction)utilitiesButtonTapped:(UIButton * __nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

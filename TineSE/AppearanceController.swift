@@ -16,6 +16,7 @@ class AppearanceController {
         UINavigationBar.appearance().barTintColor = UIColor.hunterOrange()
         UIToolbar.appearance().barTintColor = UIColor.hunterOrange()
         UISegmentedControl.appearance().tintColor = UIColor.whiteColor()
+        UILabel.appearance().textColor = UIColor.hunterOrange()
         
     }
     
