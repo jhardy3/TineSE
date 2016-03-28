@@ -108,6 +108,7 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
         
     }
     
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if currentViewIsLocal {

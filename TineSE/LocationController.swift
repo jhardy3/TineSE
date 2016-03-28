@@ -31,6 +31,8 @@ class LocationController {
             completion(success: true)
         }
         
+        
+        
     }
     
     static func queryAroundMe(center: CLLocation, completion: (shedIDs: [String]) -> Void) {
