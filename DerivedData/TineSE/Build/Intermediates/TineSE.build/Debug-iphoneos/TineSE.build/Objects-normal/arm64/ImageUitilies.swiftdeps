@@ -8,18 +8,18 @@ provides-member:
 provides-dynamic-lookup:
 - "cropToSquare"
 depends-top-level:
-- !private "CGImageRef"
-- !private "-"
 - "NSObject"
-- "ImageUitilies"
-- !private "CGSize"
-- "UIImage"
 - !private "CGRectMake"
+- !private "/"
 - !private ">"
 - !private "CGImageCreateWithImageInRect"
-- !private "/"
 - !private "CGFloat"
 - !private "CGRect"
+- "UIImage"
+- !private "CGImageRef"
+- !private "-"
+- "ImageUitilies"
+- !private "CGSize"
 depends-member:
 - !private ["PSs9AnyObject", "CGImage"]
 - !private ["PSs9AnyObject", "CGImageCreateWithImageInRect"]

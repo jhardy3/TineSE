@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C6TineSE19logInViewController", ""]
 provides-dynamic-lookup:
+- "usernameTextField"
 - "didReceiveMemoryWarning"
-- "viewDidAppear"
-- "emailTextField"
-- "viewDidLoad"
+- "signUpTapped"
 - "signInTapped"
 - "passwordTextField"
-- "usernameTextField"
-- "signUpTapped"
+- "emailTextField"
+- "viewDidLoad"
+- "viewDidAppear"
 depends-top-level:
-- "UITextField"
-- !private "!="
-- !private "Void"
+- "logInViewController"
+- !private "BooleanLiteralType"
 - "UIButton"
-- !private "StringLiteralType"
 - "UIViewController"
 - !private "UIColor"
-- "logInViewController"
 - !private "HunterController"
+- !private "!="
+- "UITextField"
+- !private "Void"
 - "Bool"
-- !private "BooleanLiteralType"
+- !private "StringLiteralType"
 depends-member:
 - !private ["PSs9AnyObject", "HunterController"]
 - !private ["PSs9AnyObject", "UIColor"]

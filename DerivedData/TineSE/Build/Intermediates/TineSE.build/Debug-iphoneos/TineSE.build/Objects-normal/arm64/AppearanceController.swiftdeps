@@ -8,10 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "UIToolbar"
-- !private "UIColor"
-- "AppearanceController"
 - !private "UINavigationBar"
+- "AppearanceController"
 - !private "UISegmentedControl"
+- !private "UIColor"
 - !private "UILabel"
 depends-member:
 - !private ["PSs9AnyObject", "UIColor"]

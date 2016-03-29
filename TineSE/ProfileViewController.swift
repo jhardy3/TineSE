@@ -112,13 +112,19 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         // Guard for hunter
         guard let hunter = self.hunter else { return }
         
-        // Check if hunter is following ; if is following unfollow and set title Vice versa otherwise
-        if isFollowing {
-            HunterController.hunterUntrackHunter(hunter)
-            followButton.setTitle("Track", forState: .Normal)
+        
+        if followButton.titleLabel?.text != "Log Out" {
+            // Check if hunter is following ; if is following unfollow and set title Vice versa otherwise
+            if isFollowing {
+                HunterController.hunterUntrackHunter(hunter)
+                followButton.setTitle("Track", forState: .Normal)
+            } else {
+                HunterController.hunterTrackHunter(hunter)
+                followButton.setTitle("Untrack", forState: .Normal)
+            }
         } else {
-            HunterController.hunterTrackHunter(hunter)
-            followButton.setTitle("Untrack", forState: .Normal)
+            navigationController?.dismissViewControllerAnimated(true, completion: nil)
+            HunterController.unauthHunter()
         }
         NSNotificationCenter.defaultCenter().postNotificationName("shedAdded", object: self)
     }
@@ -163,10 +169,9 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
                 
                 // If viewing own profile, sets follow button to hidden
                 if HunterController.sharedInstance.currentHunter?.identifier == hunterID {
-                    self.followButton.setTitle("Edit Hunter", forState: .Normal)
+                    self.followButton.setTitle("Log Out", forState: .Normal)
                     
                     // Temporarily hide
-                    self.followButton.hidden = true
                 }
             }
             

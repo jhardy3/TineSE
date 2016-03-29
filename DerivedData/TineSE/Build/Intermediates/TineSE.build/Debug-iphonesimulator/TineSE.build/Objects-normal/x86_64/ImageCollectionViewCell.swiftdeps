@@ -11,9 +11,9 @@ provides-dynamic-lookup:
 - "delegate"
 depends-top-level:
 - "UIImageView"
+- "UICollectionViewCell"
 - "Shed"
 - "ImageCollectionViewCell"
-- "UICollectionViewCell"
 - "ProfileViewController"
 depends-member:
 - !private ["PSs9AnyObject", "autoresizingMask"]

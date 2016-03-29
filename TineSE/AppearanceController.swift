@@ -17,7 +17,12 @@ class AppearanceController {
         UIToolbar.appearance().barTintColor = UIColor.hunterOrange()
         UISegmentedControl.appearance().tintColor = UIColor.whiteColor()
         UILabel.appearance().textColor = UIColor.hunterOrange()
-        
+        UINavigationBar.appearance().backgroundColor = UIColor.whiteColor()
+        UITabBar.appearance().barTintColor = UIColor.hunterOrange()
+        UITabBar.appearance().backgroundColor = UIColor.whiteColor()
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState: .Normal)
+         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState: .Selected)
     }
     
     

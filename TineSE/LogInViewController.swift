@@ -8,7 +8,7 @@
 
 import UIKit
 
-class logInViewController: UIViewController {
+class logInViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: - IBOutlets
     
@@ -84,5 +84,9 @@ class logInViewController: UIViewController {
             }
         }
         
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        textField.resignFirstResponder()
     }
 }

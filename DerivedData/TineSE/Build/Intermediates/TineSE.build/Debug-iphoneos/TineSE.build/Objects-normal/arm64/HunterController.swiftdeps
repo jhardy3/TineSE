@@ -7,25 +7,25 @@ provides-member:
 - ["C6TineSE16HunterController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Bool"
-- "String"
 - !private "dispatch_group_enter"
-- "HunterController"
-- !private "dispatch_group_leave"
-- !private "dispatch_get_main_queue"
-- !private "=="
-- !private "print"
-- !private "FirebaseController"
 - !private "..<"
-- "BooleanLiteralType"
+- "HunterController"
+- !private "dispatch_group_create"
+- !private "dispatch_get_main_queue"
+- "Bool"
 - "Hunter"
+- "Array"
+- !private "=="
+- "Void"
 - !private "Int"
 - !private ">"
-- !private "AnyObject"
-- "Void"
-- "Array"
 - !private "dispatch_group_notify"
-- !private "dispatch_group_create"
+- "BooleanLiteralType"
+- !private "AnyObject"
+- !private "print"
+- "String"
+- !private "dispatch_group_leave"
+- !private "FirebaseController"
 depends-member:
 - !private ["PSs9AnyObject", "FirebaseController"]
 - !private ["PSs9AnyObject", "Hunter"]

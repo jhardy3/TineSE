@@ -20,6 +20,8 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     var LocalSheds = [Shed]()
     var shedIDs = [String]()
     
+    // Crates a gettable bool which is dependent upon the
+    // segmented control
     var currentViewIsLocal: Bool {
         get {
             switch segmentedController.selectedSegmentIndex {
@@ -31,6 +33,8 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
+    // holds a locationManager that will be used to access 
+    // current user location
     var locationManager: CLLocationManager!
     
     // MARK: - IBOutlet Properties
@@ -44,6 +48,8 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // setup location manger and request current location
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
