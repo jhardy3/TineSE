@@ -13,6 +13,7 @@ class ShedTableViewCell: UITableViewCell {
     // MARK: - IBOutlets
     
     var delegate: TinelineViewController?
+    var shed: Shed?
     
     @IBOutlet weak var usernameTextField: UILabel!
     @IBOutlet weak var shedImageView: UIImageView!
@@ -40,7 +41,7 @@ class ShedTableViewCell: UITableViewCell {
     // Update View with passed in shed
     func updateWith(shed: Shed) {
         
-        //         self.contentView.backgroundColor = UIColor.desertSkyBlue()
+        self.shed = shed
         
         // If shed image exists, set shedImageView to image
         if shed.shedImage == nil {
@@ -54,16 +55,29 @@ class ShedTableViewCell: UITableViewCell {
         
         
         // Set usernameTextField text to passed in shed username
-        self.shedColorTextLabel.text = "SHED COLOR: \(shed.shedColor.uppercaseString)"
+        self.shedColorTextLabel.text = "Shed Color: \(shed.shedColor)"
         self.shedTypeTextLabel.text = "Shed Type: \(shed.shedType)"
         self.usernameTextField.text = shed.username
         
     }
     
     @IBAction func utilitiesButtonTapped(sender: UIButton) {
+        guard let shedID = shed?.identifier else { return }
+        let alertController = UIAlertController(title: "REPORT FOR:", message: "", preferredStyle: .ActionSheet)
+        let inappropriateAlert = UIAlertAction(title: "Inappropriate Content", style: .Default) { (alert) -> Void in
+            FirebaseController.firebase.childByAppendingPath("/inappropriateContent/\(shedID)").setValue(true)
+        }
+        let misleadingContentAlert = UIAlertAction(title: "False Information", style: .Default) { (alert) -> Void in
+            FirebaseController.firebase.childByAppendingPath("/mislabeled/\(shedID)").setValue(true)
+        }
+        let cancelAlert = UIAlertAction(title: "Cancel", style: .Destructive, handler: nil)
+        alertController.addAction(inappropriateAlert)
+        alertController.addAction(misleadingContentAlert)
+        alertController.addAction(cancelAlert)
         
+        delegate?.presentViewController(alertController, animated: true, completion: nil)
     }
-
+    
 }
 
 extension UIImageView {

@@ -7,16 +7,17 @@ provides-member:
 - ["C6TineSE18LocationController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "BooleanLiteralType"
 - "Bool"
 - "Void"
-- "GeoFire"
 - !private "print"
+- "BooleanLiteralType"
+- "GeoFire"
 - "LocationController"
-- "FirebaseController"
 - "CLLocation"
+- "FirebaseController"
 - "String"
 depends-member:
+- !private ["PSs9AnyObject", "CHECK_RADIUS_IN_METERS"]
 - ["PSs9AnyObject", "FirebaseController"]
 - ["PSs9AnyObject", "GeoFire"]
 - !private ["PSs9AnyObject", "String"]
@@ -127,6 +128,7 @@ depends-member:
 - !private ["PSs11IntegerType", "Distance"]
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
 - ["C6TineSE18LocationController", "Bool"]
+- !private ["C6TineSE18LocationController", "CHECK_RADIUS_IN_METERS"]
 - ["C6TineSE18LocationController", "CLLocation"]
 - ["C6TineSE18LocationController", "FirebaseController"]
 - ["C6TineSE18LocationController", "GeoFire"]
@@ -382,4 +384,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "a1c8c0d5a8ee9bb8186508d952f6c24e"
+interface-hash: "b52674259a7f6da559c8fac9b73417c6"

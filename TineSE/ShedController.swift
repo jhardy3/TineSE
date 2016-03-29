@@ -20,11 +20,6 @@ class ShedController {
         // guard for current hunter or complete false and return
         guard var currentHunter = HunterController.sharedInstance.currentHunter else { completion(success: false, shed: nil) ; return }
         
-        
-        
-
-        
-        
         // Upload the image to S3 and receive a specific url back if successful
         PhotoController.sharedInstance.uploadImageToS3(image) { (url) -> () in
             
@@ -41,6 +36,8 @@ class ShedController {
                 // Add Shed ID to currentHunters Shed IDs and save it
                 currentHunter.shedIDs.append(shedID)
                 
+                
+                // Switch on shed color and adjust current hunters shed count respectively ; save hunter once finished
                 switch shedColor {
                 case "Brown" :
                     currentHunter.brownCount++
@@ -51,8 +48,8 @@ class ShedController {
                 default :
                     return
                 }
-                currentHunter.shedCount++
                 
+                currentHunter.shedCount++
                 currentHunter.save()
                 
                 // Complete true
@@ -63,9 +60,6 @@ class ShedController {
                 completion(success: false, shed: nil)
             }
         }
-
-        
-        
     }
     
     // Delete post
@@ -76,8 +70,7 @@ class ShedController {
         
         // Create an index of removal to hold possible ID
         var indexOfRemoval: Int?
-        
-        
+    
         // For all of the shedIDs in the current hunters shedIDs array, if one of the IDs matches the ID passed in save the index
         for index in 0..<currentHunter.shedIDs.count {
             if currentHunter.shedIDs[index] == shedID {
@@ -94,11 +87,7 @@ class ShedController {
         shed.delete()
     }
     
-    // Modify post
-    
     // MARK: - Fetch posts
-    
-    // fetch posts in 50 mile radius (observe)
     
     // fetch post based on identifier
     static func fetchShed(identifier: String, completion:(shed: Shed?) -> Void) {
@@ -307,9 +296,5 @@ class ShedController {
     }
     
     // MARK: - Post specific alterations
-    
-    // Order posts based on time
-    
-    // Order comments based on time
     
 }

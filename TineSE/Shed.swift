@@ -73,6 +73,7 @@ class Shed: FirebaseType {
             self.messageIdentifiers = Array(messages.keys)
         }
         
+        // When a single shed is initialized, a network call is made and an image is fetched
         self.identifier = identifier
         PhotoController.fetchImageAtURL(imageIdentifier) { (image) -> Void in
             self.shedImage = image

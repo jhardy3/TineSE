@@ -30,6 +30,9 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     var image: UIImage?
     var locationManager: CLLocationManager!
     var postButtonTapped = false
+    var firedOnce = false
+    var shedColor: String?
+    var shedType: String?
     
     // MARK: - IBOutlet Properties
     
@@ -37,21 +40,32 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     @IBOutlet weak var shedImageView: UIImageView!
     @IBOutlet weak var shedColorPickerView: UIPickerView!
     @IBOutlet weak var shedTypePickerView: UIPickerView!
+    @IBOutlet weak var clearShedButton: UIButton!
     
     
     // MARK: - Class Functions
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if image == nil {
+             self.clearShedButton.setTitle("Camera", forState: .Normal)
+        }
+        
+    }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         // Checks for a current Image ; if not displays camera
-        if image == nil {
+        if image == nil && firedOnce == false {
             locationManager = CLLocationManager()
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.requestAlwaysAuthorization()
             locationManager.requestLocation()
             displayCamera()
+            firedOnce = true
         }
         shedMessageTextView.delegate = self
     }
@@ -68,14 +82,18 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     
     // MARK: - IBAction Functions
     
+    @IBAction func tapGestureTapped(sender: UITapGestureRecognizer) {
+        self.shedMessageTextView.resignFirstResponder()
+    }
+    
     // Posts a new shed
     @IBAction func postButtonTapped(sender: UIButton) {
         
         if !postButtonTapped {
             postButtonTapped = true
             // Guard for image and hunterID and create a new shed
-            if let image = image, hunterID = HunterController.sharedInstance.currentHunter?.identifier {
-                ShedController.createShed(image, hunterIdentifier: hunterID, shedMessage: self.shedMessageTextView.text, shedColor: "Brown", shedType: "Deer", completion: { (success, shed) -> Void in
+            if let image = image, hunterID = HunterController.sharedInstance.currentHunter?.identifier, shedType = self.shedType, shedColor = self.shedColor {
+                ShedController.createShed(image, hunterIdentifier: hunterID, shedMessage: self.shedMessageTextView.text, shedColor: shedColor, shedType: shedType, completion: { (success, shed) -> Void in
                     
                     // If shed creation is successful remove image and (eventually kick to timeline)
                     if success {
@@ -98,11 +116,22 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
                         })
                         
                         return
+                    } else {
+                        self.postButtonTapped = !self.postButtonTapped
                     }
                 })
+            } else {
+                self.postButtonTapped = !self.postButtonTapped
             }
         }
     }
+    
+    @IBAction func clearShedTapped(sender: UIButton) {
+        self.clearShedButton.setTitle("Clear Shed", forState: .Normal)
+        self.shedImageView.image = nil
+        displayCamera()
+    }
+    
     
     // MARK: - Camera Functions
     
@@ -119,6 +148,11 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
             self.presentViewController(imagePicker, animated: true, completion: nil)
         }
         
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        self.clearShedButton.setTitle("Camera", forState: .Normal)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     // Once picture is take function is called
@@ -167,6 +201,25 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
         } else {
             return 3
         }
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView === shedColorPickerView {
+            switch row {
+            case 0: self.shedColor = "Brown"
+            case 1: self.shedColor = "White"
+            case 2: self.shedColor = "Chalk"
+            default: self.shedColor = "Mystery Shed"
+            }
+        } else {
+            switch row {
+            case 0: self.shedType = "Deer"
+            case 1: self.shedType = "Elk"
+            case 2: self.shedType = "Moose"
+            default: self.shedType = "Mystery Shed"
+            }
+        }
+        
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {

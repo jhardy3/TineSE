@@ -37,9 +37,7 @@ class PhotoController {
                 completion(nil)
                 print("Error uploading picture to AWS: \(task.error)")
             } else {
-//                print("\(self.AWSUrl)/tine-bucket/\(fileName)")
                 completion("\(self.AWSUrl)/tine-bucket/\(fileName)")
-//                print("Upload successful")
             }
             return nil
         }

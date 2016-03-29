@@ -12,67 +12,78 @@ provides-member:
 - ["O6TineSE8ShedType", ""]
 - ["C6TineSE20CameraViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "postButtonTapped"
-- "postButtonTapped"
-- "numberOfComponentsInPickerView"
+- "displayCamera"
+- "imagePickerController"
 - "shedTypePickerView"
-- "pickerView"
-- "pickerView"
+- "shedMessageTextView"
+- "locationManager"
+- "locationManager"
+- "locationManager"
+- "numberOfComponentsInPickerView"
+- "shedType"
+- "shedImageView"
+- "image"
 - "textViewDidEndEditing"
-- "locationManager"
-- "locationManager"
-- "locationManager"
+- "clearShedTapped"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "shedColor"
+- "postButtonTapped"
+- "postButtonTapped"
+- "viewWillAppear"
+- "clearShedButton"
+- "viewDidLoad"
 - "textFieldShouldReturn"
 - "viewDidAppear"
-- "image"
-- "shedImageView"
-- "shedMessageTextView"
+- "imagePickerControllerDidCancel"
+- "firedOnce"
 - "shedColorPickerView"
-- "imagePickerController"
-- "displayCamera"
+- "tapGestureTapped"
 depends-top-level:
-- "UIImage"
+- "CLLocationManagerDelegate"
+- !private "StringLiteralType"
+- "UIButton"
+- "Int"
+- !private "print"
+- "AnyObject"
 - "UIImagePickerController"
+- !private "==="
+- !private "kCLLocationAccuracyBest"
+- !private "dispatch_async"
+- "CLLocation"
+- "CameraViewController"
+- "UITapGestureRecognizer"
+- !private "Void"
+- !private "NSNotificationCenter"
+- !private "dispatch_get_main_queue"
+- "AnimalType"
+- "=="
+- "Bool"
+- !private "LocationController"
+- !private "~="
 - !private "ShedController"
 - "ShedType"
-- !private "==="
-- "=="
-- "String"
-- !private "!"
-- !private "~="
-- "UINavigationControllerDelegate"
-- !private "StringLiteralType"
-- "CLLocationManager"
-- !private "LocationController"
-- "UIImagePickerControllerDelegate"
-- "UIButton"
-- "AnimalType"
-- "UITextView"
 - "UITextViewDelegate"
-- !private "NSNotificationCenter"
-- !private "HunterController"
-- !private "dispatch_async"
-- "AnyObject"
-- !private "dispatch_get_main_queue"
-- "UIImageView"
-- "UIPickerView"
-- "UITextField"
-- "CLLocationManagerDelegate"
-- "NSError"
-- !private "UIImagePickerControllerOriginalImage"
-- "CameraViewController"
-- "Int"
-- "UIPickerViewDataSource"
-- !private "Void"
+- !private "&&"
 - "UIViewController"
-- "CLLocation"
-- "UIPickerViewDelegate"
-- "Bool"
-- !private "ImageUitilies"
-- !private "kCLLocationAccuracyBest"
 - "BooleanLiteralType"
-- !private "print"
+- "UIImagePickerControllerDelegate"
+- "String"
+- !private "HunterController"
+- !private "UIImagePickerControllerOriginalImage"
+- "UIImageView"
+- "UITextView"
+- "UIImage"
+- "UINavigationControllerDelegate"
+- "UIPickerViewDataSource"
+- "UITextField"
+- "CLLocationManager"
+- !private "ImageUitilies"
+- "UIPickerViewDelegate"
+- "UIPickerView"
+- !private "!"
+- "NSError"
 depends-member:
 - ["O6TineSE10AnimalType", "Deer"]
 - ["O6TineSE10AnimalType", "Elk"]
@@ -87,6 +98,8 @@ depends-member:
 - !private ["PSs9AnyObject", "ShedController"]
 - !private ["PSs9AnyObject", "UIImagePickerController"]
 - !private ["PSs9AnyObject", "UIImagePickerControllerOriginalImage"]
+- ["PSs9AnyObject", "clearShedButton"]
+- ["PSs9AnyObject", "clearShedTapped"]
 - !private ["PSs9AnyObject", "createShed"]
 - !private ["PSs9AnyObject", "cropToSquare"]
 - !private ["PSs9AnyObject", "currentHunter"]
@@ -97,6 +110,7 @@ depends-member:
 - !private ["PSs9AnyObject", "dispatch_async"]
 - !private ["PSs9AnyObject", "dispatch_get_main_queue"]
 - ["PSs9AnyObject", "displayCamera"]
+- ["PSs9AnyObject", "firedOnce"]
 - !private ["PSs9AnyObject", "identifier"]
 - ["PSs9AnyObject", "image"]
 - ["PSs9AnyObject", "imagePickerController"]
@@ -135,13 +149,17 @@ depends-member:
 - ["PSs9AnyObject", "scrollViewWillEndDragging"]
 - !private ["PSs9AnyObject", "selectedIndex"]
 - !private ["PSs9AnyObject", "setLocation"]
+- !private ["PSs9AnyObject", "setTitle"]
 - !private ["PSs9AnyObject", "sharedInstance"]
+- ["PSs9AnyObject", "shedColor"]
 - ["PSs9AnyObject", "shedColorPickerView"]
 - ["PSs9AnyObject", "shedImageView"]
 - ["PSs9AnyObject", "shedMessageTextView"]
+- ["PSs9AnyObject", "shedType"]
 - ["PSs9AnyObject", "shedTypePickerView"]
 - !private ["PSs9AnyObject", "sourceType"]
 - !private ["PSs9AnyObject", "tabBarController"]
+- ["PSs9AnyObject", "tapGestureTapped"]
 - !private ["PSs9AnyObject", "text"]
 - ["PSs9AnyObject", "textFieldShouldReturn"]
 - ["PSs9AnyObject", "textView"]
@@ -154,7 +172,9 @@ depends-member:
 - ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
+- ["PSs9AnyObject", "viewWillAppear"]
 - ["PSs9AnyObject", ""]
+- !private ["PSs23ArrayLiteralConvertible", "Normal"]
 - !private ["PSs22BidirectionalIndexType", "Distance"]
 - !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["PSs22BidirectionalIndexType", "hashValue"]
@@ -178,10 +198,12 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "ShedController"]
 - !private ["PSo25CLLocationManagerDelegate", "UIImagePickerController"]
 - !private ["PSo25CLLocationManagerDelegate", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo25CLLocationManagerDelegate", "clearShedButton"]
 - !private ["PSo25CLLocationManagerDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_async"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo25CLLocationManagerDelegate", "displayCamera"]
+- !private ["PSo25CLLocationManagerDelegate", "firedOnce"]
 - !private ["PSo25CLLocationManagerDelegate", "image"]
 - ["PSo25CLLocationManagerDelegate", "imagePickerController"]
 - ["PSo25CLLocationManagerDelegate", "imagePickerControllerDidCancel"]
@@ -210,9 +232,11 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "scrollViewWillBeginDragging"]
 - ["PSo25CLLocationManagerDelegate", "scrollViewWillBeginZooming"]
 - ["PSo25CLLocationManagerDelegate", "scrollViewWillEndDragging"]
+- !private ["PSo25CLLocationManagerDelegate", "shedColor"]
 - !private ["PSo25CLLocationManagerDelegate", "shedColorPickerView"]
 - !private ["PSo25CLLocationManagerDelegate", "shedImageView"]
 - !private ["PSo25CLLocationManagerDelegate", "shedMessageTextView"]
+- !private ["PSo25CLLocationManagerDelegate", "shedType"]
 - !private ["PSo25CLLocationManagerDelegate", "shedTypePickerView"]
 - !private ["PSo25CLLocationManagerDelegate", "tabBarController"]
 - ["PSo25CLLocationManagerDelegate", "textView"]
@@ -234,6 +258,8 @@ depends-member:
 - !private ["PSs11CVarArgType", "ShedController"]
 - !private ["PSs11CVarArgType", "UIImagePickerController"]
 - !private ["PSs11CVarArgType", "UIImagePickerControllerOriginalImage"]
+- ["PSs11CVarArgType", "clearShedButton"]
+- ["PSs11CVarArgType", "clearShedTapped"]
 - !private ["PSs11CVarArgType", "cropToSquare"]
 - !private ["PSs11CVarArgType", "defaultCenter"]
 - !private ["PSs11CVarArgType", "delegate"]
@@ -242,6 +268,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "dispatch_async"]
 - !private ["PSs11CVarArgType", "dispatch_get_main_queue"]
 - ["PSs11CVarArgType", "displayCamera"]
+- ["PSs11CVarArgType", "firedOnce"]
 - !private ["PSs11CVarArgType", "hashValue"]
 - ["PSs11CVarArgType", "image"]
 - ["PSs11CVarArgType", "imagePickerController"]
@@ -279,12 +306,16 @@ depends-member:
 - ["PSs11CVarArgType", "scrollViewWillBeginZooming"]
 - ["PSs11CVarArgType", "scrollViewWillEndDragging"]
 - !private ["PSs11CVarArgType", "selectedIndex"]
+- !private ["PSs11CVarArgType", "setTitle"]
+- ["PSs11CVarArgType", "shedColor"]
 - ["PSs11CVarArgType", "shedColorPickerView"]
 - ["PSs11CVarArgType", "shedImageView"]
 - ["PSs11CVarArgType", "shedMessageTextView"]
+- ["PSs11CVarArgType", "shedType"]
 - ["PSs11CVarArgType", "shedTypePickerView"]
 - !private ["PSs11CVarArgType", "sourceType"]
 - !private ["PSs11CVarArgType", "tabBarController"]
+- ["PSs11CVarArgType", "tapGestureTapped"]
 - !private ["PSs11CVarArgType", "text"]
 - ["PSs11CVarArgType", "textFieldShouldReturn"]
 - ["PSs11CVarArgType", "textView"]
@@ -297,6 +328,7 @@ depends-member:
 - ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
+- ["PSs11CVarArgType", "viewWillAppear"]
 - ["PSs11CVarArgType", ""]
 - ["C6TineSE20CameraViewController", "AnyObject"]
 - ["C6TineSE20CameraViewController", "Bool"]
@@ -316,14 +348,18 @@ depends-member:
 - !private ["C6TineSE20CameraViewController", "UIImagePickerControllerOriginalImage"]
 - ["C6TineSE20CameraViewController", "UIImageView"]
 - ["C6TineSE20CameraViewController", "UIPickerView"]
+- ["C6TineSE20CameraViewController", "UITapGestureRecognizer"]
 - ["C6TineSE20CameraViewController", "UITextField"]
 - ["C6TineSE20CameraViewController", "UITextView"]
 - !private ["C6TineSE20CameraViewController", "Void"]
+- ["C6TineSE20CameraViewController", "clearShedButton"]
+- ["C6TineSE20CameraViewController", "clearShedTapped"]
 - ["C6TineSE20CameraViewController", "deinit"]
 - !private ["C6TineSE20CameraViewController", "dismissViewControllerAnimated"]
 - !private ["C6TineSE20CameraViewController", "dispatch_async"]
 - !private ["C6TineSE20CameraViewController", "dispatch_get_main_queue"]
 - ["C6TineSE20CameraViewController", "displayCamera"]
+- ["C6TineSE20CameraViewController", "firedOnce"]
 - ["C6TineSE20CameraViewController", "image"]
 - ["C6TineSE20CameraViewController", "imagePickerController"]
 - ["C6TineSE20CameraViewController", "imagePickerControllerDidCancel"]
@@ -353,11 +389,14 @@ depends-member:
 - ["C6TineSE20CameraViewController", "scrollViewWillBeginDragging"]
 - ["C6TineSE20CameraViewController", "scrollViewWillBeginZooming"]
 - ["C6TineSE20CameraViewController", "scrollViewWillEndDragging"]
+- ["C6TineSE20CameraViewController", "shedColor"]
 - ["C6TineSE20CameraViewController", "shedColorPickerView"]
 - ["C6TineSE20CameraViewController", "shedImageView"]
 - ["C6TineSE20CameraViewController", "shedMessageTextView"]
+- ["C6TineSE20CameraViewController", "shedType"]
 - ["C6TineSE20CameraViewController", "shedTypePickerView"]
 - !private ["C6TineSE20CameraViewController", "tabBarController"]
+- ["C6TineSE20CameraViewController", "tapGestureTapped"]
 - ["C6TineSE20CameraViewController", "textFieldShouldReturn"]
 - ["C6TineSE20CameraViewController", "textView"]
 - ["C6TineSE20CameraViewController", "textViewDidBeginEditing"]
@@ -369,6 +408,7 @@ depends-member:
 - ["C6TineSE20CameraViewController", "viewDidAppear"]
 - ["C6TineSE20CameraViewController", "viewDidLoad"]
 - ["C6TineSE20CameraViewController", "viewForZoomingInScrollView"]
+- ["C6TineSE20CameraViewController", "viewWillAppear"]
 - !private ["PSs14CollectionType", "Generator"]
 - !private ["PSs14CollectionType", "Index"]
 - !private ["PSs14CollectionType", "SubSequence"]
@@ -392,6 +432,8 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "UIImagePickerController"]
 - !private ["PSs23CustomStringConvertible", "UIImagePickerControllerOriginalImage"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "clearShedButton"]
+- ["PSs23CustomStringConvertible", "clearShedTapped"]
 - !private ["PSs23CustomStringConvertible", "cropToSquare"]
 - !private ["PSs23CustomStringConvertible", "defaultCenter"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
@@ -400,6 +442,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "dispatch_async"]
 - !private ["PSs23CustomStringConvertible", "dispatch_get_main_queue"]
 - ["PSs23CustomStringConvertible", "displayCamera"]
+- ["PSs23CustomStringConvertible", "firedOnce"]
 - !private ["PSs23CustomStringConvertible", "hashValue"]
 - ["PSs23CustomStringConvertible", "image"]
 - ["PSs23CustomStringConvertible", "imagePickerController"]
@@ -437,13 +480,17 @@ depends-member:
 - ["PSs23CustomStringConvertible", "scrollViewWillBeginZooming"]
 - ["PSs23CustomStringConvertible", "scrollViewWillEndDragging"]
 - !private ["PSs23CustomStringConvertible", "selectedIndex"]
+- !private ["PSs23CustomStringConvertible", "setTitle"]
+- ["PSs23CustomStringConvertible", "shedColor"]
 - ["PSs23CustomStringConvertible", "shedColorPickerView"]
 - ["PSs23CustomStringConvertible", "shedImageView"]
 - ["PSs23CustomStringConvertible", "shedMessageTextView"]
+- ["PSs23CustomStringConvertible", "shedType"]
 - ["PSs23CustomStringConvertible", "shedTypePickerView"]
 - !private ["PSs23CustomStringConvertible", "sourceType"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "tabBarController"]
+- ["PSs23CustomStringConvertible", "tapGestureTapped"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - ["PSs23CustomStringConvertible", "textFieldShouldReturn"]
 - ["PSs23CustomStringConvertible", "textView"]
@@ -456,6 +503,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
+- ["PSs23CustomStringConvertible", "viewWillAppear"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["VSs10Dictionary", "Index"]
 - !private ["VSs10Dictionary", "deinit"]
@@ -471,10 +519,13 @@ depends-member:
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "LocationController"]
 - !private ["PSs9Equatable", "NSNotificationCenter"]
+- !private ["PSs9Equatable", "Normal"]
 - !private ["PSs9Equatable", "ShedController"]
 - !private ["PSs9Equatable", "UIImagePickerController"]
 - !private ["PSs9Equatable", "UIImagePickerControllerOriginalImage"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "clearShedButton"]
+- ["PSs9Equatable", "clearShedTapped"]
 - !private ["PSs9Equatable", "cropToSquare"]
 - !private ["PSs9Equatable", "defaultCenter"]
 - !private ["PSs9Equatable", "delegate"]
@@ -483,6 +534,7 @@ depends-member:
 - !private ["PSs9Equatable", "dispatch_async"]
 - !private ["PSs9Equatable", "dispatch_get_main_queue"]
 - ["PSs9Equatable", "displayCamera"]
+- ["PSs9Equatable", "firedOnce"]
 - ["PSs9Equatable", "hashValue"]
 - ["PSs9Equatable", "image"]
 - ["PSs9Equatable", "imagePickerController"]
@@ -520,12 +572,16 @@ depends-member:
 - ["PSs9Equatable", "scrollViewWillBeginZooming"]
 - ["PSs9Equatable", "scrollViewWillEndDragging"]
 - !private ["PSs9Equatable", "selectedIndex"]
+- !private ["PSs9Equatable", "setTitle"]
+- ["PSs9Equatable", "shedColor"]
 - ["PSs9Equatable", "shedColorPickerView"]
 - ["PSs9Equatable", "shedImageView"]
 - ["PSs9Equatable", "shedMessageTextView"]
+- ["PSs9Equatable", "shedType"]
 - ["PSs9Equatable", "shedTypePickerView"]
 - !private ["PSs9Equatable", "sourceType"]
 - !private ["PSs9Equatable", "tabBarController"]
+- ["PSs9Equatable", "tapGestureTapped"]
 - !private ["PSs9Equatable", "text"]
 - ["PSs9Equatable", "textFieldShouldReturn"]
 - ["PSs9Equatable", "textView"]
@@ -538,6 +594,7 @@ depends-member:
 - ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
+- ["PSs9Equatable", "viewWillAppear"]
 - ["PSs9Equatable", ""]
 - !private ["P6TineSE12FirebaseType", "identifier"]
 - !private ["PSs16ForwardIndexType", "Distance"]
@@ -556,6 +613,8 @@ depends-member:
 - !private ["PSs8Hashable", "UIImagePickerController"]
 - !private ["PSs8Hashable", "UIImagePickerControllerOriginalImage"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "clearShedButton"]
+- ["PSs8Hashable", "clearShedTapped"]
 - !private ["PSs8Hashable", "cropToSquare"]
 - !private ["PSs8Hashable", "defaultCenter"]
 - !private ["PSs8Hashable", "delegate"]
@@ -564,6 +623,7 @@ depends-member:
 - !private ["PSs8Hashable", "dispatch_async"]
 - !private ["PSs8Hashable", "dispatch_get_main_queue"]
 - ["PSs8Hashable", "displayCamera"]
+- ["PSs8Hashable", "firedOnce"]
 - ["PSs8Hashable", "hashValue"]
 - ["PSs8Hashable", "image"]
 - ["PSs8Hashable", "imagePickerController"]
@@ -601,12 +661,16 @@ depends-member:
 - ["PSs8Hashable", "scrollViewWillBeginZooming"]
 - ["PSs8Hashable", "scrollViewWillEndDragging"]
 - !private ["PSs8Hashable", "selectedIndex"]
+- !private ["PSs8Hashable", "setTitle"]
+- ["PSs8Hashable", "shedColor"]
 - ["PSs8Hashable", "shedColorPickerView"]
 - ["PSs8Hashable", "shedImageView"]
 - ["PSs8Hashable", "shedMessageTextView"]
+- ["PSs8Hashable", "shedType"]
 - ["PSs8Hashable", "shedTypePickerView"]
 - !private ["PSs8Hashable", "sourceType"]
 - !private ["PSs8Hashable", "tabBarController"]
+- ["PSs8Hashable", "tapGestureTapped"]
 - !private ["PSs8Hashable", "text"]
 - ["PSs8Hashable", "textFieldShouldReturn"]
 - ["PSs8Hashable", "textView"]
@@ -619,6 +683,7 @@ depends-member:
 - ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
+- ["PSs8Hashable", "viewWillAppear"]
 - ["PSs8Hashable", ""]
 - !private ["C6TineSE6Hunter", "deinit"]
 - !private ["C6TineSE6Hunter", "identifier"]
@@ -657,11 +722,14 @@ depends-member:
 - !private ["PSo8NSCoding", "ShedController"]
 - !private ["PSo8NSCoding", "UIImagePickerController"]
 - !private ["PSo8NSCoding", "UIImagePickerControllerOriginalImage"]
+- ["PSo8NSCoding", "clearShedButton"]
+- ["PSo8NSCoding", "clearShedTapped"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
 - !private ["PSo8NSCoding", "dispatch_async"]
 - !private ["PSo8NSCoding", "dispatch_get_main_queue"]
 - ["PSo8NSCoding", "displayCamera"]
+- ["PSo8NSCoding", "firedOnce"]
 - ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "imagePickerController"]
 - ["PSo8NSCoding", "imagePickerControllerDidCancel"]
@@ -694,12 +762,16 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillBeginZooming"]
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - !private ["PSo8NSCoding", "selectedIndex"]
+- !private ["PSo8NSCoding", "setTitle"]
+- ["PSo8NSCoding", "shedColor"]
 - ["PSo8NSCoding", "shedColorPickerView"]
 - ["PSo8NSCoding", "shedImageView"]
 - ["PSo8NSCoding", "shedMessageTextView"]
+- ["PSo8NSCoding", "shedType"]
 - ["PSo8NSCoding", "shedTypePickerView"]
 - !private ["PSo8NSCoding", "sourceType"]
 - !private ["PSo8NSCoding", "tabBarController"]
+- ["PSo8NSCoding", "tapGestureTapped"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "textFieldShouldReturn"]
 - ["PSo8NSCoding", "textView"]
@@ -712,6 +784,7 @@ depends-member:
 - ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
+- ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo26NSExtensionRequestHandling", "CLLocationManager"]
 - !private ["PSo26NSExtensionRequestHandling", "HunterController"]
@@ -721,11 +794,14 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "ShedController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImagePickerController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImagePickerControllerOriginalImage"]
+- ["PSo26NSExtensionRequestHandling", "clearShedButton"]
+- ["PSo26NSExtensionRequestHandling", "clearShedTapped"]
 - !private ["PSo26NSExtensionRequestHandling", "delegate"]
 - !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
 - ["PSo26NSExtensionRequestHandling", "displayCamera"]
+- ["PSo26NSExtensionRequestHandling", "firedOnce"]
 - ["PSo26NSExtensionRequestHandling", "image"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerController"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerControllerDidCancel"]
@@ -757,12 +833,15 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "scrollViewWillBeginZooming"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewWillEndDragging"]
 - !private ["PSo26NSExtensionRequestHandling", "selectedIndex"]
+- ["PSo26NSExtensionRequestHandling", "shedColor"]
 - ["PSo26NSExtensionRequestHandling", "shedColorPickerView"]
 - ["PSo26NSExtensionRequestHandling", "shedImageView"]
 - ["PSo26NSExtensionRequestHandling", "shedMessageTextView"]
+- ["PSo26NSExtensionRequestHandling", "shedType"]
 - ["PSo26NSExtensionRequestHandling", "shedTypePickerView"]
 - !private ["PSo26NSExtensionRequestHandling", "sourceType"]
 - !private ["PSo26NSExtensionRequestHandling", "tabBarController"]
+- ["PSo26NSExtensionRequestHandling", "tapGestureTapped"]
 - ["PSo26NSExtensionRequestHandling", "textFieldShouldReturn"]
 - ["PSo26NSExtensionRequestHandling", "textView"]
 - ["PSo26NSExtensionRequestHandling", "textViewDidBeginEditing"]
@@ -774,6 +853,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
+- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo20NSNotificationCenter", "defaultCenter"]
 - !private ["CSo20NSNotificationCenter", "postNotificationName"]
@@ -796,9 +876,12 @@ depends-member:
 - !private ["CSo8NSObject", "UIImagePickerControllerOriginalImage"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UIPickerView"]
+- ["CSo8NSObject", "UITapGestureRecognizer"]
 - ["CSo8NSObject", "UITextField"]
 - ["CSo8NSObject", "UITextView"]
 - !private ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "clearShedButton"]
+- ["CSo8NSObject", "clearShedTapped"]
 - !private ["CSo8NSObject", "cropToSquare"]
 - !private ["CSo8NSObject", "defaultCenter"]
 - !private ["CSo8NSObject", "deinit"]
@@ -808,6 +891,7 @@ depends-member:
 - !private ["CSo8NSObject", "dispatch_async"]
 - !private ["CSo8NSObject", "dispatch_get_main_queue"]
 - ["CSo8NSObject", "displayCamera"]
+- ["CSo8NSObject", "firedOnce"]
 - ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imagePickerController"]
 - ["CSo8NSObject", "imagePickerControllerDidCancel"]
@@ -844,12 +928,16 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillBeginZooming"]
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - !private ["CSo8NSObject", "selectedIndex"]
+- !private ["CSo8NSObject", "setTitle"]
+- ["CSo8NSObject", "shedColor"]
 - ["CSo8NSObject", "shedColorPickerView"]
 - ["CSo8NSObject", "shedImageView"]
 - ["CSo8NSObject", "shedMessageTextView"]
+- ["CSo8NSObject", "shedType"]
 - ["CSo8NSObject", "shedTypePickerView"]
 - !private ["CSo8NSObject", "sourceType"]
 - !private ["CSo8NSObject", "tabBarController"]
+- ["CSo8NSObject", "tapGestureTapped"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "textFieldShouldReturn"]
 - ["CSo8NSObject", "textView"]
@@ -862,6 +950,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
+- ["CSo8NSObject", "viewWillAppear"]
 - !private ["PSo16NSObjectProtocol", "CLLocationManager"]
 - !private ["PSo16NSObjectProtocol", "HunterController"]
 - !private ["PSo16NSObjectProtocol", "ImageUitilies"]
@@ -870,6 +959,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "ShedController"]
 - !private ["PSo16NSObjectProtocol", "UIImagePickerController"]
 - !private ["PSo16NSObjectProtocol", "UIImagePickerControllerOriginalImage"]
+- ["PSo16NSObjectProtocol", "clearShedButton"]
+- ["PSo16NSObjectProtocol", "clearShedTapped"]
 - !private ["PSo16NSObjectProtocol", "cropToSquare"]
 - !private ["PSo16NSObjectProtocol", "defaultCenter"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
@@ -878,6 +969,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dispatch_async"]
 - !private ["PSo16NSObjectProtocol", "dispatch_get_main_queue"]
 - ["PSo16NSObjectProtocol", "displayCamera"]
+- ["PSo16NSObjectProtocol", "firedOnce"]
 - ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imagePickerController"]
 - ["PSo16NSObjectProtocol", "imagePickerControllerDidCancel"]
@@ -914,12 +1006,16 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillBeginZooming"]
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - !private ["PSo16NSObjectProtocol", "selectedIndex"]
+- !private ["PSo16NSObjectProtocol", "setTitle"]
+- ["PSo16NSObjectProtocol", "shedColor"]
 - ["PSo16NSObjectProtocol", "shedColorPickerView"]
 - ["PSo16NSObjectProtocol", "shedImageView"]
 - ["PSo16NSObjectProtocol", "shedMessageTextView"]
+- ["PSo16NSObjectProtocol", "shedType"]
 - ["PSo16NSObjectProtocol", "shedTypePickerView"]
 - !private ["PSo16NSObjectProtocol", "sourceType"]
 - !private ["PSo16NSObjectProtocol", "tabBarController"]
+- ["PSo16NSObjectProtocol", "tapGestureTapped"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "textFieldShouldReturn"]
 - ["PSo16NSObjectProtocol", "textView"]
@@ -932,9 +1028,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
+- ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["CSo7NSValue", "deinit"]
 - ["PSs21NilLiteralConvertible", "Some"]
+- !private ["PSs13OptionSetType", "Normal"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
@@ -942,12 +1040,14 @@ depends-member:
 - !private ["PSs21RandomAccessIndexType", "hashValue"]
 - !private ["VSs5Range", "deinit"]
 - !private ["PSs16RawRepresentable", "Camera"]
+- !private ["PSs16RawRepresentable", "Normal"]
 - !private ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
 - !private ["PSs12SequenceType", "Index"]
 - !private ["PSs12SequenceType", "SubSequence"]
 - !private ["PSs12SequenceType", "_Element"]
 - !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs14SetAlgebraType", "Normal"]
 - !private ["C6TineSE4Shed", "deinit"]
 - !private ["C6TineSE4Shed", "identifier"]
 - !private ["C6TineSE14ShedController", "createShed"]
@@ -972,10 +1072,12 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
+- !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
+- !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "CLLocationManager"]
 - !private ["PSo21UIAppearanceContainer", "HunterController"]
@@ -985,11 +1087,14 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "ShedController"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerController"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerControllerOriginalImage"]
+- ["PSo21UIAppearanceContainer", "clearShedButton"]
+- ["PSo21UIAppearanceContainer", "clearShedTapped"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_async"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_get_main_queue"]
 - ["PSo21UIAppearanceContainer", "displayCamera"]
+- ["PSo21UIAppearanceContainer", "firedOnce"]
 - ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "imagePickerController"]
 - ["PSo21UIAppearanceContainer", "imagePickerControllerDidCancel"]
@@ -1022,12 +1127,16 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillBeginZooming"]
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - !private ["PSo21UIAppearanceContainer", "selectedIndex"]
+- !private ["PSo21UIAppearanceContainer", "setTitle"]
+- ["PSo21UIAppearanceContainer", "shedColor"]
 - ["PSo21UIAppearanceContainer", "shedColorPickerView"]
 - ["PSo21UIAppearanceContainer", "shedImageView"]
 - ["PSo21UIAppearanceContainer", "shedMessageTextView"]
+- ["PSo21UIAppearanceContainer", "shedType"]
 - ["PSo21UIAppearanceContainer", "shedTypePickerView"]
 - !private ["PSo21UIAppearanceContainer", "sourceType"]
 - !private ["PSo21UIAppearanceContainer", "tabBarController"]
+- ["PSo21UIAppearanceContainer", "tapGestureTapped"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "textFieldShouldReturn"]
 - ["PSo21UIAppearanceContainer", "textView"]
@@ -1040,7 +1149,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
+- ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "setTitle"]
 - !private ["PSo18UIContentContainer", "CLLocationManager"]
 - !private ["PSo18UIContentContainer", "HunterController"]
 - !private ["PSo18UIContentContainer", "ImageUitilies"]
@@ -1049,11 +1160,14 @@ depends-member:
 - !private ["PSo18UIContentContainer", "ShedController"]
 - !private ["PSo18UIContentContainer", "UIImagePickerController"]
 - !private ["PSo18UIContentContainer", "UIImagePickerControllerOriginalImage"]
+- ["PSo18UIContentContainer", "clearShedButton"]
+- ["PSo18UIContentContainer", "clearShedTapped"]
 - !private ["PSo18UIContentContainer", "delegate"]
 - !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
 - !private ["PSo18UIContentContainer", "dispatch_async"]
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
 - ["PSo18UIContentContainer", "displayCamera"]
+- ["PSo18UIContentContainer", "firedOnce"]
 - ["PSo18UIContentContainer", "image"]
 - ["PSo18UIContentContainer", "imagePickerController"]
 - ["PSo18UIContentContainer", "imagePickerControllerDidCancel"]
@@ -1085,12 +1199,15 @@ depends-member:
 - ["PSo18UIContentContainer", "scrollViewWillBeginZooming"]
 - ["PSo18UIContentContainer", "scrollViewWillEndDragging"]
 - !private ["PSo18UIContentContainer", "selectedIndex"]
+- ["PSo18UIContentContainer", "shedColor"]
 - ["PSo18UIContentContainer", "shedColorPickerView"]
 - ["PSo18UIContentContainer", "shedImageView"]
 - ["PSo18UIContentContainer", "shedMessageTextView"]
+- ["PSo18UIContentContainer", "shedType"]
 - ["PSo18UIContentContainer", "shedTypePickerView"]
 - !private ["PSo18UIContentContainer", "sourceType"]
 - !private ["PSo18UIContentContainer", "tabBarController"]
+- ["PSo18UIContentContainer", "tapGestureTapped"]
 - ["PSo18UIContentContainer", "textFieldShouldReturn"]
 - ["PSo18UIContentContainer", "textView"]
 - ["PSo18UIContentContainer", "textViewDidBeginEditing"]
@@ -1102,15 +1219,20 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
+- ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "resignFirstResponder"]
+- !private ["CSo9UIControl", "setTitle"]
+- !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
+- !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
+- !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "CLLocationManager"]
 - !private ["PSo18UIFocusEnvironment", "HunterController"]
@@ -1120,11 +1242,14 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "ShedController"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerController"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerControllerOriginalImage"]
+- ["PSo18UIFocusEnvironment", "clearShedButton"]
+- ["PSo18UIFocusEnvironment", "clearShedTapped"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_async"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_get_main_queue"]
 - ["PSo18UIFocusEnvironment", "displayCamera"]
+- ["PSo18UIFocusEnvironment", "firedOnce"]
 - ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "imagePickerController"]
 - ["PSo18UIFocusEnvironment", "imagePickerControllerDidCancel"]
@@ -1157,12 +1282,16 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillBeginZooming"]
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - !private ["PSo18UIFocusEnvironment", "selectedIndex"]
+- !private ["PSo18UIFocusEnvironment", "setTitle"]
+- ["PSo18UIFocusEnvironment", "shedColor"]
 - ["PSo18UIFocusEnvironment", "shedColorPickerView"]
 - ["PSo18UIFocusEnvironment", "shedImageView"]
 - ["PSo18UIFocusEnvironment", "shedMessageTextView"]
+- ["PSo18UIFocusEnvironment", "shedType"]
 - ["PSo18UIFocusEnvironment", "shedTypePickerView"]
 - !private ["PSo18UIFocusEnvironment", "sourceType"]
 - !private ["PSo18UIFocusEnvironment", "tabBarController"]
+- ["PSo18UIFocusEnvironment", "tapGestureTapped"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "textFieldShouldReturn"]
 - ["PSo18UIFocusEnvironment", "textView"]
@@ -1175,6 +1304,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
+- ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo23UIImagePickerController", "delegate"]
 - !private ["CSo23UIImagePickerController", "init"]
@@ -1188,10 +1318,12 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "ShedController"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImagePickerController"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo31UIImagePickerControllerDelegate", "clearShedButton"]
 - !private ["PSo31UIImagePickerControllerDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo31UIImagePickerControllerDelegate", "dispatch_async"]
 - !private ["PSo31UIImagePickerControllerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo31UIImagePickerControllerDelegate", "displayCamera"]
+- !private ["PSo31UIImagePickerControllerDelegate", "firedOnce"]
 - !private ["PSo31UIImagePickerControllerDelegate", "image"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerController"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerControllerDidCancel"]
@@ -1220,9 +1352,11 @@ depends-member:
 - ["PSo31UIImagePickerControllerDelegate", "scrollViewWillBeginDragging"]
 - ["PSo31UIImagePickerControllerDelegate", "scrollViewWillBeginZooming"]
 - ["PSo31UIImagePickerControllerDelegate", "scrollViewWillEndDragging"]
+- !private ["PSo31UIImagePickerControllerDelegate", "shedColor"]
 - !private ["PSo31UIImagePickerControllerDelegate", "shedColorPickerView"]
 - !private ["PSo31UIImagePickerControllerDelegate", "shedImageView"]
 - !private ["PSo31UIImagePickerControllerDelegate", "shedMessageTextView"]
+- !private ["PSo31UIImagePickerControllerDelegate", "shedType"]
 - !private ["PSo31UIImagePickerControllerDelegate", "shedTypePickerView"]
 - !private ["PSo31UIImagePickerControllerDelegate", "tabBarController"]
 - ["PSo31UIImagePickerControllerDelegate", "textView"]
@@ -1251,10 +1385,12 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "ShedController"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImagePickerController"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo30UINavigationControllerDelegate", "clearShedButton"]
 - !private ["PSo30UINavigationControllerDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo30UINavigationControllerDelegate", "dispatch_async"]
 - !private ["PSo30UINavigationControllerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo30UINavigationControllerDelegate", "displayCamera"]
+- !private ["PSo30UINavigationControllerDelegate", "firedOnce"]
 - !private ["PSo30UINavigationControllerDelegate", "image"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerController"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerControllerDidCancel"]
@@ -1283,9 +1419,11 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "scrollViewWillBeginDragging"]
 - ["PSo30UINavigationControllerDelegate", "scrollViewWillBeginZooming"]
 - ["PSo30UINavigationControllerDelegate", "scrollViewWillEndDragging"]
+- !private ["PSo30UINavigationControllerDelegate", "shedColor"]
 - !private ["PSo30UINavigationControllerDelegate", "shedColorPickerView"]
 - !private ["PSo30UINavigationControllerDelegate", "shedImageView"]
 - !private ["PSo30UINavigationControllerDelegate", "shedMessageTextView"]
+- !private ["PSo30UINavigationControllerDelegate", "shedType"]
 - !private ["PSo30UINavigationControllerDelegate", "shedTypePickerView"]
 - !private ["PSo30UINavigationControllerDelegate", "tabBarController"]
 - ["PSo30UINavigationControllerDelegate", "textView"]
@@ -1306,10 +1444,12 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "ShedController"]
 - !private ["PSo22UIPickerViewDataSource", "UIImagePickerController"]
 - !private ["PSo22UIPickerViewDataSource", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo22UIPickerViewDataSource", "clearShedButton"]
 - !private ["PSo22UIPickerViewDataSource", "dismissViewControllerAnimated"]
 - !private ["PSo22UIPickerViewDataSource", "dispatch_async"]
 - !private ["PSo22UIPickerViewDataSource", "dispatch_get_main_queue"]
 - !private ["PSo22UIPickerViewDataSource", "displayCamera"]
+- !private ["PSo22UIPickerViewDataSource", "firedOnce"]
 - !private ["PSo22UIPickerViewDataSource", "image"]
 - ["PSo22UIPickerViewDataSource", "imagePickerController"]
 - ["PSo22UIPickerViewDataSource", "imagePickerControllerDidCancel"]
@@ -1338,9 +1478,11 @@ depends-member:
 - ["PSo22UIPickerViewDataSource", "scrollViewWillBeginDragging"]
 - ["PSo22UIPickerViewDataSource", "scrollViewWillBeginZooming"]
 - ["PSo22UIPickerViewDataSource", "scrollViewWillEndDragging"]
+- !private ["PSo22UIPickerViewDataSource", "shedColor"]
 - !private ["PSo22UIPickerViewDataSource", "shedColorPickerView"]
 - !private ["PSo22UIPickerViewDataSource", "shedImageView"]
 - !private ["PSo22UIPickerViewDataSource", "shedMessageTextView"]
+- !private ["PSo22UIPickerViewDataSource", "shedType"]
 - !private ["PSo22UIPickerViewDataSource", "shedTypePickerView"]
 - !private ["PSo22UIPickerViewDataSource", "tabBarController"]
 - ["PSo22UIPickerViewDataSource", "textView"]
@@ -1360,10 +1502,12 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "ShedController"]
 - !private ["PSo20UIPickerViewDelegate", "UIImagePickerController"]
 - !private ["PSo20UIPickerViewDelegate", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo20UIPickerViewDelegate", "clearShedButton"]
 - !private ["PSo20UIPickerViewDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo20UIPickerViewDelegate", "dispatch_async"]
 - !private ["PSo20UIPickerViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo20UIPickerViewDelegate", "displayCamera"]
+- !private ["PSo20UIPickerViewDelegate", "firedOnce"]
 - !private ["PSo20UIPickerViewDelegate", "image"]
 - ["PSo20UIPickerViewDelegate", "imagePickerController"]
 - ["PSo20UIPickerViewDelegate", "imagePickerControllerDidCancel"]
@@ -1392,9 +1536,11 @@ depends-member:
 - ["PSo20UIPickerViewDelegate", "scrollViewWillBeginDragging"]
 - ["PSo20UIPickerViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo20UIPickerViewDelegate", "scrollViewWillEndDragging"]
+- !private ["PSo20UIPickerViewDelegate", "shedColor"]
 - !private ["PSo20UIPickerViewDelegate", "shedColorPickerView"]
 - !private ["PSo20UIPickerViewDelegate", "shedImageView"]
 - !private ["PSo20UIPickerViewDelegate", "shedMessageTextView"]
+- !private ["PSo20UIPickerViewDelegate", "shedType"]
 - !private ["PSo20UIPickerViewDelegate", "shedTypePickerView"]
 - !private ["PSo20UIPickerViewDelegate", "tabBarController"]
 - ["PSo20UIPickerViewDelegate", "textView"]
@@ -1424,14 +1570,18 @@ depends-member:
 - !private ["CSo11UIResponder", "UIImagePickerControllerOriginalImage"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UIPickerView"]
+- ["CSo11UIResponder", "UITapGestureRecognizer"]
 - ["CSo11UIResponder", "UITextField"]
 - ["CSo11UIResponder", "UITextView"]
 - !private ["CSo11UIResponder", "Void"]
+- ["CSo11UIResponder", "clearShedButton"]
+- ["CSo11UIResponder", "clearShedTapped"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
 - !private ["CSo11UIResponder", "dispatch_async"]
 - !private ["CSo11UIResponder", "dispatch_get_main_queue"]
 - ["CSo11UIResponder", "displayCamera"]
+- ["CSo11UIResponder", "firedOnce"]
 - ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "imagePickerController"]
 - ["CSo11UIResponder", "imagePickerControllerDidCancel"]
@@ -1464,12 +1614,16 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillBeginZooming"]
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - !private ["CSo11UIResponder", "selectedIndex"]
+- !private ["CSo11UIResponder", "setTitle"]
+- ["CSo11UIResponder", "shedColor"]
 - ["CSo11UIResponder", "shedColorPickerView"]
 - ["CSo11UIResponder", "shedImageView"]
 - ["CSo11UIResponder", "shedMessageTextView"]
+- ["CSo11UIResponder", "shedType"]
 - ["CSo11UIResponder", "shedTypePickerView"]
 - !private ["CSo11UIResponder", "sourceType"]
 - !private ["CSo11UIResponder", "tabBarController"]
+- ["CSo11UIResponder", "tapGestureTapped"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "textFieldShouldReturn"]
 - ["CSo11UIResponder", "textView"]
@@ -1482,6 +1636,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
+- ["CSo11UIResponder", "viewWillAppear"]
 - !private ["CSo12UIScrollView", "delegate"]
 - !private ["CSo12UIScrollView", "resignFirstResponder"]
 - !private ["CSo12UIScrollView", "text"]
@@ -1493,10 +1648,12 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "ShedController"]
 - !private ["PSo20UIScrollViewDelegate", "UIImagePickerController"]
 - !private ["PSo20UIScrollViewDelegate", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo20UIScrollViewDelegate", "clearShedButton"]
 - !private ["PSo20UIScrollViewDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_async"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo20UIScrollViewDelegate", "displayCamera"]
+- !private ["PSo20UIScrollViewDelegate", "firedOnce"]
 - !private ["PSo20UIScrollViewDelegate", "image"]
 - ["PSo20UIScrollViewDelegate", "imagePickerController"]
 - ["PSo20UIScrollViewDelegate", "imagePickerControllerDidCancel"]
@@ -1525,9 +1682,11 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "scrollViewWillBeginDragging"]
 - ["PSo20UIScrollViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
+- !private ["PSo20UIScrollViewDelegate", "shedColor"]
 - !private ["PSo20UIScrollViewDelegate", "shedColorPickerView"]
 - !private ["PSo20UIScrollViewDelegate", "shedImageView"]
 - !private ["PSo20UIScrollViewDelegate", "shedMessageTextView"]
+- !private ["PSo20UIScrollViewDelegate", "shedType"]
 - !private ["PSo20UIScrollViewDelegate", "shedTypePickerView"]
 - !private ["PSo20UIScrollViewDelegate", "tabBarController"]
 - ["PSo20UIScrollViewDelegate", "textView"]
@@ -1547,11 +1706,14 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "ShedController"]
 - !private ["PSo16UIStateRestoring", "UIImagePickerController"]
 - !private ["PSo16UIStateRestoring", "UIImagePickerControllerOriginalImage"]
+- ["PSo16UIStateRestoring", "clearShedButton"]
+- ["PSo16UIStateRestoring", "clearShedTapped"]
 - !private ["PSo16UIStateRestoring", "delegate"]
 - !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
 - !private ["PSo16UIStateRestoring", "dispatch_async"]
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
 - ["PSo16UIStateRestoring", "displayCamera"]
+- ["PSo16UIStateRestoring", "firedOnce"]
 - ["PSo16UIStateRestoring", "image"]
 - ["PSo16UIStateRestoring", "imagePickerController"]
 - ["PSo16UIStateRestoring", "imagePickerControllerDidCancel"]
@@ -1583,12 +1745,15 @@ depends-member:
 - ["PSo16UIStateRestoring", "scrollViewWillBeginZooming"]
 - ["PSo16UIStateRestoring", "scrollViewWillEndDragging"]
 - !private ["PSo16UIStateRestoring", "selectedIndex"]
+- ["PSo16UIStateRestoring", "shedColor"]
 - ["PSo16UIStateRestoring", "shedColorPickerView"]
 - ["PSo16UIStateRestoring", "shedImageView"]
 - ["PSo16UIStateRestoring", "shedMessageTextView"]
+- ["PSo16UIStateRestoring", "shedType"]
 - ["PSo16UIStateRestoring", "shedTypePickerView"]
 - !private ["PSo16UIStateRestoring", "sourceType"]
 - !private ["PSo16UIStateRestoring", "tabBarController"]
+- ["PSo16UIStateRestoring", "tapGestureTapped"]
 - ["PSo16UIStateRestoring", "textFieldShouldReturn"]
 - ["PSo16UIStateRestoring", "textView"]
 - ["PSo16UIStateRestoring", "textViewDidBeginEditing"]
@@ -1600,6 +1765,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
+- ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo18UITabBarController", "selectedIndex"]
 - !private ["PSo16UITabBarDelegate", "selectedIndex"]
@@ -1622,10 +1788,12 @@ depends-member:
 - !private ["PSo18UITextViewDelegate", "ShedController"]
 - !private ["PSo18UITextViewDelegate", "UIImagePickerController"]
 - !private ["PSo18UITextViewDelegate", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo18UITextViewDelegate", "clearShedButton"]
 - !private ["PSo18UITextViewDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo18UITextViewDelegate", "dispatch_async"]
 - !private ["PSo18UITextViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo18UITextViewDelegate", "displayCamera"]
+- !private ["PSo18UITextViewDelegate", "firedOnce"]
 - !private ["PSo18UITextViewDelegate", "image"]
 - ["PSo18UITextViewDelegate", "imagePickerController"]
 - ["PSo18UITextViewDelegate", "imagePickerControllerDidCancel"]
@@ -1654,9 +1822,11 @@ depends-member:
 - ["PSo18UITextViewDelegate", "scrollViewWillBeginDragging"]
 - ["PSo18UITextViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo18UITextViewDelegate", "scrollViewWillEndDragging"]
+- !private ["PSo18UITextViewDelegate", "shedColor"]
 - !private ["PSo18UITextViewDelegate", "shedColorPickerView"]
 - !private ["PSo18UITextViewDelegate", "shedImageView"]
 - !private ["PSo18UITextViewDelegate", "shedMessageTextView"]
+- !private ["PSo18UITextViewDelegate", "shedType"]
 - !private ["PSo18UITextViewDelegate", "shedTypePickerView"]
 - !private ["PSo18UITextViewDelegate", "tabBarController"]
 - ["PSo18UITextViewDelegate", "textView"]
@@ -1676,11 +1846,14 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "ShedController"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerController"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerControllerOriginalImage"]
+- ["PSo18UITraitEnvironment", "clearShedButton"]
+- ["PSo18UITraitEnvironment", "clearShedTapped"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
 - !private ["PSo18UITraitEnvironment", "dispatch_async"]
 - !private ["PSo18UITraitEnvironment", "dispatch_get_main_queue"]
 - ["PSo18UITraitEnvironment", "displayCamera"]
+- ["PSo18UITraitEnvironment", "firedOnce"]
 - ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "imagePickerController"]
 - ["PSo18UITraitEnvironment", "imagePickerControllerDidCancel"]
@@ -1713,12 +1886,16 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillBeginZooming"]
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - !private ["PSo18UITraitEnvironment", "selectedIndex"]
+- !private ["PSo18UITraitEnvironment", "setTitle"]
+- ["PSo18UITraitEnvironment", "shedColor"]
 - ["PSo18UITraitEnvironment", "shedColorPickerView"]
 - ["PSo18UITraitEnvironment", "shedImageView"]
 - ["PSo18UITraitEnvironment", "shedMessageTextView"]
+- ["PSo18UITraitEnvironment", "shedType"]
 - ["PSo18UITraitEnvironment", "shedTypePickerView"]
 - !private ["PSo18UITraitEnvironment", "sourceType"]
 - !private ["PSo18UITraitEnvironment", "tabBarController"]
+- ["PSo18UITraitEnvironment", "tapGestureTapped"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "textFieldShouldReturn"]
 - ["PSo18UITraitEnvironment", "textView"]
@@ -1731,10 +1908,12 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
+- ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "resignFirstResponder"]
+- !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
@@ -1754,14 +1933,18 @@ depends-member:
 - !private ["CSo16UIViewController", "UIImagePickerControllerOriginalImage"]
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UIPickerView"]
+- ["CSo16UIViewController", "UITapGestureRecognizer"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "UITextView"]
 - !private ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "clearShedButton"]
+- ["CSo16UIViewController", "clearShedTapped"]
 - !private ["CSo16UIViewController", "delegate"]
 - !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
 - !private ["CSo16UIViewController", "dispatch_async"]
 - !private ["CSo16UIViewController", "dispatch_get_main_queue"]
 - ["CSo16UIViewController", "displayCamera"]
+- ["CSo16UIViewController", "firedOnce"]
 - ["CSo16UIViewController", "image"]
 - ["CSo16UIViewController", "imagePickerController"]
 - ["CSo16UIViewController", "imagePickerControllerDidCancel"]
@@ -1793,12 +1976,15 @@ depends-member:
 - ["CSo16UIViewController", "scrollViewWillBeginZooming"]
 - ["CSo16UIViewController", "scrollViewWillEndDragging"]
 - !private ["CSo16UIViewController", "selectedIndex"]
+- ["CSo16UIViewController", "shedColor"]
 - ["CSo16UIViewController", "shedColorPickerView"]
 - ["CSo16UIViewController", "shedImageView"]
 - ["CSo16UIViewController", "shedMessageTextView"]
+- ["CSo16UIViewController", "shedType"]
 - ["CSo16UIViewController", "shedTypePickerView"]
 - !private ["CSo16UIViewController", "sourceType"]
 - !private ["CSo16UIViewController", "tabBarController"]
+- ["CSo16UIViewController", "tapGestureTapped"]
 - ["CSo16UIViewController", "textFieldShouldReturn"]
 - ["CSo16UIViewController", "textView"]
 - ["CSo16UIViewController", "textViewDidBeginEditing"]
@@ -1810,6 +1996,7 @@ depends-member:
 - ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
+- ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", ""]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
@@ -1843,6 +2030,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "hashValue"]
 - !private ["PSs12_Reflectable", "image"]
 - !private ["PSs12_Reflectable", "resignFirstResponder"]
+- !private ["PSs12_Reflectable", "setTitle"]
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "text"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
@@ -1854,6 +2042,7 @@ depends-member:
 depends-nominal:
 - "O6TineSE10AnimalType"
 - "PSs9AnyObject"
+- !private "PSs23ArrayLiteralConvertible"
 - !private "PSs22BidirectionalIndexType"
 - !private "PSs21BitwiseOperationsType"
 - !private "Sb"
@@ -1895,11 +2084,13 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "CSo7NSValue"
 - "PSs21NilLiteralConvertible"
+- !private "PSs13OptionSetType"
 - "Sq"
 - !private "PSs21RandomAccessIndexType"
 - !private "VSs5Range"
 - !private "PSs16RawRepresentable"
 - !private "PSs12SequenceType"
+- !private "PSs14SetAlgebraType"
 - !private "C6TineSE4Shed"
 - !private "C6TineSE14ShedController"
 - "O6TineSE8ShedType"
@@ -1910,8 +2101,10 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
+- !private "VSC14UIControlState"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
@@ -2042,4 +2235,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "8a56e17489a7ce450f2375d3f3c143e5"
+interface-hash: "88876c6f60a91812115a110b1481bec5"

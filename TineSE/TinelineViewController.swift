@@ -68,12 +68,7 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
                 }
             })
         }
-        
-        
-        
-        
-        
-        
+
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "newShedsAddedRefresh", name: "shedAdded", object: nil)
         
         // Fetch all sheds for initial tineline preview ( eventually this will be dependent upon segmented control && refined )
@@ -108,7 +103,6 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
         
     }
     
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if currentViewIsLocal {
@@ -129,8 +123,6 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
         ShedController.fetchShedsForTineline { (shedsReturned) -> Void in
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 self.sheds = shedsReturned.sort { $0.0.identifier > $0.1.identifier }
-                
-                
                 
                 dispatch_group_leave(group)
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
@@ -160,18 +152,12 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
                 
                 
                 dispatch_group_leave(group)
-                // If image problems begin occuring
-                //                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                //                    self.tableView.reloadData()
-                //                })
             })
         }
         
         dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
             self.tableView.reloadData()
         }
-        
-        
     }
     
     
@@ -205,8 +191,14 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
                     guard let indexPath = tableView.indexPathForCell(cell)  else { return }
                     
                     // grab identifier from sheds at indexpath and update destinationView with identifier
-                    let identifier = self.sheds[indexPath.row].hunterIdentifier
-                    destinationView?.updateWithIdentifier(identifier)
+                    if !currentViewIsLocal {
+                        let identifier = self.sheds[indexPath.row].hunterIdentifier
+                        destinationView?.updateWithIdentifier(identifier)
+                    } else {
+                        let identifier = self.LocalSheds[indexPath.row].hunterIdentifier
+                        destinationView?.updateWithIdentifier(identifier)
+                    }
+                    
             }
         }
     }

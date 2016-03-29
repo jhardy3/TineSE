@@ -76,6 +76,9 @@ class Hunter: FirebaseType {
         self.chalkCount = json[chalkCountKey] as? Int ?? 0
         self.profileImageIdentifier = json[profileImageKey] as? String ?? "No Profile Image"
         
+        
+        // Asynchronously fetches the image for profile image
+        
         if let sheds = json[shedIDsKey] as? [String : AnyObject] {
             self.shedIDs = Array(sheds.keys)
         }

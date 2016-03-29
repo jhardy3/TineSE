@@ -21,6 +21,10 @@ class logInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        usernameTextField.hidden = true
+        emailTextField.hidden = true
+        passwordTextField.hidden = true
+        
         self.view.backgroundColor = UIColor.desertSkyBlue()
         
         // Do any additional setup after loading the view.
@@ -45,6 +49,10 @@ class logInViewController: UIViewController {
     // Signs a user up
     @IBAction func signUpTapped(sender: UIButton) {
         
+        emailTextField.hidden = false
+        passwordTextField.hidden = false
+        usernameTextField.hidden = false
+        
         // Guard for username, email and password or return
         guard let username = usernameTextField.text, let email = emailTextField.text, let password = passwordTextField.text else { return }
         
@@ -60,6 +68,9 @@ class logInViewController: UIViewController {
 
     // Signs a user in
     @IBAction func signInTapped(sender: UIButton) {
+        
+        emailTextField.hidden = false
+        passwordTextField.hidden = false
         
         // Guard for email and password or return
         guard let email = emailTextField.text, let password = passwordTextField.text else { return }

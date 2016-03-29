@@ -116,6 +116,7 @@ SWIFT_CLASS("_TtC6TineSE11AppDelegate")
 
 @class UIImage;
 @class CLLocationManager;
+@class UITapGestureRecognizer;
 @class UIButton;
 @class UIImagePickerController;
 @class UITextField;
@@ -132,14 +133,22 @@ SWIFT_CLASS("_TtC6TineSE20CameraViewController")
 @property (nonatomic, strong) UIImage * __nullable image;
 @property (nonatomic, strong) CLLocationManager * __null_unspecified locationManager;
 @property (nonatomic) BOOL postButtonTapped;
+@property (nonatomic) BOOL firedOnce;
+@property (nonatomic, copy) NSString * __nullable shedColor;
+@property (nonatomic, copy) NSString * __nullable shedType;
 @property (nonatomic, weak) IBOutlet UITextView * __null_unspecified shedMessageTextView;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified shedImageView;
 @property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified shedColorPickerView;
 @property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified shedTypePickerView;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified clearShedButton;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
+- (IBAction)tapGestureTapped:(UITapGestureRecognizer * __nonnull)sender;
 - (IBAction)postButtonTapped:(UIButton * __nonnull)sender;
+- (IBAction)clearShedTapped:(UIButton * __nonnull)sender;
 - (void)displayCamera;
+- (void)imagePickerControllerDidCancel:(UIImagePickerController * __nonnull)picker;
 - (void)imagePickerController:(UIImagePickerController * __nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * __nonnull)info;
 - (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
 - (void)textViewDidEndEditing:(UITextView * __nonnull)textView;
@@ -147,6 +156,7 @@ SWIFT_CLASS("_TtC6TineSE20CameraViewController")
 - (void)locationManager:(CLLocationManager * __nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * __nonnull)locations;
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
 - (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

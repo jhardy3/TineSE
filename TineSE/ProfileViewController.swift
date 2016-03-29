@@ -120,6 +120,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             HunterController.hunterTrackHunter(hunter)
             followButton.setTitle("Untrack", forState: .Normal)
         }
+        NSNotificationCenter.defaultCenter().postNotificationName("shedAdded", object: self)
     }
     
     
@@ -163,6 +164,9 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
                 // If viewing own profile, sets follow button to hidden
                 if HunterController.sharedInstance.currentHunter?.identifier == hunterID {
                     self.followButton.setTitle("Edit Hunter", forState: .Normal)
+                    
+                    // Temporarily hide
+                    self.followButton.hidden = true
                 }
             }
             
@@ -192,6 +196,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             
             // Once async calls finish reload data
             dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
+                self.sheds.sortInPlace { $0.0.identifier > $0.1.identifier }
                 self.collectionView.reloadData()
             }
         }

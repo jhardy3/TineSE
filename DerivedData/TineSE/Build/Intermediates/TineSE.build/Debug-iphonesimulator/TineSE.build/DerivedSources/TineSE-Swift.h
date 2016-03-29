@@ -173,15 +173,19 @@ SWIFT_CLASS("_TtC6TineSE13ImageUitilies")
 @class UITableView;
 @class NSIndexPath;
 @class UITableViewCell;
+@class UISegmentedControl;
 
 SWIFT_CLASS("_TtC6TineSE25LeaderboardViewController")
 @interface LeaderboardViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified segmentedControl;
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
+@property (nonatomic) BOOL isTracking;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (IBAction)segmentedControlChanged:(UISegmentedControl * __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -207,6 +211,7 @@ SWIFT_CLASS("_TtC6TineSE21ProfileViewController")
 @property (nonatomic) BOOL viewLoaded;
 @property (nonatomic, readonly) BOOL isFollowing;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (UICollectionViewCell * __nonnull)collectionView:(UICollectionView * __nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
@@ -237,7 +242,6 @@ SWIFT_CLASS("_TtC6TineSE32SearchResultsTableViewController")
 @end
 
 @class UISearchController;
-@class UISegmentedControl;
 @class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC6TineSE25SearchTableViewController")

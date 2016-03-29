@@ -8,16 +8,16 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AnyObject"
-- "Shed"
-- "FirebaseType"
 - !private "Array"
-- !private "PhotoController"
-- !private "Dictionary"
 - "String"
-- !private "Void"
-- !private "??"
+- !private "Dictionary"
 - "UIImage"
+- "FirebaseType"
 - "StringLiteralType"
+- "Shed"
+- !private "??"
+- !private "PhotoController"
+- !private "Void"
 depends-member:
 - !private ["PSs9AnyObject", "Array"]
 - !private ["PSs9AnyObject", "PhotoController"]
