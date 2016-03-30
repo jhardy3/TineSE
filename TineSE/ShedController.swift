@@ -40,11 +40,11 @@ class ShedController {
                 // Switch on shed color and adjust current hunters shed count respectively ; save hunter once finished
                 switch shedColor {
                 case "Brown" :
-                    currentHunter.brownCount++
+                    currentHunter.brownCount + 1
                 case "White" :
-                    currentHunter.whiteCount++
+                    currentHunter.whiteCount + 1
                 case "Chalk" :
-                    currentHunter.chalkCount++
+                    currentHunter.chalkCount + 1
                 default :
                     return
                 }

@@ -51,17 +51,7 @@ class Shed: FirebaseType {
             username = json[usernameKey] as? String,
             hunterIdentifier = json[hunterKey] as? String,
             shedColor = json[shedColorKey] as? String,
-            shedType = json[shedTypeKey] as? String
-            else {
-                self.imageIdentifier = ""
-                self.hunterIdentifier = ""
-                self.messageIdentifiers = []
-                self.shedImage = nil
-                self.username = ""
-                self.shedType = ""
-                self.shedColor = ""
-                return nil
-        }
+            shedType = json[shedTypeKey] as? String else { return nil }
         
         
         self.shedType = shedType
@@ -69,6 +59,7 @@ class Shed: FirebaseType {
         self.username = username
         self.imageIdentifier = imageIdentifier
         self.hunterIdentifier = hunterIdentifier
+        
         if let messages = json[messageIdKey] as? [String : AnyObject] {
             self.messageIdentifiers = Array(messages.keys)
         }

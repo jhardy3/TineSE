@@ -7,22 +7,22 @@ provides-member:
 - ["C6TineSE15PhotoController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "NSURL"
-- !private "print"
-- !private "BooleanLiteralType"
-- !private "AWSS3TransferManager"
-- !private "UIImageJPEGRepresentation"
-- !private "NSURLSession"
-- "String"
-- !private "AWSS3TransferManagerUploadRequest"
-- "PhotoController"
-- !private "AnyObject"
-- !private "!="
 - "UIImage"
 - !private "NSProcessInfo"
-- "StringLiteralType"
+- "String"
+- !private "UIImageJPEGRepresentation"
 - !private "NSTemporaryDirectory"
+- !private "print"
+- !private "NSURLSession"
+- "StringLiteralType"
+- !private "AnyObject"
+- !private "AWSS3TransferManager"
+- !private "!="
+- !private "NSURL"
+- "PhotoController"
 - "Void"
+- !private "AWSS3TransferManagerUploadRequest"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["PSo21AWSMTLJSONSerializing", "body"]
 - !private ["PSo21AWSMTLJSONSerializing", "bucket"]
@@ -32,18 +32,22 @@ depends-member:
 - !private ["CSo11AWSMTLModel", "body"]
 - !private ["CSo11AWSMTLModel", "bucket"]
 - !private ["CSo11AWSMTLModel", "contentType"]
+- !private ["CSo11AWSMTLModel", "init"]
 - !private ["CSo11AWSMTLModel", "key"]
 - !private ["CSo8AWSModel", "body"]
 - !private ["CSo8AWSModel", "bucket"]
 - !private ["CSo8AWSModel", "contentType"]
+- !private ["CSo8AWSModel", "init"]
 - !private ["CSo8AWSModel", "key"]
 - !private ["CSo10AWSRequest", "body"]
 - !private ["CSo10AWSRequest", "bucket"]
 - !private ["CSo10AWSRequest", "contentType"]
+- !private ["CSo10AWSRequest", "init"]
 - !private ["CSo10AWSRequest", "key"]
 - !private ["CSo21AWSS3PutObjectRequest", "body"]
 - !private ["CSo21AWSS3PutObjectRequest", "bucket"]
 - !private ["CSo21AWSS3PutObjectRequest", "contentType"]
+- !private ["CSo21AWSS3PutObjectRequest", "init"]
 - !private ["CSo21AWSS3PutObjectRequest", "key"]
 - !private ["CSo20AWSS3TransferManager", "defaultS3TransferManager"]
 - !private ["CSo20AWSS3TransferManager", "upload"]
@@ -56,135 +60,151 @@ depends-member:
 - !private ["CSo10AWSService", "upload"]
 - !private ["CSo7AWSTask", "continueWithBlock"]
 - !private ["CSo7AWSTask", "error"]
-- !private ["PSs9AnyObject", "AWSS3TransferManager"]
-- !private ["PSs9AnyObject", "AWSS3TransferManagerUploadRequest"]
-- !private ["PSs9AnyObject", "AWSUrl"]
-- !private ["PSs9AnyObject", "NSProcessInfo"]
-- !private ["PSs9AnyObject", "NSTemporaryDirectory"]
-- !private ["PSs9AnyObject", "NSURL"]
-- !private ["PSs9AnyObject", "NSURLSession"]
-- ["PSs9AnyObject", "PhotoController"]
-- !private ["PSs9AnyObject", "UIImage"]
-- !private ["PSs9AnyObject", "UIImageJPEGRepresentation"]
-- !private ["PSs9AnyObject", "URLByAppendingPathComponent"]
-- !private ["PSs9AnyObject", "body"]
-- !private ["PSs9AnyObject", "bucket"]
-- !private ["PSs9AnyObject", "contentType"]
-- !private ["PSs9AnyObject", "continueWithBlock"]
-- !private ["PSs9AnyObject", "dataTaskWithURL"]
-- !private ["PSs9AnyObject", "defaultS3TransferManager"]
-- !private ["PSs9AnyObject", "error"]
-- !private ["PSs9AnyObject", "globallyUniqueString"]
-- ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "key"]
-- !private ["PSs9AnyObject", "localizedDescription"]
-- !private ["PSs9AnyObject", "print"]
-- !private ["PSs9AnyObject", "processInfo"]
-- !private ["PSs9AnyObject", "resume"]
-- !private ["PSs9AnyObject", "sharedSession"]
-- !private ["PSs9AnyObject", "stringByAppendingString"]
-- !private ["PSs9AnyObject", "upload"]
-- !private ["PSs9AnyObject", "writeToURL"]
-- ["PSs9AnyObject", ""]
+- !private ["Ps9AnyObject", "AWSS3TransferManager"]
+- !private ["Ps9AnyObject", "AWSS3TransferManagerUploadRequest"]
+- !private ["Ps9AnyObject", "AWSUrl"]
+- !private ["Ps9AnyObject", "NSProcessInfo"]
+- !private ["Ps9AnyObject", "NSTemporaryDirectory"]
+- !private ["Ps9AnyObject", "NSURL"]
+- !private ["Ps9AnyObject", "NSURLSession"]
+- ["Ps9AnyObject", "PhotoController"]
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "UIImageJPEGRepresentation"]
+- !private ["Ps9AnyObject", "URLByAppendingPathComponent"]
+- !private ["Ps9AnyObject", "body"]
+- !private ["Ps9AnyObject", "bucket"]
+- !private ["Ps9AnyObject", "contentType"]
+- !private ["Ps9AnyObject", "continueWithBlock"]
+- !private ["Ps9AnyObject", "dataTaskWithURL"]
+- !private ["Ps9AnyObject", "defaultS3TransferManager"]
+- !private ["Ps9AnyObject", "error"]
+- !private ["Ps9AnyObject", "globallyUniqueString"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "key"]
+- !private ["Ps9AnyObject", "localizedDescription"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "processInfo"]
+- !private ["Ps9AnyObject", "resume"]
+- !private ["Ps9AnyObject", "sharedSession"]
+- !private ["Ps9AnyObject", "stringByAppendingString"]
+- !private ["Ps9AnyObject", "upload"]
+- !private ["Ps9AnyObject", "writeToURL"]
+- ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
-- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
-- !private ["PSs11CVarArgType", "URLByAppendingPathComponent"]
-- !private ["PSs11CVarArgType", "body"]
-- !private ["PSs11CVarArgType", "bucket"]
-- !private ["PSs11CVarArgType", "contentType"]
-- !private ["PSs11CVarArgType", "continueWithBlock"]
-- !private ["PSs11CVarArgType", "dataTaskWithURL"]
-- !private ["PSs11CVarArgType", "defaultS3TransferManager"]
-- !private ["PSs11CVarArgType", "error"]
-- !private ["PSs11CVarArgType", "globallyUniqueString"]
-- !private ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "key"]
-- !private ["PSs11CVarArgType", "localizedDescription"]
-- !private ["PSs11CVarArgType", "processInfo"]
-- !private ["PSs11CVarArgType", "resume"]
-- !private ["PSs11CVarArgType", "sharedSession"]
-- !private ["PSs11CVarArgType", "stringByAppendingString"]
-- !private ["PSs11CVarArgType", "upload"]
-- !private ["PSs11CVarArgType", "writeToURL"]
-- !private ["VSs9Character", "deinit"]
-- !private ["PSs10Comparable", "init"]
-- !private ["PSs10Comparable", "stringByAppendingString"]
-- ["PSs28CustomDebugStringConvertible", "Some"]
-- !private ["PSs28CustomDebugStringConvertible", "init"]
-- !private ["PSs28CustomDebugStringConvertible", "stringByAppendingString"]
-- !private ["PSs23CustomStringConvertible", "URLByAppendingPathComponent"]
-- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs23CustomStringConvertible", "body"]
-- !private ["PSs23CustomStringConvertible", "bucket"]
-- !private ["PSs23CustomStringConvertible", "contentType"]
-- !private ["PSs23CustomStringConvertible", "continueWithBlock"]
-- !private ["PSs23CustomStringConvertible", "dataTaskWithURL"]
-- !private ["PSs23CustomStringConvertible", "defaultS3TransferManager"]
-- !private ["PSs23CustomStringConvertible", "error"]
-- !private ["PSs23CustomStringConvertible", "globallyUniqueString"]
-- !private ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "key"]
-- !private ["PSs23CustomStringConvertible", "localizedDescription"]
-- !private ["PSs23CustomStringConvertible", "processInfo"]
-- !private ["PSs23CustomStringConvertible", "resume"]
-- !private ["PSs23CustomStringConvertible", "sharedSession"]
-- !private ["PSs23CustomStringConvertible", "stringByAppendingString"]
-- !private ["PSs23CustomStringConvertible", "upload"]
-- !private ["PSs23CustomStringConvertible", "writeToURL"]
+- !private ["Ps11CVarArgType", "URLByAppendingPathComponent"]
+- !private ["Ps11CVarArgType", "body"]
+- !private ["Ps11CVarArgType", "bucket"]
+- !private ["Ps11CVarArgType", "contentType"]
+- !private ["Ps11CVarArgType", "continueWithBlock"]
+- !private ["Ps11CVarArgType", "dataTaskWithURL"]
+- !private ["Ps11CVarArgType", "defaultS3TransferManager"]
+- !private ["Ps11CVarArgType", "error"]
+- !private ["Ps11CVarArgType", "globallyUniqueString"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "key"]
+- !private ["Ps11CVarArgType", "localizedDescription"]
+- !private ["Ps11CVarArgType", "processInfo"]
+- !private ["Ps11CVarArgType", "resume"]
+- !private ["Ps11CVarArgType", "sharedSession"]
+- !private ["Ps11CVarArgType", "stringByAppendingString"]
+- !private ["Ps11CVarArgType", "upload"]
+- !private ["Ps11CVarArgType", "writeToURL"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "stringByAppendingString"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "URLByAppendingPathComponent"]
+- !private ["Ps28CustomDebugStringConvertible", "body"]
+- !private ["Ps28CustomDebugStringConvertible", "bucket"]
+- !private ["Ps28CustomDebugStringConvertible", "contentType"]
+- !private ["Ps28CustomDebugStringConvertible", "continueWithBlock"]
+- !private ["Ps28CustomDebugStringConvertible", "dataTaskWithURL"]
+- !private ["Ps28CustomDebugStringConvertible", "defaultS3TransferManager"]
+- !private ["Ps28CustomDebugStringConvertible", "error"]
+- !private ["Ps28CustomDebugStringConvertible", "globallyUniqueString"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "key"]
+- !private ["Ps28CustomDebugStringConvertible", "localizedDescription"]
+- !private ["Ps28CustomDebugStringConvertible", "processInfo"]
+- !private ["Ps28CustomDebugStringConvertible", "resume"]
+- !private ["Ps28CustomDebugStringConvertible", "sharedSession"]
+- !private ["Ps28CustomDebugStringConvertible", "stringByAppendingString"]
+- !private ["Ps28CustomDebugStringConvertible", "upload"]
+- !private ["Ps28CustomDebugStringConvertible", "writeToURL"]
+- !private ["Ps23CustomStringConvertible", "URLByAppendingPathComponent"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "body"]
+- !private ["Ps23CustomStringConvertible", "bucket"]
+- !private ["Ps23CustomStringConvertible", "contentType"]
+- !private ["Ps23CustomStringConvertible", "continueWithBlock"]
+- !private ["Ps23CustomStringConvertible", "dataTaskWithURL"]
+- !private ["Ps23CustomStringConvertible", "defaultS3TransferManager"]
+- !private ["Ps23CustomStringConvertible", "error"]
+- !private ["Ps23CustomStringConvertible", "globallyUniqueString"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "key"]
+- !private ["Ps23CustomStringConvertible", "localizedDescription"]
+- !private ["Ps23CustomStringConvertible", "processInfo"]
+- !private ["Ps23CustomStringConvertible", "resume"]
+- !private ["Ps23CustomStringConvertible", "sharedSession"]
+- !private ["Ps23CustomStringConvertible", "stringByAppendingString"]
+- !private ["Ps23CustomStringConvertible", "upload"]
+- !private ["Ps23CustomStringConvertible", "writeToURL"]
 - !private ["Sd", "deinit"]
-- !private ["PSs9Equatable", "URLByAppendingPathComponent"]
-- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
-- !private ["PSs9Equatable", "body"]
-- !private ["PSs9Equatable", "bucket"]
-- !private ["PSs9Equatable", "contentType"]
-- !private ["PSs9Equatable", "continueWithBlock"]
-- !private ["PSs9Equatable", "dataTaskWithURL"]
-- !private ["PSs9Equatable", "defaultS3TransferManager"]
-- !private ["PSs9Equatable", "error"]
-- !private ["PSs9Equatable", "globallyUniqueString"]
-- !private ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "key"]
-- !private ["PSs9Equatable", "localizedDescription"]
-- !private ["PSs9Equatable", "processInfo"]
-- !private ["PSs9Equatable", "resume"]
-- !private ["PSs9Equatable", "sharedSession"]
-- !private ["PSs9Equatable", "stringByAppendingString"]
-- !private ["PSs9Equatable", "upload"]
-- !private ["PSs9Equatable", "writeToURL"]
-- !private ["PSs9ErrorType", "localizedDescription"]
-- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "stringByAppendingString"]
+- !private ["Ps9Equatable", "URLByAppendingPathComponent"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "body"]
+- !private ["Ps9Equatable", "bucket"]
+- !private ["Ps9Equatable", "contentType"]
+- !private ["Ps9Equatable", "continueWithBlock"]
+- !private ["Ps9Equatable", "dataTaskWithURL"]
+- !private ["Ps9Equatable", "defaultS3TransferManager"]
+- !private ["Ps9Equatable", "error"]
+- !private ["Ps9Equatable", "globallyUniqueString"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "key"]
+- !private ["Ps9Equatable", "localizedDescription"]
+- !private ["Ps9Equatable", "processInfo"]
+- !private ["Ps9Equatable", "resume"]
+- !private ["Ps9Equatable", "sharedSession"]
+- !private ["Ps9Equatable", "stringByAppendingString"]
+- !private ["Ps9Equatable", "upload"]
+- !private ["Ps9Equatable", "writeToURL"]
+- !private ["Ps9ErrorType", "localizedDescription"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "stringByAppendingString"]
 - !private ["Sf", "deinit"]
-- !private ["PSs8Hashable", "URLByAppendingPathComponent"]
-- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
-- !private ["PSs8Hashable", "body"]
-- !private ["PSs8Hashable", "bucket"]
-- !private ["PSs8Hashable", "contentType"]
-- !private ["PSs8Hashable", "continueWithBlock"]
-- !private ["PSs8Hashable", "dataTaskWithURL"]
-- !private ["PSs8Hashable", "defaultS3TransferManager"]
-- !private ["PSs8Hashable", "error"]
-- !private ["PSs8Hashable", "globallyUniqueString"]
-- !private ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "key"]
-- !private ["PSs8Hashable", "localizedDescription"]
-- !private ["PSs8Hashable", "processInfo"]
-- !private ["PSs8Hashable", "resume"]
-- !private ["PSs8Hashable", "sharedSession"]
-- !private ["PSs8Hashable", "stringByAppendingString"]
-- !private ["PSs8Hashable", "upload"]
-- !private ["PSs8Hashable", "writeToURL"]
+- !private ["Ps8Hashable", "URLByAppendingPathComponent"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "body"]
+- !private ["Ps8Hashable", "bucket"]
+- !private ["Ps8Hashable", "contentType"]
+- !private ["Ps8Hashable", "continueWithBlock"]
+- !private ["Ps8Hashable", "dataTaskWithURL"]
+- !private ["Ps8Hashable", "defaultS3TransferManager"]
+- !private ["Ps8Hashable", "error"]
+- !private ["Ps8Hashable", "globallyUniqueString"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "key"]
+- !private ["Ps8Hashable", "localizedDescription"]
+- !private ["Ps8Hashable", "processInfo"]
+- !private ["Ps8Hashable", "resume"]
+- !private ["Ps8Hashable", "sharedSession"]
+- !private ["Ps8Hashable", "stringByAppendingString"]
+- !private ["Ps8Hashable", "upload"]
+- !private ["Ps8Hashable", "writeToURL"]
 - !private ["SQ", "deinit"]
 - !private ["Si", "deinit"]
-- !private ["VSs5Int16", "deinit"]
-- !private ["VSs5Int32", "deinit"]
-- !private ["VSs5Int64", "deinit"]
-- !private ["VSs4Int8", "deinit"]
-- !private ["PSs14MirrorPathType", "init"]
-- !private ["PSs14MirrorPathType", "stringByAppendingString"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["Ps14MirrorPathType", "stringByAppendingString"]
 - !private ["PSo8NSCoding", "URLByAppendingPathComponent"]
 - !private ["PSo8NSCoding", "body"]
 - !private ["PSo8NSCoding", "bucket"]
@@ -261,11 +281,11 @@ depends-member:
 - !private ["CSo12NSURLSession", "sharedSession"]
 - !private ["CSo20NSURLSessionDataTask", "resume"]
 - !private ["CSo16NSURLSessionTask", "resume"]
-- ["PSs21NilLiteralConvertible", "Some"]
+- ["Ps21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
-- !private ["PSs16OutputStreamType", "init"]
-- !private ["PSs16OutputStreamType", "stringByAppendingString"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps16OutputStreamType", "stringByAppendingString"]
 - !private ["C6TineSE15PhotoController", "AWSS3TransferManager"]
 - !private ["C6TineSE15PhotoController", "AWSS3TransferManagerUploadRequest"]
 - ["C6TineSE15PhotoController", "AWSUrl"]
@@ -285,47 +305,45 @@ depends-member:
 - !private ["C6TineSE15PhotoController", "print"]
 - ["C6TineSE15PhotoController", "sharedInstance"]
 - ["C6TineSE15PhotoController", "uploadImageToS3"]
-- !private ["PSs10Streamable", "init"]
-- !private ["PSs10Streamable", "stringByAppendingString"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Streamable", "stringByAppendingString"]
 - !private ["SS", "init"]
 - !private ["SS", "stringByAppendingString"]
-- !private ["PSs30StringInterpolationConvertible", "init"]
-- !private ["PSs30StringInterpolationConvertible", "stringByAppendingString"]
-- !private ["PSs24StringLiteralConvertible", "init"]
-- !private ["PSs24StringLiteralConvertible", "stringByAppendingString"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps30StringInterpolationConvertible", "stringByAppendingString"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "stringByAppendingString"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["CSo7UIImage", "init"]
 - !private ["Su", "deinit"]
-- !private ["VSs6UInt16", "deinit"]
-- !private ["VSs6UInt32", "deinit"]
-- !private ["VSs6UInt64", "deinit"]
-- !private ["VSs5UInt8", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
-- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
-- !private ["PSs31UnicodeScalarLiteralConvertible", "stringByAppendingString"]
-- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "stringByAppendingString"]
-- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
-- !private ["PSs32_BuiltinStringLiteralConvertible", "stringByAppendingString"]
-- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
-- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "stringByAppendingString"]
-- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
-- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "stringByAppendingString"]
-- !private ["PSs16_CocoaStringType", "init"]
-- !private ["PSs16_CocoaStringType", "stringByAppendingString"]
-- !private ["PSs32_FileReferenceLiteralConvertible", "URLByAppendingPathComponent"]
-- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
-- !private ["PSs24_ImageLiteralConvertible", "init"]
-- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["PSs21_ObjectiveCBridgeable", "init"]
-- !private ["PSs21_ObjectiveCBridgeable", "stringByAppendingString"]
-- !private ["VSs26_OptionalNilComparisonType", "deinit"]
-- ["PSs12_Reflectable", "Some"]
-- !private ["PSs12_Reflectable", "URLByAppendingPathComponent"]
-- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["PSs12_Reflectable", "init"]
-- !private ["PSs12_Reflectable", "stringByAppendingString"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "stringByAppendingString"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "stringByAppendingString"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "stringByAppendingString"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "stringByAppendingString"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "stringByAppendingString"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "URLByAppendingPathComponent"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "init"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "stringByAppendingString"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "URLByAppendingPathComponent"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "stringByAppendingString"]
 depends-nominal:
 - !private "PSo21AWSMTLJSONSerializing"
 - !private "CSo11AWSMTLModel"
@@ -336,29 +354,29 @@ depends-nominal:
 - !private "CSo33AWSS3TransferManagerUploadRequest"
 - !private "CSo10AWSService"
 - !private "CSo7AWSTask"
-- "PSs9AnyObject"
+- "Ps9AnyObject"
 - !private "Sb"
-- !private "PSs25BooleanLiteralConvertible"
-- !private "PSs11BooleanType"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
 - !private "V12CoreGraphics7CGFloat"
-- !private "PSs11CVarArgType"
-- !private "VSs9Character"
-- !private "PSs10Comparable"
-- "PSs28CustomDebugStringConvertible"
-- !private "PSs23CustomStringConvertible"
+- !private "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
 - !private "Sd"
-- !private "PSs9Equatable"
-- !private "PSs9ErrorType"
-- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps9Equatable"
+- !private "Ps9ErrorType"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - !private "Sf"
-- !private "PSs8Hashable"
+- !private "Ps8Hashable"
 - !private "SQ"
 - !private "Si"
-- !private "VSs5Int16"
-- !private "VSs5Int32"
-- !private "VSs5Int64"
-- !private "VSs4Int8"
-- !private "PSs14MirrorPathType"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps14MirrorPathType"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "CSo6NSData"
@@ -373,34 +391,33 @@ depends-nominal:
 - !private "CSo12NSURLSession"
 - !private "CSo20NSURLSessionDataTask"
 - !private "CSo16NSURLSessionTask"
-- "PSs21NilLiteralConvertible"
+- "Ps21NilLiteralConvertible"
 - "Sq"
-- !private "PSs16OutputStreamType"
+- !private "Ps16OutputStreamType"
 - "C6TineSE15PhotoController"
-- !private "PSs10Streamable"
+- !private "Ps10Streamable"
 - !private "SS"
-- !private "PSs30StringInterpolationConvertible"
-- !private "PSs24StringLiteralConvertible"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "CSo7UIImage"
 - !private "Su"
-- !private "VSs6UInt16"
-- !private "VSs6UInt32"
-- !private "VSs6UInt64"
-- !private "VSs5UInt8"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
 - !private "Sc"
-- !private "PSs31UnicodeScalarLiteralConvertible"
-- !private "PSs33_BuiltinBooleanLiteralConvertible"
-- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
-- !private "PSs32_BuiltinStringLiteralConvertible"
-- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
-- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
-- !private "PSs16_CocoaStringType"
-- !private "PSs32_FileReferenceLiteralConvertible"
-- !private "PSs24_ImageLiteralConvertible"
-- !private "PSs21_ObjectiveCBridgeable"
-- !private "VSs26_OptionalNilComparisonType"
-- "PSs12_Reflectable"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps32_FileReferenceLiteralConvertible"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"

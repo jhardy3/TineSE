@@ -58,7 +58,7 @@ class ShedTableViewCell: UITableViewCell {
         // Set usernameTextField text to passed in shed username
         self.shedColorTextLabel.text = "Shed Color: \(shed.shedColor)"
         self.shedTypeTextLabel.text = "Shed Type: \(shed.shedType)"
-        self.usernameTextField.text = shed.username
+        self.usernameTextField.text = shed.username.lowercaseString
         
     }
     
@@ -81,15 +81,4 @@ class ShedTableViewCell: UITableViewCell {
     
 }
 
-extension UIImageView {
-    func downloadImageFrom(link link:String, contentMode: UIViewContentMode) {
-        NSURLSession.sharedSession().dataTaskWithURL( NSURL(string:link)!, completionHandler: {
-            (data, response, error) -> Void in
-            dispatch_async(dispatch_get_main_queue()) {
-                self.contentMode =  contentMode
-                if let data = data { self.image = UIImage(data: data) }
-            }
-        }).resume()
-    }
-}
 

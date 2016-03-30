@@ -17,31 +17,18 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     var isTracking = false
     
     override func viewWillAppear(animated: Bool) {
-        guard var currentHunterIDs = HunterController.sharedInstance.currentHunter?.trackingIDs else { return }
-        currentHunterIDs.append(HunterController.sharedInstance.currentHunter!.identifier!)
-        HunterController.fetchHuntersWithIdentifierArray(currentHunterIDs) { (hunters) -> Void in
-            self.filterdSheds = hunters.sort { $0.shedCount > $1.shedCount }
-        }
-        
-        HunterController.fetchAllHunters { (hunters) -> Void in
-            self.sheds = hunters.sort { $0.shedCount > $1.shedCount }
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                self.tableView.reloadData()
-            })
-        }
-        
+        fetchAllHuntersForLeaderBoard()
+        fetchTrackedHuntersForLeaderBoard()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        // Do any additional setup after loading the view.
+
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -63,6 +50,23 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         }
         
         return cell
+    }
+    
+    func fetchTrackedHuntersForLeaderBoard() {
+        guard var currentHunterIDs = HunterController.sharedInstance.currentHunter?.trackingIDs else { return }
+        currentHunterIDs.append(HunterController.sharedInstance.currentHunter!.identifier!)
+        HunterController.fetchHuntersWithIdentifierArray(currentHunterIDs) { (hunters) -> Void in
+            self.filterdSheds = hunters.sort { $0.shedCount > $1.shedCount }
+        }
+    }
+    
+    func fetchAllHuntersForLeaderBoard() {
+        HunterController.fetchAllHunters { (hunters) -> Void in
+            self.sheds = hunters.sort { $0.shedCount > $1.shedCount }
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.tableView.reloadData()
+            })
+        }
     }
     
     @IBAction func segmentedControlChanged(sender: UISegmentedControl) {

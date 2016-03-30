@@ -8,6 +8,13 @@
 
 import UIKit
 
+
+enum FollowingState {
+    case Following
+    case NotFollowing
+    case User
+}
+
 class ProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     // MARK: - Class Properties
@@ -15,7 +22,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     // Hunter for profile View
     var hunter: Hunter?
     var sheds =  [Shed]()
-    let kMargin = CGFloat(0.0)
+    let kMargin = CGFloat(1.0)
     
     // MARK: - IBOutlet Properties
     @IBOutlet weak var followButton: UIButton!
@@ -52,7 +59,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        if tabBarController?.selectedIndex == 3 {
+        if tabBarController?.selectedIndex == 3 && tabBarController?.selectedIndex != 4 {
             guard let currentHunterID = HunterController.sharedInstance.currentHunter?.identifier else { return }
             self.updateWithIdentifier(currentHunterID)
         }
@@ -63,7 +70,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewDidDisappear(animated: Bool) {
         self.hunter = nil
     }
     
@@ -74,8 +81,10 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         self.followButton.layer.borderColor = UIColor.hunterOrange().CGColor
         self.followButton.layer.borderWidth = 1
         
+        self.collectionView.backgroundColor = UIColor.whiteColor()
+        
         flowLayout.sectionInset = UIEdgeInsetsMake(0, kMargin, 0, kMargin)
-        flowLayout.minimumLineSpacing = 0
+        flowLayout.minimumLineSpacing = kMargin * 2
         flowLayout.minimumInteritemSpacing = 0
         
     }
@@ -116,17 +125,24 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         if followButton.titleLabel?.text != "Log Out" {
             // Check if hunter is following ; if is following unfollow and set title Vice versa otherwise
             if isFollowing {
-                HunterController.hunterUntrackHunter(hunter)
-                followButton.setTitle("Track", forState: .Normal)
+                HunterController.hunterUntrackHunter(hunter, completion: { (trackingCount) in
+                    if let trackingCount = trackingCount {
+                        self.followButton.setTitle("Track", forState: .Normal)
+                        self.trackersCountLabel.text = String(trackingCount)
+                    }
+                })
             } else {
                 HunterController.hunterTrackHunter(hunter)
                 followButton.setTitle("Untrack", forState: .Normal)
+                trackersCountLabel.text = String(hunter.trackingIDs.count)
+                self.reloadInputViews()
             }
         } else {
             navigationController?.dismissViewControllerAnimated(true, completion: nil)
             HunterController.unauthHunter()
         }
         NSNotificationCenter.defaultCenter().postNotificationName("shedAdded", object: self)
+        
     }
     
     
@@ -142,19 +158,19 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             // If hunter is prevalent set hunter property to retrieved hunter
             if let hunter = hunter {
                 self.hunter = hunter
-                self.usernameLabel.text = hunter.username
+                self.usernameLabel.text = hunter.username.lowercaseString
                 self.brownsCountLabel.text = "Browns: " + (String(hunter.brownCount))
                 self.whitesCountLabel.text = "Whites: " + (String(hunter.whiteCount))
                 self.chalksCountLabel.text = "Chalks: " + (String(hunter.chalkCount))
                 self.trackersCountLabel.text = (String(hunter.trackedIDs.count))
                 self.trackingCountLabel.text = (String(hunter.trackingIDs.count))
                 self.shedCountLabel.text = (String(hunter.shedCount))
+                self.hunterProfileImage.layer.cornerRadius = 20.0
+                self.hunterProfileImage.clipsToBounds = true
                 print("Hunter Received")
             }
             dispatch_group_leave(groupNew)
-            
         }
-        
         
         dispatch_group_notify(groupNew, dispatch_get_main_queue()) { () -> Void in
             self.viewLoaded = true
@@ -170,8 +186,6 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
                 // If viewing own profile, sets follow button to hidden
                 if HunterController.sharedInstance.currentHunter?.identifier == hunterID {
                     self.followButton.setTitle("Log Out", forState: .Normal)
-                    
-                    // Temporarily hide
                 }
             }
             
@@ -214,10 +228,9 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
         let viewWidth = view.frame.width
-        let viewWidthMinusMargin = viewWidth - kMargin * 2
-        let itemHeightDimension = viewWidth / 3.0
+        let viewWidthMinusMargin = viewWidth - kMargin * 6
         let itemDimension = viewWidthMinusMargin / 3.0
         
-        return CGSizeMake(itemDimension, itemHeightDimension)
+        return CGSizeMake(itemDimension, itemDimension)
     }
 }

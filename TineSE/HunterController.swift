@@ -211,10 +211,12 @@ class HunterController {
     }
     
     // Hunter untrack Hunter
-    static func hunterUntrackHunter(var hunter: Hunter) {
+    static func hunterUntrackHunter(hunter: Hunter, completion: (trackingCount: Int?) -> Void) {
+        
+        var thisHunter = hunter
         
         // check for current hunter, current hunter ID and tracked hunter else return from function
-        guard var currentHunter = HunterController.sharedInstance.currentHunter, let currentHunterID = HunterController.sharedInstance.currentHunter?.identifier, let trackedHunter = hunter.identifier else { return }
+        guard var currentHunter = HunterController.sharedInstance.currentHunter, let currentHunterID = HunterController.sharedInstance.currentHunter?.identifier, let trackedHunter = hunter.identifier else { completion(trackingCount: nil) ; return }
         
         // If trackingIDs is greater than 0
         if currentHunter.trackingIDs.count > 0 {
@@ -235,31 +237,29 @@ class HunterController {
             }
         }
         
-        
-        
-        
         // if hunter trackedIDs has contents
-        if hunter.trackedIDs.count > 0 {
+        if thisHunter.trackedIDs.count > 0 {
             
             // Deckare new index of removal
             var newIndexOfRemoval: Int?
             
             // for each item in tracked IDs check for match, if match set new index of removal
             for index in 0..<hunter.trackedIDs.count {
-                if hunter.trackedIDs[index] == currentHunterID {
+                if thisHunter.trackedIDs[index] == currentHunterID {
                     newIndexOfRemoval = index
                 }
             }
             
             // if index exists remove at index
             if let newIndexOfRemoval = newIndexOfRemoval {
-                hunter.trackedIDs.removeAtIndex(newIndexOfRemoval)
+                thisHunter.trackedIDs.removeAtIndex(newIndexOfRemoval)
             }
         }
         
         // Save both objects to firebase with newly altered arrays
-        hunter.save()
+        thisHunter.save()
         currentHunter.save()
+        completion(trackingCount: thisHunter.trackedIDs.count)
     }
     
     // MARK: - Query for leaderboard

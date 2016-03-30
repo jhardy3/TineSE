@@ -12,57 +12,66 @@ provides-member:
 - ["P6TineSE12FirebaseType", "delete"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Firebase"
-- "Void"
-- "FirebaseType"
-- "String"
-- "StringLiteralType"
-- "AnyObject"
 - "FirebaseController"
+- "String"
+- "AnyObject"
+- "StringLiteralType"
+- "FirebaseType"
+- "Void"
+- "Firebase"
 depends-member:
-- ["PSs9AnyObject", "Firebase"]
-- ["PSs9AnyObject", "baseURL"]
-- !private ["PSs9AnyObject", "childByAppendingPath"]
-- !private ["PSs9AnyObject", "childByAutoId"]
-- !private ["PSs9AnyObject", "firebase"]
-- ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "key"]
-- !private ["PSs9AnyObject", "observeEventType"]
-- !private ["PSs9AnyObject", "observeSingleEventOfType"]
-- !private ["PSs9AnyObject", "removeValue"]
-- !private ["PSs9AnyObject", "updateChildValues"]
-- !private ["PSs9AnyObject", "value"]
-- ["PSs9AnyObject", ""]
-- !private ["PSs11CVarArgType", "childByAppendingPath"]
-- !private ["PSs11CVarArgType", "childByAutoId"]
-- ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "key"]
-- !private ["PSs11CVarArgType", "observeEventType"]
-- !private ["PSs11CVarArgType", "observeSingleEventOfType"]
-- !private ["PSs11CVarArgType", "removeValue"]
-- !private ["PSs11CVarArgType", "updateChildValues"]
-- !private ["PSs11CVarArgType", "value"]
-- ["PSs28CustomDebugStringConvertible", "Some"]
-- !private ["PSs23CustomStringConvertible", "Some"]
-- !private ["PSs23CustomStringConvertible", "childByAppendingPath"]
-- !private ["PSs23CustomStringConvertible", "childByAutoId"]
-- ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "key"]
-- !private ["PSs23CustomStringConvertible", "observeEventType"]
-- !private ["PSs23CustomStringConvertible", "observeSingleEventOfType"]
-- !private ["PSs23CustomStringConvertible", "removeValue"]
-- !private ["PSs23CustomStringConvertible", "updateChildValues"]
-- !private ["PSs23CustomStringConvertible", "value"]
-- !private ["PSs9Equatable", "Value"]
-- !private ["PSs9Equatable", "childByAppendingPath"]
-- !private ["PSs9Equatable", "childByAutoId"]
-- ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "key"]
-- !private ["PSs9Equatable", "observeEventType"]
-- !private ["PSs9Equatable", "observeSingleEventOfType"]
-- !private ["PSs9Equatable", "removeValue"]
-- !private ["PSs9Equatable", "updateChildValues"]
-- !private ["PSs9Equatable", "value"]
+- ["Ps9AnyObject", "Firebase"]
+- ["Ps9AnyObject", "baseURL"]
+- !private ["Ps9AnyObject", "childByAppendingPath"]
+- !private ["Ps9AnyObject", "childByAutoId"]
+- !private ["Ps9AnyObject", "firebase"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "key"]
+- !private ["Ps9AnyObject", "observeEventType"]
+- !private ["Ps9AnyObject", "observeSingleEventOfType"]
+- !private ["Ps9AnyObject", "removeValue"]
+- !private ["Ps9AnyObject", "updateChildValues"]
+- !private ["Ps9AnyObject", "value"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps11CVarArgType", "childByAppendingPath"]
+- !private ["Ps11CVarArgType", "childByAutoId"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "key"]
+- !private ["Ps11CVarArgType", "observeEventType"]
+- !private ["Ps11CVarArgType", "observeSingleEventOfType"]
+- !private ["Ps11CVarArgType", "removeValue"]
+- !private ["Ps11CVarArgType", "updateChildValues"]
+- !private ["Ps11CVarArgType", "value"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "childByAppendingPath"]
+- !private ["Ps28CustomDebugStringConvertible", "childByAutoId"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "key"]
+- !private ["Ps28CustomDebugStringConvertible", "observeEventType"]
+- !private ["Ps28CustomDebugStringConvertible", "observeSingleEventOfType"]
+- !private ["Ps28CustomDebugStringConvertible", "removeValue"]
+- !private ["Ps28CustomDebugStringConvertible", "updateChildValues"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
+- !private ["Ps23CustomStringConvertible", "Some"]
+- !private ["Ps23CustomStringConvertible", "childByAppendingPath"]
+- !private ["Ps23CustomStringConvertible", "childByAutoId"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "key"]
+- !private ["Ps23CustomStringConvertible", "observeEventType"]
+- !private ["Ps23CustomStringConvertible", "observeSingleEventOfType"]
+- !private ["Ps23CustomStringConvertible", "removeValue"]
+- !private ["Ps23CustomStringConvertible", "updateChildValues"]
+- !private ["Ps23CustomStringConvertible", "value"]
+- !private ["Ps9Equatable", "Value"]
+- !private ["Ps9Equatable", "childByAppendingPath"]
+- !private ["Ps9Equatable", "childByAutoId"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "key"]
+- !private ["Ps9Equatable", "observeEventType"]
+- !private ["Ps9Equatable", "observeSingleEventOfType"]
+- !private ["Ps9Equatable", "removeValue"]
+- !private ["Ps9Equatable", "updateChildValues"]
+- !private ["Ps9Equatable", "value"]
 - !private ["CSo13FDataSnapshot", "value"]
 - !private ["OSC10FEventType", "Value"]
 - !private ["CSo6FQuery", "childByAppendingPath"]
@@ -102,16 +111,16 @@ depends-member:
 - ["P6TineSE12FirebaseType", "init"]
 - ["P6TineSE12FirebaseType", "jsonValue"]
 - ["P6TineSE12FirebaseType", "save"]
-- !private ["PSs8Hashable", "Value"]
-- !private ["PSs8Hashable", "childByAppendingPath"]
-- !private ["PSs8Hashable", "childByAutoId"]
-- ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "key"]
-- !private ["PSs8Hashable", "observeEventType"]
-- !private ["PSs8Hashable", "observeSingleEventOfType"]
-- !private ["PSs8Hashable", "removeValue"]
-- !private ["PSs8Hashable", "updateChildValues"]
-- !private ["PSs8Hashable", "value"]
+- !private ["Ps8Hashable", "Value"]
+- !private ["Ps8Hashable", "childByAppendingPath"]
+- !private ["Ps8Hashable", "childByAutoId"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "key"]
+- !private ["Ps8Hashable", "observeEventType"]
+- !private ["Ps8Hashable", "observeSingleEventOfType"]
+- !private ["Ps8Hashable", "removeValue"]
+- !private ["Ps8Hashable", "updateChildValues"]
+- !private ["Ps8Hashable", "value"]
 - !private ["SQ", "Some"]
 - !private ["CSo8NSObject", "childByAppendingPath"]
 - !private ["CSo8NSObject", "childByAutoId"]
@@ -131,32 +140,32 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "removeValue"]
 - !private ["PSo16NSObjectProtocol", "updateChildValues"]
 - !private ["PSo16NSObjectProtocol", "value"]
-- ["PSs21NilLiteralConvertible", "Some"]
+- ["Ps21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
-- !private ["PSs16RawRepresentable", "Value"]
-- !private ["PSs21_ObjectiveCBridgeable", "Some"]
-- ["PSs12_Reflectable", "Some"]
+- !private ["Ps16RawRepresentable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "Some"]
+- ["Ps12_Reflectable", "Some"]
 depends-nominal:
-- "PSs9AnyObject"
-- "PSs11CVarArgType"
-- "PSs28CustomDebugStringConvertible"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
 - !private "CSo13FDataSnapshot"
 - !private "OSC10FEventType"
 - "CSo6FQuery"
 - "CSo8Firebase"
 - "C6TineSE18FirebaseController"
 - "P6TineSE12FirebaseType"
-- "PSs8Hashable"
+- "Ps8Hashable"
 - !private "SQ"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- "PSs21NilLiteralConvertible"
+- "Ps21NilLiteralConvertible"
 - "Sq"
-- !private "PSs16RawRepresentable"
-- !private "PSs21_ObjectiveCBridgeable"
-- "PSs12_Reflectable"
+- !private "Ps16RawRepresentable"
+- !private "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -248,4 +257,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "b28eedc0ae8969bcd034fb2e07d2f70c"
+interface-hash: "32d50ea4a321d607c752889d7a57405b"

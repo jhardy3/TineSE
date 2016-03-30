@@ -58,13 +58,6 @@ class Hunter: FirebaseType {
     required init?(json: [String : AnyObject], identifier: String) {
         
         guard let username = json[usernameKey] as? String else {
-            self.identifier = ""
-            self.shedCount = 0
-            self.whiteCount = 0
-            self.brownCount = 0
-            self.chalkCount = 0
-            self.profileImageIdentifier = "fdsa"
-            self.username = ""
             return nil
         }
         

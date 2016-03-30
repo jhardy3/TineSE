@@ -21,19 +21,15 @@ class logInViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        usernameTextField.hidden = true
-        emailTextField.hidden = true
-        passwordTextField.hidden = true
+        setupTextFields()
         
-        self.view.backgroundColor = UIColor.desertSkyBlue()
+        self.view.backgroundColor = UIColor.desertFloorTan()
         
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        // Once view apprears, if hunter has logged in present tineline
         if HunterController.sharedInstance.currentHunter != nil {
             self.performSegueWithIdentifier("loggedIn", sender: self)
         }
@@ -86,7 +82,22 @@ class logInViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    func setupTextFields() {
+        usernameTextField.delegate = self
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
+        usernameTextField.hidden = true
+        emailTextField.hidden = true
+        passwordTextField.hidden = true
+    }
+    
     func textFieldDidEndEditing(textField: UITextField) {
         textField.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

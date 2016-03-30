@@ -15,37 +15,43 @@ provides-dynamic-lookup:
 depends-top-level:
 - "UIColor"
 depends-member:
-- !private ["PSs9AnyObject", "UIColor"]
-- ["PSs9AnyObject", "desertFloorTan"]
-- ["PSs9AnyObject", "desertSkyBlue"]
-- ["PSs9AnyObject", "hunterOrange"]
-- !private ["PSs9AnyObject", "init"]
-- ["PSs9AnyObject", "rustyTruckGreen"]
+- !private ["Ps9AnyObject", "UIColor"]
+- ["Ps9AnyObject", "desertFloorTan"]
+- ["Ps9AnyObject", "desertSkyBlue"]
+- ["Ps9AnyObject", "hunterOrange"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "rustyTruckGreen"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
-- !private ["PSs11CVarArgType", "UIColor"]
-- ["PSs11CVarArgType", "desertFloorTan"]
-- ["PSs11CVarArgType", "desertSkyBlue"]
-- ["PSs11CVarArgType", "hunterOrange"]
-- !private ["PSs11CVarArgType", "init"]
-- ["PSs11CVarArgType", "rustyTruckGreen"]
-- !private ["PSs23CustomStringConvertible", "UIColor"]
-- ["PSs23CustomStringConvertible", "desertFloorTan"]
-- ["PSs23CustomStringConvertible", "desertSkyBlue"]
-- ["PSs23CustomStringConvertible", "hunterOrange"]
-- !private ["PSs23CustomStringConvertible", "init"]
-- ["PSs23CustomStringConvertible", "rustyTruckGreen"]
-- !private ["PSs9Equatable", "UIColor"]
-- ["PSs9Equatable", "desertFloorTan"]
-- ["PSs9Equatable", "desertSkyBlue"]
-- ["PSs9Equatable", "hunterOrange"]
-- !private ["PSs9Equatable", "init"]
-- ["PSs9Equatable", "rustyTruckGreen"]
-- !private ["PSs8Hashable", "UIColor"]
-- ["PSs8Hashable", "desertFloorTan"]
-- ["PSs8Hashable", "desertSkyBlue"]
-- ["PSs8Hashable", "hunterOrange"]
-- !private ["PSs8Hashable", "init"]
-- ["PSs8Hashable", "rustyTruckGreen"]
+- !private ["Ps11CVarArgType", "UIColor"]
+- ["Ps11CVarArgType", "desertFloorTan"]
+- ["Ps11CVarArgType", "desertSkyBlue"]
+- ["Ps11CVarArgType", "hunterOrange"]
+- !private ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "rustyTruckGreen"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- ["Ps28CustomDebugStringConvertible", "desertFloorTan"]
+- ["Ps28CustomDebugStringConvertible", "desertSkyBlue"]
+- ["Ps28CustomDebugStringConvertible", "hunterOrange"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "rustyTruckGreen"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- ["Ps23CustomStringConvertible", "desertFloorTan"]
+- ["Ps23CustomStringConvertible", "desertSkyBlue"]
+- ["Ps23CustomStringConvertible", "hunterOrange"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "rustyTruckGreen"]
+- !private ["Ps9Equatable", "UIColor"]
+- ["Ps9Equatable", "desertFloorTan"]
+- ["Ps9Equatable", "desertSkyBlue"]
+- ["Ps9Equatable", "hunterOrange"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "rustyTruckGreen"]
+- !private ["Ps8Hashable", "UIColor"]
+- ["Ps8Hashable", "desertFloorTan"]
+- ["Ps8Hashable", "desertSkyBlue"]
+- ["Ps8Hashable", "hunterOrange"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "rustyTruckGreen"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo9NSCopying", "UIColor"]
@@ -70,22 +76,23 @@ depends-member:
 - ["CSo7UIColor", "hunterOrange"]
 - !private ["CSo7UIColor", "init"]
 - ["CSo7UIColor", "rustyTruckGreen"]
-- !private ["PSs24_ColorLiteralConvertible", "UIColor"]
-- !private ["PSs24_ColorLiteralConvertible", "init"]
+- !private ["Ps24_ColorLiteralConvertible", "UIColor"]
+- !private ["Ps24_ColorLiteralConvertible", "init"]
 depends-nominal:
-- "PSs9AnyObject"
+- "Ps9AnyObject"
 - !private "V12CoreGraphics7CGFloat"
-- "PSs11CVarArgType"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
-- "PSs8Hashable"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - "CSo7UIColor"
-- !private "PSs24_ColorLiteralConvertible"
+- !private "Ps24_ColorLiteralConvertible"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"

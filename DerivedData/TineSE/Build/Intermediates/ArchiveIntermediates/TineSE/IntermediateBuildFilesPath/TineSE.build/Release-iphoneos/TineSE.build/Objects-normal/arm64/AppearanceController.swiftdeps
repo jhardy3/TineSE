@@ -8,33 +8,33 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "UILabel"
-- !private "UITabBar"
-- !private "UINavigationBar"
-- !private "UIColor"
-- !private "UITabBarItem"
 - !private "Dictionary"
 - !private "UISegmentedControl"
-- !private "NSForegroundColorAttributeName"
+- !private "UIColor"
+- !private "UITabBar"
+- !private "UINavigationBar"
 - !private "UIToolbar"
 - "AppearanceController"
+- !private "UITabBarItem"
+- !private "NSForegroundColorAttributeName"
 depends-member:
-- !private ["PSs9AnyObject", "NSForegroundColorAttributeName"]
-- !private ["PSs9AnyObject", "UIColor"]
-- !private ["PSs9AnyObject", "UILabel"]
-- !private ["PSs9AnyObject", "UINavigationBar"]
-- !private ["PSs9AnyObject", "UISegmentedControl"]
-- !private ["PSs9AnyObject", "UITabBar"]
-- !private ["PSs9AnyObject", "UITabBarItem"]
-- !private ["PSs9AnyObject", "UIToolbar"]
-- !private ["PSs9AnyObject", "appearance"]
-- !private ["PSs9AnyObject", "backgroundColor"]
-- !private ["PSs9AnyObject", "barTintColor"]
-- !private ["PSs9AnyObject", "hunterOrange"]
-- !private ["PSs9AnyObject", "setTitleTextAttributes"]
-- !private ["PSs9AnyObject", "textColor"]
-- !private ["PSs9AnyObject", "tintColor"]
-- !private ["PSs9AnyObject", "whiteColor"]
-- ["PSs9AnyObject", ""]
+- !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UILabel"]
+- !private ["Ps9AnyObject", "UINavigationBar"]
+- !private ["Ps9AnyObject", "UISegmentedControl"]
+- !private ["Ps9AnyObject", "UITabBar"]
+- !private ["Ps9AnyObject", "UITabBarItem"]
+- !private ["Ps9AnyObject", "UIToolbar"]
+- !private ["Ps9AnyObject", "appearance"]
+- !private ["Ps9AnyObject", "backgroundColor"]
+- !private ["Ps9AnyObject", "barTintColor"]
+- !private ["Ps9AnyObject", "hunterOrange"]
+- !private ["Ps9AnyObject", "setTitleTextAttributes"]
+- !private ["Ps9AnyObject", "textColor"]
+- !private ["Ps9AnyObject", "tintColor"]
+- !private ["Ps9AnyObject", "whiteColor"]
+- ["Ps9AnyObject", ""]
 - !private ["C6TineSE20AppearanceController", "NSForegroundColorAttributeName"]
 - !private ["C6TineSE20AppearanceController", "UIColor"]
 - !private ["C6TineSE20AppearanceController", "UILabel"]
@@ -46,54 +46,62 @@ depends-member:
 - ["C6TineSE20AppearanceController", "deinit"]
 - ["C6TineSE20AppearanceController", "init"]
 - ["C6TineSE20AppearanceController", "initializaeAppearanceDefaults"]
-- !private ["PSs23ArrayLiteralConvertible", "Normal"]
-- !private ["PSs23ArrayLiteralConvertible", "Selected"]
-- !private ["PSs11CVarArgType", "appearance"]
-- !private ["PSs11CVarArgType", "backgroundColor"]
-- !private ["PSs11CVarArgType", "barTintColor"]
-- !private ["PSs11CVarArgType", "hunterOrange"]
-- !private ["PSs11CVarArgType", "setTitleTextAttributes"]
-- !private ["PSs11CVarArgType", "textColor"]
-- !private ["PSs11CVarArgType", "tintColor"]
-- !private ["PSs11CVarArgType", "whiteColor"]
-- !private ["PSs14CollectionType", "Key"]
-- !private ["PSs14CollectionType", "Value"]
-- !private ["PSs28CustomDebugStringConvertible", "Key"]
-- !private ["PSs28CustomDebugStringConvertible", "Value"]
-- !private ["PSs23CustomStringConvertible", "Key"]
-- !private ["PSs23CustomStringConvertible", "Value"]
-- !private ["PSs23CustomStringConvertible", "appearance"]
-- !private ["PSs23CustomStringConvertible", "backgroundColor"]
-- !private ["PSs23CustomStringConvertible", "barTintColor"]
-- !private ["PSs23CustomStringConvertible", "hunterOrange"]
-- !private ["PSs23CustomStringConvertible", "setTitleTextAttributes"]
-- !private ["PSs23CustomStringConvertible", "textColor"]
-- !private ["PSs23CustomStringConvertible", "tintColor"]
-- !private ["PSs23CustomStringConvertible", "whiteColor"]
-- !private ["VSs10Dictionary", "Key"]
-- !private ["VSs10Dictionary", "Value"]
-- !private ["PSs28DictionaryLiteralConvertible", "Key"]
-- !private ["PSs28DictionaryLiteralConvertible", "Value"]
-- !private ["PSs9Equatable", "Normal"]
-- !private ["PSs9Equatable", "Selected"]
-- !private ["PSs9Equatable", "appearance"]
-- !private ["PSs9Equatable", "backgroundColor"]
-- !private ["PSs9Equatable", "barTintColor"]
-- !private ["PSs9Equatable", "hunterOrange"]
-- !private ["PSs9Equatable", "setTitleTextAttributes"]
-- !private ["PSs9Equatable", "textColor"]
-- !private ["PSs9Equatable", "tintColor"]
-- !private ["PSs9Equatable", "whiteColor"]
-- !private ["PSs8Hashable", "appearance"]
-- !private ["PSs8Hashable", "backgroundColor"]
-- !private ["PSs8Hashable", "barTintColor"]
-- !private ["PSs8Hashable", "hunterOrange"]
-- !private ["PSs8Hashable", "setTitleTextAttributes"]
-- !private ["PSs8Hashable", "textColor"]
-- !private ["PSs8Hashable", "tintColor"]
-- !private ["PSs8Hashable", "whiteColor"]
-- !private ["PSs9Indexable", "Key"]
-- !private ["PSs9Indexable", "Value"]
+- !private ["Ps23ArrayLiteralConvertible", "Normal"]
+- !private ["Ps23ArrayLiteralConvertible", "Selected"]
+- !private ["Ps11CVarArgType", "appearance"]
+- !private ["Ps11CVarArgType", "backgroundColor"]
+- !private ["Ps11CVarArgType", "barTintColor"]
+- !private ["Ps11CVarArgType", "hunterOrange"]
+- !private ["Ps11CVarArgType", "setTitleTextAttributes"]
+- !private ["Ps11CVarArgType", "textColor"]
+- !private ["Ps11CVarArgType", "tintColor"]
+- !private ["Ps11CVarArgType", "whiteColor"]
+- !private ["Ps14CollectionType", "Key"]
+- !private ["Ps14CollectionType", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "appearance"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "barTintColor"]
+- !private ["Ps28CustomDebugStringConvertible", "hunterOrange"]
+- !private ["Ps28CustomDebugStringConvertible", "setTitleTextAttributes"]
+- !private ["Ps28CustomDebugStringConvertible", "textColor"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
+- !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "appearance"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- !private ["Ps23CustomStringConvertible", "barTintColor"]
+- !private ["Ps23CustomStringConvertible", "hunterOrange"]
+- !private ["Ps23CustomStringConvertible", "setTitleTextAttributes"]
+- !private ["Ps23CustomStringConvertible", "textColor"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
+- !private ["Ps23CustomStringConvertible", "whiteColor"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Ps9Equatable", "Normal"]
+- !private ["Ps9Equatable", "Selected"]
+- !private ["Ps9Equatable", "appearance"]
+- !private ["Ps9Equatable", "backgroundColor"]
+- !private ["Ps9Equatable", "barTintColor"]
+- !private ["Ps9Equatable", "hunterOrange"]
+- !private ["Ps9Equatable", "setTitleTextAttributes"]
+- !private ["Ps9Equatable", "textColor"]
+- !private ["Ps9Equatable", "tintColor"]
+- !private ["Ps9Equatable", "whiteColor"]
+- !private ["Ps8Hashable", "appearance"]
+- !private ["Ps8Hashable", "backgroundColor"]
+- !private ["Ps8Hashable", "barTintColor"]
+- !private ["Ps8Hashable", "hunterOrange"]
+- !private ["Ps8Hashable", "setTitleTextAttributes"]
+- !private ["Ps8Hashable", "textColor"]
+- !private ["Ps8Hashable", "tintColor"]
+- !private ["Ps8Hashable", "whiteColor"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "Value"]
 - !private ["PSo8NSCoding", "appearance"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "barTintColor"]
@@ -122,15 +130,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - !private ["PSo14NSSecureCoding", "hunterOrange"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
-- !private ["PSs13OptionSetType", "Normal"]
-- !private ["PSs13OptionSetType", "Selected"]
+- !private ["Ps13OptionSetType", "Normal"]
+- !private ["Ps13OptionSetType", "Selected"]
 - !private ["Sq", "deinit"]
-- !private ["PSs16RawRepresentable", "Normal"]
-- !private ["PSs16RawRepresentable", "Selected"]
-- !private ["PSs12SequenceType", "Key"]
-- !private ["PSs12SequenceType", "Value"]
-- !private ["PSs14SetAlgebraType", "Normal"]
-- !private ["PSs14SetAlgebraType", "Selected"]
+- !private ["Ps16RawRepresentable", "Normal"]
+- !private ["Ps16RawRepresentable", "Selected"]
+- !private ["Ps12SequenceType", "Key"]
+- !private ["Ps12SequenceType", "Value"]
+- !private ["Ps14SetAlgebraType", "Normal"]
+- !private ["Ps14SetAlgebraType", "Selected"]
 - !private ["PSo29UIAccessibilityIdentification", "appearance"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
@@ -204,40 +212,40 @@ depends-member:
 - !private ["CSo6UIView", "barTintColor"]
 - !private ["CSo6UIView", "textColor"]
 - !private ["CSo6UIView", "tintColor"]
-- !private ["PSs24_ColorLiteralConvertible", "hunterOrange"]
-- !private ["PSs24_ColorLiteralConvertible", "whiteColor"]
-- !private ["PSs21_ObjectiveCBridgeable", "Key"]
-- !private ["PSs21_ObjectiveCBridgeable", "Value"]
-- !private ["PSs12_Reflectable", "Key"]
-- !private ["PSs12_Reflectable", "Value"]
-- !private ["PSs12_Reflectable", "appearance"]
-- !private ["PSs12_Reflectable", "backgroundColor"]
-- !private ["PSs12_Reflectable", "barTintColor"]
-- !private ["PSs12_Reflectable", "textColor"]
-- !private ["PSs12_Reflectable", "tintColor"]
+- !private ["Ps24_ColorLiteralConvertible", "hunterOrange"]
+- !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps12_Reflectable", "Key"]
+- !private ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "appearance"]
+- !private ["Ps12_Reflectable", "backgroundColor"]
+- !private ["Ps12_Reflectable", "barTintColor"]
+- !private ["Ps12_Reflectable", "textColor"]
+- !private ["Ps12_Reflectable", "tintColor"]
 depends-nominal:
-- "PSs9AnyObject"
+- "Ps9AnyObject"
 - "C6TineSE20AppearanceController"
-- !private "PSs23ArrayLiteralConvertible"
-- !private "PSs11CVarArgType"
-- !private "PSs14CollectionType"
-- !private "PSs28CustomDebugStringConvertible"
-- !private "PSs23CustomStringConvertible"
-- !private "VSs10Dictionary"
-- !private "PSs28DictionaryLiteralConvertible"
-- !private "PSs9Equatable"
-- !private "PSs8Hashable"
-- !private "PSs9Indexable"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
+- !private "Ps9Equatable"
+- !private "Ps8Hashable"
+- !private "Ps9Indexable"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "CSo8NSObject"
 - !private "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- !private "PSs13OptionSetType"
+- !private "Ps13OptionSetType"
 - !private "Sq"
-- !private "PSs16RawRepresentable"
-- !private "PSs12SequenceType"
-- !private "PSs14SetAlgebraType"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps14SetAlgebraType"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - !private "PSo21UIAppearanceContainer"
@@ -258,9 +266,9 @@ depends-nominal:
 - !private "CSo9UIToolbar"
 - !private "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
-- !private "PSs24_ColorLiteralConvertible"
-- !private "PSs21_ObjectiveCBridgeable"
-- !private "PSs12_Reflectable"
+- !private "Ps24_ColorLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"

@@ -8,80 +8,90 @@ provides-member:
 provides-dynamic-lookup:
 - "cropToSquare"
 depends-top-level:
-- !private "CGFloat"
-- !private "CGRectMake"
-- !private ">"
-- !private "/"
 - !private "CGRect"
-- !private "CGImageCreateWithImageInRect"
-- !private "CGSize"
-- !private "CGImageRef"
-- "NSObject"
 - !private "-"
-- "UIImage"
+- !private "CGRectMake"
+- "NSObject"
 - "ImageUitilies"
+- !private "CGImageCreateWithImageInRect"
+- !private "CGImageRef"
+- !private ">"
+- !private "CGSize"
+- !private "/"
+- !private "CGFloat"
+- "UIImage"
 depends-member:
-- !private ["PSs9AnyObject", "CGImage"]
-- !private ["PSs9AnyObject", "CGImageCreateWithImageInRect"]
-- !private ["PSs9AnyObject", "CGRectMake"]
-- !private ["PSs9AnyObject", "UIImage"]
-- ["PSs9AnyObject", "cropToSquare"]
-- !private ["PSs9AnyObject", "imageOrientation"]
-- ["PSs9AnyObject", "init"]
-- !private ["PSs9AnyObject", "scale"]
-- !private ["PSs9AnyObject", "size"]
-- ["PSs9AnyObject", ""]
+- !private ["Ps9AnyObject", "CGImage"]
+- !private ["Ps9AnyObject", "CGImageCreateWithImageInRect"]
+- !private ["Ps9AnyObject", "CGRectMake"]
+- !private ["Ps9AnyObject", "UIImage"]
+- ["Ps9AnyObject", "cropToSquare"]
+- !private ["Ps9AnyObject", "imageOrientation"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "scale"]
+- !private ["Ps9AnyObject", "size"]
+- ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["VSC6CGSize", "height"]
 - !private ["VSC6CGSize", "width"]
-- !private ["PSs11CVarArgType", "CGImage"]
-- !private ["PSs11CVarArgType", "CGImageCreateWithImageInRect"]
-- !private ["PSs11CVarArgType", "CGRectMake"]
-- !private ["PSs11CVarArgType", "UIImage"]
-- ["PSs11CVarArgType", "cropToSquare"]
-- !private ["PSs11CVarArgType", "imageOrientation"]
-- ["PSs11CVarArgType", "init"]
-- !private ["PSs11CVarArgType", "scale"]
-- !private ["PSs11CVarArgType", "size"]
-- ["PSs11CVarArgType", ""]
-- !private ["PSs23CustomStringConvertible", "CGImage"]
-- !private ["PSs23CustomStringConvertible", "CGImageCreateWithImageInRect"]
-- !private ["PSs23CustomStringConvertible", "CGRectMake"]
-- !private ["PSs23CustomStringConvertible", "UIImage"]
-- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
-- ["PSs23CustomStringConvertible", "cropToSquare"]
-- !private ["PSs23CustomStringConvertible", "imageOrientation"]
-- ["PSs23CustomStringConvertible", "init"]
-- !private ["PSs23CustomStringConvertible", "scale"]
-- !private ["PSs23CustomStringConvertible", "size"]
-- ["PSs23CustomStringConvertible", ""]
-- !private ["PSs9Equatable", "CGImage"]
-- !private ["PSs9Equatable", "CGImageCreateWithImageInRect"]
-- !private ["PSs9Equatable", "CGRectMake"]
-- !private ["PSs9Equatable", "UIImage"]
-- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
-- ["PSs9Equatable", "cropToSquare"]
-- !private ["PSs9Equatable", "height"]
-- !private ["PSs9Equatable", "imageOrientation"]
-- ["PSs9Equatable", "init"]
-- !private ["PSs9Equatable", "scale"]
-- !private ["PSs9Equatable", "size"]
-- !private ["PSs9Equatable", "width"]
-- ["PSs9Equatable", ""]
-- !private ["PSs8Hashable", "CGImage"]
-- !private ["PSs8Hashable", "CGImageCreateWithImageInRect"]
-- !private ["PSs8Hashable", "CGRectMake"]
-- !private ["PSs8Hashable", "UIImage"]
-- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
-- ["PSs8Hashable", "cropToSquare"]
-- !private ["PSs8Hashable", "imageOrientation"]
-- ["PSs8Hashable", "init"]
-- !private ["PSs8Hashable", "scale"]
-- !private ["PSs8Hashable", "size"]
-- ["PSs8Hashable", ""]
+- !private ["Ps11CVarArgType", "CGImage"]
+- !private ["Ps11CVarArgType", "CGImageCreateWithImageInRect"]
+- !private ["Ps11CVarArgType", "CGRectMake"]
+- !private ["Ps11CVarArgType", "UIImage"]
+- ["Ps11CVarArgType", "cropToSquare"]
+- !private ["Ps11CVarArgType", "imageOrientation"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "scale"]
+- !private ["Ps11CVarArgType", "size"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "CGImage"]
+- !private ["Ps28CustomDebugStringConvertible", "CGImageCreateWithImageInRect"]
+- !private ["Ps28CustomDebugStringConvertible", "CGRectMake"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- ["Ps28CustomDebugStringConvertible", "cropToSquare"]
+- !private ["Ps28CustomDebugStringConvertible", "imageOrientation"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "scale"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "CGImage"]
+- !private ["Ps23CustomStringConvertible", "CGImageCreateWithImageInRect"]
+- !private ["Ps23CustomStringConvertible", "CGRectMake"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "cropToSquare"]
+- !private ["Ps23CustomStringConvertible", "imageOrientation"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "scale"]
+- !private ["Ps23CustomStringConvertible", "size"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "CGImage"]
+- !private ["Ps9Equatable", "CGImageCreateWithImageInRect"]
+- !private ["Ps9Equatable", "CGRectMake"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "cropToSquare"]
+- !private ["Ps9Equatable", "height"]
+- !private ["Ps9Equatable", "imageOrientation"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "scale"]
+- !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "width"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "CGImage"]
+- !private ["Ps8Hashable", "CGImageCreateWithImageInRect"]
+- !private ["Ps8Hashable", "CGRectMake"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "cropToSquare"]
+- !private ["Ps8Hashable", "imageOrientation"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "scale"]
+- !private ["Ps8Hashable", "size"]
+- ["Ps8Hashable", ""]
 - !private ["C6TineSE13ImageUitilies", "CGFloat"]
 - !private ["C6TineSE13ImageUitilies", "CGImageCreateWithImageInRect"]
 - !private ["C6TineSE13ImageUitilies", "CGImageRef"]
@@ -136,27 +146,28 @@ depends-member:
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo7UIImage", "scale"]
 - !private ["CSo7UIImage", "size"]
-- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs24_ImageLiteralConvertible", "CGImage"]
-- !private ["PSs24_ImageLiteralConvertible", "imageOrientation"]
-- !private ["PSs24_ImageLiteralConvertible", "init"]
-- !private ["PSs24_ImageLiteralConvertible", "scale"]
-- !private ["PSs24_ImageLiteralConvertible", "size"]
-- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["PSs12_Reflectable", "height"]
-- !private ["PSs12_Reflectable", "width"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps24_ImageLiteralConvertible", "CGImage"]
+- !private ["Ps24_ImageLiteralConvertible", "imageOrientation"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps24_ImageLiteralConvertible", "scale"]
+- !private ["Ps24_ImageLiteralConvertible", "size"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "height"]
+- !private ["Ps12_Reflectable", "width"]
 depends-nominal:
-- "PSs9AnyObject"
+- "Ps9AnyObject"
 - !private "Sb"
-- !private "PSs25BooleanLiteralConvertible"
-- !private "PSs11BooleanType"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
 - !private "V12CoreGraphics7CGFloat"
 - !private "VSC6CGSize"
-- "PSs11CVarArgType"
-- "PSs23CustomStringConvertible"
-- "PSs9Equatable"
-- "PSs8Hashable"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
 - "C6TineSE13ImageUitilies"
 - !private "PSo8NSCoding"
 - "CSo8NSObject"
@@ -164,10 +175,10 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "CSo7UIImage"
-- !private "PSs33_BuiltinBooleanLiteralConvertible"
-- !private "PSs24_ImageLiteralConvertible"
-- !private "PSs21_ObjectiveCBridgeable"
-- !private "PSs12_Reflectable"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
