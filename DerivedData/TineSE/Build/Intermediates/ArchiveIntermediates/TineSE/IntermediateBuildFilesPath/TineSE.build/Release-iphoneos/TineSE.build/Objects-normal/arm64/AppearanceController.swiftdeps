@@ -7,18 +7,20 @@ provides-member:
 - ["C6TineSE20AppearanceController", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "AppearanceController"
+- !private "UINavigationBar"
+- !private "UIToolbar"
+- !private "UITabBarItem"
+- !private "NSForegroundColorAttributeName"
 - !private "UILabel"
 - !private "Dictionary"
+- !private "UIBarButtonItem"
 - !private "UISegmentedControl"
 - !private "UIColor"
 - !private "UITabBar"
-- !private "UINavigationBar"
-- !private "UIToolbar"
-- "AppearanceController"
-- !private "UITabBarItem"
-- !private "NSForegroundColorAttributeName"
 depends-member:
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
+- !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UILabel"]
 - !private ["Ps9AnyObject", "UINavigationBar"]
@@ -36,6 +38,7 @@ depends-member:
 - !private ["Ps9AnyObject", "whiteColor"]
 - ["Ps9AnyObject", ""]
 - !private ["C6TineSE20AppearanceController", "NSForegroundColorAttributeName"]
+- !private ["C6TineSE20AppearanceController", "UIBarButtonItem"]
 - !private ["C6TineSE20AppearanceController", "UIColor"]
 - !private ["C6TineSE20AppearanceController", "UILabel"]
 - !private ["C6TineSE20AppearanceController", "UINavigationBar"]
@@ -156,6 +159,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "barTintColor"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
 - !private ["PSo21UIAppearanceContainer", "tintColor"]
+- !private ["CSo15UIBarButtonItem", "appearance"]
+- !private ["CSo15UIBarButtonItem", "setTitleTextAttributes"]
 - !private ["CSo9UIBarItem", "appearance"]
 - !private ["CSo9UIBarItem", "setTitleTextAttributes"]
 - !private ["PSo16UIBarPositioning", "appearance"]
@@ -249,6 +254,7 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - !private "PSo21UIAppearanceContainer"
+- !private "CSo15UIBarButtonItem"
 - !private "CSo9UIBarItem"
 - !private "PSo16UIBarPositioning"
 - !private "CSo7UIColor"

@@ -6,71 +6,73 @@ provides-nominal:
 provides-member:
 - ["C6TineSE22TinelineViewController", ""]
 provides-dynamic-lookup:
-- "shedIDs"
-- "prepareForSegue"
 - "newShedsAddedRefresh"
-- "segmentedControlChanged"
+- "locationManager"
+- "locationManager"
+- "locationManager"
+- "segmentedController"
+- "tableView"
+- "tableView"
+- "tableView"
 - "viewDidLoad"
+- "shedIDs"
+- "setupLocationManagerAndGrabLocalSheds"
 - "refresh"
 - "currentViewIsLocal"
-- "locationManager"
-- "locationManager"
-- "locationManager"
-- "tableView"
-- "tableView"
-- "tableView"
-- "segmentedController"
+- "segmentedControlChanged"
+- "fetchShedsFirstLoad"
+- "prepareForSegue"
+- "setUpRefreshController"
 depends-top-level:
-- "Int"
-- "CLLocationManagerDelegate"
-- !private "LocationController"
-- !private ">"
-- "UIRefreshControl"
 - !private "ShedController"
-- !private "dispatch_group_leave"
 - !private "ProfileViewController"
-- !private "StringLiteralType"
-- "NSIndexPath"
-- "UIStoryboardSegue"
-- "TinelineViewController"
-- "CLLocation"
-- "String"
 - "UITableView"
-- !private "~="
-- "UITableViewCell"
-- !private "dispatch_group_notify"
-- "NSError"
 - !private "=="
-- "UITableViewDelegate"
-- !private "dispatch_group_enter"
-- !private "kCLLocationAccuracyBest"
-- !private "print"
-- !private "dispatch_async"
-- "UITableViewDataSource"
-- !private "NSNotificationCenter"
-- !private "BooleanLiteralType"
-- !private "!"
-- "UISegmentedControl"
-- !private "dispatch_get_main_queue"
-- "Shed"
-- !private "dispatch_group_create"
-- !private "NSThread"
+- !private "~="
 - "Bool"
-- "AnyObject"
-- !private "ShedTableViewCell"
+- !private "kCLLocationAccuracyBest"
+- "NSIndexPath"
+- !private "StringLiteralType"
+- "String"
+- "Shed"
+- !private "dispatch_get_main_queue"
 - "CLLocationManager"
 - "UIViewController"
+- !private "dispatch_group_notify"
+- "NSError"
 - !private "Void"
+- "UISegmentedControl"
+- !private "ShedTableViewCell"
+- !private "LocationController"
+- !private "dispatch_group_create"
+- "UIStoryboardSegue"
+- !private "NSNotificationCenter"
+- !private "dispatch_async"
+- "Int"
+- !private ">"
+- "CLLocationManagerDelegate"
+- !private "!"
+- !private "dispatch_group_enter"
 - !private "UIButton"
+- "UIRefreshControl"
+- !private "print"
+- "AnyObject"
+- "TinelineViewController"
+- "CLLocation"
+- "UITableViewDelegate"
+- !private "dispatch_group_leave"
+- "UITableViewCell"
+- "UITableViewDataSource"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "CLLocationManager"]
 - ["Ps9AnyObject", "LocalSheds"]
 - !private ["Ps9AnyObject", "LocationController"]
 - !private ["Ps9AnyObject", "NSNotificationCenter"]
-- !private ["Ps9AnyObject", "NSThread"]
 - ["Ps9AnyObject", "Shed"]
 - !private ["Ps9AnyObject", "ShedController"]
 - ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "TinelineViewController"]
 - !private ["Ps9AnyObject", "UIRefreshControl"]
 - !private ["Ps9AnyObject", "addObserver"]
 - !private ["Ps9AnyObject", "addSubview"]
@@ -90,6 +92,7 @@ depends-member:
 - !private ["Ps9AnyObject", "dispatch_group_notify"]
 - !private ["Ps9AnyObject", "endRefreshing"]
 - !private ["Ps9AnyObject", "fetchShed"]
+- ["Ps9AnyObject", "fetchShedsFirstLoad"]
 - !private ["Ps9AnyObject", "fetchShedsForTineline"]
 - !private ["Ps9AnyObject", "geoFire"]
 - !private ["Ps9AnyObject", "hunterIdentifier"]
@@ -130,9 +133,10 @@ depends-member:
 - ["Ps9AnyObject", "segmentedControlChanged"]
 - ["Ps9AnyObject", "segmentedController"]
 - !private ["Ps9AnyObject", "selectedSegmentIndex"]
+- ["Ps9AnyObject", "setUpRefreshController"]
+- ["Ps9AnyObject", "setupLocationManagerAndGrabLocalSheds"]
 - ["Ps9AnyObject", "shedIDs"]
 - ["Ps9AnyObject", "sheds"]
-- !private ["Ps9AnyObject", "sleepForTimeInterval"]
 - !private ["Ps9AnyObject", "superview"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "updateWith"]
@@ -186,10 +190,10 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "LocalSheds"]
 - !private ["PSo25CLLocationManagerDelegate", "LocationController"]
 - !private ["PSo25CLLocationManagerDelegate", "NSNotificationCenter"]
-- !private ["PSo25CLLocationManagerDelegate", "NSThread"]
 - ["PSo25CLLocationManagerDelegate", "Shed"]
 - !private ["PSo25CLLocationManagerDelegate", "ShedController"]
 - ["PSo25CLLocationManagerDelegate", "String"]
+- !private ["PSo25CLLocationManagerDelegate", "TinelineViewController"]
 - !private ["PSo25CLLocationManagerDelegate", "UIRefreshControl"]
 - !private ["PSo25CLLocationManagerDelegate", "currentViewIsLocal"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_async"]
@@ -198,6 +202,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_group_enter"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_group_leave"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_group_notify"]
+- !private ["PSo25CLLocationManagerDelegate", "fetchShedsFirstLoad"]
 - ["PSo25CLLocationManagerDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo25CLLocationManagerDelegate", "kCLLocationAccuracyBest"]
 - ["PSo25CLLocationManagerDelegate", "locationManager"]
@@ -222,6 +227,8 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "scrollViewWillEndDragging"]
 - ["PSo25CLLocationManagerDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo25CLLocationManagerDelegate", "segmentedController"]
+- !private ["PSo25CLLocationManagerDelegate", "setUpRefreshController"]
+- !private ["PSo25CLLocationManagerDelegate", "setupLocationManagerAndGrabLocalSheds"]
 - !private ["PSo25CLLocationManagerDelegate", "shedIDs"]
 - !private ["PSo25CLLocationManagerDelegate", "sheds"]
 - ["PSo25CLLocationManagerDelegate", "tableView"]
@@ -233,11 +240,11 @@ depends-member:
 - ["Ps11CVarArgType", "LocalSheds"]
 - !private ["Ps11CVarArgType", "LocationController"]
 - !private ["Ps11CVarArgType", "NSNotificationCenter"]
-- !private ["Ps11CVarArgType", "NSThread"]
 - ["Ps11CVarArgType", "Shed"]
 - !private ["Ps11CVarArgType", "ShedController"]
 - !private ["Ps11CVarArgType", "Stride"]
 - ["Ps11CVarArgType", "String"]
+- !private ["Ps11CVarArgType", "TinelineViewController"]
 - !private ["Ps11CVarArgType", "UIRefreshControl"]
 - !private ["Ps11CVarArgType", "addObserver"]
 - !private ["Ps11CVarArgType", "addSubview"]
@@ -256,6 +263,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "dispatch_group_leave"]
 - !private ["Ps11CVarArgType", "dispatch_group_notify"]
 - !private ["Ps11CVarArgType", "endRefreshing"]
+- ["Ps11CVarArgType", "fetchShedsFirstLoad"]
 - !private ["Ps11CVarArgType", "identifier"]
 - !private ["Ps11CVarArgType", "indexPathForCell"]
 - ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
@@ -293,9 +301,10 @@ depends-member:
 - ["Ps11CVarArgType", "segmentedControlChanged"]
 - ["Ps11CVarArgType", "segmentedController"]
 - !private ["Ps11CVarArgType", "selectedSegmentIndex"]
+- ["Ps11CVarArgType", "setUpRefreshController"]
+- ["Ps11CVarArgType", "setupLocationManagerAndGrabLocalSheds"]
 - ["Ps11CVarArgType", "shedIDs"]
 - ["Ps11CVarArgType", "sheds"]
-- !private ["Ps11CVarArgType", "sleepForTimeInterval"]
 - !private ["Ps11CVarArgType", "superview"]
 - ["Ps11CVarArgType", "tableView"]
 - !private ["Ps11CVarArgType", "updateWith"]
@@ -323,12 +332,12 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "LocalSheds"]
 - !private ["Ps28CustomDebugStringConvertible", "LocationController"]
 - !private ["Ps28CustomDebugStringConvertible", "NSNotificationCenter"]
-- !private ["Ps28CustomDebugStringConvertible", "NSThread"]
 - ["Ps28CustomDebugStringConvertible", "Shed"]
 - !private ["Ps28CustomDebugStringConvertible", "ShedController"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - ["Ps28CustomDebugStringConvertible", "String"]
 - ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "TinelineViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "UIRefreshControl"]
 - ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addObserver"]
@@ -351,6 +360,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "dispatch_group_leave"]
 - !private ["Ps28CustomDebugStringConvertible", "dispatch_group_notify"]
 - !private ["Ps28CustomDebugStringConvertible", "endRefreshing"]
+- ["Ps28CustomDebugStringConvertible", "fetchShedsFirstLoad"]
 - !private ["Ps28CustomDebugStringConvertible", "identifier"]
 - !private ["Ps28CustomDebugStringConvertible", "indexPathForCell"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
@@ -388,9 +398,10 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "segmentedControlChanged"]
 - ["Ps28CustomDebugStringConvertible", "segmentedController"]
 - !private ["Ps28CustomDebugStringConvertible", "selectedSegmentIndex"]
+- ["Ps28CustomDebugStringConvertible", "setUpRefreshController"]
+- ["Ps28CustomDebugStringConvertible", "setupLocationManagerAndGrabLocalSheds"]
 - ["Ps28CustomDebugStringConvertible", "shedIDs"]
 - ["Ps28CustomDebugStringConvertible", "sheds"]
-- !private ["Ps28CustomDebugStringConvertible", "sleepForTimeInterval"]
 - !private ["Ps28CustomDebugStringConvertible", "sort"]
 - !private ["Ps28CustomDebugStringConvertible", "sortInPlace"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
@@ -409,12 +420,12 @@ depends-member:
 - ["Ps23CustomStringConvertible", "LocalSheds"]
 - !private ["Ps23CustomStringConvertible", "LocationController"]
 - !private ["Ps23CustomStringConvertible", "NSNotificationCenter"]
-- !private ["Ps23CustomStringConvertible", "NSThread"]
 - ["Ps23CustomStringConvertible", "Shed"]
 - !private ["Ps23CustomStringConvertible", "ShedController"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - ["Ps23CustomStringConvertible", "String"]
 - ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "TinelineViewController"]
 - !private ["Ps23CustomStringConvertible", "UIRefreshControl"]
 - ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -438,6 +449,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "dispatch_group_leave"]
 - !private ["Ps23CustomStringConvertible", "dispatch_group_notify"]
 - !private ["Ps23CustomStringConvertible", "endRefreshing"]
+- ["Ps23CustomStringConvertible", "fetchShedsFirstLoad"]
 - !private ["Ps23CustomStringConvertible", "identifier"]
 - !private ["Ps23CustomStringConvertible", "indexPathForCell"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
@@ -475,9 +487,10 @@ depends-member:
 - ["Ps23CustomStringConvertible", "segmentedControlChanged"]
 - ["Ps23CustomStringConvertible", "segmentedController"]
 - !private ["Ps23CustomStringConvertible", "selectedSegmentIndex"]
+- ["Ps23CustomStringConvertible", "setUpRefreshController"]
+- ["Ps23CustomStringConvertible", "setupLocationManagerAndGrabLocalSheds"]
 - ["Ps23CustomStringConvertible", "shedIDs"]
 - ["Ps23CustomStringConvertible", "sheds"]
-- !private ["Ps23CustomStringConvertible", "sleepForTimeInterval"]
 - !private ["Ps23CustomStringConvertible", "sort"]
 - !private ["Ps23CustomStringConvertible", "sortInPlace"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
@@ -496,11 +509,11 @@ depends-member:
 - ["Ps9Equatable", "LocalSheds"]
 - !private ["Ps9Equatable", "LocationController"]
 - !private ["Ps9Equatable", "NSNotificationCenter"]
-- !private ["Ps9Equatable", "NSThread"]
 - ["Ps9Equatable", "Shed"]
 - !private ["Ps9Equatable", "ShedController"]
 - !private ["Ps9Equatable", "Stride"]
 - ["Ps9Equatable", "String"]
+- !private ["Ps9Equatable", "TinelineViewController"]
 - !private ["Ps9Equatable", "UIRefreshControl"]
 - !private ["Ps9Equatable", "ValueChanged"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -521,6 +534,7 @@ depends-member:
 - !private ["Ps9Equatable", "dispatch_group_leave"]
 - !private ["Ps9Equatable", "dispatch_group_notify"]
 - !private ["Ps9Equatable", "endRefreshing"]
+- ["Ps9Equatable", "fetchShedsFirstLoad"]
 - !private ["Ps9Equatable", "identifier"]
 - !private ["Ps9Equatable", "indexPathForCell"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
@@ -558,9 +572,10 @@ depends-member:
 - ["Ps9Equatable", "segmentedControlChanged"]
 - ["Ps9Equatable", "segmentedController"]
 - !private ["Ps9Equatable", "selectedSegmentIndex"]
+- ["Ps9Equatable", "setUpRefreshController"]
+- ["Ps9Equatable", "setupLocationManagerAndGrabLocalSheds"]
 - ["Ps9Equatable", "shedIDs"]
 - ["Ps9Equatable", "sheds"]
-- !private ["Ps9Equatable", "sleepForTimeInterval"]
 - !private ["Ps9Equatable", "superview"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "updateWith"]
@@ -586,11 +601,11 @@ depends-member:
 - ["Ps8Hashable", "LocalSheds"]
 - !private ["Ps8Hashable", "LocationController"]
 - !private ["Ps8Hashable", "NSNotificationCenter"]
-- !private ["Ps8Hashable", "NSThread"]
 - ["Ps8Hashable", "Shed"]
 - !private ["Ps8Hashable", "ShedController"]
 - !private ["Ps8Hashable", "Stride"]
 - ["Ps8Hashable", "String"]
+- !private ["Ps8Hashable", "TinelineViewController"]
 - !private ["Ps8Hashable", "UIRefreshControl"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addObserver"]
@@ -610,6 +625,7 @@ depends-member:
 - !private ["Ps8Hashable", "dispatch_group_leave"]
 - !private ["Ps8Hashable", "dispatch_group_notify"]
 - !private ["Ps8Hashable", "endRefreshing"]
+- ["Ps8Hashable", "fetchShedsFirstLoad"]
 - !private ["Ps8Hashable", "identifier"]
 - !private ["Ps8Hashable", "indexPathForCell"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
@@ -647,9 +663,10 @@ depends-member:
 - ["Ps8Hashable", "segmentedControlChanged"]
 - ["Ps8Hashable", "segmentedController"]
 - !private ["Ps8Hashable", "selectedSegmentIndex"]
+- ["Ps8Hashable", "setUpRefreshController"]
+- ["Ps8Hashable", "setupLocationManagerAndGrabLocalSheds"]
 - ["Ps8Hashable", "shedIDs"]
 - ["Ps8Hashable", "sheds"]
-- !private ["Ps8Hashable", "sleepForTimeInterval"]
 - !private ["Ps8Hashable", "superview"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "updateWith"]
@@ -724,10 +741,10 @@ depends-member:
 - ["PSo8NSCoding", "LocalSheds"]
 - !private ["PSo8NSCoding", "LocationController"]
 - !private ["PSo8NSCoding", "NSNotificationCenter"]
-- !private ["PSo8NSCoding", "NSThread"]
 - ["PSo8NSCoding", "Shed"]
 - !private ["PSo8NSCoding", "ShedController"]
 - ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "TinelineViewController"]
 - !private ["PSo8NSCoding", "UIRefreshControl"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
@@ -742,6 +759,7 @@ depends-member:
 - !private ["PSo8NSCoding", "dispatch_group_leave"]
 - !private ["PSo8NSCoding", "dispatch_group_notify"]
 - !private ["PSo8NSCoding", "endRefreshing"]
+- ["PSo8NSCoding", "fetchShedsFirstLoad"]
 - !private ["PSo8NSCoding", "indexPathForCell"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo8NSCoding", "init"]
@@ -773,6 +791,8 @@ depends-member:
 - ["PSo8NSCoding", "segmentedControlChanged"]
 - ["PSo8NSCoding", "segmentedController"]
 - !private ["PSo8NSCoding", "selectedSegmentIndex"]
+- ["PSo8NSCoding", "setUpRefreshController"]
+- ["PSo8NSCoding", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo8NSCoding", "shedIDs"]
 - ["PSo8NSCoding", "sheds"]
 - !private ["PSo8NSCoding", "superview"]
@@ -789,10 +809,10 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "LocalSheds"]
 - !private ["PSo26NSExtensionRequestHandling", "LocationController"]
 - !private ["PSo26NSExtensionRequestHandling", "NSNotificationCenter"]
-- !private ["PSo26NSExtensionRequestHandling", "NSThread"]
 - ["PSo26NSExtensionRequestHandling", "Shed"]
 - !private ["PSo26NSExtensionRequestHandling", "ShedController"]
 - ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "TinelineViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIRefreshControl"]
 - ["PSo26NSExtensionRequestHandling", "currentViewIsLocal"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
@@ -801,6 +821,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_group_enter"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_group_leave"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_group_notify"]
+- ["PSo26NSExtensionRequestHandling", "fetchShedsFirstLoad"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "kCLLocationAccuracyBest"]
@@ -828,6 +849,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
 - ["PSo26NSExtensionRequestHandling", "segmentedControlChanged"]
 - ["PSo26NSExtensionRequestHandling", "segmentedController"]
+- ["PSo26NSExtensionRequestHandling", "setUpRefreshController"]
+- ["PSo26NSExtensionRequestHandling", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo26NSExtensionRequestHandling", "shedIDs"]
 - ["PSo26NSExtensionRequestHandling", "sheds"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
@@ -849,12 +872,12 @@ depends-member:
 - ["CSo8NSObject", "NSError"]
 - ["CSo8NSObject", "NSIndexPath"]
 - !private ["CSo8NSObject", "NSNotificationCenter"]
-- !private ["CSo8NSObject", "NSThread"]
 - !private ["CSo8NSObject", "ProfileViewController"]
 - ["CSo8NSObject", "Shed"]
 - !private ["CSo8NSObject", "ShedController"]
 - !private ["CSo8NSObject", "ShedTableViewCell"]
 - ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "TinelineViewController"]
 - !private ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIRefreshControl"]
 - ["CSo8NSObject", "UISegmentedControl"]
@@ -880,6 +903,7 @@ depends-member:
 - !private ["CSo8NSObject", "dispatch_group_leave"]
 - !private ["CSo8NSObject", "dispatch_group_notify"]
 - !private ["CSo8NSObject", "endRefreshing"]
+- ["CSo8NSObject", "fetchShedsFirstLoad"]
 - !private ["CSo8NSObject", "identifier"]
 - !private ["CSo8NSObject", "indexPathForCell"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
@@ -917,9 +941,10 @@ depends-member:
 - ["CSo8NSObject", "segmentedControlChanged"]
 - ["CSo8NSObject", "segmentedController"]
 - !private ["CSo8NSObject", "selectedSegmentIndex"]
+- ["CSo8NSObject", "setUpRefreshController"]
+- ["CSo8NSObject", "setupLocationManagerAndGrabLocalSheds"]
 - ["CSo8NSObject", "shedIDs"]
 - ["CSo8NSObject", "sheds"]
-- !private ["CSo8NSObject", "sleepForTimeInterval"]
 - !private ["CSo8NSObject", "superview"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "updateWith"]
@@ -930,10 +955,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "LocalSheds"]
 - !private ["PSo16NSObjectProtocol", "LocationController"]
 - !private ["PSo16NSObjectProtocol", "NSNotificationCenter"]
-- !private ["PSo16NSObjectProtocol", "NSThread"]
 - ["PSo16NSObjectProtocol", "Shed"]
 - !private ["PSo16NSObjectProtocol", "ShedController"]
 - ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "TinelineViewController"]
 - !private ["PSo16NSObjectProtocol", "UIRefreshControl"]
 - !private ["PSo16NSObjectProtocol", "addObserver"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
@@ -952,6 +977,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dispatch_group_leave"]
 - !private ["PSo16NSObjectProtocol", "dispatch_group_notify"]
 - !private ["PSo16NSObjectProtocol", "endRefreshing"]
+- ["PSo16NSObjectProtocol", "fetchShedsFirstLoad"]
 - !private ["PSo16NSObjectProtocol", "identifier"]
 - !private ["PSo16NSObjectProtocol", "indexPathForCell"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
@@ -989,9 +1015,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "segmentedControlChanged"]
 - ["PSo16NSObjectProtocol", "segmentedController"]
 - !private ["PSo16NSObjectProtocol", "selectedSegmentIndex"]
+- ["PSo16NSObjectProtocol", "setUpRefreshController"]
+- ["PSo16NSObjectProtocol", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo16NSObjectProtocol", "shedIDs"]
 - ["PSo16NSObjectProtocol", "sheds"]
-- !private ["PSo16NSObjectProtocol", "sleepForTimeInterval"]
 - !private ["PSo16NSObjectProtocol", "superview"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "updateWith"]
@@ -1001,7 +1028,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "debugDescription"]
 - !private ["PSo14NSSecureCoding", "row"]
-- !private ["CSo8NSThread", "sleepForTimeInterval"]
 - !private ["CSo7NSValue", "deinit"]
 - ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Ps13OptionSetType", "ValueChanged"]
@@ -1025,7 +1051,6 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
 - !private ["Ps16RawRepresentable", "KeyEntered"]
 - !private ["Ps16RawRepresentable", "ValueChanged"]
-- !private ["V10ObjectiveC8Selector", "deinit"]
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
@@ -1069,12 +1094,12 @@ depends-member:
 - ["C6TineSE22TinelineViewController", "NSError"]
 - ["C6TineSE22TinelineViewController", "NSIndexPath"]
 - !private ["C6TineSE22TinelineViewController", "NSNotificationCenter"]
-- !private ["C6TineSE22TinelineViewController", "NSThread"]
 - !private ["C6TineSE22TinelineViewController", "ProfileViewController"]
 - ["C6TineSE22TinelineViewController", "Shed"]
 - !private ["C6TineSE22TinelineViewController", "ShedController"]
 - !private ["C6TineSE22TinelineViewController", "ShedTableViewCell"]
 - ["C6TineSE22TinelineViewController", "String"]
+- !private ["C6TineSE22TinelineViewController", "TinelineViewController"]
 - !private ["C6TineSE22TinelineViewController", "UIButton"]
 - ["C6TineSE22TinelineViewController", "UIRefreshControl"]
 - ["C6TineSE22TinelineViewController", "UISegmentedControl"]
@@ -1090,6 +1115,7 @@ depends-member:
 - !private ["C6TineSE22TinelineViewController", "dispatch_group_enter"]
 - !private ["C6TineSE22TinelineViewController", "dispatch_group_leave"]
 - !private ["C6TineSE22TinelineViewController", "dispatch_group_notify"]
+- ["C6TineSE22TinelineViewController", "fetchShedsFirstLoad"]
 - ["C6TineSE22TinelineViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C6TineSE22TinelineViewController", "init"]
 - !private ["C6TineSE22TinelineViewController", "kCLLocationAccuracyBest"]
@@ -1117,6 +1143,8 @@ depends-member:
 - ["C6TineSE22TinelineViewController", "sectionIndexTitlesForTableView"]
 - ["C6TineSE22TinelineViewController", "segmentedControlChanged"]
 - ["C6TineSE22TinelineViewController", "segmentedController"]
+- ["C6TineSE22TinelineViewController", "setUpRefreshController"]
+- ["C6TineSE22TinelineViewController", "setupLocationManagerAndGrabLocalSheds"]
 - ["C6TineSE22TinelineViewController", "shedIDs"]
 - ["C6TineSE22TinelineViewController", "sheds"]
 - ["C6TineSE22TinelineViewController", "tableView"]
@@ -1148,10 +1176,10 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "LocalSheds"]
 - !private ["PSo21UIAppearanceContainer", "LocationController"]
 - !private ["PSo21UIAppearanceContainer", "NSNotificationCenter"]
-- !private ["PSo21UIAppearanceContainer", "NSThread"]
 - ["PSo21UIAppearanceContainer", "Shed"]
 - !private ["PSo21UIAppearanceContainer", "ShedController"]
 - ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "TinelineViewController"]
 - !private ["PSo21UIAppearanceContainer", "UIRefreshControl"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
@@ -1165,6 +1193,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "dispatch_group_leave"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_group_notify"]
 - !private ["PSo21UIAppearanceContainer", "endRefreshing"]
+- ["PSo21UIAppearanceContainer", "fetchShedsFirstLoad"]
 - !private ["PSo21UIAppearanceContainer", "indexPathForCell"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UIAppearanceContainer", "init"]
@@ -1195,6 +1224,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "segmentedControlChanged"]
 - ["PSo21UIAppearanceContainer", "segmentedController"]
 - !private ["PSo21UIAppearanceContainer", "selectedSegmentIndex"]
+- ["PSo21UIAppearanceContainer", "setUpRefreshController"]
+- ["PSo21UIAppearanceContainer", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo21UIAppearanceContainer", "shedIDs"]
 - ["PSo21UIAppearanceContainer", "sheds"]
 - !private ["PSo21UIAppearanceContainer", "superview"]
@@ -1212,10 +1243,10 @@ depends-member:
 - ["PSo18UIContentContainer", "LocalSheds"]
 - !private ["PSo18UIContentContainer", "LocationController"]
 - !private ["PSo18UIContentContainer", "NSNotificationCenter"]
-- !private ["PSo18UIContentContainer", "NSThread"]
 - ["PSo18UIContentContainer", "Shed"]
 - !private ["PSo18UIContentContainer", "ShedController"]
 - ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "TinelineViewController"]
 - !private ["PSo18UIContentContainer", "UIRefreshControl"]
 - ["PSo18UIContentContainer", "currentViewIsLocal"]
 - !private ["PSo18UIContentContainer", "dispatch_async"]
@@ -1224,6 +1255,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "dispatch_group_enter"]
 - !private ["PSo18UIContentContainer", "dispatch_group_leave"]
 - !private ["PSo18UIContentContainer", "dispatch_group_notify"]
+- ["PSo18UIContentContainer", "fetchShedsFirstLoad"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "kCLLocationAccuracyBest"]
@@ -1251,6 +1283,8 @@ depends-member:
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
 - ["PSo18UIContentContainer", "segmentedControlChanged"]
 - ["PSo18UIContentContainer", "segmentedController"]
+- ["PSo18UIContentContainer", "setUpRefreshController"]
+- ["PSo18UIContentContainer", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo18UIContentContainer", "shedIDs"]
 - ["PSo18UIContentContainer", "sheds"]
 - ["PSo18UIContentContainer", "tableView"]
@@ -1290,10 +1324,10 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "LocalSheds"]
 - !private ["PSo18UIFocusEnvironment", "LocationController"]
 - !private ["PSo18UIFocusEnvironment", "NSNotificationCenter"]
-- !private ["PSo18UIFocusEnvironment", "NSThread"]
 - ["PSo18UIFocusEnvironment", "Shed"]
 - !private ["PSo18UIFocusEnvironment", "ShedController"]
 - ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "TinelineViewController"]
 - !private ["PSo18UIFocusEnvironment", "UIRefreshControl"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
@@ -1307,6 +1341,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "dispatch_group_leave"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_group_notify"]
 - !private ["PSo18UIFocusEnvironment", "endRefreshing"]
+- ["PSo18UIFocusEnvironment", "fetchShedsFirstLoad"]
 - !private ["PSo18UIFocusEnvironment", "indexPathForCell"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIFocusEnvironment", "init"]
@@ -1337,6 +1372,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "segmentedControlChanged"]
 - ["PSo18UIFocusEnvironment", "segmentedController"]
 - !private ["PSo18UIFocusEnvironment", "selectedSegmentIndex"]
+- ["PSo18UIFocusEnvironment", "setUpRefreshController"]
+- ["PSo18UIFocusEnvironment", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo18UIFocusEnvironment", "shedIDs"]
 - ["PSo18UIFocusEnvironment", "sheds"]
 - !private ["PSo18UIFocusEnvironment", "superview"]
@@ -1361,12 +1398,12 @@ depends-member:
 - ["CSo11UIResponder", "NSError"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - !private ["CSo11UIResponder", "NSNotificationCenter"]
-- !private ["CSo11UIResponder", "NSThread"]
 - !private ["CSo11UIResponder", "ProfileViewController"]
 - ["CSo11UIResponder", "Shed"]
 - !private ["CSo11UIResponder", "ShedController"]
 - !private ["CSo11UIResponder", "ShedTableViewCell"]
 - ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "TinelineViewController"]
 - !private ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIRefreshControl"]
 - ["CSo11UIResponder", "UISegmentedControl"]
@@ -1386,6 +1423,7 @@ depends-member:
 - !private ["CSo11UIResponder", "dispatch_group_leave"]
 - !private ["CSo11UIResponder", "dispatch_group_notify"]
 - !private ["CSo11UIResponder", "endRefreshing"]
+- ["CSo11UIResponder", "fetchShedsFirstLoad"]
 - !private ["CSo11UIResponder", "indexPathForCell"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
@@ -1416,6 +1454,8 @@ depends-member:
 - ["CSo11UIResponder", "segmentedControlChanged"]
 - ["CSo11UIResponder", "segmentedController"]
 - !private ["CSo11UIResponder", "selectedSegmentIndex"]
+- ["CSo11UIResponder", "setUpRefreshController"]
+- ["CSo11UIResponder", "setupLocationManagerAndGrabLocalSheds"]
 - ["CSo11UIResponder", "shedIDs"]
 - ["CSo11UIResponder", "sheds"]
 - !private ["CSo11UIResponder", "superview"]
@@ -1432,10 +1472,10 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "LocalSheds"]
 - !private ["PSo20UIScrollViewDelegate", "LocationController"]
 - !private ["PSo20UIScrollViewDelegate", "NSNotificationCenter"]
-- !private ["PSo20UIScrollViewDelegate", "NSThread"]
 - ["PSo20UIScrollViewDelegate", "Shed"]
 - !private ["PSo20UIScrollViewDelegate", "ShedController"]
 - ["PSo20UIScrollViewDelegate", "String"]
+- !private ["PSo20UIScrollViewDelegate", "TinelineViewController"]
 - !private ["PSo20UIScrollViewDelegate", "UIRefreshControl"]
 - !private ["PSo20UIScrollViewDelegate", "currentViewIsLocal"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_async"]
@@ -1444,6 +1484,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "dispatch_group_enter"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_group_leave"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_group_notify"]
+- !private ["PSo20UIScrollViewDelegate", "fetchShedsFirstLoad"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "kCLLocationAccuracyBest"]
 - ["PSo20UIScrollViewDelegate", "locationManager"]
@@ -1468,6 +1509,8 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo20UIScrollViewDelegate", "segmentedController"]
+- !private ["PSo20UIScrollViewDelegate", "setUpRefreshController"]
+- !private ["PSo20UIScrollViewDelegate", "setupLocationManagerAndGrabLocalSheds"]
 - !private ["PSo20UIScrollViewDelegate", "shedIDs"]
 - !private ["PSo20UIScrollViewDelegate", "sheds"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
@@ -1479,10 +1522,10 @@ depends-member:
 - ["PSo16UIStateRestoring", "LocalSheds"]
 - !private ["PSo16UIStateRestoring", "LocationController"]
 - !private ["PSo16UIStateRestoring", "NSNotificationCenter"]
-- !private ["PSo16UIStateRestoring", "NSThread"]
 - ["PSo16UIStateRestoring", "Shed"]
 - !private ["PSo16UIStateRestoring", "ShedController"]
 - ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "TinelineViewController"]
 - !private ["PSo16UIStateRestoring", "UIRefreshControl"]
 - ["PSo16UIStateRestoring", "currentViewIsLocal"]
 - !private ["PSo16UIStateRestoring", "dispatch_async"]
@@ -1491,6 +1534,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "dispatch_group_enter"]
 - !private ["PSo16UIStateRestoring", "dispatch_group_leave"]
 - !private ["PSo16UIStateRestoring", "dispatch_group_notify"]
+- ["PSo16UIStateRestoring", "fetchShedsFirstLoad"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "kCLLocationAccuracyBest"]
@@ -1518,6 +1562,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
 - ["PSo16UIStateRestoring", "segmentedControlChanged"]
 - ["PSo16UIStateRestoring", "segmentedController"]
+- ["PSo16UIStateRestoring", "setUpRefreshController"]
+- ["PSo16UIStateRestoring", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo16UIStateRestoring", "shedIDs"]
 - ["PSo16UIStateRestoring", "sheds"]
 - ["PSo16UIStateRestoring", "tableView"]
@@ -1538,10 +1584,10 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "LocalSheds"]
 - !private ["PSo21UITableViewDataSource", "LocationController"]
 - !private ["PSo21UITableViewDataSource", "NSNotificationCenter"]
-- !private ["PSo21UITableViewDataSource", "NSThread"]
 - ["PSo21UITableViewDataSource", "Shed"]
 - !private ["PSo21UITableViewDataSource", "ShedController"]
 - ["PSo21UITableViewDataSource", "String"]
+- !private ["PSo21UITableViewDataSource", "TinelineViewController"]
 - !private ["PSo21UITableViewDataSource", "UIRefreshControl"]
 - !private ["PSo21UITableViewDataSource", "currentViewIsLocal"]
 - !private ["PSo21UITableViewDataSource", "dispatch_async"]
@@ -1550,6 +1596,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "dispatch_group_enter"]
 - !private ["PSo21UITableViewDataSource", "dispatch_group_leave"]
 - !private ["PSo21UITableViewDataSource", "dispatch_group_notify"]
+- !private ["PSo21UITableViewDataSource", "fetchShedsFirstLoad"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UITableViewDataSource", "kCLLocationAccuracyBest"]
 - ["PSo21UITableViewDataSource", "locationManager"]
@@ -1574,6 +1621,8 @@ depends-member:
 - ["PSo21UITableViewDataSource", "scrollViewWillEndDragging"]
 - ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
 - !private ["PSo21UITableViewDataSource", "segmentedController"]
+- !private ["PSo21UITableViewDataSource", "setUpRefreshController"]
+- !private ["PSo21UITableViewDataSource", "setupLocationManagerAndGrabLocalSheds"]
 - !private ["PSo21UITableViewDataSource", "shedIDs"]
 - !private ["PSo21UITableViewDataSource", "sheds"]
 - ["PSo21UITableViewDataSource", "tableView"]
@@ -1583,10 +1632,10 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "LocalSheds"]
 - !private ["PSo19UITableViewDelegate", "LocationController"]
 - !private ["PSo19UITableViewDelegate", "NSNotificationCenter"]
-- !private ["PSo19UITableViewDelegate", "NSThread"]
 - ["PSo19UITableViewDelegate", "Shed"]
 - !private ["PSo19UITableViewDelegate", "ShedController"]
 - ["PSo19UITableViewDelegate", "String"]
+- !private ["PSo19UITableViewDelegate", "TinelineViewController"]
 - !private ["PSo19UITableViewDelegate", "UIRefreshControl"]
 - !private ["PSo19UITableViewDelegate", "currentViewIsLocal"]
 - !private ["PSo19UITableViewDelegate", "dispatch_async"]
@@ -1595,6 +1644,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "dispatch_group_enter"]
 - !private ["PSo19UITableViewDelegate", "dispatch_group_leave"]
 - !private ["PSo19UITableViewDelegate", "dispatch_group_notify"]
+- !private ["PSo19UITableViewDelegate", "fetchShedsFirstLoad"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UITableViewDelegate", "kCLLocationAccuracyBest"]
 - ["PSo19UITableViewDelegate", "locationManager"]
@@ -1619,6 +1669,8 @@ depends-member:
 - ["PSo19UITableViewDelegate", "scrollViewWillEndDragging"]
 - ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
 - !private ["PSo19UITableViewDelegate", "segmentedController"]
+- !private ["PSo19UITableViewDelegate", "setUpRefreshController"]
+- !private ["PSo19UITableViewDelegate", "setupLocationManagerAndGrabLocalSheds"]
 - !private ["PSo19UITableViewDelegate", "shedIDs"]
 - !private ["PSo19UITableViewDelegate", "sheds"]
 - ["PSo19UITableViewDelegate", "tableView"]
@@ -1628,10 +1680,10 @@ depends-member:
 - ["PSo18UITraitEnvironment", "LocalSheds"]
 - !private ["PSo18UITraitEnvironment", "LocationController"]
 - !private ["PSo18UITraitEnvironment", "NSNotificationCenter"]
-- !private ["PSo18UITraitEnvironment", "NSThread"]
 - ["PSo18UITraitEnvironment", "Shed"]
 - !private ["PSo18UITraitEnvironment", "ShedController"]
 - ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "TinelineViewController"]
 - !private ["PSo18UITraitEnvironment", "UIRefreshControl"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
@@ -1645,6 +1697,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "dispatch_group_leave"]
 - !private ["PSo18UITraitEnvironment", "dispatch_group_notify"]
 - !private ["PSo18UITraitEnvironment", "endRefreshing"]
+- ["PSo18UITraitEnvironment", "fetchShedsFirstLoad"]
 - !private ["PSo18UITraitEnvironment", "indexPathForCell"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UITraitEnvironment", "init"]
@@ -1675,6 +1728,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "segmentedControlChanged"]
 - ["PSo18UITraitEnvironment", "segmentedController"]
 - !private ["PSo18UITraitEnvironment", "selectedSegmentIndex"]
+- ["PSo18UITraitEnvironment", "setUpRefreshController"]
+- ["PSo18UITraitEnvironment", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo18UITraitEnvironment", "shedIDs"]
 - ["PSo18UITraitEnvironment", "sheds"]
 - !private ["PSo18UITraitEnvironment", "superview"]
@@ -1705,12 +1760,12 @@ depends-member:
 - ["CSo16UIViewController", "NSError"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - !private ["CSo16UIViewController", "NSNotificationCenter"]
-- !private ["CSo16UIViewController", "NSThread"]
 - !private ["CSo16UIViewController", "ProfileViewController"]
 - ["CSo16UIViewController", "Shed"]
 - !private ["CSo16UIViewController", "ShedController"]
 - !private ["CSo16UIViewController", "ShedTableViewCell"]
 - ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "TinelineViewController"]
 - !private ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UIRefreshControl"]
 - ["CSo16UIViewController", "UISegmentedControl"]
@@ -1726,6 +1781,7 @@ depends-member:
 - !private ["CSo16UIViewController", "dispatch_group_enter"]
 - !private ["CSo16UIViewController", "dispatch_group_leave"]
 - !private ["CSo16UIViewController", "dispatch_group_notify"]
+- ["CSo16UIViewController", "fetchShedsFirstLoad"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "kCLLocationAccuracyBest"]
@@ -1753,6 +1809,8 @@ depends-member:
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
 - ["CSo16UIViewController", "segmentedControlChanged"]
 - ["CSo16UIViewController", "segmentedController"]
+- ["CSo16UIViewController", "setUpRefreshController"]
+- ["CSo16UIViewController", "setupLocationManagerAndGrabLocalSheds"]
 - ["CSo16UIViewController", "shedIDs"]
 - ["CSo16UIViewController", "sheds"]
 - ["CSo16UIViewController", "tableView"]
@@ -1893,7 +1951,6 @@ depends-nominal:
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- !private "CSo8NSThread"
 - !private "CSo7NSValue"
 - "Ps21NilLiteralConvertible"
 - !private "Ps13OptionSetType"
@@ -1903,7 +1960,6 @@ depends-nominal:
 - !private "Vs5Range"
 - "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
-- !private "V10ObjectiveC8Selector"
 - "Ps12SequenceType"
 - !private "Ps14SetAlgebraType"
 - "C6TineSE4Shed"
@@ -2045,4 +2101,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "44b750d6ad156de5ce84f54ba44e9008"
+interface-hash: "1a141029bc7955066efbf33a57a1e934"

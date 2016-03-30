@@ -201,6 +201,8 @@ SWIFT_CLASS("_TtC6TineSE25LeaderboardViewController")
 - (void)didReceiveMemoryWarning;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)fetchTrackedHuntersForLeaderBoard;
+- (void)fetchAllHuntersForLeaderBoard;
 - (IBAction)segmentedControlChanged:(UISegmentedControl * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -225,9 +227,10 @@ SWIFT_CLASS("_TtC6TineSE21ProfileViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedCountLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified trackingCountLabel;
 @property (nonatomic) BOOL viewLoaded;
-@property (nonatomic, readonly) BOOL isFollowing;
+@property (nonatomic) NSInteger trackingCount;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -307,11 +310,14 @@ SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 - (void)viewDidLoad;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (void)setupLocationManagerAndGrabLocalSheds;
+- (void)fetchShedsFirstLoad;
 - (void)refresh:(UIRefreshControl * _Nonnull)refreshControl;
+- (void)setUpRefreshController;
 - (void)newShedsAddedRefresh;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (IBAction)segmentedControlChanged:(UISegmentedControl * _Nonnull)sender;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -341,6 +347,7 @@ SWIFT_CLASS("_TtC6TineSE19logInViewController")
 - (void)didReceiveMemoryWarning;
 - (IBAction)signUpTapped:(UIButton * _Nonnull)sender;
 - (IBAction)signInTapped:(UIButton * _Nonnull)sender;
+- (void)setupTextFields;
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

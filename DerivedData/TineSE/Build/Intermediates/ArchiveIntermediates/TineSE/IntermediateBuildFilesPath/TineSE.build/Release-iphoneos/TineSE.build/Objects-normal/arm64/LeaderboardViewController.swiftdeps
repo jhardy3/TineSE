@@ -6,37 +6,39 @@ provides-nominal:
 provides-member:
 - ["C6TineSE25LeaderboardViewController", ""]
 provides-dynamic-lookup:
-- "segmentedControl"
-- "viewWillAppear"
-- "didReceiveMemoryWarning"
-- "segmentedControlChanged"
+- "fetchAllHuntersForLeaderBoard"
 - "isTracking"
+- "viewWillAppear"
+- "segmentedControlChanged"
+- "fetchTrackedHuntersForLeaderBoard"
+- "didReceiveMemoryWarning"
+- "segmentedControl"
 - "viewDidLoad"
 - "tableView"
 - "tableView"
 - "tableView"
 depends-top-level:
-- "Int"
 - !private "Void"
-- "BooleanLiteralType"
-- "Hunter"
-- !private "dispatch_async"
-- "NSIndexPath"
-- !private "HunterController"
-- "UITableViewDelegate"
-- "Bool"
-- "UITableViewDataSource"
-- "UISegmentedControl"
-- "UITableView"
 - "UITableViewCell"
-- "UIViewController"
-- !private ">"
-- !private "dispatch_get_main_queue"
 - !private "!"
-- "LeaderboardViewController"
+- !private "dispatch_async"
+- !private "dispatch_get_main_queue"
+- "UIViewController"
+- "UITableViewDataSource"
+- "UITableView"
 - !private "StringLiteralType"
 - !private "=="
+- "UITableViewDelegate"
+- "NSIndexPath"
+- "UISegmentedControl"
+- "Int"
+- "Hunter"
+- "Bool"
+- !private ">"
 - !private "String"
+- "BooleanLiteralType"
+- "LeaderboardViewController"
+- !private "HunterController"
 depends-member:
 - ["Ps9AnyObject", "Hunter"]
 - !private ["Ps9AnyObject", "HunterController"]
@@ -48,7 +50,9 @@ depends-member:
 - !private ["Ps9AnyObject", "dispatch_async"]
 - !private ["Ps9AnyObject", "dispatch_get_main_queue"]
 - !private ["Ps9AnyObject", "fetchAllHunters"]
+- ["Ps9AnyObject", "fetchAllHuntersForLeaderBoard"]
 - !private ["Ps9AnyObject", "fetchHuntersWithIdentifierArray"]
+- ["Ps9AnyObject", "fetchTrackedHuntersForLeaderBoard"]
 - ["Ps9AnyObject", "filterdSheds"]
 - !private ["Ps9AnyObject", "identifier"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
@@ -123,6 +127,8 @@ depends-member:
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - !private ["Ps11CVarArgType", "dispatch_async"]
 - !private ["Ps11CVarArgType", "dispatch_get_main_queue"]
+- ["Ps11CVarArgType", "fetchAllHuntersForLeaderBoard"]
+- ["Ps11CVarArgType", "fetchTrackedHuntersForLeaderBoard"]
 - ["Ps11CVarArgType", "filterdSheds"]
 - ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps11CVarArgType", "init"]
@@ -180,6 +186,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "dispatch_async"]
 - !private ["Ps28CustomDebugStringConvertible", "dispatch_get_main_queue"]
+- ["Ps28CustomDebugStringConvertible", "fetchAllHuntersForLeaderBoard"]
+- ["Ps28CustomDebugStringConvertible", "fetchTrackedHuntersForLeaderBoard"]
 - ["Ps28CustomDebugStringConvertible", "filterdSheds"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -229,6 +237,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "dispatch_async"]
 - !private ["Ps23CustomStringConvertible", "dispatch_get_main_queue"]
+- ["Ps23CustomStringConvertible", "fetchAllHuntersForLeaderBoard"]
+- ["Ps23CustomStringConvertible", "fetchTrackedHuntersForLeaderBoard"]
 - ["Ps23CustomStringConvertible", "filterdSheds"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -272,6 +282,8 @@ depends-member:
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "dispatch_async"]
 - !private ["Ps9Equatable", "dispatch_get_main_queue"]
+- ["Ps9Equatable", "fetchAllHuntersForLeaderBoard"]
+- ["Ps9Equatable", "fetchTrackedHuntersForLeaderBoard"]
 - ["Ps9Equatable", "filterdSheds"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps9Equatable", "init"]
@@ -321,6 +333,8 @@ depends-member:
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "dispatch_async"]
 - !private ["Ps8Hashable", "dispatch_get_main_queue"]
+- ["Ps8Hashable", "fetchAllHuntersForLeaderBoard"]
+- ["Ps8Hashable", "fetchTrackedHuntersForLeaderBoard"]
 - ["Ps8Hashable", "filterdSheds"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - ["Ps8Hashable", "init"]
@@ -394,6 +408,8 @@ depends-member:
 - ["C6TineSE25LeaderboardViewController", "didReceiveMemoryWarning"]
 - !private ["C6TineSE25LeaderboardViewController", "dispatch_async"]
 - !private ["C6TineSE25LeaderboardViewController", "dispatch_get_main_queue"]
+- ["C6TineSE25LeaderboardViewController", "fetchAllHuntersForLeaderBoard"]
+- ["C6TineSE25LeaderboardViewController", "fetchTrackedHuntersForLeaderBoard"]
 - ["C6TineSE25LeaderboardViewController", "filterdSheds"]
 - ["C6TineSE25LeaderboardViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C6TineSE25LeaderboardViewController", "init"]
@@ -457,6 +473,8 @@ depends-member:
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "dispatch_async"]
 - !private ["PSo8NSCoding", "dispatch_get_main_queue"]
+- ["PSo8NSCoding", "fetchAllHuntersForLeaderBoard"]
+- ["PSo8NSCoding", "fetchTrackedHuntersForLeaderBoard"]
 - ["PSo8NSCoding", "filterdSheds"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo8NSCoding", "init"]
@@ -494,6 +512,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
+- ["PSo26NSExtensionRequestHandling", "fetchAllHuntersForLeaderBoard"]
+- ["PSo26NSExtensionRequestHandling", "fetchTrackedHuntersForLeaderBoard"]
 - ["PSo26NSExtensionRequestHandling", "filterdSheds"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
@@ -536,6 +556,8 @@ depends-member:
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "dispatch_async"]
 - !private ["CSo8NSObject", "dispatch_get_main_queue"]
+- ["CSo8NSObject", "fetchAllHuntersForLeaderBoard"]
+- ["CSo8NSObject", "fetchTrackedHuntersForLeaderBoard"]
 - ["CSo8NSObject", "filterdSheds"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo8NSObject", "init"]
@@ -573,6 +595,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "dispatch_async"]
 - !private ["PSo16NSObjectProtocol", "dispatch_get_main_queue"]
+- ["PSo16NSObjectProtocol", "fetchAllHuntersForLeaderBoard"]
+- ["PSo16NSObjectProtocol", "fetchTrackedHuntersForLeaderBoard"]
 - ["PSo16NSObjectProtocol", "filterdSheds"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16NSObjectProtocol", "init"]
@@ -660,6 +684,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_async"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_get_main_queue"]
+- ["PSo21UIAppearanceContainer", "fetchAllHuntersForLeaderBoard"]
+- ["PSo21UIAppearanceContainer", "fetchTrackedHuntersForLeaderBoard"]
 - ["PSo21UIAppearanceContainer", "filterdSheds"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UIAppearanceContainer", "init"]
@@ -695,6 +721,8 @@ depends-member:
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dispatch_async"]
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
+- ["PSo18UIContentContainer", "fetchAllHuntersForLeaderBoard"]
+- ["PSo18UIContentContainer", "fetchTrackedHuntersForLeaderBoard"]
 - ["PSo18UIContentContainer", "filterdSheds"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
@@ -739,6 +767,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_async"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_get_main_queue"]
+- ["PSo18UIFocusEnvironment", "fetchAllHuntersForLeaderBoard"]
+- ["PSo18UIFocusEnvironment", "fetchTrackedHuntersForLeaderBoard"]
 - ["PSo18UIFocusEnvironment", "filterdSheds"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIFocusEnvironment", "init"]
@@ -786,6 +816,8 @@ depends-member:
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "dispatch_async"]
 - !private ["CSo11UIResponder", "dispatch_get_main_queue"]
+- ["CSo11UIResponder", "fetchAllHuntersForLeaderBoard"]
+- ["CSo11UIResponder", "fetchTrackedHuntersForLeaderBoard"]
 - ["CSo11UIResponder", "filterdSheds"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
@@ -821,6 +853,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "String"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_async"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
+- !private ["PSo20UIScrollViewDelegate", "fetchAllHuntersForLeaderBoard"]
+- !private ["PSo20UIScrollViewDelegate", "fetchTrackedHuntersForLeaderBoard"]
 - !private ["PSo20UIScrollViewDelegate", "filterdSheds"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "isTracking"]
@@ -848,6 +882,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dispatch_async"]
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
+- ["PSo16UIStateRestoring", "fetchAllHuntersForLeaderBoard"]
+- ["PSo16UIStateRestoring", "fetchTrackedHuntersForLeaderBoard"]
 - ["PSo16UIStateRestoring", "filterdSheds"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
@@ -883,6 +919,8 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "String"]
 - !private ["PSo21UITableViewDataSource", "dispatch_async"]
 - !private ["PSo21UITableViewDataSource", "dispatch_get_main_queue"]
+- !private ["PSo21UITableViewDataSource", "fetchAllHuntersForLeaderBoard"]
+- !private ["PSo21UITableViewDataSource", "fetchTrackedHuntersForLeaderBoard"]
 - !private ["PSo21UITableViewDataSource", "filterdSheds"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UITableViewDataSource", "isTracking"]
@@ -909,6 +947,8 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "String"]
 - !private ["PSo19UITableViewDelegate", "dispatch_async"]
 - !private ["PSo19UITableViewDelegate", "dispatch_get_main_queue"]
+- !private ["PSo19UITableViewDelegate", "fetchAllHuntersForLeaderBoard"]
+- !private ["PSo19UITableViewDelegate", "fetchTrackedHuntersForLeaderBoard"]
 - !private ["PSo19UITableViewDelegate", "filterdSheds"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UITableViewDelegate", "isTracking"]
@@ -938,6 +978,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "dispatch_async"]
 - !private ["PSo18UITraitEnvironment", "dispatch_get_main_queue"]
+- ["PSo18UITraitEnvironment", "fetchAllHuntersForLeaderBoard"]
+- ["PSo18UITraitEnvironment", "fetchTrackedHuntersForLeaderBoard"]
 - ["PSo18UITraitEnvironment", "filterdSheds"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UITraitEnvironment", "init"]
@@ -985,6 +1027,8 @@ depends-member:
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "dispatch_async"]
 - !private ["CSo16UIViewController", "dispatch_get_main_queue"]
+- ["CSo16UIViewController", "fetchAllHuntersForLeaderBoard"]
+- ["CSo16UIViewController", "fetchTrackedHuntersForLeaderBoard"]
 - ["CSo16UIViewController", "filterdSheds"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
@@ -1260,4 +1304,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "c410eeb373ae2199de1036b5073e0400"
+interface-hash: "29ea849ba906f89c6218244a4f91f501"

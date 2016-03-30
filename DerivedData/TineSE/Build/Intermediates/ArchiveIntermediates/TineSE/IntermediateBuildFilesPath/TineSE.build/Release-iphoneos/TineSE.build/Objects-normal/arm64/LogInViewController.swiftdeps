@@ -6,29 +6,30 @@ provides-nominal:
 provides-member:
 - ["C6TineSE19logInViewController", ""]
 provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "passwordTextField"
+- "setupTextFields"
 - "emailTextField"
 - "usernameTextField"
-- "signUpTapped"
-- "viewDidLoad"
+- "signInTapped"
 - "textFieldShouldReturn"
 - "textFieldDidEndEditing"
-- "passwordTextField"
-- "didReceiveMemoryWarning"
+- "signUpTapped"
+- "viewDidLoad"
 - "viewDidAppear"
-- "signInTapped"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "UIViewController"
-- !private "UIColor"
-- !private "Void"
-- "logInViewController"
 - !private "!="
-- "Bool"
-- "UITextField"
 - !private "HunterController"
-- "UITextFieldDelegate"
-- !private "StringLiteralType"
+- !private "BooleanLiteralType"
 - "UIButton"
+- "UITextFieldDelegate"
+- "logInViewController"
+- "UITextField"
+- !private "UIColor"
+- "Bool"
+- "UIViewController"
+- !private "Void"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "HunterController"]
 - !private ["Ps9AnyObject", "UIColor"]
@@ -37,7 +38,7 @@ depends-member:
 - !private ["Ps9AnyObject", "createHunter"]
 - !private ["Ps9AnyObject", "currentHunter"]
 - !private ["Ps9AnyObject", "delegate"]
-- !private ["Ps9AnyObject", "desertSkyBlue"]
+- !private ["Ps9AnyObject", "desertFloorTan"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "emailTextField"]
 - !private ["Ps9AnyObject", "hidden"]
@@ -45,6 +46,7 @@ depends-member:
 - ["Ps9AnyObject", "passwordTextField"]
 - !private ["Ps9AnyObject", "performSegueWithIdentifier"]
 - !private ["Ps9AnyObject", "resignFirstResponder"]
+- ["Ps9AnyObject", "setupTextFields"]
 - !private ["Ps9AnyObject", "sharedInstance"]
 - ["Ps9AnyObject", "signInTapped"]
 - ["Ps9AnyObject", "signUpTapped"]
@@ -68,7 +70,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "backgroundColor"]
 - !private ["Ps11CVarArgType", "delegate"]
-- !private ["Ps11CVarArgType", "desertSkyBlue"]
+- !private ["Ps11CVarArgType", "desertFloorTan"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - ["Ps11CVarArgType", "emailTextField"]
 - !private ["Ps11CVarArgType", "hidden"]
@@ -76,6 +78,7 @@ depends-member:
 - ["Ps11CVarArgType", "passwordTextField"]
 - !private ["Ps11CVarArgType", "performSegueWithIdentifier"]
 - !private ["Ps11CVarArgType", "resignFirstResponder"]
+- ["Ps11CVarArgType", "setupTextFields"]
 - ["Ps11CVarArgType", "signInTapped"]
 - ["Ps11CVarArgType", "signUpTapped"]
 - !private ["Ps11CVarArgType", "text"]
@@ -96,7 +99,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
-- !private ["Ps28CustomDebugStringConvertible", "desertSkyBlue"]
+- !private ["Ps28CustomDebugStringConvertible", "desertFloorTan"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "emailTextField"]
 - !private ["Ps28CustomDebugStringConvertible", "hidden"]
@@ -104,6 +107,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "passwordTextField"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegueWithIdentifier"]
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
+- ["Ps28CustomDebugStringConvertible", "setupTextFields"]
 - ["Ps28CustomDebugStringConvertible", "signInTapped"]
 - ["Ps28CustomDebugStringConvertible", "signUpTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
@@ -124,7 +128,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
-- !private ["Ps23CustomStringConvertible", "desertSkyBlue"]
+- !private ["Ps23CustomStringConvertible", "desertFloorTan"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "emailTextField"]
 - !private ["Ps23CustomStringConvertible", "hidden"]
@@ -132,6 +136,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "passwordTextField"]
 - !private ["Ps23CustomStringConvertible", "performSegueWithIdentifier"]
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
+- ["Ps23CustomStringConvertible", "setupTextFields"]
 - ["Ps23CustomStringConvertible", "signInTapped"]
 - ["Ps23CustomStringConvertible", "signUpTapped"]
 - !private ["Ps23CustomStringConvertible", "text"]
@@ -152,7 +157,7 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "delegate"]
-- !private ["Ps9Equatable", "desertSkyBlue"]
+- !private ["Ps9Equatable", "desertFloorTan"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "emailTextField"]
 - !private ["Ps9Equatable", "hidden"]
@@ -160,6 +165,7 @@ depends-member:
 - ["Ps9Equatable", "passwordTextField"]
 - !private ["Ps9Equatable", "performSegueWithIdentifier"]
 - !private ["Ps9Equatable", "resignFirstResponder"]
+- ["Ps9Equatable", "setupTextFields"]
 - ["Ps9Equatable", "signInTapped"]
 - ["Ps9Equatable", "signUpTapped"]
 - !private ["Ps9Equatable", "text"]
@@ -180,7 +186,7 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "delegate"]
-- !private ["Ps8Hashable", "desertSkyBlue"]
+- !private ["Ps8Hashable", "desertFloorTan"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "emailTextField"]
 - !private ["Ps8Hashable", "hidden"]
@@ -188,6 +194,7 @@ depends-member:
 - ["Ps8Hashable", "passwordTextField"]
 - !private ["Ps8Hashable", "performSegueWithIdentifier"]
 - !private ["Ps8Hashable", "resignFirstResponder"]
+- ["Ps8Hashable", "setupTextFields"]
 - ["Ps8Hashable", "signInTapped"]
 - ["Ps8Hashable", "signUpTapped"]
 - !private ["Ps8Hashable", "text"]
@@ -212,7 +219,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "delegate"]
-- !private ["PSo8NSCoding", "desertSkyBlue"]
+- !private ["PSo8NSCoding", "desertFloorTan"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "emailTextField"]
 - !private ["PSo8NSCoding", "hidden"]
@@ -220,6 +227,7 @@ depends-member:
 - ["PSo8NSCoding", "passwordTextField"]
 - !private ["PSo8NSCoding", "performSegueWithIdentifier"]
 - !private ["PSo8NSCoding", "resignFirstResponder"]
+- ["PSo8NSCoding", "setupTextFields"]
 - ["PSo8NSCoding", "signInTapped"]
 - ["PSo8NSCoding", "signUpTapped"]
 - !private ["PSo8NSCoding", "text"]
@@ -235,7 +243,7 @@ depends-member:
 - ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "desertSkyBlue"]
+- !private ["PSo9NSCopying", "desertFloorTan"]
 - !private ["PSo26NSExtensionRequestHandling", "HunterController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -243,6 +251,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "passwordTextField"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
+- ["PSo26NSExtensionRequestHandling", "setupTextFields"]
 - ["PSo26NSExtensionRequestHandling", "signInTapped"]
 - ["PSo26NSExtensionRequestHandling", "signUpTapped"]
 - ["PSo26NSExtensionRequestHandling", "textField"]
@@ -265,7 +274,7 @@ depends-member:
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "delegate"]
-- !private ["CSo8NSObject", "desertSkyBlue"]
+- !private ["CSo8NSObject", "desertFloorTan"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "emailTextField"]
 - !private ["CSo8NSObject", "hidden"]
@@ -273,6 +282,7 @@ depends-member:
 - ["CSo8NSObject", "passwordTextField"]
 - !private ["CSo8NSObject", "performSegueWithIdentifier"]
 - !private ["CSo8NSObject", "resignFirstResponder"]
+- ["CSo8NSObject", "setupTextFields"]
 - ["CSo8NSObject", "signInTapped"]
 - ["CSo8NSObject", "signUpTapped"]
 - !private ["CSo8NSObject", "text"]
@@ -291,7 +301,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
-- !private ["PSo16NSObjectProtocol", "desertSkyBlue"]
+- !private ["PSo16NSObjectProtocol", "desertFloorTan"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "emailTextField"]
 - !private ["PSo16NSObjectProtocol", "hidden"]
@@ -299,6 +309,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "passwordTextField"]
 - !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
+- ["PSo16NSObjectProtocol", "setupTextFields"]
 - ["PSo16NSObjectProtocol", "signInTapped"]
 - ["PSo16NSObjectProtocol", "signUpTapped"]
 - !private ["PSo16NSObjectProtocol", "text"]
@@ -314,7 +325,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "desertSkyBlue"]
+- !private ["PSo14NSSecureCoding", "desertFloorTan"]
 - ["Ps21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
@@ -339,6 +350,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "passwordTextField"]
 - !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
+- ["PSo21UIAppearanceContainer", "setupTextFields"]
 - ["PSo21UIAppearanceContainer", "signInTapped"]
 - ["PSo21UIAppearanceContainer", "signUpTapped"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -354,7 +366,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["CSo7UIColor", "desertSkyBlue"]
+- !private ["CSo7UIColor", "desertFloorTan"]
 - !private ["PSo18UIContentContainer", "HunterController"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -362,6 +374,7 @@ depends-member:
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "passwordTextField"]
 - !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
+- ["PSo18UIContentContainer", "setupTextFields"]
 - ["PSo18UIContentContainer", "signInTapped"]
 - ["PSo18UIContentContainer", "signUpTapped"]
 - ["PSo18UIContentContainer", "textField"]
@@ -401,6 +414,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "passwordTextField"]
 - !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
+- ["PSo18UIFocusEnvironment", "setupTextFields"]
 - ["PSo18UIFocusEnvironment", "signInTapped"]
 - ["PSo18UIFocusEnvironment", "signUpTapped"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -435,6 +449,7 @@ depends-member:
 - ["CSo11UIResponder", "passwordTextField"]
 - !private ["CSo11UIResponder", "performSegueWithIdentifier"]
 - !private ["CSo11UIResponder", "resignFirstResponder"]
+- ["CSo11UIResponder", "setupTextFields"]
 - ["CSo11UIResponder", "signInTapped"]
 - ["CSo11UIResponder", "signUpTapped"]
 - !private ["CSo11UIResponder", "text"]
@@ -456,6 +471,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "passwordTextField"]
 - !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
+- ["PSo16UIStateRestoring", "setupTextFields"]
 - ["PSo16UIStateRestoring", "signInTapped"]
 - ["PSo16UIStateRestoring", "signUpTapped"]
 - ["PSo16UIStateRestoring", "textField"]
@@ -479,6 +495,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "emailTextField"]
 - !private ["PSo19UITextFieldDelegate", "passwordTextField"]
 - !private ["PSo19UITextFieldDelegate", "performSegueWithIdentifier"]
+- !private ["PSo19UITextFieldDelegate", "setupTextFields"]
 - ["PSo19UITextFieldDelegate", "textField"]
 - ["PSo19UITextFieldDelegate", "textFieldDidBeginEditing"]
 - ["PSo19UITextFieldDelegate", "textFieldDidEndEditing"]
@@ -508,6 +525,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "passwordTextField"]
 - !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
+- ["PSo18UITraitEnvironment", "setupTextFields"]
 - ["PSo18UITraitEnvironment", "signInTapped"]
 - ["PSo18UITraitEnvironment", "signUpTapped"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -539,6 +557,7 @@ depends-member:
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "passwordTextField"]
 - !private ["CSo16UIViewController", "performSegueWithIdentifier"]
+- ["CSo16UIViewController", "setupTextFields"]
 - ["CSo16UIViewController", "signInTapped"]
 - ["CSo16UIViewController", "signUpTapped"]
 - ["CSo16UIViewController", "textField"]
@@ -554,7 +573,7 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps24_ColorLiteralConvertible", "desertSkyBlue"]
+- !private ["Ps24_ColorLiteralConvertible", "desertFloorTan"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
@@ -575,6 +594,7 @@ depends-member:
 - ["C6TineSE19logInViewController", "init"]
 - ["C6TineSE19logInViewController", "passwordTextField"]
 - !private ["C6TineSE19logInViewController", "performSegueWithIdentifier"]
+- ["C6TineSE19logInViewController", "setupTextFields"]
 - ["C6TineSE19logInViewController", "signInTapped"]
 - ["C6TineSE19logInViewController", "signUpTapped"]
 - ["C6TineSE19logInViewController", "textField"]
@@ -723,4 +743,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "608a871faef45a1989737bd5a9ae53b9"
+interface-hash: "aaddf870707ac9b0b5cc00a4e3ec2392"

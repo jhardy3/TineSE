@@ -1,0 +1,990 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ShedTableViewCell"
+provides-nominal:
+- "C6TineSE17ShedTableViewCell"
+provides-member:
+- ["C6TineSE17ShedTableViewCell", ""]
+provides-dynamic-lookup:
+- "reportButton"
+- "setSelected"
+- "usernameTextField"
+- "delegate"
+- "shedColorTextLabel"
+- "shedTypeTextLabel"
+- "utilitiesButtonTapped"
+- "prepareForReuse"
+- "shedImageView"
+depends-top-level:
+- "Shed"
+- !private "=="
+- "TinelineViewController"
+- "UIButton"
+- !private "StringLiteralType"
+- "UITableViewCell"
+- "ShedTableViewCell"
+- !private "UIImage"
+- !private "UIViewContentMode"
+- "Bool"
+- !private "UIAlertController"
+- "UIImageView"
+- "UILabel"
+- !private "Void"
+- !private "FirebaseController"
+- !private "UIAlertAction"
+- !private "BooleanLiteralType"
+- !private "UIColor"
+depends-member:
+- !private ["Ps9AnyObject", "FirebaseController"]
+- !private ["Ps9AnyObject", "UIAlertAction"]
+- !private ["Ps9AnyObject", "UIAlertController"]
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "UIViewContentMode"]
+- !private ["Ps9AnyObject", "addAction"]
+- !private ["Ps9AnyObject", "blackColor"]
+- !private ["Ps9AnyObject", "childByAppendingPath"]
+- !private ["Ps9AnyObject", "deinit"]
+- ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "downloadImageFrom"]
+- !private ["Ps9AnyObject", "firebase"]
+- !private ["Ps9AnyObject", "identifier"]
+- !private ["Ps9AnyObject", "image"]
+- !private ["Ps9AnyObject", "imageIdentifier"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "lowercaseString"]
+- ["Ps9AnyObject", "prepareForReuse"]
+- !private ["Ps9AnyObject", "presentViewController"]
+- !private ["Ps9AnyObject", "reloadData"]
+- ["Ps9AnyObject", "reportButton"]
+- ["Ps9AnyObject", "setSelected"]
+- !private ["Ps9AnyObject", "setValue"]
+- ["Ps9AnyObject", "shed"]
+- !private ["Ps9AnyObject", "shedColor"]
+- ["Ps9AnyObject", "shedColorTextLabel"]
+- !private ["Ps9AnyObject", "shedImage"]
+- ["Ps9AnyObject", "shedImageView"]
+- !private ["Ps9AnyObject", "shedType"]
+- ["Ps9AnyObject", "shedTypeTextLabel"]
+- !private ["Ps9AnyObject", "tableView"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "textColor"]
+- ["Ps9AnyObject", "updateWith"]
+- !private ["Ps9AnyObject", "username"]
+- ["Ps9AnyObject", "usernameTextField"]
+- ["Ps9AnyObject", "utilitiesButtonTapped"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSo25CLLocationManagerDelegate", "presentViewController"]
+- !private ["PSo25CLLocationManagerDelegate", "tableView"]
+- !private ["Ps11CVarArgType", "FirebaseController"]
+- !private ["Ps11CVarArgType", "UIAlertAction"]
+- !private ["Ps11CVarArgType", "UIAlertController"]
+- !private ["Ps11CVarArgType", "UIColor"]
+- !private ["Ps11CVarArgType", "UIImage"]
+- !private ["Ps11CVarArgType", "UIViewContentMode"]
+- !private ["Ps11CVarArgType", "addAction"]
+- !private ["Ps11CVarArgType", "blackColor"]
+- !private ["Ps11CVarArgType", "childByAppendingPath"]
+- ["Ps11CVarArgType", "delegate"]
+- !private ["Ps11CVarArgType", "downloadImageFrom"]
+- !private ["Ps11CVarArgType", "image"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "lowercaseString"]
+- ["Ps11CVarArgType", "prepareForReuse"]
+- !private ["Ps11CVarArgType", "presentViewController"]
+- !private ["Ps11CVarArgType", "reloadData"]
+- ["Ps11CVarArgType", "reportButton"]
+- ["Ps11CVarArgType", "setSelected"]
+- !private ["Ps11CVarArgType", "setValue"]
+- ["Ps11CVarArgType", "shed"]
+- ["Ps11CVarArgType", "shedColorTextLabel"]
+- ["Ps11CVarArgType", "shedImageView"]
+- ["Ps11CVarArgType", "shedTypeTextLabel"]
+- !private ["Ps11CVarArgType", "tableView"]
+- !private ["Ps11CVarArgType", "text"]
+- !private ["Ps11CVarArgType", "textColor"]
+- ["Ps11CVarArgType", "updateWith"]
+- ["Ps11CVarArgType", "usernameTextField"]
+- ["Ps11CVarArgType", "utilitiesButtonTapped"]
+- ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "lowercaseString"]
+- !private ["Ps28CustomDebugStringConvertible", "FirebaseController"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "UIViewContentMode"]
+- !private ["Ps28CustomDebugStringConvertible", "addAction"]
+- !private ["Ps28CustomDebugStringConvertible", "blackColor"]
+- !private ["Ps28CustomDebugStringConvertible", "childByAppendingPath"]
+- ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "downloadImageFrom"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "lowercaseString"]
+- ["Ps28CustomDebugStringConvertible", "prepareForReuse"]
+- !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "reloadData"]
+- ["Ps28CustomDebugStringConvertible", "reportButton"]
+- ["Ps28CustomDebugStringConvertible", "setSelected"]
+- !private ["Ps28CustomDebugStringConvertible", "setValue"]
+- ["Ps28CustomDebugStringConvertible", "shed"]
+- ["Ps28CustomDebugStringConvertible", "shedColorTextLabel"]
+- ["Ps28CustomDebugStringConvertible", "shedImageView"]
+- ["Ps28CustomDebugStringConvertible", "shedTypeTextLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "tableView"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "textColor"]
+- ["Ps28CustomDebugStringConvertible", "updateWith"]
+- ["Ps28CustomDebugStringConvertible", "usernameTextField"]
+- ["Ps28CustomDebugStringConvertible", "utilitiesButtonTapped"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "FirebaseController"]
+- !private ["Ps23CustomStringConvertible", "UIAlertAction"]
+- !private ["Ps23CustomStringConvertible", "UIAlertController"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "UIViewContentMode"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addAction"]
+- !private ["Ps23CustomStringConvertible", "blackColor"]
+- !private ["Ps23CustomStringConvertible", "childByAppendingPath"]
+- ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "downloadImageFrom"]
+- !private ["Ps23CustomStringConvertible", "image"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "lowercaseString"]
+- ["Ps23CustomStringConvertible", "prepareForReuse"]
+- !private ["Ps23CustomStringConvertible", "presentViewController"]
+- !private ["Ps23CustomStringConvertible", "reloadData"]
+- ["Ps23CustomStringConvertible", "reportButton"]
+- ["Ps23CustomStringConvertible", "setSelected"]
+- !private ["Ps23CustomStringConvertible", "setValue"]
+- ["Ps23CustomStringConvertible", "shed"]
+- ["Ps23CustomStringConvertible", "shedColorTextLabel"]
+- ["Ps23CustomStringConvertible", "shedImageView"]
+- ["Ps23CustomStringConvertible", "shedTypeTextLabel"]
+- !private ["Ps23CustomStringConvertible", "tableView"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "textColor"]
+- ["Ps23CustomStringConvertible", "updateWith"]
+- ["Ps23CustomStringConvertible", "usernameTextField"]
+- ["Ps23CustomStringConvertible", "utilitiesButtonTapped"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "ActionSheet"]
+- !private ["Ps9Equatable", "Default"]
+- !private ["Ps9Equatable", "Destructive"]
+- !private ["Ps9Equatable", "FirebaseController"]
+- !private ["Ps9Equatable", "ScaleAspectFit"]
+- !private ["Ps9Equatable", "UIAlertAction"]
+- !private ["Ps9Equatable", "UIAlertController"]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "UIViewContentMode"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addAction"]
+- !private ["Ps9Equatable", "blackColor"]
+- !private ["Ps9Equatable", "childByAppendingPath"]
+- ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "downloadImageFrom"]
+- !private ["Ps9Equatable", "image"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "lowercaseString"]
+- ["Ps9Equatable", "prepareForReuse"]
+- !private ["Ps9Equatable", "presentViewController"]
+- !private ["Ps9Equatable", "reloadData"]
+- ["Ps9Equatable", "reportButton"]
+- ["Ps9Equatable", "setSelected"]
+- !private ["Ps9Equatable", "setValue"]
+- ["Ps9Equatable", "shed"]
+- ["Ps9Equatable", "shedColorTextLabel"]
+- ["Ps9Equatable", "shedImageView"]
+- ["Ps9Equatable", "shedTypeTextLabel"]
+- !private ["Ps9Equatable", "tableView"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "textColor"]
+- ["Ps9Equatable", "updateWith"]
+- ["Ps9Equatable", "usernameTextField"]
+- ["Ps9Equatable", "utilitiesButtonTapped"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "lowercaseString"]
+- !private ["CSo6FQuery", "childByAppendingPath"]
+- !private ["CSo6FQuery", "setValue"]
+- !private ["CSo8Firebase", "childByAppendingPath"]
+- !private ["CSo8Firebase", "setValue"]
+- !private ["C6TineSE18FirebaseController", "firebase"]
+- !private ["P6TineSE12FirebaseType", "identifier"]
+- !private ["P6TineSE12FirebaseType", "imageIdentifier"]
+- !private ["P6TineSE12FirebaseType", "shedColor"]
+- !private ["P6TineSE12FirebaseType", "shedImage"]
+- !private ["P6TineSE12FirebaseType", "shedType"]
+- !private ["P6TineSE12FirebaseType", "username"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "ActionSheet"]
+- !private ["Ps8Hashable", "Default"]
+- !private ["Ps8Hashable", "Destructive"]
+- !private ["Ps8Hashable", "FirebaseController"]
+- !private ["Ps8Hashable", "ScaleAspectFit"]
+- !private ["Ps8Hashable", "UIAlertAction"]
+- !private ["Ps8Hashable", "UIAlertController"]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "UIViewContentMode"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addAction"]
+- !private ["Ps8Hashable", "blackColor"]
+- !private ["Ps8Hashable", "childByAppendingPath"]
+- ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "downloadImageFrom"]
+- !private ["Ps8Hashable", "image"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "lowercaseString"]
+- ["Ps8Hashable", "prepareForReuse"]
+- !private ["Ps8Hashable", "presentViewController"]
+- !private ["Ps8Hashable", "reloadData"]
+- ["Ps8Hashable", "reportButton"]
+- ["Ps8Hashable", "setSelected"]
+- !private ["Ps8Hashable", "setValue"]
+- ["Ps8Hashable", "shed"]
+- ["Ps8Hashable", "shedColorTextLabel"]
+- ["Ps8Hashable", "shedImageView"]
+- ["Ps8Hashable", "shedTypeTextLabel"]
+- !private ["Ps8Hashable", "tableView"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "textColor"]
+- ["Ps8Hashable", "updateWith"]
+- ["Ps8Hashable", "usernameTextField"]
+- ["Ps8Hashable", "utilitiesButtonTapped"]
+- ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["Ps14MirrorPathType", "lowercaseString"]
+- !private ["PSo8NSCoding", "FirebaseController"]
+- !private ["PSo8NSCoding", "UIAlertAction"]
+- !private ["PSo8NSCoding", "UIAlertController"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "UIViewContentMode"]
+- !private ["PSo8NSCoding", "addAction"]
+- !private ["PSo8NSCoding", "blackColor"]
+- ["PSo8NSCoding", "delegate"]
+- !private ["PSo8NSCoding", "downloadImageFrom"]
+- !private ["PSo8NSCoding", "image"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "lowercaseString"]
+- ["PSo8NSCoding", "prepareForReuse"]
+- !private ["PSo8NSCoding", "presentViewController"]
+- !private ["PSo8NSCoding", "reloadData"]
+- ["PSo8NSCoding", "reportButton"]
+- ["PSo8NSCoding", "setSelected"]
+- ["PSo8NSCoding", "shed"]
+- ["PSo8NSCoding", "shedColorTextLabel"]
+- ["PSo8NSCoding", "shedImageView"]
+- ["PSo8NSCoding", "shedTypeTextLabel"]
+- !private ["PSo8NSCoding", "tableView"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "textColor"]
+- ["PSo8NSCoding", "updateWith"]
+- ["PSo8NSCoding", "usernameTextField"]
+- ["PSo8NSCoding", "utilitiesButtonTapped"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "blackColor"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "lowercaseString"]
+- !private ["PSo26NSExtensionRequestHandling", "addAction"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "tableView"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "lowercaseString"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "FirebaseController"]
+- ["CSo8NSObject", "Shed"]
+- ["CSo8NSObject", "TinelineViewController"]
+- !private ["CSo8NSObject", "UIAlertAction"]
+- !private ["CSo8NSObject", "UIAlertController"]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "UIViewContentMode"]
+- !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "addAction"]
+- !private ["CSo8NSObject", "blackColor"]
+- !private ["CSo8NSObject", "childByAppendingPath"]
+- ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "downloadImageFrom"]
+- !private ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "lowercaseString"]
+- ["CSo8NSObject", "prepareForReuse"]
+- !private ["CSo8NSObject", "presentViewController"]
+- !private ["CSo8NSObject", "reloadData"]
+- ["CSo8NSObject", "reportButton"]
+- ["CSo8NSObject", "setSelected"]
+- !private ["CSo8NSObject", "setValue"]
+- ["CSo8NSObject", "shed"]
+- ["CSo8NSObject", "shedColorTextLabel"]
+- ["CSo8NSObject", "shedImageView"]
+- ["CSo8NSObject", "shedTypeTextLabel"]
+- !private ["CSo8NSObject", "tableView"]
+- !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "textColor"]
+- ["CSo8NSObject", "updateWith"]
+- ["CSo8NSObject", "usernameTextField"]
+- ["CSo8NSObject", "utilitiesButtonTapped"]
+- !private ["PSo16NSObjectProtocol", "FirebaseController"]
+- !private ["PSo16NSObjectProtocol", "UIAlertAction"]
+- !private ["PSo16NSObjectProtocol", "UIAlertController"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UIViewContentMode"]
+- !private ["PSo16NSObjectProtocol", "addAction"]
+- !private ["PSo16NSObjectProtocol", "blackColor"]
+- !private ["PSo16NSObjectProtocol", "childByAppendingPath"]
+- ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "downloadImageFrom"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "lowercaseString"]
+- ["PSo16NSObjectProtocol", "prepareForReuse"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
+- !private ["PSo16NSObjectProtocol", "reloadData"]
+- ["PSo16NSObjectProtocol", "reportButton"]
+- ["PSo16NSObjectProtocol", "setSelected"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
+- ["PSo16NSObjectProtocol", "shed"]
+- ["PSo16NSObjectProtocol", "shedColorTextLabel"]
+- ["PSo16NSObjectProtocol", "shedImageView"]
+- ["PSo16NSObjectProtocol", "shedTypeTextLabel"]
+- !private ["PSo16NSObjectProtocol", "tableView"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "textColor"]
+- ["PSo16NSObjectProtocol", "updateWith"]
+- ["PSo16NSObjectProtocol", "usernameTextField"]
+- ["PSo16NSObjectProtocol", "utilitiesButtonTapped"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "blackColor"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "lowercaseString"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "lowercaseString"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps16OutputStreamType", "lowercaseString"]
+- !private ["Ps16RawRepresentable", "ActionSheet"]
+- !private ["Ps16RawRepresentable", "Default"]
+- !private ["Ps16RawRepresentable", "Destructive"]
+- !private ["Ps16RawRepresentable", "ScaleAspectFit"]
+- !private ["C6TineSE4Shed", "deinit"]
+- !private ["C6TineSE4Shed", "identifier"]
+- !private ["C6TineSE4Shed", "imageIdentifier"]
+- !private ["C6TineSE4Shed", "shedColor"]
+- !private ["C6TineSE4Shed", "shedImage"]
+- !private ["C6TineSE4Shed", "shedType"]
+- !private ["C6TineSE4Shed", "username"]
+- ["C6TineSE17ShedTableViewCell", "Bool"]
+- !private ["C6TineSE17ShedTableViewCell", "FirebaseController"]
+- ["C6TineSE17ShedTableViewCell", "Shed"]
+- ["C6TineSE17ShedTableViewCell", "TinelineViewController"]
+- !private ["C6TineSE17ShedTableViewCell", "UIAlertAction"]
+- !private ["C6TineSE17ShedTableViewCell", "UIAlertController"]
+- ["C6TineSE17ShedTableViewCell", "UIButton"]
+- !private ["C6TineSE17ShedTableViewCell", "UIColor"]
+- !private ["C6TineSE17ShedTableViewCell", "UIImage"]
+- ["C6TineSE17ShedTableViewCell", "UIImageView"]
+- ["C6TineSE17ShedTableViewCell", "UILabel"]
+- !private ["C6TineSE17ShedTableViewCell", "UIViewContentMode"]
+- !private ["C6TineSE17ShedTableViewCell", "Void"]
+- ["C6TineSE17ShedTableViewCell", "deinit"]
+- ["C6TineSE17ShedTableViewCell", "delegate"]
+- ["C6TineSE17ShedTableViewCell", "init"]
+- ["C6TineSE17ShedTableViewCell", "prepareForReuse"]
+- ["C6TineSE17ShedTableViewCell", "reportButton"]
+- ["C6TineSE17ShedTableViewCell", "setSelected"]
+- ["C6TineSE17ShedTableViewCell", "shed"]
+- ["C6TineSE17ShedTableViewCell", "shedColorTextLabel"]
+- ["C6TineSE17ShedTableViewCell", "shedImageView"]
+- ["C6TineSE17ShedTableViewCell", "shedTypeTextLabel"]
+- ["C6TineSE17ShedTableViewCell", "updateWith"]
+- ["C6TineSE17ShedTableViewCell", "usernameTextField"]
+- ["C6TineSE17ShedTableViewCell", "utilitiesButtonTapped"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Streamable", "lowercaseString"]
+- !private ["SS", "init"]
+- !private ["SS", "lowercaseString"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps30StringInterpolationConvertible", "lowercaseString"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "lowercaseString"]
+- !private ["C6TineSE22TinelineViewController", "deinit"]
+- !private ["C6TineSE22TinelineViewController", "presentViewController"]
+- !private ["C6TineSE22TinelineViewController", "tableView"]
+- !private ["PSo29UIAccessibilityIdentification", "FirebaseController"]
+- !private ["PSo29UIAccessibilityIdentification", "UIAlertAction"]
+- !private ["PSo29UIAccessibilityIdentification", "UIAlertController"]
+- !private ["PSo29UIAccessibilityIdentification", "UIColor"]
+- !private ["PSo29UIAccessibilityIdentification", "UIImage"]
+- !private ["PSo29UIAccessibilityIdentification", "UIViewContentMode"]
+- ["PSo29UIAccessibilityIdentification", "delegate"]
+- !private ["PSo29UIAccessibilityIdentification", "downloadImageFrom"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "prepareForReuse"]
+- !private ["PSo29UIAccessibilityIdentification", "reloadData"]
+- ["PSo29UIAccessibilityIdentification", "reportButton"]
+- ["PSo29UIAccessibilityIdentification", "setSelected"]
+- ["PSo29UIAccessibilityIdentification", "shed"]
+- ["PSo29UIAccessibilityIdentification", "shedColorTextLabel"]
+- ["PSo29UIAccessibilityIdentification", "shedImageView"]
+- ["PSo29UIAccessibilityIdentification", "shedTypeTextLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "textColor"]
+- ["PSo29UIAccessibilityIdentification", "updateWith"]
+- ["PSo29UIAccessibilityIdentification", "usernameTextField"]
+- ["PSo29UIAccessibilityIdentification", "utilitiesButtonTapped"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "Default"]
+- !private ["OSC18UIAlertActionStyle", "Destructive"]
+- !private ["CSo17UIAlertController", "addAction"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "ActionSheet"]
+- !private ["PSo12UIAppearance", "FirebaseController"]
+- !private ["PSo12UIAppearance", "UIAlertAction"]
+- !private ["PSo12UIAppearance", "UIAlertController"]
+- !private ["PSo12UIAppearance", "UIColor"]
+- !private ["PSo12UIAppearance", "UIImage"]
+- !private ["PSo12UIAppearance", "UIViewContentMode"]
+- ["PSo12UIAppearance", "delegate"]
+- !private ["PSo12UIAppearance", "downloadImageFrom"]
+- !private ["PSo12UIAppearance", "image"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "prepareForReuse"]
+- !private ["PSo12UIAppearance", "reloadData"]
+- ["PSo12UIAppearance", "reportButton"]
+- ["PSo12UIAppearance", "setSelected"]
+- ["PSo12UIAppearance", "shed"]
+- ["PSo12UIAppearance", "shedColorTextLabel"]
+- ["PSo12UIAppearance", "shedImageView"]
+- ["PSo12UIAppearance", "shedTypeTextLabel"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "textColor"]
+- ["PSo12UIAppearance", "updateWith"]
+- ["PSo12UIAppearance", "usernameTextField"]
+- ["PSo12UIAppearance", "utilitiesButtonTapped"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "FirebaseController"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertController"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "UIViewContentMode"]
+- !private ["PSo21UIAppearanceContainer", "addAction"]
+- ["PSo21UIAppearanceContainer", "delegate"]
+- !private ["PSo21UIAppearanceContainer", "downloadImageFrom"]
+- !private ["PSo21UIAppearanceContainer", "image"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "prepareForReuse"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- !private ["PSo21UIAppearanceContainer", "reloadData"]
+- ["PSo21UIAppearanceContainer", "reportButton"]
+- ["PSo21UIAppearanceContainer", "setSelected"]
+- ["PSo21UIAppearanceContainer", "shed"]
+- ["PSo21UIAppearanceContainer", "shedColorTextLabel"]
+- ["PSo21UIAppearanceContainer", "shedImageView"]
+- ["PSo21UIAppearanceContainer", "shedTypeTextLabel"]
+- !private ["PSo21UIAppearanceContainer", "tableView"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "textColor"]
+- ["PSo21UIAppearanceContainer", "updateWith"]
+- ["PSo21UIAppearanceContainer", "usernameTextField"]
+- ["PSo21UIAppearanceContainer", "utilitiesButtonTapped"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo7UIColor", "blackColor"]
+- !private ["PSo18UIContentContainer", "addAction"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
+- !private ["PSo18UIContentContainer", "tableView"]
+- !private ["PSo17UICoordinateSpace", "FirebaseController"]
+- !private ["PSo17UICoordinateSpace", "UIAlertAction"]
+- !private ["PSo17UICoordinateSpace", "UIAlertController"]
+- !private ["PSo17UICoordinateSpace", "UIColor"]
+- !private ["PSo17UICoordinateSpace", "UIImage"]
+- !private ["PSo17UICoordinateSpace", "UIViewContentMode"]
+- ["PSo17UICoordinateSpace", "delegate"]
+- !private ["PSo17UICoordinateSpace", "downloadImageFrom"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "prepareForReuse"]
+- !private ["PSo17UICoordinateSpace", "reloadData"]
+- ["PSo17UICoordinateSpace", "reportButton"]
+- ["PSo17UICoordinateSpace", "setSelected"]
+- ["PSo17UICoordinateSpace", "shed"]
+- ["PSo17UICoordinateSpace", "shedColorTextLabel"]
+- ["PSo17UICoordinateSpace", "shedImageView"]
+- ["PSo17UICoordinateSpace", "shedTypeTextLabel"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "textColor"]
+- ["PSo17UICoordinateSpace", "updateWith"]
+- ["PSo17UICoordinateSpace", "usernameTextField"]
+- ["PSo17UICoordinateSpace", "utilitiesButtonTapped"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "FirebaseController"]
+- !private ["PSo13UIDynamicItem", "UIAlertAction"]
+- !private ["PSo13UIDynamicItem", "UIAlertController"]
+- !private ["PSo13UIDynamicItem", "UIColor"]
+- !private ["PSo13UIDynamicItem", "UIImage"]
+- !private ["PSo13UIDynamicItem", "UIViewContentMode"]
+- ["PSo13UIDynamicItem", "delegate"]
+- !private ["PSo13UIDynamicItem", "downloadImageFrom"]
+- !private ["PSo13UIDynamicItem", "image"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "prepareForReuse"]
+- !private ["PSo13UIDynamicItem", "reloadData"]
+- ["PSo13UIDynamicItem", "reportButton"]
+- ["PSo13UIDynamicItem", "setSelected"]
+- ["PSo13UIDynamicItem", "shed"]
+- ["PSo13UIDynamicItem", "shedColorTextLabel"]
+- ["PSo13UIDynamicItem", "shedImageView"]
+- ["PSo13UIDynamicItem", "shedTypeTextLabel"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "textColor"]
+- ["PSo13UIDynamicItem", "updateWith"]
+- ["PSo13UIDynamicItem", "usernameTextField"]
+- ["PSo13UIDynamicItem", "utilitiesButtonTapped"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "FirebaseController"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertController"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "UIViewContentMode"]
+- !private ["PSo18UIFocusEnvironment", "addAction"]
+- ["PSo18UIFocusEnvironment", "delegate"]
+- !private ["PSo18UIFocusEnvironment", "downloadImageFrom"]
+- !private ["PSo18UIFocusEnvironment", "image"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "prepareForReuse"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "reloadData"]
+- ["PSo18UIFocusEnvironment", "reportButton"]
+- ["PSo18UIFocusEnvironment", "setSelected"]
+- ["PSo18UIFocusEnvironment", "shed"]
+- ["PSo18UIFocusEnvironment", "shedColorTextLabel"]
+- ["PSo18UIFocusEnvironment", "shedImageView"]
+- ["PSo18UIFocusEnvironment", "shedTypeTextLabel"]
+- !private ["PSo18UIFocusEnvironment", "tableView"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "textColor"]
+- ["PSo18UIFocusEnvironment", "updateWith"]
+- ["PSo18UIFocusEnvironment", "usernameTextField"]
+- ["PSo18UIFocusEnvironment", "utilitiesButtonTapped"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo27UIGestureRecognizerDelegate", "FirebaseController"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIAlertAction"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIAlertController"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIColor"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIImage"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIViewContentMode"]
+- ["PSo27UIGestureRecognizerDelegate", "delegate"]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "prepareForReuse"]
+- ["PSo27UIGestureRecognizerDelegate", "reportButton"]
+- ["PSo27UIGestureRecognizerDelegate", "setSelected"]
+- ["PSo27UIGestureRecognizerDelegate", "shed"]
+- ["PSo27UIGestureRecognizerDelegate", "shedColorTextLabel"]
+- ["PSo27UIGestureRecognizerDelegate", "shedImageView"]
+- ["PSo27UIGestureRecognizerDelegate", "shedTypeTextLabel"]
+- ["PSo27UIGestureRecognizerDelegate", "updateWith"]
+- ["PSo27UIGestureRecognizerDelegate", "usernameTextField"]
+- ["PSo27UIGestureRecognizerDelegate", "utilitiesButtonTapped"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "downloadImageFrom"]
+- !private ["CSo11UIImageView", "image"]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo7UILabel", "textColor"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "FirebaseController"]
+- ["CSo11UIResponder", "Shed"]
+- ["CSo11UIResponder", "TinelineViewController"]
+- !private ["CSo11UIResponder", "UIAlertAction"]
+- !private ["CSo11UIResponder", "UIAlertController"]
+- ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "UIViewContentMode"]
+- !private ["CSo11UIResponder", "Void"]
+- !private ["CSo11UIResponder", "addAction"]
+- ["CSo11UIResponder", "delegate"]
+- !private ["CSo11UIResponder", "downloadImageFrom"]
+- !private ["CSo11UIResponder", "image"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "prepareForReuse"]
+- !private ["CSo11UIResponder", "presentViewController"]
+- !private ["CSo11UIResponder", "reloadData"]
+- ["CSo11UIResponder", "reportButton"]
+- ["CSo11UIResponder", "setSelected"]
+- ["CSo11UIResponder", "shed"]
+- ["CSo11UIResponder", "shedColorTextLabel"]
+- ["CSo11UIResponder", "shedImageView"]
+- ["CSo11UIResponder", "shedTypeTextLabel"]
+- !private ["CSo11UIResponder", "tableView"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "textColor"]
+- ["CSo11UIResponder", "updateWith"]
+- ["CSo11UIResponder", "usernameTextField"]
+- ["CSo11UIResponder", "utilitiesButtonTapped"]
+- !private ["CSo12UIScrollView", "reloadData"]
+- !private ["PSo20UIScrollViewDelegate", "presentViewController"]
+- !private ["PSo20UIScrollViewDelegate", "tableView"]
+- !private ["PSo16UIStateRestoring", "addAction"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
+- !private ["PSo16UIStateRestoring", "tableView"]
+- !private ["CSo11UITableView", "reloadData"]
+- ["CSo15UITableViewCell", "Bool"]
+- !private ["CSo15UITableViewCell", "FirebaseController"]
+- ["CSo15UITableViewCell", "Shed"]
+- ["CSo15UITableViewCell", "TinelineViewController"]
+- !private ["CSo15UITableViewCell", "UIAlertAction"]
+- !private ["CSo15UITableViewCell", "UIAlertController"]
+- ["CSo15UITableViewCell", "UIButton"]
+- !private ["CSo15UITableViewCell", "UIColor"]
+- !private ["CSo15UITableViewCell", "UIImage"]
+- ["CSo15UITableViewCell", "UIImageView"]
+- ["CSo15UITableViewCell", "UILabel"]
+- !private ["CSo15UITableViewCell", "UIViewContentMode"]
+- !private ["CSo15UITableViewCell", "Void"]
+- ["CSo15UITableViewCell", "delegate"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "prepareForReuse"]
+- ["CSo15UITableViewCell", "reportButton"]
+- ["CSo15UITableViewCell", "setSelected"]
+- ["CSo15UITableViewCell", "shed"]
+- ["CSo15UITableViewCell", "shedColorTextLabel"]
+- ["CSo15UITableViewCell", "shedImageView"]
+- ["CSo15UITableViewCell", "shedTypeTextLabel"]
+- ["CSo15UITableViewCell", "updateWith"]
+- ["CSo15UITableViewCell", "usernameTextField"]
+- ["CSo15UITableViewCell", "utilitiesButtonTapped"]
+- ["CSo15UITableViewCell", ""]
+- !private ["PSo21UITableViewDataSource", "presentViewController"]
+- !private ["PSo21UITableViewDataSource", "tableView"]
+- !private ["PSo19UITableViewDelegate", "presentViewController"]
+- !private ["PSo19UITableViewDelegate", "tableView"]
+- !private ["PSo18UITraitEnvironment", "FirebaseController"]
+- !private ["PSo18UITraitEnvironment", "UIAlertAction"]
+- !private ["PSo18UITraitEnvironment", "UIAlertController"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "UIViewContentMode"]
+- !private ["PSo18UITraitEnvironment", "addAction"]
+- ["PSo18UITraitEnvironment", "delegate"]
+- !private ["PSo18UITraitEnvironment", "downloadImageFrom"]
+- !private ["PSo18UITraitEnvironment", "image"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "prepareForReuse"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- !private ["PSo18UITraitEnvironment", "reloadData"]
+- ["PSo18UITraitEnvironment", "reportButton"]
+- ["PSo18UITraitEnvironment", "setSelected"]
+- ["PSo18UITraitEnvironment", "shed"]
+- ["PSo18UITraitEnvironment", "shedColorTextLabel"]
+- ["PSo18UITraitEnvironment", "shedImageView"]
+- ["PSo18UITraitEnvironment", "shedTypeTextLabel"]
+- !private ["PSo18UITraitEnvironment", "tableView"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "textColor"]
+- ["PSo18UITraitEnvironment", "updateWith"]
+- ["PSo18UITraitEnvironment", "usernameTextField"]
+- ["PSo18UITraitEnvironment", "utilitiesButtonTapped"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Bool"]
+- !private ["CSo6UIView", "FirebaseController"]
+- ["CSo6UIView", "Shed"]
+- ["CSo6UIView", "TinelineViewController"]
+- !private ["CSo6UIView", "UIAlertAction"]
+- !private ["CSo6UIView", "UIAlertController"]
+- ["CSo6UIView", "UIButton"]
+- !private ["CSo6UIView", "UIColor"]
+- !private ["CSo6UIView", "UIImage"]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- !private ["CSo6UIView", "UIViewContentMode"]
+- !private ["CSo6UIView", "Void"]
+- ["CSo6UIView", "delegate"]
+- !private ["CSo6UIView", "downloadImageFrom"]
+- !private ["CSo6UIView", "image"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "prepareForReuse"]
+- !private ["CSo6UIView", "reloadData"]
+- ["CSo6UIView", "reportButton"]
+- ["CSo6UIView", "setSelected"]
+- ["CSo6UIView", "shed"]
+- ["CSo6UIView", "shedColorTextLabel"]
+- ["CSo6UIView", "shedImageView"]
+- ["CSo6UIView", "shedTypeTextLabel"]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "textColor"]
+- ["CSo6UIView", "updateWith"]
+- ["CSo6UIView", "usernameTextField"]
+- ["CSo6UIView", "utilitiesButtonTapped"]
+- !private ["OSC17UIViewContentMode", "ScaleAspectFit"]
+- !private ["CSo16UIViewController", "addAction"]
+- !private ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "presentViewController"]
+- !private ["CSo16UIViewController", "tableView"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "lowercaseString"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "lowercaseString"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "lowercaseString"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "lowercaseString"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "lowercaseString"]
+- !private ["Ps24_ColorLiteralConvertible", "blackColor"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "lowercaseString"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps12_Reflectable", "FirebaseController"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "UIAlertAction"]
+- !private ["Ps12_Reflectable", "UIAlertController"]
+- !private ["Ps12_Reflectable", "UIColor"]
+- !private ["Ps12_Reflectable", "UIImage"]
+- !private ["Ps12_Reflectable", "UIViewContentMode"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- ["Ps12_Reflectable", "delegate"]
+- !private ["Ps12_Reflectable", "downloadImageFrom"]
+- !private ["Ps12_Reflectable", "image"]
+- ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "lowercaseString"]
+- ["Ps12_Reflectable", "prepareForReuse"]
+- !private ["Ps12_Reflectable", "reloadData"]
+- ["Ps12_Reflectable", "reportButton"]
+- ["Ps12_Reflectable", "setSelected"]
+- ["Ps12_Reflectable", "shed"]
+- ["Ps12_Reflectable", "shedColorTextLabel"]
+- ["Ps12_Reflectable", "shedImageView"]
+- ["Ps12_Reflectable", "shedTypeTextLabel"]
+- !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "textColor"]
+- ["Ps12_Reflectable", "updateWith"]
+- ["Ps12_Reflectable", "usernameTextField"]
+- ["Ps12_Reflectable", "utilitiesButtonTapped"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- !private "PSo25CLLocationManagerDelegate"
+- "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "CSo6FQuery"
+- !private "CSo8Firebase"
+- !private "C6TineSE18FirebaseController"
+- !private "P6TineSE12FirebaseType"
+- !private "Sf"
+- "Ps8Hashable"
+- !private "SQ"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps14MirrorPathType"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "Ps16OutputStreamType"
+- !private "Ps16RawRepresentable"
+- !private "C6TineSE4Shed"
+- "C6TineSE17ShedTableViewCell"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "C6TineSE22TinelineViewController"
+- "PSo29UIAccessibilityIdentification"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo7UIColor"
+- !private "PSo18UIContentContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo27UIGestureRecognizerDelegate"
+- !private "CSo7UIImage"
+- !private "CSo11UIImageView"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- !private "CSo12UIScrollView"
+- !private "PSo20UIScrollViewDelegate"
+- !private "PSo16UIStateRestoring"
+- !private "CSo11UITableView"
+- "CSo15UITableViewCell"
+- !private "PSo21UITableViewDataSource"
+- !private "PSo19UITableViewDelegate"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "OSC17UIViewContentMode"
+- !private "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_ColorLiteralConvertible"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE-Bridging-Header.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentityModel.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentityService.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentity.h"
+- "./AWSCore.framework/Headers/AWSSTSModel.h"
+- "./AWSCore.framework/Headers/AWSSTSService.h"
+- "./AWSCore.framework/Headers/AWSSTS.h"
+- "./AWSCore.framework/Headers/AWSFMDatabaseQueue.h"
+- "./AWSCore.framework/Headers/AWSFMDatabaseAdditions.h"
+- "./AWSCore.framework/Headers/AWSFMDatabasePool.h"
+- "./AWSCore.framework/Headers/AWSFMResultSet.h"
+- "./AWSCore.framework/Headers/AWSFMDatabase.h"
+- "./AWSCore.framework/Headers/AWSFMDB.h"
+- "./AWSCore.framework/Headers/AWSGZIP.h"
+- "./AWSCore.framework/Headers/AWSTaskCompletionSource.h"
+- "./AWSCore.framework/Headers/AWSTask.h"
+- "./AWSCore.framework/Headers/AWSExecutor.h"
+- "./AWSCore.framework/Headers/AWSCancellationTokenSource.h"
+- "./AWSCore.framework/Headers/AWSCancellationTokenRegistration.h"
+- "./AWSCore.framework/Headers/AWSCancellationToken.h"
+- "./AWSCore.framework/Headers/AWSBoltsVersion.h"
+- "./AWSCore.framework/Headers/AWSBolts.h"
+- "./AWSCore.framework/Headers/AWSSignature.h"
+- "./AWSCore.framework/Headers/AWSSynchronizedMutableDictionary.h"
+- "./AWSCore.framework/Headers/AWSClientContext.h"
+- "./AWSCore.framework/Headers/AWSLogging.h"
+- "./AWSCore.framework/Headers/AWSCategory.h"
+- "./AWSCore.framework/Headers/AWSIdentityProvider.h"
+- "./AWSCore.framework/Headers/AWSCredentialsProvider.h"
+- "./AWSCore.framework/Headers/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h"
+- "./AWSCore.framework/Headers/NSValueTransformer+AWSMTLInversionAdditions.h"
+- "./AWSCore.framework/Headers/NSObject+AWSMTLComparisonAdditions.h"
+- "./AWSCore.framework/Headers/NSDictionary+AWSMTLManipulationAdditions.h"
+- "./AWSCore.framework/Headers/NSArray+AWSMTLManipulationAdditions.h"
+- "./AWSCore.framework/Headers/AWSMTLValueTransformer.h"
+- "./AWSCore.framework/Headers/AWSMTLModel+NSCoding.h"
+- "./AWSCore.framework/Headers/AWSMTLModel.h"
+- "./AWSCore.framework/Headers/AWSMTLManagedObjectAdapter.h"
+- "./AWSCore.framework/Headers/AWSMTLJSONAdapter.h"
+- "./AWSCore.framework/Headers/AWSMantle.h"
+- "./AWSCore.framework/Headers/AWSModel.h"
+- "./AWSCore.framework/Headers/AWSNetworking.h"
+- "./AWSCore.framework/Headers/AWSService.h"
+- "./AWSCore.framework/Headers/AWSServiceEnum.h"
+- "./AWSCore.framework/Headers/AWSCore.h"
+- "./AWSCore.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+- "./AWSS3.framework/Headers/AWSS3TransferUtility.h"
+- "./AWSS3.framework/Headers/AWSS3PreSignedURL.h"
+- "./AWSS3.framework/Headers/AWSS3TransferManager.h"
+- "./AWSS3.framework/Headers/AWSS3Model.h"
+- "./AWSS3.framework/Headers/AWSS3Service.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/AWSCore.framework/Modules/module.modulemap"
+- "./AWSS3.framework/Headers/AWSS3.h"
+- "./AWSS3.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "./AWSCognito.framework/Headers/AWSCognitoConflict.h"
+- "./AWSCognito.framework/Headers/AWSCognitoRecord.h"
+- "./AWSCognito.framework/Headers/AWSCognitoDataset.h"
+- "./AWSCognito.framework/Headers/AWSCognitoSyncModel.h"
+- "./AWSCognito.framework/Headers/AWSCognitoSyncService.h"
+- "./AWSCognito.framework/Headers/AWSCognitoHandlers.h"
+- "./AWSCognito.framework/Headers/AWSCognitoService.h"
+- "./AWSCognito.framework/Headers/AWSCognito.h"
+- "./AWSCognito.framework/Modules/module.modulemap"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/Geofire.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFCircleQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFRegionQuery.h"
+- "./Firebase.framework/Headers/FConfig.h"
+- "./Firebase.framework/Headers/FirebaseServerValue.h"
+- "./Firebase.framework/Headers/FAuthType.h"
+- "./Firebase.framework/Headers/FAuthData.h"
+- "./Firebase.framework/Headers/FTransactionResult.h"
+- "./Firebase.framework/Headers/FMutableData.h"
+- "./Firebase.framework/Headers/FirebaseApp.h"
+- "./Firebase.framework/Headers/FDataSnapshot.h"
+- "./Firebase.framework/Headers/FEventType.h"
+- "./Firebase.framework/Headers/FQuery.h"
+- "./Firebase.framework/Headers/Firebase.h"
+- "./Firebase.framework/Modules/module.modulemap"
+interface-hash: "006b1752fa6c956dbbc4a259cdf06644"

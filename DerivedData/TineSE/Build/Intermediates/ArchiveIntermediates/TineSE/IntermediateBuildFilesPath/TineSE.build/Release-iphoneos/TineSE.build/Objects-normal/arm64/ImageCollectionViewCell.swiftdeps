@@ -10,11 +10,11 @@ provides-dynamic-lookup:
 - "awakeFromNib"
 - "shedImage"
 depends-top-level:
-- "ProfileViewController"
+- "UIImageView"
 - "UICollectionViewCell"
+- "ProfileViewController"
 - "Shed"
 - "ImageCollectionViewCell"
-- "UIImageView"
 depends-member:
 - !private ["Ps9AnyObject", "autoresizingMask"]
 - ["Ps9AnyObject", "awakeFromNib"]

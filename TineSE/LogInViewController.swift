@@ -50,7 +50,7 @@ class logInViewController: UIViewController, UITextFieldDelegate {
         usernameTextField.hidden = false
         
         // Guard for username, email and password or return
-        guard let username = usernameTextField.text, let email = emailTextField.text, let password = passwordTextField.text else { return }
+        guard let username = usernameTextField.text, let email = emailTextField.text, let password = passwordTextField.text where username.isEmpty == false else { return }
         
         // If parameters are satisfied create a new hunter
         HunterController.createHunter(username, email: email, password: password) { (success) -> Void in

@@ -31,8 +31,8 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     var locationManager: CLLocationManager!
     var postButtonTapped = false
     var firedOnce = false
-    var shedColor: String?
-    var shedType: String?
+    var shedColor = "Brown"
+    var shedType = "Deer" 
     
     // MARK: - IBOutlet Properties
     
@@ -92,7 +92,7 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
         if !postButtonTapped {
             postButtonTapped = true
             // Guard for image and hunterID and create a new shed
-            if let image = image, hunterID = HunterController.sharedInstance.currentHunter?.identifier, shedType = self.shedType, shedColor = self.shedColor {
+            if let image = image, hunterID = HunterController.sharedInstance.currentHunter?.identifier {
                 ShedController.createShed(image, hunterIdentifier: hunterID, shedMessage: self.shedMessageTextView.text, shedColor: shedColor, shedType: shedType, completion: { (success, shed) -> Void in
                     
                     // If shed creation is successful remove image and (eventually kick to timeline)

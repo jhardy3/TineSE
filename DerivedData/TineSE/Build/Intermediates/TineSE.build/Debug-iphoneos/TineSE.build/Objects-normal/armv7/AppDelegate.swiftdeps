@@ -1,0 +1,454 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AppDelegate"
+provides-nominal:
+- "C6TineSE11AppDelegate"
+provides-member:
+- ["C6TineSE11AppDelegate", ""]
+provides-dynamic-lookup:
+- "cognitoAuthRoleArn"
+- "applicationDidEnterBackground"
+- "applicationWillTerminate"
+- "cognitoUnauthRoleArn"
+- "window"
+- "applicationWillResignActive"
+- "applicationDidBecomeActive"
+- "cognitoIdentityPoolId"
+- "application"
+- "applicationWillEnterForeground"
+- "cognitoAccountId"
+depends-top-level:
+- "Bool"
+- !private "AWSServiceConfiguration"
+- !private "AppearanceController"
+- !private "BooleanLiteralType"
+- "UIApplicationDelegate"
+- "UIWindow"
+- "NSObject"
+- !private "AWSCognitoCredentialsProvider"
+- !private "AWSRegionType"
+- !private "AWSServiceManager"
+- "UIApplication"
+- "AnyObject"
+- "AppDelegate"
+- "UIResponder"
+- "StringLiteralType"
+depends-member:
+- !private ["CSo29AWSCognitoCredentialsProvider", "init"]
+- !private ["PSo22AWSCredentialsProvider", "init"]
+- !private ["CSo26AWSNetworkingConfiguration", "init"]
+- !private ["OSC13AWSRegionType", "USEast1"]
+- !private ["CSo23AWSServiceConfiguration", "init"]
+- !private ["CSo17AWSServiceManager", "defaultServiceConfiguration"]
+- !private ["CSo17AWSServiceManager", "defaultServiceManager"]
+- !private ["Ps9AnyObject", "AWSCognitoCredentialsProvider"]
+- !private ["Ps9AnyObject", "AWSRegionType"]
+- !private ["Ps9AnyObject", "AWSServiceConfiguration"]
+- !private ["Ps9AnyObject", "AWSServiceManager"]
+- !private ["Ps9AnyObject", "AppearanceController"]
+- ["Ps9AnyObject", "application"]
+- ["Ps9AnyObject", "applicationDidBecomeActive"]
+- ["Ps9AnyObject", "applicationDidEnterBackground"]
+- ["Ps9AnyObject", "applicationDidFinishLaunching"]
+- ["Ps9AnyObject", "applicationDidReceiveMemoryWarning"]
+- ["Ps9AnyObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps9AnyObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps9AnyObject", "applicationShouldRequestHealthAuthorization"]
+- ["Ps9AnyObject", "applicationSignificantTimeChange"]
+- ["Ps9AnyObject", "applicationWillEnterForeground"]
+- ["Ps9AnyObject", "applicationWillResignActive"]
+- ["Ps9AnyObject", "applicationWillTerminate"]
+- ["Ps9AnyObject", "cognitoAccountId"]
+- ["Ps9AnyObject", "cognitoAuthRoleArn"]
+- ["Ps9AnyObject", "cognitoIdentityPoolId"]
+- ["Ps9AnyObject", "cognitoUnauthRoleArn"]
+- !private ["Ps9AnyObject", "defaultServiceConfiguration"]
+- !private ["Ps9AnyObject", "defaultServiceManager"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "initializaeAppearanceDefaults"]
+- ["Ps9AnyObject", "window"]
+- ["Ps9AnyObject", ""]
+- !private ["C6TineSE11AppDelegate", "AWSCognitoCredentialsProvider"]
+- !private ["C6TineSE11AppDelegate", "AWSRegionType"]
+- !private ["C6TineSE11AppDelegate", "AWSServiceConfiguration"]
+- !private ["C6TineSE11AppDelegate", "AWSServiceManager"]
+- ["C6TineSE11AppDelegate", "AnyObject"]
+- !private ["C6TineSE11AppDelegate", "AppearanceController"]
+- ["C6TineSE11AppDelegate", "Bool"]
+- ["C6TineSE11AppDelegate", "NSObject"]
+- ["C6TineSE11AppDelegate", "UIApplication"]
+- ["C6TineSE11AppDelegate", "UIWindow"]
+- ["C6TineSE11AppDelegate", "application"]
+- ["C6TineSE11AppDelegate", "applicationDidBecomeActive"]
+- ["C6TineSE11AppDelegate", "applicationDidEnterBackground"]
+- ["C6TineSE11AppDelegate", "applicationDidFinishLaunching"]
+- ["C6TineSE11AppDelegate", "applicationDidReceiveMemoryWarning"]
+- ["C6TineSE11AppDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["C6TineSE11AppDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["C6TineSE11AppDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["C6TineSE11AppDelegate", "applicationSignificantTimeChange"]
+- ["C6TineSE11AppDelegate", "applicationWillEnterForeground"]
+- ["C6TineSE11AppDelegate", "applicationWillResignActive"]
+- ["C6TineSE11AppDelegate", "applicationWillTerminate"]
+- ["C6TineSE11AppDelegate", "cognitoAccountId"]
+- ["C6TineSE11AppDelegate", "cognitoAuthRoleArn"]
+- ["C6TineSE11AppDelegate", "cognitoIdentityPoolId"]
+- ["C6TineSE11AppDelegate", "cognitoUnauthRoleArn"]
+- ["C6TineSE11AppDelegate", "deinit"]
+- ["C6TineSE11AppDelegate", "init"]
+- ["C6TineSE11AppDelegate", "window"]
+- !private ["C6TineSE20AppearanceController", "initializaeAppearanceDefaults"]
+- !private ["Ps11CVarArgType", "AWSCognitoCredentialsProvider"]
+- !private ["Ps11CVarArgType", "AWSRegionType"]
+- !private ["Ps11CVarArgType", "AWSServiceConfiguration"]
+- !private ["Ps11CVarArgType", "AWSServiceManager"]
+- !private ["Ps11CVarArgType", "AppearanceController"]
+- ["Ps11CVarArgType", "application"]
+- ["Ps11CVarArgType", "applicationDidBecomeActive"]
+- ["Ps11CVarArgType", "applicationDidEnterBackground"]
+- ["Ps11CVarArgType", "applicationDidFinishLaunching"]
+- ["Ps11CVarArgType", "applicationDidReceiveMemoryWarning"]
+- ["Ps11CVarArgType", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps11CVarArgType", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps11CVarArgType", "applicationShouldRequestHealthAuthorization"]
+- ["Ps11CVarArgType", "applicationSignificantTimeChange"]
+- ["Ps11CVarArgType", "applicationWillEnterForeground"]
+- ["Ps11CVarArgType", "applicationWillResignActive"]
+- ["Ps11CVarArgType", "applicationWillTerminate"]
+- ["Ps11CVarArgType", "cognitoAccountId"]
+- ["Ps11CVarArgType", "cognitoAuthRoleArn"]
+- ["Ps11CVarArgType", "cognitoIdentityPoolId"]
+- ["Ps11CVarArgType", "cognitoUnauthRoleArn"]
+- !private ["Ps11CVarArgType", "defaultServiceConfiguration"]
+- !private ["Ps11CVarArgType", "defaultServiceManager"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "window"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "AWSCognitoCredentialsProvider"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSRegionType"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSServiceConfiguration"]
+- !private ["Ps28CustomDebugStringConvertible", "AWSServiceManager"]
+- !private ["Ps28CustomDebugStringConvertible", "AppearanceController"]
+- ["Ps28CustomDebugStringConvertible", "application"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidFinishLaunching"]
+- ["Ps28CustomDebugStringConvertible", "applicationDidReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps28CustomDebugStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps28CustomDebugStringConvertible", "applicationShouldRequestHealthAuthorization"]
+- ["Ps28CustomDebugStringConvertible", "applicationSignificantTimeChange"]
+- ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
+- ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
+- ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
+- ["Ps28CustomDebugStringConvertible", "cognitoAccountId"]
+- ["Ps28CustomDebugStringConvertible", "cognitoAuthRoleArn"]
+- ["Ps28CustomDebugStringConvertible", "cognitoIdentityPoolId"]
+- ["Ps28CustomDebugStringConvertible", "cognitoUnauthRoleArn"]
+- !private ["Ps28CustomDebugStringConvertible", "defaultServiceConfiguration"]
+- !private ["Ps28CustomDebugStringConvertible", "defaultServiceManager"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "window"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "AWSCognitoCredentialsProvider"]
+- !private ["Ps23CustomStringConvertible", "AWSRegionType"]
+- !private ["Ps23CustomStringConvertible", "AWSServiceConfiguration"]
+- !private ["Ps23CustomStringConvertible", "AWSServiceManager"]
+- !private ["Ps23CustomStringConvertible", "AppearanceController"]
+- ["Ps23CustomStringConvertible", "application"]
+- ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
+- ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
+- ["Ps23CustomStringConvertible", "applicationDidFinishLaunching"]
+- ["Ps23CustomStringConvertible", "applicationDidReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps23CustomStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps23CustomStringConvertible", "applicationShouldRequestHealthAuthorization"]
+- ["Ps23CustomStringConvertible", "applicationSignificantTimeChange"]
+- ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
+- ["Ps23CustomStringConvertible", "applicationWillResignActive"]
+- ["Ps23CustomStringConvertible", "applicationWillTerminate"]
+- ["Ps23CustomStringConvertible", "cognitoAccountId"]
+- ["Ps23CustomStringConvertible", "cognitoAuthRoleArn"]
+- ["Ps23CustomStringConvertible", "cognitoIdentityPoolId"]
+- ["Ps23CustomStringConvertible", "cognitoUnauthRoleArn"]
+- !private ["Ps23CustomStringConvertible", "defaultServiceConfiguration"]
+- !private ["Ps23CustomStringConvertible", "defaultServiceManager"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "window"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "AWSCognitoCredentialsProvider"]
+- !private ["Ps9Equatable", "AWSRegionType"]
+- !private ["Ps9Equatable", "AWSServiceConfiguration"]
+- !private ["Ps9Equatable", "AWSServiceManager"]
+- !private ["Ps9Equatable", "AppearanceController"]
+- !private ["Ps9Equatable", "USEast1"]
+- ["Ps9Equatable", "application"]
+- ["Ps9Equatable", "applicationDidBecomeActive"]
+- ["Ps9Equatable", "applicationDidEnterBackground"]
+- ["Ps9Equatable", "applicationDidFinishLaunching"]
+- ["Ps9Equatable", "applicationDidReceiveMemoryWarning"]
+- ["Ps9Equatable", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps9Equatable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps9Equatable", "applicationShouldRequestHealthAuthorization"]
+- ["Ps9Equatable", "applicationSignificantTimeChange"]
+- ["Ps9Equatable", "applicationWillEnterForeground"]
+- ["Ps9Equatable", "applicationWillResignActive"]
+- ["Ps9Equatable", "applicationWillTerminate"]
+- ["Ps9Equatable", "cognitoAccountId"]
+- ["Ps9Equatable", "cognitoAuthRoleArn"]
+- ["Ps9Equatable", "cognitoIdentityPoolId"]
+- ["Ps9Equatable", "cognitoUnauthRoleArn"]
+- !private ["Ps9Equatable", "defaultServiceConfiguration"]
+- !private ["Ps9Equatable", "defaultServiceManager"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "window"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "AWSCognitoCredentialsProvider"]
+- !private ["Ps8Hashable", "AWSRegionType"]
+- !private ["Ps8Hashable", "AWSServiceConfiguration"]
+- !private ["Ps8Hashable", "AWSServiceManager"]
+- !private ["Ps8Hashable", "AppearanceController"]
+- !private ["Ps8Hashable", "USEast1"]
+- ["Ps8Hashable", "application"]
+- ["Ps8Hashable", "applicationDidBecomeActive"]
+- ["Ps8Hashable", "applicationDidEnterBackground"]
+- ["Ps8Hashable", "applicationDidFinishLaunching"]
+- ["Ps8Hashable", "applicationDidReceiveMemoryWarning"]
+- ["Ps8Hashable", "applicationProtectedDataDidBecomeAvailable"]
+- ["Ps8Hashable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["Ps8Hashable", "applicationShouldRequestHealthAuthorization"]
+- ["Ps8Hashable", "applicationSignificantTimeChange"]
+- ["Ps8Hashable", "applicationWillEnterForeground"]
+- ["Ps8Hashable", "applicationWillResignActive"]
+- ["Ps8Hashable", "applicationWillTerminate"]
+- ["Ps8Hashable", "cognitoAccountId"]
+- ["Ps8Hashable", "cognitoAuthRoleArn"]
+- ["Ps8Hashable", "cognitoIdentityPoolId"]
+- ["Ps8Hashable", "cognitoUnauthRoleArn"]
+- !private ["Ps8Hashable", "defaultServiceConfiguration"]
+- !private ["Ps8Hashable", "defaultServiceManager"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "window"]
+- ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["CSo8NSObject", "AWSCognitoCredentialsProvider"]
+- !private ["CSo8NSObject", "AWSRegionType"]
+- !private ["CSo8NSObject", "AWSServiceConfiguration"]
+- !private ["CSo8NSObject", "AWSServiceManager"]
+- ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "AppearanceController"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "NSObject"]
+- ["CSo8NSObject", "UIApplication"]
+- ["CSo8NSObject", "UIWindow"]
+- ["CSo8NSObject", "application"]
+- ["CSo8NSObject", "applicationDidBecomeActive"]
+- ["CSo8NSObject", "applicationDidEnterBackground"]
+- ["CSo8NSObject", "applicationDidFinishLaunching"]
+- ["CSo8NSObject", "applicationDidReceiveMemoryWarning"]
+- ["CSo8NSObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo8NSObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo8NSObject", "applicationShouldRequestHealthAuthorization"]
+- ["CSo8NSObject", "applicationSignificantTimeChange"]
+- ["CSo8NSObject", "applicationWillEnterForeground"]
+- ["CSo8NSObject", "applicationWillResignActive"]
+- ["CSo8NSObject", "applicationWillTerminate"]
+- ["CSo8NSObject", "cognitoAccountId"]
+- ["CSo8NSObject", "cognitoAuthRoleArn"]
+- ["CSo8NSObject", "cognitoIdentityPoolId"]
+- ["CSo8NSObject", "cognitoUnauthRoleArn"]
+- !private ["CSo8NSObject", "defaultServiceConfiguration"]
+- !private ["CSo8NSObject", "defaultServiceManager"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "AWSCognitoCredentialsProvider"]
+- !private ["PSo16NSObjectProtocol", "AWSRegionType"]
+- !private ["PSo16NSObjectProtocol", "AWSServiceConfiguration"]
+- !private ["PSo16NSObjectProtocol", "AWSServiceManager"]
+- !private ["PSo16NSObjectProtocol", "AppearanceController"]
+- ["PSo16NSObjectProtocol", "application"]
+- ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
+- ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
+- ["PSo16NSObjectProtocol", "applicationDidFinishLaunching"]
+- ["PSo16NSObjectProtocol", "applicationDidReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo16NSObjectProtocol", "applicationShouldRequestHealthAuthorization"]
+- ["PSo16NSObjectProtocol", "applicationSignificantTimeChange"]
+- ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
+- ["PSo16NSObjectProtocol", "applicationWillResignActive"]
+- ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- ["PSo16NSObjectProtocol", "cognitoAccountId"]
+- ["PSo16NSObjectProtocol", "cognitoAuthRoleArn"]
+- ["PSo16NSObjectProtocol", "cognitoIdentityPoolId"]
+- ["PSo16NSObjectProtocol", "cognitoUnauthRoleArn"]
+- !private ["PSo16NSObjectProtocol", "defaultServiceConfiguration"]
+- !private ["PSo16NSObjectProtocol", "defaultServiceManager"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "window"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Ps16RawRepresentable", "USEast1"]
+- !private ["PSo21UIApplicationDelegate", "AWSCognitoCredentialsProvider"]
+- !private ["PSo21UIApplicationDelegate", "AWSRegionType"]
+- !private ["PSo21UIApplicationDelegate", "AWSServiceConfiguration"]
+- !private ["PSo21UIApplicationDelegate", "AWSServiceManager"]
+- !private ["PSo21UIApplicationDelegate", "AppearanceController"]
+- ["PSo21UIApplicationDelegate", "application"]
+- ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
+- ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
+- ["PSo21UIApplicationDelegate", "applicationDidFinishLaunching"]
+- ["PSo21UIApplicationDelegate", "applicationDidReceiveMemoryWarning"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo21UIApplicationDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["PSo21UIApplicationDelegate", "applicationSignificantTimeChange"]
+- ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
+- ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
+- ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- !private ["PSo21UIApplicationDelegate", "cognitoIdentityPoolId"]
+- ["PSo21UIApplicationDelegate", "window"]
+- ["PSo21UIApplicationDelegate", ""]
+- !private ["CSo11UIResponder", "AWSCognitoCredentialsProvider"]
+- !private ["CSo11UIResponder", "AWSRegionType"]
+- !private ["CSo11UIResponder", "AWSServiceConfiguration"]
+- !private ["CSo11UIResponder", "AWSServiceManager"]
+- ["CSo11UIResponder", "AnyObject"]
+- !private ["CSo11UIResponder", "AppearanceController"]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "NSObject"]
+- ["CSo11UIResponder", "UIApplication"]
+- ["CSo11UIResponder", "UIWindow"]
+- ["CSo11UIResponder", "application"]
+- ["CSo11UIResponder", "applicationDidBecomeActive"]
+- ["CSo11UIResponder", "applicationDidEnterBackground"]
+- ["CSo11UIResponder", "applicationDidFinishLaunching"]
+- ["CSo11UIResponder", "applicationDidReceiveMemoryWarning"]
+- ["CSo11UIResponder", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo11UIResponder", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo11UIResponder", "applicationShouldRequestHealthAuthorization"]
+- ["CSo11UIResponder", "applicationSignificantTimeChange"]
+- ["CSo11UIResponder", "applicationWillEnterForeground"]
+- ["CSo11UIResponder", "applicationWillResignActive"]
+- ["CSo11UIResponder", "applicationWillTerminate"]
+- ["CSo11UIResponder", "cognitoAccountId"]
+- ["CSo11UIResponder", "cognitoAuthRoleArn"]
+- ["CSo11UIResponder", "cognitoIdentityPoolId"]
+- ["CSo11UIResponder", "cognitoUnauthRoleArn"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "window"]
+- ["CSo11UIResponder", ""]
+depends-nominal:
+- !private "CSo29AWSCognitoCredentialsProvider"
+- !private "PSo22AWSCredentialsProvider"
+- !private "CSo26AWSNetworkingConfiguration"
+- !private "OSC13AWSRegionType"
+- !private "CSo23AWSServiceConfiguration"
+- !private "CSo17AWSServiceManager"
+- "Ps9AnyObject"
+- "C6TineSE11AppDelegate"
+- !private "C6TineSE20AppearanceController"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- !private "SQ"
+- !private "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Ps16RawRepresentable"
+- "PSo21UIApplicationDelegate"
+- "CSo11UIResponder"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE-Bridging-Header.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentityModel.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentityService.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentity.h"
+- "./AWSCore.framework/Headers/AWSSTSModel.h"
+- "./AWSCore.framework/Headers/AWSSTSService.h"
+- "./AWSCore.framework/Headers/AWSSTS.h"
+- "./AWSCore.framework/Headers/AWSFMDatabaseQueue.h"
+- "./AWSCore.framework/Headers/AWSFMDatabaseAdditions.h"
+- "./AWSCore.framework/Headers/AWSFMDatabasePool.h"
+- "./AWSCore.framework/Headers/AWSFMResultSet.h"
+- "./AWSCore.framework/Headers/AWSFMDatabase.h"
+- "./AWSCore.framework/Headers/AWSFMDB.h"
+- "./AWSCore.framework/Headers/AWSGZIP.h"
+- "./AWSCore.framework/Headers/AWSTaskCompletionSource.h"
+- "./AWSCore.framework/Headers/AWSTask.h"
+- "./AWSCore.framework/Headers/AWSExecutor.h"
+- "./AWSCore.framework/Headers/AWSCancellationTokenSource.h"
+- "./AWSCore.framework/Headers/AWSCancellationTokenRegistration.h"
+- "./AWSCore.framework/Headers/AWSCancellationToken.h"
+- "./AWSCore.framework/Headers/AWSBoltsVersion.h"
+- "./AWSCore.framework/Headers/AWSBolts.h"
+- "./AWSCore.framework/Headers/AWSSignature.h"
+- "./AWSCore.framework/Headers/AWSSynchronizedMutableDictionary.h"
+- "./AWSCore.framework/Headers/AWSClientContext.h"
+- "./AWSCore.framework/Headers/AWSLogging.h"
+- "./AWSCore.framework/Headers/AWSCategory.h"
+- "./AWSCore.framework/Headers/AWSIdentityProvider.h"
+- "./AWSCore.framework/Headers/AWSCredentialsProvider.h"
+- "./AWSCore.framework/Headers/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h"
+- "./AWSCore.framework/Headers/NSValueTransformer+AWSMTLInversionAdditions.h"
+- "./AWSCore.framework/Headers/NSObject+AWSMTLComparisonAdditions.h"
+- "./AWSCore.framework/Headers/NSDictionary+AWSMTLManipulationAdditions.h"
+- "./AWSCore.framework/Headers/NSArray+AWSMTLManipulationAdditions.h"
+- "./AWSCore.framework/Headers/AWSMTLValueTransformer.h"
+- "./AWSCore.framework/Headers/AWSMTLModel+NSCoding.h"
+- "./AWSCore.framework/Headers/AWSMTLModel.h"
+- "./AWSCore.framework/Headers/AWSMTLManagedObjectAdapter.h"
+- "./AWSCore.framework/Headers/AWSMTLJSONAdapter.h"
+- "./AWSCore.framework/Headers/AWSMantle.h"
+- "./AWSCore.framework/Headers/AWSModel.h"
+- "./AWSCore.framework/Headers/AWSNetworking.h"
+- "./AWSCore.framework/Headers/AWSService.h"
+- "./AWSCore.framework/Headers/AWSServiceEnum.h"
+- "./AWSCore.framework/Headers/AWSCore.h"
+- "./AWSCore.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+- "./AWSS3.framework/Headers/AWSS3TransferUtility.h"
+- "./AWSS3.framework/Headers/AWSS3PreSignedURL.h"
+- "./AWSS3.framework/Headers/AWSS3TransferManager.h"
+- "./AWSS3.framework/Headers/AWSS3Model.h"
+- "./AWSS3.framework/Headers/AWSS3Service.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/AWSCore.framework/Modules/module.modulemap"
+- "./AWSS3.framework/Headers/AWSS3.h"
+- "./AWSS3.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "./AWSCognito.framework/Headers/AWSCognitoConflict.h"
+- "./AWSCognito.framework/Headers/AWSCognitoRecord.h"
+- "./AWSCognito.framework/Headers/AWSCognitoDataset.h"
+- "./AWSCognito.framework/Headers/AWSCognitoSyncModel.h"
+- "./AWSCognito.framework/Headers/AWSCognitoSyncService.h"
+- "./AWSCognito.framework/Headers/AWSCognitoHandlers.h"
+- "./AWSCognito.framework/Headers/AWSCognitoService.h"
+- "./AWSCognito.framework/Headers/AWSCognito.h"
+- "./AWSCognito.framework/Modules/module.modulemap"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/Geofire.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFCircleQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFRegionQuery.h"
+- "./Firebase.framework/Headers/FConfig.h"
+- "./Firebase.framework/Headers/FirebaseServerValue.h"
+- "./Firebase.framework/Headers/FAuthType.h"
+- "./Firebase.framework/Headers/FAuthData.h"
+- "./Firebase.framework/Headers/FTransactionResult.h"
+- "./Firebase.framework/Headers/FMutableData.h"
+- "./Firebase.framework/Headers/FirebaseApp.h"
+- "./Firebase.framework/Headers/FDataSnapshot.h"
+- "./Firebase.framework/Headers/FEventType.h"
+- "./Firebase.framework/Headers/FQuery.h"
+- "./Firebase.framework/Headers/Firebase.h"
+- "./Firebase.framework/Modules/module.modulemap"
+interface-hash: "29819eae61633ce4cf9eda6be200f109"
