@@ -211,12 +211,12 @@ class HunterController {
     }
     
     // Hunter untrack Hunter
-    static func hunterUntrackHunter(hunter: Hunter, completion: (trackingCount: Int?) -> Void) {
+    static func hunterUntrackHunter(hunter: Hunter) {
         
         var thisHunter = hunter
         
         // check for current hunter, current hunter ID and tracked hunter else return from function
-        guard var currentHunter = HunterController.sharedInstance.currentHunter, let currentHunterID = HunterController.sharedInstance.currentHunter?.identifier, let trackedHunter = hunter.identifier else { completion(trackingCount: nil) ; return }
+        guard var currentHunter = HunterController.sharedInstance.currentHunter, let currentHunterID = HunterController.sharedInstance.currentHunter?.identifier, let trackedHunter = hunter.identifier else { return }
         
         // If trackingIDs is greater than 0
         if currentHunter.trackingIDs.count > 0 {
@@ -259,7 +259,6 @@ class HunterController {
         // Save both objects to firebase with newly altered arrays
         thisHunter.save()
         currentHunter.save()
-        completion(trackingCount: thisHunter.trackedIDs.count)
     }
     
     // MARK: - Query for leaderboard

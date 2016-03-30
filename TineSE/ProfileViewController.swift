@@ -41,25 +41,21 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var trackingCountLabel: UILabel!
     
     var viewLoaded = false
+    var viewMode = FollowingState.User
+    var trackingCount = 0
     
     
     // is Following Bool checks for following status based on button title text
-    var isFollowing: Bool {
-        get {
-            if followButton.titleLabel?.text == "Track" {
-                return false
-            } else {
-                return true
-            }
-        }
-    }
+    
     
     // MARK: - Class Functions
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        if tabBarController?.selectedIndex == 3 && tabBarController?.selectedIndex != 4 {
+        
+        // Updates with current hunter because (s)he is viewing own profile
+        if tabBarController?.selectedIndex == 3 {
             guard let currentHunterID = HunterController.sharedInstance.currentHunter?.identifier else { return }
             self.updateWithIdentifier(currentHunterID)
         }
@@ -68,6 +64,12 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             NSThread.sleepForTimeInterval(0.3)
         }
         
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        if viewMode != .User {
+            self.navigationController?.popViewControllerAnimated(true)
+        }
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -117,32 +119,34 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     // Follows or unfollows a hunter depending on current follow status
     @IBAction func followButtonTapped(sender: UIButton) {
-        
-        // Guard for hunter
         guard let hunter = self.hunter else { return }
         
-        
-        if followButton.titleLabel?.text != "Log Out" {
-            // Check if hunter is following ; if is following unfollow and set title Vice versa otherwise
-            if isFollowing {
-                HunterController.hunterUntrackHunter(hunter, completion: { (trackingCount) in
-                    if let trackingCount = trackingCount {
-                        self.followButton.setTitle("Track", forState: .Normal)
-                        self.trackersCountLabel.text = String(trackingCount)
-                    }
-                })
-            } else {
-                HunterController.hunterTrackHunter(hunter)
-                followButton.setTitle("Untrack", forState: .Normal)
-                trackersCountLabel.text = String(hunter.trackingIDs.count)
-                self.reloadInputViews()
-            }
-        } else {
+        switch viewMode {
+        case .Following:
+            
+            self.trackingCount = self.trackingCount - 1
+            self.trackersCountLabel.text = String(trackingCount)
+            self.followButton.setTitle("Track", forState: .Normal)
+            
+            self.viewMode = .NotFollowing
+            HunterController.hunterUntrackHunter(hunter)
+            
+        case .NotFollowing:
+            
+            self.trackingCount = self.trackingCount + 1
+            self.trackersCountLabel.text = String(trackingCount)
+            
+            HunterController.hunterTrackHunter(hunter)
+            followButton.setTitle("Untrack", forState: .Normal)
+            
+            self.viewMode = .Following
+            
+        case .User:
             navigationController?.dismissViewControllerAnimated(true, completion: nil)
             HunterController.unauthHunter()
+            
         }
         NSNotificationCenter.defaultCenter().postNotificationName("shedAdded", object: self)
-        
     }
     
     
@@ -164,6 +168,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
                 self.chalksCountLabel.text = "Chalks: " + (String(hunter.chalkCount))
                 self.trackersCountLabel.text = (String(hunter.trackedIDs.count))
                 self.trackingCountLabel.text = (String(hunter.trackingIDs.count))
+                self.trackingCount = hunter.trackedIDs.count
                 self.shedCountLabel.text = (String(hunter.shedCount))
                 self.hunterProfileImage.layer.cornerRadius = 20.0
                 self.hunterProfileImage.clipsToBounds = true
@@ -176,17 +181,17 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             self.viewLoaded = true
             self.view.reloadInputViews()
             // Checks current hunter for profile hunter ID. If exists sets title to untrack otherwise sets to track
-            if let hunterTrackIDs = HunterController.sharedInstance.currentHunter?.trackingIDs, let hunterID = self.hunter?.identifier {
-                if hunterTrackIDs.contains(hunterID) {
-                    self.followButton.setTitle("Untrack", forState: .Normal)
-                } else {
-                    self.followButton.setTitle("Track", forState: .Normal)
-                }
-                
-                // If viewing own profile, sets follow button to hidden
-                if HunterController.sharedInstance.currentHunter?.identifier == hunterID {
-                    self.followButton.setTitle("Log Out", forState: .Normal)
-                }
+            guard let hunterTrackIDs = HunterController.sharedInstance.currentHunter?.trackingIDs, let hunterID = self.hunter?.identifier  else { return }
+            
+            if hunterTrackIDs.contains(hunterID) {
+                self.followButton.setTitle("Untrack", forState: .Normal)
+                self.viewMode = .Following
+            } else if HunterController.sharedInstance.currentHunter?.identifier != hunterID  {
+                self.followButton.setTitle("Track", forState: .Normal)
+                self.viewMode = .NotFollowing
+            } else {
+                self.followButton.setTitle("Log Out", forState: .Normal)
+                self.viewMode = .User
             }
             
             // Create group to keep async calls in order
@@ -220,7 +225,6 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             }
         }
     }
-    
 }
 
 extension ProfileViewController: UICollectionViewDelegateFlowLayout {

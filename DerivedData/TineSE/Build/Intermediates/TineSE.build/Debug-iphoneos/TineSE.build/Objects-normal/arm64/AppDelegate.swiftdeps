@@ -6,8 +6,9 @@ provides-nominal:
 provides-member:
 - ["C6TineSE11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidBecomeActive"
 - "cognitoIdentityPoolId"
+- "applicationWillResignActive"
+- "applicationDidBecomeActive"
 - "application"
 - "cognitoAccountId"
 - "applicationWillEnterForeground"
@@ -15,24 +16,23 @@ provides-dynamic-lookup:
 - "applicationDidEnterBackground"
 - "cognitoUnauthRoleArn"
 - "window"
-- "applicationWillResignActive"
 - "applicationWillTerminate"
 depends-top-level:
 - "AppDelegate"
-- !private "AWSServiceManager"
 - !private "AWSCognitoCredentialsProvider"
+- "UIResponder"
 - "AnyObject"
 - "StringLiteralType"
-- "UIResponder"
 - "UIApplication"
+- "NSObject"
 - !private "AWSServiceConfiguration"
 - !private "AppearanceController"
-- !private "BooleanLiteralType"
-- "NSObject"
 - "Bool"
-- "UIApplicationDelegate"
 - "UIWindow"
+- !private "BooleanLiteralType"
 - !private "AWSRegionType"
+- !private "AWSServiceManager"
+- "UIApplicationDelegate"
 depends-member:
 - !private ["CSo29AWSCognitoCredentialsProvider", "init"]
 - !private ["PSo22AWSCredentialsProvider", "init"]

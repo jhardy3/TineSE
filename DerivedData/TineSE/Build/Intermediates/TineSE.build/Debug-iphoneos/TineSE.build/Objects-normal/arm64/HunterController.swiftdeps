@@ -7,25 +7,25 @@ provides-member:
 - ["C6TineSE16HunterController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "dispatch_group_create"
-- "Int"
-- "Bool"
-- !private "print"
 - "String"
-- !private "dispatch_get_main_queue"
-- !private "=="
-- "Array"
-- !private "dispatch_group_leave"
-- !private ">"
-- "Void"
-- !private "..<"
-- "Hunter"
 - !private "FirebaseController"
-- !private "AnyObject"
-- !private "dispatch_group_enter"
+- !private "dispatch_get_main_queue"
+- "Void"
 - !private "dispatch_group_notify"
+- !private "AnyObject"
+- !private "=="
+- !private "..<"
+- !private "dispatch_group_create"
+- "Array"
+- "Bool"
+- "Hunter"
+- !private "print"
+- !private ">"
 - "HunterController"
+- !private "dispatch_group_leave"
+- !private "Int"
 - "BooleanLiteralType"
+- !private "dispatch_group_enter"
 depends-member:
 - !private ["Ps9AnyObject", "FirebaseController"]
 - !private ["Ps9AnyObject", "Hunter"]
@@ -213,7 +213,7 @@ depends-member:
 - !private ["C6TineSE16HunterController", "FirebaseController"]
 - ["C6TineSE16HunterController", "Hunter"]
 - ["C6TineSE16HunterController", "HunterController"]
-- ["C6TineSE16HunterController", "Int"]
+- !private ["C6TineSE16HunterController", "Int"]
 - ["C6TineSE16HunterController", "String"]
 - ["C6TineSE16HunterController", "Void"]
 - ["C6TineSE16HunterController", "authenticateHunter"]
@@ -640,4 +640,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "b61cddeffcf5fb7a51f1236b90c6654f"
+interface-hash: "a690ecdfc2ce4aa17079bf5520b1b58d"

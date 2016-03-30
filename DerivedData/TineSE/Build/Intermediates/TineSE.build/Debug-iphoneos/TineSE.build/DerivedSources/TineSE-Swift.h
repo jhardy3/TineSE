@@ -227,8 +227,9 @@ SWIFT_CLASS("_TtC6TineSE21ProfileViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedCountLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified trackingCountLabel;
 @property (nonatomic) BOOL viewLoaded;
-@property (nonatomic, readonly) BOOL isFollowing;
+@property (nonatomic) NSInteger trackingCount;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidDisappear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;

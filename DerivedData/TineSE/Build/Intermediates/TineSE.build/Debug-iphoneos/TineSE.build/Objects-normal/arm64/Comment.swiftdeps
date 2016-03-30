@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 depends-top-level:
 - "FirebaseType"
 - "Comment"
+- "AnyObject"
 - !private "Dictionary"
 - "String"
-- "AnyObject"
 - "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "bodyText"]

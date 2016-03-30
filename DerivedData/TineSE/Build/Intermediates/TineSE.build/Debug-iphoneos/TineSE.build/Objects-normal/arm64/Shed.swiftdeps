@@ -7,17 +7,17 @@ provides-member:
 - ["C6TineSE4Shed", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Void"
-- !private "Dictionary"
-- "FirebaseType"
-- "AnyObject"
-- "Shed"
 - !private "PhotoController"
-- "StringLiteralType"
 - !private "??"
-- !private "Array"
-- "String"
 - "UIImage"
+- "String"
+- "StringLiteralType"
+- !private "Void"
+- "FirebaseType"
+- !private "Dictionary"
+- "Shed"
+- !private "Array"
+- "AnyObject"
 depends-member:
 - !private ["Ps9AnyObject", "Array"]
 - !private ["Ps9AnyObject", "PhotoController"]
