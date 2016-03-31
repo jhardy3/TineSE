@@ -90,12 +90,12 @@
                   moduleName = "TineSE"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/JLH/Desktop/Personal%20Projects/TineSE/TineSE/CameraViewController.swift"
-                  timestampString = "481073487.697536"
+                  timestampString = "481088678.54357"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "95"
                   endingLineNumber = "95"
-                  offsetFromSymbolStart = "132">
+                  offsetFromSymbolStart = "108">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -105,12 +105,12 @@
                   moduleName = "TineSE"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/JLH/Desktop/Personal%20Projects/TineSE/TineSE/CameraViewController.swift"
-                  timestampString = "481073487.6977"
+                  timestampString = "481088678.543659"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "95"
                   endingLineNumber = "95"
-                  offsetFromSymbolStart = "180">
+                  offsetFromSymbolStart = "156">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -154,12 +154,12 @@
                   moduleName = "TineSE"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/JLH/Desktop/Personal%20Projects/TineSE/TineSE/HunterController.swift"
-                  timestampString = "481073487.699317"
+                  timestampString = "481088678.544705"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "254"
                   endingLineNumber = "254"
-                  offsetFromSymbolStart = "1952">
+                  offsetFromSymbolStart = "2432">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -169,12 +169,12 @@
                   moduleName = "TineSE"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/JLH/Desktop/Personal%20Projects/TineSE/TineSE/HunterController.swift"
-                  timestampString = "481073487.699453"
+                  timestampString = "481088678.544807"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "254"
                   endingLineNumber = "254"
-                  offsetFromSymbolStart = "1992">
+                  offsetFromSymbolStart = "2465">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -394,12 +394,12 @@
                   moduleName = "TineSE"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/JLH/Desktop/Personal%20Projects/TineSE/TineSE/CameraViewController.swift"
-                  timestampString = "481073507.484572"
+                  timestampString = "481088678.551611"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "96"
                   endingLineNumber = "96"
-                  offsetFromSymbolStart = "904">
+                  offsetFromSymbolStart = "598">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -409,14 +409,62 @@
                   moduleName = "TineSE"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/JLH/Desktop/Personal%20Projects/TineSE/TineSE/CameraViewController.swift"
-                  timestampString = "481073507.484733"
+                  timestampString = "481088678.551709"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "99"
                   endingLineNumber = "99"
-                  offsetFromSymbolStart = "52">
+                  offsetFromSymbolStart = "47">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TineSE/ProfileViewController.swift"
+            timestampString = "481088583.602775"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TineSE/ProfileViewController.swift"
+            timestampString = "481088678.387951"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TineSE/ProfileViewController.swift"
+            timestampString = "481088678.387951"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

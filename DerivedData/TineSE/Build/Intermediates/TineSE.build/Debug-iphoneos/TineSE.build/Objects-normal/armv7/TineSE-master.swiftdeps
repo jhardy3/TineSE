@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "c0f7d0b197863182e25f4e5c2fd6a839"
-build_time: [512695517, 919678000]
+build_time: [512709149, 910016000]
 inputs:
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/ImageCollectionViewCell.swift": [512181454, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/AppDelegate.swift": [512492479, 0]
@@ -8,6 +8,7 @@ inputs:
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/FirebaseController.swift": [512251445, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/LeaderboardViewController.swift": [512680543, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/UIColor+AppColorPallete.swift": [512191481, 0]
+  "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/ShedViewController.swift": [9223372036854775807, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/TinelineViewController.swift": [512676462, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/HunterController.swift": [512691932, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/ProfileViewController.swift": [512693404, 0]
@@ -20,6 +21,6 @@ inputs:
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/Hunter.swift": [512675831, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/Comment.swift": [512006043, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/AppearanceController.swift": [512686189, 0]
-  "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/CameraViewController.swift": [512531192, 0]
+  "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/CameraViewController.swift": [512706493, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/LocationController.swift": [512520071, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/ShedController.swift": [512686189, 0]
