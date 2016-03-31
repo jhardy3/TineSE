@@ -46,7 +46,7 @@ class ShedTableViewCell: UITableViewCell {
         
         // If shed image exists, set shedImageView to image
         if shed.shedImage == nil {
-            shedImageView.image = UIImage(named: "Sheds")
+            shedImageView.image = UIImage(named: "Skull")
             shedImageView.downloadImageFrom(link: shed.imageIdentifier, contentMode: UIViewContentMode.ScaleAspectFit)
             shed.shedImage = shedImageView.image
             delegate?.tableView.reloadData()

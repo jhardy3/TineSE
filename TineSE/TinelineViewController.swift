@@ -47,7 +47,7 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         setupLocationManagerAndGrabLocalSheds()
         fetchShedsFirstLoad()
         setUpRefreshController()
@@ -106,11 +106,10 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
                 }
             })
         }
-
     }
     
     func fetchShedsFirstLoad() {
-
+        
         // Fetch all sheds for initial tineline preview ( eventually this will be dependent upon segmented control && refined )
         ShedController.fetchShedsForTineline { (sheds) -> Void in
             
@@ -125,25 +124,41 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func refresh(refreshControl: UIRefreshControl) {
         
-        // When refreshed, completes fetch sheds again and reloads tableview in main thread
-        let group = dispatch_group_create()
         
-        dispatch_group_enter(group)
-        ShedController.fetchShedsForTineline { (shedsReturned) -> Void in
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                self.sheds = shedsReturned.sort { $0.0.identifier > $0.1.identifier }
+        if currentViewIsLocal {
+            ShedController.fetchShedsForTineline { (sheds) -> Void in
                 
-                dispatch_group_leave(group)
+                // Call main queue to refresh view; reload tableview data accordingly
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.sheds = sheds.sort { $0.0.identifier > $0.1.identifier }
                     self.tableView.reloadData()
+                    refreshControl.endRefreshing()
                 })
-                
-            })
-        }
-        
-        // End refresh animation
-        dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
-            refreshControl.endRefreshing()
+            }
+
+            
+        } else {
+            
+            // When refreshed, completes fetch sheds again and reloads tableview in main thread
+            let group = dispatch_group_create()
+            
+            dispatch_group_enter(group)
+            ShedController.fetchShedsForTineline { (shedsReturned) -> Void in
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.sheds = shedsReturned.sort { $0.0.identifier > $0.1.identifier }
+                    
+                    dispatch_group_leave(group)
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        self.tableView.reloadData()
+                    })
+                    
+                })
+            }
+            
+            // End refresh animation
+            dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
+                refreshControl.endRefreshing()
+            }
         }
         
         

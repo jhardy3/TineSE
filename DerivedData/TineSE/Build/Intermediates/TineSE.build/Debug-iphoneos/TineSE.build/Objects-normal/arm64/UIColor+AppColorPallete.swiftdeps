@@ -9,9 +9,9 @@ provides-member:
 - ["CSo7UIColor", "hunterOrange"]
 provides-dynamic-lookup:
 - "rustyTruckGreen"
-- "hunterOrange"
-- "desertSkyBlue"
 - "desertFloorTan"
+- "desertSkyBlue"
+- "hunterOrange"
 depends-top-level:
 - "UIColor"
 depends-member:

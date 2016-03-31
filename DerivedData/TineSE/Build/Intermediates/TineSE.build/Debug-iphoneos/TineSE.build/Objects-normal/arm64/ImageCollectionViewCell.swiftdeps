@@ -11,8 +11,8 @@ provides-dynamic-lookup:
 - "shedImage"
 depends-top-level:
 - "ProfileViewController"
-- "UICollectionViewCell"
 - "UIImageView"
+- "UICollectionViewCell"
 - "Shed"
 - "ImageCollectionViewCell"
 depends-member:

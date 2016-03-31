@@ -45,7 +45,6 @@
 		748FFD041CA71F5700111EFE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFD031CA71F5700111EFE /* MapKit.framework */; };
 		748FFD051CA71FDF00111EFE /* GeoFire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCEA1CA7183D00111EFE /* GeoFire.framework */; };
 		748FFD071CA72F2D00111EFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748FFD061CA72F2D00111EFE /* Assets.xcassets */; };
-		74F8C8D21CACCD1C00C02079 /* ShedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8C8D11CACCD1C00C02079 /* ShedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,7 +89,6 @@
 		748FFD011CA71CDF00111EFE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		748FFD031CA71F5700111EFE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		748FFD061CA72F2D00111EFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
-		74F8C8D11CACCD1C00C02079 /* ShedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,7 +233,6 @@
 		748FFD0F1CA7329500111EFE /* Table View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				74F8C8D11CACCD1C00C02079 /* ShedViewController.swift */,
 				748FFCC11CA717A000111EFE /* TinelineViewController.swift */,
 				748FFCC21CA717A000111EFE /* ShedTableViewCell.swift */,
 				748FFCC61CA717A000111EFE /* LeaderboardViewController.swift */,
@@ -347,7 +344,6 @@
 				748FFCCF1CA717A000111EFE /* FirebaseController.swift in Sources */,
 				748FFCDA1CA717A000111EFE /* LeaderboardViewController.swift in Sources */,
 				748FFCCE1CA717A000111EFE /* UIColor+AppColorPallete.swift in Sources */,
-				74F8C8D21CACCD1C00C02079 /* ShedViewController.swift in Sources */,
 				748FFCD51CA717A000111EFE /* TinelineViewController.swift in Sources */,
 				748FFCD01CA717A000111EFE /* HunterController.swift in Sources */,
 				748FFCD81CA717A000111EFE /* ProfileViewController.swift in Sources */,

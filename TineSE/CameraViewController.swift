@@ -9,20 +9,6 @@
 import UIKit
 import CoreLocation
 
-
-enum AnimalType {
-    case Elk
-    case Deer
-    case Moose
-}
-
-enum ShedType {
-    case Brown
-    case White
-    case Chalk
-}
-
-
 class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     
     // MARK: - Properties
@@ -32,15 +18,15 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     var postButtonTapped = false
     var firedOnce = false
     var shedColor = "Brown"
-    var shedType = "Deer" 
+    var shedType = "Deer"
     
     // MARK: - IBOutlet Properties
     
-    @IBOutlet weak var shedMessageTextView: UITextView!
     @IBOutlet weak var shedImageView: UIImageView!
     @IBOutlet weak var shedColorPickerView: UIPickerView!
     @IBOutlet weak var shedTypePickerView: UIPickerView!
     @IBOutlet weak var clearShedButton: UIButton!
+    @IBOutlet weak var shedView: UIView!
     
     
     // MARK: - Class Functions
@@ -48,9 +34,6 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        if image == nil {
-             self.clearShedButton.setTitle("Camera", forState: .Normal)
-        }
         
     }
     
@@ -64,16 +47,19 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.requestAlwaysAuthorization()
             locationManager.requestLocation()
-            displayCamera()
-            firedOnce = true
         }
-        shedMessageTextView.delegate = self
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if image == nil {
+            self.clearShedButton.setTitle("", forState: .Normal)
+            self.shedImageView.image = UIImage(named: "Skull")
+        }
         
+        shedView.layer.borderWidth = 1.0
+        shedView.layer.borderColor = UIColor.hunterOrange().CGColor
         shedColorPickerView.delegate = self
         shedTypePickerView.delegate = self
         
@@ -83,17 +69,26 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     // MARK: - IBAction Functions
     
     @IBAction func tapGestureTapped(sender: UITapGestureRecognizer) {
-        self.shedMessageTextView.resignFirstResponder()
+        
     }
     
     // Posts a new shed
     @IBAction func postButtonTapped(sender: UIButton) {
         
+        self.clearShedButton.setTitle("Post Shed", forState: .Normal)
+        displayCamera()
+        
+        
+    }
+    
+    @IBAction func clearShedTapped(sender: UIButton) {
+        
+        
         if !postButtonTapped {
             postButtonTapped = true
             // Guard for image and hunterID and create a new shed
             if let image = image, hunterID = HunterController.sharedInstance.currentHunter?.identifier {
-                ShedController.createShed(image, hunterIdentifier: hunterID, shedMessage: self.shedMessageTextView.text, shedColor: shedColor, shedType: shedType, completion: { (success, shed) -> Void in
+                ShedController.createShed(image, hunterIdentifier: hunterID, shedMessage: "", shedColor: shedColor, shedType: shedType, completion: { (success, shed) -> Void in
                     
                     // If shed creation is successful remove image and (eventually kick to timeline)
                     if success {
@@ -101,7 +96,7 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
                             LocationController.setLocation(shedID, location: location, completion: { (success) -> Void in
                                 if success {
                                     print("yay succes posting location")
-                                    
+                                    self.shedImageView.image = UIImage(named: "Skull")
                                 }
                             })
                         }
@@ -124,12 +119,8 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
                 self.postButtonTapped = !self.postButtonTapped
             }
         }
-    }
-    
-    @IBAction func clearShedTapped(sender: UIButton) {
-        self.clearShedButton.setTitle("Clear Shed", forState: .Normal)
-        self.shedImageView.image = nil
-        displayCamera()
+        
+        
     }
     
     
@@ -145,13 +136,14 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
         // Check for camera functionality ; if present imagePick source set to camera and present camera view controller
         if UIImagePickerController.isSourceTypeAvailable(.Camera) {
             imagePicker.sourceType = .Camera
-            self.presentViewController(imagePicker, animated: true, completion: nil)
         }
+        
+        self.presentViewController(imagePicker, animated: true, completion: nil)
         
     }
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        self.clearShedButton.setTitle("Camera", forState: .Normal)
+        self.shedImageView.image = UIImage(named: "Skull")
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     

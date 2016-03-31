@@ -131,6 +131,7 @@ SWIFT_CLASS("_TtC6TineSE11AppDelegate")
 @class CLLocation;
 @class UIPickerView;
 @class UIImageView;
+@class UIView;
 @class NSBundle;
 @class NSCoder;
 
@@ -142,11 +143,11 @@ SWIFT_CLASS("_TtC6TineSE20CameraViewController")
 @property (nonatomic) BOOL firedOnce;
 @property (nonatomic, copy) NSString * _Nonnull shedColor;
 @property (nonatomic, copy) NSString * _Nonnull shedType;
-@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified shedMessageTextView;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified shedImageView;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified shedColorPickerView;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified shedTypePickerView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified clearShedButton;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified shedView;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
@@ -190,6 +191,7 @@ SWIFT_CLASS("_TtC6TineSE13ImageUitilies")
 @class NSIndexPath;
 @class UITableViewCell;
 @class UISegmentedControl;
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC6TineSE25LeaderboardViewController")
 @interface LeaderboardViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
@@ -204,6 +206,7 @@ SWIFT_CLASS("_TtC6TineSE25LeaderboardViewController")
 - (void)fetchTrackedHuntersForLeaderBoard;
 - (void)fetchAllHuntersForLeaderBoard;
 - (IBAction)segmentedControlChanged:(UISegmentedControl * _Nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -237,6 +240,9 @@ SWIFT_CLASS("_TtC6TineSE21ProfileViewController")
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (IBAction)followButtonTapped:(UIButton * _Nonnull)sender;
 - (void)updateWithIdentifier:(NSString * _Nonnull)identifier;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didDeselectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -261,7 +267,6 @@ SWIFT_CLASS("_TtC6TineSE32SearchResultsTableViewController")
 @end
 
 @class UISearchController;
-@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC6TineSE25SearchTableViewController")
 @interface SearchTableViewController : UITableViewController <UISearchResultsUpdating>
@@ -295,15 +300,6 @@ SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
 - (void)prepareForReuse;
 - (IBAction)utilitiesButtonTapped:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC6TineSE18ShedViewController")
-@interface ShedViewController : UIViewController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

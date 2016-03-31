@@ -7,15 +7,15 @@ provides-member:
 - ["C6TineSE18LocationController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "LocationController"
+- !private "print"
 - "Bool"
-- "FirebaseController"
 - "String"
 - "Void"
-- "BooleanLiteralType"
-- !private "print"
-- "GeoFire"
+- "LocationController"
 - "CLLocation"
+- "FirebaseController"
+- "GeoFire"
+- "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "CHECK_RADIUS_IN_METERS"]
 - ["Ps9AnyObject", "FirebaseController"]

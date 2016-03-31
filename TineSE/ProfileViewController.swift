@@ -236,14 +236,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "toShed" {
-            guard let shedCell = sender as? ImageCollectionViewCell else { return }
-            
-            guard let destinationView = segue.destinationViewController as? ShedViewController else { return }
-            
-            destinationView.updateWithShed(shedCell)
-            
-        }
+    
     }
 }
 

@@ -10,75 +10,80 @@ provides-member:
 - ["C6TineSE21ProfileViewController", ""]
 provides-dynamic-lookup:
 - "viewDidDisappear"
-- "kMargin"
 - "chalksCountLabel"
+- "hunterProfileImage"
+- "followButtonTapped"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "kMargin"
 - "trackingCount"
+- "trackingCountLabel"
 - "whitesCountLabel"
+- "viewWillAppear"
+- "prepareForSegue"
+- "flowLayout"
+- "trackersCountLabel"
+- "viewDidAppear"
+- "viewLoaded"
+- "updateWithIdentifier"
+- "followButton"
+- "brownsCountLabel"
+- "viewDidLoad"
+- "viewWillDisappear"
 - "usernameLabel"
 - "shedCountLabel"
-- "hunterProfileImage"
-- "viewWillAppear"
-- "viewDidAppear"
-- "flowLayout"
-- "viewDidLoad"
-- "followButton"
-- "trackersCountLabel"
-- "viewWillDisappear"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "viewLoaded"
-- "trackingCountLabel"
-- "followButtonTapped"
-- "brownsCountLabel"
-- "updateWithIdentifier"
 depends-top-level:
 - "UICollectionViewDataSource"
+- "CGFloat"
+- "UIStoryboardSegue"
 - "UIButton"
+- !private "HunterController"
 - !private "dispatch_get_main_queue"
+- !private "ShedController"
+- !private ">"
+- !private "StringLiteralType"
+- !private "Void"
 - "UICollectionViewDelegate"
-- !private "-"
+- "ProfileViewController"
+- !private "/"
+- !private "+"
+- !private "dispatch_group_leave"
+- !private "NSThread"
+- "UICollectionViewLayout"
+- "UICollectionViewCell"
+- "=="
 - !private "!="
+- "FollowingState"
+- !private "*"
+- "Hunter"
+- "Int"
+- "BooleanLiteralType"
+- !private "print"
+- "Shed"
 - !private "UIColor"
 - "CGSize"
-- !private "+"
-- !private "*"
-- "String"
-- !private "dispatch_group_notify"
-- "Shed"
-- !private "NSNotificationCenter"
-- "UICollectionViewLayout"
-- !private "Void"
-- !private "ImageCollectionViewCell"
-- !private "StringLiteralType"
-- "=="
-- "UIImageView"
-- !private "dispatch_group_create"
-- "UICollectionViewCell"
-- "Bool"
-- !private "print"
-- "UILabel"
-- !private "UIEdgeInsetsMake"
-- "CGFloat"
-- "Hunter"
-- !private ">"
-- !private "NSThread"
-- !private "dispatch_group_leave"
-- "UICollectionViewFlowLayout"
-- !private "/"
-- "ProfileViewController"
-- !private "HunterController"
-- "Int"
-- "UICollectionViewDelegateFlowLayout"
-- "UICollectionView"
-- !private "dispatch_group_enter"
-- "FollowingState"
-- "UIViewController"
 - "NSIndexPath"
-- "BooleanLiteralType"
-- !private "ShedController"
+- "AnyObject"
+- !private "-"
+- "UIViewController"
+- "UICollectionViewFlowLayout"
+- !private "NSNotificationCenter"
+- "String"
+- !private "dispatch_group_enter"
 - !private "CGSizeMake"
+- !private "dispatch_group_notify"
+- !private "UIEdgeInsetsMake"
+- "UICollectionViewDelegateFlowLayout"
+- !private "dispatch_group_create"
+- "UILabel"
+- "UICollectionView"
+- !private "ImageCollectionViewCell"
+- "UIImageView"
+- "Bool"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -136,6 +141,7 @@ depends-member:
 - ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
 - !private ["Ps9AnyObject", "popViewControllerAnimated"]
 - !private ["Ps9AnyObject", "postNotificationName"]
+- ["Ps9AnyObject", "prepareForSegue"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "reloadData"]
 - !private ["Ps9AnyObject", "reloadInputViews"]
@@ -282,6 +288,7 @@ depends-member:
 - ["Ps11CVarArgType", "numberOfSectionsInCollectionView"]
 - !private ["Ps11CVarArgType", "popViewControllerAnimated"]
 - !private ["Ps11CVarArgType", "postNotificationName"]
+- ["Ps11CVarArgType", "prepareForSegue"]
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "reloadData"]
 - !private ["Ps11CVarArgType", "reloadInputViews"]
@@ -396,6 +403,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "popViewControllerAnimated"]
 - !private ["Ps28CustomDebugStringConvertible", "postNotificationName"]
+- ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadInputViews"]
@@ -499,6 +507,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
 - !private ["Ps23CustomStringConvertible", "popViewControllerAnimated"]
 - !private ["Ps23CustomStringConvertible", "postNotificationName"]
+- ["Ps23CustomStringConvertible", "prepareForSegue"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
 - !private ["Ps23CustomStringConvertible", "reloadInputViews"]
@@ -599,6 +608,7 @@ depends-member:
 - ["Ps9Equatable", "numberOfSectionsInCollectionView"]
 - !private ["Ps9Equatable", "popViewControllerAnimated"]
 - !private ["Ps9Equatable", "postNotificationName"]
+- ["Ps9Equatable", "prepareForSegue"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "reloadData"]
 - !private ["Ps9Equatable", "reloadInputViews"]
@@ -720,6 +730,7 @@ depends-member:
 - ["Ps8Hashable", "numberOfSectionsInCollectionView"]
 - !private ["Ps8Hashable", "popViewControllerAnimated"]
 - !private ["Ps8Hashable", "postNotificationName"]
+- ["Ps8Hashable", "prepareForSegue"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "reloadData"]
 - !private ["Ps8Hashable", "reloadInputViews"]
@@ -891,6 +902,7 @@ depends-member:
 - !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
 - !private ["PSo8NSCoding", "popViewControllerAnimated"]
+- ["PSo8NSCoding", "prepareForSegue"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "reloadInputViews"]
@@ -968,6 +980,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInCollectionView"]
 - !private ["PSo26NSExtensionRequestHandling", "popViewControllerAnimated"]
+- ["PSo26NSExtensionRequestHandling", "prepareForSegue"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
@@ -1005,6 +1018,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "lowercaseString"]
 - !private ["CSo20NSNotificationCenter", "defaultCenter"]
 - !private ["CSo20NSNotificationCenter", "postNotificationName"]
+- ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CGColor"]
 - ["CSo8NSObject", "CGFloat"]
@@ -1030,6 +1044,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIEdgeInsetsMake"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "borderColor"]
@@ -1066,6 +1081,7 @@ depends-member:
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
 - !private ["CSo8NSObject", "popViewControllerAnimated"]
 - !private ["CSo8NSObject", "postNotificationName"]
+- ["CSo8NSObject", "prepareForSegue"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "reloadInputViews"]
@@ -1154,6 +1170,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
 - !private ["PSo16NSObjectProtocol", "popViewControllerAnimated"]
 - !private ["PSo16NSObjectProtocol", "postNotificationName"]
+- ["PSo16NSObjectProtocol", "prepareForSegue"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "reloadInputViews"]
@@ -1211,6 +1228,7 @@ depends-member:
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps16OutputStreamType", "lowercaseString"]
+- ["C6TineSE21ProfileViewController", "AnyObject"]
 - ["C6TineSE21ProfileViewController", "Bool"]
 - ["C6TineSE21ProfileViewController", "CGFloat"]
 - ["C6TineSE21ProfileViewController", "CGSize"]
@@ -1235,6 +1253,7 @@ depends-member:
 - !private ["C6TineSE21ProfileViewController", "UIEdgeInsetsMake"]
 - ["C6TineSE21ProfileViewController", "UIImageView"]
 - ["C6TineSE21ProfileViewController", "UILabel"]
+- ["C6TineSE21ProfileViewController", "UIStoryboardSegue"]
 - !private ["C6TineSE21ProfileViewController", "Void"]
 - ["C6TineSE21ProfileViewController", "brownsCountLabel"]
 - ["C6TineSE21ProfileViewController", "chalksCountLabel"]
@@ -1255,6 +1274,7 @@ depends-member:
 - ["C6TineSE21ProfileViewController", "kMargin"]
 - !private ["C6TineSE21ProfileViewController", "navigationController"]
 - ["C6TineSE21ProfileViewController", "numberOfSectionsInCollectionView"]
+- ["C6TineSE21ProfileViewController", "prepareForSegue"]
 - !private ["C6TineSE21ProfileViewController", "print"]
 - ["C6TineSE21ProfileViewController", "scrollViewDidEndDecelerating"]
 - ["C6TineSE21ProfileViewController", "scrollViewDidEndDragging"]
@@ -1402,6 +1422,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInCollectionView"]
 - !private ["PSo21UIAppearanceContainer", "popViewControllerAnimated"]
+- ["PSo21UIAppearanceContainer", "prepareForSegue"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - !private ["PSo21UIAppearanceContainer", "reloadInputViews"]
@@ -1652,6 +1673,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UIContentContainer", "popViewControllerAnimated"]
+- ["PSo18UIContentContainer", "prepareForSegue"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
@@ -1747,6 +1769,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UIFocusEnvironment", "popViewControllerAnimated"]
+- ["PSo18UIFocusEnvironment", "prepareForSegue"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
 - !private ["PSo18UIFocusEnvironment", "reloadInputViews"]
@@ -1790,6 +1813,7 @@ depends-member:
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo22UINavigationController", "dismissViewControllerAnimated"]
 - !private ["CSo22UINavigationController", "popViewControllerAnimated"]
+- ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGSize"]
@@ -1814,6 +1838,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIEdgeInsetsMake"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
 - !private ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "brownsCountLabel"]
@@ -1841,6 +1866,7 @@ depends-member:
 - !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "numberOfSectionsInCollectionView"]
 - !private ["CSo11UIResponder", "popViewControllerAnimated"]
+- ["CSo11UIResponder", "prepareForSegue"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "reloadData"]
 - !private ["CSo11UIResponder", "reloadInputViews"]
@@ -1966,6 +1992,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInCollectionView"]
 - !private ["PSo16UIStateRestoring", "popViewControllerAnimated"]
+- ["PSo16UIStateRestoring", "prepareForSegue"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
@@ -2038,6 +2065,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UITraitEnvironment", "popViewControllerAnimated"]
+- ["PSo18UITraitEnvironment", "prepareForSegue"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - !private ["PSo18UITraitEnvironment", "reloadInputViews"]
@@ -2087,6 +2115,7 @@ depends-member:
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "updateWith"]
+- ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "CGSize"]
@@ -2111,6 +2140,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIEdgeInsetsMake"]
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
 - !private ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "brownsCountLabel"]
 - ["CSo16UIViewController", "chalksCountLabel"]
@@ -2132,6 +2162,7 @@ depends-member:
 - !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "numberOfSectionsInCollectionView"]
 - !private ["CSo16UIViewController", "popViewControllerAnimated"]
+- ["CSo16UIViewController", "prepareForSegue"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
@@ -2489,4 +2520,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "91b10db5c30cf7657339f44b24ca90d1"
+interface-hash: "dd45f40dbaea9c817f37b23114574f1e"

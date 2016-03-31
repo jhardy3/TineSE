@@ -12,8 +12,8 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
-    var sheds = [Hunter]()
-    var filterdSheds = [Hunter]()
+    var hunters = [Hunter]()
+    var filteredHunters = [Hunter]()
     var isTracking = false
     
     override func viewWillAppear(animated: Bool) {
@@ -33,20 +33,20 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isTracking == false {
-            return sheds.count
+            return hunters.count
         } else {
-            return filterdSheds.count
+            return filteredHunters.count
         }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("leaderboardCell", forIndexPath: indexPath)
         if isTracking == false {
-            cell.textLabel?.text = sheds[indexPath.row].username
-            cell.detailTextLabel?.text = String(sheds[indexPath.row].shedCount)
+            cell.textLabel?.text = hunters[indexPath.row].username
+            cell.detailTextLabel?.text = String(hunters[indexPath.row].shedCount)
         } else {
-            cell.textLabel?.text = filterdSheds[indexPath.row].username
-            cell.detailTextLabel?.text = String(filterdSheds[indexPath.row].shedCount)
+            cell.textLabel?.text = filteredHunters[indexPath.row].username
+            cell.detailTextLabel?.text = String(filteredHunters[indexPath.row].shedCount)
         }
         
         return cell
@@ -56,13 +56,13 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         guard var currentHunterIDs = HunterController.sharedInstance.currentHunter?.trackingIDs else { return }
         currentHunterIDs.append(HunterController.sharedInstance.currentHunter!.identifier!)
         HunterController.fetchHuntersWithIdentifierArray(currentHunterIDs) { (hunters) -> Void in
-            self.filterdSheds = hunters.sort { $0.shedCount > $1.shedCount }
+            self.filteredHunters = hunters.sort { $0.shedCount > $1.shedCount }
         }
     }
     
     func fetchAllHuntersForLeaderBoard() {
         HunterController.fetchAllHunters { (hunters) -> Void in
-            self.sheds = hunters.sort { $0.shedCount > $1.shedCount }
+            self.hunters = hunters.sort { $0.shedCount > $1.shedCount }
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 self.tableView.reloadData()
             })
@@ -74,4 +74,17 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         self.tableView.reloadData()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toHunter" {
+            let destinationView = segue.destinationViewController as? ProfileViewController
+            guard let index = tableView.indexPathForSelectedRow?.row else { return }
+            if isTracking {
+                guard let identifier = filteredHunters[index].identifier else { return }
+                destinationView?.updateWithIdentifier(identifier)
+            } else {
+                guard let identifier = hunters[index].identifier else { return }
+                destinationView?.updateWithIdentifier(identifier)
+            }
+        }
+    }
 }

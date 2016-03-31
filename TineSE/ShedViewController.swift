@@ -45,8 +45,8 @@ class ShedViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     
-    func updateWithShed(shed: Shed) {
-        guard let shedImage = shed.shedImage else { return }
+    func updateWithShed(shed: ImageCollectionViewCell) {
+        guard let shedImage = shed.shedImage.image else { return }
         self.shedImageView.image = shedImage
     }
     
