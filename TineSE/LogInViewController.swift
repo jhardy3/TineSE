@@ -9,7 +9,7 @@
 import UIKit
 
 class logInViewController: UIViewController, UITextFieldDelegate {
-
+    
     // MARK: - IBOutlets
     
     @IBOutlet weak var usernameTextField: UITextField!
@@ -34,7 +34,7 @@ class logInViewController: UIViewController, UITextFieldDelegate {
             self.performSegueWithIdentifier("loggedIn", sender: self)
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -61,7 +61,7 @@ class logInViewController: UIViewController, UITextFieldDelegate {
             }
         }
     }
-
+    
     // Signs a user in
     @IBAction func signInTapped(sender: UIButton) {
         
@@ -100,4 +100,5 @@ class logInViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
 }

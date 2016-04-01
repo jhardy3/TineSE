@@ -83,8 +83,11 @@ class ShedController {
             currentHunter.shedIDs.removeAtIndex(indexOfRemoval)
         }
         
+        guard let shedIdentifier = shed.identifier else { return }
         // Delete the shed from firebase
         shed.delete()
+        
+        FirebaseController.firebase.childByAppendingPath("/location/\(shedIdentifier)").removeValue()
     }
     
     // MARK: - Fetch posts

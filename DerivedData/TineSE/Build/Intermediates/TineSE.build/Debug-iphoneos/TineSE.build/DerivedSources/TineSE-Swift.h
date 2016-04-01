@@ -148,6 +148,7 @@ SWIFT_CLASS("_TtC6TineSE20CameraViewController")
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified shedTypePickerView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified clearShedButton;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified shedView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified crosshairButton;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
@@ -165,6 +166,7 @@ SWIFT_CLASS("_TtC6TineSE20CameraViewController")
 - (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 - (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)createAnimation;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

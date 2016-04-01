@@ -71,6 +71,21 @@ class ShedTableViewCell: UITableViewCell {
         let misleadingContentAlert = UIAlertAction(title: "False Information", style: .Default) { (alert) -> Void in
             FirebaseController.firebase.childByAppendingPath("/mislabeled/\(shedID)").setValue(true)
         }
+        
+        if let shed = self.shed, let currentHunterID = HunterController.sharedInstance.currentHunter?.identifier
+            where currentHunterID == self.shed?.hunterIdentifier {
+            let deleteContentAlert = UIAlertAction(title: "Delete", style: .Destructive, handler: { (alert) in
+                ShedController.deleteShed(shed)
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    guard let index = self.delegate?.tableView.indexPathForCell(self)?.row else { return }
+                    self.delegate?.sheds.removeAtIndex(index)
+                    self.delegate?.tableView.reloadData()
+                })
+                
+            })
+            alertController.addAction(deleteContentAlert)
+        }
+        
         let cancelAlert = UIAlertAction(title: "Cancel", style: .Destructive, handler: nil)
         alertController.addAction(inappropriateAlert)
         alertController.addAction(misleadingContentAlert)

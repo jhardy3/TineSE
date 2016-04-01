@@ -1158,13 +1158,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPc-Zc-mDq">
                                 <rect key="frame" x="20" y="74" width="560" height="128"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SDL-ID-cFV">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="YjD-Yi-qmC"/>
-                                            <constraint firstAttribute="width" secondItem="SDL-ID-cFV" secondAttribute="height" multiplier="1:1" id="h16-91-duN"/>
-                                        </constraints>
-                                    </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hg7-md-LAQ">
                                         <rect key="frame" x="20" y="200" width="560" height="160"/>
                                         <subviews>
@@ -1190,8 +1183,8 @@
                                                     </label>
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dd-ml-3hF">
                                                         <rect key="frame" x="95" y="0.0" width="465" height="80"/>
-                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="232" height="64"/>
+                                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="262" height="64"/>
                                                         </variation>
                                                     </pickerView>
                                                 </subviews>
@@ -1245,6 +1238,13 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SDL-ID-cFV">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="YjD-Yi-qmC"/>
+                                            <constraint firstAttribute="width" secondItem="SDL-ID-cFV" secondAttribute="height" multiplier="1:1" id="h16-91-duN"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1357,7 +1357,9 @@
                             <constraint firstItem="9uF-be-iWc" firstAttribute="top" secondItem="OYd-gI-WXE" secondAttribute="bottom" constant="8" id="cyW-r6-sAi">
                                 <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
-                            <constraint firstAttribute="trailing" secondItem="iPc-Zc-mDq" secondAttribute="trailing" constant="20" id="elz-vX-J3r"/>
+                            <constraint firstAttribute="trailing" secondItem="iPc-Zc-mDq" secondAttribute="trailing" constant="20" id="elz-vX-J3r">
+                                <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                            </constraint>
                             <constraint firstItem="OYd-gI-WXE" firstAttribute="top" secondItem="IzA-fs-Fzg" secondAttribute="bottom" constant="123" id="f7v-tE-HWx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IzA-fs-Fzg" secondAttribute="trailing" constant="-4" id="h1w-2d-gA3">
                                 <variation key="heightClass=regular-widthClass=compact" constant="39"/>
@@ -1367,7 +1369,9 @@
                             </constraint>
                             <constraint firstItem="OYd-gI-WXE" firstAttribute="leading" secondItem="Ym6-hl-40f" secondAttribute="leading" constant="20" id="mj1-0c-dor"/>
                             <constraint firstAttribute="trailing" secondItem="OYd-gI-WXE" secondAttribute="trailing" constant="20" id="mkE-0v-cGB"/>
-                            <constraint firstItem="iPc-Zc-mDq" firstAttribute="leading" secondItem="Ym6-hl-40f" secondAttribute="leading" constant="20" id="vgT-Yd-1Em"/>
+                            <constraint firstItem="iPc-Zc-mDq" firstAttribute="leading" secondItem="Ym6-hl-40f" secondAttribute="leading" constant="20" id="vgT-Yd-1Em">
+                                <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                            </constraint>
                             <constraint firstItem="IzA-fs-Fzg" firstAttribute="centerX" secondItem="Ym6-hl-40f" secondAttribute="centerX" id="yAF-bb-CVZ"/>
                         </constraints>
                         <variation key="default">
@@ -1414,6 +1418,7 @@
                     <navigationItem key="navigationItem" id="Efs-A1-2f3"/>
                     <connections>
                         <outlet property="clearShedButton" destination="OYd-gI-WXE" id="d1a-f2-eR8"/>
+                        <outlet property="crosshairButton" destination="IzA-fs-Fzg" id="2NU-YM-WFN"/>
                         <outlet property="shedColorPickerView" destination="2dd-ml-3hF" id="JUt-tG-ycE"/>
                         <outlet property="shedImageView" destination="SDL-ID-cFV" id="J4k-11-uCa"/>
                         <outlet property="shedTypePickerView" destination="c9Q-fG-Cef" id="5Bn-B6-sOF"/>

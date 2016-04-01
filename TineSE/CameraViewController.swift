@@ -27,6 +27,7 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     @IBOutlet weak var shedTypePickerView: UIPickerView!
     @IBOutlet weak var clearShedButton: UIButton!
     @IBOutlet weak var shedView: UIView!
+    @IBOutlet weak var crosshairButton: UIButton!
     
     
     // MARK: - Class Functions
@@ -57,6 +58,7 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
             self.clearShedButton.setTitle("", forState: .Normal)
             self.shedImageView.image = UIImage(named: "Skull")
         }
+    
         
         shedView.layer.borderWidth = 1.0
         shedView.layer.borderColor = UIColor.hunterOrange().CGColor
@@ -85,6 +87,7 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
         
         
         if !postButtonTapped {
+            createAnimation()
             postButtonTapped = true
             // Guard for image and hunterID and create a new shed
             if let image = image, hunterID = HunterController.sharedInstance.currentHunter?.identifier {
@@ -232,4 +235,32 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
         }
     }
     
+    
+    
+    
+    
+    func createAnimation() {
+        
+        let bounds = CGRectMake(0, 0, 1, 1)
+        
+        let shakeAnimation = CAKeyframeAnimation()
+        shakeAnimation.keyPath = "position"
+        shakeAnimation.path = CGPathCreateWithEllipseInRect(bounds, nil)
+        shakeAnimation.duration = 5.0
+        shakeAnimation.additive = true
+        shakeAnimation.repeatCount = Float.infinity
+        shakeAnimation.rotationMode = kCAAnimationRotateAuto
+        shakeAnimation.speed = 5.0
+        
+        self.crosshairButton.layer.addAnimation(shakeAnimation, forKey: "shake")
+        
+    }
+    
+    func createThread(function: ()) {
+        let queue = dispatch_queue_create("queue", nil)
+        
+        dispatch_async(queue) { 
+            function
+        }
+    }
 }

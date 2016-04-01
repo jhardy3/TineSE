@@ -135,7 +135,6 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
                     refreshControl.endRefreshing()
                 })
             }
-
             
         } else {
             
@@ -160,8 +159,6 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
                 refreshControl.endRefreshing()
             }
         }
-        
-        
     }
     
     func setUpRefreshController() {

@@ -8,31 +8,31 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "++"
-- !private "BooleanLiteralType"
-- !private "PhotoController"
-- "Shed"
-- "String"
-- !private "Int"
-- !private "dispatch_group_leave"
 - !private "dispatch_group_notify"
-- "Void"
-- !private "FirebaseController"
-- "Bool"
-- !private "..<"
-- !private "dispatch_get_main_queue"
-- !private "dispatch_group_create"
-- "Comment"
-- !private "AnyObject"
-- !private "<="
-- !private "HunterController"
-- "StringLiteralType"
-- !private "~="
-- !private "+"
 - "UIImage"
-- !private "=="
 - !private "Array"
-- !private "dispatch_group_enter"
+- !private "Int"
+- "Bool"
 - "ShedController"
+- !private "dispatch_get_main_queue"
+- "StringLiteralType"
+- !private "=="
+- !private "~="
+- "Comment"
+- "Void"
+- "String"
+- !private "dispatch_group_enter"
+- !private "..<"
+- !private "FirebaseController"
+- !private "dispatch_group_leave"
+- !private "dispatch_group_create"
+- !private "<="
+- !private "AnyObject"
+- !private "PhotoController"
+- !private "HunterController"
+- !private "BooleanLiteralType"
+- !private "+"
+- "Shed"
 depends-member:
 - !private ["Ps9AnyObject", "Comment"]
 - !private ["Ps9AnyObject", "FirebaseController"]
@@ -43,6 +43,7 @@ depends-member:
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "brownCount"]
 - !private ["Ps9AnyObject", "chalkCount"]
+- !private ["Ps9AnyObject", "childByAppendingPath"]
 - !private ["Ps9AnyObject", "currentHunter"]
 - !private ["Ps9AnyObject", "dataAtEndPoint"]
 - !private ["Ps9AnyObject", "delete"]
@@ -53,9 +54,11 @@ depends-member:
 - !private ["Ps9AnyObject", "dispatch_group_notify"]
 - !private ["Ps9AnyObject", "fetchShed"]
 - !private ["Ps9AnyObject", "fetchSheds"]
+- !private ["Ps9AnyObject", "firebase"]
 - !private ["Ps9AnyObject", "identifier"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "messageIdentifiers"]
+- !private ["Ps9AnyObject", "removeValue"]
 - !private ["Ps9AnyObject", "save"]
 - !private ["Ps9AnyObject", "sharedInstance"]
 - !private ["Ps9AnyObject", "shedCount"]
@@ -104,7 +107,9 @@ depends-member:
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "_DisabledRangeIndex"]
+- !private ["Ps11CVarArgType", "childByAppendingPath"]
 - !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "removeValue"]
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Generator"]
@@ -135,10 +140,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "appendContentsOf"]
+- !private ["Ps28CustomDebugStringConvertible", "childByAppendingPath"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "keys"]
 - !private ["Ps28CustomDebugStringConvertible", "removeAtIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "removeValue"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "Element"]
@@ -151,10 +158,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "appendContentsOf"]
+- !private ["Ps23CustomStringConvertible", "childByAppendingPath"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "keys"]
 - !private ["Ps23CustomStringConvertible", "removeAtIndex"]
+- !private ["Ps23CustomStringConvertible", "removeValue"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Vs10Dictionary", "Generator"]
 - !private ["Vs10Dictionary", "Index"]
@@ -175,9 +184,16 @@ depends-member:
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "childByAppendingPath"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "removeValue"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["CSo6FQuery", "childByAppendingPath"]
+- !private ["CSo6FQuery", "removeValue"]
+- !private ["CSo8Firebase", "childByAppendingPath"]
+- !private ["CSo8Firebase", "removeValue"]
 - !private ["C6TineSE18FirebaseController", "dataAtEndPoint"]
+- !private ["C6TineSE18FirebaseController", "firebase"]
 - !private ["P6TineSE12FirebaseType", "brownCount"]
 - !private ["P6TineSE12FirebaseType", "chalkCount"]
 - !private ["P6TineSE12FirebaseType", "delete"]
@@ -201,7 +217,9 @@ depends-member:
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "childByAppendingPath"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "removeValue"]
 - !private ["C6TineSE6Hunter", "brownCount"]
 - !private ["C6TineSE6Hunter", "chalkCount"]
 - !private ["C6TineSE6Hunter", "deinit"]
@@ -299,9 +317,13 @@ depends-member:
 - !private ["PSo9NSCopying", "deinit"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "childByAppendingPath"]
 - !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "removeValue"]
+- !private ["PSo16NSObjectProtocol", "childByAppendingPath"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "removeValue"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
@@ -501,6 +523,8 @@ depends-nominal:
 - !private "Sd"
 - !private "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "CSo6FQuery"
+- !private "CSo8Firebase"
 - !private "C6TineSE18FirebaseController"
 - !private "P6TineSE12FirebaseType"
 - !private "Sf"
