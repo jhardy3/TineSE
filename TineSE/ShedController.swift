@@ -40,16 +40,16 @@ class ShedController {
                 // Switch on shed color and adjust current hunters shed count respectively ; save hunter once finished
                 switch shedColor {
                 case "Brown" :
-                    currentHunter.brownCount + 1
+                    currentHunter.brownCount = currentHunter.brownCount + 1
                 case "White" :
-                    currentHunter.whiteCount + 1
+                    currentHunter.whiteCount = currentHunter.whiteCount + 1
                 case "Chalk" :
-                    currentHunter.chalkCount + 1
+                    currentHunter.chalkCount = currentHunter.chalkCount + 1
                 default :
                     return
                 }
                 
-                currentHunter.shedCount++
+                currentHunter.shedCount = currentHunter.shedCount + 1
                 currentHunter.save()
                 
                 // Complete true
@@ -82,6 +82,21 @@ class ShedController {
         if let indexOfRemoval = indexOfRemoval {
             currentHunter.shedIDs.removeAtIndex(indexOfRemoval)
         }
+        
+        switch shed.shedColor {
+        case "Brown":
+            currentHunter.brownCount = currentHunter.brownCount - 1
+        case "White":
+            currentHunter.whiteCount = currentHunter.whiteCount - 1
+        case "Chalk":
+            currentHunter.chalkCount = currentHunter.chalkCount - 1
+        default:
+            break
+        }
+        
+        currentHunter.shedCount = currentHunter.shedCount - 1
+        var saveHunter = currentHunter
+        saveHunter.save()
         
         guard let shedIdentifier = shed.identifier else { return }
         // Delete the shed from firebase
