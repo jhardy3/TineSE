@@ -10,9 +10,9 @@ provides-dynamic-lookup:
 - "awakeFromNib"
 - "shedImage"
 depends-top-level:
-- "ImageCollectionViewCell"
 - "ProfileViewController"
 - "UICollectionViewCell"
+- "ImageCollectionViewCell"
 - "Shed"
 - "UIImageView"
 depends-member:

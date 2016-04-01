@@ -9,81 +9,81 @@ provides-member:
 - ["O6TineSE14FollowingState", ""]
 - ["C6TineSE21ProfileViewController", ""]
 provides-dynamic-lookup:
-- "chalksCountLabel"
-- "trackingCount"
-- "usernameLabel"
-- "kMargin"
-- "viewWillAppear"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "hunterProfileImage"
-- "updateWithIdentifier"
-- "shedCountLabel"
-- "flowLayout"
 - "viewLoaded"
-- "viewDidAppear"
 - "trackersCountLabel"
-- "followButton"
+- "flowLayout"
 - "viewWillDisappear"
-- "viewDidLoad"
-- "whitesCountLabel"
-- "prepareForSegue"
-- "trackingCountLabel"
-- "followButtonTapped"
+- "followButton"
 - "brownsCountLabel"
-- "viewDidDisappear"
+- "viewDidLoad"
+- "shedCountLabel"
+- "chalksCountLabel"
+- "usernameLabel"
+- "prepareForSegue"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "updateWithIdentifier"
+- "shedDeletedUpdateView"
+- "followButtonTapped"
+- "kMargin"
+- "hunterProfileImage"
+- "trackingCount"
+- "trackingCountLabel"
+- "viewDidAppear"
+- "whitesCountLabel"
+- "viewWillAppear"
 depends-top-level:
-- "UICollectionViewDelegate"
-- !private "dispatch_group_enter"
-- !private "StringLiteralType"
-- "UICollectionViewDataSource"
-- !private "!="
-- "UICollectionViewCell"
-- !private "dispatch_group_leave"
-- !private "*"
-- "UIStoryboardSegue"
-- !private "ImageCollectionViewCell"
-- "UICollectionViewDelegateFlowLayout"
-- !private "+"
-- "BooleanLiteralType"
-- "Bool"
-- !private "CGSizeMake"
-- "String"
-- !private "NSThread"
-- !private "UIColor"
-- !private "/"
-- !private "NSNotificationCenter"
-- "CGFloat"
-- !private "UIEdgeInsetsMake"
-- "NSIndexPath"
-- "Hunter"
-- "AnyObject"
-- "UICollectionViewLayout"
 - !private "Void"
-- "UILabel"
-- "ProfileViewController"
 - !private "HunterController"
-- "=="
-- !private "dispatch_get_main_queue"
-- !private "dispatch_group_notify"
-- !private "print"
+- !private "*"
+- "UILabel"
+- "AnyObject"
+- !private "StringLiteralType"
+- "UICollectionViewCell"
+- !private "/"
+- "NSIndexPath"
 - "UIImageView"
-- "FollowingState"
+- "BooleanLiteralType"
 - "Int"
-- !private "dispatch_group_create"
-- !private "ShedController"
+- !private "ImageCollectionViewCell"
 - "UIViewController"
-- "Shed"
-- "UICollectionViewFlowLayout"
-- !private ">"
 - !private "-"
 - "CGSize"
+- !private "dispatch_group_enter"
+- "UICollectionViewLayout"
+- "Shed"
+- !private "dispatch_group_notify"
+- !private "+"
 - "UIButton"
+- "=="
+- "UICollectionViewDataSource"
+- !private "ShedController"
+- !private "CGSizeMake"
+- "Bool"
+- !private "NSThread"
+- !private "dispatch_group_leave"
+- !private "NSNotificationCenter"
+- "UIStoryboardSegue"
+- "UICollectionViewDelegate"
 - "UICollectionView"
+- !private "UIEdgeInsetsMake"
+- !private "dispatch_get_main_queue"
+- "CGFloat"
+- "UICollectionViewDelegateFlowLayout"
+- !private ">"
+- !private "UIColor"
+- !private "print"
+- !private "!="
+- "Hunter"
+- "ProfileViewController"
+- "UICollectionViewFlowLayout"
+- !private "dispatch_group_create"
+- "FollowingState"
+- "String"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -98,6 +98,7 @@ depends-member:
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIEdgeInsetsMake"]
+- !private ["Ps9AnyObject", "addObserver"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "borderColor"]
 - !private ["Ps9AnyObject", "borderWidth"]
@@ -164,6 +165,7 @@ depends-member:
 - !private ["Ps9AnyObject", "sharedInstance"]
 - !private ["Ps9AnyObject", "shedCount"]
 - ["Ps9AnyObject", "shedCountLabel"]
+- ["Ps9AnyObject", "shedDeletedUpdateView"]
 - !private ["Ps9AnyObject", "shedIDs"]
 - ["Ps9AnyObject", "sheds"]
 - !private ["Ps9AnyObject", "sleepForTimeInterval"]
@@ -181,7 +183,6 @@ depends-member:
 - ["Ps9AnyObject", "usernameLabel"]
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidAppear"]
-- ["Ps9AnyObject", "viewDidDisappear"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
 - ["Ps9AnyObject", "viewLoaded"]
@@ -252,6 +253,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "String"]
 - !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIEdgeInsetsMake"]
+- !private ["Ps11CVarArgType", "addObserver"]
 - !private ["Ps11CVarArgType", "backgroundColor"]
 - !private ["Ps11CVarArgType", "borderColor"]
 - !private ["Ps11CVarArgType", "borderWidth"]
@@ -309,6 +311,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "selectedIndex"]
 - !private ["Ps11CVarArgType", "setTitle"]
 - ["Ps11CVarArgType", "shedCountLabel"]
+- ["Ps11CVarArgType", "shedDeletedUpdateView"]
 - ["Ps11CVarArgType", "sheds"]
 - !private ["Ps11CVarArgType", "sleepForTimeInterval"]
 - !private ["Ps11CVarArgType", "tabBarController"]
@@ -321,7 +324,6 @@ depends-member:
 - ["Ps11CVarArgType", "usernameLabel"]
 - !private ["Ps11CVarArgType", "view"]
 - ["Ps11CVarArgType", "viewDidAppear"]
-- ["Ps11CVarArgType", "viewDidDisappear"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", "viewForZoomingInScrollView"]
 - ["Ps11CVarArgType", "viewLoaded"]
@@ -365,6 +367,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIEdgeInsetsMake"]
 - !private ["Ps28CustomDebugStringConvertible", "User"]
 - ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "addObserver"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "borderColor"]
@@ -424,6 +427,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "selectedIndex"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitle"]
 - ["Ps28CustomDebugStringConvertible", "shedCountLabel"]
+- ["Ps28CustomDebugStringConvertible", "shedDeletedUpdateView"]
 - ["Ps28CustomDebugStringConvertible", "sheds"]
 - !private ["Ps28CustomDebugStringConvertible", "sleepForTimeInterval"]
 - !private ["Ps28CustomDebugStringConvertible", "sortInPlace"]
@@ -438,7 +442,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "usernameLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
-- ["Ps28CustomDebugStringConvertible", "viewDidDisappear"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps28CustomDebugStringConvertible", "viewLoaded"]
@@ -468,6 +471,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIEdgeInsetsMake"]
 - ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addObserver"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "borderColor"]
@@ -528,6 +532,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "selectedIndex"]
 - !private ["Ps23CustomStringConvertible", "setTitle"]
 - ["Ps23CustomStringConvertible", "shedCountLabel"]
+- ["Ps23CustomStringConvertible", "shedDeletedUpdateView"]
 - ["Ps23CustomStringConvertible", "sheds"]
 - !private ["Ps23CustomStringConvertible", "sleepForTimeInterval"]
 - !private ["Ps23CustomStringConvertible", "sortInPlace"]
@@ -542,7 +547,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "usernameLabel"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidAppear"]
-- ["Ps23CustomStringConvertible", "viewDidDisappear"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps23CustomStringConvertible", "viewLoaded"]
@@ -572,6 +576,7 @@ depends-member:
 - !private ["Ps9Equatable", "UIEdgeInsetsMake"]
 - ["Ps9Equatable", "User"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addObserver"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "borderColor"]
 - !private ["Ps9Equatable", "borderWidth"]
@@ -629,6 +634,7 @@ depends-member:
 - !private ["Ps9Equatable", "selectedIndex"]
 - !private ["Ps9Equatable", "setTitle"]
 - ["Ps9Equatable", "shedCountLabel"]
+- ["Ps9Equatable", "shedDeletedUpdateView"]
 - ["Ps9Equatable", "sheds"]
 - !private ["Ps9Equatable", "sleepForTimeInterval"]
 - !private ["Ps9Equatable", "tabBarController"]
@@ -641,7 +647,6 @@ depends-member:
 - ["Ps9Equatable", "usernameLabel"]
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidAppear"]
-- ["Ps9Equatable", "viewDidDisappear"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
 - ["Ps9Equatable", "viewLoaded"]
@@ -694,6 +699,7 @@ depends-member:
 - !private ["Ps8Hashable", "UIEdgeInsetsMake"]
 - ["Ps8Hashable", "User"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addObserver"]
 - !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "borderColor"]
 - !private ["Ps8Hashable", "borderWidth"]
@@ -751,6 +757,7 @@ depends-member:
 - !private ["Ps8Hashable", "selectedIndex"]
 - !private ["Ps8Hashable", "setTitle"]
 - ["Ps8Hashable", "shedCountLabel"]
+- ["Ps8Hashable", "shedDeletedUpdateView"]
 - ["Ps8Hashable", "sheds"]
 - !private ["Ps8Hashable", "sleepForTimeInterval"]
 - !private ["Ps8Hashable", "tabBarController"]
@@ -763,7 +770,6 @@ depends-member:
 - ["Ps8Hashable", "usernameLabel"]
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidAppear"]
-- ["Ps8Hashable", "viewDidDisappear"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
 - ["Ps8Hashable", "viewLoaded"]
@@ -923,6 +929,7 @@ depends-member:
 - !private ["PSo8NSCoding", "selectedIndex"]
 - !private ["PSo8NSCoding", "setTitle"]
 - ["PSo8NSCoding", "shedCountLabel"]
+- ["PSo8NSCoding", "shedDeletedUpdateView"]
 - ["PSo8NSCoding", "sheds"]
 - !private ["PSo8NSCoding", "tabBarController"]
 - !private ["PSo8NSCoding", "text"]
@@ -934,7 +941,6 @@ depends-member:
 - ["PSo8NSCoding", "usernameLabel"]
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidAppear"]
-- ["PSo8NSCoding", "viewDidDisappear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", "viewLoaded"]
@@ -996,6 +1002,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "scrollViewWillEndDragging"]
 - !private ["PSo26NSExtensionRequestHandling", "selectedIndex"]
 - ["PSo26NSExtensionRequestHandling", "shedCountLabel"]
+- ["PSo26NSExtensionRequestHandling", "shedDeletedUpdateView"]
 - ["PSo26NSExtensionRequestHandling", "sheds"]
 - !private ["PSo26NSExtensionRequestHandling", "tabBarController"]
 - ["PSo26NSExtensionRequestHandling", "trackersCountLabel"]
@@ -1005,7 +1012,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "usernameLabel"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
-- ["PSo26NSExtensionRequestHandling", "viewDidDisappear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", "viewLoaded"]
@@ -1016,6 +1022,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "row"]
 - !private ["PSo16NSMutableCopying", "lowercaseString"]
+- !private ["CSo20NSNotificationCenter", "addObserver"]
 - !private ["CSo20NSNotificationCenter", "defaultCenter"]
 - !private ["CSo20NSNotificationCenter", "postNotificationName"]
 - ["CSo8NSObject", "AnyObject"]
@@ -1046,6 +1053,7 @@ depends-member:
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
 - !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "addObserver"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "borderColor"]
 - !private ["CSo8NSObject", "borderWidth"]
@@ -1102,6 +1110,7 @@ depends-member:
 - !private ["CSo8NSObject", "selectedIndex"]
 - !private ["CSo8NSObject", "setTitle"]
 - ["CSo8NSObject", "shedCountLabel"]
+- ["CSo8NSObject", "shedDeletedUpdateView"]
 - ["CSo8NSObject", "sheds"]
 - !private ["CSo8NSObject", "sleepForTimeInterval"]
 - !private ["CSo8NSObject", "tabBarController"]
@@ -1114,7 +1123,6 @@ depends-member:
 - ["CSo8NSObject", "usernameLabel"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidAppear"]
-- ["CSo8NSObject", "viewDidDisappear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["CSo8NSObject", "viewLoaded"]
@@ -1135,6 +1143,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIEdgeInsetsMake"]
+- !private ["PSo16NSObjectProtocol", "addObserver"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "borderColor"]
 - !private ["PSo16NSObjectProtocol", "borderWidth"]
@@ -1191,6 +1200,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "selectedIndex"]
 - !private ["PSo16NSObjectProtocol", "setTitle"]
 - ["PSo16NSObjectProtocol", "shedCountLabel"]
+- ["PSo16NSObjectProtocol", "shedDeletedUpdateView"]
 - ["PSo16NSObjectProtocol", "sheds"]
 - !private ["PSo16NSObjectProtocol", "sleepForTimeInterval"]
 - !private ["PSo16NSObjectProtocol", "tabBarController"]
@@ -1203,7 +1213,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "usernameLabel"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidAppear"]
-- ["PSo16NSObjectProtocol", "viewDidDisappear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "viewLoaded"]
@@ -1289,6 +1298,7 @@ depends-member:
 - ["C6TineSE21ProfileViewController", "scrollViewWillBeginZooming"]
 - ["C6TineSE21ProfileViewController", "scrollViewWillEndDragging"]
 - ["C6TineSE21ProfileViewController", "shedCountLabel"]
+- ["C6TineSE21ProfileViewController", "shedDeletedUpdateView"]
 - ["C6TineSE21ProfileViewController", "sheds"]
 - !private ["C6TineSE21ProfileViewController", "tabBarController"]
 - ["C6TineSE21ProfileViewController", "trackersCountLabel"]
@@ -1298,7 +1308,6 @@ depends-member:
 - ["C6TineSE21ProfileViewController", "usernameLabel"]
 - !private ["C6TineSE21ProfileViewController", "view"]
 - ["C6TineSE21ProfileViewController", "viewDidAppear"]
-- ["C6TineSE21ProfileViewController", "viewDidDisappear"]
 - ["C6TineSE21ProfileViewController", "viewDidLoad"]
 - ["C6TineSE21ProfileViewController", "viewForZoomingInScrollView"]
 - ["C6TineSE21ProfileViewController", "viewLoaded"]
@@ -1441,6 +1450,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "selectedIndex"]
 - !private ["PSo21UIAppearanceContainer", "setTitle"]
 - ["PSo21UIAppearanceContainer", "shedCountLabel"]
+- ["PSo21UIAppearanceContainer", "shedDeletedUpdateView"]
 - ["PSo21UIAppearanceContainer", "sheds"]
 - !private ["PSo21UIAppearanceContainer", "tabBarController"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -1452,7 +1462,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "usernameLabel"]
 - !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidAppear"]
-- ["PSo21UIAppearanceContainer", "viewDidDisappear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", "viewLoaded"]
@@ -1461,6 +1470,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
 - ["PSo21UIAppearanceContainer", "whitesCountLabel"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "clipsToBounds"]
 - !private ["CSo8UIButton", "layer"]
 - !private ["CSo8UIButton", "setTitle"]
 - !private ["CSo24UICollectionReusableView", "delegate"]
@@ -1512,6 +1522,7 @@ depends-member:
 - ["PSo26UICollectionViewDataSource", "scrollViewWillBeginZooming"]
 - ["PSo26UICollectionViewDataSource", "scrollViewWillEndDragging"]
 - !private ["PSo26UICollectionViewDataSource", "shedCountLabel"]
+- !private ["PSo26UICollectionViewDataSource", "shedDeletedUpdateView"]
 - !private ["PSo26UICollectionViewDataSource", "sheds"]
 - !private ["PSo26UICollectionViewDataSource", "tabBarController"]
 - !private ["PSo26UICollectionViewDataSource", "trackersCountLabel"]
@@ -1566,6 +1577,7 @@ depends-member:
 - ["PSo24UICollectionViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo24UICollectionViewDelegate", "scrollViewWillEndDragging"]
 - !private ["PSo24UICollectionViewDelegate", "shedCountLabel"]
+- !private ["PSo24UICollectionViewDelegate", "shedDeletedUpdateView"]
 - !private ["PSo24UICollectionViewDelegate", "sheds"]
 - !private ["PSo24UICollectionViewDelegate", "tabBarController"]
 - !private ["PSo24UICollectionViewDelegate", "trackersCountLabel"]
@@ -1620,6 +1632,7 @@ depends-member:
 - ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewWillBeginZooming"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewWillEndDragging"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "shedCountLabel"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "shedDeletedUpdateView"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "sheds"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "tabBarController"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "trackersCountLabel"]
@@ -1689,6 +1702,7 @@ depends-member:
 - ["PSo18UIContentContainer", "scrollViewWillEndDragging"]
 - !private ["PSo18UIContentContainer", "selectedIndex"]
 - ["PSo18UIContentContainer", "shedCountLabel"]
+- ["PSo18UIContentContainer", "shedDeletedUpdateView"]
 - ["PSo18UIContentContainer", "sheds"]
 - !private ["PSo18UIContentContainer", "tabBarController"]
 - ["PSo18UIContentContainer", "trackersCountLabel"]
@@ -1698,7 +1712,6 @@ depends-member:
 - ["PSo18UIContentContainer", "usernameLabel"]
 - !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidAppear"]
-- ["PSo18UIContentContainer", "viewDidDisappear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", "viewLoaded"]
@@ -1707,6 +1720,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewWillDisappear"]
 - ["PSo18UIContentContainer", "whitesCountLabel"]
 - ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "clipsToBounds"]
 - !private ["CSo9UIControl", "layer"]
 - !private ["CSo9UIControl", "setTitle"]
 - !private ["VSC14UIControlState", "Normal"]
@@ -1788,6 +1802,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "selectedIndex"]
 - !private ["PSo18UIFocusEnvironment", "setTitle"]
 - ["PSo18UIFocusEnvironment", "shedCountLabel"]
+- ["PSo18UIFocusEnvironment", "shedDeletedUpdateView"]
 - ["PSo18UIFocusEnvironment", "sheds"]
 - !private ["PSo18UIFocusEnvironment", "tabBarController"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -1799,7 +1814,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "usernameLabel"]
 - !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidAppear"]
-- ["PSo18UIFocusEnvironment", "viewDidDisappear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", "viewLoaded"]
@@ -1885,6 +1899,7 @@ depends-member:
 - !private ["CSo11UIResponder", "selectedIndex"]
 - !private ["CSo11UIResponder", "setTitle"]
 - ["CSo11UIResponder", "shedCountLabel"]
+- ["CSo11UIResponder", "shedDeletedUpdateView"]
 - ["CSo11UIResponder", "sheds"]
 - !private ["CSo11UIResponder", "tabBarController"]
 - !private ["CSo11UIResponder", "text"]
@@ -1896,7 +1911,6 @@ depends-member:
 - ["CSo11UIResponder", "usernameLabel"]
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidAppear"]
-- ["CSo11UIResponder", "viewDidDisappear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - ["CSo11UIResponder", "viewLoaded"]
@@ -1948,6 +1962,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
 - !private ["PSo20UIScrollViewDelegate", "shedCountLabel"]
+- !private ["PSo20UIScrollViewDelegate", "shedDeletedUpdateView"]
 - !private ["PSo20UIScrollViewDelegate", "sheds"]
 - !private ["PSo20UIScrollViewDelegate", "tabBarController"]
 - !private ["PSo20UIScrollViewDelegate", "trackersCountLabel"]
@@ -2008,6 +2023,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "scrollViewWillEndDragging"]
 - !private ["PSo16UIStateRestoring", "selectedIndex"]
 - ["PSo16UIStateRestoring", "shedCountLabel"]
+- ["PSo16UIStateRestoring", "shedDeletedUpdateView"]
 - ["PSo16UIStateRestoring", "sheds"]
 - !private ["PSo16UIStateRestoring", "tabBarController"]
 - ["PSo16UIStateRestoring", "trackersCountLabel"]
@@ -2017,7 +2033,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "usernameLabel"]
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidAppear"]
-- ["PSo16UIStateRestoring", "viewDidDisappear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", "viewLoaded"]
@@ -2084,6 +2099,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "selectedIndex"]
 - !private ["PSo18UITraitEnvironment", "setTitle"]
 - ["PSo18UITraitEnvironment", "shedCountLabel"]
+- ["PSo18UITraitEnvironment", "shedDeletedUpdateView"]
 - ["PSo18UITraitEnvironment", "sheds"]
 - !private ["PSo18UITraitEnvironment", "tabBarController"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -2095,7 +2111,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "usernameLabel"]
 - !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidAppear"]
-- ["PSo18UITraitEnvironment", "viewDidDisappear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", "viewLoaded"]
@@ -2178,6 +2193,7 @@ depends-member:
 - ["CSo16UIViewController", "scrollViewWillEndDragging"]
 - !private ["CSo16UIViewController", "selectedIndex"]
 - ["CSo16UIViewController", "shedCountLabel"]
+- ["CSo16UIViewController", "shedDeletedUpdateView"]
 - ["CSo16UIViewController", "sheds"]
 - !private ["CSo16UIViewController", "tabBarController"]
 - ["CSo16UIViewController", "trackersCountLabel"]
@@ -2187,7 +2203,6 @@ depends-member:
 - ["CSo16UIViewController", "usernameLabel"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidAppear"]
-- ["CSo16UIViewController", "viewDidDisappear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", "viewLoaded"]
@@ -2520,4 +2535,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "dd45f40dbaea9c817f37b23114574f1e"
+interface-hash: "e9b75ed4b8d4c7afa66ecbaa7f4d79c2"

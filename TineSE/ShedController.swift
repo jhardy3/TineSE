@@ -70,7 +70,7 @@ class ShedController {
         
         // Create an index of removal to hold possible ID
         var indexOfRemoval: Int?
-    
+        
         // For all of the shedIDs in the current hunters shedIDs array, if one of the IDs matches the ID passed in save the index
         for index in 0..<currentHunter.shedIDs.count {
             if currentHunter.shedIDs[index] == shedID {
@@ -163,6 +163,7 @@ class ShedController {
         }
     }
     
+    
     // Fetch Sheds for Timeline
     static func fetchShedsForTineline(completion:(sheds: [Shed]) -> Void) {
         
@@ -188,7 +189,7 @@ class ShedController {
         // Once sheds have been fetched notify dispatch and carry out Actual shed Fetching
         dispatch_group_notify(groupOne, dispatch_get_main_queue()) { () -> Void in
             
-            // Guard for current Hunter and append contens of current hunters shed Ids to sheds array ( This is necessary because personal sheds are 
+            // Guard for current Hunter and append contens of current hunters shed Ids to sheds array ( This is necessary because personal sheds are
             // left out of previous fetch sheds call)
             guard let currentHunter = HunterController.sharedInstance.currentHunter else { return }
             sheds.appendContentsOf(currentHunter.shedIDs)
@@ -227,7 +228,30 @@ class ShedController {
             })
         }
     }
-
+    
+    
+    static func fetchShedIDsForTineline(completion:(sheds: [String]) -> Void) {
+        
+        // Create a sheds string array which will hold shed IDs and a shedsToDisplay array that will hold the actual sheds
+        var sheds = [String]()
+        
+        // Create a group to keep async calls in order
+        
+        
+        // Fetch all sheds from the current hunters tracking list ( enter group to halt operation and  leave group once sheds are fetched
+        ShedController.fetchSheds { (shedIDs) -> Void in
+            
+            // sheds equal returned shedIDs
+            sheds = shedIDs
+            print(sheds)
+            guard let currentHunter = HunterController.sharedInstance.currentHunter else { return }
+            sheds.appendContentsOf(currentHunter.shedIDs)
+            
+            
+            completion(sheds: sheds)
+        }
+    }
+    
     // MARK: - Comment Functionality
     
     // add comment

@@ -12,13 +12,13 @@ provides-member:
 - ["P6TineSE12FirebaseType", "delete"]
 provides-dynamic-lookup:
 depends-top-level:
+- "StringLiteralType"
 - "String"
 - "Void"
-- "StringLiteralType"
 - "FirebaseController"
-- "AnyObject"
-- "FirebaseType"
 - "Firebase"
+- "FirebaseType"
+- "AnyObject"
 depends-member:
 - ["Ps9AnyObject", "Firebase"]
 - ["Ps9AnyObject", "baseURL"]

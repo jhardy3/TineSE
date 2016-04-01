@@ -86,7 +86,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         flowLayout.minimumLineSpacing = kMargin * 2
         flowLayout.minimumInteritemSpacing = 0
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(shedDeletedUpdateView), name: "shedDeleted", object: nil)
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(shedDeletedUpdateView), name: "shedDeleted", object: nil)
         
     }
     

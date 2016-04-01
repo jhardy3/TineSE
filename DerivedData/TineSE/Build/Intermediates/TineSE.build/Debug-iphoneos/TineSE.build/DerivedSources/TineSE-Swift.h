@@ -309,7 +309,9 @@ SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
 
 SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 @interface TinelineViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, CLLocationManagerDelegate, UITableViewDataSource>
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull localShedIDs;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull shedIDs;
+@property (nonatomic) BOOL endOfTableView;
 @property (nonatomic, readonly) BOOL currentViewIsLocal;
 @property (nonatomic, strong) CLLocationManager * _Null_unspecified locationManager;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentedController;
@@ -317,13 +319,15 @@ SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 - (void)viewDidLoad;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (void)setupLocationManagerAndGrabLocalSheds;
+- (void)grabSheds;
+- (NSArray<NSString *> * _Nonnull)createArray:(NSArray<NSString *> * _Nonnull)array range:(NSInteger)range;
 - (void)fetchShedsFirstLoad;
 - (void)refresh:(UIRefreshControl * _Nonnull)refreshControl;
 - (void)setUpRefreshController;
 - (void)newShedsAddedRefresh;
 - (IBAction)segmentedControlChanged:(UISegmentedControl * _Nonnull)sender;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (void)setupLocationManagerAndGrabLocalSheds;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
