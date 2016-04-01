@@ -76,11 +76,7 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     
     // Posts a new shed
     @IBAction func postButtonTapped(sender: UIButton) {
-        
-        self.clearShedButton.setTitle("Post Shed", forState: .Normal)
         displayCamera()
-        
-        
     }
     
     @IBAction func clearShedTapped(sender: UIButton) {
@@ -159,6 +155,8 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
         // If valid display image and set image to new image
         self.image = squareImage
         self.shedImageView.image = squareImage
+        
+        self.clearShedButton.setTitle("Post Shed", forState: .Normal)
         
         // Dismiss camera view controller
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -243,16 +241,16 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
         
         let bounds = CGRectMake(0, 0, 1, 1)
         
-        let shakeAnimation = CAKeyframeAnimation()
-        shakeAnimation.keyPath = "position"
-        shakeAnimation.path = CGPathCreateWithEllipseInRect(bounds, nil)
-        shakeAnimation.duration = 5.0
-        shakeAnimation.additive = true
-        shakeAnimation.repeatCount = Float.infinity
-        shakeAnimation.rotationMode = kCAAnimationRotateAuto
-        shakeAnimation.speed = 5.0
+        let rotateAnimation = CAKeyframeAnimation()
+        rotateAnimation.keyPath = "position"
+        rotateAnimation.path = CGPathCreateWithEllipseInRect(bounds, nil)
+        rotateAnimation.duration = 5.0
+        rotateAnimation.additive = true
+        rotateAnimation.repeatCount = Float.infinity
+        rotateAnimation.rotationMode = kCAAnimationRotateAuto
+        rotateAnimation.speed = 5.0
         
-        self.crosshairButton.layer.addAnimation(shakeAnimation, forKey: "shake")
+        self.crosshairButton.layer.addAnimation(rotateAnimation, forKey: "shake")
         
     }
     

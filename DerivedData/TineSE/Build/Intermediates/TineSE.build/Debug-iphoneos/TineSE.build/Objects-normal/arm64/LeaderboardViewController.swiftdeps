@@ -6,43 +6,43 @@ provides-nominal:
 provides-member:
 - ["C6TineSE25LeaderboardViewController", ""]
 provides-dynamic-lookup:
-- "segmentedControlChanged"
-- "fetchTrackedHuntersForLeaderBoard"
-- "didReceiveMemoryWarning"
-- "viewWillAppear"
-- "isTracking"
 - "fetchAllHuntersForLeaderBoard"
+- "segmentedControlChanged"
 - "tableView"
 - "tableView"
 - "tableView"
 - "segmentedControl"
+- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "fetchTrackedHuntersForLeaderBoard"
+- "viewWillAppear"
 - "prepareForSegue"
+- "isTracking"
 depends-top-level:
-- "Bool"
-- "Hunter"
-- !private "HunterController"
-- "NSIndexPath"
-- !private ">"
-- "AnyObject"
-- !private "ProfileViewController"
-- !private "StringLiteralType"
-- !private "=="
-- "Int"
-- "UITableViewDataSource"
-- !private "!"
-- "UITableViewDelegate"
 - !private "Void"
-- "UIViewController"
-- !private "String"
-- !private "dispatch_get_main_queue"
-- "UITableViewCell"
+- "LeaderboardViewController"
 - !private "dispatch_async"
 - "UISegmentedControl"
-- "UITableView"
-- "LeaderboardViewController"
-- "UIStoryboardSegue"
+- !private "dispatch_get_main_queue"
 - "BooleanLiteralType"
+- "AnyObject"
+- !private "!"
+- "Int"
+- "UIViewController"
+- !private "=="
+- "UITableViewDelegate"
+- "Hunter"
+- "Bool"
+- "UITableViewDataSource"
+- !private ">"
+- "UITableViewCell"
+- "UIStoryboardSegue"
+- !private "HunterController"
+- !private "String"
+- !private "ProfileViewController"
+- "NSIndexPath"
+- "UITableView"
+- !private "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "Hunter"]
 - !private ["Ps9AnyObject", "HunterController"]
@@ -84,6 +84,7 @@ depends-member:
 - ["Ps9AnyObject", "sectionIndexTitlesForTableView"]
 - ["Ps9AnyObject", "segmentedControl"]
 - ["Ps9AnyObject", "segmentedControlChanged"]
+- !private ["Ps9AnyObject", "separatorStyle"]
 - !private ["Ps9AnyObject", "sharedInstance"]
 - !private ["Ps9AnyObject", "shedCount"]
 - ["Ps9AnyObject", "tableView"]
@@ -164,6 +165,7 @@ depends-member:
 - ["Ps11CVarArgType", "sectionIndexTitlesForTableView"]
 - ["Ps11CVarArgType", "segmentedControl"]
 - ["Ps11CVarArgType", "segmentedControlChanged"]
+- !private ["Ps11CVarArgType", "separatorStyle"]
 - ["Ps11CVarArgType", "tableView"]
 - !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "textLabel"]
@@ -228,6 +230,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "sectionIndexTitlesForTableView"]
 - ["Ps28CustomDebugStringConvertible", "segmentedControl"]
 - ["Ps28CustomDebugStringConvertible", "segmentedControlChanged"]
+- !private ["Ps28CustomDebugStringConvertible", "separatorStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "sort"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
@@ -284,6 +287,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "sectionIndexTitlesForTableView"]
 - ["Ps23CustomStringConvertible", "segmentedControl"]
 - ["Ps23CustomStringConvertible", "segmentedControlChanged"]
+- !private ["Ps23CustomStringConvertible", "separatorStyle"]
 - !private ["Ps23CustomStringConvertible", "sort"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
@@ -298,6 +302,7 @@ depends-member:
 - ["Ps9Equatable", "Hunter"]
 - !private ["Ps9Equatable", "HunterController"]
 - ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "None"]
 - !private ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "dequeueReusableCellWithIdentifier"]
@@ -334,6 +339,7 @@ depends-member:
 - ["Ps9Equatable", "sectionIndexTitlesForTableView"]
 - ["Ps9Equatable", "segmentedControl"]
 - ["Ps9Equatable", "segmentedControlChanged"]
+- !private ["Ps9Equatable", "separatorStyle"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "textLabel"]
@@ -354,6 +360,7 @@ depends-member:
 - ["Ps8Hashable", "Hunter"]
 - !private ["Ps8Hashable", "HunterController"]
 - ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "None"]
 - !private ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "dequeueReusableCellWithIdentifier"]
@@ -390,6 +397,7 @@ depends-member:
 - ["Ps8Hashable", "sectionIndexTitlesForTableView"]
 - ["Ps8Hashable", "segmentedControl"]
 - ["Ps8Hashable", "segmentedControlChanged"]
+- !private ["Ps8Hashable", "separatorStyle"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "textLabel"]
@@ -537,6 +545,7 @@ depends-member:
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
 - ["PSo8NSCoding", "segmentedControl"]
 - ["PSo8NSCoding", "segmentedControlChanged"]
+- !private ["PSo8NSCoding", "separatorStyle"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textLabel"]
@@ -630,6 +639,7 @@ depends-member:
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
 - ["CSo8NSObject", "segmentedControl"]
 - ["CSo8NSObject", "segmentedControlChanged"]
+- !private ["CSo8NSObject", "separatorStyle"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textLabel"]
@@ -674,6 +684,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
 - ["PSo16NSObjectProtocol", "segmentedControl"]
 - ["PSo16NSObjectProtocol", "segmentedControlChanged"]
+- !private ["PSo16NSObjectProtocol", "separatorStyle"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textLabel"]
@@ -699,6 +710,7 @@ depends-member:
 - ["Ps30RangeReplaceableCollectionType", "init"]
 - !private ["Ps30RangeReplaceableCollectionType", "sort"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
+- !private ["Ps16RawRepresentable", "None"]
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
@@ -727,12 +739,14 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "detailTextLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "indexPathForSelectedRow"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
+- !private ["PSo29UIAccessibilityIdentification", "separatorStyle"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textLabel"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "detailTextLabel"]
 - !private ["PSo12UIAppearance", "indexPathForSelectedRow"]
 - !private ["PSo12UIAppearance", "reloadData"]
+- !private ["PSo12UIAppearance", "separatorStyle"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textLabel"]
 - ["PSo21UIAppearanceContainer", "Hunter"]
@@ -769,6 +783,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
 - ["PSo21UIAppearanceContainer", "segmentedControl"]
 - ["PSo21UIAppearanceContainer", "segmentedControlChanged"]
+- !private ["PSo21UIAppearanceContainer", "separatorStyle"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
@@ -820,12 +835,14 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "detailTextLabel"]
 - !private ["PSo17UICoordinateSpace", "indexPathForSelectedRow"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
+- !private ["PSo17UICoordinateSpace", "separatorStyle"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textLabel"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "detailTextLabel"]
 - !private ["PSo13UIDynamicItem", "indexPathForSelectedRow"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
+- !private ["PSo13UIDynamicItem", "separatorStyle"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
 - ["PSo18UIFocusEnvironment", "Hunter"]
@@ -862,6 +879,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
 - ["PSo18UIFocusEnvironment", "segmentedControl"]
 - ["PSo18UIFocusEnvironment", "segmentedControlChanged"]
+- !private ["PSo18UIFocusEnvironment", "separatorStyle"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
@@ -917,6 +935,7 @@ depends-member:
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
 - ["CSo11UIResponder", "segmentedControl"]
 - ["CSo11UIResponder", "segmentedControlChanged"]
+- !private ["CSo11UIResponder", "separatorStyle"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textLabel"]
@@ -927,6 +946,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo12UIScrollView", "indexPathForSelectedRow"]
 - !private ["CSo12UIScrollView", "reloadData"]
+- !private ["CSo12UIScrollView", "separatorStyle"]
 - ["PSo20UIScrollViewDelegate", "Hunter"]
 - !private ["PSo20UIScrollViewDelegate", "HunterController"]
 - !private ["PSo20UIScrollViewDelegate", "String"]
@@ -997,8 +1017,10 @@ depends-member:
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo11UITableView", "indexPathForSelectedRow"]
 - !private ["CSo11UITableView", "reloadData"]
+- !private ["CSo11UITableView", "separatorStyle"]
 - !private ["CSo15UITableViewCell", "detailTextLabel"]
 - !private ["CSo15UITableViewCell", "textLabel"]
+- !private ["OSC29UITableViewCellSeparatorStyle", "None"]
 - ["PSo21UITableViewDataSource", "Hunter"]
 - !private ["PSo21UITableViewDataSource", "HunterController"]
 - !private ["PSo21UITableViewDataSource", "String"]
@@ -1089,6 +1111,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
 - ["PSo18UITraitEnvironment", "segmentedControl"]
 - ["PSo18UITraitEnvironment", "segmentedControlChanged"]
+- !private ["PSo18UITraitEnvironment", "separatorStyle"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textLabel"]
@@ -1101,6 +1124,7 @@ depends-member:
 - !private ["CSo6UIView", "detailTextLabel"]
 - !private ["CSo6UIView", "indexPathForSelectedRow"]
 - !private ["CSo6UIView", "reloadData"]
+- !private ["CSo6UIView", "separatorStyle"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textLabel"]
 - ["CSo16UIViewController", "AnyObject"]
@@ -1212,6 +1236,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "indexPathForSelectedRow"]
 - ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "reloadData"]
+- !private ["Ps12_Reflectable", "separatorStyle"]
 - !private ["Ps12_Reflectable", "sort"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "text"]
@@ -1266,6 +1291,7 @@ depends-nominal:
 - !private "C6TineSE21ProfileViewController"
 - "Ps21RandomAccessIndexType"
 - "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
 - "Ps12SequenceType"
 - "Ps17SignedIntegerType"
 - "Ps16SignedNumberType"
@@ -1294,6 +1320,7 @@ depends-nominal:
 - !private "CSo17UIStoryboardSegue"
 - !private "CSo11UITableView"
 - !private "CSo15UITableViewCell"
+- !private "OSC29UITableViewCellSeparatorStyle"
 - "PSo21UITableViewDataSource"
 - "PSo19UITableViewDelegate"
 - "PSo18UITraitEnvironment"

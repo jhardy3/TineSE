@@ -80,6 +80,7 @@ class ShedTableViewCell: UITableViewCell {
                     guard let index = self.delegate?.tableView.indexPathForCell(self)?.row else { return }
                     self.delegate?.sheds.removeAtIndex(index)
                     self.delegate?.tableView.reloadData()
+                    NSNotificationCenter.defaultCenter().postNotificationName("shedDeleted", object: self)
                 })
                 
             })

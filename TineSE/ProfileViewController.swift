@@ -72,14 +72,11 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         }
     }
     
-    override func viewDidDisappear(animated: Bool) {
-        self.hunter = nil
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        followButton.layer.cornerRadius = 7.0
+        followButton.clipsToBounds = true
         self.followButton.layer.borderColor = UIColor.hunterOrange().CGColor
         self.followButton.layer.borderWidth = 1
         
@@ -88,6 +85,8 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         flowLayout.sectionInset = UIEdgeInsetsMake(0, kMargin, 0, kMargin)
         flowLayout.minimumLineSpacing = kMargin * 2
         flowLayout.minimumInteritemSpacing = 0
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(shedDeletedUpdateView), name: "shedDeleted", object: nil)
         
     }
     
@@ -223,6 +222,12 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
                 self.sheds.sortInPlace { $0.0.identifier > $0.1.identifier }
                 self.collectionView.reloadData()
             }
+        }
+    }
+    
+    func shedDeletedUpdateView() {
+        if let hunterID = self.hunter?.identifier {
+            self.updateWithIdentifier(hunterID)
         }
     }
     

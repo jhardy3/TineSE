@@ -235,13 +235,13 @@ SWIFT_CLASS("_TtC6TineSE21ProfileViewController")
 @property (nonatomic) NSInteger trackingCount;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
-- (void)viewDidDisappear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (IBAction)followButtonTapped:(UIButton * _Nonnull)sender;
 - (void)updateWithIdentifier:(NSString * _Nonnull)identifier;
+- (void)shedDeletedUpdateView;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didDeselectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;

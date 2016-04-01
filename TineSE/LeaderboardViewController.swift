@@ -23,6 +23,8 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.separatorStyle = .None
 
     }
     
