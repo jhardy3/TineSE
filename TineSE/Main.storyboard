@@ -161,9 +161,12 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzP-6p-IY2">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="8" y="13" width="109.5" height="29"/>
+                                                    </variation>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59t-La-RQj">
                                                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -189,15 +192,21 @@
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shed Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtd-F3-whE">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="8" y="443" width="77" height="22.5"/>
+                                                    </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shed Color: Brown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1c-v7-zon">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="264.5" y="443" width="127.5" height="22.5"/>
+                                                    </variation>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clh-rx-gXK">
                                                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -1128,7 +1137,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="F6K-EG-yQn">
             <objects>
-                <tabBarController id="IH3-0E-UY0" sceneMemberID="viewController">
+                <tabBarController id="IH3-0E-UY0" customClass="TabBarController" customModule="TineSE" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="25M-gR-xLz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1136,10 +1145,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="E4m-J8-wdV" kind="relationship" relationship="viewControllers" id="bLK-Yi-lXO"/>
-                        <segue destination="Ooi-ix-0Xx" kind="relationship" relationship="viewControllers" id="T95-YY-CIF"/>
-                        <segue destination="iBD-Ah-ycj" kind="relationship" relationship="viewControllers" id="AOb-ur-qGk"/>
-                        <segue destination="vfX-6N-c0q" kind="relationship" relationship="viewControllers" id="rNW-Qk-kr6"/>
                         <segue destination="1Vc-3k-1iQ" kind="relationship" relationship="viewControllers" id="Joh-pj-OQw"/>
+                        <segue destination="iBD-Ah-ycj" kind="relationship" relationship="viewControllers" id="AOb-ur-qGk"/>
+                        <segue destination="Ooi-ix-0Xx" kind="relationship" relationship="viewControllers" id="T95-YY-CIF"/>
+                        <segue destination="vfX-6N-c0q" kind="relationship" relationship="viewControllers" id="rNW-Qk-kr6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lcQ-JI-tIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1440,11 +1449,14 @@
             </objects>
             <point key="canvasLocation" x="915" y="1530"/>
         </scene>
-        <!--Tineline-->
+        <!--Navigation Controller-->
         <scene sceneID="dFG-2v-ymq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E4m-J8-wdV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tineline" id="Z1f-ID-ENj"/>
+                    <tabBarItem key="tabBarItem" title="" image="Track" id="Z1f-ID-ENj">
+                        <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-40"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QIX-5n-L2p">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1459,11 +1471,13 @@
             </objects>
             <point key="canvasLocation" x="1683" y="1530"/>
         </scene>
-        <!--Leaderboard-->
+        <!--Navigation Controller-->
         <scene sceneID="JRM-ee-0Qs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ooi-ix-0Xx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Leaderboard" id="pkX-jC-dMa"/>
+                    <tabBarItem key="tabBarItem" title="" image="Award" id="pkX-jC-dMa">
+                        <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AcO-gC-JkB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1554,11 +1568,13 @@
             </objects>
             <point key="canvasLocation" x="4276.5" y="9.75"/>
         </scene>
-        <!--Profile-->
+        <!--Navigation Controller-->
         <scene sceneID="cN3-72-zns">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vfX-6N-c0q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="ocz-v8-4fu"/>
+                    <tabBarItem key="tabBarItem" title="" image="Profile" selectedImage="Profile" id="ocz-v8-4fu">
+                        <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wFW-tz-1B6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1591,11 +1607,14 @@
             </objects>
             <point key="canvasLocation" x="-1081.5" y="340.5"/>
         </scene>
-        <!--Camera-->
+        <!--Navigation Controller-->
         <scene sceneID="djj-vi-wt0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iBD-Ah-ycj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Camera" id="lch-cJ-srG"/>
+                    <tabBarItem key="tabBarItem" title="" image="Camera" id="lch-cJ-srG">
+                        <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OXf-bZ-g00">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1610,11 +1629,13 @@
             </objects>
             <point key="canvasLocation" x="-1.5" y="1530"/>
         </scene>
-        <!--Search-->
+        <!--Navigation Controller-->
         <scene sceneID="sdh-WS-s1q">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Vc-3k-1iQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="HLI-fX-soI"/>
+                    <tabBarItem key="tabBarItem" title="" image="Search" id="HLI-fX-soI">
+                        <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="POR-66-TdG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1646,11 +1667,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Award" width="40" height="40"/>
+        <image name="Camera" width="40" height="40"/>
         <image name="Crosshair" width="1200" height="1200"/>
+        <image name="Profile" width="60" height="60"/>
+        <image name="Search" width="40" height="40"/>
         <image name="Skull" width="1200" height="1200"/>
+        <image name="Track" width="40" height="40"/>
         <image name="threeDots" width="1200" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Hj6-gL-rAa"/>
+        <segue reference="Dsd-Zn-khr"/>
     </inferredMetricsTieBreakers>
 </document>

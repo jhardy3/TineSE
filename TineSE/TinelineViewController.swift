@@ -61,11 +61,6 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-
-        
-        
-        
         setupLocationManagerAndGrabLocalSheds()
         fetchShedsFirstLoad()
         setUpRefreshController()
@@ -76,7 +71,7 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("shedCell", forIndexPath: indexPath) as! ShedTableViewCell
         
-        if indexPath.row == sheds.count - 1 {
+        if indexPath.row == sheds.count - 1 && !currentViewIsLocal {
             self.endOfTableView = true
         } else {
             self.endOfTableView = false
@@ -106,8 +101,8 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func updateTableViewWithShed(shed: Shed) {
         self.sheds.append(shed)
-        self.tableView.beginUpdates()
         
+        self.tableView.beginUpdates()
         self.tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: self.sheds.count - 1, inSection: 0)], withRowAnimation: .Automatic)
         self.tableView.endUpdates()
     }
@@ -174,8 +169,7 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     func refresh(refreshControl: UIRefreshControl) {
         
         if currentViewIsLocal {
-            
-            
+            refreshControl.endRefreshing()
         } else {
             self.sheds = []
             ShedController.fetchShedIDsForTineline { (sheds) in

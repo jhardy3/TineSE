@@ -40,8 +40,6 @@ class ShedTableViewCell: UITableViewCell {
     
     // Update View with passed in shed
     func updateWith(shed: Shed) {
-        
-        self.usernameTextField.textColor = UIColor.blackColor()
         self.shed = shed
         
         // If shed image exists, set shedImageView to image
@@ -54,6 +52,7 @@ class ShedTableViewCell: UITableViewCell {
             shedImageView.image = shed.shedImage
         }
         
+        self.reportButton.layer.opacity = 0.3
         
         // Set usernameTextField text to passed in shed username
         self.shedColorTextLabel.text = "Shed Color: \(shed.shedColor)"
@@ -80,7 +79,7 @@ class ShedTableViewCell: UITableViewCell {
                     guard let index = self.delegate?.tableView.indexPathForCell(self)?.row else { return }
                     self.delegate?.sheds.removeAtIndex(index)
                     self.delegate?.tableView.reloadData()
-                    NSNotificationCenter.defaultCenter().postNotificationName("shedDeleted", object: self)
+                    NSNotificationCenter.defaultCenter().postNotificationName("shedDeleted", object: nil)
                 })
                 
             })

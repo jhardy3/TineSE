@@ -45,6 +45,7 @@
 		748FFD041CA71F5700111EFE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFD031CA71F5700111EFE /* MapKit.framework */; };
 		748FFD051CA71FDF00111EFE /* GeoFire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FFCEA1CA7183D00111EFE /* GeoFire.framework */; };
 		748FFD071CA72F2D00111EFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748FFD061CA72F2D00111EFE /* Assets.xcassets */; };
+		74F8C8D61CB2DE7500C02079 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8C8D51CB2DE7500C02079 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		748FFD011CA71CDF00111EFE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		748FFD031CA71F5700111EFE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		748FFD061CA72F2D00111EFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		74F8C8D51CB2DE7500C02079 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				748FFCC11CA717A000111EFE /* TinelineViewController.swift */,
+				74F8C8D51CB2DE7500C02079 /* TabBarController.swift */,
 				748FFCC21CA717A000111EFE /* ShedTableViewCell.swift */,
 				748FFCC61CA717A000111EFE /* LeaderboardViewController.swift */,
 			);
@@ -351,6 +354,7 @@
 				748FFCDD1CA717A000111EFE /* SearchTableViewController.swift in Sources */,
 				748FFCD61CA717A000111EFE /* ShedTableViewCell.swift in Sources */,
 				748FFCD71CA717A000111EFE /* LogInViewController.swift in Sources */,
+				74F8C8D61CB2DE7500C02079 /* TabBarController.swift in Sources */,
 				748FFCDC1CA717A000111EFE /* SearchResultsTableViewController.swift in Sources */,
 				748FFCD31CA717A000111EFE /* PhotoController.swift in Sources */,
 				748FFCCB1CA717A000111EFE /* Hunter.swift in Sources */,

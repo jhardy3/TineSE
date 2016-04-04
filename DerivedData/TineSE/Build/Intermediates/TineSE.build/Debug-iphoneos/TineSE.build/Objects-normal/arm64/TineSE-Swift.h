@@ -242,6 +242,7 @@ SWIFT_CLASS("_TtC6TineSE21ProfileViewController")
 - (IBAction)followButtonTapped:(UIButton * _Nonnull)sender;
 - (void)updateWithIdentifier:(NSString * _Nonnull)identifier;
 - (void)shedDeletedUpdateView;
+- (void)updateWithHunter;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didDeselectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
@@ -305,6 +306,18 @@ SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITabBar;
+@class UITabBarItem;
+
+SWIFT_CLASS("_TtC6TineSE16TabBarController")
+@interface TabBarController : UITabBarController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)tabBar:(UITabBar * _Nonnull)tabBar didSelectItem:(UITabBarItem * _Nonnull)item;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIRefreshControl;
 
 SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
@@ -340,6 +353,11 @@ SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 + (UIColor * _Nonnull)desertFloorTan;
 + (UIColor * _Nonnull)desertSkyBlue;
 + (UIColor * _Nonnull)hunterOrange;
+@end
+
+
+@interface UIImage (SWIFT_EXTENSION(TineSE))
+- (UIImage * _Nonnull)imageWithColor:(UIColor * _Nonnull)color1;
 @end
 
 

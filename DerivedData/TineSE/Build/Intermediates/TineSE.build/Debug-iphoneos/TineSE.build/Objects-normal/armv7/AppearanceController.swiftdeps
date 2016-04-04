@@ -7,17 +7,17 @@ provides-member:
 - ["C6TineSE20AppearanceController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UISegmentedControl"
-- !private "UILabel"
-- !private "UITabBar"
-- !private "UINavigationBar"
-- !private "NSForegroundColorAttributeName"
 - !private "UIColor"
-- !private "Dictionary"
+- !private "UITabBar"
 - !private "UIBarButtonItem"
 - !private "UIToolbar"
+- !private "Dictionary"
 - !private "UITabBarItem"
 - "AppearanceController"
+- !private "UINavigationBar"
+- !private "UISegmentedControl"
+- !private "UILabel"
+- !private "NSForegroundColorAttributeName"
 depends-member:
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
@@ -49,6 +49,7 @@ depends-member:
 - ["C6TineSE20AppearanceController", "deinit"]
 - ["C6TineSE20AppearanceController", "init"]
 - ["C6TineSE20AppearanceController", "initializaeAppearanceDefaults"]
+- !private ["Ps23ArrayLiteralConvertible", "Application"]
 - !private ["Ps23ArrayLiteralConvertible", "Normal"]
 - !private ["Ps23ArrayLiteralConvertible", "Selected"]
 - !private ["Ps11CVarArgType", "appearance"]
@@ -85,6 +86,7 @@ depends-member:
 - !private ["Vs10Dictionary", "Value"]
 - !private ["Ps28DictionaryLiteralConvertible", "Key"]
 - !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Ps9Equatable", "Application"]
 - !private ["Ps9Equatable", "Normal"]
 - !private ["Ps9Equatable", "Selected"]
 - !private ["Ps9Equatable", "appearance"]
@@ -133,13 +135,16 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - !private ["PSo14NSSecureCoding", "hunterOrange"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["Ps13OptionSetType", "Application"]
 - !private ["Ps13OptionSetType", "Normal"]
 - !private ["Ps13OptionSetType", "Selected"]
 - !private ["Sq", "deinit"]
+- !private ["Ps16RawRepresentable", "Application"]
 - !private ["Ps16RawRepresentable", "Normal"]
 - !private ["Ps16RawRepresentable", "Selected"]
 - !private ["Ps12SequenceType", "Key"]
 - !private ["Ps12SequenceType", "Value"]
+- !private ["Ps14SetAlgebraType", "Application"]
 - !private ["Ps14SetAlgebraType", "Normal"]
 - !private ["Ps14SetAlgebraType", "Selected"]
 - !private ["PSo29UIAccessibilityIdentification", "appearance"]
@@ -170,6 +175,7 @@ depends-member:
 - !private ["CSo7UIColor", "whiteColor"]
 - !private ["CSo9UIControl", "appearance"]
 - !private ["CSo9UIControl", "tintColor"]
+- !private ["VSC14UIControlState", "Application"]
 - !private ["VSC14UIControlState", "Normal"]
 - !private ["VSC14UIControlState", "Selected"]
 - !private ["PSo17UICoordinateSpace", "appearance"]

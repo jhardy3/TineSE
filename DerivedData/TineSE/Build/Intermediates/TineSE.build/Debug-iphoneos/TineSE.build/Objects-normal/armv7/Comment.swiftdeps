@@ -7,12 +7,12 @@ provides-member:
 - ["C6TineSE7Comment", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "StringLiteralType"
-- !private "Dictionary"
-- "AnyObject"
 - "Comment"
 - "FirebaseType"
+- "StringLiteralType"
+- "String"
+- !private "Dictionary"
+- "AnyObject"
 depends-member:
 - !private ["Ps9AnyObject", "bodyText"]
 - !private ["Ps9AnyObject", "bodyTextKey"]

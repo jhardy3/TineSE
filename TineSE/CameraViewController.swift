@@ -62,6 +62,7 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
         
         shedView.layer.borderWidth = 1.0
         shedView.layer.borderColor = UIColor.hunterOrange().CGColor
+        self.clearShedButton.layer.opacity = 0.0
         shedColorPickerView.delegate = self
         shedTypePickerView.delegate = self
         
@@ -157,6 +158,7 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
         self.shedImageView.image = squareImage
         
         self.clearShedButton.setTitle("Post Shed", forState: .Normal)
+        self.clearShedButton.layer.opacity = 1.0
         
         // Dismiss camera view controller
         self.dismissViewControllerAnimated(true, completion: nil)

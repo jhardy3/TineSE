@@ -131,6 +131,7 @@ SWIFT_CLASS("_TtC6TineSE11AppDelegate")
 @class CLLocation;
 @class UIPickerView;
 @class UIImageView;
+@class UIView;
 @class NSBundle;
 @class NSCoder;
 
@@ -140,13 +141,14 @@ SWIFT_CLASS("_TtC6TineSE20CameraViewController")
 @property (nonatomic, strong) CLLocationManager * _Null_unspecified locationManager;
 @property (nonatomic) BOOL postButtonTapped;
 @property (nonatomic) BOOL firedOnce;
-@property (nonatomic, copy) NSString * _Nullable shedColor;
-@property (nonatomic, copy) NSString * _Nullable shedType;
-@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified shedMessageTextView;
+@property (nonatomic, copy) NSString * _Nonnull shedColor;
+@property (nonatomic, copy) NSString * _Nonnull shedType;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified shedImageView;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified shedColorPickerView;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified shedTypePickerView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified clearShedButton;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified shedView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified crosshairButton;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
@@ -164,6 +166,7 @@ SWIFT_CLASS("_TtC6TineSE20CameraViewController")
 - (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 - (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)createAnimation;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -190,6 +193,7 @@ SWIFT_CLASS("_TtC6TineSE13ImageUitilies")
 @class NSIndexPath;
 @class UITableViewCell;
 @class UISegmentedControl;
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC6TineSE25LeaderboardViewController")
 @interface LeaderboardViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
@@ -204,6 +208,7 @@ SWIFT_CLASS("_TtC6TineSE25LeaderboardViewController")
 - (void)fetchTrackedHuntersForLeaderBoard;
 - (void)fetchAllHuntersForLeaderBoard;
 - (IBAction)segmentedControlChanged:(UISegmentedControl * _Nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -230,13 +235,16 @@ SWIFT_CLASS("_TtC6TineSE21ProfileViewController")
 @property (nonatomic) NSInteger trackingCount;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
-- (void)viewDidDisappear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (IBAction)followButtonTapped:(UIButton * _Nonnull)sender;
 - (void)updateWithIdentifier:(NSString * _Nonnull)identifier;
+- (void)shedDeletedUpdateView;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didDeselectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -261,7 +269,6 @@ SWIFT_CLASS("_TtC6TineSE32SearchResultsTableViewController")
 @end
 
 @class UISearchController;
-@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC6TineSE25SearchTableViewController")
 @interface SearchTableViewController : UITableViewController <UISearchResultsUpdating>
@@ -298,11 +305,25 @@ SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITabBar;
+@class UITabBarItem;
+
+SWIFT_CLASS("_TtC6TineSE16TabBarController")
+@interface TabBarController : UITabBarController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)tabBar:(UITabBar * _Nonnull)tabBar didSelectItem:(UITabBarItem * _Nonnull)item;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIRefreshControl;
 
 SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 @interface TinelineViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, CLLocationManagerDelegate, UITableViewDataSource>
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull localShedIDs;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull shedIDs;
+@property (nonatomic) BOOL endOfTableView;
 @property (nonatomic, readonly) BOOL currentViewIsLocal;
 @property (nonatomic, strong) CLLocationManager * _Null_unspecified locationManager;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentedController;
@@ -310,13 +331,15 @@ SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 - (void)viewDidLoad;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (void)setupLocationManagerAndGrabLocalSheds;
+- (void)grabSheds;
+- (NSArray<NSString *> * _Nonnull)createArray:(NSArray<NSString *> * _Nonnull)array range:(NSInteger)range;
 - (void)fetchShedsFirstLoad;
 - (void)refresh:(UIRefreshControl * _Nonnull)refreshControl;
 - (void)setUpRefreshController;
 - (void)newShedsAddedRefresh;
 - (IBAction)segmentedControlChanged:(UISegmentedControl * _Nonnull)sender;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (void)setupLocationManagerAndGrabLocalSheds;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

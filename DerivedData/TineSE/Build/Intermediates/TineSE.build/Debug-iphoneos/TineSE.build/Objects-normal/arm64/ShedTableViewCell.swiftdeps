@@ -6,39 +6,38 @@ provides-nominal:
 provides-member:
 - ["C6TineSE17ShedTableViewCell", ""]
 provides-dynamic-lookup:
-- "delegate"
-- "shedTypeTextLabel"
-- "usernameTextField"
-- "reportButton"
-- "setSelected"
-- "shedColorTextLabel"
 - "utilitiesButtonTapped"
+- "shedColorTextLabel"
 - "shedImageView"
+- "reportButton"
+- "usernameTextField"
+- "shedTypeTextLabel"
 - "prepareForReuse"
+- "delegate"
+- "setSelected"
 depends-top-level:
-- "UIImageView"
-- "UITableViewCell"
-- "UILabel"
-- "UIButton"
-- "ShedTableViewCell"
-- !private "UIImage"
-- !private "UIColor"
 - !private "StringLiteralType"
-- !private "HunterController"
-- !private "=="
-- !private "ShedController"
-- !private "dispatch_get_main_queue"
-- !private "UIAlertController"
-- !private "dispatch_async"
-- "Shed"
-- !private "UIViewContentMode"
-- !private "Void"
-- !private "NSNotificationCenter"
 - "Bool"
-- !private "BooleanLiteralType"
+- "UITableViewCell"
 - !private "UIAlertAction"
+- !private "NSNotificationCenter"
+- "UIButton"
+- "UILabel"
+- "UIImageView"
+- !private "ShedController"
+- !private "UIViewContentMode"
 - "TinelineViewController"
+- "Shed"
+- !private "=="
+- "ShedTableViewCell"
+- !private "Void"
 - !private "FirebaseController"
+- !private "dispatch_async"
+- !private "dispatch_get_main_queue"
+- !private "BooleanLiteralType"
+- !private "UIAlertController"
+- !private "UIImage"
+- !private "HunterController"
 depends-member:
 - !private ["Ps9AnyObject", "FirebaseController"]
 - !private ["Ps9AnyObject", "HunterController"]
@@ -46,11 +45,9 @@ depends-member:
 - !private ["Ps9AnyObject", "ShedController"]
 - !private ["Ps9AnyObject", "UIAlertAction"]
 - !private ["Ps9AnyObject", "UIAlertController"]
-- !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UIViewContentMode"]
 - !private ["Ps9AnyObject", "addAction"]
-- !private ["Ps9AnyObject", "blackColor"]
 - !private ["Ps9AnyObject", "childByAppendingPath"]
 - !private ["Ps9AnyObject", "currentHunter"]
 - !private ["Ps9AnyObject", "defaultCenter"]
@@ -67,7 +64,9 @@ depends-member:
 - !private ["Ps9AnyObject", "imageIdentifier"]
 - !private ["Ps9AnyObject", "indexPathForCell"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "lowercaseString"]
+- !private ["Ps9AnyObject", "opacity"]
 - !private ["Ps9AnyObject", "postNotificationName"]
 - ["Ps9AnyObject", "prepareForReuse"]
 - !private ["Ps9AnyObject", "presentViewController"]
@@ -87,7 +86,6 @@ depends-member:
 - !private ["Ps9AnyObject", "sheds"]
 - !private ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
-- !private ["Ps9AnyObject", "textColor"]
 - ["Ps9AnyObject", "updateWith"]
 - !private ["Ps9AnyObject", "username"]
 - ["Ps9AnyObject", "usernameTextField"]
@@ -99,6 +97,8 @@ depends-member:
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["CSo7CALayer", "opacity"]
+- !private ["PSo13CAMediaTiming", "opacity"]
 - !private ["PSo25CLLocationManagerDelegate", "presentViewController"]
 - !private ["PSo25CLLocationManagerDelegate", "sheds"]
 - !private ["PSo25CLLocationManagerDelegate", "tableView"]
@@ -108,11 +108,9 @@ depends-member:
 - !private ["Ps11CVarArgType", "ShedController"]
 - !private ["Ps11CVarArgType", "UIAlertAction"]
 - !private ["Ps11CVarArgType", "UIAlertController"]
-- !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIImage"]
 - !private ["Ps11CVarArgType", "UIViewContentMode"]
 - !private ["Ps11CVarArgType", "addAction"]
-- !private ["Ps11CVarArgType", "blackColor"]
 - !private ["Ps11CVarArgType", "childByAppendingPath"]
 - !private ["Ps11CVarArgType", "defaultCenter"]
 - ["Ps11CVarArgType", "delegate"]
@@ -122,7 +120,9 @@ depends-member:
 - !private ["Ps11CVarArgType", "image"]
 - !private ["Ps11CVarArgType", "indexPathForCell"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "layer"]
 - !private ["Ps11CVarArgType", "lowercaseString"]
+- !private ["Ps11CVarArgType", "opacity"]
 - !private ["Ps11CVarArgType", "postNotificationName"]
 - ["Ps11CVarArgType", "prepareForReuse"]
 - !private ["Ps11CVarArgType", "presentViewController"]
@@ -138,7 +138,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "sheds"]
 - !private ["Ps11CVarArgType", "tableView"]
 - !private ["Ps11CVarArgType", "text"]
-- !private ["Ps11CVarArgType", "textColor"]
 - ["Ps11CVarArgType", "updateWith"]
 - ["Ps11CVarArgType", "usernameTextField"]
 - ["Ps11CVarArgType", "utilitiesButtonTapped"]
@@ -154,11 +153,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
-- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "UIViewContentMode"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
-- !private ["Ps28CustomDebugStringConvertible", "blackColor"]
 - !private ["Ps28CustomDebugStringConvertible", "childByAppendingPath"]
 - !private ["Ps28CustomDebugStringConvertible", "defaultCenter"]
 - ["Ps28CustomDebugStringConvertible", "delegate"]
@@ -168,7 +165,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - !private ["Ps28CustomDebugStringConvertible", "indexPathForCell"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "lowercaseString"]
+- !private ["Ps28CustomDebugStringConvertible", "opacity"]
 - !private ["Ps28CustomDebugStringConvertible", "postNotificationName"]
 - ["Ps28CustomDebugStringConvertible", "prepareForReuse"]
 - !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
@@ -185,7 +184,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "sheds"]
 - !private ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
-- !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - ["Ps28CustomDebugStringConvertible", "updateWith"]
 - ["Ps28CustomDebugStringConvertible", "usernameTextField"]
 - ["Ps28CustomDebugStringConvertible", "utilitiesButtonTapped"]
@@ -196,12 +194,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "ShedController"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
-- !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "UIViewContentMode"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
-- !private ["Ps23CustomStringConvertible", "blackColor"]
 - !private ["Ps23CustomStringConvertible", "childByAppendingPath"]
 - !private ["Ps23CustomStringConvertible", "defaultCenter"]
 - ["Ps23CustomStringConvertible", "delegate"]
@@ -211,7 +207,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "image"]
 - !private ["Ps23CustomStringConvertible", "indexPathForCell"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "lowercaseString"]
+- !private ["Ps23CustomStringConvertible", "opacity"]
 - !private ["Ps23CustomStringConvertible", "postNotificationName"]
 - ["Ps23CustomStringConvertible", "prepareForReuse"]
 - !private ["Ps23CustomStringConvertible", "presentViewController"]
@@ -228,7 +226,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "sheds"]
 - !private ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
-- !private ["Ps23CustomStringConvertible", "textColor"]
 - ["Ps23CustomStringConvertible", "updateWith"]
 - ["Ps23CustomStringConvertible", "usernameTextField"]
 - ["Ps23CustomStringConvertible", "utilitiesButtonTapped"]
@@ -244,12 +241,10 @@ depends-member:
 - !private ["Ps9Equatable", "ShedController"]
 - !private ["Ps9Equatable", "UIAlertAction"]
 - !private ["Ps9Equatable", "UIAlertController"]
-- !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "UIViewContentMode"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addAction"]
-- !private ["Ps9Equatable", "blackColor"]
 - !private ["Ps9Equatable", "childByAppendingPath"]
 - !private ["Ps9Equatable", "defaultCenter"]
 - ["Ps9Equatable", "delegate"]
@@ -259,7 +254,9 @@ depends-member:
 - !private ["Ps9Equatable", "image"]
 - !private ["Ps9Equatable", "indexPathForCell"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "lowercaseString"]
+- !private ["Ps9Equatable", "opacity"]
 - !private ["Ps9Equatable", "postNotificationName"]
 - ["Ps9Equatable", "prepareForReuse"]
 - !private ["Ps9Equatable", "presentViewController"]
@@ -275,7 +272,6 @@ depends-member:
 - !private ["Ps9Equatable", "sheds"]
 - !private ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
-- !private ["Ps9Equatable", "textColor"]
 - ["Ps9Equatable", "updateWith"]
 - ["Ps9Equatable", "usernameTextField"]
 - ["Ps9Equatable", "utilitiesButtonTapped"]
@@ -305,12 +301,10 @@ depends-member:
 - !private ["Ps8Hashable", "ShedController"]
 - !private ["Ps8Hashable", "UIAlertAction"]
 - !private ["Ps8Hashable", "UIAlertController"]
-- !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "UIViewContentMode"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addAction"]
-- !private ["Ps8Hashable", "blackColor"]
 - !private ["Ps8Hashable", "childByAppendingPath"]
 - !private ["Ps8Hashable", "defaultCenter"]
 - ["Ps8Hashable", "delegate"]
@@ -320,7 +314,9 @@ depends-member:
 - !private ["Ps8Hashable", "image"]
 - !private ["Ps8Hashable", "indexPathForCell"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "lowercaseString"]
+- !private ["Ps8Hashable", "opacity"]
 - !private ["Ps8Hashable", "postNotificationName"]
 - ["Ps8Hashable", "prepareForReuse"]
 - !private ["Ps8Hashable", "presentViewController"]
@@ -336,7 +332,6 @@ depends-member:
 - !private ["Ps8Hashable", "sheds"]
 - !private ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
-- !private ["Ps8Hashable", "textColor"]
 - ["Ps8Hashable", "updateWith"]
 - ["Ps8Hashable", "usernameTextField"]
 - ["Ps8Hashable", "utilitiesButtonTapped"]
@@ -363,11 +358,9 @@ depends-member:
 - !private ["PSo8NSCoding", "ShedController"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertController"]
-- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIViewContentMode"]
 - !private ["PSo8NSCoding", "addAction"]
-- !private ["PSo8NSCoding", "blackColor"]
 - ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "dispatch_async"]
 - !private ["PSo8NSCoding", "dispatch_get_main_queue"]
@@ -375,7 +368,9 @@ depends-member:
 - !private ["PSo8NSCoding", "image"]
 - !private ["PSo8NSCoding", "indexPathForCell"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "lowercaseString"]
+- !private ["PSo8NSCoding", "opacity"]
 - ["PSo8NSCoding", "prepareForReuse"]
 - !private ["PSo8NSCoding", "presentViewController"]
 - !private ["PSo8NSCoding", "reloadData"]
@@ -389,12 +384,10 @@ depends-member:
 - !private ["PSo8NSCoding", "sheds"]
 - !private ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
-- !private ["PSo8NSCoding", "textColor"]
 - ["PSo8NSCoding", "updateWith"]
 - ["PSo8NSCoding", "usernameTextField"]
 - ["PSo8NSCoding", "utilitiesButtonTapped"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "blackColor"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "lowercaseString"]
 - !private ["PSo9NSCopying", "row"]
@@ -418,14 +411,12 @@ depends-member:
 - !private ["CSo8NSObject", "UIAlertAction"]
 - !private ["CSo8NSObject", "UIAlertController"]
 - ["CSo8NSObject", "UIButton"]
-- !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
 - !private ["CSo8NSObject", "UIViewContentMode"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "addAction"]
-- !private ["CSo8NSObject", "blackColor"]
 - !private ["CSo8NSObject", "childByAppendingPath"]
 - !private ["CSo8NSObject", "defaultCenter"]
 - ["CSo8NSObject", "delegate"]
@@ -435,7 +426,9 @@ depends-member:
 - !private ["CSo8NSObject", "image"]
 - !private ["CSo8NSObject", "indexPathForCell"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "lowercaseString"]
+- !private ["CSo8NSObject", "opacity"]
 - !private ["CSo8NSObject", "postNotificationName"]
 - ["CSo8NSObject", "prepareForReuse"]
 - !private ["CSo8NSObject", "presentViewController"]
@@ -451,7 +444,6 @@ depends-member:
 - !private ["CSo8NSObject", "sheds"]
 - !private ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
-- !private ["CSo8NSObject", "textColor"]
 - ["CSo8NSObject", "updateWith"]
 - ["CSo8NSObject", "usernameTextField"]
 - ["CSo8NSObject", "utilitiesButtonTapped"]
@@ -461,11 +453,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "ShedController"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
-- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIViewContentMode"]
 - !private ["PSo16NSObjectProtocol", "addAction"]
-- !private ["PSo16NSObjectProtocol", "blackColor"]
 - !private ["PSo16NSObjectProtocol", "childByAppendingPath"]
 - !private ["PSo16NSObjectProtocol", "defaultCenter"]
 - ["PSo16NSObjectProtocol", "delegate"]
@@ -475,7 +465,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "image"]
 - !private ["PSo16NSObjectProtocol", "indexPathForCell"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "lowercaseString"]
+- !private ["PSo16NSObjectProtocol", "opacity"]
 - !private ["PSo16NSObjectProtocol", "postNotificationName"]
 - ["PSo16NSObjectProtocol", "prepareForReuse"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
@@ -491,12 +483,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "sheds"]
 - !private ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
-- !private ["PSo16NSObjectProtocol", "textColor"]
 - ["PSo16NSObjectProtocol", "updateWith"]
 - ["PSo16NSObjectProtocol", "usernameTextField"]
 - ["PSo16NSObjectProtocol", "utilitiesButtonTapped"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "blackColor"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "lowercaseString"]
 - !private ["PSo14NSSecureCoding", "row"]
@@ -532,7 +522,6 @@ depends-member:
 - !private ["C6TineSE17ShedTableViewCell", "UIAlertAction"]
 - !private ["C6TineSE17ShedTableViewCell", "UIAlertController"]
 - ["C6TineSE17ShedTableViewCell", "UIButton"]
-- !private ["C6TineSE17ShedTableViewCell", "UIColor"]
 - !private ["C6TineSE17ShedTableViewCell", "UIImage"]
 - ["C6TineSE17ShedTableViewCell", "UIImageView"]
 - ["C6TineSE17ShedTableViewCell", "UILabel"]
@@ -572,7 +561,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "ShedController"]
 - !private ["PSo29UIAccessibilityIdentification", "UIAlertAction"]
 - !private ["PSo29UIAccessibilityIdentification", "UIAlertController"]
-- !private ["PSo29UIAccessibilityIdentification", "UIColor"]
 - !private ["PSo29UIAccessibilityIdentification", "UIImage"]
 - !private ["PSo29UIAccessibilityIdentification", "UIViewContentMode"]
 - ["PSo29UIAccessibilityIdentification", "delegate"]
@@ -582,6 +570,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "indexPathForCell"]
 - ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
 - ["PSo29UIAccessibilityIdentification", "prepareForReuse"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - ["PSo29UIAccessibilityIdentification", "reportButton"]
@@ -591,7 +580,6 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "shedImageView"]
 - ["PSo29UIAccessibilityIdentification", "shedTypeTextLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
-- !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - ["PSo29UIAccessibilityIdentification", "updateWith"]
 - ["PSo29UIAccessibilityIdentification", "usernameTextField"]
 - ["PSo29UIAccessibilityIdentification", "utilitiesButtonTapped"]
@@ -608,7 +596,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "ShedController"]
 - !private ["PSo12UIAppearance", "UIAlertAction"]
 - !private ["PSo12UIAppearance", "UIAlertController"]
-- !private ["PSo12UIAppearance", "UIColor"]
 - !private ["PSo12UIAppearance", "UIImage"]
 - !private ["PSo12UIAppearance", "UIViewContentMode"]
 - ["PSo12UIAppearance", "delegate"]
@@ -618,6 +605,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "indexPathForCell"]
 - ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "layer"]
 - ["PSo12UIAppearance", "prepareForReuse"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - ["PSo12UIAppearance", "reportButton"]
@@ -627,7 +615,6 @@ depends-member:
 - ["PSo12UIAppearance", "shedImageView"]
 - ["PSo12UIAppearance", "shedTypeTextLabel"]
 - !private ["PSo12UIAppearance", "text"]
-- !private ["PSo12UIAppearance", "textColor"]
 - ["PSo12UIAppearance", "updateWith"]
 - ["PSo12UIAppearance", "usernameTextField"]
 - ["PSo12UIAppearance", "utilitiesButtonTapped"]
@@ -638,7 +625,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "ShedController"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
-- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIViewContentMode"]
 - !private ["PSo21UIAppearanceContainer", "addAction"]
@@ -649,6 +635,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "image"]
 - !private ["PSo21UIAppearanceContainer", "indexPathForCell"]
 - ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
 - ["PSo21UIAppearanceContainer", "prepareForReuse"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
@@ -661,24 +648,23 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "sheds"]
 - !private ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
-- !private ["PSo21UIAppearanceContainer", "textColor"]
 - ["PSo21UIAppearanceContainer", "updateWith"]
 - ["PSo21UIAppearanceContainer", "usernameTextField"]
 - ["PSo21UIAppearanceContainer", "utilitiesButtonTapped"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["CSo7UIColor", "blackColor"]
+- !private ["CSo8UIButton", "layer"]
 - !private ["PSo18UIContentContainer", "addAction"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
 - !private ["PSo18UIContentContainer", "sheds"]
 - !private ["PSo18UIContentContainer", "tableView"]
+- !private ["CSo9UIControl", "layer"]
 - !private ["PSo17UICoordinateSpace", "FirebaseController"]
 - !private ["PSo17UICoordinateSpace", "HunterController"]
 - !private ["PSo17UICoordinateSpace", "NSNotificationCenter"]
 - !private ["PSo17UICoordinateSpace", "ShedController"]
 - !private ["PSo17UICoordinateSpace", "UIAlertAction"]
 - !private ["PSo17UICoordinateSpace", "UIAlertController"]
-- !private ["PSo17UICoordinateSpace", "UIColor"]
 - !private ["PSo17UICoordinateSpace", "UIImage"]
 - !private ["PSo17UICoordinateSpace", "UIViewContentMode"]
 - ["PSo17UICoordinateSpace", "delegate"]
@@ -688,6 +674,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "indexPathForCell"]
 - ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "layer"]
 - ["PSo17UICoordinateSpace", "prepareForReuse"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - ["PSo17UICoordinateSpace", "reportButton"]
@@ -697,7 +684,6 @@ depends-member:
 - ["PSo17UICoordinateSpace", "shedImageView"]
 - ["PSo17UICoordinateSpace", "shedTypeTextLabel"]
 - !private ["PSo17UICoordinateSpace", "text"]
-- !private ["PSo17UICoordinateSpace", "textColor"]
 - ["PSo17UICoordinateSpace", "updateWith"]
 - ["PSo17UICoordinateSpace", "usernameTextField"]
 - ["PSo17UICoordinateSpace", "utilitiesButtonTapped"]
@@ -708,7 +694,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "ShedController"]
 - !private ["PSo13UIDynamicItem", "UIAlertAction"]
 - !private ["PSo13UIDynamicItem", "UIAlertController"]
-- !private ["PSo13UIDynamicItem", "UIColor"]
 - !private ["PSo13UIDynamicItem", "UIImage"]
 - !private ["PSo13UIDynamicItem", "UIViewContentMode"]
 - ["PSo13UIDynamicItem", "delegate"]
@@ -718,6 +703,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "indexPathForCell"]
 - ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "layer"]
 - ["PSo13UIDynamicItem", "prepareForReuse"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - ["PSo13UIDynamicItem", "reportButton"]
@@ -727,7 +713,6 @@ depends-member:
 - ["PSo13UIDynamicItem", "shedImageView"]
 - ["PSo13UIDynamicItem", "shedTypeTextLabel"]
 - !private ["PSo13UIDynamicItem", "text"]
-- !private ["PSo13UIDynamicItem", "textColor"]
 - ["PSo13UIDynamicItem", "updateWith"]
 - ["PSo13UIDynamicItem", "usernameTextField"]
 - ["PSo13UIDynamicItem", "utilitiesButtonTapped"]
@@ -738,7 +723,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "ShedController"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertController"]
-- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIViewContentMode"]
 - !private ["PSo18UIFocusEnvironment", "addAction"]
@@ -749,6 +733,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "image"]
 - !private ["PSo18UIFocusEnvironment", "indexPathForCell"]
 - ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
 - ["PSo18UIFocusEnvironment", "prepareForReuse"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
@@ -761,7 +746,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "sheds"]
 - !private ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
-- !private ["PSo18UIFocusEnvironment", "textColor"]
 - ["PSo18UIFocusEnvironment", "updateWith"]
 - ["PSo18UIFocusEnvironment", "usernameTextField"]
 - ["PSo18UIFocusEnvironment", "utilitiesButtonTapped"]
@@ -772,7 +756,6 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "ShedController"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIAlertAction"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIAlertController"]
-- !private ["PSo27UIGestureRecognizerDelegate", "UIColor"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIImage"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIViewContentMode"]
 - ["PSo27UIGestureRecognizerDelegate", "delegate"]
@@ -794,7 +777,6 @@ depends-member:
 - !private ["CSo11UIImageView", "downloadImageFrom"]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "text"]
-- !private ["CSo7UILabel", "textColor"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "FirebaseController"]
 - !private ["CSo11UIResponder", "HunterController"]
@@ -805,7 +787,6 @@ depends-member:
 - !private ["CSo11UIResponder", "UIAlertAction"]
 - !private ["CSo11UIResponder", "UIAlertController"]
 - ["CSo11UIResponder", "UIButton"]
-- !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
@@ -819,6 +800,7 @@ depends-member:
 - !private ["CSo11UIResponder", "image"]
 - !private ["CSo11UIResponder", "indexPathForCell"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "layer"]
 - ["CSo11UIResponder", "prepareForReuse"]
 - !private ["CSo11UIResponder", "presentViewController"]
 - !private ["CSo11UIResponder", "reloadData"]
@@ -831,7 +813,6 @@ depends-member:
 - !private ["CSo11UIResponder", "sheds"]
 - !private ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
-- !private ["CSo11UIResponder", "textColor"]
 - ["CSo11UIResponder", "updateWith"]
 - ["CSo11UIResponder", "usernameTextField"]
 - ["CSo11UIResponder", "utilitiesButtonTapped"]
@@ -857,7 +838,6 @@ depends-member:
 - !private ["CSo15UITableViewCell", "UIAlertAction"]
 - !private ["CSo15UITableViewCell", "UIAlertController"]
 - ["CSo15UITableViewCell", "UIButton"]
-- !private ["CSo15UITableViewCell", "UIColor"]
 - !private ["CSo15UITableViewCell", "UIImage"]
 - ["CSo15UITableViewCell", "UIImageView"]
 - ["CSo15UITableViewCell", "UILabel"]
@@ -890,7 +870,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "ShedController"]
 - !private ["PSo18UITraitEnvironment", "UIAlertAction"]
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
-- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIViewContentMode"]
 - !private ["PSo18UITraitEnvironment", "addAction"]
@@ -901,6 +880,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "image"]
 - !private ["PSo18UITraitEnvironment", "indexPathForCell"]
 - ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "layer"]
 - ["PSo18UITraitEnvironment", "prepareForReuse"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
@@ -913,7 +893,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "sheds"]
 - !private ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
-- !private ["PSo18UITraitEnvironment", "textColor"]
 - ["PSo18UITraitEnvironment", "updateWith"]
 - ["PSo18UITraitEnvironment", "usernameTextField"]
 - ["PSo18UITraitEnvironment", "utilitiesButtonTapped"]
@@ -928,7 +907,6 @@ depends-member:
 - !private ["CSo6UIView", "UIAlertAction"]
 - !private ["CSo6UIView", "UIAlertController"]
 - ["CSo6UIView", "UIButton"]
-- !private ["CSo6UIView", "UIColor"]
 - !private ["CSo6UIView", "UIImage"]
 - ["CSo6UIView", "UIImageView"]
 - ["CSo6UIView", "UILabel"]
@@ -941,6 +919,7 @@ depends-member:
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "indexPathForCell"]
 - ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "layer"]
 - ["CSo6UIView", "prepareForReuse"]
 - !private ["CSo6UIView", "reloadData"]
 - ["CSo6UIView", "reportButton"]
@@ -950,7 +929,6 @@ depends-member:
 - ["CSo6UIView", "shedImageView"]
 - ["CSo6UIView", "shedTypeTextLabel"]
 - !private ["CSo6UIView", "text"]
-- !private ["CSo6UIView", "textColor"]
 - ["CSo6UIView", "updateWith"]
 - ["CSo6UIView", "usernameTextField"]
 - ["CSo6UIView", "utilitiesButtonTapped"]
@@ -978,7 +956,6 @@ depends-member:
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "lowercaseString"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "lowercaseString"]
-- !private ["Ps24_ColorLiteralConvertible", "blackColor"]
 - !private ["Ps24_DestructorSafeContainer", "removeAtIndex"]
 - !private ["Ps24_ImageLiteralConvertible", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
@@ -993,7 +970,6 @@ depends-member:
 - ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "UIAlertAction"]
 - !private ["Ps12_Reflectable", "UIAlertController"]
-- !private ["Ps12_Reflectable", "UIColor"]
 - !private ["Ps12_Reflectable", "UIImage"]
 - !private ["Ps12_Reflectable", "UIViewContentMode"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
@@ -1004,6 +980,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "image"]
 - !private ["Ps12_Reflectable", "indexPathForCell"]
 - ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "layer"]
 - !private ["Ps12_Reflectable", "lowercaseString"]
 - ["Ps12_Reflectable", "prepareForReuse"]
 - !private ["Ps12_Reflectable", "reloadData"]
@@ -1015,7 +992,6 @@ depends-member:
 - ["Ps12_Reflectable", "shedImageView"]
 - ["Ps12_Reflectable", "shedTypeTextLabel"]
 - !private ["Ps12_Reflectable", "text"]
-- !private ["Ps12_Reflectable", "textColor"]
 - ["Ps12_Reflectable", "updateWith"]
 - ["Ps12_Reflectable", "usernameTextField"]
 - ["Ps12_Reflectable", "utilitiesButtonTapped"]
@@ -1027,6 +1003,8 @@ depends-nominal:
 - !private "Sb"
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
+- !private "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
 - !private "PSo25CLLocationManagerDelegate"
 - "Ps11CVarArgType"
 - !private "Vs9Character"
@@ -1087,8 +1065,9 @@ depends-nominal:
 - !private "OSC22UIAlertControllerStyle"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- !private "CSo7UIColor"
+- !private "CSo8UIButton"
 - !private "PSo18UIContentContainer"
+- !private "CSo9UIControl"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
@@ -1121,7 +1100,6 @@ depends-nominal:
 - !private "Ps32_BuiltinStringLiteralConvertible"
 - !private "Ps37_BuiltinUTF16StringLiteralConvertible"
 - !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
-- !private "Ps24_ColorLiteralConvertible"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps24_ImageLiteralConvertible"
 - !private "Ps21_ObjectiveCBridgeable"

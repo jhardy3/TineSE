@@ -55,7 +55,8 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         
         
         // Updates with current hunter because (s)he is viewing own profile
-        if tabBarController?.selectedIndex == 3 {
+        
+        if tabBarController!.selectedIndex == 4 {
             guard let currentHunterID = HunterController.sharedInstance.currentHunter?.identifier else { return }
             self.updateWithIdentifier(currentHunterID)
         }
@@ -86,7 +87,9 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         flowLayout.minimumLineSpacing = kMargin * 2
         flowLayout.minimumInteritemSpacing = 0
         
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(shedDeletedUpdateView), name: "shedDeleted", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(shedDeletedUpdateView), name: "shedDeleted", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.updateWithHunter), name: "ProfileTriggered", object: nil)
+        
         
     }
     
@@ -227,6 +230,16 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     func shedDeletedUpdateView() {
         if let hunterID = self.hunter?.identifier {
+            self.sheds = []
+            self.collectionView.reloadData()
+            self.updateWithIdentifier(hunterID)
+        }
+    }
+    
+    func updateWithHunter() {
+        if let hunterID = HunterController.sharedInstance.currentHunter?.identifier {
+            self.sheds = []
+            self.collectionView.reloadData()
             self.updateWithIdentifier(hunterID)
         }
     }
