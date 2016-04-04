@@ -9,82 +9,83 @@ provides-member:
 - ["O6TineSE14FollowingState", ""]
 - ["C6TineSE21ProfileViewController", ""]
 provides-dynamic-lookup:
-- "kMargin"
-- "shedCountLabel"
-- "updateWithIdentifier"
-- "hunterProfileImage"
-- "chalksCountLabel"
-- "usernameLabel"
-- "trackingCount"
-- "viewWillAppear"
-- "followButtonTapped"
-- "brownsCountLabel"
-- "prepareForSegue"
 - "followButton"
 - "viewWillDisappear"
-- "viewDidAppear"
+- "trackersCountLabel"
+- "flowLayout"
+- "brownsCountLabel"
 - "trackingCountLabel"
+- "viewDidAppear"
+- "usernameLabel"
 - "shedDeletedUpdateView"
 - "viewDidLoad"
-- "flowLayout"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "trackersCountLabel"
+- "trackingCount"
+- "viewWillAppear"
+- "updateWithIdentifier"
+- "prepareForSegue"
+- "chalksCountLabel"
+- "hunterProfileImage"
+- "shedCountLabel"
+- "updateWithHunter"
 - "whitesCountLabel"
+- "followButtonTapped"
+- "kMargin"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
 - "viewLoaded"
 depends-top-level:
-- !private ">"
-- "UILabel"
-- "BooleanLiteralType"
-- !private "CGSizeMake"
-- !private "NSThread"
-- "Hunter"
-- "UICollectionView"
-- !private "*"
-- !private "UIColor"
-- !private "dispatch_group_leave"
-- !private "HunterController"
-- !private "-"
-- "NSIndexPath"
-- "String"
-- !private "NSNotificationCenter"
-- !private "dispatch_group_create"
-- !private "!="
-- !private "Void"
-- !private "/"
-- !private "ImageCollectionViewCell"
-- "Bool"
-- "=="
-- "UICollectionViewCell"
-- !private "dispatch_get_main_queue"
-- "UIImageView"
-- "FollowingState"
-- "ProfileViewController"
-- "CGFloat"
-- !private "+"
-- !private "dispatch_group_enter"
-- !private "UIEdgeInsetsMake"
-- "UICollectionViewFlowLayout"
-- !private "dispatch_group_notify"
-- !private "Array"
-- "UIViewController"
 - "CGSize"
-- !private "print"
-- "UIStoryboardSegue"
-- "UICollectionViewDelegateFlowLayout"
-- "Int"
-- "Shed"
 - "AnyObject"
-- "UIButton"
-- !private "StringLiteralType"
+- !private "CGSizeMake"
+- !private "-"
+- "UICollectionViewCell"
+- "BooleanLiteralType"
+- "UILabel"
+- !private "dispatch_group_create"
+- "Hunter"
+- !private "+"
+- !private "ShedController"
+- "NSIndexPath"
+- !private ">"
+- "UICollectionView"
+- !private "dispatch_group_enter"
+- !private "print"
+- !private "dispatch_group_notify"
+- "=="
+- "Int"
+- "FollowingState"
+- !private "ImageCollectionViewCell"
+- "UICollectionViewDelegateFlowLayout"
+- "UIImageView"
 - "UICollectionViewDelegate"
 - "UICollectionViewLayout"
-- !private "ShedController"
 - "UICollectionViewDataSource"
+- !private "NSThread"
+- "ProfileViewController"
+- "UIButton"
+- !private "HunterController"
+- !private "*"
+- "UIViewController"
+- "Shed"
+- !private "StringLiteralType"
+- !private "UIColor"
+- "Bool"
+- !private "Void"
+- "UIStoryboardSegue"
+- !private "UIEdgeInsetsMake"
+- !private "/"
+- "UICollectionViewFlowLayout"
+- !private "dispatch_group_leave"
+- !private "Array"
+- "String"
+- !private "!="
+- !private "NSNotificationCenter"
+- !private "dispatch_get_main_queue"
+- "CGFloat"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -146,7 +147,6 @@ depends-member:
 - ["Ps9AnyObject", "prepareForSegue"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "reloadData"]
-- !private ["Ps9AnyObject", "reloadInputViews"]
 - !private ["Ps9AnyObject", "row"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
 - ["Ps9AnyObject", "scrollViewDidEndDragging"]
@@ -179,6 +179,7 @@ depends-member:
 - !private ["Ps9AnyObject", "trackingIDs"]
 - !private ["Ps9AnyObject", "unauthHunter"]
 - !private ["Ps9AnyObject", "updateWith"]
+- ["Ps9AnyObject", "updateWithHunter"]
 - ["Ps9AnyObject", "updateWithIdentifier"]
 - !private ["Ps9AnyObject", "username"]
 - ["Ps9AnyObject", "usernameLabel"]
@@ -296,7 +297,6 @@ depends-member:
 - ["Ps11CVarArgType", "prepareForSegue"]
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "reloadData"]
-- !private ["Ps11CVarArgType", "reloadInputViews"]
 - !private ["Ps11CVarArgType", "row"]
 - ["Ps11CVarArgType", "scrollViewDidEndDecelerating"]
 - ["Ps11CVarArgType", "scrollViewDidEndDragging"]
@@ -323,6 +323,7 @@ depends-member:
 - ["Ps11CVarArgType", "trackingCount"]
 - ["Ps11CVarArgType", "trackingCountLabel"]
 - !private ["Ps11CVarArgType", "updateWith"]
+- ["Ps11CVarArgType", "updateWithHunter"]
 - ["Ps11CVarArgType", "updateWithIdentifier"]
 - ["Ps11CVarArgType", "usernameLabel"]
 - !private ["Ps11CVarArgType", "view"]
@@ -414,7 +415,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
-- !private ["Ps28CustomDebugStringConvertible", "reloadInputViews"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDragging"]
@@ -443,6 +443,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "trackingCount"]
 - ["Ps28CustomDebugStringConvertible", "trackingCountLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "updateWith"]
+- ["Ps28CustomDebugStringConvertible", "updateWithHunter"]
 - ["Ps28CustomDebugStringConvertible", "updateWithIdentifier"]
 - ["Ps28CustomDebugStringConvertible", "usernameLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
@@ -520,7 +521,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "prepareForSegue"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
-- !private ["Ps23CustomStringConvertible", "reloadInputViews"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDragging"]
@@ -549,6 +549,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "trackingCount"]
 - ["Ps23CustomStringConvertible", "trackingCountLabel"]
 - !private ["Ps23CustomStringConvertible", "updateWith"]
+- ["Ps23CustomStringConvertible", "updateWithHunter"]
 - ["Ps23CustomStringConvertible", "updateWithIdentifier"]
 - ["Ps23CustomStringConvertible", "usernameLabel"]
 - !private ["Ps23CustomStringConvertible", "view"]
@@ -622,7 +623,6 @@ depends-member:
 - ["Ps9Equatable", "prepareForSegue"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "reloadData"]
-- !private ["Ps9Equatable", "reloadInputViews"]
 - !private ["Ps9Equatable", "row"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
 - ["Ps9Equatable", "scrollViewDidEndDragging"]
@@ -649,6 +649,7 @@ depends-member:
 - ["Ps9Equatable", "trackingCount"]
 - ["Ps9Equatable", "trackingCountLabel"]
 - !private ["Ps9Equatable", "updateWith"]
+- ["Ps9Equatable", "updateWithHunter"]
 - ["Ps9Equatable", "updateWithIdentifier"]
 - ["Ps9Equatable", "usernameLabel"]
 - !private ["Ps9Equatable", "view"]
@@ -745,7 +746,6 @@ depends-member:
 - ["Ps8Hashable", "prepareForSegue"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "reloadData"]
-- !private ["Ps8Hashable", "reloadInputViews"]
 - !private ["Ps8Hashable", "row"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps8Hashable", "scrollViewDidEndDragging"]
@@ -772,6 +772,7 @@ depends-member:
 - ["Ps8Hashable", "trackingCount"]
 - ["Ps8Hashable", "trackingCountLabel"]
 - !private ["Ps8Hashable", "updateWith"]
+- ["Ps8Hashable", "updateWithHunter"]
 - ["Ps8Hashable", "updateWithIdentifier"]
 - ["Ps8Hashable", "usernameLabel"]
 - !private ["Ps8Hashable", "view"]
@@ -921,7 +922,6 @@ depends-member:
 - ["PSo8NSCoding", "prepareForSegue"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "reloadData"]
-- !private ["PSo8NSCoding", "reloadInputViews"]
 - !private ["PSo8NSCoding", "row"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
@@ -947,6 +947,7 @@ depends-member:
 - ["PSo8NSCoding", "trackingCount"]
 - ["PSo8NSCoding", "trackingCountLabel"]
 - !private ["PSo8NSCoding", "updateWith"]
+- ["PSo8NSCoding", "updateWithHunter"]
 - ["PSo8NSCoding", "updateWithIdentifier"]
 - ["PSo8NSCoding", "usernameLabel"]
 - !private ["PSo8NSCoding", "view"]
@@ -1018,6 +1019,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "trackersCountLabel"]
 - ["PSo26NSExtensionRequestHandling", "trackingCount"]
 - ["PSo26NSExtensionRequestHandling", "trackingCountLabel"]
+- ["PSo26NSExtensionRequestHandling", "updateWithHunter"]
 - ["PSo26NSExtensionRequestHandling", "updateWithIdentifier"]
 - ["PSo26NSExtensionRequestHandling", "usernameLabel"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
@@ -1102,7 +1104,6 @@ depends-member:
 - ["CSo8NSObject", "prepareForSegue"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "reloadData"]
-- !private ["CSo8NSObject", "reloadInputViews"]
 - !private ["CSo8NSObject", "row"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
@@ -1129,6 +1130,7 @@ depends-member:
 - ["CSo8NSObject", "trackingCount"]
 - ["CSo8NSObject", "trackingCountLabel"]
 - !private ["CSo8NSObject", "updateWith"]
+- ["CSo8NSObject", "updateWithHunter"]
 - ["CSo8NSObject", "updateWithIdentifier"]
 - ["CSo8NSObject", "usernameLabel"]
 - !private ["CSo8NSObject", "view"]
@@ -1192,7 +1194,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "prepareForSegue"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
-- !private ["PSo16NSObjectProtocol", "reloadInputViews"]
 - !private ["PSo16NSObjectProtocol", "row"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
@@ -1219,6 +1220,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "trackingCount"]
 - ["PSo16NSObjectProtocol", "trackingCountLabel"]
 - !private ["PSo16NSObjectProtocol", "updateWith"]
+- ["PSo16NSObjectProtocol", "updateWithHunter"]
 - ["PSo16NSObjectProtocol", "updateWithIdentifier"]
 - ["PSo16NSObjectProtocol", "usernameLabel"]
 - !private ["PSo16NSObjectProtocol", "view"]
@@ -1314,6 +1316,7 @@ depends-member:
 - ["C6TineSE21ProfileViewController", "trackersCountLabel"]
 - ["C6TineSE21ProfileViewController", "trackingCount"]
 - ["C6TineSE21ProfileViewController", "trackingCountLabel"]
+- ["C6TineSE21ProfileViewController", "updateWithHunter"]
 - ["C6TineSE21ProfileViewController", "updateWithIdentifier"]
 - ["C6TineSE21ProfileViewController", "usernameLabel"]
 - !private ["C6TineSE21ProfileViewController", "view"]
@@ -1390,7 +1393,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
-- !private ["PSo29UIAccessibilityIdentification", "reloadInputViews"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "updateWith"]
@@ -1401,7 +1403,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "reloadData"]
-- !private ["PSo12UIAppearance", "reloadInputViews"]
 - !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "updateWith"]
@@ -1445,7 +1446,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "prepareForSegue"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
-- !private ["PSo21UIAppearanceContainer", "reloadInputViews"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1469,6 +1469,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "trackingCount"]
 - ["PSo21UIAppearanceContainer", "trackingCountLabel"]
 - !private ["PSo21UIAppearanceContainer", "updateWith"]
+- ["PSo21UIAppearanceContainer", "updateWithHunter"]
 - ["PSo21UIAppearanceContainer", "updateWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "usernameLabel"]
 - !private ["PSo21UIAppearanceContainer", "view"]
@@ -1539,6 +1540,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "trackersCountLabel"]
 - !private ["PSo26UICollectionViewDataSource", "trackingCount"]
 - !private ["PSo26UICollectionViewDataSource", "trackingCountLabel"]
+- !private ["PSo26UICollectionViewDataSource", "updateWithHunter"]
 - !private ["PSo26UICollectionViewDataSource", "updateWithIdentifier"]
 - !private ["PSo26UICollectionViewDataSource", "usernameLabel"]
 - !private ["PSo26UICollectionViewDataSource", "view"]
@@ -1594,6 +1596,7 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "trackersCountLabel"]
 - !private ["PSo24UICollectionViewDelegate", "trackingCount"]
 - !private ["PSo24UICollectionViewDelegate", "trackingCountLabel"]
+- !private ["PSo24UICollectionViewDelegate", "updateWithHunter"]
 - !private ["PSo24UICollectionViewDelegate", "updateWithIdentifier"]
 - !private ["PSo24UICollectionViewDelegate", "usernameLabel"]
 - !private ["PSo24UICollectionViewDelegate", "view"]
@@ -1649,6 +1652,7 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "trackersCountLabel"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "trackingCount"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "trackingCountLabel"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "updateWithHunter"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "updateWithIdentifier"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "usernameLabel"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "view"]
@@ -1719,6 +1723,7 @@ depends-member:
 - ["PSo18UIContentContainer", "trackersCountLabel"]
 - ["PSo18UIContentContainer", "trackingCount"]
 - ["PSo18UIContentContainer", "trackingCountLabel"]
+- ["PSo18UIContentContainer", "updateWithHunter"]
 - ["PSo18UIContentContainer", "updateWithIdentifier"]
 - ["PSo18UIContentContainer", "usernameLabel"]
 - !private ["PSo18UIContentContainer", "view"]
@@ -1742,7 +1747,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
-- !private ["PSo17UICoordinateSpace", "reloadInputViews"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "updateWith"]
@@ -1753,7 +1757,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
-- !private ["PSo13UIDynamicItem", "reloadInputViews"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "updateWith"]
@@ -1797,7 +1800,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "prepareForSegue"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
-- !private ["PSo18UIFocusEnvironment", "reloadInputViews"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1821,6 +1823,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "trackingCount"]
 - ["PSo18UIFocusEnvironment", "trackingCountLabel"]
 - !private ["PSo18UIFocusEnvironment", "updateWith"]
+- ["PSo18UIFocusEnvironment", "updateWithHunter"]
 - ["PSo18UIFocusEnvironment", "updateWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "usernameLabel"]
 - !private ["PSo18UIFocusEnvironment", "view"]
@@ -1894,7 +1897,6 @@ depends-member:
 - ["CSo11UIResponder", "prepareForSegue"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "reloadData"]
-- !private ["CSo11UIResponder", "reloadInputViews"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
 - ["CSo11UIResponder", "scrollViewDidEndScrollingAnimation"]
@@ -1918,6 +1920,7 @@ depends-member:
 - ["CSo11UIResponder", "trackingCount"]
 - ["CSo11UIResponder", "trackingCountLabel"]
 - !private ["CSo11UIResponder", "updateWith"]
+- ["CSo11UIResponder", "updateWithHunter"]
 - ["CSo11UIResponder", "updateWithIdentifier"]
 - ["CSo11UIResponder", "usernameLabel"]
 - !private ["CSo11UIResponder", "view"]
@@ -1979,6 +1982,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "trackersCountLabel"]
 - !private ["PSo20UIScrollViewDelegate", "trackingCount"]
 - !private ["PSo20UIScrollViewDelegate", "trackingCountLabel"]
+- !private ["PSo20UIScrollViewDelegate", "updateWithHunter"]
 - !private ["PSo20UIScrollViewDelegate", "updateWithIdentifier"]
 - !private ["PSo20UIScrollViewDelegate", "usernameLabel"]
 - !private ["PSo20UIScrollViewDelegate", "view"]
@@ -2040,6 +2044,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "trackersCountLabel"]
 - ["PSo16UIStateRestoring", "trackingCount"]
 - ["PSo16UIStateRestoring", "trackingCountLabel"]
+- ["PSo16UIStateRestoring", "updateWithHunter"]
 - ["PSo16UIStateRestoring", "updateWithIdentifier"]
 - ["PSo16UIStateRestoring", "usernameLabel"]
 - !private ["PSo16UIStateRestoring", "view"]
@@ -2094,7 +2099,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "prepareForSegue"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
-- !private ["PSo18UITraitEnvironment", "reloadInputViews"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -2118,6 +2122,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "trackingCount"]
 - ["PSo18UITraitEnvironment", "trackingCountLabel"]
 - !private ["PSo18UITraitEnvironment", "updateWith"]
+- ["PSo18UITraitEnvironment", "updateWithHunter"]
 - ["PSo18UITraitEnvironment", "updateWithIdentifier"]
 - ["PSo18UITraitEnvironment", "usernameLabel"]
 - !private ["PSo18UITraitEnvironment", "view"]
@@ -2137,7 +2142,6 @@ depends-member:
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "reloadData"]
-- !private ["CSo6UIView", "reloadInputViews"]
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "updateWith"]
@@ -2210,6 +2214,7 @@ depends-member:
 - ["CSo16UIViewController", "trackersCountLabel"]
 - ["CSo16UIViewController", "trackingCount"]
 - ["CSo16UIViewController", "trackingCountLabel"]
+- ["CSo16UIViewController", "updateWithHunter"]
 - ["CSo16UIViewController", "updateWithIdentifier"]
 - ["CSo16UIViewController", "usernameLabel"]
 - !private ["CSo16UIViewController", "view"]
@@ -2322,7 +2327,6 @@ depends-member:
 - !private ["Ps12_Reflectable", "layer"]
 - !private ["Ps12_Reflectable", "lowercaseString"]
 - !private ["Ps12_Reflectable", "reloadData"]
-- !private ["Ps12_Reflectable", "reloadInputViews"]
 - !private ["Ps12_Reflectable", "setTitle"]
 - !private ["Ps12_Reflectable", "sortInPlace"]
 - !private ["Ps12_Reflectable", "subscript"]
@@ -2549,4 +2553,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "e9b75ed4b8d4c7afa66ecbaa7f4d79c2"
+interface-hash: "8951ec296205f92e971e9842b9f430ac"

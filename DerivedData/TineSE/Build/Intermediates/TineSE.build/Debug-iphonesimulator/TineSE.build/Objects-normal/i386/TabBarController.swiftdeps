@@ -1,0 +1,930 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TabBarController"
+provides-nominal:
+- "C6TineSE16TabBarController"
+provides-member:
+- ["C6TineSE16TabBarController", ""]
+- ["CSo7UIImage", ""]
+- ["CSo7UIImage", "imageWithColor"]
+provides-dynamic-lookup:
+- "imageWithColor"
+- "tabBar"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+depends-top-level:
+- !private "NSForegroundColorAttributeName"
+- !private "UIGraphicsEndImageContext"
+- !private "CGContextClipToMask"
+- "UIColor"
+- "UITabBar"
+- !private "CGRectMake"
+- !private "CGBlendMode"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- "TabBarController"
+- !private "CGRect"
+- !private "BooleanLiteralType"
+- !private "CGContextTranslateCTM"
+- "UITabBarItem"
+- !private "UIImageRenderingMode"
+- !private "CGContextSetBlendMode"
+- !private "UIGraphicsGetCurrentContext"
+- !private "UIGraphicsBeginImageContextWithOptions"
+- !private "Dictionary"
+- !private "CGContextFillRect"
+- "UIImage"
+- !private "StringLiteralType"
+- "UITabBarController"
+- !private "UIControlState"
+- !private "=="
+- !private "NSNotificationCenter"
+- !private "CGContextScaleCTM"
+depends-member:
+- !private ["Ps9AnyObject", "CGBlendMode"]
+- !private ["Ps9AnyObject", "CGContextClipToMask"]
+- !private ["Ps9AnyObject", "CGContextFillRect"]
+- !private ["Ps9AnyObject", "CGContextScaleCTM"]
+- !private ["Ps9AnyObject", "CGContextSetBlendMode"]
+- !private ["Ps9AnyObject", "CGContextTranslateCTM"]
+- !private ["Ps9AnyObject", "CGImage"]
+- !private ["Ps9AnyObject", "CGRectMake"]
+- !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
+- !private ["Ps9AnyObject", "NSNotificationCenter"]
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIControlState"]
+- !private ["Ps9AnyObject", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["Ps9AnyObject", "UIGraphicsEndImageContext"]
+- !private ["Ps9AnyObject", "UIGraphicsGetCurrentContext"]
+- !private ["Ps9AnyObject", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "UIImageRenderingMode"]
+- !private ["Ps9AnyObject", "defaultCenter"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "image"]
+- ["Ps9AnyObject", "imageWithColor"]
+- !private ["Ps9AnyObject", "imageWithRenderingMode"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "items"]
+- !private ["Ps9AnyObject", "postNotificationName"]
+- !private ["Ps9AnyObject", "scale"]
+- !private ["Ps9AnyObject", "selectedImage"]
+- !private ["Ps9AnyObject", "setFill"]
+- !private ["Ps9AnyObject", "setTitleTextAttributes"]
+- !private ["Ps9AnyObject", "size"]
+- ["Ps9AnyObject", "tabBar"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "whiteColor"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "Normal"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["OSC11CGBlendMode", "Normal"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
+- !private ["Ps11CVarArgType", "CGBlendMode"]
+- !private ["Ps11CVarArgType", "CGContextClipToMask"]
+- !private ["Ps11CVarArgType", "CGContextFillRect"]
+- !private ["Ps11CVarArgType", "CGContextScaleCTM"]
+- !private ["Ps11CVarArgType", "CGContextSetBlendMode"]
+- !private ["Ps11CVarArgType", "CGContextTranslateCTM"]
+- !private ["Ps11CVarArgType", "CGImage"]
+- !private ["Ps11CVarArgType", "CGRectMake"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "NSForegroundColorAttributeName"]
+- !private ["Ps11CVarArgType", "NSNotificationCenter"]
+- !private ["Ps11CVarArgType", "UIColor"]
+- !private ["Ps11CVarArgType", "UIControlState"]
+- !private ["Ps11CVarArgType", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["Ps11CVarArgType", "UIGraphicsEndImageContext"]
+- !private ["Ps11CVarArgType", "UIGraphicsGetCurrentContext"]
+- !private ["Ps11CVarArgType", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["Ps11CVarArgType", "UIImage"]
+- !private ["Ps11CVarArgType", "UIImageRenderingMode"]
+- !private ["Ps11CVarArgType", "defaultCenter"]
+- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["Ps11CVarArgType", "image"]
+- ["Ps11CVarArgType", "imageWithColor"]
+- !private ["Ps11CVarArgType", "imageWithRenderingMode"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "items"]
+- !private ["Ps11CVarArgType", "postNotificationName"]
+- !private ["Ps11CVarArgType", "scale"]
+- !private ["Ps11CVarArgType", "selectedImage"]
+- !private ["Ps11CVarArgType", "setFill"]
+- !private ["Ps11CVarArgType", "setTitleTextAttributes"]
+- !private ["Ps11CVarArgType", "size"]
+- ["Ps11CVarArgType", "tabBar"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- !private ["Ps11CVarArgType", "whiteColor"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "Key"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "Value"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps28CustomDebugStringConvertible", "CGBlendMode"]
+- !private ["Ps28CustomDebugStringConvertible", "CGContextClipToMask"]
+- !private ["Ps28CustomDebugStringConvertible", "CGContextFillRect"]
+- !private ["Ps28CustomDebugStringConvertible", "CGContextScaleCTM"]
+- !private ["Ps28CustomDebugStringConvertible", "CGContextSetBlendMode"]
+- !private ["Ps28CustomDebugStringConvertible", "CGContextTranslateCTM"]
+- !private ["Ps28CustomDebugStringConvertible", "CGImage"]
+- !private ["Ps28CustomDebugStringConvertible", "CGRectMake"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "NSForegroundColorAttributeName"]
+- !private ["Ps28CustomDebugStringConvertible", "NSNotificationCenter"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIControlState"]
+- !private ["Ps28CustomDebugStringConvertible", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["Ps28CustomDebugStringConvertible", "UIGraphicsEndImageContext"]
+- !private ["Ps28CustomDebugStringConvertible", "UIGraphicsGetCurrentContext"]
+- !private ["Ps28CustomDebugStringConvertible", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImageRenderingMode"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "defaultCenter"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
+- ["Ps28CustomDebugStringConvertible", "imageWithColor"]
+- !private ["Ps28CustomDebugStringConvertible", "imageWithRenderingMode"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "items"]
+- !private ["Ps28CustomDebugStringConvertible", "postNotificationName"]
+- !private ["Ps28CustomDebugStringConvertible", "scale"]
+- !private ["Ps28CustomDebugStringConvertible", "selectedImage"]
+- !private ["Ps28CustomDebugStringConvertible", "setFill"]
+- !private ["Ps28CustomDebugStringConvertible", "setTitleTextAttributes"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
+- ["Ps28CustomDebugStringConvertible", "tabBar"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "CGBlendMode"]
+- !private ["Ps23CustomStringConvertible", "CGContextClipToMask"]
+- !private ["Ps23CustomStringConvertible", "CGContextFillRect"]
+- !private ["Ps23CustomStringConvertible", "CGContextScaleCTM"]
+- !private ["Ps23CustomStringConvertible", "CGContextSetBlendMode"]
+- !private ["Ps23CustomStringConvertible", "CGContextTranslateCTM"]
+- !private ["Ps23CustomStringConvertible", "CGImage"]
+- !private ["Ps23CustomStringConvertible", "CGRectMake"]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "NSForegroundColorAttributeName"]
+- !private ["Ps23CustomStringConvertible", "NSNotificationCenter"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIControlState"]
+- !private ["Ps23CustomStringConvertible", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["Ps23CustomStringConvertible", "UIGraphicsEndImageContext"]
+- !private ["Ps23CustomStringConvertible", "UIGraphicsGetCurrentContext"]
+- !private ["Ps23CustomStringConvertible", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "UIImageRenderingMode"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "defaultCenter"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "image"]
+- ["Ps23CustomStringConvertible", "imageWithColor"]
+- !private ["Ps23CustomStringConvertible", "imageWithRenderingMode"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "items"]
+- !private ["Ps23CustomStringConvertible", "postNotificationName"]
+- !private ["Ps23CustomStringConvertible", "scale"]
+- !private ["Ps23CustomStringConvertible", "selectedImage"]
+- !private ["Ps23CustomStringConvertible", "setFill"]
+- !private ["Ps23CustomStringConvertible", "setTitleTextAttributes"]
+- !private ["Ps23CustomStringConvertible", "size"]
+- ["Ps23CustomStringConvertible", "tabBar"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "whiteColor"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Ps9Equatable", "AlwaysOriginal"]
+- !private ["Ps9Equatable", "CGBlendMode"]
+- !private ["Ps9Equatable", "CGContextClipToMask"]
+- !private ["Ps9Equatable", "CGContextFillRect"]
+- !private ["Ps9Equatable", "CGContextScaleCTM"]
+- !private ["Ps9Equatable", "CGContextSetBlendMode"]
+- !private ["Ps9Equatable", "CGContextTranslateCTM"]
+- !private ["Ps9Equatable", "CGImage"]
+- !private ["Ps9Equatable", "CGRectMake"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
+- !private ["Ps9Equatable", "NSNotificationCenter"]
+- !private ["Ps9Equatable", "Normal"]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIControlState"]
+- !private ["Ps9Equatable", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["Ps9Equatable", "UIGraphicsEndImageContext"]
+- !private ["Ps9Equatable", "UIGraphicsGetCurrentContext"]
+- !private ["Ps9Equatable", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "UIImageRenderingMode"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "defaultCenter"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "height"]
+- !private ["Ps9Equatable", "image"]
+- ["Ps9Equatable", "imageWithColor"]
+- !private ["Ps9Equatable", "imageWithRenderingMode"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "items"]
+- !private ["Ps9Equatable", "postNotificationName"]
+- !private ["Ps9Equatable", "scale"]
+- !private ["Ps9Equatable", "selectedImage"]
+- !private ["Ps9Equatable", "setFill"]
+- !private ["Ps9Equatable", "setTitleTextAttributes"]
+- !private ["Ps9Equatable", "size"]
+- ["Ps9Equatable", "tabBar"]
+- ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "whiteColor"]
+- !private ["Ps9Equatable", "width"]
+- ["Ps9Equatable", ""]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "AlwaysOriginal"]
+- !private ["Ps8Hashable", "CGBlendMode"]
+- !private ["Ps8Hashable", "CGContextClipToMask"]
+- !private ["Ps8Hashable", "CGContextFillRect"]
+- !private ["Ps8Hashable", "CGContextScaleCTM"]
+- !private ["Ps8Hashable", "CGContextSetBlendMode"]
+- !private ["Ps8Hashable", "CGContextTranslateCTM"]
+- !private ["Ps8Hashable", "CGImage"]
+- !private ["Ps8Hashable", "CGRectMake"]
+- !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
+- !private ["Ps8Hashable", "NSNotificationCenter"]
+- !private ["Ps8Hashable", "Normal"]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIControlState"]
+- !private ["Ps8Hashable", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["Ps8Hashable", "UIGraphicsEndImageContext"]
+- !private ["Ps8Hashable", "UIGraphicsGetCurrentContext"]
+- !private ["Ps8Hashable", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "UIImageRenderingMode"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "defaultCenter"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "image"]
+- ["Ps8Hashable", "imageWithColor"]
+- !private ["Ps8Hashable", "imageWithRenderingMode"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "items"]
+- !private ["Ps8Hashable", "postNotificationName"]
+- !private ["Ps8Hashable", "scale"]
+- !private ["Ps8Hashable", "selectedImage"]
+- !private ["Ps8Hashable", "setFill"]
+- !private ["Ps8Hashable", "setTitleTextAttributes"]
+- !private ["Ps8Hashable", "size"]
+- ["Ps8Hashable", "tabBar"]
+- ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "whiteColor"]
+- ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["PSo8NSCoding", "CGBlendMode"]
+- !private ["PSo8NSCoding", "CGContextClipToMask"]
+- !private ["PSo8NSCoding", "CGContextFillRect"]
+- !private ["PSo8NSCoding", "CGContextScaleCTM"]
+- !private ["PSo8NSCoding", "CGContextSetBlendMode"]
+- !private ["PSo8NSCoding", "CGContextTranslateCTM"]
+- !private ["PSo8NSCoding", "CGImage"]
+- !private ["PSo8NSCoding", "CGRectMake"]
+- !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
+- !private ["PSo8NSCoding", "NSNotificationCenter"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIControlState"]
+- !private ["PSo8NSCoding", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["PSo8NSCoding", "UIGraphicsEndImageContext"]
+- !private ["PSo8NSCoding", "UIGraphicsGetCurrentContext"]
+- !private ["PSo8NSCoding", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "UIImageRenderingMode"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "image"]
+- !private ["PSo8NSCoding", "imageWithColor"]
+- !private ["PSo8NSCoding", "imageWithRenderingMode"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "items"]
+- !private ["PSo8NSCoding", "scale"]
+- !private ["PSo8NSCoding", "selectedImage"]
+- !private ["PSo8NSCoding", "setFill"]
+- !private ["PSo8NSCoding", "setTitleTextAttributes"]
+- !private ["PSo8NSCoding", "size"]
+- ["PSo8NSCoding", "tabBar"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "whiteColor"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "setFill"]
+- !private ["PSo9NSCopying", "whiteColor"]
+- !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
+- !private ["PSo26NSExtensionRequestHandling", "NSNotificationCenter"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIControlState"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImageRenderingMode"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "tabBar"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo20NSNotificationCenter", "defaultCenter"]
+- !private ["CSo20NSNotificationCenter", "postNotificationName"]
+- !private ["CSo8NSObject", "CGBlendMode"]
+- !private ["CSo8NSObject", "CGContextClipToMask"]
+- !private ["CSo8NSObject", "CGContextFillRect"]
+- !private ["CSo8NSObject", "CGContextScaleCTM"]
+- !private ["CSo8NSObject", "CGContextSetBlendMode"]
+- !private ["CSo8NSObject", "CGContextTranslateCTM"]
+- !private ["CSo8NSObject", "CGImage"]
+- !private ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "CGRectMake"]
+- !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
+- !private ["CSo8NSObject", "NSNotificationCenter"]
+- ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIControlState"]
+- !private ["CSo8NSObject", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["CSo8NSObject", "UIGraphicsEndImageContext"]
+- !private ["CSo8NSObject", "UIGraphicsGetCurrentContext"]
+- !private ["CSo8NSObject", "UIGraphicsGetImageFromCurrentImageContext"]
+- ["CSo8NSObject", "UIImage"]
+- !private ["CSo8NSObject", "UIImageRenderingMode"]
+- ["CSo8NSObject", "UITabBar"]
+- ["CSo8NSObject", "UITabBarItem"]
+- !private ["CSo8NSObject", "defaultCenter"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "imageWithColor"]
+- !private ["CSo8NSObject", "imageWithRenderingMode"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "items"]
+- !private ["CSo8NSObject", "postNotificationName"]
+- !private ["CSo8NSObject", "scale"]
+- !private ["CSo8NSObject", "selectedImage"]
+- !private ["CSo8NSObject", "setFill"]
+- !private ["CSo8NSObject", "setTitleTextAttributes"]
+- !private ["CSo8NSObject", "size"]
+- ["CSo8NSObject", "tabBar"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["CSo8NSObject", "whiteColor"]
+- !private ["PSo16NSObjectProtocol", "CGBlendMode"]
+- !private ["PSo16NSObjectProtocol", "CGContextClipToMask"]
+- !private ["PSo16NSObjectProtocol", "CGContextFillRect"]
+- !private ["PSo16NSObjectProtocol", "CGContextScaleCTM"]
+- !private ["PSo16NSObjectProtocol", "CGContextSetBlendMode"]
+- !private ["PSo16NSObjectProtocol", "CGContextTranslateCTM"]
+- !private ["PSo16NSObjectProtocol", "CGImage"]
+- !private ["PSo16NSObjectProtocol", "CGRectMake"]
+- !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
+- !private ["PSo16NSObjectProtocol", "NSNotificationCenter"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIControlState"]
+- !private ["PSo16NSObjectProtocol", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["PSo16NSObjectProtocol", "UIGraphicsEndImageContext"]
+- !private ["PSo16NSObjectProtocol", "UIGraphicsGetCurrentContext"]
+- !private ["PSo16NSObjectProtocol", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UIImageRenderingMode"]
+- !private ["PSo16NSObjectProtocol", "defaultCenter"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- ["PSo16NSObjectProtocol", "imageWithColor"]
+- !private ["PSo16NSObjectProtocol", "imageWithRenderingMode"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "items"]
+- !private ["PSo16NSObjectProtocol", "postNotificationName"]
+- !private ["PSo16NSObjectProtocol", "scale"]
+- !private ["PSo16NSObjectProtocol", "selectedImage"]
+- !private ["PSo16NSObjectProtocol", "setFill"]
+- !private ["PSo16NSObjectProtocol", "setTitleTextAttributes"]
+- !private ["PSo16NSObjectProtocol", "size"]
+- ["PSo16NSObjectProtocol", "tabBar"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "whiteColor"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "CGBlendMode"]
+- !private ["PSo14NSSecureCoding", "CGContextClipToMask"]
+- !private ["PSo14NSSecureCoding", "CGContextFillRect"]
+- !private ["PSo14NSSecureCoding", "CGContextScaleCTM"]
+- !private ["PSo14NSSecureCoding", "CGContextSetBlendMode"]
+- !private ["PSo14NSSecureCoding", "CGContextTranslateCTM"]
+- !private ["PSo14NSSecureCoding", "CGImage"]
+- !private ["PSo14NSSecureCoding", "CGRectMake"]
+- !private ["PSo14NSSecureCoding", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["PSo14NSSecureCoding", "UIGraphicsEndImageContext"]
+- !private ["PSo14NSSecureCoding", "UIGraphicsGetCurrentContext"]
+- !private ["PSo14NSSecureCoding", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["PSo14NSSecureCoding", "imageWithColor"]
+- !private ["PSo14NSSecureCoding", "imageWithRenderingMode"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "scale"]
+- !private ["PSo14NSSecureCoding", "setFill"]
+- !private ["PSo14NSSecureCoding", "size"]
+- !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["Ps13OptionSetType", "Normal"]
+- !private ["Sq", "deinit"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps16RawRepresentable", "AlwaysOriginal"]
+- !private ["Ps16RawRepresentable", "Normal"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "Key"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "Value"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps14SetAlgebraType", "Normal"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["C6TineSE16TabBarController", "NSForegroundColorAttributeName"]
+- !private ["C6TineSE16TabBarController", "NSNotificationCenter"]
+- !private ["C6TineSE16TabBarController", "UIColor"]
+- !private ["C6TineSE16TabBarController", "UIControlState"]
+- !private ["C6TineSE16TabBarController", "UIImage"]
+- !private ["C6TineSE16TabBarController", "UIImageRenderingMode"]
+- ["C6TineSE16TabBarController", "UITabBar"]
+- ["C6TineSE16TabBarController", "UITabBarItem"]
+- ["C6TineSE16TabBarController", "deinit"]
+- ["C6TineSE16TabBarController", "didReceiveMemoryWarning"]
+- ["C6TineSE16TabBarController", "init"]
+- ["C6TineSE16TabBarController", "tabBar"]
+- ["C6TineSE16TabBarController", "viewDidLoad"]
+- !private ["PSo29UIAccessibilityIdentification", "CGBlendMode"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextClipToMask"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextFillRect"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextScaleCTM"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextSetBlendMode"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextTranslateCTM"]
+- !private ["PSo29UIAccessibilityIdentification", "CGImage"]
+- !private ["PSo29UIAccessibilityIdentification", "CGRectMake"]
+- !private ["PSo29UIAccessibilityIdentification", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["PSo29UIAccessibilityIdentification", "UIGraphicsEndImageContext"]
+- !private ["PSo29UIAccessibilityIdentification", "UIGraphicsGetCurrentContext"]
+- !private ["PSo29UIAccessibilityIdentification", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- !private ["PSo29UIAccessibilityIdentification", "imageWithColor"]
+- !private ["PSo29UIAccessibilityIdentification", "imageWithRenderingMode"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "items"]
+- !private ["PSo29UIAccessibilityIdentification", "scale"]
+- !private ["PSo29UIAccessibilityIdentification", "selectedImage"]
+- !private ["PSo29UIAccessibilityIdentification", "setTitleTextAttributes"]
+- !private ["PSo29UIAccessibilityIdentification", "size"]
+- !private ["PSo12UIAppearance", "image"]
+- !private ["PSo12UIAppearance", "items"]
+- !private ["PSo12UIAppearance", "selectedImage"]
+- !private ["PSo12UIAppearance", "setTitleTextAttributes"]
+- !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
+- !private ["PSo21UIAppearanceContainer", "NSNotificationCenter"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIControlState"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "UIImageRenderingMode"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "items"]
+- ["PSo21UIAppearanceContainer", "tabBar"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo9UIBarItem", "image"]
+- !private ["CSo9UIBarItem", "selectedImage"]
+- !private ["CSo9UIBarItem", "setTitleTextAttributes"]
+- !private ["CSo7UIColor", "setFill"]
+- !private ["CSo7UIColor", "whiteColor"]
+- !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
+- !private ["PSo18UIContentContainer", "NSNotificationCenter"]
+- !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UIControlState"]
+- !private ["PSo18UIContentContainer", "UIImage"]
+- !private ["PSo18UIContentContainer", "UIImageRenderingMode"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "tabBar"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["VSC14UIControlState", "Normal"]
+- !private ["PSo17UICoordinateSpace", "items"]
+- !private ["PSo13UIDynamicItem", "items"]
+- !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
+- !private ["PSo18UIFocusEnvironment", "NSNotificationCenter"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIControlState"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "UIImageRenderingMode"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "items"]
+- ["PSo18UIFocusEnvironment", "tabBar"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo7UIImage", "CGBlendMode"]
+- !private ["CSo7UIImage", "CGContextClipToMask"]
+- !private ["CSo7UIImage", "CGContextFillRect"]
+- !private ["CSo7UIImage", "CGContextScaleCTM"]
+- !private ["CSo7UIImage", "CGContextSetBlendMode"]
+- !private ["CSo7UIImage", "CGContextTranslateCTM"]
+- !private ["CSo7UIImage", "CGImage"]
+- !private ["CSo7UIImage", "CGRect"]
+- !private ["CSo7UIImage", "CGRectMake"]
+- ["CSo7UIImage", "UIColor"]
+- !private ["CSo7UIImage", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["CSo7UIImage", "UIGraphicsEndImageContext"]
+- !private ["CSo7UIImage", "UIGraphicsGetCurrentContext"]
+- !private ["CSo7UIImage", "UIGraphicsGetImageFromCurrentImageContext"]
+- ["CSo7UIImage", "UIImage"]
+- ["CSo7UIImage", "imageWithColor"]
+- !private ["CSo7UIImage", "imageWithRenderingMode"]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo7UIImage", "scale"]
+- !private ["CSo7UIImage", "size"]
+- !private ["OSC20UIImageRenderingMode", "AlwaysOriginal"]
+- !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
+- !private ["CSo11UIResponder", "NSNotificationCenter"]
+- !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIControlState"]
+- !private ["CSo11UIResponder", "UIImage"]
+- !private ["CSo11UIResponder", "UIImageRenderingMode"]
+- ["CSo11UIResponder", "UITabBar"]
+- ["CSo11UIResponder", "UITabBarItem"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "items"]
+- ["CSo11UIResponder", "tabBar"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
+- !private ["PSo16UIStateRestoring", "NSNotificationCenter"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UIControlState"]
+- !private ["PSo16UIStateRestoring", "UIImage"]
+- !private ["PSo16UIStateRestoring", "UIImageRenderingMode"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "tabBar"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo8UITabBar", "items"]
+- !private ["CSo18UITabBarController", "NSForegroundColorAttributeName"]
+- !private ["CSo18UITabBarController", "NSNotificationCenter"]
+- !private ["CSo18UITabBarController", "UIColor"]
+- !private ["CSo18UITabBarController", "UIControlState"]
+- !private ["CSo18UITabBarController", "UIImage"]
+- !private ["CSo18UITabBarController", "UIImageRenderingMode"]
+- ["CSo18UITabBarController", "UITabBar"]
+- ["CSo18UITabBarController", "UITabBarItem"]
+- ["CSo18UITabBarController", "didReceiveMemoryWarning"]
+- ["CSo18UITabBarController", "init"]
+- ["CSo18UITabBarController", "tabBar"]
+- ["CSo18UITabBarController", "viewDidLoad"]
+- ["CSo18UITabBarController", ""]
+- !private ["PSo16UITabBarDelegate", "NSForegroundColorAttributeName"]
+- !private ["PSo16UITabBarDelegate", "NSNotificationCenter"]
+- !private ["PSo16UITabBarDelegate", "UIColor"]
+- !private ["PSo16UITabBarDelegate", "UIControlState"]
+- !private ["PSo16UITabBarDelegate", "UIImage"]
+- !private ["PSo16UITabBarDelegate", "UIImageRenderingMode"]
+- ["PSo16UITabBarDelegate", "didReceiveMemoryWarning"]
+- ["PSo16UITabBarDelegate", "init"]
+- ["PSo16UITabBarDelegate", "tabBar"]
+- ["PSo16UITabBarDelegate", "viewDidLoad"]
+- ["PSo16UITabBarDelegate", ""]
+- !private ["CSo12UITabBarItem", "image"]
+- !private ["CSo12UITabBarItem", "selectedImage"]
+- !private ["CSo12UITabBarItem", "setTitleTextAttributes"]
+- !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
+- !private ["PSo18UITraitEnvironment", "NSNotificationCenter"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIControlState"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "UIImageRenderingMode"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "items"]
+- ["PSo18UITraitEnvironment", "tabBar"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "items"]
+- !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
+- !private ["CSo16UIViewController", "NSNotificationCenter"]
+- !private ["CSo16UIViewController", "UIColor"]
+- !private ["CSo16UIViewController", "UIControlState"]
+- !private ["CSo16UIViewController", "UIImage"]
+- !private ["CSo16UIViewController", "UIImageRenderingMode"]
+- ["CSo16UIViewController", "UITabBar"]
+- ["CSo16UIViewController", "UITabBarItem"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "tabBar"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps24_ColorLiteralConvertible", "setFill"]
+- !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_ImageLiteralConvertible", "CGBlendMode"]
+- !private ["Ps24_ImageLiteralConvertible", "CGContextClipToMask"]
+- !private ["Ps24_ImageLiteralConvertible", "CGContextFillRect"]
+- !private ["Ps24_ImageLiteralConvertible", "CGContextScaleCTM"]
+- !private ["Ps24_ImageLiteralConvertible", "CGContextSetBlendMode"]
+- !private ["Ps24_ImageLiteralConvertible", "CGContextTranslateCTM"]
+- !private ["Ps24_ImageLiteralConvertible", "CGImage"]
+- !private ["Ps24_ImageLiteralConvertible", "CGRectMake"]
+- !private ["Ps24_ImageLiteralConvertible", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["Ps24_ImageLiteralConvertible", "UIGraphicsEndImageContext"]
+- !private ["Ps24_ImageLiteralConvertible", "UIGraphicsGetCurrentContext"]
+- !private ["Ps24_ImageLiteralConvertible", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["Ps24_ImageLiteralConvertible", "imageWithColor"]
+- !private ["Ps24_ImageLiteralConvertible", "imageWithRenderingMode"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps24_ImageLiteralConvertible", "scale"]
+- !private ["Ps24_ImageLiteralConvertible", "size"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Key"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "height"]
+- !private ["Ps12_Reflectable", "items"]
+- !private ["Ps12_Reflectable", "width"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- !private "OSC11CGBlendMode"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGSize"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
+- "Ps9Equatable"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "SQ"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "CSo20NSNotificationCenter"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Ps13OptionSetType"
+- !private "Sq"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps14SetAlgebraType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
+- "C6TineSE16TabBarController"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo9UIBarItem"
+- !private "CSo7UIColor"
+- "PSo18UIContentContainer"
+- !private "VSC14UIControlState"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo7UIImage"
+- !private "OSC20UIImageRenderingMode"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- !private "CSo8UITabBar"
+- "CSo18UITabBarController"
+- "PSo16UITabBarDelegate"
+- !private "CSo12UITabBarItem"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps24_ColorLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE-Bridging-Header.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentityModel.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentityService.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentity.h"
+- "./AWSCore.framework/Headers/AWSSTSModel.h"
+- "./AWSCore.framework/Headers/AWSSTSService.h"
+- "./AWSCore.framework/Headers/AWSSTS.h"
+- "./AWSCore.framework/Headers/AWSFMDatabaseQueue.h"
+- "./AWSCore.framework/Headers/AWSFMDatabaseAdditions.h"
+- "./AWSCore.framework/Headers/AWSFMDatabasePool.h"
+- "./AWSCore.framework/Headers/AWSFMResultSet.h"
+- "./AWSCore.framework/Headers/AWSFMDatabase.h"
+- "./AWSCore.framework/Headers/AWSFMDB.h"
+- "./AWSCore.framework/Headers/AWSGZIP.h"
+- "./AWSCore.framework/Headers/AWSTaskCompletionSource.h"
+- "./AWSCore.framework/Headers/AWSTask.h"
+- "./AWSCore.framework/Headers/AWSExecutor.h"
+- "./AWSCore.framework/Headers/AWSCancellationTokenSource.h"
+- "./AWSCore.framework/Headers/AWSCancellationTokenRegistration.h"
+- "./AWSCore.framework/Headers/AWSCancellationToken.h"
+- "./AWSCore.framework/Headers/AWSBoltsVersion.h"
+- "./AWSCore.framework/Headers/AWSBolts.h"
+- "./AWSCore.framework/Headers/AWSSignature.h"
+- "./AWSCore.framework/Headers/AWSSynchronizedMutableDictionary.h"
+- "./AWSCore.framework/Headers/AWSClientContext.h"
+- "./AWSCore.framework/Headers/AWSLogging.h"
+- "./AWSCore.framework/Headers/AWSCategory.h"
+- "./AWSCore.framework/Headers/AWSIdentityProvider.h"
+- "./AWSCore.framework/Headers/AWSCredentialsProvider.h"
+- "./AWSCore.framework/Headers/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h"
+- "./AWSCore.framework/Headers/NSValueTransformer+AWSMTLInversionAdditions.h"
+- "./AWSCore.framework/Headers/NSObject+AWSMTLComparisonAdditions.h"
+- "./AWSCore.framework/Headers/NSDictionary+AWSMTLManipulationAdditions.h"
+- "./AWSCore.framework/Headers/NSArray+AWSMTLManipulationAdditions.h"
+- "./AWSCore.framework/Headers/AWSMTLValueTransformer.h"
+- "./AWSCore.framework/Headers/AWSMTLModel+NSCoding.h"
+- "./AWSCore.framework/Headers/AWSMTLModel.h"
+- "./AWSCore.framework/Headers/AWSMTLManagedObjectAdapter.h"
+- "./AWSCore.framework/Headers/AWSMTLJSONAdapter.h"
+- "./AWSCore.framework/Headers/AWSMantle.h"
+- "./AWSCore.framework/Headers/AWSModel.h"
+- "./AWSCore.framework/Headers/AWSNetworking.h"
+- "./AWSCore.framework/Headers/AWSService.h"
+- "./AWSCore.framework/Headers/AWSServiceEnum.h"
+- "./AWSCore.framework/Headers/AWSCore.h"
+- "./AWSCore.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreData.swiftmodule"
+- "./AWSS3.framework/Headers/AWSS3TransferUtility.h"
+- "./AWSS3.framework/Headers/AWSS3PreSignedURL.h"
+- "./AWSS3.framework/Headers/AWSS3TransferManager.h"
+- "./AWSS3.framework/Headers/AWSS3Model.h"
+- "./AWSS3.framework/Headers/AWSS3Service.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/AWSCore.framework/Modules/module.modulemap"
+- "./AWSS3.framework/Headers/AWSS3.h"
+- "./AWSS3.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "./AWSCognito.framework/Headers/AWSCognitoConflict.h"
+- "./AWSCognito.framework/Headers/AWSCognitoRecord.h"
+- "./AWSCognito.framework/Headers/AWSCognitoDataset.h"
+- "./AWSCognito.framework/Headers/AWSCognitoSyncModel.h"
+- "./AWSCognito.framework/Headers/AWSCognitoSyncService.h"
+- "./AWSCognito.framework/Headers/AWSCognitoHandlers.h"
+- "./AWSCognito.framework/Headers/AWSCognitoService.h"
+- "./AWSCognito.framework/Headers/AWSCognito.h"
+- "./AWSCognito.framework/Modules/module.modulemap"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/Geofire.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreLocation.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFCircleQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFRegionQuery.h"
+- "./Firebase.framework/Headers/FConfig.h"
+- "./Firebase.framework/Headers/FirebaseServerValue.h"
+- "./Firebase.framework/Headers/FAuthType.h"
+- "./Firebase.framework/Headers/FAuthData.h"
+- "./Firebase.framework/Headers/FTransactionResult.h"
+- "./Firebase.framework/Headers/FMutableData.h"
+- "./Firebase.framework/Headers/FirebaseApp.h"
+- "./Firebase.framework/Headers/FDataSnapshot.h"
+- "./Firebase.framework/Headers/FEventType.h"
+- "./Firebase.framework/Headers/FQuery.h"
+- "./Firebase.framework/Headers/Firebase.h"
+- "./Firebase.framework/Modules/module.modulemap"
+interface-hash: "afc67b4be9485895894c77bdda2c69f4"

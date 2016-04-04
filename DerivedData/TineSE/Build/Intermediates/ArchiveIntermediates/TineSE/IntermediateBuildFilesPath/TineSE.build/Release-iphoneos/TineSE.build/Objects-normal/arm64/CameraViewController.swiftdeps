@@ -6,85 +6,85 @@ provides-nominal:
 provides-member:
 - ["C6TineSE20CameraViewController", ""]
 provides-dynamic-lookup:
-- "imagePickerController"
-- "shedView"
-- "viewDidAppear"
-- "displayCamera"
-- "shedTypePickerView"
 - "viewDidLoad"
-- "textViewDidEndEditing"
-- "firedOnce"
-- "shedImageView"
-- "shedColor"
-- "crosshairButton"
-- "shedType"
+- "shedView"
+- "shedColorPickerView"
 - "tapGestureTapped"
+- "textFieldShouldReturn"
+- "shedColor"
+- "shedImageView"
+- "clearShedTapped"
 - "imagePickerControllerDidCancel"
-- "clearShedButton"
+- "textViewDidEndEditing"
+- "shedTypePickerView"
 - "postButtonTapped"
 - "postButtonTapped"
 - "viewWillAppear"
-- "textFieldShouldReturn"
-- "locationManager"
-- "locationManager"
-- "locationManager"
-- "shedColorPickerView"
-- "image"
+- "displayCamera"
+- "imagePickerController"
 - "numberOfComponentsInPickerView"
-- "clearShedTapped"
 - "pickerView"
 - "pickerView"
 - "pickerView"
+- "viewDidAppear"
 - "createAnimation"
+- "locationManager"
+- "locationManager"
+- "locationManager"
+- "crosshairButton"
+- "firedOnce"
+- "clearShedButton"
+- "image"
+- "shedType"
 depends-top-level:
 - "CLLocation"
-- "UIView"
-- !private "CGRectMake"
-- "Bool"
-- "UITextField"
-- "UIImagePickerController"
-- "CLLocationManagerDelegate"
-- !private "ShedController"
-- "BooleanLiteralType"
-- !private "CAKeyframeAnimation"
-- "UIPickerViewDataSource"
-- "UIPickerViewDelegate"
-- "UIViewController"
-- !private "CGPathCreateWithEllipseInRect"
-- "UINavigationControllerDelegate"
-- !private "==="
-- "UIImagePickerControllerDelegate"
-- "UIImage"
-- "CLLocationManager"
-- "NSError"
-- "UITextViewDelegate"
-- "UIPickerView"
 - !private "HunterController"
 - "AnyObject"
-- !private "dispatch_queue_create"
-- !private "UIColor"
-- "StringLiteralType"
-- !private "kCAAnimationRotateAuto"
-- !private "NSNotificationCenter"
-- "UITextView"
-- !private "&&"
 - "CameraViewController"
-- !private "ImageUitilies"
-- "UIImageView"
+- !private "ShedController"
+- "CLLocationManagerDelegate"
+- !private "==="
+- "BooleanLiteralType"
+- !private "CGPathCreateWithEllipseInRect"
+- !private "UIImagePickerControllerOriginalImage"
+- "UITextViewDelegate"
+- "UIImagePickerControllerDelegate"
+- "Bool"
+- "UIImagePickerController"
+- !private "CAKeyframeAnimation"
+- "UINavigationControllerDelegate"
+- !private "dispatch_queue_create"
+- "CLLocationManager"
+- "UIPickerViewDataSource"
+- "UIPickerViewDelegate"
+- !private "kCAAnimationRotateAuto"
+- "UITextField"
+- "StringLiteralType"
+- !private "NSNotificationCenter"
 - !private "dispatch_get_main_queue"
-- !private "dispatch_async"
-- !private "LocationController"
-- !private "!"
-- "UIButton"
-- "String"
+- "UIView"
+- "UIImageView"
 - "Int"
+- !private "!"
+- !private "&&"
+- "String"
+- !private "dispatch_async"
+- !private "ImageUitilies"
+- !private "LocationController"
 - !private "Void"
+- "UITextView"
+- "UIViewController"
+- !private "print"
 - !private "Float"
 - !private "=="
 - !private "~="
-- !private "print"
-- !private "UIImagePickerControllerOriginalImage"
 - "UITapGestureRecognizer"
+- "UIPickerView"
+- "NSError"
+- "UIButton"
+- !private "CGRectMake"
+- !private "UIColor"
+- "UIImage"
 - !private "kCLLocationAccuracyBest"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "infinity"]
@@ -145,6 +145,7 @@ depends-member:
 - ["Ps9AnyObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9AnyObject", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps9AnyObject", "numberOfComponentsInPickerView"]
+- !private ["Ps9AnyObject", "opacity"]
 - !private ["Ps9AnyObject", "path"]
 - ["Ps9AnyObject", "pickerView"]
 - ["Ps9AnyObject", "postButtonTapped"]
@@ -230,6 +231,7 @@ depends-member:
 - !private ["CSo7CALayer", "addAnimation"]
 - !private ["CSo7CALayer", "borderColor"]
 - !private ["CSo7CALayer", "borderWidth"]
+- !private ["CSo7CALayer", "opacity"]
 - !private ["PSo13CAMediaTiming", "addAnimation"]
 - !private ["PSo13CAMediaTiming", "additive"]
 - !private ["PSo13CAMediaTiming", "borderColor"]
@@ -237,6 +239,7 @@ depends-member:
 - !private ["PSo13CAMediaTiming", "duration"]
 - !private ["PSo13CAMediaTiming", "init"]
 - !private ["PSo13CAMediaTiming", "keyPath"]
+- !private ["PSo13CAMediaTiming", "opacity"]
 - !private ["PSo13CAMediaTiming", "path"]
 - !private ["PSo13CAMediaTiming", "repeatCount"]
 - !private ["PSo13CAMediaTiming", "rotationMode"]
@@ -381,6 +384,7 @@ depends-member:
 - ["Ps11CVarArgType", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps11CVarArgType", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps11CVarArgType", "numberOfComponentsInPickerView"]
+- !private ["Ps11CVarArgType", "opacity"]
 - !private ["Ps11CVarArgType", "path"]
 - ["Ps11CVarArgType", "pickerView"]
 - ["Ps11CVarArgType", "postButtonTapped"]
@@ -584,6 +588,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps28CustomDebugStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps28CustomDebugStringConvertible", "numberOfComponentsInPickerView"]
+- !private ["Ps28CustomDebugStringConvertible", "opacity"]
 - !private ["Ps28CustomDebugStringConvertible", "path"]
 - ["Ps28CustomDebugStringConvertible", "pickerView"]
 - ["Ps28CustomDebugStringConvertible", "postButtonTapped"]
@@ -692,6 +697,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps23CustomStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps23CustomStringConvertible", "numberOfComponentsInPickerView"]
+- !private ["Ps23CustomStringConvertible", "opacity"]
 - !private ["Ps23CustomStringConvertible", "path"]
 - ["Ps23CustomStringConvertible", "pickerView"]
 - ["Ps23CustomStringConvertible", "postButtonTapped"]
@@ -807,6 +813,7 @@ depends-member:
 - ["Ps9Equatable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9Equatable", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps9Equatable", "numberOfComponentsInPickerView"]
+- !private ["Ps9Equatable", "opacity"]
 - !private ["Ps9Equatable", "path"]
 - ["Ps9Equatable", "pickerView"]
 - ["Ps9Equatable", "postButtonTapped"]
@@ -921,6 +928,7 @@ depends-member:
 - ["Ps8Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps8Hashable", "navigationControllerSupportedInterfaceOrientations"]
 - ["Ps8Hashable", "numberOfComponentsInPickerView"]
+- !private ["Ps8Hashable", "opacity"]
 - !private ["Ps8Hashable", "path"]
 - ["Ps8Hashable", "pickerView"]
 - ["Ps8Hashable", "postButtonTapped"]
@@ -1044,6 +1052,7 @@ depends-member:
 - ["PSo8NSCoding", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo8NSCoding", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo8NSCoding", "numberOfComponentsInPickerView"]
+- !private ["PSo8NSCoding", "opacity"]
 - !private ["PSo8NSCoding", "path"]
 - ["PSo8NSCoding", "pickerView"]
 - ["PSo8NSCoding", "postButtonTapped"]
@@ -1251,6 +1260,7 @@ depends-member:
 - ["CSo8NSObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo8NSObject", "navigationControllerSupportedInterfaceOrientations"]
 - ["CSo8NSObject", "numberOfComponentsInPickerView"]
+- !private ["CSo8NSObject", "opacity"]
 - !private ["CSo8NSObject", "path"]
 - ["CSo8NSObject", "pickerView"]
 - ["CSo8NSObject", "postButtonTapped"]
@@ -1352,6 +1362,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16NSObjectProtocol", "navigationControllerSupportedInterfaceOrientations"]
 - ["PSo16NSObjectProtocol", "numberOfComponentsInPickerView"]
+- !private ["PSo16NSObjectProtocol", "opacity"]
 - !private ["PSo16NSObjectProtocol", "path"]
 - ["PSo16NSObjectProtocol", "pickerView"]
 - ["PSo16NSObjectProtocol", "postButtonTapped"]

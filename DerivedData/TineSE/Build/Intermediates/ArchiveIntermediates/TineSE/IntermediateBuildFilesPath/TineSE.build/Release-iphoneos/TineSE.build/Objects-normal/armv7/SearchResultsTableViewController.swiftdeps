@@ -9,17 +9,17 @@ provides-dynamic-lookup:
 - "tableView"
 - "tableView"
 - "tableView"
-- "viewDidLoad"
 - "numberOfSectionsInTableView"
+- "viewDidLoad"
 depends-top-level:
+- "UITableViewController"
 - "SearchResultsTableViewController"
-- "UITableViewCell"
-- "NSIndexPath"
-- "Int"
 - "UITableView"
 - "Hunter"
 - !private "StringLiteralType"
-- "UITableViewController"
+- "Int"
+- "NSIndexPath"
+- "UITableViewCell"
 depends-member:
 - ["Ps9AnyObject", "Hunter"]
 - !private ["Ps9AnyObject", "cellForRowAtIndexPath"]

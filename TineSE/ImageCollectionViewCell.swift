@@ -26,10 +26,6 @@ class ImageCollectionViewCell: UICollectionViewCell {
         } else {
             shedImage.downloadImageFrom(link: shed.imageIdentifier, contentMode: .ScaleAspectFit)
             shed.shedImage = shedImage.image
-            if let delegate = delegate {
-                delegate.collectionView.reloadData()
-            }
         }
     }
-    
 }

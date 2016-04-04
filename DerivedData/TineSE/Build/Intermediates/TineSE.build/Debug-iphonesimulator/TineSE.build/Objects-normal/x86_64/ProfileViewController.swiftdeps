@@ -9,83 +9,83 @@ provides-member:
 - ["O6TineSE14FollowingState", ""]
 - ["C6TineSE21ProfileViewController", ""]
 provides-dynamic-lookup:
-- "trackingCount"
-- "chalksCountLabel"
-- "viewDidAppear"
-- "hunterProfileImage"
-- "viewDidLoad"
-- "shedCountLabel"
-- "whitesCountLabel"
-- "kMargin"
-- "flowLayout"
-- "viewLoaded"
 - "shedDeletedUpdateView"
-- "trackersCountLabel"
-- "followButton"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "viewWillDisappear"
-- "updateWithIdentifier"
-- "updateWithHunter"
-- "trackingCountLabel"
-- "followButtonTapped"
 - "brownsCountLabel"
+- "trackingCountLabel"
+- "followButton"
+- "viewWillDisappear"
+- "trackingCount"
+- "updateWithIdentifier"
+- "viewDidAppear"
+- "viewLoaded"
+- "trackersCountLabel"
+- "followButtonTapped"
+- "flowLayout"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
 - "prepareForSegue"
-- "usernameLabel"
 - "viewWillAppear"
+- "kMargin"
+- "whitesCountLabel"
+- "updateWithHunter"
+- "chalksCountLabel"
+- "usernameLabel"
+- "hunterProfileImage"
+- "shedCountLabel"
+- "viewDidLoad"
 depends-top-level:
-- !private "dispatch_group_leave"
-- "UICollectionViewDelegate"
-- "UICollectionViewCell"
-- "String"
 - "UICollectionViewDataSource"
-- !private "dispatch_get_main_queue"
-- !private "Void"
-- !private "-"
-- "Int"
-- "CGSize"
-- "UIStoryboardSegue"
-- !private "UIEdgeInsetsMake"
-- !private "dispatch_group_create"
+- "UIViewController"
+- "UICollectionViewFlowLayout"
 - !private "Array"
-- !private "print"
-- "=="
-- !private "!="
-- !private ">"
+- "ProfileViewController"
+- "Bool"
+- !private "HunterController"
+- "UIImageView"
+- !private "StringLiteralType"
 - "NSIndexPath"
+- "AnyObject"
+- !private "UIColor"
+- !private ">"
+- !private "+"
+- !private "ImageCollectionViewCell"
+- !private "print"
+- "Hunter"
 - !private "dispatch_group_enter"
+- "Int"
 - !private "dispatch_group_notify"
 - !private "CGSizeMake"
-- "Hunter"
-- !private "ImageCollectionViewCell"
-- "UIImageView"
+- !private "ShedController"
+- "UICollectionViewDelegate"
+- "UICollectionViewCell"
+- "=="
 - "UICollectionView"
-- !private "UIColor"
-- !private "HunterController"
-- !private "NSNotificationCenter"
-- "UIButton"
-- "ProfileViewController"
-- !private "StringLiteralType"
+- "CGSize"
+- !private "-"
 - "FollowingState"
 - !private "*"
-- !private "ShedController"
-- "UICollectionViewLayout"
-- "Bool"
-- "UICollectionViewDelegateFlowLayout"
-- "Shed"
-- !private "/"
+- !private "dispatch_group_create"
+- "UIStoryboardSegue"
 - !private "NSThread"
-- "AnyObject"
-- "CGFloat"
-- "UIViewController"
-- !private "+"
-- "UICollectionViewFlowLayout"
+- !private "!="
 - "UILabel"
+- "Shed"
+- !private "UIEdgeInsetsMake"
+- !private "Void"
+- !private "NSNotificationCenter"
+- "UICollectionViewLayout"
+- "UIButton"
+- !private "dispatch_group_leave"
 - "BooleanLiteralType"
+- !private "dispatch_get_main_queue"
+- "CGFloat"
+- "String"
+- !private "/"
+- "UICollectionViewDelegateFlowLayout"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -147,7 +147,6 @@ depends-member:
 - ["Ps9AnyObject", "prepareForSegue"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "reloadData"]
-- !private ["Ps9AnyObject", "reloadInputViews"]
 - !private ["Ps9AnyObject", "row"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
 - ["Ps9AnyObject", "scrollViewDidEndDragging"]
@@ -298,7 +297,6 @@ depends-member:
 - ["Ps11CVarArgType", "prepareForSegue"]
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "reloadData"]
-- !private ["Ps11CVarArgType", "reloadInputViews"]
 - !private ["Ps11CVarArgType", "row"]
 - ["Ps11CVarArgType", "scrollViewDidEndDecelerating"]
 - ["Ps11CVarArgType", "scrollViewDidEndDragging"]
@@ -417,7 +415,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
-- !private ["Ps28CustomDebugStringConvertible", "reloadInputViews"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDragging"]
@@ -524,7 +521,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "prepareForSegue"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
-- !private ["Ps23CustomStringConvertible", "reloadInputViews"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDragging"]
@@ -627,7 +623,6 @@ depends-member:
 - ["Ps9Equatable", "prepareForSegue"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "reloadData"]
-- !private ["Ps9Equatable", "reloadInputViews"]
 - !private ["Ps9Equatable", "row"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
 - ["Ps9Equatable", "scrollViewDidEndDragging"]
@@ -751,7 +746,6 @@ depends-member:
 - ["Ps8Hashable", "prepareForSegue"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "reloadData"]
-- !private ["Ps8Hashable", "reloadInputViews"]
 - !private ["Ps8Hashable", "row"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps8Hashable", "scrollViewDidEndDragging"]
@@ -928,7 +922,6 @@ depends-member:
 - ["PSo8NSCoding", "prepareForSegue"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "reloadData"]
-- !private ["PSo8NSCoding", "reloadInputViews"]
 - !private ["PSo8NSCoding", "row"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
@@ -1111,7 +1104,6 @@ depends-member:
 - ["CSo8NSObject", "prepareForSegue"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "reloadData"]
-- !private ["CSo8NSObject", "reloadInputViews"]
 - !private ["CSo8NSObject", "row"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
@@ -1202,7 +1194,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "prepareForSegue"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
-- !private ["PSo16NSObjectProtocol", "reloadInputViews"]
 - !private ["PSo16NSObjectProtocol", "row"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
@@ -1402,7 +1393,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
-- !private ["PSo29UIAccessibilityIdentification", "reloadInputViews"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "updateWith"]
@@ -1413,7 +1403,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "reloadData"]
-- !private ["PSo12UIAppearance", "reloadInputViews"]
 - !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "updateWith"]
@@ -1457,7 +1446,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "prepareForSegue"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
-- !private ["PSo21UIAppearanceContainer", "reloadInputViews"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1759,7 +1747,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
-- !private ["PSo17UICoordinateSpace", "reloadInputViews"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "updateWith"]
@@ -1770,7 +1757,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
-- !private ["PSo13UIDynamicItem", "reloadInputViews"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "updateWith"]
@@ -1814,7 +1800,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "prepareForSegue"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
-- !private ["PSo18UIFocusEnvironment", "reloadInputViews"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -1912,7 +1897,6 @@ depends-member:
 - ["CSo11UIResponder", "prepareForSegue"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "reloadData"]
-- !private ["CSo11UIResponder", "reloadInputViews"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
 - ["CSo11UIResponder", "scrollViewDidEndScrollingAnimation"]
@@ -2115,7 +2099,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "prepareForSegue"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
-- !private ["PSo18UITraitEnvironment", "reloadInputViews"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndScrollingAnimation"]
@@ -2159,7 +2142,6 @@ depends-member:
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "reloadData"]
-- !private ["CSo6UIView", "reloadInputViews"]
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "updateWith"]
@@ -2345,7 +2327,6 @@ depends-member:
 - !private ["Ps12_Reflectable", "layer"]
 - !private ["Ps12_Reflectable", "lowercaseString"]
 - !private ["Ps12_Reflectable", "reloadData"]
-- !private ["Ps12_Reflectable", "reloadInputViews"]
 - !private ["Ps12_Reflectable", "setTitle"]
 - !private ["Ps12_Reflectable", "sortInPlace"]
 - !private ["Ps12_Reflectable", "subscript"]
@@ -2572,4 +2553,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "1124d3776f3197958169c2e4f4a68e4b"
+interface-hash: "8951ec296205f92e971e9842b9f430ac"

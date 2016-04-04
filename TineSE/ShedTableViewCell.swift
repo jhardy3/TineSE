@@ -47,7 +47,6 @@ class ShedTableViewCell: UITableViewCell {
             shedImageView.image = UIImage(named: "Skull")
             shedImageView.downloadImageFrom(link: shed.imageIdentifier, contentMode: UIViewContentMode.ScaleAspectFit)
             shed.shedImage = shedImageView.image
-            delegate?.tableView.reloadData()
         } else {
             shedImageView.image = shed.shedImage
         }

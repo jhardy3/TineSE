@@ -8,11 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Comment"
-- "AnyObject"
 - !private "Dictionary"
+- "AnyObject"
 - "String"
-- "StringLiteralType"
 - "FirebaseType"
+- "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "bodyText"]
 - !private ["Ps9AnyObject", "bodyTextKey"]

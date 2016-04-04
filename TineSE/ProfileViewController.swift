@@ -21,7 +21,11 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     // Hunter for profile View
     var hunter: Hunter?
-    var sheds =  [Shed]()
+    var sheds =  [Shed]() {
+        didSet {
+            sheds.sortInPlace { $0.0.identifier > $0.1.identifier }
+        }
+    }
     let kMargin = CGFloat(1.0)
     
     // MARK: - IBOutlet Properties
@@ -181,7 +185,6 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         
         dispatch_group_notify(groupNew, dispatch_get_main_queue()) { () -> Void in
             self.viewLoaded = true
-            self.view.reloadInputViews()
             // Checks current hunter for profile hunter ID. If exists sets title to untrack otherwise sets to track
             guard let hunterTrackIDs = HunterController.sharedInstance.currentHunter?.trackingIDs, let hunterID = self.hunter?.identifier  else { return }
             
@@ -222,7 +225,6 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             
             // Once async calls finish reload data
             dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
-                self.sheds.sortInPlace { $0.0.identifier > $0.1.identifier }
                 self.collectionView.reloadData()
             }
         }
@@ -239,7 +241,6 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     func updateWithHunter() {
         if let hunterID = HunterController.sharedInstance.currentHunter?.identifier {
             self.sheds = []
-            self.collectionView.reloadData()
             self.updateWithIdentifier(hunterID)
         }
     }

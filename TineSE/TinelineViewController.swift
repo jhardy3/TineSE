@@ -100,11 +100,13 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     // MARK: - Data Update Functions
     
     func updateTableViewWithShed(shed: Shed) {
-        self.sheds.append(shed)
-        
-        self.tableView.beginUpdates()
-        self.tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: self.sheds.count - 1, inSection: 0)], withRowAnimation: .Automatic)
-        self.tableView.endUpdates()
+        if !currentViewIsLocal {
+            self.sheds.append(shed)
+            
+            self.tableView.beginUpdates()
+            self.tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: self.sheds.count - 1, inSection: 0)], withRowAnimation: .Automatic)
+            self.tableView.endUpdates()
+        }
     }
     
     func grabSheds() {
