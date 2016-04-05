@@ -16,9 +16,10 @@ class ShedDetailViewController: UIViewController {
     
     var shed: Shed?
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        shedColorLabel.textColor = UIColor.hunterOrange()
+        shedTypeLabel.textColor = UIColor.hunterOrange()
         if let shed = shed {
             updateWithShed(shed)
         }

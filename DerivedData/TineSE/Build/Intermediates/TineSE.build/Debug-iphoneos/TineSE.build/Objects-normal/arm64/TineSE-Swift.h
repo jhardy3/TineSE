@@ -166,6 +166,7 @@ SWIFT_CLASS("_TtC6TineSE20CameraViewController")
 - (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 - (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)errorAlert:(NSArray<NSString *> * _Nonnull)errorMessages addCancel:(BOOL)addCancel addMessage:(NSString * _Nullable)addMessage;
 - (void)createAnimation;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -292,10 +293,9 @@ SWIFT_CLASS("_TtC6TineSE25SearchTableViewController")
 
 SWIFT_CLASS("_TtC6TineSE24ShedDetailViewController")
 @interface ShedDetailViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified shedImageView;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedTypeLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedColorLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedTypeLabel;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -310,8 +310,6 @@ SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameTextField;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified shedImageView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified reportButton;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedTypeTextLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedColorTextLabel;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (void)prepareForReuse;
 - (IBAction)utilitiesButtonTapped:(UIButton * _Nonnull)sender;
@@ -402,10 +400,12 @@ SWIFT_CLASS("_TtC6TineSE19logInViewController")
 - (void)endAnimation;
 - (void)signIn;
 - (void)signUp;
+- (BOOL)checkForEmptiness:(NSString * _Nonnull)string;
 - (void)displayBasedOnViewMode;
 - (void)setupTextFields;
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
+- (void)errorAlert:(NSArray<NSString *> * _Nonnull)errorMessages addCancel:(BOOL)addCancel addMessage:(NSString * _Nullable)addMessage;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

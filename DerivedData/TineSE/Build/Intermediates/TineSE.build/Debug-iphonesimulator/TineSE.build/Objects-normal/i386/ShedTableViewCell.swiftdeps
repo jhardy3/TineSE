@@ -7,37 +7,35 @@ provides-member:
 - ["C6TineSE17ShedTableViewCell", ""]
 provides-dynamic-lookup:
 - "reportButton"
-- "setSelected"
-- "delegate"
-- "shedTypeTextLabel"
 - "usernameTextField"
-- "prepareForReuse"
-- "utilitiesButtonTapped"
+- "setSelected"
 - "shedImageView"
-- "shedColorTextLabel"
+- "delegate"
+- "utilitiesButtonTapped"
+- "prepareForReuse"
 depends-top-level:
-- !private "BooleanLiteralType"
-- !private "Void"
-- !private "ShedController"
-- !private "HunterController"
-- !private "FirebaseController"
-- !private "UIImage"
 - !private "NSNotificationCenter"
-- !private "dispatch_async"
-- !private "dispatch_get_main_queue"
-- "TinelineViewController"
-- !private "UIAlertController"
 - "Bool"
-- !private "UIViewContentMode"
-- "Shed"
-- "UILabel"
-- !private "StringLiteralType"
-- !private "UIAlertAction"
-- "UITableViewCell"
-- "UIImageView"
+- !private "HunterController"
+- !private "UIImage"
 - !private "=="
+- !private "UIAlertController"
+- !private "StringLiteralType"
+- "Shed"
+- "TinelineViewController"
+- !private "dispatch_get_main_queue"
 - "UIButton"
 - "ShedTableViewCell"
+- !private "UIAlertAction"
+- !private "ShedController"
+- !private "FirebaseController"
+- !private "dispatch_async"
+- !private "UIViewContentMode"
+- "UITableViewCell"
+- !private "Void"
+- "UILabel"
+- "UIImageView"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "FirebaseController"]
 - !private ["Ps9AnyObject", "HunterController"]
@@ -77,12 +75,8 @@ depends-member:
 - !private ["Ps9AnyObject", "setValue"]
 - !private ["Ps9AnyObject", "sharedInstance"]
 - ["Ps9AnyObject", "shed"]
-- !private ["Ps9AnyObject", "shedColor"]
-- ["Ps9AnyObject", "shedColorTextLabel"]
 - !private ["Ps9AnyObject", "shedImage"]
 - ["Ps9AnyObject", "shedImageView"]
-- !private ["Ps9AnyObject", "shedType"]
-- ["Ps9AnyObject", "shedTypeTextLabel"]
 - !private ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "trackingSheds"]
@@ -132,9 +126,7 @@ depends-member:
 - ["Ps11CVarArgType", "setSelected"]
 - !private ["Ps11CVarArgType", "setValue"]
 - ["Ps11CVarArgType", "shed"]
-- ["Ps11CVarArgType", "shedColorTextLabel"]
 - ["Ps11CVarArgType", "shedImageView"]
-- ["Ps11CVarArgType", "shedTypeTextLabel"]
 - !private ["Ps11CVarArgType", "tableView"]
 - !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "trackingSheds"]
@@ -178,9 +170,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "setSelected"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
 - ["Ps28CustomDebugStringConvertible", "shed"]
-- ["Ps28CustomDebugStringConvertible", "shedColorTextLabel"]
 - ["Ps28CustomDebugStringConvertible", "shedImageView"]
-- ["Ps28CustomDebugStringConvertible", "shedTypeTextLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "trackingSheds"]
@@ -220,9 +210,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "setSelected"]
 - !private ["Ps23CustomStringConvertible", "setValue"]
 - ["Ps23CustomStringConvertible", "shed"]
-- ["Ps23CustomStringConvertible", "shedColorTextLabel"]
 - ["Ps23CustomStringConvertible", "shedImageView"]
-- ["Ps23CustomStringConvertible", "shedTypeTextLabel"]
 - !private ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "trackingSheds"]
@@ -266,9 +254,7 @@ depends-member:
 - ["Ps9Equatable", "setSelected"]
 - !private ["Ps9Equatable", "setValue"]
 - ["Ps9Equatable", "shed"]
-- ["Ps9Equatable", "shedColorTextLabel"]
 - ["Ps9Equatable", "shedImageView"]
-- ["Ps9Equatable", "shedTypeTextLabel"]
 - !private ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "trackingSheds"]
@@ -286,9 +272,7 @@ depends-member:
 - !private ["P6TineSE12FirebaseType", "hunterIdentifier"]
 - !private ["P6TineSE12FirebaseType", "identifier"]
 - !private ["P6TineSE12FirebaseType", "imageIdentifier"]
-- !private ["P6TineSE12FirebaseType", "shedColor"]
 - !private ["P6TineSE12FirebaseType", "shedImage"]
-- !private ["P6TineSE12FirebaseType", "shedType"]
 - !private ["P6TineSE12FirebaseType", "username"]
 - !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "ActionSheet"]
@@ -326,9 +310,7 @@ depends-member:
 - ["Ps8Hashable", "setSelected"]
 - !private ["Ps8Hashable", "setValue"]
 - ["Ps8Hashable", "shed"]
-- ["Ps8Hashable", "shedColorTextLabel"]
 - ["Ps8Hashable", "shedImageView"]
-- ["Ps8Hashable", "shedTypeTextLabel"]
 - !private ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "trackingSheds"]
@@ -378,9 +360,7 @@ depends-member:
 - !private ["PSo8NSCoding", "row"]
 - ["PSo8NSCoding", "setSelected"]
 - ["PSo8NSCoding", "shed"]
-- ["PSo8NSCoding", "shedColorTextLabel"]
 - ["PSo8NSCoding", "shedImageView"]
-- ["PSo8NSCoding", "shedTypeTextLabel"]
 - !private ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "trackingSheds"]
@@ -438,9 +418,7 @@ depends-member:
 - ["CSo8NSObject", "setSelected"]
 - !private ["CSo8NSObject", "setValue"]
 - ["CSo8NSObject", "shed"]
-- ["CSo8NSObject", "shedColorTextLabel"]
 - ["CSo8NSObject", "shedImageView"]
-- ["CSo8NSObject", "shedTypeTextLabel"]
 - !private ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "trackingSheds"]
@@ -477,9 +455,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "setSelected"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
 - ["PSo16NSObjectProtocol", "shed"]
-- ["PSo16NSObjectProtocol", "shedColorTextLabel"]
 - ["PSo16NSObjectProtocol", "shedImageView"]
-- ["PSo16NSObjectProtocol", "shedTypeTextLabel"]
 - !private ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "trackingSheds"]
@@ -507,9 +483,7 @@ depends-member:
 - !private ["C6TineSE4Shed", "hunterIdentifier"]
 - !private ["C6TineSE4Shed", "identifier"]
 - !private ["C6TineSE4Shed", "imageIdentifier"]
-- !private ["C6TineSE4Shed", "shedColor"]
 - !private ["C6TineSE4Shed", "shedImage"]
-- !private ["C6TineSE4Shed", "shedType"]
 - !private ["C6TineSE4Shed", "username"]
 - !private ["C6TineSE14ShedController", "deleteShed"]
 - ["C6TineSE17ShedTableViewCell", "Bool"]
@@ -536,9 +510,7 @@ depends-member:
 - ["C6TineSE17ShedTableViewCell", "reportButton"]
 - ["C6TineSE17ShedTableViewCell", "setSelected"]
 - ["C6TineSE17ShedTableViewCell", "shed"]
-- ["C6TineSE17ShedTableViewCell", "shedColorTextLabel"]
 - ["C6TineSE17ShedTableViewCell", "shedImageView"]
-- ["C6TineSE17ShedTableViewCell", "shedTypeTextLabel"]
 - ["C6TineSE17ShedTableViewCell", "updateWith"]
 - ["C6TineSE17ShedTableViewCell", "usernameTextField"]
 - ["C6TineSE17ShedTableViewCell", "utilitiesButtonTapped"]
@@ -576,9 +548,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "reportButton"]
 - ["PSo29UIAccessibilityIdentification", "setSelected"]
 - ["PSo29UIAccessibilityIdentification", "shed"]
-- ["PSo29UIAccessibilityIdentification", "shedColorTextLabel"]
 - ["PSo29UIAccessibilityIdentification", "shedImageView"]
-- ["PSo29UIAccessibilityIdentification", "shedTypeTextLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - ["PSo29UIAccessibilityIdentification", "updateWith"]
 - ["PSo29UIAccessibilityIdentification", "usernameTextField"]
@@ -611,9 +581,7 @@ depends-member:
 - ["PSo12UIAppearance", "reportButton"]
 - ["PSo12UIAppearance", "setSelected"]
 - ["PSo12UIAppearance", "shed"]
-- ["PSo12UIAppearance", "shedColorTextLabel"]
 - ["PSo12UIAppearance", "shedImageView"]
-- ["PSo12UIAppearance", "shedTypeTextLabel"]
 - !private ["PSo12UIAppearance", "text"]
 - ["PSo12UIAppearance", "updateWith"]
 - ["PSo12UIAppearance", "usernameTextField"]
@@ -642,9 +610,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "reportButton"]
 - ["PSo21UIAppearanceContainer", "setSelected"]
 - ["PSo21UIAppearanceContainer", "shed"]
-- ["PSo21UIAppearanceContainer", "shedColorTextLabel"]
 - ["PSo21UIAppearanceContainer", "shedImageView"]
-- ["PSo21UIAppearanceContainer", "shedTypeTextLabel"]
 - !private ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "trackingSheds"]
@@ -680,9 +646,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "reportButton"]
 - ["PSo17UICoordinateSpace", "setSelected"]
 - ["PSo17UICoordinateSpace", "shed"]
-- ["PSo17UICoordinateSpace", "shedColorTextLabel"]
 - ["PSo17UICoordinateSpace", "shedImageView"]
-- ["PSo17UICoordinateSpace", "shedTypeTextLabel"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - ["PSo17UICoordinateSpace", "updateWith"]
 - ["PSo17UICoordinateSpace", "usernameTextField"]
@@ -709,9 +673,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "reportButton"]
 - ["PSo13UIDynamicItem", "setSelected"]
 - ["PSo13UIDynamicItem", "shed"]
-- ["PSo13UIDynamicItem", "shedColorTextLabel"]
 - ["PSo13UIDynamicItem", "shedImageView"]
-- ["PSo13UIDynamicItem", "shedTypeTextLabel"]
 - !private ["PSo13UIDynamicItem", "text"]
 - ["PSo13UIDynamicItem", "updateWith"]
 - ["PSo13UIDynamicItem", "usernameTextField"]
@@ -740,9 +702,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "reportButton"]
 - ["PSo18UIFocusEnvironment", "setSelected"]
 - ["PSo18UIFocusEnvironment", "shed"]
-- ["PSo18UIFocusEnvironment", "shedColorTextLabel"]
 - ["PSo18UIFocusEnvironment", "shedImageView"]
-- ["PSo18UIFocusEnvironment", "shedTypeTextLabel"]
 - !private ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "trackingSheds"]
@@ -766,9 +726,7 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", "reportButton"]
 - ["PSo27UIGestureRecognizerDelegate", "setSelected"]
 - ["PSo27UIGestureRecognizerDelegate", "shed"]
-- ["PSo27UIGestureRecognizerDelegate", "shedColorTextLabel"]
 - ["PSo27UIGestureRecognizerDelegate", "shedImageView"]
-- ["PSo27UIGestureRecognizerDelegate", "shedTypeTextLabel"]
 - ["PSo27UIGestureRecognizerDelegate", "updateWith"]
 - ["PSo27UIGestureRecognizerDelegate", "usernameTextField"]
 - ["PSo27UIGestureRecognizerDelegate", "utilitiesButtonTapped"]
@@ -807,9 +765,7 @@ depends-member:
 - ["CSo11UIResponder", "reportButton"]
 - ["CSo11UIResponder", "setSelected"]
 - ["CSo11UIResponder", "shed"]
-- ["CSo11UIResponder", "shedColorTextLabel"]
 - ["CSo11UIResponder", "shedImageView"]
-- ["CSo11UIResponder", "shedTypeTextLabel"]
 - !private ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "trackingSheds"]
@@ -851,9 +807,7 @@ depends-member:
 - ["CSo15UITableViewCell", "reportButton"]
 - ["CSo15UITableViewCell", "setSelected"]
 - ["CSo15UITableViewCell", "shed"]
-- ["CSo15UITableViewCell", "shedColorTextLabel"]
 - ["CSo15UITableViewCell", "shedImageView"]
-- ["CSo15UITableViewCell", "shedTypeTextLabel"]
 - ["CSo15UITableViewCell", "updateWith"]
 - ["CSo15UITableViewCell", "usernameTextField"]
 - ["CSo15UITableViewCell", "utilitiesButtonTapped"]
@@ -887,9 +841,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "reportButton"]
 - ["PSo18UITraitEnvironment", "setSelected"]
 - ["PSo18UITraitEnvironment", "shed"]
-- ["PSo18UITraitEnvironment", "shedColorTextLabel"]
 - ["PSo18UITraitEnvironment", "shedImageView"]
-- ["PSo18UITraitEnvironment", "shedTypeTextLabel"]
 - !private ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "trackingSheds"]
@@ -925,9 +877,7 @@ depends-member:
 - ["CSo6UIView", "reportButton"]
 - ["CSo6UIView", "setSelected"]
 - ["CSo6UIView", "shed"]
-- ["CSo6UIView", "shedColorTextLabel"]
 - ["CSo6UIView", "shedImageView"]
-- ["CSo6UIView", "shedTypeTextLabel"]
 - !private ["CSo6UIView", "text"]
 - ["CSo6UIView", "updateWith"]
 - ["CSo6UIView", "usernameTextField"]
@@ -988,9 +938,7 @@ depends-member:
 - ["Ps12_Reflectable", "reportButton"]
 - ["Ps12_Reflectable", "setSelected"]
 - ["Ps12_Reflectable", "shed"]
-- ["Ps12_Reflectable", "shedColorTextLabel"]
 - ["Ps12_Reflectable", "shedImageView"]
-- ["Ps12_Reflectable", "shedTypeTextLabel"]
 - !private ["Ps12_Reflectable", "text"]
 - ["Ps12_Reflectable", "updateWith"]
 - ["Ps12_Reflectable", "usernameTextField"]
@@ -1196,4 +1144,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "006b1752fa6c956dbbc4a259cdf06644"
+interface-hash: "485ba302d994d435d68779db0f5ed7e4"

@@ -19,8 +19,6 @@ class ShedTableViewCell: UITableViewCell {
     @IBOutlet weak var shedImageView: UIImageView!
     
     @IBOutlet weak var reportButton: UIButton!
-    @IBOutlet weak var shedTypeTextLabel: UILabel!
-    @IBOutlet weak var shedColorTextLabel: UILabel!
     
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -54,10 +52,7 @@ class ShedTableViewCell: UITableViewCell {
         self.reportButton.layer.opacity = 0.3
         
         // Set usernameTextField text to passed in shed username
-        self.shedColorTextLabel.text = "Shed Color: \(shed.shedColor)"
-        self.shedTypeTextLabel.text = "Shed Type: \(shed.shedType)"
         self.usernameTextField.text = shed.username.lowercaseString
-        
     }
     
     @IBAction func utilitiesButtonTapped(sender: UIButton) {

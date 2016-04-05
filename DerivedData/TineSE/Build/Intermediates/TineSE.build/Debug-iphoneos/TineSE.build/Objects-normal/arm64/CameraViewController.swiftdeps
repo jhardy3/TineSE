@@ -6,86 +6,91 @@ provides-nominal:
 provides-member:
 - ["C6TineSE20CameraViewController", ""]
 provides-dynamic-lookup:
-- "shedColorPickerView"
-- "numberOfComponentsInPickerView"
+- "displayCamera"
+- "shedColor"
+- "viewDidAppear"
+- "crosshairButton"
 - "textFieldShouldReturn"
 - "textViewDidEndEditing"
-- "imagePickerController"
-- "clearShedButton"
-- "clearShedTapped"
-- "image"
-- "shedImageView"
-- "tapGestureTapped"
-- "viewDidAppear"
-- "firedOnce"
-- "shedColor"
-- "postButtonTapped"
-- "postButtonTapped"
-- "crosshairButton"
-- "createAnimation"
-- "shedType"
 - "shedTypePickerView"
+- "postButtonTapped"
+- "postButtonTapped"
+- "image"
+- "errorAlert"
+- "imagePickerController"
 - "imagePickerControllerDidCancel"
-- "locationManager"
-- "locationManager"
-- "locationManager"
-- "viewDidLoad"
+- "clearShedButton"
+- "shedImageView"
+- "numberOfComponentsInPickerView"
+- "firedOnce"
+- "tapGestureTapped"
+- "shedColorPickerView"
 - "viewWillAppear"
+- "viewDidLoad"
+- "clearShedTapped"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "locationManager"
+- "locationManager"
+- "locationManager"
+- "shedType"
+- "createAnimation"
 - "shedView"
-- "pickerView"
-- "pickerView"
-- "pickerView"
-- "displayCamera"
 depends-top-level:
-- "UIImageView"
-- !private "UIColor"
-- !private "kCAAnimationRotateAuto"
-- !private "CGRectMake"
-- "UIImage"
-- !private "kCLLocationAccuracyBest"
-- "UIPickerViewDelegate"
-- "UIPickerView"
-- !private "print"
-- "UIPickerViewDataSource"
-- !private "UIImagePickerControllerOriginalImage"
-- "NSError"
-- "Bool"
 - "UITextViewDelegate"
-- !private "dispatch_async"
-- !private "CGPathCreateWithEllipseInRect"
-- !private "HunterController"
-- "UINavigationControllerDelegate"
-- "String"
-- "UITapGestureRecognizer"
-- !private "=="
-- "UIImagePickerControllerDelegate"
-- !private "dispatch_get_main_queue"
-- !private "~="
-- !private "==="
-- "CameraViewController"
-- "UIButton"
-- !private "dispatch_queue_create"
-- !private "NSNotificationCenter"
 - "UIView"
-- !private "LocationController"
-- !private "Void"
-- "AnyObject"
-- !private "!"
+- "UIImagePickerControllerDelegate"
+- !private "??"
+- !private "kCAAnimationRotateAuto"
+- "UIViewController"
+- "UINavigationControllerDelegate"
+- "UIPickerViewDelegate"
 - "UITextView"
-- !private "ImageUitilies"
-- "CLLocation"
-- "UITextField"
-- "Int"
-- "CLLocationManagerDelegate"
+- "AnyObject"
+- "UIPickerViewDataSource"
+- "StringLiteralType"
+- !private "CAKeyframeAnimation"
+- !private "==="
+- "UIImageView"
+- !private "CGPathCreateWithEllipseInRect"
+- !private "!"
 - !private "&&"
-- "BooleanLiteralType"
+- "CameraViewController"
+- "UITextField"
+- "Bool"
+- "UIImagePickerController"
+- !private "UIImagePickerControllerOriginalImage"
+- !private "Void"
+- !private "UIAlertController"
+- "CLLocationManagerDelegate"
+- !private "print"
+- !private "=="
+- !private "~="
+- "String"
+- !private "kCLLocationAccuracyBest"
+- !private "dispatch_get_main_queue"
+- "UIPickerView"
+- "CLLocation"
+- !private "dispatch_async"
+- "Array"
+- !private "UIColor"
+- !private "NSNotificationCenter"
+- !private "Float"
+- "UIButton"
+- "NSError"
+- !private "HunterController"
+- !private "CGRectMake"
+- "Int"
+- !private "dispatch_queue_create"
 - "CLLocationManager"
 - !private "ShedController"
-- "StringLiteralType"
-- "UIViewController"
-- !private "CAKeyframeAnimation"
-- "UIImagePickerController"
-- !private "Float"
+- "UIImage"
+- !private "UIAlertAction"
+- "UITapGestureRecognizer"
+- !private "ImageUitilies"
+- "BooleanLiteralType"
+- !private "LocationController"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "infinity"]
 - !private ["Ps9AnyObject", "CAKeyframeAnimation"]
@@ -99,10 +104,13 @@ depends-member:
 - !private ["Ps9AnyObject", "LocationController"]
 - !private ["Ps9AnyObject", "NSNotificationCenter"]
 - !private ["Ps9AnyObject", "ShedController"]
+- !private ["Ps9AnyObject", "UIAlertAction"]
+- !private ["Ps9AnyObject", "UIAlertController"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "UIImagePickerController"]
 - !private ["Ps9AnyObject", "UIImagePickerControllerOriginalImage"]
+- !private ["Ps9AnyObject", "addAction"]
 - !private ["Ps9AnyObject", "addAnimation"]
 - !private ["Ps9AnyObject", "additive"]
 - !private ["Ps9AnyObject", "borderColor"]
@@ -124,7 +132,9 @@ depends-member:
 - !private ["Ps9AnyObject", "dispatch_queue_create"]
 - ["Ps9AnyObject", "displayCamera"]
 - !private ["Ps9AnyObject", "duration"]
+- ["Ps9AnyObject", "errorAlert"]
 - ["Ps9AnyObject", "firedOnce"]
+- !private ["Ps9AnyObject", "hidden"]
 - !private ["Ps9AnyObject", "hunterOrange"]
 - !private ["Ps9AnyObject", "identifier"]
 - ["Ps9AnyObject", "image"]
@@ -196,7 +206,19 @@ depends-member:
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
 - ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
 - !private ["Ps23ArrayLiteralConvertible", "Normal"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
 - !private ["Ps22BidirectionalIndexType", "Distance"]
 - !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["Ps21BitwiseOperationsType", "Distance"]
@@ -269,6 +291,8 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "LocationController"]
 - !private ["PSo25CLLocationManagerDelegate", "NSNotificationCenter"]
 - !private ["PSo25CLLocationManagerDelegate", "ShedController"]
+- !private ["PSo25CLLocationManagerDelegate", "UIAlertAction"]
+- !private ["PSo25CLLocationManagerDelegate", "UIAlertController"]
 - !private ["PSo25CLLocationManagerDelegate", "UIColor"]
 - !private ["PSo25CLLocationManagerDelegate", "UIImage"]
 - !private ["PSo25CLLocationManagerDelegate", "UIImagePickerController"]
@@ -281,6 +305,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_queue_create"]
 - !private ["PSo25CLLocationManagerDelegate", "displayCamera"]
+- !private ["PSo25CLLocationManagerDelegate", "errorAlert"]
 - !private ["PSo25CLLocationManagerDelegate", "firedOnce"]
 - !private ["PSo25CLLocationManagerDelegate", "image"]
 - ["PSo25CLLocationManagerDelegate", "imagePickerController"]
@@ -340,10 +365,13 @@ depends-member:
 - !private ["Ps11CVarArgType", "LocationController"]
 - !private ["Ps11CVarArgType", "NSNotificationCenter"]
 - !private ["Ps11CVarArgType", "ShedController"]
+- !private ["Ps11CVarArgType", "UIAlertAction"]
+- !private ["Ps11CVarArgType", "UIAlertController"]
 - !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIImage"]
 - !private ["Ps11CVarArgType", "UIImagePickerController"]
 - !private ["Ps11CVarArgType", "UIImagePickerControllerOriginalImage"]
+- !private ["Ps11CVarArgType", "addAction"]
 - !private ["Ps11CVarArgType", "addAnimation"]
 - !private ["Ps11CVarArgType", "additive"]
 - !private ["Ps11CVarArgType", "borderColor"]
@@ -363,7 +391,9 @@ depends-member:
 - !private ["Ps11CVarArgType", "dispatch_queue_create"]
 - ["Ps11CVarArgType", "displayCamera"]
 - !private ["Ps11CVarArgType", "duration"]
+- ["Ps11CVarArgType", "errorAlert"]
 - ["Ps11CVarArgType", "firedOnce"]
+- !private ["Ps11CVarArgType", "hidden"]
 - !private ["Ps11CVarArgType", "hunterOrange"]
 - ["Ps11CVarArgType", "image"]
 - ["Ps11CVarArgType", "imagePickerController"]
@@ -449,6 +479,8 @@ depends-member:
 - !private ["C6TineSE20CameraViewController", "NSNotificationCenter"]
 - !private ["C6TineSE20CameraViewController", "ShedController"]
 - ["C6TineSE20CameraViewController", "String"]
+- !private ["C6TineSE20CameraViewController", "UIAlertAction"]
+- !private ["C6TineSE20CameraViewController", "UIAlertController"]
 - ["C6TineSE20CameraViewController", "UIButton"]
 - !private ["C6TineSE20CameraViewController", "UIColor"]
 - ["C6TineSE20CameraViewController", "UIImage"]
@@ -472,6 +504,7 @@ depends-member:
 - !private ["C6TineSE20CameraViewController", "dispatch_get_main_queue"]
 - !private ["C6TineSE20CameraViewController", "dispatch_queue_create"]
 - ["C6TineSE20CameraViewController", "displayCamera"]
+- ["C6TineSE20CameraViewController", "errorAlert"]
 - ["C6TineSE20CameraViewController", "firedOnce"]
 - ["C6TineSE20CameraViewController", "image"]
 - ["C6TineSE20CameraViewController", "imagePickerController"]
@@ -523,6 +556,7 @@ depends-member:
 - ["C6TineSE20CameraViewController", "viewDidLoad"]
 - ["C6TineSE20CameraViewController", "viewForZoomingInScrollView"]
 - ["C6TineSE20CameraViewController", "viewWillAppear"]
+- !private ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
 - !private ["Ps14CollectionType", "SubSequence"]
@@ -536,7 +570,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "CGPathCreateWithEllipseInRect"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRectMake"]
 - !private ["Ps28CustomDebugStringConvertible", "CLLocationManager"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Float"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "HunterController"]
 - !private ["Ps28CustomDebugStringConvertible", "ImageUitilies"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
@@ -544,10 +580,15 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSNotificationCenter"]
 - !private ["Ps28CustomDebugStringConvertible", "ShedController"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImagePickerController"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImagePickerControllerOriginalImage"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - !private ["Ps28CustomDebugStringConvertible", "addAnimation"]
 - !private ["Ps28CustomDebugStringConvertible", "additive"]
 - !private ["Ps28CustomDebugStringConvertible", "borderColor"]
@@ -567,7 +608,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "dispatch_queue_create"]
 - ["Ps28CustomDebugStringConvertible", "displayCamera"]
 - !private ["Ps28CustomDebugStringConvertible", "duration"]
+- ["Ps28CustomDebugStringConvertible", "errorAlert"]
 - ["Ps28CustomDebugStringConvertible", "firedOnce"]
+- !private ["Ps28CustomDebugStringConvertible", "hidden"]
 - !private ["Ps28CustomDebugStringConvertible", "hunterOrange"]
 - ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "imagePickerController"]
@@ -644,7 +687,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "CGRectMake"]
 - !private ["Ps23CustomStringConvertible", "CLLocationManager"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Float"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "HunterController"]
 - !private ["Ps23CustomStringConvertible", "ImageUitilies"]
 - !private ["Ps23CustomStringConvertible", "Index"]
@@ -652,11 +697,16 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "LocationController"]
 - !private ["Ps23CustomStringConvertible", "NSNotificationCenter"]
 - !private ["Ps23CustomStringConvertible", "ShedController"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIAlertAction"]
+- !private ["Ps23CustomStringConvertible", "UIAlertController"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "UIImagePickerController"]
 - !private ["Ps23CustomStringConvertible", "UIImagePickerControllerOriginalImage"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addAction"]
 - !private ["Ps23CustomStringConvertible", "addAnimation"]
 - !private ["Ps23CustomStringConvertible", "additive"]
 - !private ["Ps23CustomStringConvertible", "borderColor"]
@@ -676,7 +726,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "dispatch_queue_create"]
 - ["Ps23CustomStringConvertible", "displayCamera"]
 - !private ["Ps23CustomStringConvertible", "duration"]
+- ["Ps23CustomStringConvertible", "errorAlert"]
 - ["Ps23CustomStringConvertible", "firedOnce"]
+- !private ["Ps23CustomStringConvertible", "hidden"]
 - !private ["Ps23CustomStringConvertible", "hunterOrange"]
 - ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "imagePickerController"]
@@ -753,12 +805,15 @@ depends-member:
 - !private ["Ps28DictionaryLiteralConvertible", "Index"]
 - !private ["Ps28DictionaryLiteralConvertible", "subscript"]
 - !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Alert"]
 - !private ["Ps9Equatable", "CAKeyframeAnimation"]
 - !private ["Ps9Equatable", "CGColor"]
 - !private ["Ps9Equatable", "CGPathCreateWithEllipseInRect"]
 - !private ["Ps9Equatable", "CGRectMake"]
 - !private ["Ps9Equatable", "CLLocationManager"]
 - !private ["Ps9Equatable", "Camera"]
+- !private ["Ps9Equatable", "Default"]
+- !private ["Ps9Equatable", "Destructive"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "Float"]
 - !private ["Ps9Equatable", "HunterController"]
@@ -768,11 +823,14 @@ depends-member:
 - !private ["Ps9Equatable", "NSNotificationCenter"]
 - !private ["Ps9Equatable", "Normal"]
 - !private ["Ps9Equatable", "ShedController"]
+- !private ["Ps9Equatable", "UIAlertAction"]
+- !private ["Ps9Equatable", "UIAlertController"]
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "UIImagePickerController"]
 - !private ["Ps9Equatable", "UIImagePickerControllerOriginalImage"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addAction"]
 - !private ["Ps9Equatable", "addAnimation"]
 - !private ["Ps9Equatable", "additive"]
 - !private ["Ps9Equatable", "borderColor"]
@@ -792,7 +850,9 @@ depends-member:
 - !private ["Ps9Equatable", "dispatch_queue_create"]
 - ["Ps9Equatable", "displayCamera"]
 - !private ["Ps9Equatable", "duration"]
+- ["Ps9Equatable", "errorAlert"]
 - ["Ps9Equatable", "firedOnce"]
+- !private ["Ps9Equatable", "hidden"]
 - !private ["Ps9Equatable", "hunterOrange"]
 - ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "imagePickerController"]
@@ -869,12 +929,15 @@ depends-member:
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "Alert"]
 - !private ["Ps8Hashable", "CAKeyframeAnimation"]
 - !private ["Ps8Hashable", "CGColor"]
 - !private ["Ps8Hashable", "CGPathCreateWithEllipseInRect"]
 - !private ["Ps8Hashable", "CGRectMake"]
 - !private ["Ps8Hashable", "CLLocationManager"]
 - !private ["Ps8Hashable", "Camera"]
+- !private ["Ps8Hashable", "Default"]
+- !private ["Ps8Hashable", "Destructive"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "Float"]
 - !private ["Ps8Hashable", "HunterController"]
@@ -883,11 +946,14 @@ depends-member:
 - !private ["Ps8Hashable", "LocationController"]
 - !private ["Ps8Hashable", "NSNotificationCenter"]
 - !private ["Ps8Hashable", "ShedController"]
+- !private ["Ps8Hashable", "UIAlertAction"]
+- !private ["Ps8Hashable", "UIAlertController"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "UIImagePickerController"]
 - !private ["Ps8Hashable", "UIImagePickerControllerOriginalImage"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addAction"]
 - !private ["Ps8Hashable", "addAnimation"]
 - !private ["Ps8Hashable", "additive"]
 - !private ["Ps8Hashable", "borderColor"]
@@ -907,7 +973,9 @@ depends-member:
 - !private ["Ps8Hashable", "dispatch_queue_create"]
 - ["Ps8Hashable", "displayCamera"]
 - !private ["Ps8Hashable", "duration"]
+- ["Ps8Hashable", "errorAlert"]
 - ["Ps8Hashable", "firedOnce"]
+- !private ["Ps8Hashable", "hidden"]
 - !private ["Ps8Hashable", "hunterOrange"]
 - ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "imagePickerController"]
@@ -983,6 +1051,7 @@ depends-member:
 - !private ["C6TineSE16HunterController", "sharedInstance"]
 - !private ["C6TineSE13ImageUitilies", "cropToSquare"]
 - !private ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "SubSequence"]
@@ -1002,6 +1071,21 @@ depends-member:
 - !private ["C6TineSE18LocationController", "setLocation"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableSliceable", "Element"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
 - !private ["PSo8NSCoding", "CAKeyframeAnimation"]
 - !private ["PSo8NSCoding", "CGColor"]
 - !private ["PSo8NSCoding", "CGPathCreateWithEllipseInRect"]
@@ -1013,10 +1097,13 @@ depends-member:
 - !private ["PSo8NSCoding", "LocationController"]
 - !private ["PSo8NSCoding", "NSNotificationCenter"]
 - !private ["PSo8NSCoding", "ShedController"]
+- !private ["PSo8NSCoding", "UIAlertAction"]
+- !private ["PSo8NSCoding", "UIAlertController"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIImagePickerController"]
 - !private ["PSo8NSCoding", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo8NSCoding", "addAction"]
 - !private ["PSo8NSCoding", "addAnimation"]
 - !private ["PSo8NSCoding", "additive"]
 - !private ["PSo8NSCoding", "borderColor"]
@@ -1033,7 +1120,9 @@ depends-member:
 - !private ["PSo8NSCoding", "dispatch_queue_create"]
 - ["PSo8NSCoding", "displayCamera"]
 - !private ["PSo8NSCoding", "duration"]
+- ["PSo8NSCoding", "errorAlert"]
 - ["PSo8NSCoding", "firedOnce"]
+- !private ["PSo8NSCoding", "hidden"]
 - !private ["PSo8NSCoding", "hunterOrange"]
 - ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "imagePickerController"]
@@ -1118,10 +1207,13 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "LocationController"]
 - !private ["PSo26NSExtensionRequestHandling", "NSNotificationCenter"]
 - !private ["PSo26NSExtensionRequestHandling", "ShedController"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImagePickerController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - ["PSo26NSExtensionRequestHandling", "clearShedButton"]
 - ["PSo26NSExtensionRequestHandling", "clearShedTapped"]
 - ["PSo26NSExtensionRequestHandling", "createAnimation"]
@@ -1133,6 +1225,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_queue_create"]
 - ["PSo26NSExtensionRequestHandling", "displayCamera"]
+- ["PSo26NSExtensionRequestHandling", "errorAlert"]
 - ["PSo26NSExtensionRequestHandling", "firedOnce"]
 - ["PSo26NSExtensionRequestHandling", "image"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerController"]
@@ -1208,6 +1301,8 @@ depends-member:
 - !private ["CSo8NSObject", "NSNotificationCenter"]
 - !private ["CSo8NSObject", "ShedController"]
 - ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIAlertAction"]
+- !private ["CSo8NSObject", "UIAlertController"]
 - ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UIImage"]
@@ -1220,6 +1315,7 @@ depends-member:
 - ["CSo8NSObject", "UITextView"]
 - ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "addAction"]
 - !private ["CSo8NSObject", "addAnimation"]
 - !private ["CSo8NSObject", "additive"]
 - !private ["CSo8NSObject", "borderColor"]
@@ -1240,7 +1336,9 @@ depends-member:
 - !private ["CSo8NSObject", "dispatch_queue_create"]
 - ["CSo8NSObject", "displayCamera"]
 - !private ["CSo8NSObject", "duration"]
+- ["CSo8NSObject", "errorAlert"]
 - ["CSo8NSObject", "firedOnce"]
+- !private ["CSo8NSObject", "hidden"]
 - !private ["CSo8NSObject", "hunterOrange"]
 - ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imagePickerController"]
@@ -1319,10 +1417,13 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "LocationController"]
 - !private ["PSo16NSObjectProtocol", "NSNotificationCenter"]
 - !private ["PSo16NSObjectProtocol", "ShedController"]
+- !private ["PSo16NSObjectProtocol", "UIAlertAction"]
+- !private ["PSo16NSObjectProtocol", "UIAlertController"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIImagePickerController"]
 - !private ["PSo16NSObjectProtocol", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo16NSObjectProtocol", "addAction"]
 - !private ["PSo16NSObjectProtocol", "addAnimation"]
 - !private ["PSo16NSObjectProtocol", "additive"]
 - !private ["PSo16NSObjectProtocol", "borderColor"]
@@ -1342,7 +1443,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dispatch_queue_create"]
 - ["PSo16NSObjectProtocol", "displayCamera"]
 - !private ["PSo16NSObjectProtocol", "duration"]
+- ["PSo16NSObjectProtocol", "errorAlert"]
 - ["PSo16NSObjectProtocol", "firedOnce"]
+- !private ["PSo16NSObjectProtocol", "hidden"]
 - !private ["PSo16NSObjectProtocol", "hunterOrange"]
 - ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imagePickerController"]
@@ -1422,7 +1525,15 @@ depends-member:
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["Vs5Range", "deinit"]
+- !private ["Ps30RangeReplaceableCollectionType", "Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps16RawRepresentable", "Alert"]
 - !private ["Ps16RawRepresentable", "Camera"]
+- !private ["Ps16RawRepresentable", "Default"]
+- !private ["Ps16RawRepresentable", "Destructive"]
 - !private ["Ps16RawRepresentable", "Normal"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
@@ -1447,12 +1558,20 @@ depends-member:
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "infinity"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
+- !private ["PSo29UIAccessibilityIdentification", "hidden"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "Default"]
+- !private ["OSC18UIAlertActionStyle", "Destructive"]
+- !private ["CSo17UIAlertController", "addAction"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "Alert"]
 - !private ["PSo12UIAppearance", "delegate"]
+- !private ["PSo12UIAppearance", "hidden"]
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
@@ -1467,10 +1586,13 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "LocationController"]
 - !private ["PSo21UIAppearanceContainer", "NSNotificationCenter"]
 - !private ["PSo21UIAppearanceContainer", "ShedController"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertController"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerController"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo21UIAppearanceContainer", "addAction"]
 - ["PSo21UIAppearanceContainer", "clearShedButton"]
 - ["PSo21UIAppearanceContainer", "clearShedTapped"]
 - ["PSo21UIAppearanceContainer", "createAnimation"]
@@ -1482,7 +1604,9 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "dispatch_get_main_queue"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_queue_create"]
 - ["PSo21UIAppearanceContainer", "displayCamera"]
+- ["PSo21UIAppearanceContainer", "errorAlert"]
 - ["PSo21UIAppearanceContainer", "firedOnce"]
+- !private ["PSo21UIAppearanceContainer", "hidden"]
 - ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "imagePickerController"]
 - ["PSo21UIAppearanceContainer", "imagePickerControllerDidCancel"]
@@ -1540,6 +1664,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "hidden"]
 - !private ["CSo8UIButton", "layer"]
 - !private ["CSo8UIButton", "setTitle"]
 - !private ["CSo7UIColor", "CGColor"]
@@ -1554,10 +1679,13 @@ depends-member:
 - !private ["PSo18UIContentContainer", "LocationController"]
 - !private ["PSo18UIContentContainer", "NSNotificationCenter"]
 - !private ["PSo18UIContentContainer", "ShedController"]
+- !private ["PSo18UIContentContainer", "UIAlertAction"]
+- !private ["PSo18UIContentContainer", "UIAlertController"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UIImagePickerController"]
 - !private ["PSo18UIContentContainer", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo18UIContentContainer", "addAction"]
 - ["PSo18UIContentContainer", "clearShedButton"]
 - ["PSo18UIContentContainer", "clearShedTapped"]
 - ["PSo18UIContentContainer", "createAnimation"]
@@ -1569,6 +1697,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
 - !private ["PSo18UIContentContainer", "dispatch_queue_create"]
 - ["PSo18UIContentContainer", "displayCamera"]
+- ["PSo18UIContentContainer", "errorAlert"]
 - ["PSo18UIContentContainer", "firedOnce"]
 - ["PSo18UIContentContainer", "image"]
 - ["PSo18UIContentContainer", "imagePickerController"]
@@ -1624,16 +1753,19 @@ depends-member:
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "hidden"]
 - !private ["CSo9UIControl", "layer"]
 - !private ["CSo9UIControl", "resignFirstResponder"]
 - !private ["CSo9UIControl", "setTitle"]
 - !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
+- !private ["PSo17UICoordinateSpace", "hidden"]
 - !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo13UIDynamicItem", "delegate"]
+- !private ["PSo13UIDynamicItem", "hidden"]
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
@@ -1648,10 +1780,13 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "LocationController"]
 - !private ["PSo18UIFocusEnvironment", "NSNotificationCenter"]
 - !private ["PSo18UIFocusEnvironment", "ShedController"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertController"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerController"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo18UIFocusEnvironment", "addAction"]
 - ["PSo18UIFocusEnvironment", "clearShedButton"]
 - ["PSo18UIFocusEnvironment", "clearShedTapped"]
 - ["PSo18UIFocusEnvironment", "createAnimation"]
@@ -1663,7 +1798,9 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "dispatch_get_main_queue"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_queue_create"]
 - ["PSo18UIFocusEnvironment", "displayCamera"]
+- ["PSo18UIFocusEnvironment", "errorAlert"]
 - ["PSo18UIFocusEnvironment", "firedOnce"]
+- !private ["PSo18UIFocusEnvironment", "hidden"]
 - ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "imagePickerController"]
 - ["PSo18UIFocusEnvironment", "imagePickerControllerDidCancel"]
@@ -1736,6 +1873,8 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "LocationController"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSNotificationCenter"]
 - !private ["PSo31UIImagePickerControllerDelegate", "ShedController"]
+- !private ["PSo31UIImagePickerControllerDelegate", "UIAlertAction"]
+- !private ["PSo31UIImagePickerControllerDelegate", "UIAlertController"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIColor"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImage"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImagePickerController"]
@@ -1748,6 +1887,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo31UIImagePickerControllerDelegate", "dispatch_queue_create"]
 - !private ["PSo31UIImagePickerControllerDelegate", "displayCamera"]
+- !private ["PSo31UIImagePickerControllerDelegate", "errorAlert"]
 - !private ["PSo31UIImagePickerControllerDelegate", "firedOnce"]
 - !private ["PSo31UIImagePickerControllerDelegate", "image"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerController"]
@@ -1811,6 +1951,8 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "LocationController"]
 - !private ["PSo30UINavigationControllerDelegate", "NSNotificationCenter"]
 - !private ["PSo30UINavigationControllerDelegate", "ShedController"]
+- !private ["PSo30UINavigationControllerDelegate", "UIAlertAction"]
+- !private ["PSo30UINavigationControllerDelegate", "UIAlertController"]
 - !private ["PSo30UINavigationControllerDelegate", "UIColor"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImage"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImagePickerController"]
@@ -1823,6 +1965,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo30UINavigationControllerDelegate", "dispatch_queue_create"]
 - !private ["PSo30UINavigationControllerDelegate", "displayCamera"]
+- !private ["PSo30UINavigationControllerDelegate", "errorAlert"]
 - !private ["PSo30UINavigationControllerDelegate", "firedOnce"]
 - !private ["PSo30UINavigationControllerDelegate", "image"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerController"]
@@ -1870,6 +2013,7 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "viewForZoomingInScrollView"]
 - ["PSo30UINavigationControllerDelegate", ""]
 - !private ["CSo12UIPickerView", "delegate"]
+- !private ["CSo12UIPickerView", "hidden"]
 - !private ["PSo22UIPickerViewDataSource", "CAKeyframeAnimation"]
 - !private ["PSo22UIPickerViewDataSource", "CGPathCreateWithEllipseInRect"]
 - !private ["PSo22UIPickerViewDataSource", "CGRectMake"]
@@ -1880,6 +2024,8 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "LocationController"]
 - !private ["PSo22UIPickerViewDataSource", "NSNotificationCenter"]
 - !private ["PSo22UIPickerViewDataSource", "ShedController"]
+- !private ["PSo22UIPickerViewDataSource", "UIAlertAction"]
+- !private ["PSo22UIPickerViewDataSource", "UIAlertController"]
 - !private ["PSo22UIPickerViewDataSource", "UIColor"]
 - !private ["PSo22UIPickerViewDataSource", "UIImage"]
 - !private ["PSo22UIPickerViewDataSource", "UIImagePickerController"]
@@ -1892,6 +2038,7 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "dispatch_get_main_queue"]
 - !private ["PSo22UIPickerViewDataSource", "dispatch_queue_create"]
 - !private ["PSo22UIPickerViewDataSource", "displayCamera"]
+- !private ["PSo22UIPickerViewDataSource", "errorAlert"]
 - !private ["PSo22UIPickerViewDataSource", "firedOnce"]
 - !private ["PSo22UIPickerViewDataSource", "image"]
 - ["PSo22UIPickerViewDataSource", "imagePickerController"]
@@ -1948,6 +2095,8 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "LocationController"]
 - !private ["PSo20UIPickerViewDelegate", "NSNotificationCenter"]
 - !private ["PSo20UIPickerViewDelegate", "ShedController"]
+- !private ["PSo20UIPickerViewDelegate", "UIAlertAction"]
+- !private ["PSo20UIPickerViewDelegate", "UIAlertController"]
 - !private ["PSo20UIPickerViewDelegate", "UIColor"]
 - !private ["PSo20UIPickerViewDelegate", "UIImage"]
 - !private ["PSo20UIPickerViewDelegate", "UIImagePickerController"]
@@ -1960,6 +2109,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo20UIPickerViewDelegate", "dispatch_queue_create"]
 - !private ["PSo20UIPickerViewDelegate", "displayCamera"]
+- !private ["PSo20UIPickerViewDelegate", "errorAlert"]
 - !private ["PSo20UIPickerViewDelegate", "firedOnce"]
 - !private ["PSo20UIPickerViewDelegate", "image"]
 - ["PSo20UIPickerViewDelegate", "imagePickerController"]
@@ -2022,6 +2172,8 @@ depends-member:
 - !private ["CSo11UIResponder", "NSNotificationCenter"]
 - !private ["CSo11UIResponder", "ShedController"]
 - ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIAlertAction"]
+- !private ["CSo11UIResponder", "UIAlertController"]
 - ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UIImage"]
@@ -2034,6 +2186,7 @@ depends-member:
 - ["CSo11UIResponder", "UITextView"]
 - ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "Void"]
+- !private ["CSo11UIResponder", "addAction"]
 - ["CSo11UIResponder", "clearShedButton"]
 - ["CSo11UIResponder", "clearShedTapped"]
 - ["CSo11UIResponder", "createAnimation"]
@@ -2045,7 +2198,9 @@ depends-member:
 - !private ["CSo11UIResponder", "dispatch_get_main_queue"]
 - !private ["CSo11UIResponder", "dispatch_queue_create"]
 - ["CSo11UIResponder", "displayCamera"]
+- ["CSo11UIResponder", "errorAlert"]
 - ["CSo11UIResponder", "firedOnce"]
+- !private ["CSo11UIResponder", "hidden"]
 - ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "imagePickerController"]
 - ["CSo11UIResponder", "imagePickerControllerDidCancel"]
@@ -2113,6 +2268,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "LocationController"]
 - !private ["PSo20UIScrollViewDelegate", "NSNotificationCenter"]
 - !private ["PSo20UIScrollViewDelegate", "ShedController"]
+- !private ["PSo20UIScrollViewDelegate", "UIAlertAction"]
+- !private ["PSo20UIScrollViewDelegate", "UIAlertController"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "UIImagePickerController"]
@@ -2125,6 +2282,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_queue_create"]
 - !private ["PSo20UIScrollViewDelegate", "displayCamera"]
+- !private ["PSo20UIScrollViewDelegate", "errorAlert"]
 - !private ["PSo20UIScrollViewDelegate", "firedOnce"]
 - !private ["PSo20UIScrollViewDelegate", "image"]
 - ["PSo20UIScrollViewDelegate", "imagePickerController"]
@@ -2181,10 +2339,13 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "LocationController"]
 - !private ["PSo16UIStateRestoring", "NSNotificationCenter"]
 - !private ["PSo16UIStateRestoring", "ShedController"]
+- !private ["PSo16UIStateRestoring", "UIAlertAction"]
+- !private ["PSo16UIStateRestoring", "UIAlertController"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UIImagePickerController"]
 - !private ["PSo16UIStateRestoring", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo16UIStateRestoring", "addAction"]
 - ["PSo16UIStateRestoring", "clearShedButton"]
 - ["PSo16UIStateRestoring", "clearShedTapped"]
 - ["PSo16UIStateRestoring", "createAnimation"]
@@ -2196,6 +2357,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
 - !private ["PSo16UIStateRestoring", "dispatch_queue_create"]
 - ["PSo16UIStateRestoring", "displayCamera"]
+- ["PSo16UIStateRestoring", "errorAlert"]
 - ["PSo16UIStateRestoring", "firedOnce"]
 - ["PSo16UIStateRestoring", "image"]
 - ["PSo16UIStateRestoring", "imagePickerController"]
@@ -2254,6 +2416,7 @@ depends-member:
 - !private ["CSo18UITabBarController", "selectedIndex"]
 - !private ["PSo16UITabBarDelegate", "selectedIndex"]
 - !private ["PSo21UITableViewDataSource", "delegate"]
+- !private ["PSo21UITableViewDataSource", "hidden"]
 - !private ["CSo11UITextField", "resignFirstResponder"]
 - !private ["PSo11UITextInput", "resignFirstResponder"]
 - !private ["PSo17UITextInputTraits", "resignFirstResponder"]
@@ -2268,6 +2431,8 @@ depends-member:
 - !private ["PSo18UITextViewDelegate", "LocationController"]
 - !private ["PSo18UITextViewDelegate", "NSNotificationCenter"]
 - !private ["PSo18UITextViewDelegate", "ShedController"]
+- !private ["PSo18UITextViewDelegate", "UIAlertAction"]
+- !private ["PSo18UITextViewDelegate", "UIAlertController"]
 - !private ["PSo18UITextViewDelegate", "UIColor"]
 - !private ["PSo18UITextViewDelegate", "UIImage"]
 - !private ["PSo18UITextViewDelegate", "UIImagePickerController"]
@@ -2280,6 +2445,7 @@ depends-member:
 - !private ["PSo18UITextViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo18UITextViewDelegate", "dispatch_queue_create"]
 - !private ["PSo18UITextViewDelegate", "displayCamera"]
+- !private ["PSo18UITextViewDelegate", "errorAlert"]
 - !private ["PSo18UITextViewDelegate", "firedOnce"]
 - !private ["PSo18UITextViewDelegate", "image"]
 - ["PSo18UITextViewDelegate", "imagePickerController"]
@@ -2336,10 +2502,13 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "LocationController"]
 - !private ["PSo18UITraitEnvironment", "NSNotificationCenter"]
 - !private ["PSo18UITraitEnvironment", "ShedController"]
+- !private ["PSo18UITraitEnvironment", "UIAlertAction"]
+- !private ["PSo18UITraitEnvironment", "UIAlertController"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerController"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerControllerOriginalImage"]
+- !private ["PSo18UITraitEnvironment", "addAction"]
 - ["PSo18UITraitEnvironment", "clearShedButton"]
 - ["PSo18UITraitEnvironment", "clearShedTapped"]
 - ["PSo18UITraitEnvironment", "createAnimation"]
@@ -2351,7 +2520,9 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "dispatch_get_main_queue"]
 - !private ["PSo18UITraitEnvironment", "dispatch_queue_create"]
 - ["PSo18UITraitEnvironment", "displayCamera"]
+- ["PSo18UITraitEnvironment", "errorAlert"]
 - ["PSo18UITraitEnvironment", "firedOnce"]
+- !private ["PSo18UITraitEnvironment", "hidden"]
 - ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "imagePickerController"]
 - ["PSo18UITraitEnvironment", "imagePickerControllerDidCancel"]
@@ -2410,6 +2581,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "delegate"]
+- !private ["CSo6UIView", "hidden"]
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "resignFirstResponder"]
@@ -2430,6 +2602,8 @@ depends-member:
 - !private ["CSo16UIViewController", "NSNotificationCenter"]
 - !private ["CSo16UIViewController", "ShedController"]
 - ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIAlertAction"]
+- !private ["CSo16UIViewController", "UIAlertController"]
 - ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIColor"]
 - ["CSo16UIViewController", "UIImage"]
@@ -2442,6 +2616,7 @@ depends-member:
 - ["CSo16UIViewController", "UITextView"]
 - ["CSo16UIViewController", "UIView"]
 - !private ["CSo16UIViewController", "Void"]
+- !private ["CSo16UIViewController", "addAction"]
 - ["CSo16UIViewController", "clearShedButton"]
 - ["CSo16UIViewController", "clearShedTapped"]
 - ["CSo16UIViewController", "createAnimation"]
@@ -2453,6 +2628,7 @@ depends-member:
 - !private ["CSo16UIViewController", "dispatch_get_main_queue"]
 - !private ["CSo16UIViewController", "dispatch_queue_create"]
 - ["CSo16UIViewController", "displayCamera"]
+- ["CSo16UIViewController", "errorAlert"]
 - ["CSo16UIViewController", "firedOnce"]
 - ["CSo16UIViewController", "image"]
 - ["CSo16UIViewController", "imagePickerController"]
@@ -2509,6 +2685,11 @@ depends-member:
 - ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", ""]
 - !private ["SP", "deinit"]
+- !private ["Ps10_ArrayType", "Element"]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps31_BuiltinFloatLiteralConvertible", "infinity"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
@@ -2518,6 +2699,11 @@ depends-member:
 - !private ["Ps22_CVarArgPassedAsDouble", "infinity"]
 - !private ["Ps24_ColorLiteralConvertible", "CGColor"]
 - !private ["Ps24_ColorLiteralConvertible", "hunterOrange"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_ImageLiteralConvertible", "init"]
 - !private ["Ps14_Incrementable", "Distance"]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
@@ -2526,8 +2712,12 @@ depends-member:
 - !private ["Ps12_IntegerType", "Distance"]
 - !private ["Ps12_IntegerType", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "infinity"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
@@ -2535,11 +2725,16 @@ depends-member:
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
 - ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "delegate"]
+- !private ["Ps12_Reflectable", "hidden"]
 - !private ["Ps12_Reflectable", "image"]
 - !private ["Ps12_Reflectable", "infinity"]
 - !private ["Ps12_Reflectable", "layer"]
@@ -2551,7 +2746,9 @@ depends-member:
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
+- !private "Sa"
 - !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
 - !private "Ps22BidirectionalIndexType"
 - !private "Ps21BitwiseOperationsType"
 - !private "Sb"
@@ -2595,6 +2792,9 @@ depends-nominal:
 - !private "Ps11IntegerType"
 - !private "C6TineSE18LocationController"
 - !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
@@ -2609,6 +2809,7 @@ depends-nominal:
 - "Sq"
 - !private "Ps21RandomAccessIndexType"
 - !private "Vs5Range"
+- !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
 - !private "Ps12SequenceType"
 - !private "Ps14SetAlgebraType"
@@ -2619,6 +2820,10 @@ depends-nominal:
 - !private "Vs5Slice"
 - !private "Ps10Strideable"
 - !private "PSo29UIAccessibilityIdentification"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - !private "CSo8UIButton"
@@ -2656,12 +2861,14 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "SP"
+- !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps31_BuiltinFloatLiteralConvertible"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"
 - !private "Ps19_CVarArgAlignedType"
 - !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps24_ColorLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps24_ImageLiteralConvertible"
 - !private "Ps14_Incrementable"
 - !private "Ps22_IntegerArithmeticType"
@@ -2762,4 +2969,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "2ab4c932822b6e2afde15d35b9e549e1"
+interface-hash: "dc26b57d2e5ffae8e959a26249300c14"

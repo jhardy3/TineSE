@@ -12,33 +12,37 @@ provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 - "viewDidLoad"
 - "imageWithColor"
+- "profileCurrentlySelected"
 depends-top-level:
 - "UITabBarItem"
-- !private "StringLiteralType"
-- !private "UIGraphicsBeginImageContextWithOptions"
-- !private "CGBlendMode"
-- !private "CGContextTranslateCTM"
-- !private "UIImageRenderingMode"
 - !private "CGContextSetBlendMode"
-- !private "NSForegroundColorAttributeName"
-- "UITabBarController"
-- !private "CGContextFillRect"
-- !private "=="
 - "UIColor"
+- !private "UIGraphicsBeginImageContextWithOptions"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- "UIImage"
+- !private "UIImageRenderingMode"
+- !private "!"
 - !private "UIGraphicsGetCurrentContext"
+- !private "CGContextClipToMask"
+- "UITabBarController"
+- "BooleanLiteralType"
 - !private "UIControlState"
 - !private "CGContextScaleCTM"
+- !private "!="
 - !private "UIGraphicsEndImageContext"
-- !private "Dictionary"
-- !private "BooleanLiteralType"
 - !private "NSNotificationCenter"
-- !private "CGRectMake"
-- "UITabBar"
-- "UIImage"
-- !private "CGContextClipToMask"
 - "TabBarController"
+- !private "=="
+- !private "&&"
+- !private "Dictionary"
+- !private "CGContextFillRect"
+- "UITabBar"
+- !private "StringLiteralType"
+- !private "CGRectMake"
+- !private "NSForegroundColorAttributeName"
+- !private "CGBlendMode"
 - !private "CGRect"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "CGContextTranslateCTM"
 depends-member:
 - !private ["Ps9AnyObject", "CGBlendMode"]
 - !private ["Ps9AnyObject", "CGContextClipToMask"]
@@ -66,6 +70,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "items"]
 - !private ["Ps9AnyObject", "postNotificationName"]
+- ["Ps9AnyObject", "profileCurrentlySelected"]
 - !private ["Ps9AnyObject", "scale"]
 - !private ["Ps9AnyObject", "selectedImage"]
 - !private ["Ps9AnyObject", "setFill"]
@@ -125,6 +130,7 @@ depends-member:
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "items"]
 - !private ["Ps11CVarArgType", "postNotificationName"]
+- ["Ps11CVarArgType", "profileCurrentlySelected"]
 - !private ["Ps11CVarArgType", "scale"]
 - !private ["Ps11CVarArgType", "selectedImage"]
 - !private ["Ps11CVarArgType", "setFill"]
@@ -174,6 +180,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "items"]
 - !private ["Ps28CustomDebugStringConvertible", "postNotificationName"]
+- ["Ps28CustomDebugStringConvertible", "profileCurrentlySelected"]
 - !private ["Ps28CustomDebugStringConvertible", "scale"]
 - !private ["Ps28CustomDebugStringConvertible", "selectedImage"]
 - !private ["Ps28CustomDebugStringConvertible", "setFill"]
@@ -218,6 +225,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "items"]
 - !private ["Ps23CustomStringConvertible", "postNotificationName"]
+- ["Ps23CustomStringConvertible", "profileCurrentlySelected"]
 - !private ["Ps23CustomStringConvertible", "scale"]
 - !private ["Ps23CustomStringConvertible", "selectedImage"]
 - !private ["Ps23CustomStringConvertible", "setFill"]
@@ -263,6 +271,7 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "items"]
 - !private ["Ps9Equatable", "postNotificationName"]
+- ["Ps9Equatable", "profileCurrentlySelected"]
 - !private ["Ps9Equatable", "scale"]
 - !private ["Ps9Equatable", "selectedImage"]
 - !private ["Ps9Equatable", "setFill"]
@@ -307,6 +316,7 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "items"]
 - !private ["Ps8Hashable", "postNotificationName"]
+- ["Ps8Hashable", "profileCurrentlySelected"]
 - !private ["Ps8Hashable", "scale"]
 - !private ["Ps8Hashable", "selectedImage"]
 - !private ["Ps8Hashable", "setFill"]
@@ -370,6 +380,7 @@ depends-member:
 - !private ["PSo8NSCoding", "imageWithRenderingMode"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "items"]
+- ["PSo8NSCoding", "profileCurrentlySelected"]
 - !private ["PSo8NSCoding", "scale"]
 - !private ["PSo8NSCoding", "selectedImage"]
 - !private ["PSo8NSCoding", "setFill"]
@@ -389,6 +400,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIImageRenderingMode"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "profileCurrentlySelected"]
 - ["PSo26NSExtensionRequestHandling", "tabBar"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
@@ -423,6 +435,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "items"]
 - !private ["CSo8NSObject", "postNotificationName"]
+- ["CSo8NSObject", "profileCurrentlySelected"]
 - !private ["CSo8NSObject", "scale"]
 - !private ["CSo8NSObject", "selectedImage"]
 - !private ["CSo8NSObject", "setFill"]
@@ -457,6 +470,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "items"]
 - !private ["PSo16NSObjectProtocol", "postNotificationName"]
+- ["PSo16NSObjectProtocol", "profileCurrentlySelected"]
 - !private ["PSo16NSObjectProtocol", "scale"]
 - !private ["PSo16NSObjectProtocol", "selectedImage"]
 - !private ["PSo16NSObjectProtocol", "setFill"]
@@ -520,6 +534,7 @@ depends-member:
 - ["C6TineSE16TabBarController", "deinit"]
 - ["C6TineSE16TabBarController", "didReceiveMemoryWarning"]
 - ["C6TineSE16TabBarController", "init"]
+- ["C6TineSE16TabBarController", "profileCurrentlySelected"]
 - ["C6TineSE16TabBarController", "tabBar"]
 - ["C6TineSE16TabBarController", "viewDidLoad"]
 - !private ["PSo29UIAccessibilityIdentification", "CGBlendMode"]
@@ -556,6 +571,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "items"]
+- ["PSo21UIAppearanceContainer", "profileCurrentlySelected"]
 - ["PSo21UIAppearanceContainer", "tabBar"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -572,6 +588,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIImageRenderingMode"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "profileCurrentlySelected"]
 - ["PSo18UIContentContainer", "tabBar"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
@@ -587,6 +604,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "items"]
+- ["PSo18UIFocusEnvironment", "profileCurrentlySelected"]
 - ["PSo18UIFocusEnvironment", "tabBar"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -622,6 +640,7 @@ depends-member:
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "items"]
+- ["CSo11UIResponder", "profileCurrentlySelected"]
 - ["CSo11UIResponder", "tabBar"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
@@ -632,6 +651,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIImageRenderingMode"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "profileCurrentlySelected"]
 - ["PSo16UIStateRestoring", "tabBar"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
@@ -646,6 +666,7 @@ depends-member:
 - ["CSo18UITabBarController", "UITabBarItem"]
 - ["CSo18UITabBarController", "didReceiveMemoryWarning"]
 - ["CSo18UITabBarController", "init"]
+- ["CSo18UITabBarController", "profileCurrentlySelected"]
 - ["CSo18UITabBarController", "tabBar"]
 - ["CSo18UITabBarController", "viewDidLoad"]
 - ["CSo18UITabBarController", ""]
@@ -657,6 +678,7 @@ depends-member:
 - !private ["PSo16UITabBarDelegate", "UIImageRenderingMode"]
 - ["PSo16UITabBarDelegate", "didReceiveMemoryWarning"]
 - ["PSo16UITabBarDelegate", "init"]
+- ["PSo16UITabBarDelegate", "profileCurrentlySelected"]
 - ["PSo16UITabBarDelegate", "tabBar"]
 - ["PSo16UITabBarDelegate", "viewDidLoad"]
 - ["PSo16UITabBarDelegate", ""]
@@ -672,6 +694,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "items"]
+- ["PSo18UITraitEnvironment", "profileCurrentlySelected"]
 - ["PSo18UITraitEnvironment", "tabBar"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
@@ -686,6 +709,7 @@ depends-member:
 - ["CSo16UIViewController", "UITabBarItem"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "profileCurrentlySelected"]
 - ["CSo16UIViewController", "tabBar"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - !private ["Ps10_ArrayType", "Generator"]
@@ -927,4 +951,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "afc67b4be9485895894c77bdda2c69f4"
+interface-hash: "89e217ac06606a39c0900258c2196aaf"

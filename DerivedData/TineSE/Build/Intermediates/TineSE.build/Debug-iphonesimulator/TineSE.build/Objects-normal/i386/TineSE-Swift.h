@@ -309,8 +309,6 @@ SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameTextField;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified shedImageView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified reportButton;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedTypeTextLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedColorTextLabel;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (void)prepareForReuse;
 - (IBAction)utilitiesButtonTapped:(UIButton * _Nonnull)sender;

@@ -58,7 +58,7 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
             self.clearShedButton.setTitle("", forState: .Normal)
             self.shedImageView.image = UIImage(named: "Skull")
         }
-    
+        
         shedView.layer.borderWidth = 1.0
         shedView.layer.borderColor = UIColor.hunterOrange().CGColor
         self.clearShedButton.layer.opacity = 0.0
@@ -96,13 +96,15 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
                                 if success {
                                     print("yay succes posting location")
                                     self.shedImageView.image = UIImage(named: "Skull")
+                                } else {
+                                    self.errorAlert([], addCancel: false, addMessage: "Problem Finding Location")
                                 }
                             })
                         }
                         
                         NSNotificationCenter.defaultCenter().postNotificationName("shedAdded", object: self)
                         self.image = nil
-                        
+                        self.clearShedButton.hidden = true
                         self.postButtonTapped = false
                         
                         dispatch_async(dispatch_get_main_queue(), { () -> Void in
@@ -111,6 +113,7 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
                         
                         return
                     } else {
+                        self.errorAlert([], addCancel: false, addMessage: "Failed To Post Shed")
                         self.postButtonTapped = !self.postButtonTapped
                     }
                 })
@@ -135,6 +138,9 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
         // Check for camera functionality ; if present imagePick source set to camera and present camera view controller
         if UIImagePickerController.isSourceTypeAvailable(.Camera) {
             imagePicker.sourceType = .Camera
+        } else {
+            errorAlert([], addCancel: false, addMessage: "iPhone Won't Allow Camera Access")
+            return
         }
         
         self.presentViewController(imagePicker, animated: true, completion: nil)
@@ -150,7 +156,10 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         
         // Check for valid picture
-        guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
+        guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+            errorAlert([], addCancel: false, addMessage: "Something Went Wrong, Try Again")
+            return }
+        
         let squareImage = ImageUitilies.cropToSquare(image: image)
         // If valid display image and set image to new image
         self.image = squareImage
@@ -191,9 +200,9 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView === shedColorPickerView {
-            return 3
+            return 4
         } else {
-            return 3
+            return 4
         }
     }
     
@@ -201,16 +210,21 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
         if pickerView === shedColorPickerView {
             switch row {
             case 0: self.shedColor = "Brown"
+                self.shedTypePickerView.hidden = false
             case 1: self.shedColor = "White"
+                self.shedTypePickerView.hidden = false
             case 2: self.shedColor = "Chalk"
-            default: self.shedColor = "Mystery Shed"
+                self.shedTypePickerView.hidden = false
+            default:
+                self.shedTypePickerView.hidden = true
+                self.shedColor = "Non-Shed"
             }
         } else {
             switch row {
             case 0: self.shedType = "Deer"
             case 1: self.shedType = "Elk"
             case 2: self.shedType = "Moose"
-            default: self.shedType = "Mystery Shed"
+            default: self.shedType = "Non-Shed"
             }
         }
         
@@ -222,21 +236,34 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
             case 0: return "Brown"
             case 1: return "White"
             case 2: return "Chalk"
-            default: return "Mystery Shed"
+            default: return "Non-Shed"
             }
         } else {
             switch row {
             case 0: return "Deer"
             case 1: return "Elk"
             case 2: return "Moose"
-            default: return "Mystery Shed"
+            default: return "Non-Shed"
             }
         }
     }
     
-    
-    
-    
+    func errorAlert(errorMessages: [String], addCancel: Bool, addMessage: String?) {
+        let message = addMessage ?? "Something went Wrong"
+        let alertController = UIAlertController(title: "Error!", message: message, preferredStyle: .Alert)
+        for errorMessage in errorMessages {
+            let alert = UIAlertAction(title: errorMessage, style: .Default, handler: nil)
+            alertController.addAction(alert)
+        }
+        
+        if addCancel {
+            let cancelAlert = UIAlertAction(title: "Cancel", style: .Destructive, handler: nil)
+            alertController.addAction(cancelAlert)
+        } else {
+            let cancelAlert = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+            alertController.addAction(cancelAlert)
+        }
+    }
     
     func createAnimation() {
         
@@ -258,7 +285,7 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     func createThread(function: ()) {
         let queue = dispatch_queue_create("queue", nil)
         
-        dispatch_async(queue) { 
+        dispatch_async(queue) {
             function
         }
     }

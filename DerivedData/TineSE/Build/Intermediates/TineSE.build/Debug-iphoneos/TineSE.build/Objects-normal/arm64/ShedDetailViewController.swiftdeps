@@ -6,21 +6,23 @@ provides-nominal:
 provides-member:
 - ["C6TineSE24ShedDetailViewController", ""]
 provides-dynamic-lookup:
-- "shedTypeLabel"
-- "usernameLabel"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
 - "shedImageView"
 - "shedColorLabel"
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
+- "shedTypeLabel"
 depends-top-level:
-- "UILabel"
+- !private "UIColor"
 - "UIImageView"
+- "UILabel"
+- "ShedDetailViewController"
 - "Shed"
 - "UIViewController"
-- !private "StringLiteralType"
-- "ShedDetailViewController"
 depends-member:
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "capitalizedString"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "hunterOrange"]
 - !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "shed"]
@@ -31,13 +33,14 @@ depends-member:
 - !private ["Ps9AnyObject", "shedType"]
 - ["Ps9AnyObject", "shedTypeLabel"]
 - !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "textColor"]
 - ["Ps9AnyObject", "updateWithShed"]
-- !private ["Ps9AnyObject", "username"]
-- ["Ps9AnyObject", "usernameLabel"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
-- !private ["Sb", "deinit"]
+- !private ["Ps11CVarArgType", "UIColor"]
+- !private ["Ps11CVarArgType", "capitalizedString"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["Ps11CVarArgType", "hunterOrange"]
 - !private ["Ps11CVarArgType", "image"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "shed"]
@@ -45,14 +48,16 @@ depends-member:
 - ["Ps11CVarArgType", "shedImageView"]
 - ["Ps11CVarArgType", "shedTypeLabel"]
 - !private ["Ps11CVarArgType", "text"]
+- !private ["Ps11CVarArgType", "textColor"]
 - ["Ps11CVarArgType", "updateWithShed"]
-- ["Ps11CVarArgType", "usernameLabel"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
-- !private ["Vs9Character", "deinit"]
-- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "capitalizedString"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "capitalizedString"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "hunterOrange"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "shed"]
@@ -60,11 +65,14 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "shedImageView"]
 - ["Ps28CustomDebugStringConvertible", "shedTypeLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - ["Ps28CustomDebugStringConvertible", "updateWithShed"]
-- ["Ps28CustomDebugStringConvertible", "usernameLabel"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "capitalizedString"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "hunterOrange"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "shed"]
@@ -72,12 +80,14 @@ depends-member:
 - ["Ps23CustomStringConvertible", "shedImageView"]
 - ["Ps23CustomStringConvertible", "shedTypeLabel"]
 - !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "textColor"]
 - ["Ps23CustomStringConvertible", "updateWithShed"]
-- ["Ps23CustomStringConvertible", "usernameLabel"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "capitalizedString"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "hunterOrange"]
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "shed"]
@@ -85,17 +95,18 @@ depends-member:
 - ["Ps9Equatable", "shedImageView"]
 - ["Ps9Equatable", "shedTypeLabel"]
 - !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "textColor"]
 - ["Ps9Equatable", "updateWithShed"]
-- ["Ps9Equatable", "usernameLabel"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
-- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "capitalizedString"]
 - !private ["P6TineSE12FirebaseType", "shedColor"]
 - !private ["P6TineSE12FirebaseType", "shedImage"]
 - !private ["P6TineSE12FirebaseType", "shedType"]
-- !private ["P6TineSE12FirebaseType", "username"]
-- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "capitalizedString"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "hunterOrange"]
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "shed"]
@@ -103,17 +114,15 @@ depends-member:
 - ["Ps8Hashable", "shedImageView"]
 - ["Ps8Hashable", "shedTypeLabel"]
 - !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "textColor"]
 - ["Ps8Hashable", "updateWithShed"]
-- ["Ps8Hashable", "usernameLabel"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
-- !private ["Si", "deinit"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
-- !private ["Ps14MirrorPathType", "init"]
+- !private ["Ps14MirrorPathType", "capitalizedString"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "capitalizedString"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "hunterOrange"]
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "shed"]
@@ -121,11 +130,13 @@ depends-member:
 - ["PSo8NSCoding", "shedImageView"]
 - ["PSo8NSCoding", "shedTypeLabel"]
 - !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "textColor"]
 - ["PSo8NSCoding", "updateWithShed"]
-- ["PSo8NSCoding", "usernameLabel"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "capitalizedString"]
+- !private ["PSo9NSCopying", "hunterOrange"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "shed"]
@@ -133,14 +144,16 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "shedImageView"]
 - ["PSo26NSExtensionRequestHandling", "shedTypeLabel"]
 - ["PSo26NSExtensionRequestHandling", "updateWithShed"]
-- ["PSo26NSExtensionRequestHandling", "usernameLabel"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
-- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "capitalizedString"]
 - ["CSo8NSObject", "Shed"]
+- !private ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "capitalizedString"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "hunterOrange"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "shed"]
@@ -148,10 +161,13 @@ depends-member:
 - ["CSo8NSObject", "shedImageView"]
 - ["CSo8NSObject", "shedTypeLabel"]
 - !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "textColor"]
 - ["CSo8NSObject", "updateWithShed"]
-- ["CSo8NSObject", "usernameLabel"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "capitalizedString"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "hunterOrange"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "shed"]
@@ -159,21 +175,21 @@ depends-member:
 - ["PSo16NSObjectProtocol", "shedImageView"]
 - ["PSo16NSObjectProtocol", "shedTypeLabel"]
 - !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "textColor"]
 - ["PSo16NSObjectProtocol", "updateWithShed"]
-- ["PSo16NSObjectProtocol", "usernameLabel"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "init"]
-- !private ["CSo8NSString", "init"]
+- !private ["PSo14NSSecureCoding", "capitalizedString"]
+- !private ["PSo14NSSecureCoding", "hunterOrange"]
+- !private ["CSo8NSString", "capitalizedString"]
 - ["Ps21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
-- !private ["Sq", "deinit"]
-- !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps16OutputStreamType", "capitalizedString"]
 - !private ["C6TineSE4Shed", "shedColor"]
 - !private ["C6TineSE4Shed", "shedImage"]
 - !private ["C6TineSE4Shed", "shedType"]
-- !private ["C6TineSE4Shed", "username"]
 - ["C6TineSE24ShedDetailViewController", "Shed"]
+- !private ["C6TineSE24ShedDetailViewController", "UIColor"]
 - ["C6TineSE24ShedDetailViewController", "UIImageView"]
 - ["C6TineSE24ShedDetailViewController", "UILabel"]
 - ["C6TineSE24ShedDetailViewController", "deinit"]
@@ -184,16 +200,18 @@ depends-member:
 - ["C6TineSE24ShedDetailViewController", "shedImageView"]
 - ["C6TineSE24ShedDetailViewController", "shedTypeLabel"]
 - ["C6TineSE24ShedDetailViewController", "updateWithShed"]
-- ["C6TineSE24ShedDetailViewController", "usernameLabel"]
 - ["C6TineSE24ShedDetailViewController", "viewDidLoad"]
-- !private ["Ps10Streamable", "init"]
-- !private ["SS", "init"]
-- !private ["Ps30StringInterpolationConvertible", "init"]
-- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["Ps10Streamable", "capitalizedString"]
+- !private ["SS", "capitalizedString"]
+- !private ["Ps30StringInterpolationConvertible", "capitalizedString"]
+- !private ["Ps24StringLiteralConvertible", "capitalizedString"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "textColor"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "init"]
@@ -202,10 +220,12 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "shedImageView"]
 - ["PSo21UIAppearanceContainer", "shedTypeLabel"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "textColor"]
 - ["PSo21UIAppearanceContainer", "updateWithShed"]
-- ["PSo21UIAppearanceContainer", "usernameLabel"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo7UIColor", "hunterOrange"]
+- !private ["PSo18UIContentContainer", "UIColor"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "shed"]
@@ -213,13 +233,15 @@ depends-member:
 - ["PSo18UIContentContainer", "shedImageView"]
 - ["PSo18UIContentContainer", "shedTypeLabel"]
 - ["PSo18UIContentContainer", "updateWithShed"]
-- ["PSo18UIContentContainer", "usernameLabel"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "textColor"]
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "textColor"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "init"]
@@ -228,13 +250,15 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "shedImageView"]
 - ["PSo18UIFocusEnvironment", "shedTypeLabel"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "textColor"]
 - ["PSo18UIFocusEnvironment", "updateWithShed"]
-- ["PSo18UIFocusEnvironment", "usernameLabel"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo7UILabel", "textColor"]
 - ["CSo11UIResponder", "Shed"]
+- !private ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
@@ -245,9 +269,10 @@ depends-member:
 - ["CSo11UIResponder", "shedImageView"]
 - ["CSo11UIResponder", "shedTypeLabel"]
 - !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "textColor"]
 - ["CSo11UIResponder", "updateWithShed"]
-- ["CSo11UIResponder", "usernameLabel"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "shed"]
@@ -255,9 +280,9 @@ depends-member:
 - ["PSo16UIStateRestoring", "shedImageView"]
 - ["PSo16UIStateRestoring", "shedTypeLabel"]
 - ["PSo16UIStateRestoring", "updateWithShed"]
-- ["PSo16UIStateRestoring", "usernameLabel"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "init"]
@@ -266,13 +291,15 @@ depends-member:
 - ["PSo18UITraitEnvironment", "shedImageView"]
 - ["PSo18UITraitEnvironment", "shedTypeLabel"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "textColor"]
 - ["PSo18UITraitEnvironment", "updateWithShed"]
-- ["PSo18UITraitEnvironment", "usernameLabel"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "textColor"]
 - ["CSo16UIViewController", "Shed"]
+- !private ["CSo16UIViewController", "UIColor"]
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
@@ -282,44 +309,30 @@ depends-member:
 - ["CSo16UIViewController", "shedImageView"]
 - ["CSo16UIViewController", "shedTypeLabel"]
 - ["CSo16UIViewController", "updateWithShed"]
-- ["CSo16UIViewController", "usernameLabel"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
-- !private ["Sc", "deinit"]
-- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
-- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
-- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
-- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "capitalizedString"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "capitalizedString"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "capitalizedString"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "capitalizedString"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "capitalizedString"]
+- !private ["Ps24_ColorLiteralConvertible", "hunterOrange"]
+- !private ["Ps21_ObjectiveCBridgeable", "capitalizedString"]
 - ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "capitalizedString"]
 - !private ["Ps12_Reflectable", "image"]
-- !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "textColor"]
 depends-nominal:
 - "Ps9AnyObject"
-- !private "Sb"
 - "Ps11CVarArgType"
-- !private "Vs9Character"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
-- !private "Sd"
 - "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - !private "P6TineSE12FirebaseType"
-- !private "Sf"
 - "Ps8Hashable"
-- !private "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
 - !private "Ps14MirrorPathType"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -341,6 +354,7 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
@@ -352,17 +366,12 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
-- !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
-- !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "Ps32_BuiltinStringLiteralConvertible"
 - !private "Ps37_BuiltinUTF16StringLiteralConvertible"
 - !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_ColorLiteralConvertible"
 - !private "Ps21_ObjectiveCBridgeable"
 - "Ps12_Reflectable"
 depends-dynamic-lookup:
@@ -456,4 +465,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "03567382d7acc03afe5c0a54b97a84de"
+interface-hash: "ca268a4db7e49f869b5a2c462edb41f9"

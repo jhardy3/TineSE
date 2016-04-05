@@ -106,7 +106,6 @@ class logInViewController: UIViewController, UITextFieldDelegate {
         self.loadImageView.layer.addAnimation(rotateAnimation, forKey: "shake")
         self.logInView.hidden = true
         textFieldShouldReturn(self.passwordTextField)
-//        blurImageBackground(view)
     }
     
     func endAnimation() {
@@ -118,11 +117,21 @@ class logInViewController: UIViewController, UITextFieldDelegate {
             blurEffect.removeFromSuperview()
         }
     }
-
+    
     
     func signIn() {
         // Guard for email and password or return
         guard let email = emailTextField.text, let password = passwordTextField.text else { return }
+        
+        if checkForEmptiness(email) {
+            errorAlert([], addCancel: false, addMessage: "Email is empty!")
+            return
+        }
+        
+        if checkForEmptiness(password) {
+            errorAlert([], addCancel: false, addMessage: "Password is empty")
+            return
+        }
         
         // authenticate hunter with firebase
         self.loadImageView.hidden = false
@@ -133,6 +142,9 @@ class logInViewController: UIViewController, UITextFieldDelegate {
             self.endAnimation()
             if success {
                 self.performSegueWithIdentifier("loggedIn", sender: self)
+            } else {
+                self.errorAlert([], addCancel: false, addMessage: "Incorrect Email Or Password")
+                return
             }
         }
     }
@@ -141,14 +153,70 @@ class logInViewController: UIViewController, UITextFieldDelegate {
         // Guard for username, email and password or return
         guard let username = usernameTextField.text, let email = emailTextField.text, let password = passwordTextField.text where username.isEmpty == false else { return }
         
-        // If parameters are satisfied create a new hunter
-        HunterController.createHunter(username, email: email, password: password) { (success) -> Void in
+        
+        
+        if checkForEmptiness(username) {
+            errorAlert([], addCancel: false, addMessage: "A hunter with no name is already in use")
+            return
+        }
+        
+        if checkForEmptiness(email) {
+            errorAlert([], addCancel: false, addMessage: "Email is empty!")
+            return
+        }
+        
+        if checkForEmptiness(password) {
+            errorAlert([], addCancel: false, addMessage: "Password is empty")
+            return
+        }
+        
+        
+        
+        
+        createAnimation()
+        
+        let group = dispatch_group_create()
+        
+        dispatch_group_enter(group)
+        HunterController.fetchAllHunters { (hunters) in
+            for hunterName in hunters {
+                if username == hunterName.username {
+                    self.errorAlert([], addCancel: false, addMessage: "A hunter with that username already exists")
+                    self.endAnimation()
+                    return
+                }
+            }
+            dispatch_group_leave(group)
+        }
+        
+        
+        dispatch_group_notify(group, dispatch_get_main_queue()) {
+            // If parameters are satisfied create a new hunter
+            HunterController.createHunter(username, email: email, password: password) { (success) -> Void in
+                
+                self.endAnimation()
+                // If successful perform segue to tineline
+                if success {
+                    self.performSegueWithIdentifier("loggedIn", sender: self)
+                } else {
+                    self.errorAlert([], addCancel: false, addMessage: "Something went wrong")
+                    return
+                }
+            }
             
-            // If successful perform segue to tineline
-            if success {
-                self.performSegueWithIdentifier("loggedIn", sender: self)
+        }
+        
+    }
+    
+    func checkForEmptiness(string: String) -> Bool {
+        var test = ""
+        for character in string.characters {
+            if character != " " {
+                test.append(character)
             }
         }
+        return test.isEmpty
+        
     }
     
     func displayBasedOnViewMode() {
@@ -180,6 +248,25 @@ class logInViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    func errorAlert(errorMessages: [String], addCancel: Bool, addMessage: String?) {
+        let message = addMessage ?? "Something went Wrong"
+        let alertController = UIAlertController(title: "Error!", message: message, preferredStyle: .Alert)
+        for errorMessage in errorMessages {
+            let alert = UIAlertAction(title: errorMessage, style: .Default, handler: nil)
+            alertController.addAction(alert)
+        }
+        
+        if addCancel {
+            let cancelAlert = UIAlertAction(title: "Cancel", style: .Destructive, handler: nil)
+            alertController.addAction(cancelAlert)
+        } else {
+            let cancelAlert = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+            alertController.addAction(cancelAlert)
+        }
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
 }
