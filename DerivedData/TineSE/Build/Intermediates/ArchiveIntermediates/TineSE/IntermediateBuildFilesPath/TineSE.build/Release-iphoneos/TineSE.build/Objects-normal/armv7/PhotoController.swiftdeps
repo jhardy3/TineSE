@@ -8,21 +8,21 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "UIImage"
-- !private "AWSS3TransferManager"
-- !private "UIImageJPEGRepresentation"
-- !private "NSURL"
-- "StringLiteralType"
 - !private "!="
+- !private "AWSS3TransferManagerUploadRequest"
+- !private "NSProcessInfo"
+- "StringLiteralType"
 - "PhotoController"
 - !private "NSTemporaryDirectory"
-- !private "AnyObject"
-- !private "print"
-- "Void"
-- !private "NSProcessInfo"
-- !private "AWSS3TransferManagerUploadRequest"
-- !private "NSURLSession"
 - "String"
+- !private "UIImageJPEGRepresentation"
+- !private "NSURL"
+- !private "NSURLSession"
+- !private "AnyObject"
+- "Void"
+- !private "print"
 - !private "BooleanLiteralType"
+- !private "AWSS3TransferManager"
 depends-member:
 - !private ["PSo21AWSMTLJSONSerializing", "body"]
 - !private ["PSo21AWSMTLJSONSerializing", "bucket"]

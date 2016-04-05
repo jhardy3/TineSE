@@ -7,22 +7,20 @@ provides-member:
 - ["C6TineSE20AppearanceController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UITabBar"
-- "AppearanceController"
-- !private "UILabel"
-- !private "UISegmentedControl"
-- !private "Dictionary"
-- !private "UIColor"
-- !private "UINavigationBar"
-- !private "UIToolbar"
 - !private "UITabBarItem"
+- !private "UISegmentedControl"
+- "AppearanceController"
+- !private "UIColor"
 - !private "UIBarButtonItem"
+- !private "UITabBar"
+- !private "UIToolbar"
+- !private "UINavigationBar"
 - !private "NSForegroundColorAttributeName"
+- !private "Dictionary"
 depends-member:
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
 - !private ["Ps9AnyObject", "UIColor"]
-- !private ["Ps9AnyObject", "UILabel"]
 - !private ["Ps9AnyObject", "UINavigationBar"]
 - !private ["Ps9AnyObject", "UISegmentedControl"]
 - !private ["Ps9AnyObject", "UITabBar"]
@@ -33,14 +31,12 @@ depends-member:
 - !private ["Ps9AnyObject", "barTintColor"]
 - !private ["Ps9AnyObject", "hunterOrange"]
 - !private ["Ps9AnyObject", "setTitleTextAttributes"]
-- !private ["Ps9AnyObject", "textColor"]
 - !private ["Ps9AnyObject", "tintColor"]
 - !private ["Ps9AnyObject", "whiteColor"]
 - ["Ps9AnyObject", ""]
 - !private ["C6TineSE20AppearanceController", "NSForegroundColorAttributeName"]
 - !private ["C6TineSE20AppearanceController", "UIBarButtonItem"]
 - !private ["C6TineSE20AppearanceController", "UIColor"]
-- !private ["C6TineSE20AppearanceController", "UILabel"]
 - !private ["C6TineSE20AppearanceController", "UINavigationBar"]
 - !private ["C6TineSE20AppearanceController", "UISegmentedControl"]
 - !private ["C6TineSE20AppearanceController", "UITabBar"]
@@ -57,7 +53,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "barTintColor"]
 - !private ["Ps11CVarArgType", "hunterOrange"]
 - !private ["Ps11CVarArgType", "setTitleTextAttributes"]
-- !private ["Ps11CVarArgType", "textColor"]
 - !private ["Ps11CVarArgType", "tintColor"]
 - !private ["Ps11CVarArgType", "whiteColor"]
 - !private ["Ps14CollectionType", "Key"]
@@ -69,7 +64,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "barTintColor"]
 - !private ["Ps28CustomDebugStringConvertible", "hunterOrange"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitleTextAttributes"]
-- !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - !private ["Ps28CustomDebugStringConvertible", "tintColor"]
 - !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
 - !private ["Ps23CustomStringConvertible", "Key"]
@@ -79,7 +73,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "barTintColor"]
 - !private ["Ps23CustomStringConvertible", "hunterOrange"]
 - !private ["Ps23CustomStringConvertible", "setTitleTextAttributes"]
-- !private ["Ps23CustomStringConvertible", "textColor"]
 - !private ["Ps23CustomStringConvertible", "tintColor"]
 - !private ["Ps23CustomStringConvertible", "whiteColor"]
 - !private ["Vs10Dictionary", "Key"]
@@ -94,7 +87,6 @@ depends-member:
 - !private ["Ps9Equatable", "barTintColor"]
 - !private ["Ps9Equatable", "hunterOrange"]
 - !private ["Ps9Equatable", "setTitleTextAttributes"]
-- !private ["Ps9Equatable", "textColor"]
 - !private ["Ps9Equatable", "tintColor"]
 - !private ["Ps9Equatable", "whiteColor"]
 - !private ["Ps8Hashable", "appearance"]
@@ -102,7 +94,6 @@ depends-member:
 - !private ["Ps8Hashable", "barTintColor"]
 - !private ["Ps8Hashable", "hunterOrange"]
 - !private ["Ps8Hashable", "setTitleTextAttributes"]
-- !private ["Ps8Hashable", "textColor"]
 - !private ["Ps8Hashable", "tintColor"]
 - !private ["Ps8Hashable", "whiteColor"]
 - !private ["Ps9Indexable", "Key"]
@@ -112,7 +103,6 @@ depends-member:
 - !private ["PSo8NSCoding", "barTintColor"]
 - !private ["PSo8NSCoding", "hunterOrange"]
 - !private ["PSo8NSCoding", "setTitleTextAttributes"]
-- !private ["PSo8NSCoding", "textColor"]
 - !private ["PSo8NSCoding", "tintColor"]
 - !private ["PSo8NSCoding", "whiteColor"]
 - !private ["PSo9NSCopying", "hunterOrange"]
@@ -122,7 +112,6 @@ depends-member:
 - !private ["CSo8NSObject", "barTintColor"]
 - !private ["CSo8NSObject", "hunterOrange"]
 - !private ["CSo8NSObject", "setTitleTextAttributes"]
-- !private ["CSo8NSObject", "textColor"]
 - !private ["CSo8NSObject", "tintColor"]
 - !private ["CSo8NSObject", "whiteColor"]
 - !private ["PSo16NSObjectProtocol", "appearance"]
@@ -130,7 +119,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "barTintColor"]
 - !private ["PSo16NSObjectProtocol", "hunterOrange"]
 - !private ["PSo16NSObjectProtocol", "setTitleTextAttributes"]
-- !private ["PSo16NSObjectProtocol", "textColor"]
 - !private ["PSo16NSObjectProtocol", "tintColor"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - !private ["PSo14NSSecureCoding", "hunterOrange"]
@@ -151,18 +139,15 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitleTextAttributes"]
-- !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - !private ["PSo29UIAccessibilityIdentification", "tintColor"]
 - !private ["PSo12UIAppearance", "appearance"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "barTintColor"]
 - !private ["PSo12UIAppearance", "setTitleTextAttributes"]
-- !private ["PSo12UIAppearance", "textColor"]
 - !private ["PSo12UIAppearance", "tintColor"]
 - !private ["PSo21UIAppearanceContainer", "appearance"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "barTintColor"]
-- !private ["PSo21UIAppearanceContainer", "textColor"]
 - !private ["PSo21UIAppearanceContainer", "tintColor"]
 - !private ["CSo15UIBarButtonItem", "appearance"]
 - !private ["CSo15UIBarButtonItem", "setTitleTextAttributes"]
@@ -181,27 +166,21 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "appearance"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "barTintColor"]
-- !private ["PSo17UICoordinateSpace", "textColor"]
 - !private ["PSo17UICoordinateSpace", "tintColor"]
 - !private ["PSo13UIDynamicItem", "appearance"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "barTintColor"]
-- !private ["PSo13UIDynamicItem", "textColor"]
 - !private ["PSo13UIDynamicItem", "tintColor"]
 - !private ["PSo18UIFocusEnvironment", "appearance"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "barTintColor"]
-- !private ["PSo18UIFocusEnvironment", "textColor"]
 - !private ["PSo18UIFocusEnvironment", "tintColor"]
-- !private ["CSo7UILabel", "appearance"]
-- !private ["CSo7UILabel", "textColor"]
 - !private ["CSo15UINavigationBar", "appearance"]
 - !private ["CSo15UINavigationBar", "backgroundColor"]
 - !private ["CSo15UINavigationBar", "barTintColor"]
 - !private ["CSo11UIResponder", "appearance"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "barTintColor"]
-- !private ["CSo11UIResponder", "textColor"]
 - !private ["CSo11UIResponder", "tintColor"]
 - !private ["CSo18UISegmentedControl", "appearance"]
 - !private ["CSo18UISegmentedControl", "tintColor"]
@@ -216,12 +195,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "appearance"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "barTintColor"]
-- !private ["PSo18UITraitEnvironment", "textColor"]
 - !private ["PSo18UITraitEnvironment", "tintColor"]
 - !private ["CSo6UIView", "appearance"]
 - !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "barTintColor"]
-- !private ["CSo6UIView", "textColor"]
 - !private ["CSo6UIView", "tintColor"]
 - !private ["Ps24_ColorLiteralConvertible", "hunterOrange"]
 - !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
@@ -232,7 +209,6 @@ depends-member:
 - !private ["Ps12_Reflectable", "appearance"]
 - !private ["Ps12_Reflectable", "backgroundColor"]
 - !private ["Ps12_Reflectable", "barTintColor"]
-- !private ["Ps12_Reflectable", "textColor"]
 - !private ["Ps12_Reflectable", "tintColor"]
 depends-nominal:
 - "Ps9AnyObject"
@@ -269,7 +245,6 @@ depends-nominal:
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - !private "PSo18UIFocusEnvironment"
-- !private "CSo7UILabel"
 - !private "CSo15UINavigationBar"
 - !private "CSo11UIResponder"
 - !private "CSo18UISegmentedControl"

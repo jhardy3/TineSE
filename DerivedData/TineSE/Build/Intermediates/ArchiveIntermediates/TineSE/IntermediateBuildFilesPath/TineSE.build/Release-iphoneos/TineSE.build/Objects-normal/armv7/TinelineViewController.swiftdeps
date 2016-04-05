@@ -1,78 +1,81 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "ShedViewMode"
 - "TinelineViewController"
 provides-nominal:
+- "O6TineSE12ShedViewMode"
 - "C6TineSE22TinelineViewController"
 provides-member:
+- ["O6TineSE12ShedViewMode", ""]
 - ["C6TineSE22TinelineViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "tableView"
-- "tableView"
-- "tableView"
-- "segmentedControlChanged"
 - "localShedIDs"
+- "locationManager"
+- "locationManager"
+- "locationManager"
+- "fetchShedsFirstLoad"
 - "endOfTableView"
-- "currentViewIsLocal"
+- "setUpRefreshController"
 - "prepareForSegue"
 - "createArray"
-- "setUpRefreshController"
-- "segmentedController"
-- "newShedsAddedRefresh"
-- "shedIDs"
-- "grabSheds"
-- "refresh"
-- "fetchShedsFirstLoad"
-- "locationManager"
-- "locationManager"
-- "locationManager"
+- "segmentedControlChanged"
+- "viewDidLoad"
 - "setupLocationManagerAndGrabLocalSheds"
+- "segmentedController"
+- "grabSheds"
+- "shedIDs"
+- "tableView"
+- "tableView"
+- "tableView"
+- "refresh"
+- "checkForEndOfTableview"
+- "newShedsAddedRefresh"
 depends-top-level:
-- !private "ShedTableViewCell"
-- "NSIndexPath"
-- "NSError"
-- "UIRefreshControl"
-- "Bool"
-- "AnyObject"
-- !private "NSNotificationCenter"
-- !private "Void"
-- "CLLocationManager"
-- !private "..<"
-- !private "dispatch_async"
-- !private "dispatch_group_create"
-- "UISegmentedControl"
-- "UIStoryboardSegue"
-- "Shed"
-- "BooleanLiteralType"
-- !private "dispatch_get_main_queue"
-- !private ">"
-- !private "&&"
-- !private "dispatch_group_notify"
-- !private "-"
-- "UITableViewDataSource"
-- !private "print"
-- "String"
-- "UIViewController"
-- "UITableViewDelegate"
-- !private "=="
-- !private "~="
-- !private "LocationController"
-- !private "Array"
-- "CLLocation"
-- !private "dispatch_group_leave"
-- !private "..."
-- !private "dispatch_group_enter"
-- "UITableViewCell"
-- !private "ProfileViewController"
-- "UITableView"
-- "CLLocationManagerDelegate"
 - "Int"
-- !private "StringLiteralType"
-- "TinelineViewController"
-- !private "kCLLocationAccuracyBest"
+- "ShedViewMode"
+- "UIRefreshControl"
 - !private "!"
-- !private "ShedController"
+- "BooleanLiteralType"
+- "UITableViewDataSource"
+- !private "&&"
 - !private "UIButton"
+- !private "ShedTableViewCell"
+- "UITableView"
+- !private "dispatch_get_main_queue"
+- !private "LocationController"
+- !private "ShedController"
+- !private ">"
+- "UIViewController"
+- "NSIndexPath"
+- "UIStoryboardSegue"
+- !private "dispatch_group_leave"
+- !private "dispatch_async"
+- !private "..."
+- "CLLocationManagerDelegate"
+- !private "ProfileViewController"
+- !private "NSNotificationCenter"
+- "CLLocationManager"
+- !private "-"
+- !private "dispatch_group_create"
+- "UITableViewCell"
+- !private "..<"
+- "String"
+- "UISegmentedControl"
+- !private "Array"
+- "UITableViewDelegate"
+- "CLLocation"
+- "TinelineViewController"
+- !private "StringLiteralType"
+- !private "print"
+- !private "~="
+- "=="
+- "NSError"
+- "AnyObject"
+- !private "kCLLocationAccuracyBest"
+- !private "dispatch_group_enter"
+- "Shed"
+- !private "Void"
+- !private "dispatch_group_notify"
 depends-member:
 - !private ["Ps9AnyObject", "CLLocationManager"]
 - ["Ps9AnyObject", "LocalSheds"]
@@ -88,8 +91,10 @@ depends-member:
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTarget"]
 - !private ["Ps9AnyObject", "beginUpdates"]
+- ["Ps9AnyObject", "checkForEndOfTableview"]
 - ["Ps9AnyObject", "createArray"]
-- ["Ps9AnyObject", "currentViewIsLocal"]
+- ["Ps9AnyObject", "currentView"]
+- ["Ps9AnyObject", "dataSource"]
 - !private ["Ps9AnyObject", "debugDescription"]
 - !private ["Ps9AnyObject", "defaultCenter"]
 - !private ["Ps9AnyObject", "delegate"]
@@ -153,9 +158,9 @@ depends-member:
 - ["Ps9AnyObject", "setUpRefreshController"]
 - ["Ps9AnyObject", "setupLocationManagerAndGrabLocalSheds"]
 - ["Ps9AnyObject", "shedIDs"]
-- ["Ps9AnyObject", "sheds"]
 - !private ["Ps9AnyObject", "superview"]
 - ["Ps9AnyObject", "tableView"]
+- ["Ps9AnyObject", "trackingSheds"]
 - ["Ps9AnyObject", "updateTableViewWithShed"]
 - !private ["Ps9AnyObject", "updateWith"]
 - !private ["Ps9AnyObject", "updateWithIdentifier"]
@@ -197,10 +202,12 @@ depends-member:
 - ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["Ps22BidirectionalIndexType", "Stride"]
 - !private ["Ps22BidirectionalIndexType", "_DisabledRangeIndex"]
+- !private ["Ps22BidirectionalIndexType", "hashValue"]
 - ["Ps21BitwiseOperationsType", "Distance"]
 - ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Ps21BitwiseOperationsType", "Stride"]
 - !private ["Ps21BitwiseOperationsType", "_DisabledRangeIndex"]
+- !private ["Ps21BitwiseOperationsType", "hashValue"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
@@ -221,8 +228,10 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "String"]
 - !private ["PSo25CLLocationManagerDelegate", "TinelineViewController"]
 - !private ["PSo25CLLocationManagerDelegate", "UIRefreshControl"]
+- !private ["PSo25CLLocationManagerDelegate", "checkForEndOfTableview"]
 - !private ["PSo25CLLocationManagerDelegate", "createArray"]
-- !private ["PSo25CLLocationManagerDelegate", "currentViewIsLocal"]
+- !private ["PSo25CLLocationManagerDelegate", "currentView"]
+- !private ["PSo25CLLocationManagerDelegate", "dataSource"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_async"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_get_main_queue"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_group_create"]
@@ -260,8 +269,8 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "setUpRefreshController"]
 - !private ["PSo25CLLocationManagerDelegate", "setupLocationManagerAndGrabLocalSheds"]
 - !private ["PSo25CLLocationManagerDelegate", "shedIDs"]
-- !private ["PSo25CLLocationManagerDelegate", "sheds"]
 - ["PSo25CLLocationManagerDelegate", "tableView"]
+- !private ["PSo25CLLocationManagerDelegate", "trackingSheds"]
 - !private ["PSo25CLLocationManagerDelegate", "updateTableViewWithShed"]
 - ["PSo25CLLocationManagerDelegate", "viewForZoomingInScrollView"]
 - ["PSo25CLLocationManagerDelegate", ""]
@@ -283,8 +292,10 @@ depends-member:
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "addTarget"]
 - !private ["Ps11CVarArgType", "beginUpdates"]
+- ["Ps11CVarArgType", "checkForEndOfTableview"]
 - ["Ps11CVarArgType", "createArray"]
-- ["Ps11CVarArgType", "currentViewIsLocal"]
+- ["Ps11CVarArgType", "currentView"]
+- ["Ps11CVarArgType", "dataSource"]
 - !private ["Ps11CVarArgType", "debugDescription"]
 - !private ["Ps11CVarArgType", "defaultCenter"]
 - !private ["Ps11CVarArgType", "delegate"]
@@ -302,6 +313,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "endUpdates"]
 - ["Ps11CVarArgType", "fetchShedsFirstLoad"]
 - ["Ps11CVarArgType", "grabSheds"]
+- !private ["Ps11CVarArgType", "hashValue"]
 - !private ["Ps11CVarArgType", "identifier"]
 - !private ["Ps11CVarArgType", "indexPathForCell"]
 - ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
@@ -344,9 +356,9 @@ depends-member:
 - ["Ps11CVarArgType", "setUpRefreshController"]
 - ["Ps11CVarArgType", "setupLocationManagerAndGrabLocalSheds"]
 - ["Ps11CVarArgType", "shedIDs"]
-- ["Ps11CVarArgType", "sheds"]
 - !private ["Ps11CVarArgType", "superview"]
 - ["Ps11CVarArgType", "tableView"]
+- ["Ps11CVarArgType", "trackingSheds"]
 - ["Ps11CVarArgType", "updateTableViewWithShed"]
 - !private ["Ps11CVarArgType", "updateWith"]
 - !private ["Ps11CVarArgType", "updateWithIdentifier"]
@@ -372,6 +384,7 @@ depends-member:
 - ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- !private ["Ps10Comparable", "hashValue"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "CLLocationManager"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
@@ -394,10 +407,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "addTarget"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "beginUpdates"]
+- ["Ps28CustomDebugStringConvertible", "checkForEndOfTableview"]
 - !private ["Ps28CustomDebugStringConvertible", "contains"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - ["Ps28CustomDebugStringConvertible", "createArray"]
-- ["Ps28CustomDebugStringConvertible", "currentViewIsLocal"]
+- ["Ps28CustomDebugStringConvertible", "currentView"]
+- ["Ps28CustomDebugStringConvertible", "dataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "debugDescription"]
 - !private ["Ps28CustomDebugStringConvertible", "defaultCenter"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
@@ -458,12 +473,12 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "setUpRefreshController"]
 - ["Ps28CustomDebugStringConvertible", "setupLocationManagerAndGrabLocalSheds"]
 - ["Ps28CustomDebugStringConvertible", "shedIDs"]
-- ["Ps28CustomDebugStringConvertible", "sheds"]
 - !private ["Ps28CustomDebugStringConvertible", "sort"]
 - !private ["Ps28CustomDebugStringConvertible", "sortInPlace"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "superview"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
+- ["Ps28CustomDebugStringConvertible", "trackingSheds"]
 - ["Ps28CustomDebugStringConvertible", "updateTableViewWithShed"]
 - !private ["Ps28CustomDebugStringConvertible", "updateWith"]
 - !private ["Ps28CustomDebugStringConvertible", "updateWithIdentifier"]
@@ -495,10 +510,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addTarget"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "beginUpdates"]
+- ["Ps23CustomStringConvertible", "checkForEndOfTableview"]
 - !private ["Ps23CustomStringConvertible", "contains"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - ["Ps23CustomStringConvertible", "createArray"]
-- ["Ps23CustomStringConvertible", "currentViewIsLocal"]
+- ["Ps23CustomStringConvertible", "currentView"]
+- ["Ps23CustomStringConvertible", "dataSource"]
 - !private ["Ps23CustomStringConvertible", "debugDescription"]
 - !private ["Ps23CustomStringConvertible", "defaultCenter"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
@@ -516,6 +533,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "endUpdates"]
 - ["Ps23CustomStringConvertible", "fetchShedsFirstLoad"]
 - ["Ps23CustomStringConvertible", "grabSheds"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
 - !private ["Ps23CustomStringConvertible", "identifier"]
 - !private ["Ps23CustomStringConvertible", "indexPathForCell"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
@@ -559,12 +577,12 @@ depends-member:
 - ["Ps23CustomStringConvertible", "setUpRefreshController"]
 - ["Ps23CustomStringConvertible", "setupLocationManagerAndGrabLocalSheds"]
 - ["Ps23CustomStringConvertible", "shedIDs"]
-- ["Ps23CustomStringConvertible", "sheds"]
 - !private ["Ps23CustomStringConvertible", "sort"]
 - !private ["Ps23CustomStringConvertible", "sortInPlace"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "superview"]
 - ["Ps23CustomStringConvertible", "tableView"]
+- ["Ps23CustomStringConvertible", "trackingSheds"]
 - ["Ps23CustomStringConvertible", "updateTableViewWithShed"]
 - !private ["Ps23CustomStringConvertible", "updateWith"]
 - !private ["Ps23CustomStringConvertible", "updateWithIdentifier"]
@@ -578,6 +596,7 @@ depends-member:
 - !private ["Ps9Equatable", "Generator"]
 - ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "KeyEntered"]
+- ["Ps9Equatable", "Local"]
 - ["Ps9Equatable", "LocalSheds"]
 - !private ["Ps9Equatable", "LocationController"]
 - !private ["Ps9Equatable", "NSIndexPath"]
@@ -587,6 +606,7 @@ depends-member:
 - !private ["Ps9Equatable", "Stride"]
 - ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "TinelineViewController"]
+- ["Ps9Equatable", "Tracking"]
 - !private ["Ps9Equatable", "UIRefreshControl"]
 - !private ["Ps9Equatable", "ValueChanged"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
@@ -595,8 +615,10 @@ depends-member:
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "addTarget"]
 - !private ["Ps9Equatable", "beginUpdates"]
+- ["Ps9Equatable", "checkForEndOfTableview"]
 - ["Ps9Equatable", "createArray"]
-- ["Ps9Equatable", "currentViewIsLocal"]
+- ["Ps9Equatable", "currentView"]
+- ["Ps9Equatable", "dataSource"]
 - !private ["Ps9Equatable", "debugDescription"]
 - !private ["Ps9Equatable", "defaultCenter"]
 - !private ["Ps9Equatable", "delegate"]
@@ -614,6 +636,7 @@ depends-member:
 - !private ["Ps9Equatable", "endUpdates"]
 - ["Ps9Equatable", "fetchShedsFirstLoad"]
 - ["Ps9Equatable", "grabSheds"]
+- ["Ps9Equatable", "hashValue"]
 - !private ["Ps9Equatable", "identifier"]
 - !private ["Ps9Equatable", "indexPathForCell"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
@@ -656,9 +679,9 @@ depends-member:
 - ["Ps9Equatable", "setUpRefreshController"]
 - ["Ps9Equatable", "setupLocationManagerAndGrabLocalSheds"]
 - ["Ps9Equatable", "shedIDs"]
-- ["Ps9Equatable", "sheds"]
 - !private ["Ps9Equatable", "superview"]
 - ["Ps9Equatable", "tableView"]
+- ["Ps9Equatable", "trackingSheds"]
 - ["Ps9Equatable", "updateTableViewWithShed"]
 - !private ["Ps9Equatable", "updateWith"]
 - !private ["Ps9Equatable", "updateWithIdentifier"]
@@ -674,6 +697,7 @@ depends-member:
 - ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["Ps16ForwardIndexType", "Stride"]
 - !private ["Ps16ForwardIndexType", "_DisabledRangeIndex"]
+- !private ["Ps16ForwardIndexType", "hashValue"]
 - !private ["CSo13GFCircleQuery", "observeEventType"]
 - !private ["OSC11GFEventType", "KeyEntered"]
 - !private ["CSo7GFQuery", "observeEventType"]
@@ -685,6 +709,7 @@ depends-member:
 - ["Ps8Hashable", "Distance"]
 - ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "KeyEntered"]
+- ["Ps8Hashable", "Local"]
 - ["Ps8Hashable", "LocalSheds"]
 - !private ["Ps8Hashable", "LocationController"]
 - !private ["Ps8Hashable", "NSIndexPath"]
@@ -694,6 +719,7 @@ depends-member:
 - !private ["Ps8Hashable", "Stride"]
 - ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "TinelineViewController"]
+- ["Ps8Hashable", "Tracking"]
 - !private ["Ps8Hashable", "UIRefreshControl"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
@@ -701,8 +727,10 @@ depends-member:
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "addTarget"]
 - !private ["Ps8Hashable", "beginUpdates"]
+- ["Ps8Hashable", "checkForEndOfTableview"]
 - ["Ps8Hashable", "createArray"]
-- ["Ps8Hashable", "currentViewIsLocal"]
+- ["Ps8Hashable", "currentView"]
+- ["Ps8Hashable", "dataSource"]
 - !private ["Ps8Hashable", "debugDescription"]
 - !private ["Ps8Hashable", "defaultCenter"]
 - !private ["Ps8Hashable", "delegate"]
@@ -720,6 +748,7 @@ depends-member:
 - !private ["Ps8Hashable", "endUpdates"]
 - ["Ps8Hashable", "fetchShedsFirstLoad"]
 - ["Ps8Hashable", "grabSheds"]
+- ["Ps8Hashable", "hashValue"]
 - !private ["Ps8Hashable", "identifier"]
 - !private ["Ps8Hashable", "indexPathForCell"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
@@ -762,9 +791,9 @@ depends-member:
 - ["Ps8Hashable", "setUpRefreshController"]
 - ["Ps8Hashable", "setupLocationManagerAndGrabLocalSheds"]
 - ["Ps8Hashable", "shedIDs"]
-- ["Ps8Hashable", "sheds"]
 - !private ["Ps8Hashable", "superview"]
 - ["Ps8Hashable", "tableView"]
+- ["Ps8Hashable", "trackingSheds"]
 - ["Ps8Hashable", "updateTableViewWithShed"]
 - !private ["Ps8Hashable", "updateWith"]
 - !private ["Ps8Hashable", "updateWithIdentifier"]
@@ -791,6 +820,7 @@ depends-member:
 - !private ["Si", "Stride"]
 - !private ["Si", "_DisabledRangeIndex"]
 - !private ["Si", "deinit"]
+- !private ["Si", "hashValue"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
@@ -799,19 +829,23 @@ depends-member:
 - ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
 - !private ["Ps21IntegerArithmeticType", "Stride"]
 - !private ["Ps21IntegerArithmeticType", "_DisabledRangeIndex"]
+- !private ["Ps21IntegerArithmeticType", "hashValue"]
 - ["Ps25IntegerLiteralConvertible", "Distance"]
 - ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps25IntegerLiteralConvertible", "Stride"]
 - !private ["Ps25IntegerLiteralConvertible", "_DisabledRangeIndex"]
+- !private ["Ps25IntegerLiteralConvertible", "hashValue"]
 - ["Ps11IntegerType", "Distance"]
 - ["Ps11IntegerType", "IntegerLiteralType"]
 - !private ["Ps11IntegerType", "Stride"]
 - !private ["Ps11IntegerType", "_DisabledRangeIndex"]
+- !private ["Ps11IntegerType", "hashValue"]
 - !private ["C6TineSE18LocationController", "geoFire"]
 - ["Ps14MirrorPathType", "Distance"]
 - ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "Stride"]
 - !private ["Ps14MirrorPathType", "_DisabledRangeIndex"]
+- !private ["Ps14MirrorPathType", "hashValue"]
 - !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps21MutableCollectionType", "Element"]
 - ["Ps21MutableCollectionType", "Generator"]
@@ -865,8 +899,10 @@ depends-member:
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
 - !private ["PSo8NSCoding", "beginUpdates"]
+- ["PSo8NSCoding", "checkForEndOfTableview"]
 - ["PSo8NSCoding", "createArray"]
-- ["PSo8NSCoding", "currentViewIsLocal"]
+- ["PSo8NSCoding", "currentView"]
+- ["PSo8NSCoding", "dataSource"]
 - !private ["PSo8NSCoding", "debugDescription"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
@@ -917,9 +953,9 @@ depends-member:
 - ["PSo8NSCoding", "setUpRefreshController"]
 - ["PSo8NSCoding", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo8NSCoding", "shedIDs"]
-- ["PSo8NSCoding", "sheds"]
 - !private ["PSo8NSCoding", "superview"]
 - ["PSo8NSCoding", "tableView"]
+- ["PSo8NSCoding", "trackingSheds"]
 - ["PSo8NSCoding", "updateTableViewWithShed"]
 - !private ["PSo8NSCoding", "updateWith"]
 - !private ["PSo8NSCoding", "updateWithIdentifier"]
@@ -940,8 +976,10 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "TinelineViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIRefreshControl"]
+- ["PSo26NSExtensionRequestHandling", "checkForEndOfTableview"]
 - ["PSo26NSExtensionRequestHandling", "createArray"]
-- ["PSo26NSExtensionRequestHandling", "currentViewIsLocal"]
+- ["PSo26NSExtensionRequestHandling", "currentView"]
+- ["PSo26NSExtensionRequestHandling", "dataSource"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_group_create"]
@@ -982,8 +1020,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "setUpRefreshController"]
 - ["PSo26NSExtensionRequestHandling", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo26NSExtensionRequestHandling", "shedIDs"]
-- ["PSo26NSExtensionRequestHandling", "sheds"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "trackingSheds"]
 - ["PSo26NSExtensionRequestHandling", "updateTableViewWithShed"]
 - !private ["PSo26NSExtensionRequestHandling", "updateWithIdentifier"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
@@ -996,7 +1034,6 @@ depends-member:
 - !private ["CSo20NSNotificationCenter", "defaultCenter"]
 - !private ["CSo8NSNumber", "deinit"]
 - ["CSo8NSObject", "AnyObject"]
-- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CLLocation"]
 - ["CSo8NSObject", "CLLocationManager"]
 - ["CSo8NSObject", "Int"]
@@ -1009,6 +1046,7 @@ depends-member:
 - ["CSo8NSObject", "Shed"]
 - !private ["CSo8NSObject", "ShedController"]
 - !private ["CSo8NSObject", "ShedTableViewCell"]
+- ["CSo8NSObject", "ShedViewMode"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "TinelineViewController"]
 - !private ["CSo8NSObject", "UIButton"]
@@ -1022,8 +1060,10 @@ depends-member:
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "addTarget"]
 - !private ["CSo8NSObject", "beginUpdates"]
+- ["CSo8NSObject", "checkForEndOfTableview"]
 - ["CSo8NSObject", "createArray"]
-- ["CSo8NSObject", "currentViewIsLocal"]
+- ["CSo8NSObject", "currentView"]
+- ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "debugDescription"]
 - !private ["CSo8NSObject", "defaultCenter"]
 - !private ["CSo8NSObject", "deinit"]
@@ -1084,9 +1124,9 @@ depends-member:
 - ["CSo8NSObject", "setUpRefreshController"]
 - ["CSo8NSObject", "setupLocationManagerAndGrabLocalSheds"]
 - ["CSo8NSObject", "shedIDs"]
-- ["CSo8NSObject", "sheds"]
 - !private ["CSo8NSObject", "superview"]
 - ["CSo8NSObject", "tableView"]
+- ["CSo8NSObject", "trackingSheds"]
 - ["CSo8NSObject", "updateTableViewWithShed"]
 - !private ["CSo8NSObject", "updateWith"]
 - !private ["CSo8NSObject", "updateWithIdentifier"]
@@ -1106,8 +1146,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "beginUpdates"]
+- ["PSo16NSObjectProtocol", "checkForEndOfTableview"]
 - ["PSo16NSObjectProtocol", "createArray"]
-- ["PSo16NSObjectProtocol", "currentViewIsLocal"]
+- ["PSo16NSObjectProtocol", "currentView"]
+- ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "debugDescription"]
 - !private ["PSo16NSObjectProtocol", "defaultCenter"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
@@ -1167,9 +1209,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "setUpRefreshController"]
 - ["PSo16NSObjectProtocol", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo16NSObjectProtocol", "shedIDs"]
-- ["PSo16NSObjectProtocol", "sheds"]
 - !private ["PSo16NSObjectProtocol", "superview"]
 - ["PSo16NSObjectProtocol", "tableView"]
+- ["PSo16NSObjectProtocol", "trackingSheds"]
 - ["PSo16NSObjectProtocol", "updateTableViewWithShed"]
 - !private ["PSo16NSObjectProtocol", "updateWith"]
 - !private ["PSo16NSObjectProtocol", "updateWithIdentifier"]
@@ -1192,6 +1234,7 @@ depends-member:
 - ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["Ps21RandomAccessIndexType", "Stride"]
 - !private ["Ps21RandomAccessIndexType", "_DisabledRangeIndex"]
+- !private ["Ps21RandomAccessIndexType", "hashValue"]
 - !private ["Vs5Range", "Generator"]
 - !private ["Vs5Range", "deinit"]
 - !private ["Vs14RangeGenerator", "Element"]
@@ -1232,14 +1275,20 @@ depends-member:
 - !private ["C6TineSE14ShedController", "fetchShedIDsForTineline"]
 - !private ["C6TineSE17ShedTableViewCell", "delegate"]
 - !private ["C6TineSE17ShedTableViewCell", "updateWith"]
+- ["O6TineSE12ShedViewMode", "Local"]
+- ["O6TineSE12ShedViewMode", "Tracking"]
+- ["O6TineSE12ShedViewMode", "deinit"]
+- ["O6TineSE12ShedViewMode", "hashValue"]
 - ["Ps17SignedIntegerType", "Distance"]
 - ["Ps17SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps17SignedIntegerType", "Stride"]
 - !private ["Ps17SignedIntegerType", "_DisabledRangeIndex"]
+- !private ["Ps17SignedIntegerType", "hashValue"]
 - ["Ps16SignedNumberType", "Distance"]
 - ["Ps16SignedNumberType", "IntegerLiteralType"]
 - !private ["Ps16SignedNumberType", "Stride"]
 - !private ["Ps16SignedNumberType", "_DisabledRangeIndex"]
+- !private ["Ps16SignedNumberType", "hashValue"]
 - !private ["Vs5Slice", "Generator"]
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
@@ -1249,11 +1298,11 @@ depends-member:
 - ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "Stride"]
 - !private ["Ps10Strideable", "_DisabledRangeIndex"]
+- !private ["Ps10Strideable", "hashValue"]
 - !private ["SS", "init"]
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
 - ["C6TineSE22TinelineViewController", "AnyObject"]
-- ["C6TineSE22TinelineViewController", "Bool"]
 - ["C6TineSE22TinelineViewController", "CLLocation"]
 - ["C6TineSE22TinelineViewController", "CLLocationManager"]
 - ["C6TineSE22TinelineViewController", "Int"]
@@ -1266,6 +1315,7 @@ depends-member:
 - ["C6TineSE22TinelineViewController", "Shed"]
 - !private ["C6TineSE22TinelineViewController", "ShedController"]
 - !private ["C6TineSE22TinelineViewController", "ShedTableViewCell"]
+- ["C6TineSE22TinelineViewController", "ShedViewMode"]
 - ["C6TineSE22TinelineViewController", "String"]
 - !private ["C6TineSE22TinelineViewController", "TinelineViewController"]
 - !private ["C6TineSE22TinelineViewController", "UIButton"]
@@ -1275,8 +1325,10 @@ depends-member:
 - ["C6TineSE22TinelineViewController", "UITableView"]
 - ["C6TineSE22TinelineViewController", "UITableViewCell"]
 - !private ["C6TineSE22TinelineViewController", "Void"]
+- ["C6TineSE22TinelineViewController", "checkForEndOfTableview"]
 - ["C6TineSE22TinelineViewController", "createArray"]
-- ["C6TineSE22TinelineViewController", "currentViewIsLocal"]
+- ["C6TineSE22TinelineViewController", "currentView"]
+- ["C6TineSE22TinelineViewController", "dataSource"]
 - ["C6TineSE22TinelineViewController", "deinit"]
 - !private ["C6TineSE22TinelineViewController", "dispatch_async"]
 - !private ["C6TineSE22TinelineViewController", "dispatch_get_main_queue"]
@@ -1318,8 +1370,8 @@ depends-member:
 - ["C6TineSE22TinelineViewController", "setUpRefreshController"]
 - ["C6TineSE22TinelineViewController", "setupLocationManagerAndGrabLocalSheds"]
 - ["C6TineSE22TinelineViewController", "shedIDs"]
-- ["C6TineSE22TinelineViewController", "sheds"]
 - ["C6TineSE22TinelineViewController", "tableView"]
+- ["C6TineSE22TinelineViewController", "trackingSheds"]
 - ["C6TineSE22TinelineViewController", "updateTableViewWithShed"]
 - ["C6TineSE22TinelineViewController", "viewDidLoad"]
 - ["C6TineSE22TinelineViewController", "viewForZoomingInScrollView"]
@@ -1364,8 +1416,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - !private ["PSo21UIAppearanceContainer", "beginUpdates"]
+- ["PSo21UIAppearanceContainer", "checkForEndOfTableview"]
 - ["PSo21UIAppearanceContainer", "createArray"]
-- ["PSo21UIAppearanceContainer", "currentViewIsLocal"]
+- ["PSo21UIAppearanceContainer", "currentView"]
+- ["PSo21UIAppearanceContainer", "dataSource"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_async"]
@@ -1414,9 +1468,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "setUpRefreshController"]
 - ["PSo21UIAppearanceContainer", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo21UIAppearanceContainer", "shedIDs"]
-- ["PSo21UIAppearanceContainer", "sheds"]
 - !private ["PSo21UIAppearanceContainer", "superview"]
 - ["PSo21UIAppearanceContainer", "tableView"]
+- ["PSo21UIAppearanceContainer", "trackingSheds"]
 - ["PSo21UIAppearanceContainer", "updateTableViewWithShed"]
 - !private ["PSo21UIAppearanceContainer", "updateWith"]
 - !private ["PSo21UIAppearanceContainer", "updateWithIdentifier"]
@@ -1437,8 +1491,10 @@ depends-member:
 - ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "TinelineViewController"]
 - !private ["PSo18UIContentContainer", "UIRefreshControl"]
+- ["PSo18UIContentContainer", "checkForEndOfTableview"]
 - ["PSo18UIContentContainer", "createArray"]
-- ["PSo18UIContentContainer", "currentViewIsLocal"]
+- ["PSo18UIContentContainer", "currentView"]
+- ["PSo18UIContentContainer", "dataSource"]
 - !private ["PSo18UIContentContainer", "dispatch_async"]
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
 - !private ["PSo18UIContentContainer", "dispatch_group_create"]
@@ -1479,8 +1535,8 @@ depends-member:
 - ["PSo18UIContentContainer", "setUpRefreshController"]
 - ["PSo18UIContentContainer", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo18UIContentContainer", "shedIDs"]
-- ["PSo18UIContentContainer", "sheds"]
 - ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "trackingSheds"]
 - ["PSo18UIContentContainer", "updateTableViewWithShed"]
 - !private ["PSo18UIContentContainer", "updateWithIdentifier"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
@@ -1533,8 +1589,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
 - !private ["PSo18UIFocusEnvironment", "beginUpdates"]
+- ["PSo18UIFocusEnvironment", "checkForEndOfTableview"]
 - ["PSo18UIFocusEnvironment", "createArray"]
-- ["PSo18UIFocusEnvironment", "currentViewIsLocal"]
+- ["PSo18UIFocusEnvironment", "currentView"]
+- ["PSo18UIFocusEnvironment", "dataSource"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_async"]
@@ -1583,9 +1641,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "setUpRefreshController"]
 - ["PSo18UIFocusEnvironment", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo18UIFocusEnvironment", "shedIDs"]
-- ["PSo18UIFocusEnvironment", "sheds"]
 - !private ["PSo18UIFocusEnvironment", "superview"]
 - ["PSo18UIFocusEnvironment", "tableView"]
+- ["PSo18UIFocusEnvironment", "trackingSheds"]
 - ["PSo18UIFocusEnvironment", "updateTableViewWithShed"]
 - !private ["PSo18UIFocusEnvironment", "updateWith"]
 - !private ["PSo18UIFocusEnvironment", "updateWithIdentifier"]
@@ -1598,7 +1656,6 @@ depends-member:
 - !private ["CSo16UIRefreshControl", "endRefreshing"]
 - !private ["CSo16UIRefreshControl", "init"]
 - ["CSo11UIResponder", "AnyObject"]
-- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CLLocation"]
 - ["CSo11UIResponder", "CLLocationManager"]
 - ["CSo11UIResponder", "Int"]
@@ -1611,6 +1668,7 @@ depends-member:
 - ["CSo11UIResponder", "Shed"]
 - !private ["CSo11UIResponder", "ShedController"]
 - !private ["CSo11UIResponder", "ShedTableViewCell"]
+- ["CSo11UIResponder", "ShedViewMode"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "TinelineViewController"]
 - !private ["CSo11UIResponder", "UIButton"]
@@ -1623,8 +1681,10 @@ depends-member:
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
 - !private ["CSo11UIResponder", "beginUpdates"]
+- ["CSo11UIResponder", "checkForEndOfTableview"]
 - ["CSo11UIResponder", "createArray"]
-- ["CSo11UIResponder", "currentViewIsLocal"]
+- ["CSo11UIResponder", "currentView"]
+- ["CSo11UIResponder", "dataSource"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo11UIResponder", "dispatch_async"]
@@ -1673,9 +1733,9 @@ depends-member:
 - ["CSo11UIResponder", "setUpRefreshController"]
 - ["CSo11UIResponder", "setupLocationManagerAndGrabLocalSheds"]
 - ["CSo11UIResponder", "shedIDs"]
-- ["CSo11UIResponder", "sheds"]
 - !private ["CSo11UIResponder", "superview"]
 - ["CSo11UIResponder", "tableView"]
+- ["CSo11UIResponder", "trackingSheds"]
 - ["CSo11UIResponder", "updateTableViewWithShed"]
 - !private ["CSo11UIResponder", "updateWith"]
 - !private ["CSo11UIResponder", "updateWithIdentifier"]
@@ -1698,8 +1758,10 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "String"]
 - !private ["PSo20UIScrollViewDelegate", "TinelineViewController"]
 - !private ["PSo20UIScrollViewDelegate", "UIRefreshControl"]
+- !private ["PSo20UIScrollViewDelegate", "checkForEndOfTableview"]
 - !private ["PSo20UIScrollViewDelegate", "createArray"]
-- !private ["PSo20UIScrollViewDelegate", "currentViewIsLocal"]
+- !private ["PSo20UIScrollViewDelegate", "currentView"]
+- !private ["PSo20UIScrollViewDelegate", "dataSource"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_async"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_group_create"]
@@ -1737,8 +1799,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "setUpRefreshController"]
 - !private ["PSo20UIScrollViewDelegate", "setupLocationManagerAndGrabLocalSheds"]
 - !private ["PSo20UIScrollViewDelegate", "shedIDs"]
-- !private ["PSo20UIScrollViewDelegate", "sheds"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
+- !private ["PSo20UIScrollViewDelegate", "trackingSheds"]
 - !private ["PSo20UIScrollViewDelegate", "updateTableViewWithShed"]
 - !private ["PSo20UIScrollViewDelegate", "updateWithIdentifier"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
@@ -1754,8 +1816,10 @@ depends-member:
 - ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "TinelineViewController"]
 - !private ["PSo16UIStateRestoring", "UIRefreshControl"]
+- ["PSo16UIStateRestoring", "checkForEndOfTableview"]
 - ["PSo16UIStateRestoring", "createArray"]
-- ["PSo16UIStateRestoring", "currentViewIsLocal"]
+- ["PSo16UIStateRestoring", "currentView"]
+- ["PSo16UIStateRestoring", "dataSource"]
 - !private ["PSo16UIStateRestoring", "dispatch_async"]
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
 - !private ["PSo16UIStateRestoring", "dispatch_group_create"]
@@ -1796,8 +1860,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "setUpRefreshController"]
 - ["PSo16UIStateRestoring", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo16UIStateRestoring", "shedIDs"]
-- ["PSo16UIStateRestoring", "sheds"]
 - ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "trackingSheds"]
 - ["PSo16UIStateRestoring", "updateTableViewWithShed"]
 - !private ["PSo16UIStateRestoring", "updateWithIdentifier"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
@@ -1825,8 +1889,10 @@ depends-member:
 - ["PSo21UITableViewDataSource", "String"]
 - !private ["PSo21UITableViewDataSource", "TinelineViewController"]
 - !private ["PSo21UITableViewDataSource", "UIRefreshControl"]
+- !private ["PSo21UITableViewDataSource", "checkForEndOfTableview"]
 - !private ["PSo21UITableViewDataSource", "createArray"]
-- !private ["PSo21UITableViewDataSource", "currentViewIsLocal"]
+- !private ["PSo21UITableViewDataSource", "currentView"]
+- !private ["PSo21UITableViewDataSource", "dataSource"]
 - !private ["PSo21UITableViewDataSource", "dispatch_async"]
 - !private ["PSo21UITableViewDataSource", "dispatch_get_main_queue"]
 - !private ["PSo21UITableViewDataSource", "dispatch_group_create"]
@@ -1864,8 +1930,8 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "setUpRefreshController"]
 - !private ["PSo21UITableViewDataSource", "setupLocationManagerAndGrabLocalSheds"]
 - !private ["PSo21UITableViewDataSource", "shedIDs"]
-- !private ["PSo21UITableViewDataSource", "sheds"]
 - ["PSo21UITableViewDataSource", "tableView"]
+- !private ["PSo21UITableViewDataSource", "trackingSheds"]
 - !private ["PSo21UITableViewDataSource", "updateTableViewWithShed"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
 - ["PSo21UITableViewDataSource", ""]
@@ -1879,8 +1945,10 @@ depends-member:
 - ["PSo19UITableViewDelegate", "String"]
 - !private ["PSo19UITableViewDelegate", "TinelineViewController"]
 - !private ["PSo19UITableViewDelegate", "UIRefreshControl"]
+- !private ["PSo19UITableViewDelegate", "checkForEndOfTableview"]
 - !private ["PSo19UITableViewDelegate", "createArray"]
-- !private ["PSo19UITableViewDelegate", "currentViewIsLocal"]
+- !private ["PSo19UITableViewDelegate", "currentView"]
+- !private ["PSo19UITableViewDelegate", "dataSource"]
 - !private ["PSo19UITableViewDelegate", "dispatch_async"]
 - !private ["PSo19UITableViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo19UITableViewDelegate", "dispatch_group_create"]
@@ -1918,8 +1986,8 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "setUpRefreshController"]
 - !private ["PSo19UITableViewDelegate", "setupLocationManagerAndGrabLocalSheds"]
 - !private ["PSo19UITableViewDelegate", "shedIDs"]
-- !private ["PSo19UITableViewDelegate", "sheds"]
 - ["PSo19UITableViewDelegate", "tableView"]
+- !private ["PSo19UITableViewDelegate", "trackingSheds"]
 - !private ["PSo19UITableViewDelegate", "updateTableViewWithShed"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo19UITableViewDelegate", ""]
@@ -1937,8 +2005,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - !private ["PSo18UITraitEnvironment", "beginUpdates"]
+- ["PSo18UITraitEnvironment", "checkForEndOfTableview"]
 - ["PSo18UITraitEnvironment", "createArray"]
-- ["PSo18UITraitEnvironment", "currentViewIsLocal"]
+- ["PSo18UITraitEnvironment", "currentView"]
+- ["PSo18UITraitEnvironment", "dataSource"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo18UITraitEnvironment", "dispatch_async"]
@@ -1987,9 +2057,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "setUpRefreshController"]
 - ["PSo18UITraitEnvironment", "setupLocationManagerAndGrabLocalSheds"]
 - ["PSo18UITraitEnvironment", "shedIDs"]
-- ["PSo18UITraitEnvironment", "sheds"]
 - !private ["PSo18UITraitEnvironment", "superview"]
 - ["PSo18UITraitEnvironment", "tableView"]
+- ["PSo18UITraitEnvironment", "trackingSheds"]
 - ["PSo18UITraitEnvironment", "updateTableViewWithShed"]
 - !private ["PSo18UITraitEnvironment", "updateWith"]
 - !private ["PSo18UITraitEnvironment", "updateWithIdentifier"]
@@ -2011,7 +2081,6 @@ depends-member:
 - !private ["CSo6UIView", "superview"]
 - !private ["CSo6UIView", "updateWith"]
 - ["CSo16UIViewController", "AnyObject"]
-- ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CLLocation"]
 - ["CSo16UIViewController", "CLLocationManager"]
 - ["CSo16UIViewController", "Int"]
@@ -2024,6 +2093,7 @@ depends-member:
 - ["CSo16UIViewController", "Shed"]
 - !private ["CSo16UIViewController", "ShedController"]
 - !private ["CSo16UIViewController", "ShedTableViewCell"]
+- ["CSo16UIViewController", "ShedViewMode"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "TinelineViewController"]
 - !private ["CSo16UIViewController", "UIButton"]
@@ -2033,8 +2103,10 @@ depends-member:
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - !private ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "checkForEndOfTableview"]
 - ["CSo16UIViewController", "createArray"]
-- ["CSo16UIViewController", "currentViewIsLocal"]
+- ["CSo16UIViewController", "currentView"]
+- ["CSo16UIViewController", "dataSource"]
 - !private ["CSo16UIViewController", "deinit"]
 - !private ["CSo16UIViewController", "dispatch_async"]
 - !private ["CSo16UIViewController", "dispatch_get_main_queue"]
@@ -2076,8 +2148,8 @@ depends-member:
 - ["CSo16UIViewController", "setUpRefreshController"]
 - ["CSo16UIViewController", "setupLocationManagerAndGrabLocalSheds"]
 - ["CSo16UIViewController", "shedIDs"]
-- ["CSo16UIViewController", "sheds"]
 - ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "trackingSheds"]
 - ["CSo16UIViewController", "updateTableViewWithShed"]
 - !private ["CSo16UIViewController", "updateWithIdentifier"]
 - ["CSo16UIViewController", "viewDidLoad"]
@@ -2109,6 +2181,7 @@ depends-member:
 - ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Stride"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "_DisabledRangeIndex"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "hashValue"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
@@ -2129,14 +2202,17 @@ depends-member:
 - ["Ps14_Incrementable", "IntegerLiteralType"]
 - !private ["Ps14_Incrementable", "Stride"]
 - !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
+- !private ["Ps14_Incrementable", "hashValue"]
 - ["Ps22_IntegerArithmeticType", "Distance"]
 - ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
 - !private ["Ps22_IntegerArithmeticType", "Stride"]
 - !private ["Ps22_IntegerArithmeticType", "_DisabledRangeIndex"]
+- !private ["Ps22_IntegerArithmeticType", "hashValue"]
 - ["Ps12_IntegerType", "Distance"]
 - ["Ps12_IntegerType", "IntegerLiteralType"]
 - !private ["Ps12_IntegerType", "Stride"]
 - !private ["Ps12_IntegerType", "_DisabledRangeIndex"]
+- !private ["Ps12_IntegerType", "hashValue"]
 - ["Ps21_ObjectiveCBridgeable", "Distance"]
 - !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - ["Ps21_ObjectiveCBridgeable", "Generator"]
@@ -2150,6 +2226,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "contains"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "removeAtIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "sort"]
@@ -2160,6 +2237,7 @@ depends-member:
 - ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["Ps22_RandomAccessAmbiguity", "Stride"]
 - !private ["Ps22_RandomAccessAmbiguity", "_DisabledRangeIndex"]
+- !private ["Ps22_RandomAccessAmbiguity", "hashValue"]
 - ["Ps12_Reflectable", "Distance"]
 - !private ["Ps12_Reflectable", "Element"]
 - ["Ps12_Reflectable", "Generator"]
@@ -2181,6 +2259,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps12_Reflectable", "endRefreshing"]
 - !private ["Ps12_Reflectable", "endUpdates"]
+- !private ["Ps12_Reflectable", "hashValue"]
 - !private ["Ps12_Reflectable", "indexPathForCell"]
 - ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "insertRowsAtIndexPaths"]
@@ -2196,6 +2275,7 @@ depends-member:
 - ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps18_SignedIntegerType", "Stride"]
 - !private ["Ps18_SignedIntegerType", "_DisabledRangeIndex"]
+- !private ["Ps18_SignedIntegerType", "hashValue"]
 depends-nominal:
 - "Ps9AnyObject"
 - "Sa"
@@ -2273,6 +2353,7 @@ depends-nominal:
 - "C6TineSE4Shed"
 - !private "C6TineSE14ShedController"
 - !private "C6TineSE17ShedTableViewCell"
+- "O6TineSE12ShedViewMode"
 - "Ps17SignedIntegerType"
 - "Ps16SignedNumberType"
 - !private "Vs5Slice"
@@ -2425,4 +2506,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "e8cd7e3a4c9ba9e5d9a2965d67c1ca9e"
+interface-hash: "6a678493c7b5d73c513dd00a45895d78"

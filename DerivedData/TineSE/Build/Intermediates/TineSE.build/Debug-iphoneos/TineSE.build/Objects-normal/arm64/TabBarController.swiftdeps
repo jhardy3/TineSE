@@ -8,37 +8,37 @@ provides-member:
 - ["CSo7UIImage", ""]
 - ["CSo7UIImage", "imageWithColor"]
 provides-dynamic-lookup:
-- "imageWithColor"
 - "viewDidLoad"
-- "didReceiveMemoryWarning"
 - "tabBar"
+- "imageWithColor"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "CGContextTranslateCTM"
-- !private "CGBlendMode"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
-- !private "UIGraphicsBeginImageContextWithOptions"
 - !private "CGContextClipToMask"
-- !private "UIGraphicsGetCurrentContext"
-- !private "CGRect"
-- !private "StringLiteralType"
-- "UITabBar"
-- "TabBarController"
-- !private "=="
 - !private "NSNotificationCenter"
-- !private "CGRectMake"
-- !private "NSForegroundColorAttributeName"
-- !private "Dictionary"
-- !private "CGContextScaleCTM"
-- "UITabBarItem"
-- !private "UIControlState"
-- !private "UIImageRenderingMode"
 - !private "UIGraphicsEndImageContext"
-- "UIImage"
+- !private "Dictionary"
+- !private "StringLiteralType"
+- !private "=="
+- !private "CGContextScaleCTM"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- "UITabBar"
+- !private "UIImageRenderingMode"
+- !private "NSForegroundColorAttributeName"
 - "UIColor"
-- !private "CGContextFillRect"
-- "UITabBarController"
+- !private "UIGraphicsGetCurrentContext"
 - !private "BooleanLiteralType"
+- "UITabBarItem"
+- "TabBarController"
+- !private "CGRectMake"
+- !private "CGContextTranslateCTM"
+- !private "UIControlState"
+- !private "CGBlendMode"
+- !private "CGContextFillRect"
+- "UIImage"
 - !private "CGContextSetBlendMode"
+- !private "CGRect"
+- "UITabBarController"
+- !private "UIGraphicsBeginImageContextWithOptions"
 depends-member:
 - !private ["Ps9AnyObject", "CGBlendMode"]
 - !private ["Ps9AnyObject", "CGContextClipToMask"]
@@ -66,7 +66,6 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "items"]
 - !private ["Ps9AnyObject", "postNotificationName"]
-- !private ["Ps9AnyObject", "redColor"]
 - !private ["Ps9AnyObject", "scale"]
 - !private ["Ps9AnyObject", "selectedImage"]
 - !private ["Ps9AnyObject", "setFill"]
@@ -83,7 +82,6 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "Generator"]
 - !private ["Ps23ArrayLiteralConvertible", "Index"]
 - !private ["Ps23ArrayLiteralConvertible", "Normal"]
-- !private ["Ps23ArrayLiteralConvertible", "Selected"]
 - !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
 - !private ["Ps23ArrayLiteralConvertible", "_Element"]
 - !private ["Vs10ArraySlice", "Generator"]
@@ -127,7 +125,6 @@ depends-member:
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "items"]
 - !private ["Ps11CVarArgType", "postNotificationName"]
-- !private ["Ps11CVarArgType", "redColor"]
 - !private ["Ps11CVarArgType", "scale"]
 - !private ["Ps11CVarArgType", "selectedImage"]
 - !private ["Ps11CVarArgType", "setFill"]
@@ -177,7 +174,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "items"]
 - !private ["Ps28CustomDebugStringConvertible", "postNotificationName"]
-- !private ["Ps28CustomDebugStringConvertible", "redColor"]
 - !private ["Ps28CustomDebugStringConvertible", "scale"]
 - !private ["Ps28CustomDebugStringConvertible", "selectedImage"]
 - !private ["Ps28CustomDebugStringConvertible", "setFill"]
@@ -222,7 +218,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "items"]
 - !private ["Ps23CustomStringConvertible", "postNotificationName"]
-- !private ["Ps23CustomStringConvertible", "redColor"]
 - !private ["Ps23CustomStringConvertible", "scale"]
 - !private ["Ps23CustomStringConvertible", "selectedImage"]
 - !private ["Ps23CustomStringConvertible", "setFill"]
@@ -250,7 +245,6 @@ depends-member:
 - !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
 - !private ["Ps9Equatable", "NSNotificationCenter"]
 - !private ["Ps9Equatable", "Normal"]
-- !private ["Ps9Equatable", "Selected"]
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIControlState"]
 - !private ["Ps9Equatable", "UIGraphicsBeginImageContextWithOptions"]
@@ -269,7 +263,6 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "items"]
 - !private ["Ps9Equatable", "postNotificationName"]
-- !private ["Ps9Equatable", "redColor"]
 - !private ["Ps9Equatable", "scale"]
 - !private ["Ps9Equatable", "selectedImage"]
 - !private ["Ps9Equatable", "setFill"]
@@ -314,7 +307,6 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "items"]
 - !private ["Ps8Hashable", "postNotificationName"]
-- !private ["Ps8Hashable", "redColor"]
 - !private ["Ps8Hashable", "scale"]
 - !private ["Ps8Hashable", "selectedImage"]
 - !private ["Ps8Hashable", "setFill"]
@@ -378,7 +370,6 @@ depends-member:
 - !private ["PSo8NSCoding", "imageWithRenderingMode"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "items"]
-- !private ["PSo8NSCoding", "redColor"]
 - !private ["PSo8NSCoding", "scale"]
 - !private ["PSo8NSCoding", "selectedImage"]
 - !private ["PSo8NSCoding", "setFill"]
@@ -388,7 +379,6 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - !private ["PSo8NSCoding", "whiteColor"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "redColor"]
 - !private ["PSo9NSCopying", "setFill"]
 - !private ["PSo9NSCopying", "whiteColor"]
 - !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
@@ -433,7 +423,6 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "items"]
 - !private ["CSo8NSObject", "postNotificationName"]
-- !private ["CSo8NSObject", "redColor"]
 - !private ["CSo8NSObject", "scale"]
 - !private ["CSo8NSObject", "selectedImage"]
 - !private ["CSo8NSObject", "setFill"]
@@ -468,7 +457,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "items"]
 - !private ["PSo16NSObjectProtocol", "postNotificationName"]
-- !private ["PSo16NSObjectProtocol", "redColor"]
 - !private ["PSo16NSObjectProtocol", "scale"]
 - !private ["PSo16NSObjectProtocol", "selectedImage"]
 - !private ["PSo16NSObjectProtocol", "setFill"]
@@ -493,13 +481,11 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "imageWithColor"]
 - !private ["PSo14NSSecureCoding", "imageWithRenderingMode"]
 - !private ["PSo14NSSecureCoding", "init"]
-- !private ["PSo14NSSecureCoding", "redColor"]
 - !private ["PSo14NSSecureCoding", "scale"]
 - !private ["PSo14NSSecureCoding", "setFill"]
 - !private ["PSo14NSSecureCoding", "size"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
 - !private ["Ps13OptionSetType", "Normal"]
-- !private ["Ps13OptionSetType", "Selected"]
 - !private ["Sq", "deinit"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
@@ -509,7 +495,6 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "_Element"]
 - !private ["Ps16RawRepresentable", "AlwaysOriginal"]
 - !private ["Ps16RawRepresentable", "Normal"]
-- !private ["Ps16RawRepresentable", "Selected"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
@@ -518,7 +503,6 @@ depends-member:
 - !private ["Ps12SequenceType", "Value"]
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps14SetAlgebraType", "Normal"]
-- !private ["Ps14SetAlgebraType", "Selected"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps16SignedNumberType", "Distance"]
@@ -578,7 +562,6 @@ depends-member:
 - !private ["CSo9UIBarItem", "image"]
 - !private ["CSo9UIBarItem", "selectedImage"]
 - !private ["CSo9UIBarItem", "setTitleTextAttributes"]
-- !private ["CSo7UIColor", "redColor"]
 - !private ["CSo7UIColor", "setFill"]
 - !private ["CSo7UIColor", "whiteColor"]
 - !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
@@ -593,7 +576,6 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["VSC14UIControlState", "Normal"]
-- !private ["VSC14UIControlState", "Selected"]
 - !private ["PSo17UICoordinateSpace", "items"]
 - !private ["PSo13UIDynamicItem", "items"]
 - !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
@@ -713,7 +695,6 @@ depends-member:
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
-- !private ["Ps24_ColorLiteralConvertible", "redColor"]
 - !private ["Ps24_ColorLiteralConvertible", "setFill"]
 - !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
 - !private ["Ps24_DestructorSafeContainer", "Generator"]

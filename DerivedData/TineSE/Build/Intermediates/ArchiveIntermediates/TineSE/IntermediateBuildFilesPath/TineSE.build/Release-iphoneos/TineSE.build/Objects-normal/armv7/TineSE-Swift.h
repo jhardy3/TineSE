@@ -325,13 +325,13 @@ SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull localShedIDs;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull shedIDs;
 @property (nonatomic) BOOL endOfTableView;
-@property (nonatomic, readonly) BOOL currentViewIsLocal;
 @property (nonatomic, strong) CLLocationManager * _Null_unspecified locationManager;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentedController;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (void)checkForEndOfTableview:(NSIndexPath * _Nonnull)indexPath;
 - (void)grabSheds;
 - (NSArray<NSString *> * _Nonnull)createArray:(NSArray<NSString *> * _Nonnull)array range:(NSInteger)range;
 - (void)fetchShedsFirstLoad;
@@ -339,10 +339,10 @@ SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 - (void)setUpRefreshController;
 - (void)newShedsAddedRefresh;
 - (IBAction)segmentedControlChanged:(UISegmentedControl * _Nonnull)sender;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (void)setupLocationManagerAndGrabLocalSheds;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -371,11 +371,16 @@ SWIFT_CLASS("_TtC6TineSE19logInViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTextField;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified proceedButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified toggleModeButton;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
-- (IBAction)signUpTapped:(UIButton * _Nonnull)sender;
-- (IBAction)signInTapped:(UIButton * _Nonnull)sender;
+- (IBAction)proceedButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)toggleModeButtonTapped:(UIButton * _Nonnull)sender;
+- (void)signIn;
+- (void)signUp;
+- (void)displayBasedOnViewMode;
 - (void)setupTextFields;
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
