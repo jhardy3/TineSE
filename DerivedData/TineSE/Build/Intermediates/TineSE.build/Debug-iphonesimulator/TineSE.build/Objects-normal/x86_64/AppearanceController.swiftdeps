@@ -7,17 +7,17 @@ provides-member:
 - ["C6TineSE20AppearanceController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UITabBar"
-- "AppearanceController"
-- !private "UIToolbar"
-- !private "UIBarButtonItem"
 - !private "NSForegroundColorAttributeName"
-- !private "Dictionary"
-- !private "UITabBarItem"
-- !private "UILabel"
+- "AppearanceController"
 - !private "UINavigationBar"
-- !private "UISegmentedControl"
+- !private "UILabel"
+- !private "UITabBar"
 - !private "UIColor"
+- !private "UISegmentedControl"
+- !private "Dictionary"
+- !private "UIBarButtonItem"
+- !private "UIToolbar"
+- !private "UITabBarItem"
 depends-member:
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]

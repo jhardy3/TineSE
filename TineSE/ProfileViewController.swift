@@ -86,6 +86,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         self.followButton.layer.borderWidth = 1
         
         self.collectionView.backgroundColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
         flowLayout.sectionInset = UIEdgeInsetsMake(0, kMargin, 0, kMargin)
         flowLayout.minimumLineSpacing = kMargin * 2

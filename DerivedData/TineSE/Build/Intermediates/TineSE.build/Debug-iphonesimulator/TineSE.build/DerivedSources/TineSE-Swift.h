@@ -371,11 +371,16 @@ SWIFT_CLASS("_TtC6TineSE19logInViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTextField;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified proceedButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified toggleModeButton;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
-- (IBAction)signUpTapped:(UIButton * _Nonnull)sender;
-- (IBAction)signInTapped:(UIButton * _Nonnull)sender;
+- (IBAction)proceedButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)toggleModeButtonTapped:(UIButton * _Nonnull)sender;
+- (void)signIn;
+- (void)signUp;
+- (void)displayBasedOnViewMode;
 - (void)setupTextFields;
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;

@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum LogInMode {
+    case LogIn
+    case SignUp
+}
+
 class logInViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - IBOutlets
@@ -15,16 +20,22 @@ class logInViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var proceedButton: UIButton!
+    @IBOutlet weak var toggleModeButton: UIButton!
+    
+    var logInMode = LogInMode.LogIn {
+        didSet {
+            displayBasedOnViewMode()
+        }
+    }
     
     // MARK: - Class Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        displayBasedOnViewMode()
         setupTextFields()
-        
-        self.view.backgroundColor = UIColor.desertFloorTan()
-        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -42,13 +53,39 @@ class logInViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - Button Action Functions
     
-    // Signs a user up
-    @IBAction func signUpTapped(sender: UIButton) {
+    @IBAction func proceedButtonTapped(sender: UIButton) {
+        switch logInMode {
+        case .LogIn:
+            signIn()
+        case .SignUp:
+            signUp()
+        }
+    }
+    
+    @IBAction func toggleModeButtonTapped(sender: UIButton) {
+        switch logInMode {
+        case .LogIn:
+            logInMode = .SignUp
+            
+        case .SignUp:
+            logInMode = .LogIn
+        }
+    }
+    
+    func signIn() {
+        // Guard for email and password or return
+        guard let email = emailTextField.text, let password = passwordTextField.text else { return }
         
-        emailTextField.hidden = false
-        passwordTextField.hidden = false
-        usernameTextField.hidden = false
-        
+        // authenticate hunter with firebase
+        HunterController.authenticateHunter(email, password: password) { (success) -> Void in
+            // If successful perform segue to tineline
+            if success {
+                self.performSegueWithIdentifier("loggedIn", sender: self)
+            }
+        }
+    }
+    
+    func signUp() {
         // Guard for username, email and password or return
         guard let username = usernameTextField.text, let email = emailTextField.text, let password = passwordTextField.text where username.isEmpty == false else { return }
         
@@ -62,34 +99,26 @@ class logInViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    // Signs a user in
-    @IBAction func signInTapped(sender: UIButton) {
-        
-        emailTextField.hidden = false
-        passwordTextField.hidden = false
-        
-        // Guard for email and password or return
-        guard let email = emailTextField.text, let password = passwordTextField.text else { return }
-        
-        // authenticate hunter with firebase
-        HunterController.authenticateHunter(email, password: password) { (success) -> Void in
-            
-            // If successful perform segue to tineline
-            if success {
-                self.performSegueWithIdentifier("loggedIn", sender: self)
-            }
+    func displayBasedOnViewMode() {
+        if self.logInMode == .LogIn {
+            usernameTextField.hidden = true
+            emailTextField.hidden = false
+            passwordTextField.hidden = false
+            proceedButton.setTitle("Log In", forState: .Normal)
+            toggleModeButton.setTitle("Need an account?", forState: .Normal)
+        } else {
+            usernameTextField.hidden = false
+            emailTextField.hidden = false
+            passwordTextField.hidden = false
+            proceedButton.setTitle("Sign Up", forState: .Normal)
+            toggleModeButton.setTitle("Have an account already?", forState: .Normal)
         }
-        
     }
     
     func setupTextFields() {
         usernameTextField.delegate = self
         emailTextField.delegate = self
         passwordTextField.delegate = self
-        
-        usernameTextField.hidden = true
-        emailTextField.hidden = true
-        passwordTextField.hidden = true
     }
     
     func textFieldDidEndEditing(textField: UITextField) {

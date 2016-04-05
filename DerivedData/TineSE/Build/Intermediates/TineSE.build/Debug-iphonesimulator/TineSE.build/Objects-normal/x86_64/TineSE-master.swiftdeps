@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "dc39e926c1af6751546218e0cc20e8bb"
-build_time: [513123510, 561291000]
+build_time: [513133605, 899266000]
 inputs:
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/ImageCollectionViewCell.swift": [513119083, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/AppDelegate.swift": [512492479, 0]
@@ -10,17 +10,17 @@ inputs:
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/UIColor+AppColorPallete.swift": [512191481, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/TinelineViewController.swift": [513117772, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/HunterController.swift": [512853032, 0]
-  "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/ProfileViewController.swift": [513118924, 0]
+  "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/ProfileViewController.swift": [513126685, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/Shed.swift": [512675831, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/SearchTableViewController.swift": [512526139, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/ShedTableViewCell.swift": [513120687, 0]
-  "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/LogInViewController.swift": [512785183, 0]
+  "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/LogInViewController.swift": [513133605, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/TabBarController.swift": [513116067, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/SearchResultsTableViewController.swift": [512162850, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/PhotoController.swift": [512520071, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/Hunter.swift": [512793842, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/Comment.swift": [512006043, 0]
-  "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/AppearanceController.swift": [513101319, 0]
+  "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/AppearanceController.swift": [513126685, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/CameraViewController.swift": [513116604, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/LocationController.swift": [512520071, 0]
   "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE/ShedController.swift": [512861527, 0]
