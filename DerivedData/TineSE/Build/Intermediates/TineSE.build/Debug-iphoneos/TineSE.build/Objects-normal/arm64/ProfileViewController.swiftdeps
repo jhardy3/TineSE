@@ -9,83 +9,85 @@ provides-member:
 - ["O6TineSE14FollowingState", ""]
 - ["C6TineSE21ProfileViewController", ""]
 provides-dynamic-lookup:
-- "usernameLabel"
-- "viewDidLoad"
-- "updateWithIdentifier"
-- "trackingCountLabel"
-- "shedDeletedUpdateView"
-- "followButtonTapped"
-- "hunterProfileImage"
-- "kMargin"
-- "viewWillAppear"
-- "trackersCountLabel"
-- "viewWillDisappear"
 - "viewLoaded"
-- "updateWithHunter"
-- "whitesCountLabel"
-- "prepareForSegue"
 - "flowLayout"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "viewDidAppear"
-- "shedCountLabel"
+- "trackersCountLabel"
 - "followButton"
-- "brownsCountLabel"
+- "viewWillDisappear"
+- "whitesCountLabel"
+- "followButtonTapped"
+- "viewDidLoad"
+- "prepareForSegue"
+- "usernameLabel"
+- "viewWillAppear"
+- "hunterProfileImage"
+- "updateWithIdentifier"
+- "shedCountLabel"
+- "viewDidAppear"
+- "shedDeletedUpdateView"
 - "chalksCountLabel"
 - "trackingCount"
+- "kMargin"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "brownsCountLabel"
+- "updateWithHunter"
+- "trackingCountLabel"
 depends-top-level:
-- !private "/"
-- "UICollectionViewCell"
-- "ProfileViewController"
-- "AnyObject"
-- !private "StringLiteralType"
-- "UICollectionView"
-- "UIImageView"
-- !private "dispatch_group_create"
-- !private "NSThread"
-- "CGSize"
-- "FollowingState"
-- !private "dispatch_group_leave"
-- !private "HunterController"
-- !private "UIColor"
-- !private "CGSizeMake"
-- "UICollectionViewDelegateFlowLayout"
-- !private "print"
-- "Shed"
-- "UIButton"
-- !private "UIEdgeInsetsMake"
-- !private "ShedController"
-- "UICollectionViewFlowLayout"
-- "UIViewController"
-- !private "dispatch_group_notify"
-- !private "dispatch_group_enter"
-- "Int"
-- !private "!="
-- "UICollectionViewLayout"
-- "UICollectionViewDataSource"
-- "=="
-- !private ">"
-- "UICollectionViewDelegate"
-- "Hunter"
-- "UILabel"
-- !private "Array"
-- "Bool"
-- "UIStoryboardSegue"
-- !private "NSNotificationCenter"
-- !private "dispatch_get_main_queue"
-- !private "-"
-- !private "*"
-- !private "ImageCollectionViewCell"
-- !private "Void"
-- !private "+"
 - "BooleanLiteralType"
+- !private "UIEdgeInsetsMake"
 - "CGFloat"
+- !private "/"
+- !private "ShedController"
+- !private "NSNotificationCenter"
+- "UICollectionViewDataSource"
+- !private "HunterController"
+- "UICollectionView"
+- "UICollectionViewDelegate"
+- !private "!="
+- !private "ImageCollectionViewCell"
+- !private "NSForegroundColorAttributeName"
+- !private "Array"
+- !private "CGSizeMake"
+- !private "Dictionary"
+- "=="
+- "UICollectionViewCell"
+- "UIImageView"
+- !private "UIColor"
+- "Bool"
+- "UIViewController"
+- "UICollectionViewFlowLayout"
+- !private "NSThread"
+- !private "*"
+- "Hunter"
+- !private "dispatch_group_create"
+- !private ">"
+- "Shed"
+- !private "dispatch_group_leave"
+- "UIButton"
+- !private "dispatch_get_main_queue"
 - "NSIndexPath"
+- !private "print"
+- "UICollectionViewDelegateFlowLayout"
+- "AnyObject"
+- "FollowingState"
+- !private "StringLiteralType"
 - "String"
+- !private "Void"
+- "UICollectionViewLayout"
+- !private "+"
+- "CGSize"
+- !private "dispatch_group_notify"
+- "ProfileViewController"
+- !private "-"
+- "Int"
+- !private "dispatch_group_enter"
+- "UIStoryboardSegue"
+- "UILabel"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -93,6 +95,7 @@ depends-member:
 - !private ["Ps9AnyObject", "CGSizeMake"]
 - ["Ps9AnyObject", "FollowingState"]
 - !private ["Ps9AnyObject", "HunterController"]
+- !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["Ps9AnyObject", "NSNotificationCenter"]
 - !private ["Ps9AnyObject", "NSThread"]
 - ["Ps9AnyObject", "Shed"]
@@ -140,6 +143,7 @@ depends-member:
 - !private ["Ps9AnyObject", "lowercaseString"]
 - !private ["Ps9AnyObject", "minimumInteritemSpacing"]
 - !private ["Ps9AnyObject", "minimumLineSpacing"]
+- !private ["Ps9AnyObject", "navigationBar"]
 - !private ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
 - !private ["Ps9AnyObject", "popViewControllerAnimated"]
@@ -172,6 +176,7 @@ depends-member:
 - !private ["Ps9AnyObject", "sleepForTimeInterval"]
 - !private ["Ps9AnyObject", "tabBarController"]
 - !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "titleTextAttributes"]
 - !private ["Ps9AnyObject", "trackedIDs"]
 - ["Ps9AnyObject", "trackersCountLabel"]
 - ["Ps9AnyObject", "trackingCount"]
@@ -249,6 +254,7 @@ depends-member:
 - ["Ps11CVarArgType", "FollowingState"]
 - !private ["Ps11CVarArgType", "HunterController"]
 - ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "NSForegroundColorAttributeName"]
 - !private ["Ps11CVarArgType", "NSNotificationCenter"]
 - !private ["Ps11CVarArgType", "NSThread"]
 - ["Ps11CVarArgType", "Shed"]
@@ -290,6 +296,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "lowercaseString"]
 - !private ["Ps11CVarArgType", "minimumInteritemSpacing"]
 - !private ["Ps11CVarArgType", "minimumLineSpacing"]
+- !private ["Ps11CVarArgType", "navigationBar"]
 - !private ["Ps11CVarArgType", "navigationController"]
 - ["Ps11CVarArgType", "numberOfSectionsInCollectionView"]
 - !private ["Ps11CVarArgType", "popViewControllerAnimated"]
@@ -319,6 +326,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "sleepForTimeInterval"]
 - !private ["Ps11CVarArgType", "tabBarController"]
 - !private ["Ps11CVarArgType", "text"]
+- !private ["Ps11CVarArgType", "titleTextAttributes"]
 - ["Ps11CVarArgType", "trackersCountLabel"]
 - ["Ps11CVarArgType", "trackingCount"]
 - ["Ps11CVarArgType", "trackingCountLabel"]
@@ -340,7 +348,9 @@ depends-member:
 - !private ["Ps14CollectionType", "Element"]
 - ["Ps14CollectionType", "Generator"]
 - ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "Key"]
 - ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "Value"]
 - ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "append"]
 - !private ["Ps14CollectionType", "contains"]
@@ -362,6 +372,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "HunterController"]
 - ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "NSForegroundColorAttributeName"]
 - !private ["Ps28CustomDebugStringConvertible", "NSNotificationCenter"]
 - !private ["Ps28CustomDebugStringConvertible", "NSThread"]
 - ["Ps28CustomDebugStringConvertible", "Shed"]
@@ -372,6 +384,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIEdgeInsetsMake"]
 - !private ["Ps28CustomDebugStringConvertible", "User"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
 - ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addObserver"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
@@ -408,6 +421,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "lowercaseString"]
 - !private ["Ps28CustomDebugStringConvertible", "minimumInteritemSpacing"]
 - !private ["Ps28CustomDebugStringConvertible", "minimumLineSpacing"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationBar"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "popViewControllerAnimated"]
@@ -439,6 +453,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "tabBarController"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "titleTextAttributes"]
 - ["Ps28CustomDebugStringConvertible", "trackersCountLabel"]
 - ["Ps28CustomDebugStringConvertible", "trackingCount"]
 - ["Ps28CustomDebugStringConvertible", "trackingCountLabel"]
@@ -467,6 +482,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "HunterController"]
 - ["Ps23CustomStringConvertible", "Index"]
 - ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "NSForegroundColorAttributeName"]
 - !private ["Ps23CustomStringConvertible", "NSNotificationCenter"]
 - !private ["Ps23CustomStringConvertible", "NSThread"]
 - ["Ps23CustomStringConvertible", "Shed"]
@@ -476,6 +493,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIEdgeInsetsMake"]
+- !private ["Ps23CustomStringConvertible", "Value"]
 - ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addObserver"]
@@ -514,6 +532,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "lowercaseString"]
 - !private ["Ps23CustomStringConvertible", "minimumInteritemSpacing"]
 - !private ["Ps23CustomStringConvertible", "minimumLineSpacing"]
+- !private ["Ps23CustomStringConvertible", "navigationBar"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
 - !private ["Ps23CustomStringConvertible", "popViewControllerAnimated"]
@@ -545,6 +564,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "tabBarController"]
 - !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "titleTextAttributes"]
 - ["Ps23CustomStringConvertible", "trackersCountLabel"]
 - ["Ps23CustomStringConvertible", "trackingCount"]
 - ["Ps23CustomStringConvertible", "trackingCountLabel"]
@@ -563,6 +583,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "whiteColor"]
 - ["Ps23CustomStringConvertible", "whitesCountLabel"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
 - !private ["Ps9Equatable", "CGColor"]
 - ["Ps9Equatable", "CGFloat"]
 - !private ["Ps9Equatable", "CGSizeMake"]
@@ -571,6 +595,7 @@ depends-member:
 - ["Ps9Equatable", "FollowingState"]
 - !private ["Ps9Equatable", "HunterController"]
 - ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
 - !private ["Ps9Equatable", "NSNotificationCenter"]
 - !private ["Ps9Equatable", "NSThread"]
 - !private ["Ps9Equatable", "Normal"]
@@ -616,6 +641,7 @@ depends-member:
 - !private ["Ps9Equatable", "lowercaseString"]
 - !private ["Ps9Equatable", "minimumInteritemSpacing"]
 - !private ["Ps9Equatable", "minimumLineSpacing"]
+- !private ["Ps9Equatable", "navigationBar"]
 - !private ["Ps9Equatable", "navigationController"]
 - ["Ps9Equatable", "numberOfSectionsInCollectionView"]
 - !private ["Ps9Equatable", "popViewControllerAnimated"]
@@ -645,6 +671,7 @@ depends-member:
 - !private ["Ps9Equatable", "sleepForTimeInterval"]
 - !private ["Ps9Equatable", "tabBarController"]
 - !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "titleTextAttributes"]
 - ["Ps9Equatable", "trackersCountLabel"]
 - ["Ps9Equatable", "trackingCount"]
 - ["Ps9Equatable", "trackingCountLabel"]
@@ -695,6 +722,7 @@ depends-member:
 - ["Ps8Hashable", "FollowingState"]
 - !private ["Ps8Hashable", "HunterController"]
 - ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
 - !private ["Ps8Hashable", "NSNotificationCenter"]
 - !private ["Ps8Hashable", "NSThread"]
 - ["Ps8Hashable", "NotFollowing"]
@@ -739,6 +767,7 @@ depends-member:
 - !private ["Ps8Hashable", "lowercaseString"]
 - !private ["Ps8Hashable", "minimumInteritemSpacing"]
 - !private ["Ps8Hashable", "minimumLineSpacing"]
+- !private ["Ps8Hashable", "navigationBar"]
 - !private ["Ps8Hashable", "navigationController"]
 - ["Ps8Hashable", "numberOfSectionsInCollectionView"]
 - !private ["Ps8Hashable", "popViewControllerAnimated"]
@@ -768,6 +797,7 @@ depends-member:
 - !private ["Ps8Hashable", "sleepForTimeInterval"]
 - !private ["Ps8Hashable", "tabBarController"]
 - !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "titleTextAttributes"]
 - ["Ps8Hashable", "trackersCountLabel"]
 - ["Ps8Hashable", "trackingCount"]
 - ["Ps8Hashable", "trackingCountLabel"]
@@ -808,7 +838,9 @@ depends-member:
 - !private ["Ps9Indexable", "Element"]
 - ["Ps9Indexable", "Generator"]
 - ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Key"]
 - ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
 - ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "append"]
 - !private ["Ps9Indexable", "contains"]
@@ -879,6 +911,7 @@ depends-member:
 - !private ["PSo8NSCoding", "CGSizeMake"]
 - ["PSo8NSCoding", "FollowingState"]
 - !private ["PSo8NSCoding", "HunterController"]
+- !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
 - !private ["PSo8NSCoding", "NSNotificationCenter"]
 - !private ["PSo8NSCoding", "NSThread"]
 - ["PSo8NSCoding", "Shed"]
@@ -916,6 +949,7 @@ depends-member:
 - !private ["PSo8NSCoding", "lowercaseString"]
 - !private ["PSo8NSCoding", "minimumInteritemSpacing"]
 - !private ["PSo8NSCoding", "minimumLineSpacing"]
+- !private ["PSo8NSCoding", "navigationBar"]
 - !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
 - !private ["PSo8NSCoding", "popViewControllerAnimated"]
@@ -943,6 +977,7 @@ depends-member:
 - ["PSo8NSCoding", "sheds"]
 - !private ["PSo8NSCoding", "tabBarController"]
 - !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "titleTextAttributes"]
 - ["PSo8NSCoding", "trackersCountLabel"]
 - ["PSo8NSCoding", "trackingCount"]
 - ["PSo8NSCoding", "trackingCountLabel"]
@@ -970,6 +1005,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "CGSizeMake"]
 - ["PSo26NSExtensionRequestHandling", "FollowingState"]
 - !private ["PSo26NSExtensionRequestHandling", "HunterController"]
+- !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "NSNotificationCenter"]
 - !private ["PSo26NSExtensionRequestHandling", "NSThread"]
 - ["PSo26NSExtensionRequestHandling", "Shed"]
@@ -994,6 +1030,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "kMargin"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInCollectionView"]
 - !private ["PSo26NSExtensionRequestHandling", "popViewControllerAnimated"]
@@ -1048,6 +1085,7 @@ depends-member:
 - !private ["CSo8NSObject", "HunterController"]
 - !private ["CSo8NSObject", "ImageCollectionViewCell"]
 - ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - ["CSo8NSObject", "NSIndexPath"]
 - !private ["CSo8NSObject", "NSNotificationCenter"]
 - !private ["CSo8NSObject", "NSThread"]
@@ -1097,6 +1135,7 @@ depends-member:
 - !private ["CSo8NSObject", "lowercaseString"]
 - !private ["CSo8NSObject", "minimumInteritemSpacing"]
 - !private ["CSo8NSObject", "minimumLineSpacing"]
+- !private ["CSo8NSObject", "navigationBar"]
 - !private ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
 - !private ["CSo8NSObject", "popViewControllerAnimated"]
@@ -1126,6 +1165,7 @@ depends-member:
 - !private ["CSo8NSObject", "sleepForTimeInterval"]
 - !private ["CSo8NSObject", "tabBarController"]
 - !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "titleTextAttributes"]
 - ["CSo8NSObject", "trackersCountLabel"]
 - ["CSo8NSObject", "trackingCount"]
 - ["CSo8NSObject", "trackingCountLabel"]
@@ -1148,6 +1188,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CGSizeMake"]
 - ["PSo16NSObjectProtocol", "FollowingState"]
 - !private ["PSo16NSObjectProtocol", "HunterController"]
+- !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSNotificationCenter"]
 - !private ["PSo16NSObjectProtocol", "NSThread"]
 - ["PSo16NSObjectProtocol", "Shed"]
@@ -1187,6 +1228,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "lowercaseString"]
 - !private ["PSo16NSObjectProtocol", "minimumInteritemSpacing"]
 - !private ["PSo16NSObjectProtocol", "minimumLineSpacing"]
+- !private ["PSo16NSObjectProtocol", "navigationBar"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
 - !private ["PSo16NSObjectProtocol", "popViewControllerAnimated"]
@@ -1216,6 +1258,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "sleepForTimeInterval"]
 - !private ["PSo16NSObjectProtocol", "tabBarController"]
 - !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - ["PSo16NSObjectProtocol", "trackersCountLabel"]
 - ["PSo16NSObjectProtocol", "trackingCount"]
 - ["PSo16NSObjectProtocol", "trackingCountLabel"]
@@ -1259,6 +1302,7 @@ depends-member:
 - !private ["C6TineSE21ProfileViewController", "HunterController"]
 - !private ["C6TineSE21ProfileViewController", "ImageCollectionViewCell"]
 - ["C6TineSE21ProfileViewController", "Int"]
+- !private ["C6TineSE21ProfileViewController", "NSForegroundColorAttributeName"]
 - ["C6TineSE21ProfileViewController", "NSIndexPath"]
 - !private ["C6TineSE21ProfileViewController", "NSNotificationCenter"]
 - !private ["C6TineSE21ProfileViewController", "NSThread"]
@@ -1347,7 +1391,9 @@ depends-member:
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "Key"]
 - ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "Value"]
 - ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "append"]
 - !private ["Ps12SequenceType", "contains"]
@@ -1395,6 +1441,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
 - !private ["PSo29UIAccessibilityIdentification", "updateWith"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "clipsToBounds"]
@@ -1405,11 +1452,13 @@ depends-member:
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo12UIAppearance", "updateWith"]
 - ["PSo21UIAppearanceContainer", "CGFloat"]
 - !private ["PSo21UIAppearanceContainer", "CGSizeMake"]
 - ["PSo21UIAppearanceContainer", "FollowingState"]
 - !private ["PSo21UIAppearanceContainer", "HunterController"]
+- !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "NSNotificationCenter"]
 - !private ["PSo21UIAppearanceContainer", "NSThread"]
 - ["PSo21UIAppearanceContainer", "Shed"]
@@ -1440,6 +1489,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "kMargin"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "navigationBar"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInCollectionView"]
 - !private ["PSo21UIAppearanceContainer", "popViewControllerAnimated"]
@@ -1465,6 +1515,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "sheds"]
 - !private ["PSo21UIAppearanceContainer", "tabBarController"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
 - ["PSo21UIAppearanceContainer", "trackersCountLabel"]
 - ["PSo21UIAppearanceContainer", "trackingCount"]
 - ["PSo21UIAppearanceContainer", "trackingCountLabel"]
@@ -1482,6 +1533,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
 - ["PSo21UIAppearanceContainer", "whitesCountLabel"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo16UIBarPositioning", "titleTextAttributes"]
 - !private ["CSo8UIButton", "clipsToBounds"]
 - !private ["CSo8UIButton", "layer"]
 - !private ["CSo8UIButton", "setTitle"]
@@ -1497,6 +1549,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "CGSizeMake"]
 - ["PSo26UICollectionViewDataSource", "FollowingState"]
 - !private ["PSo26UICollectionViewDataSource", "HunterController"]
+- !private ["PSo26UICollectionViewDataSource", "NSForegroundColorAttributeName"]
 - !private ["PSo26UICollectionViewDataSource", "NSNotificationCenter"]
 - !private ["PSo26UICollectionViewDataSource", "NSThread"]
 - ["PSo26UICollectionViewDataSource", "Shed"]
@@ -1553,6 +1606,7 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "CGSizeMake"]
 - ["PSo24UICollectionViewDelegate", "FollowingState"]
 - !private ["PSo24UICollectionViewDelegate", "HunterController"]
+- !private ["PSo24UICollectionViewDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo24UICollectionViewDelegate", "NSNotificationCenter"]
 - !private ["PSo24UICollectionViewDelegate", "NSThread"]
 - ["PSo24UICollectionViewDelegate", "Shed"]
@@ -1609,6 +1663,7 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "CGSizeMake"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "FollowingState"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "HunterController"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "NSForegroundColorAttributeName"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "NSNotificationCenter"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "NSThread"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "Shed"]
@@ -1674,6 +1729,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "CGSizeMake"]
 - ["PSo18UIContentContainer", "FollowingState"]
 - !private ["PSo18UIContentContainer", "HunterController"]
+- !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIContentContainer", "NSNotificationCenter"]
 - !private ["PSo18UIContentContainer", "NSThread"]
 - ["PSo18UIContentContainer", "Shed"]
@@ -1698,6 +1754,7 @@ depends-member:
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "kMargin"]
+- !private ["PSo18UIContentContainer", "navigationBar"]
 - !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UIContentContainer", "popViewControllerAnimated"]
@@ -1749,6 +1806,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo17UICoordinateSpace", "updateWith"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "clipsToBounds"]
@@ -1759,11 +1817,13 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo13UIDynamicItem", "updateWith"]
 - ["PSo18UIFocusEnvironment", "CGFloat"]
 - !private ["PSo18UIFocusEnvironment", "CGSizeMake"]
 - ["PSo18UIFocusEnvironment", "FollowingState"]
 - !private ["PSo18UIFocusEnvironment", "HunterController"]
+- !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "NSNotificationCenter"]
 - !private ["PSo18UIFocusEnvironment", "NSThread"]
 - ["PSo18UIFocusEnvironment", "Shed"]
@@ -1794,6 +1854,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "kMargin"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo18UIFocusEnvironment", "navigationBar"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UIFocusEnvironment", "popViewControllerAnimated"]
@@ -1819,6 +1880,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "sheds"]
 - !private ["PSo18UIFocusEnvironment", "tabBarController"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
 - ["PSo18UIFocusEnvironment", "trackersCountLabel"]
 - ["PSo18UIFocusEnvironment", "trackingCount"]
 - ["PSo18UIFocusEnvironment", "trackingCountLabel"]
@@ -1839,7 +1901,9 @@ depends-member:
 - !private ["CSo11UIImageView", "clipsToBounds"]
 - !private ["CSo11UIImageView", "layer"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo15UINavigationBar", "titleTextAttributes"]
 - !private ["CSo22UINavigationController", "dismissViewControllerAnimated"]
+- !private ["CSo22UINavigationController", "navigationBar"]
 - !private ["CSo22UINavigationController", "popViewControllerAnimated"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
@@ -1851,6 +1915,7 @@ depends-member:
 - !private ["CSo11UIResponder", "HunterController"]
 - !private ["CSo11UIResponder", "ImageCollectionViewCell"]
 - ["CSo11UIResponder", "Int"]
+- !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - !private ["CSo11UIResponder", "NSNotificationCenter"]
 - !private ["CSo11UIResponder", "NSThread"]
@@ -1891,6 +1956,7 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "kMargin"]
 - !private ["CSo11UIResponder", "layer"]
+- !private ["CSo11UIResponder", "navigationBar"]
 - !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "numberOfSectionsInCollectionView"]
 - !private ["CSo11UIResponder", "popViewControllerAnimated"]
@@ -1916,6 +1982,7 @@ depends-member:
 - ["CSo11UIResponder", "sheds"]
 - !private ["CSo11UIResponder", "tabBarController"]
 - !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "titleTextAttributes"]
 - ["CSo11UIResponder", "trackersCountLabel"]
 - ["CSo11UIResponder", "trackingCount"]
 - ["CSo11UIResponder", "trackingCountLabel"]
@@ -1939,6 +2006,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "CGSizeMake"]
 - ["PSo20UIScrollViewDelegate", "FollowingState"]
 - !private ["PSo20UIScrollViewDelegate", "HunterController"]
+- !private ["PSo20UIScrollViewDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo20UIScrollViewDelegate", "NSNotificationCenter"]
 - !private ["PSo20UIScrollViewDelegate", "NSThread"]
 - ["PSo20UIScrollViewDelegate", "Shed"]
@@ -1995,6 +2063,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "CGSizeMake"]
 - ["PSo16UIStateRestoring", "FollowingState"]
 - !private ["PSo16UIStateRestoring", "HunterController"]
+- !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
 - !private ["PSo16UIStateRestoring", "NSNotificationCenter"]
 - !private ["PSo16UIStateRestoring", "NSThread"]
 - ["PSo16UIStateRestoring", "Shed"]
@@ -2019,6 +2088,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "kMargin"]
+- !private ["PSo16UIStateRestoring", "navigationBar"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInCollectionView"]
 - !private ["PSo16UIStateRestoring", "popViewControllerAnimated"]
@@ -2063,6 +2133,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "CGSizeMake"]
 - ["PSo18UITraitEnvironment", "FollowingState"]
 - !private ["PSo18UITraitEnvironment", "HunterController"]
+- !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UITraitEnvironment", "NSNotificationCenter"]
 - !private ["PSo18UITraitEnvironment", "NSThread"]
 - ["PSo18UITraitEnvironment", "Shed"]
@@ -2093,6 +2164,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "kMargin"]
 - !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "navigationBar"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UITraitEnvironment", "popViewControllerAnimated"]
@@ -2118,6 +2190,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "sheds"]
 - !private ["PSo18UITraitEnvironment", "tabBarController"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
 - ["PSo18UITraitEnvironment", "trackersCountLabel"]
 - ["PSo18UITraitEnvironment", "trackingCount"]
 - ["PSo18UITraitEnvironment", "trackingCountLabel"]
@@ -2144,6 +2217,7 @@ depends-member:
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "titleTextAttributes"]
 - !private ["CSo6UIView", "updateWith"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
@@ -2155,6 +2229,7 @@ depends-member:
 - !private ["CSo16UIViewController", "HunterController"]
 - !private ["CSo16UIViewController", "ImageCollectionViewCell"]
 - ["CSo16UIViewController", "Int"]
+- !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - !private ["CSo16UIViewController", "NSNotificationCenter"]
 - !private ["CSo16UIViewController", "NSThread"]
@@ -2189,6 +2264,7 @@ depends-member:
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "kMargin"]
+- !private ["CSo16UIViewController", "navigationBar"]
 - !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "numberOfSectionsInCollectionView"]
 - !private ["CSo16UIViewController", "popViewControllerAnimated"]
@@ -2286,8 +2362,10 @@ depends-member:
 - ["Ps21_ObjectiveCBridgeable", "Generator"]
 - ["Ps21_ObjectiveCBridgeable", "Index"]
 - ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
@@ -2308,10 +2386,12 @@ depends-member:
 - ["Ps12_Reflectable", "Generator"]
 - ["Ps12_Reflectable", "Index"]
 - ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Key"]
 - ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "Stride"]
 - ["Ps12_Reflectable", "SubSequence"]
 - !private ["Ps12_Reflectable", "User"]
+- !private ["Ps12_Reflectable", "Value"]
 - ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "append"]
@@ -2331,6 +2411,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "sortInPlace"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "titleTextAttributes"]
 - !private ["Ps12_Reflectable", "updateWith"]
 - !private ["Ps12_Reflectable", "width"]
 - ["Ps18_SignedIntegerType", "Distance"]
@@ -2357,6 +2438,8 @@ depends-nominal:
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
 - "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - !private "P6TineSE12FirebaseType"
@@ -2414,6 +2497,7 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "PSo16UIBarPositioning"
 - !private "CSo8UIButton"
 - !private "CSo24UICollectionReusableView"
 - !private "CSo16UICollectionView"
@@ -2432,6 +2516,7 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - !private "CSo11UIImageView"
 - !private "CSo7UILabel"
+- !private "CSo15UINavigationBar"
 - !private "CSo22UINavigationController"
 - "CSo11UIResponder"
 - !private "CSo12UIScrollView"

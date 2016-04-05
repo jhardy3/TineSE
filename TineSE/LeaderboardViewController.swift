@@ -25,7 +25,6 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         super.viewDidLoad()
         
         self.tableView.separatorStyle = .None
-
     }
     
     override func didReceiveMemoryWarning() {

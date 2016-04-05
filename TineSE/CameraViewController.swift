@@ -59,7 +59,6 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
             self.shedImageView.image = UIImage(named: "Skull")
         }
     
-        
         shedView.layer.borderWidth = 1.0
         shedView.layer.borderColor = UIColor.hunterOrange().CGColor
         self.clearShedButton.layer.opacity = 0.0

@@ -6,38 +6,38 @@ provides-nominal:
 provides-member:
 - ["C6TineSE17ShedTableViewCell", ""]
 provides-dynamic-lookup:
-- "delegate"
-- "shedImageView"
-- "utilitiesButtonTapped"
-- "reportButton"
-- "shedColorTextLabel"
 - "usernameTextField"
 - "setSelected"
 - "prepareForReuse"
+- "delegate"
 - "shedTypeTextLabel"
+- "shedImageView"
+- "reportButton"
+- "utilitiesButtonTapped"
+- "shedColorTextLabel"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "ShedTableViewCell"
-- "UITableViewCell"
-- "TinelineViewController"
-- "UILabel"
-- "UIImageView"
-- !private "UIImage"
-- "Bool"
-- !private "UIAlertController"
-- !private "HunterController"
-- !private "Void"
-- !private "ShedController"
-- "Shed"
-- !private "StringLiteralType"
-- !private "FirebaseController"
-- !private "UIAlertAction"
 - !private "UIViewContentMode"
-- !private "NSNotificationCenter"
+- "UILabel"
+- "UITableViewCell"
+- !private "UIAlertController"
+- !private "UIAlertAction"
+- "ShedTableViewCell"
+- !private "StringLiteralType"
 - !private "=="
-- !private "dispatch_get_main_queue"
-- !private "dispatch_async"
+- "UIImageView"
 - "UIButton"
+- "Shed"
+- !private "Void"
+- "Bool"
+- "TinelineViewController"
+- !private "HunterController"
+- !private "NSNotificationCenter"
+- !private "ShedController"
+- !private "FirebaseController"
+- !private "UIImage"
+- !private "dispatch_async"
+- !private "dispatch_get_main_queue"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "FirebaseController"]
 - !private ["Ps9AnyObject", "HunterController"]
@@ -83,9 +83,9 @@ depends-member:
 - ["Ps9AnyObject", "shedImageView"]
 - !private ["Ps9AnyObject", "shedType"]
 - ["Ps9AnyObject", "shedTypeTextLabel"]
-- !private ["Ps9AnyObject", "sheds"]
 - !private ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "trackingSheds"]
 - ["Ps9AnyObject", "updateWith"]
 - !private ["Ps9AnyObject", "username"]
 - ["Ps9AnyObject", "usernameTextField"]
@@ -100,8 +100,8 @@ depends-member:
 - !private ["CSo7CALayer", "opacity"]
 - !private ["PSo13CAMediaTiming", "opacity"]
 - !private ["PSo25CLLocationManagerDelegate", "presentViewController"]
-- !private ["PSo25CLLocationManagerDelegate", "sheds"]
 - !private ["PSo25CLLocationManagerDelegate", "tableView"]
+- !private ["PSo25CLLocationManagerDelegate", "trackingSheds"]
 - !private ["Ps11CVarArgType", "FirebaseController"]
 - !private ["Ps11CVarArgType", "HunterController"]
 - !private ["Ps11CVarArgType", "NSNotificationCenter"]
@@ -135,9 +135,9 @@ depends-member:
 - ["Ps11CVarArgType", "shedColorTextLabel"]
 - ["Ps11CVarArgType", "shedImageView"]
 - ["Ps11CVarArgType", "shedTypeTextLabel"]
-- !private ["Ps11CVarArgType", "sheds"]
 - !private ["Ps11CVarArgType", "tableView"]
 - !private ["Ps11CVarArgType", "text"]
+- !private ["Ps11CVarArgType", "trackingSheds"]
 - ["Ps11CVarArgType", "updateWith"]
 - ["Ps11CVarArgType", "usernameTextField"]
 - ["Ps11CVarArgType", "utilitiesButtonTapped"]
@@ -181,9 +181,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "shedColorTextLabel"]
 - ["Ps28CustomDebugStringConvertible", "shedImageView"]
 - ["Ps28CustomDebugStringConvertible", "shedTypeTextLabel"]
-- !private ["Ps28CustomDebugStringConvertible", "sheds"]
 - !private ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "trackingSheds"]
 - ["Ps28CustomDebugStringConvertible", "updateWith"]
 - ["Ps28CustomDebugStringConvertible", "usernameTextField"]
 - ["Ps28CustomDebugStringConvertible", "utilitiesButtonTapped"]
@@ -223,9 +223,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "shedColorTextLabel"]
 - ["Ps23CustomStringConvertible", "shedImageView"]
 - ["Ps23CustomStringConvertible", "shedTypeTextLabel"]
-- !private ["Ps23CustomStringConvertible", "sheds"]
 - !private ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "trackingSheds"]
 - ["Ps23CustomStringConvertible", "updateWith"]
 - ["Ps23CustomStringConvertible", "usernameTextField"]
 - ["Ps23CustomStringConvertible", "utilitiesButtonTapped"]
@@ -269,9 +269,9 @@ depends-member:
 - ["Ps9Equatable", "shedColorTextLabel"]
 - ["Ps9Equatable", "shedImageView"]
 - ["Ps9Equatable", "shedTypeTextLabel"]
-- !private ["Ps9Equatable", "sheds"]
 - !private ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "trackingSheds"]
 - ["Ps9Equatable", "updateWith"]
 - ["Ps9Equatable", "usernameTextField"]
 - ["Ps9Equatable", "utilitiesButtonTapped"]
@@ -329,9 +329,9 @@ depends-member:
 - ["Ps8Hashable", "shedColorTextLabel"]
 - ["Ps8Hashable", "shedImageView"]
 - ["Ps8Hashable", "shedTypeTextLabel"]
-- !private ["Ps8Hashable", "sheds"]
 - !private ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "trackingSheds"]
 - ["Ps8Hashable", "updateWith"]
 - ["Ps8Hashable", "usernameTextField"]
 - ["Ps8Hashable", "utilitiesButtonTapped"]
@@ -381,9 +381,9 @@ depends-member:
 - ["PSo8NSCoding", "shedColorTextLabel"]
 - ["PSo8NSCoding", "shedImageView"]
 - ["PSo8NSCoding", "shedTypeTextLabel"]
-- !private ["PSo8NSCoding", "sheds"]
 - !private ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "trackingSheds"]
 - ["PSo8NSCoding", "updateWith"]
 - ["PSo8NSCoding", "usernameTextField"]
 - ["PSo8NSCoding", "utilitiesButtonTapped"]
@@ -394,8 +394,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
-- !private ["PSo26NSExtensionRequestHandling", "sheds"]
 - !private ["PSo26NSExtensionRequestHandling", "tableView"]
+- !private ["PSo26NSExtensionRequestHandling", "trackingSheds"]
 - !private ["CSo11NSIndexPath", "row"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "lowercaseString"]
@@ -441,9 +441,9 @@ depends-member:
 - ["CSo8NSObject", "shedColorTextLabel"]
 - ["CSo8NSObject", "shedImageView"]
 - ["CSo8NSObject", "shedTypeTextLabel"]
-- !private ["CSo8NSObject", "sheds"]
 - !private ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "trackingSheds"]
 - ["CSo8NSObject", "updateWith"]
 - ["CSo8NSObject", "usernameTextField"]
 - ["CSo8NSObject", "utilitiesButtonTapped"]
@@ -480,9 +480,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "shedColorTextLabel"]
 - ["PSo16NSObjectProtocol", "shedImageView"]
 - ["PSo16NSObjectProtocol", "shedTypeTextLabel"]
-- !private ["PSo16NSObjectProtocol", "sheds"]
 - !private ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "trackingSheds"]
 - ["PSo16NSObjectProtocol", "updateWith"]
 - ["PSo16NSObjectProtocol", "usernameTextField"]
 - ["PSo16NSObjectProtocol", "utilitiesButtonTapped"]
@@ -553,8 +553,8 @@ depends-member:
 - !private ["Ps24StringLiteralConvertible", "lowercaseString"]
 - !private ["C6TineSE22TinelineViewController", "deinit"]
 - !private ["C6TineSE22TinelineViewController", "presentViewController"]
-- !private ["C6TineSE22TinelineViewController", "sheds"]
 - !private ["C6TineSE22TinelineViewController", "tableView"]
+- !private ["C6TineSE22TinelineViewController", "trackingSheds"]
 - !private ["PSo29UIAccessibilityIdentification", "FirebaseController"]
 - !private ["PSo29UIAccessibilityIdentification", "HunterController"]
 - !private ["PSo29UIAccessibilityIdentification", "NSNotificationCenter"]
@@ -645,9 +645,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "shedColorTextLabel"]
 - ["PSo21UIAppearanceContainer", "shedImageView"]
 - ["PSo21UIAppearanceContainer", "shedTypeTextLabel"]
-- !private ["PSo21UIAppearanceContainer", "sheds"]
 - !private ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "trackingSheds"]
 - ["PSo21UIAppearanceContainer", "updateWith"]
 - ["PSo21UIAppearanceContainer", "usernameTextField"]
 - ["PSo21UIAppearanceContainer", "utilitiesButtonTapped"]
@@ -656,8 +656,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "addAction"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
-- !private ["PSo18UIContentContainer", "sheds"]
 - !private ["PSo18UIContentContainer", "tableView"]
+- !private ["PSo18UIContentContainer", "trackingSheds"]
 - !private ["CSo9UIControl", "layer"]
 - !private ["PSo17UICoordinateSpace", "FirebaseController"]
 - !private ["PSo17UICoordinateSpace", "HunterController"]
@@ -743,9 +743,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "shedColorTextLabel"]
 - ["PSo18UIFocusEnvironment", "shedImageView"]
 - ["PSo18UIFocusEnvironment", "shedTypeTextLabel"]
-- !private ["PSo18UIFocusEnvironment", "sheds"]
 - !private ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "trackingSheds"]
 - ["PSo18UIFocusEnvironment", "updateWith"]
 - ["PSo18UIFocusEnvironment", "usernameTextField"]
 - ["PSo18UIFocusEnvironment", "utilitiesButtonTapped"]
@@ -810,22 +810,22 @@ depends-member:
 - ["CSo11UIResponder", "shedColorTextLabel"]
 - ["CSo11UIResponder", "shedImageView"]
 - ["CSo11UIResponder", "shedTypeTextLabel"]
-- !private ["CSo11UIResponder", "sheds"]
 - !private ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "trackingSheds"]
 - ["CSo11UIResponder", "updateWith"]
 - ["CSo11UIResponder", "usernameTextField"]
 - ["CSo11UIResponder", "utilitiesButtonTapped"]
 - !private ["CSo12UIScrollView", "indexPathForCell"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["PSo20UIScrollViewDelegate", "presentViewController"]
-- !private ["PSo20UIScrollViewDelegate", "sheds"]
 - !private ["PSo20UIScrollViewDelegate", "tableView"]
+- !private ["PSo20UIScrollViewDelegate", "trackingSheds"]
 - !private ["PSo16UIStateRestoring", "addAction"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
-- !private ["PSo16UIStateRestoring", "sheds"]
 - !private ["PSo16UIStateRestoring", "tableView"]
+- !private ["PSo16UIStateRestoring", "trackingSheds"]
 - !private ["CSo11UITableView", "indexPathForCell"]
 - !private ["CSo11UITableView", "reloadData"]
 - ["CSo15UITableViewCell", "Bool"]
@@ -859,11 +859,11 @@ depends-member:
 - ["CSo15UITableViewCell", "utilitiesButtonTapped"]
 - ["CSo15UITableViewCell", ""]
 - !private ["PSo21UITableViewDataSource", "presentViewController"]
-- !private ["PSo21UITableViewDataSource", "sheds"]
 - !private ["PSo21UITableViewDataSource", "tableView"]
+- !private ["PSo21UITableViewDataSource", "trackingSheds"]
 - !private ["PSo19UITableViewDelegate", "presentViewController"]
-- !private ["PSo19UITableViewDelegate", "sheds"]
 - !private ["PSo19UITableViewDelegate", "tableView"]
+- !private ["PSo19UITableViewDelegate", "trackingSheds"]
 - !private ["PSo18UITraitEnvironment", "FirebaseController"]
 - !private ["PSo18UITraitEnvironment", "HunterController"]
 - !private ["PSo18UITraitEnvironment", "NSNotificationCenter"]
@@ -890,9 +890,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "shedColorTextLabel"]
 - ["PSo18UITraitEnvironment", "shedImageView"]
 - ["PSo18UITraitEnvironment", "shedTypeTextLabel"]
-- !private ["PSo18UITraitEnvironment", "sheds"]
 - !private ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "trackingSheds"]
 - ["PSo18UITraitEnvironment", "updateWith"]
 - ["PSo18UITraitEnvironment", "usernameTextField"]
 - ["PSo18UITraitEnvironment", "utilitiesButtonTapped"]
@@ -936,8 +936,8 @@ depends-member:
 - !private ["CSo16UIViewController", "addAction"]
 - !private ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "presentViewController"]
-- !private ["CSo16UIViewController", "sheds"]
 - !private ["CSo16UIViewController", "tableView"]
+- !private ["CSo16UIViewController", "trackingSheds"]
 - !private ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
 - !private ["Vs6UInt32", "deinit"]

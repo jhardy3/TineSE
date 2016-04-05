@@ -10,18 +10,37 @@ import UIKit
 import CoreLocation
 
 
+enum ShedViewMode {
+    case Local
+    case Tracking
+}
+
 
 class TinelineViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
     
     // MARK: - Properties
     
     // Create a sheds array to hold sheds being displayed by tableview cells
-    var sheds = [Shed]()
+    var trackingSheds = [Shed]()
     var LocalSheds = [Shed]()
     var localShedIDs = [String]()
-    var shedIDs = [String]() {
-        didSet {
-            print("\(shedIDs.count) IDs")
+    var shedIDs = [String]()
+    
+    var currentView: ShedViewMode {
+        switch segmentedController.selectedSegmentIndex {
+        case 0:
+            return .Tracking
+        default:
+            return.Local
+        }
+    }
+    
+    var dataSource: [Shed] {
+        switch currentView {
+        case .Local:
+            return LocalSheds
+        case .Tracking:
+            return trackingSheds
         }
     }
     
@@ -29,19 +48,6 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
         didSet {
             if endOfTableView == true {
                 self.grabSheds()
-            }
-        }
-    }
-    
-    // Crates a gettable bool which is dependent upon the
-    // segmented control
-    var currentViewIsLocal: Bool {
-        get {
-            switch segmentedController.selectedSegmentIndex {
-            case 0:
-                return false
-            default:
-                return true
             }
         }
     }
@@ -69,20 +75,11 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        checkForEndOfTableview(indexPath)
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("shedCell", forIndexPath: indexPath) as! ShedTableViewCell
         
-        if indexPath.row == sheds.count - 1 && !currentViewIsLocal {
-            self.endOfTableView = true
-        } else {
-            self.endOfTableView = false
-        }
-        
-        if currentViewIsLocal {
-            cell.updateWith(LocalSheds[indexPath.row])
-        } else {
-            cell.updateWith(sheds[indexPath.row])
-        }
-        
+        cell.updateWith(dataSource[indexPath.row])
         cell.delegate = self
         
         return cell
@@ -90,22 +87,26 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if currentViewIsLocal {
-            return LocalSheds.count
-        } else {
-            return sheds.count
+        return dataSource.count
+    }
+    
+    // MARK: - Data Update Functions / Shed acquisition functions
+    
+    func updateTableViewWithShed(shed: Shed) {
+        if currentView == .Tracking {
+            self.trackingSheds.append(shed)
+            
+            self.tableView.beginUpdates()
+            self.tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: self.trackingSheds.count - 1, inSection: 0)], withRowAnimation: .Automatic)
+            self.tableView.endUpdates()
         }
     }
     
-    // MARK: - Data Update Functions
-    
-    func updateTableViewWithShed(shed: Shed) {
-        if !currentViewIsLocal {
-            self.sheds.append(shed)
-            
-            self.tableView.beginUpdates()
-            self.tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: self.sheds.count - 1, inSection: 0)], withRowAnimation: .Automatic)
-            self.tableView.endUpdates()
+    func checkForEndOfTableview(indexPath: NSIndexPath) {
+        if indexPath.row == trackingSheds.count - 1 && currentView == .Tracking {
+            self.endOfTableView = true
+        } else {
+            self.endOfTableView = false
         }
     }
     
@@ -168,12 +169,14 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
+    // MARK: - Refresh Functions
+    
     func refresh(refreshControl: UIRefreshControl) {
         
-        if currentViewIsLocal {
+        if currentView == .Local {
             refreshControl.endRefreshing()
         } else {
-            self.sheds = []
+            self.trackingSheds = []
             ShedController.fetchShedIDsForTineline { (sheds) in
                 self.shedIDs = sheds.sort { $0 > $1 }
                 self.grabSheds()
@@ -198,7 +201,7 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func newShedsAddedRefresh() {
         // When refreshed, completes fetch sheds again and reloads tableview in main thread
-        self.sheds = []
+        self.trackingSheds = []
         ShedController.fetchShedIDsForTineline { (sheds) in
             self.shedIDs = sheds.sort { $0 > $1 }
             self.tableView.reloadData()
@@ -208,49 +211,13 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     @IBAction func segmentedControlChanged(sender: UISegmentedControl) {
+                
         self.tableView.reloadData()
         self.LocalSheds.sortInPlace { $0.0.identifier > $0.1.identifier }
-        
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "toProfile" {
-            
-            // Grab destination view controller
-            let destinationView = segue.destinationViewController as? ProfileViewController
-            
-            // Button is inside of tableView cell. It is the sender in this case so cast it as UIButton
-            if let button = sender as? UIButton,
-                
-                // button.superview returns the ShedTableViewCell view instance (this is what we want, it will grab the indexPath)
-                let view = button.superview,
-                
-                // the superview of the view instance is the actual shedTableViewCell
-                let cell = view.superview as? ShedTableViewCell {
-                
-                // If all succeeds grab index path from tableview using cell or return
-                guard let indexPath = tableView.indexPathForCell(cell)  else { return }
-                
-                // grab identifier from sheds at indexpath and update destinationView with identifier
-                if !currentViewIsLocal {
-                    let identifier = self.sheds[indexPath.row].hunterIdentifier
-                    destinationView?.updateWithIdentifier(identifier)
-                } else {
-                    let identifier = self.LocalSheds[indexPath.row].hunterIdentifier
-                    destinationView?.updateWithIdentifier(identifier)
-                }
-                
-            }
-        }
-    }
-    
-    
-    
-    
-    
+
     
     // MARK: - Location Functions
-    
     
     func setupLocationManagerAndGrabLocalSheds() {
         
@@ -271,7 +238,7 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
                     ShedController.fetchShed(string, completion: { (shed) -> Void in
                         self.LocalSheds.append(shed!)
                         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                            if self.currentViewIsLocal {
+                            if self.currentView == .Local {
                                 self.LocalSheds.sortInPlace { $0.0.identifier > $0.1.identifier}
                                 self.tableView.reloadData()
                             }
@@ -282,8 +249,6 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
-    
-    
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
     }
@@ -291,4 +256,40 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         print(error.debugDescription)
     }
+    
+    // MARK: Segue
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toProfile" {
+            
+            // Grab destination view controller
+            let destinationView = segue.destinationViewController as? ProfileViewController
+            
+            // Button is inside of tableView cell. It is the sender in this case so cast it as UIButton
+            if let button = sender as? UIButton,
+                
+                // button.superview returns the ShedTableViewCell view instance (this is what we want, it will grab the indexPath)
+                let view = button.superview,
+                
+                // the superview of the view instance is the actual shedTableViewCell
+                let cell = view.superview as? ShedTableViewCell {
+                
+                // If all succeeds grab index path from tableview using cell or return
+                guard let indexPath = tableView.indexPathForCell(cell)  else { return }
+                
+                // grab identifier from sheds at indexpath and update destinationView with identifier
+//                if !currentViewIsLocal {
+//                    let identifier = self.trackingSheds[indexPath.row].hunterIdentifier
+//                    destinationView?.updateWithIdentifier(identifier)
+//                } else {
+//                    let identifier = self.LocalSheds[indexPath.row].hunterIdentifier
+//                    destinationView?.updateWithIdentifier(identifier)
+//                }
+                let identifier = self.dataSource[indexPath.row].hunterIdentifier
+                destinationView?.updateWithIdentifier(identifier)
+                
+            }
+        }
+    }
+    
 }

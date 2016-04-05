@@ -76,7 +76,7 @@ class ShedTableViewCell: UITableViewCell {
                 ShedController.deleteShed(shed)
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     guard let index = self.delegate?.tableView.indexPathForCell(self)?.row else { return }
-                    self.delegate?.sheds.removeAtIndex(index)
+                    self.delegate?.trackingSheds.removeAtIndex(index)
                     self.delegate?.tableView.reloadData()
                     NSNotificationCenter.defaultCenter().postNotificationName("shedDeleted", object: nil)
                 })

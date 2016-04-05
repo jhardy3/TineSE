@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/ProfileViewController.swift"
-            timestampString = "481504291.859049"
+            timestampString = "481513961.773439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "132"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/ProfileViewController.swift"
-            timestampString = "481504291.859049"
+            timestampString = "481513961.773439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "141"
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/ProfileViewController.swift"
-            timestampString = "481504291.859049"
+            timestampString = "481513961.773439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "134"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/ProfileViewController.swift"
-            timestampString = "481504291.859049"
+            timestampString = "481513961.773439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "138"
@@ -170,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/ProfileViewController.swift"
-            timestampString = "481504291.859049"
+            timestampString = "481513961.773439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "143"
@@ -186,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/ProfileViewController.swift"
-            timestampString = "481504291.859049"
+            timestampString = "481513961.773439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "144"
@@ -202,7 +202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/ProfileViewController.swift"
-            timestampString = "481504291.859049"
+            timestampString = "481513961.773439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "135"
@@ -282,7 +282,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/ProfileViewController.swift"
-            timestampString = "481504291.859049"
+            timestampString = "481513961.773439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "96"
@@ -330,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/TinelineViewController.swift"
-            timestampString = "481495379.669659"
+            timestampString = "481514912.248001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "grabSheds()"
             landmarkType = "5">
          </BreakpointContent>
@@ -346,11 +346,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/TinelineViewController.swift"
-            timestampString = "481495379.669659"
+            timestampString = "481514912.248001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "createArray(_:range:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TineSE.TinelineViewController.(grabSheds () -&gt; ()).(closure #1)"
+                  moduleName = "TineSE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/JLH/Desktop/Personal%20Projects/TineSE/TineSE/TinelineViewController.swift"
+                  timestampString = "481514912.283634"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TineSE.TinelineViewController.(grabSheds () -&gt; ()).(closure #1)"
+                  moduleName = "TineSE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/JLH/Desktop/Personal%20Projects/TineSE/TineSE/TinelineViewController.swift"
+                  timestampString = "481514912.28378"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TineSE/TinelineViewController.swift"
+            timestampString = "481514912.248001"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "createArray(_:range:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -362,27 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/TinelineViewController.swift"
-            timestampString = "481495379.669659"
+            timestampString = "481514912.248001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "createArray(_:range:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TineSE/TinelineViewController.swift"
-            timestampString = "481495379.669659"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "grabSheds()"
             landmarkType = "5">
          </BreakpointContent>
@@ -394,55 +426,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/TinelineViewController.swift"
-            timestampString = "481495379.669659"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "grabSheds()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TineSE/TinelineViewController.swift"
-            timestampString = "481495379.669659"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "updateTableViewWithShed(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TineSE/TinelineViewController.swift"
-            timestampString = "481495379.669659"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "updateTableViewWithShed(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TineSE/TinelineViewController.swift"
-            timestampString = "481495379.669659"
+            timestampString = "481514912.248001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "118"
@@ -458,12 +442,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/TinelineViewController.swift"
-            timestampString = "481484499.680845"
+            timestampString = "481514912.248001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "updateTableViewWithShed(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -474,11 +458,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/TinelineViewController.swift"
-            timestampString = "481495379.669659"
+            timestampString = "481514912.248001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "updateTableViewWithShed(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TineSE/TinelineViewController.swift"
+            timestampString = "481514912.248001"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "grabSheds()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TineSE/TinelineViewController.swift"
+            timestampString = "481514912.248001"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "createArray(_:range:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -570,45 +586,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/TinelineViewController.swift"
-            timestampString = "481495379.669659"
+            timestampString = "481514912.248001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "refresh(_:)"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TineSE.TinelineViewController.refresh (__ObjC.UIRefreshControl) -&gt; ()"
-                  moduleName = "TineSE"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/JLH/Desktop/Personal%20Projects/TineSE/TineSE/TinelineViewController.swift"
-                  timestampString = "481496533.2512"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "177"
-                  endingLineNumber = "177"
-                  offsetFromSymbolStart = "176">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TineSE.TinelineViewController.(refresh (__ObjC.UIRefreshControl) -&gt; ()).(closure #1)"
-                  moduleName = "TineSE"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/JLH/Desktop/Personal%20Projects/TineSE/TineSE/TinelineViewController.swift"
-                  timestampString = "481496533.251306"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "178"
-                  endingLineNumber = "178"
-                  offsetFromSymbolStart = "76">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -618,13 +602,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/TinelineViewController.swift"
-            timestampString = "481495379.669659"
+            timestampString = "481514912.248001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "refresh(_:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TineSE.TinelineViewController.fetchShedsFirstLoad () -&gt; ()"
+                  moduleName = "TineSE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/JLH/Desktop/Personal%20Projects/TineSE/TineSE/TinelineViewController.swift"
+                  timestampString = "481514912.291816"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TineSE.TinelineViewController.(fetchShedsFirstLoad () -&gt; ()).(closure #1)"
+                  moduleName = "TineSE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/JLH/Desktop/Personal%20Projects/TineSE/TineSE/TinelineViewController.swift"
+                  timestampString = "481514912.291925"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187"
+                  offsetFromSymbolStart = "54">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -634,7 +650,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/ProfileViewController.swift"
-            timestampString = "481504291.859049"
+            timestampString = "481513961.773439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "236"
@@ -650,7 +666,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/ProfileViewController.swift"
-            timestampString = "481504291.859049"
+            timestampString = "481513961.773439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "229"
@@ -666,7 +682,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/ProfileViewController.swift"
-            timestampString = "481504291.859049"
+            timestampString = "481513961.773439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "260"
@@ -682,11 +698,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/TabBarController.swift"
-            timestampString = "481493672.060786"
+            timestampString = "481515973.174891"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "tabBar(_:didSelectItem:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -698,11 +714,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/TabBarController.swift"
-            timestampString = "481493672.060786"
+            timestampString = "481515973.174891"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "tabBar(_:didSelectItem:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -714,11 +730,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/TabBarController.swift"
-            timestampString = "481493672.060786"
+            timestampString = "481515973.174891"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "tabBar(_:didSelectItem:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -730,7 +746,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TineSE/ProfileViewController.swift"
-            timestampString = "481504291.859049"
+            timestampString = "481513961.773439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "242"
@@ -745,24 +761,8 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TineSE/TabBarController.swift"
-            timestampString = "481493672.060786"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TineSE/ProfileViewController.swift"
-            timestampString = "481504291.859049"
+            timestampString = "481513961.773439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "228"
@@ -778,12 +778,12 @@
                   moduleName = "TineSE"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/JLH/Desktop/Personal%20Projects/TineSE/TineSE/ProfileViewController.swift"
-                  timestampString = "481496533.258721"
+                  timestampString = "481513961.819025"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "227"
-                  endingLineNumber = "227"
-                  offsetFromSymbolStart = "2880">
+                  startingLineNumber = "228"
+                  endingLineNumber = "228"
+                  offsetFromSymbolStart = "3554">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -793,12 +793,12 @@
                   moduleName = "TineSE"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/JLH/Desktop/Personal%20Projects/TineSE/TineSE/ProfileViewController.swift"
-                  timestampString = "481496533.258831"
+                  timestampString = "481513961.819171"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "228"
-                  endingLineNumber = "228"
-                  offsetFromSymbolStart = "24">
+                  startingLineNumber = "229"
+                  endingLineNumber = "229"
+                  offsetFromSymbolStart = "19">
                </Location>
             </Locations>
          </BreakpointContent>
