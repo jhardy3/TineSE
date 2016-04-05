@@ -21,11 +21,8 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     // Hunter for profile View
     var hunter: Hunter?
-    var sheds =  [Shed]() {
-        didSet {
-            sheds.sortInPlace { $0.0.identifier > $0.1.identifier }
-        }
-    }
+    var sheds =  [Shed]()
+    
     let kMargin = CGFloat(1.0)
     
     // MARK: - IBOutlet Properties
@@ -226,6 +223,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             
             // Once async calls finish reload data
             dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
+                self.sheds.sortInPlace { $0.0.identifier > $0.1.identifier }
                 self.collectionView.reloadData()
             }
         }
@@ -256,7 +254,17 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    
+        if segue.identifier == "toShedDetail" {
+            let destinationView = segue.destinationViewController as? ShedDetailViewController
+            if let shedCell = sender as? ImageCollectionViewCell {
+                guard let indexPath = collectionView.indexPathForCell(shedCell)?.row else { return }
+                let shed = sheds[indexPath]
+                self.sheds = []
+                destinationView?.shed = shed
+                print(shed.username)
+            }
+        }
+        
     }
 }
 

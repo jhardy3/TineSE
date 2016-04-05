@@ -289,6 +289,18 @@ SWIFT_CLASS("_TtC6TineSE25SearchTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC6TineSE24ShedDetailViewController")
+@interface ShedDetailViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified shedImageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedColorLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedTypeLabel;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class TinelineViewController;
 
 SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
@@ -311,6 +323,7 @@ SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
 
 SWIFT_CLASS("_TtC6TineSE16TabBarController")
 @interface TabBarController : UITabBarController
+@property (nonatomic) BOOL profileCurrentlySelected;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)tabBar:(UITabBar * _Nonnull)tabBar didSelectItem:(UITabBarItem * _Nonnull)item;
@@ -325,13 +338,13 @@ SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull localShedIDs;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull shedIDs;
 @property (nonatomic) BOOL endOfTableView;
-@property (nonatomic, readonly) BOOL currentViewIsLocal;
 @property (nonatomic, strong) CLLocationManager * _Null_unspecified locationManager;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentedController;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (void)checkForEndOfTableview:(NSIndexPath * _Nonnull)indexPath;
 - (void)grabSheds;
 - (NSArray<NSString *> * _Nonnull)createArray:(NSArray<NSString *> * _Nonnull)array range:(NSInteger)range;
 - (void)fetchShedsFirstLoad;
@@ -339,10 +352,10 @@ SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 - (void)setUpRefreshController;
 - (void)newShedsAddedRefresh;
 - (IBAction)segmentedControlChanged:(UISegmentedControl * _Nonnull)sender;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (void)setupLocationManagerAndGrabLocalSheds;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -365,17 +378,30 @@ SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 - (void)downloadImageFromLink:(NSString * _Nonnull)link contentMode:(UIViewContentMode)contentMode;
 @end
 
+@class UIVisualEffectView;
 
 SWIFT_CLASS("_TtC6TineSE19logInViewController")
 @interface logInViewController : UIViewController <UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTextField;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified proceedButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified toggleModeButton;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified loadImageView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified logInImageView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified logInView;
+@property (nonatomic, strong) UIVisualEffectView * _Nullable blurEffect;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
-- (IBAction)signUpTapped:(UIButton * _Nonnull)sender;
-- (IBAction)signInTapped:(UIButton * _Nonnull)sender;
+- (IBAction)proceedButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)toggleModeButtonTapped:(UIButton * _Nonnull)sender;
+- (void)blurImageBackground:(id _Nonnull)item;
+- (void)createAnimation;
+- (void)endAnimation;
+- (void)signIn;
+- (void)signUp;
+- (void)displayBasedOnViewMode;
 - (void)setupTextFields;
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;

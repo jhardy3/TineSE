@@ -9,74 +9,73 @@ provides-member:
 - ["O6TineSE12ShedViewMode", ""]
 - ["C6TineSE22TinelineViewController", ""]
 provides-dynamic-lookup:
-- "locationManager"
-- "locationManager"
-- "locationManager"
-- "segmentedController"
-- "prepareForSegue"
-- "shedIDs"
-- "fetchShedsFirstLoad"
-- "segmentedControlChanged"
-- "grabSheds"
-- "refresh"
+- "checkForEndOfTableview"
 - "setUpRefreshController"
-- "endOfTableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "createArray"
-- "viewDidLoad"
-- "currentViewIsLocal"
-- "setupLocationManagerAndGrabLocalSheds"
 - "localShedIDs"
+- "refresh"
+- "fetchShedsFirstLoad"
+- "locationManager"
+- "locationManager"
+- "locationManager"
+- "viewDidLoad"
+- "setupLocationManagerAndGrabLocalSheds"
+- "tableView"
+- "tableView"
+- "tableView"
+- "prepareForSegue"
+- "segmentedControlChanged"
+- "segmentedController"
 - "newShedsAddedRefresh"
+- "shedIDs"
+- "createArray"
+- "endOfTableView"
+- "grabSheds"
 depends-top-level:
-- !private "ShedTableViewCell"
-- !private "dispatch_group_leave"
-- !private "ProfileViewController"
-- !private "Void"
-- "CLLocationManagerDelegate"
-- !private "NSNotificationCenter"
-- !private "UIButton"
-- !private "print"
-- "UISegmentedControl"
-- !private "..<"
-- !private "dispatch_group_create"
-- "NSIndexPath"
-- !private "StringLiteralType"
+- "AnyObject"
+- !private "kCLLocationAccuracyBest"
+- !private "!"
+- "CLLocation"
 - "UIRefreshControl"
+- !private "&&"
+- "TinelineViewController"
+- "UITableViewDelegate"
+- "Int"
+- "UITableView"
+- "UIViewController"
+- "UITableViewDataSource"
+- !private "dispatch_group_create"
+- "ShedViewMode"
+- "Shed"
+- "UIStoryboardSegue"
+- "UISegmentedControl"
 - "=="
 - !private "~="
-- !private "&&"
-- !private "..."
-- "Bool"
-- !private "kCLLocationAccuracyBest"
-- "CLLocationManager"
-- !private "Array"
-- "UITableViewCell"
-- !private "dispatch_async"
-- "Int"
-- !private "!"
-- "Shed"
-- !private "dispatch_get_main_queue"
-- "UIStoryboardSegue"
-- "TinelineViewController"
-- !private "dispatch_group_notify"
-- !private ">"
-- "UITableViewDelegate"
-- !private "-"
-- !private "dispatch_group_enter"
-- "UITableViewDataSource"
-- "String"
-- "NSError"
-- "UITableView"
-- !private "LocationController"
-- "AnyObject"
-- "BooleanLiteralType"
-- "UIViewController"
+- !private "dispatch_group_leave"
+- !private "StringLiteralType"
+- !private "print"
 - !private "ShedController"
-- "ShedViewMode"
-- "CLLocation"
+- !private ">"
+- !private "NSNotificationCenter"
+- "NSError"
+- !private "dispatch_group_enter"
+- !private "dispatch_async"
+- !private "Array"
+- "NSIndexPath"
+- !private "..."
+- "String"
+- !private "ShedTableViewCell"
+- !private "dispatch_group_notify"
+- "CLLocationManagerDelegate"
+- !private "dispatch_get_main_queue"
+- !private "LocationController"
+- !private "UIButton"
+- !private "..<"
+- "UITableViewCell"
+- !private "-"
+- "CLLocationManager"
+- "BooleanLiteralType"
+- !private "Void"
+- !private "ProfileViewController"
 depends-member:
 - !private ["Ps9AnyObject", "CLLocationManager"]
 - ["Ps9AnyObject", "LocalSheds"]
@@ -92,9 +91,9 @@ depends-member:
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "addTarget"]
 - !private ["Ps9AnyObject", "beginUpdates"]
+- ["Ps9AnyObject", "checkForEndOfTableview"]
 - ["Ps9AnyObject", "createArray"]
 - ["Ps9AnyObject", "currentView"]
-- ["Ps9AnyObject", "currentViewIsLocal"]
 - ["Ps9AnyObject", "dataSource"]
 - !private ["Ps9AnyObject", "debugDescription"]
 - !private ["Ps9AnyObject", "defaultCenter"]
@@ -229,9 +228,9 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "String"]
 - !private ["PSo25CLLocationManagerDelegate", "TinelineViewController"]
 - !private ["PSo25CLLocationManagerDelegate", "UIRefreshControl"]
+- !private ["PSo25CLLocationManagerDelegate", "checkForEndOfTableview"]
 - !private ["PSo25CLLocationManagerDelegate", "createArray"]
 - !private ["PSo25CLLocationManagerDelegate", "currentView"]
-- !private ["PSo25CLLocationManagerDelegate", "currentViewIsLocal"]
 - !private ["PSo25CLLocationManagerDelegate", "dataSource"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_async"]
 - !private ["PSo25CLLocationManagerDelegate", "dispatch_get_main_queue"]
@@ -293,9 +292,9 @@ depends-member:
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "addTarget"]
 - !private ["Ps11CVarArgType", "beginUpdates"]
+- ["Ps11CVarArgType", "checkForEndOfTableview"]
 - ["Ps11CVarArgType", "createArray"]
 - ["Ps11CVarArgType", "currentView"]
-- ["Ps11CVarArgType", "currentViewIsLocal"]
 - ["Ps11CVarArgType", "dataSource"]
 - !private ["Ps11CVarArgType", "debugDescription"]
 - !private ["Ps11CVarArgType", "defaultCenter"]
@@ -408,11 +407,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "addTarget"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "beginUpdates"]
+- ["Ps28CustomDebugStringConvertible", "checkForEndOfTableview"]
 - !private ["Ps28CustomDebugStringConvertible", "contains"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - ["Ps28CustomDebugStringConvertible", "createArray"]
 - ["Ps28CustomDebugStringConvertible", "currentView"]
-- ["Ps28CustomDebugStringConvertible", "currentViewIsLocal"]
 - ["Ps28CustomDebugStringConvertible", "dataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "debugDescription"]
 - !private ["Ps28CustomDebugStringConvertible", "defaultCenter"]
@@ -511,11 +510,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addTarget"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "beginUpdates"]
+- ["Ps23CustomStringConvertible", "checkForEndOfTableview"]
 - !private ["Ps23CustomStringConvertible", "contains"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - ["Ps23CustomStringConvertible", "createArray"]
 - ["Ps23CustomStringConvertible", "currentView"]
-- ["Ps23CustomStringConvertible", "currentViewIsLocal"]
 - ["Ps23CustomStringConvertible", "dataSource"]
 - !private ["Ps23CustomStringConvertible", "debugDescription"]
 - !private ["Ps23CustomStringConvertible", "defaultCenter"]
@@ -616,9 +615,9 @@ depends-member:
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "addTarget"]
 - !private ["Ps9Equatable", "beginUpdates"]
+- ["Ps9Equatable", "checkForEndOfTableview"]
 - ["Ps9Equatable", "createArray"]
 - ["Ps9Equatable", "currentView"]
-- ["Ps9Equatable", "currentViewIsLocal"]
 - ["Ps9Equatable", "dataSource"]
 - !private ["Ps9Equatable", "debugDescription"]
 - !private ["Ps9Equatable", "defaultCenter"]
@@ -728,9 +727,9 @@ depends-member:
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "addTarget"]
 - !private ["Ps8Hashable", "beginUpdates"]
+- ["Ps8Hashable", "checkForEndOfTableview"]
 - ["Ps8Hashable", "createArray"]
 - ["Ps8Hashable", "currentView"]
-- ["Ps8Hashable", "currentViewIsLocal"]
 - ["Ps8Hashable", "dataSource"]
 - !private ["Ps8Hashable", "debugDescription"]
 - !private ["Ps8Hashable", "defaultCenter"]
@@ -900,9 +899,9 @@ depends-member:
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addTarget"]
 - !private ["PSo8NSCoding", "beginUpdates"]
+- ["PSo8NSCoding", "checkForEndOfTableview"]
 - ["PSo8NSCoding", "createArray"]
 - ["PSo8NSCoding", "currentView"]
-- ["PSo8NSCoding", "currentViewIsLocal"]
 - ["PSo8NSCoding", "dataSource"]
 - !private ["PSo8NSCoding", "debugDescription"]
 - !private ["PSo8NSCoding", "delegate"]
@@ -977,9 +976,9 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "TinelineViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIRefreshControl"]
+- ["PSo26NSExtensionRequestHandling", "checkForEndOfTableview"]
 - ["PSo26NSExtensionRequestHandling", "createArray"]
 - ["PSo26NSExtensionRequestHandling", "currentView"]
-- ["PSo26NSExtensionRequestHandling", "currentViewIsLocal"]
 - ["PSo26NSExtensionRequestHandling", "dataSource"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
@@ -1035,7 +1034,6 @@ depends-member:
 - !private ["CSo20NSNotificationCenter", "defaultCenter"]
 - !private ["CSo8NSNumber", "deinit"]
 - ["CSo8NSObject", "AnyObject"]
-- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CLLocation"]
 - ["CSo8NSObject", "CLLocationManager"]
 - ["CSo8NSObject", "Int"]
@@ -1062,9 +1060,9 @@ depends-member:
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "addTarget"]
 - !private ["CSo8NSObject", "beginUpdates"]
+- ["CSo8NSObject", "checkForEndOfTableview"]
 - ["CSo8NSObject", "createArray"]
 - ["CSo8NSObject", "currentView"]
-- ["CSo8NSObject", "currentViewIsLocal"]
 - ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "debugDescription"]
 - !private ["CSo8NSObject", "defaultCenter"]
@@ -1148,9 +1146,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "beginUpdates"]
+- ["PSo16NSObjectProtocol", "checkForEndOfTableview"]
 - ["PSo16NSObjectProtocol", "createArray"]
 - ["PSo16NSObjectProtocol", "currentView"]
-- ["PSo16NSObjectProtocol", "currentViewIsLocal"]
 - ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "debugDescription"]
 - !private ["PSo16NSObjectProtocol", "defaultCenter"]
@@ -1305,7 +1303,6 @@ depends-member:
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
 - ["C6TineSE22TinelineViewController", "AnyObject"]
-- ["C6TineSE22TinelineViewController", "Bool"]
 - ["C6TineSE22TinelineViewController", "CLLocation"]
 - ["C6TineSE22TinelineViewController", "CLLocationManager"]
 - ["C6TineSE22TinelineViewController", "Int"]
@@ -1328,9 +1325,9 @@ depends-member:
 - ["C6TineSE22TinelineViewController", "UITableView"]
 - ["C6TineSE22TinelineViewController", "UITableViewCell"]
 - !private ["C6TineSE22TinelineViewController", "Void"]
+- ["C6TineSE22TinelineViewController", "checkForEndOfTableview"]
 - ["C6TineSE22TinelineViewController", "createArray"]
 - ["C6TineSE22TinelineViewController", "currentView"]
-- ["C6TineSE22TinelineViewController", "currentViewIsLocal"]
 - ["C6TineSE22TinelineViewController", "dataSource"]
 - ["C6TineSE22TinelineViewController", "deinit"]
 - !private ["C6TineSE22TinelineViewController", "dispatch_async"]
@@ -1419,9 +1416,9 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - !private ["PSo21UIAppearanceContainer", "beginUpdates"]
+- ["PSo21UIAppearanceContainer", "checkForEndOfTableview"]
 - ["PSo21UIAppearanceContainer", "createArray"]
 - ["PSo21UIAppearanceContainer", "currentView"]
-- ["PSo21UIAppearanceContainer", "currentViewIsLocal"]
 - ["PSo21UIAppearanceContainer", "dataSource"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
@@ -1494,9 +1491,9 @@ depends-member:
 - ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "TinelineViewController"]
 - !private ["PSo18UIContentContainer", "UIRefreshControl"]
+- ["PSo18UIContentContainer", "checkForEndOfTableview"]
 - ["PSo18UIContentContainer", "createArray"]
 - ["PSo18UIContentContainer", "currentView"]
-- ["PSo18UIContentContainer", "currentViewIsLocal"]
 - ["PSo18UIContentContainer", "dataSource"]
 - !private ["PSo18UIContentContainer", "dispatch_async"]
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
@@ -1592,9 +1589,9 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
 - !private ["PSo18UIFocusEnvironment", "beginUpdates"]
+- ["PSo18UIFocusEnvironment", "checkForEndOfTableview"]
 - ["PSo18UIFocusEnvironment", "createArray"]
 - ["PSo18UIFocusEnvironment", "currentView"]
-- ["PSo18UIFocusEnvironment", "currentViewIsLocal"]
 - ["PSo18UIFocusEnvironment", "dataSource"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
@@ -1659,7 +1656,6 @@ depends-member:
 - !private ["CSo16UIRefreshControl", "endRefreshing"]
 - !private ["CSo16UIRefreshControl", "init"]
 - ["CSo11UIResponder", "AnyObject"]
-- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CLLocation"]
 - ["CSo11UIResponder", "CLLocationManager"]
 - ["CSo11UIResponder", "Int"]
@@ -1685,9 +1681,9 @@ depends-member:
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "addTarget"]
 - !private ["CSo11UIResponder", "beginUpdates"]
+- ["CSo11UIResponder", "checkForEndOfTableview"]
 - ["CSo11UIResponder", "createArray"]
 - ["CSo11UIResponder", "currentView"]
-- ["CSo11UIResponder", "currentViewIsLocal"]
 - ["CSo11UIResponder", "dataSource"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
@@ -1762,9 +1758,9 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "String"]
 - !private ["PSo20UIScrollViewDelegate", "TinelineViewController"]
 - !private ["PSo20UIScrollViewDelegate", "UIRefreshControl"]
+- !private ["PSo20UIScrollViewDelegate", "checkForEndOfTableview"]
 - !private ["PSo20UIScrollViewDelegate", "createArray"]
 - !private ["PSo20UIScrollViewDelegate", "currentView"]
-- !private ["PSo20UIScrollViewDelegate", "currentViewIsLocal"]
 - !private ["PSo20UIScrollViewDelegate", "dataSource"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_async"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
@@ -1820,9 +1816,9 @@ depends-member:
 - ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "TinelineViewController"]
 - !private ["PSo16UIStateRestoring", "UIRefreshControl"]
+- ["PSo16UIStateRestoring", "checkForEndOfTableview"]
 - ["PSo16UIStateRestoring", "createArray"]
 - ["PSo16UIStateRestoring", "currentView"]
-- ["PSo16UIStateRestoring", "currentViewIsLocal"]
 - ["PSo16UIStateRestoring", "dataSource"]
 - !private ["PSo16UIStateRestoring", "dispatch_async"]
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
@@ -1893,9 +1889,9 @@ depends-member:
 - ["PSo21UITableViewDataSource", "String"]
 - !private ["PSo21UITableViewDataSource", "TinelineViewController"]
 - !private ["PSo21UITableViewDataSource", "UIRefreshControl"]
+- !private ["PSo21UITableViewDataSource", "checkForEndOfTableview"]
 - !private ["PSo21UITableViewDataSource", "createArray"]
 - !private ["PSo21UITableViewDataSource", "currentView"]
-- !private ["PSo21UITableViewDataSource", "currentViewIsLocal"]
 - !private ["PSo21UITableViewDataSource", "dataSource"]
 - !private ["PSo21UITableViewDataSource", "dispatch_async"]
 - !private ["PSo21UITableViewDataSource", "dispatch_get_main_queue"]
@@ -1949,9 +1945,9 @@ depends-member:
 - ["PSo19UITableViewDelegate", "String"]
 - !private ["PSo19UITableViewDelegate", "TinelineViewController"]
 - !private ["PSo19UITableViewDelegate", "UIRefreshControl"]
+- !private ["PSo19UITableViewDelegate", "checkForEndOfTableview"]
 - !private ["PSo19UITableViewDelegate", "createArray"]
 - !private ["PSo19UITableViewDelegate", "currentView"]
-- !private ["PSo19UITableViewDelegate", "currentViewIsLocal"]
 - !private ["PSo19UITableViewDelegate", "dataSource"]
 - !private ["PSo19UITableViewDelegate", "dispatch_async"]
 - !private ["PSo19UITableViewDelegate", "dispatch_get_main_queue"]
@@ -2009,9 +2005,9 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - !private ["PSo18UITraitEnvironment", "beginUpdates"]
+- ["PSo18UITraitEnvironment", "checkForEndOfTableview"]
 - ["PSo18UITraitEnvironment", "createArray"]
 - ["PSo18UITraitEnvironment", "currentView"]
-- ["PSo18UITraitEnvironment", "currentViewIsLocal"]
 - ["PSo18UITraitEnvironment", "dataSource"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
@@ -2085,7 +2081,6 @@ depends-member:
 - !private ["CSo6UIView", "superview"]
 - !private ["CSo6UIView", "updateWith"]
 - ["CSo16UIViewController", "AnyObject"]
-- ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CLLocation"]
 - ["CSo16UIViewController", "CLLocationManager"]
 - ["CSo16UIViewController", "Int"]
@@ -2108,9 +2103,9 @@ depends-member:
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - !private ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "checkForEndOfTableview"]
 - ["CSo16UIViewController", "createArray"]
 - ["CSo16UIViewController", "currentView"]
-- ["CSo16UIViewController", "currentViewIsLocal"]
 - ["CSo16UIViewController", "dataSource"]
 - !private ["CSo16UIViewController", "deinit"]
 - !private ["CSo16UIViewController", "dispatch_async"]
@@ -2511,4 +2506,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "d9966d7f929cf94c31651684ba89d4ef"
+interface-hash: "6a678493c7b5d73c513dd00a45895d78"

@@ -246,6 +246,23 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
                     })
                 }
             })
+            
+            circleQuery.observeEventType(.KeyExited, withBlock: { (string, location) in
+                if self.localShedIDs.contains(string) {
+                    var indexOfRemoval: Int?
+                    for index in 0..<self.LocalSheds.count {
+                        if self.LocalSheds[index].identifier == string {
+                            indexOfRemoval = index
+                        }
+                    }
+                    if let indexOfRemoval = indexOfRemoval {
+                        self.LocalSheds.removeAtIndex(indexOfRemoval)
+                        self.tableView.reloadData()
+                    }
+                    
+                }
+            })
+
         }
     }
     
@@ -277,14 +294,6 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
                 // If all succeeds grab index path from tableview using cell or return
                 guard let indexPath = tableView.indexPathForCell(cell)  else { return }
                 
-                // grab identifier from sheds at indexpath and update destinationView with identifier
-//                if !currentViewIsLocal {
-//                    let identifier = self.trackingSheds[indexPath.row].hunterIdentifier
-//                    destinationView?.updateWithIdentifier(identifier)
-//                } else {
-//                    let identifier = self.LocalSheds[indexPath.row].hunterIdentifier
-//                    destinationView?.updateWithIdentifier(identifier)
-//                }
                 let identifier = self.dataSource[indexPath.row].hunterIdentifier
                 destinationView?.updateWithIdentifier(identifier)
                 

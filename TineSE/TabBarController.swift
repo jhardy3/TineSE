@@ -10,6 +10,8 @@ import UIKit
 
 class TabBarController: UITabBarController {
 
+    var profileCurrentlySelected = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,8 +32,11 @@ class TabBarController: UITabBarController {
     
     
     override func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
-        if item.selectedImage == UIImage(named: "Profile") {
+        if item.selectedImage == UIImage(named: "Profile") && !profileCurrentlySelected {
+            profileCurrentlySelected = true
             NSNotificationCenter.defaultCenter().postNotificationName("ProfileTriggered", object: nil)
+        } else if item.selectedImage != UIImage(named: "Profile") {
+            profileCurrentlySelected = false
         }
     }
 

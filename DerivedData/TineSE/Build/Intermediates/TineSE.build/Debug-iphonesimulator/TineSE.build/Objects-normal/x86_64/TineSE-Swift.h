@@ -289,6 +289,19 @@ SWIFT_CLASS("_TtC6TineSE25SearchTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC6TineSE24ShedDetailViewController")
+@interface ShedDetailViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified shedImageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedTypeLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedColorLabel;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class TinelineViewController;
 
 SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
@@ -311,6 +324,7 @@ SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
 
 SWIFT_CLASS("_TtC6TineSE16TabBarController")
 @interface TabBarController : UITabBarController
+@property (nonatomic) BOOL profileCurrentlySelected;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)tabBar:(UITabBar * _Nonnull)tabBar didSelectItem:(UITabBarItem * _Nonnull)item;
@@ -325,13 +339,13 @@ SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull localShedIDs;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull shedIDs;
 @property (nonatomic) BOOL endOfTableView;
-@property (nonatomic, readonly) BOOL currentViewIsLocal;
 @property (nonatomic, strong) CLLocationManager * _Null_unspecified locationManager;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified segmentedController;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (void)checkForEndOfTableview:(NSIndexPath * _Nonnull)indexPath;
 - (void)grabSheds;
 - (NSArray<NSString *> * _Nonnull)createArray:(NSArray<NSString *> * _Nonnull)array range:(NSInteger)range;
 - (void)fetchShedsFirstLoad;

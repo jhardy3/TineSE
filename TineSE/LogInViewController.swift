@@ -22,6 +22,11 @@ class logInViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var proceedButton: UIButton!
     @IBOutlet weak var toggleModeButton: UIButton!
+    @IBOutlet weak var loadImageView: UIImageView!
+    @IBOutlet weak var logInImageView: UIImageView!
+    @IBOutlet weak var logInView: UIView!
+    
+    var blurEffect: UIVisualEffectView?
     
     var logInMode = LogInMode.LogIn {
         didSet {
@@ -34,6 +39,8 @@ class logInViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.loadImageView.image = self.loadImageView.image?.imageWithColor(UIColor.hunterOrange())
+        self.loadImageView.hidden = true
         displayBasedOnViewMode()
         setupTextFields()
     }
@@ -72,13 +79,58 @@ class logInViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    func blurImageBackground(item: AnyObject) {
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.alpha = 0.4
+        blurEffectView.frame = view.bounds
+        blurEffectView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+        item.addSubview(blurEffectView)
+        self.blurEffect = blurEffectView
+    }
+    
+    
+    func createAnimation() {
+        
+        let bounds = CGRectMake(0, 0, 1, 1)
+        
+        let rotateAnimation = CAKeyframeAnimation()
+        rotateAnimation.keyPath = "position"
+        rotateAnimation.path = CGPathCreateWithEllipseInRect(bounds, nil)
+        rotateAnimation.duration = 5.0
+        rotateAnimation.additive = true
+        rotateAnimation.repeatCount = Float.infinity
+        rotateAnimation.rotationMode = kCAAnimationRotateAuto
+        rotateAnimation.speed = 5.0
+        
+        self.loadImageView.layer.addAnimation(rotateAnimation, forKey: "shake")
+        self.logInView.hidden = true
+        textFieldShouldReturn(self.passwordTextField)
+//        blurImageBackground(view)
+    }
+    
+    func endAnimation() {
+        
+        self.loadImageView.layer.removeAnimationForKey("shake")
+        self.loadImageView.hidden = true
+        self.logInView.hidden = false
+        if let blurEffect = blurEffect {
+            blurEffect.removeFromSuperview()
+        }
+    }
+
+    
     func signIn() {
         // Guard for email and password or return
         guard let email = emailTextField.text, let password = passwordTextField.text else { return }
         
         // authenticate hunter with firebase
+        self.loadImageView.hidden = false
+        createAnimation()
         HunterController.authenticateHunter(email, password: password) { (success) -> Void in
             // If successful perform segue to tineline
+            
+            self.endAnimation()
             if success {
                 self.performSegueWithIdentifier("loggedIn", sender: self)
             }

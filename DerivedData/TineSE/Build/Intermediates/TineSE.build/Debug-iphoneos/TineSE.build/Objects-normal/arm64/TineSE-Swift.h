@@ -289,6 +289,19 @@ SWIFT_CLASS("_TtC6TineSE25SearchTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC6TineSE24ShedDetailViewController")
+@interface ShedDetailViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified shedImageView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedTypeLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedColorLabel;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class TinelineViewController;
 
 SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
@@ -311,6 +324,7 @@ SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
 
 SWIFT_CLASS("_TtC6TineSE16TabBarController")
 @interface TabBarController : UITabBarController
+@property (nonatomic) BOOL profileCurrentlySelected;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)tabBar:(UITabBar * _Nonnull)tabBar didSelectItem:(UITabBarItem * _Nonnull)item;
@@ -365,6 +379,7 @@ SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 - (void)downloadImageFromLink:(NSString * _Nonnull)link contentMode:(UIViewContentMode)contentMode;
 @end
 
+@class UIVisualEffectView;
 
 SWIFT_CLASS("_TtC6TineSE19logInViewController")
 @interface logInViewController : UIViewController <UITextFieldDelegate>
@@ -373,11 +388,18 @@ SWIFT_CLASS("_TtC6TineSE19logInViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTextField;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified proceedButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified toggleModeButton;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified loadImageView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified logInImageView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified logInView;
+@property (nonatomic, strong) UIVisualEffectView * _Nullable blurEffect;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (IBAction)proceedButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)toggleModeButtonTapped:(UIButton * _Nonnull)sender;
+- (void)blurImageBackground:(id _Nonnull)item;
+- (void)createAnimation;
+- (void)endAnimation;
 - (void)signIn;
 - (void)signUp;
 - (void)displayBasedOnViewMode;
