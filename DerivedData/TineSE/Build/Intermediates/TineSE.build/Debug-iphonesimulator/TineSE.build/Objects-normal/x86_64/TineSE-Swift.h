@@ -379,10 +379,22 @@ SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 - (void)downloadImageFromLink:(NSString * _Nonnull)link contentMode:(UIViewContentMode)contentMode;
 @end
 
+
+SWIFT_CLASS("_TtC6TineSE27UserAgreementViewController")
+@interface UserAgreementViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tineLabel;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)agreeButtonTapped:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIVisualEffectView;
 
 SWIFT_CLASS("_TtC6TineSE19logInViewController")
 @interface logInViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified termsButton;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTextField;
@@ -393,6 +405,7 @@ SWIFT_CLASS("_TtC6TineSE19logInViewController")
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified logInView;
 @property (nonatomic, strong) UIVisualEffectView * _Nullable blurEffect;
 - (void)viewDidLoad;
+- (void)setUpTextField:(UITextField * _Nonnull)textField;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (IBAction)proceedButtonTapped:(UIButton * _Nonnull)sender;

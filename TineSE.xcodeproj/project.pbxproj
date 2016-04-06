@@ -51,7 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		748FFC9E1CA7174D00111EFE /* TineSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TineSE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		748FFC9E1CA7174D00111EFE /* Tine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748FFCAB1CA7174D00111EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		748FFCAD1CA7174D00111EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		748FFCB31CA7178400111EFE /* TineSE-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TineSE-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		748FFC9F1CA7174D00111EFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				748FFC9E1CA7174D00111EFE /* TineSE.app */,
+				748FFC9E1CA7174D00111EFE /* Tine.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -279,9 +279,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		748FFC9D1CA7174D00111EFE /* TineSE */ = {
+		748FFC9D1CA7174D00111EFE /* Tine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 748FFCB01CA7174D00111EFE /* Build configuration list for PBXNativeTarget "TineSE" */;
+			buildConfigurationList = 748FFCB01CA7174D00111EFE /* Build configuration list for PBXNativeTarget "Tine" */;
 			buildPhases = (
 				748FFC9A1CA7174D00111EFE /* Sources */,
 				748FFC9B1CA7174D00111EFE /* Frameworks */,
@@ -291,9 +291,9 @@
 			);
 			dependencies = (
 			);
-			name = TineSE;
+			name = Tine;
 			productName = TineSE;
-			productReference = 748FFC9E1CA7174D00111EFE /* TineSE.app */;
+			productReference = 748FFC9E1CA7174D00111EFE /* Tine.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -324,7 +324,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				748FFC9D1CA7174D00111EFE /* TineSE */,
+				748FFC9D1CA7174D00111EFE /* Tine */,
 			);
 		};
 /* End PBXProject section */
@@ -524,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		748FFCB01CA7174D00111EFE /* Build configuration list for PBXNativeTarget "TineSE" */ = {
+		748FFCB01CA7174D00111EFE /* Build configuration list for PBXNativeTarget "Tine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				748FFCB11CA7174D00111EFE /* Debug */,

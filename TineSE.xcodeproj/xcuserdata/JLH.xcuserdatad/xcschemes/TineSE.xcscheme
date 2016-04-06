@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "748FFC9D1CA7174D00111EFE"
-               BuildableName = "TineSE.app"
-               BlueprintName = "TineSE"
+               BuildableName = "Tine.app"
+               BlueprintName = "Tine"
                ReferencedContainer = "container:TineSE.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "748FFC9D1CA7174D00111EFE"
-            BuildableName = "TineSE.app"
-            BlueprintName = "TineSE"
+            BuildableName = "Tine.app"
+            BlueprintName = "Tine"
             ReferencedContainer = "container:TineSE.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "748FFC9D1CA7174D00111EFE"
-            BuildableName = "TineSE.app"
-            BlueprintName = "TineSE"
+            BuildableName = "Tine.app"
+            BlueprintName = "Tine"
             ReferencedContainer = "container:TineSE.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "748FFC9D1CA7174D00111EFE"
-            BuildableName = "TineSE.app"
-            BlueprintName = "TineSE"
+            BuildableName = "Tine.app"
+            BlueprintName = "Tine"
             ReferencedContainer = "container:TineSE.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -405,6 +405,7 @@ SWIFT_CLASS("_TtC6TineSE19logInViewController")
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified logInView;
 @property (nonatomic, strong) UIVisualEffectView * _Nullable blurEffect;
 - (void)viewDidLoad;
+- (void)setUpTextField:(UITextField * _Nonnull)textField;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (IBAction)proceedButtonTapped:(UIButton * _Nonnull)sender;

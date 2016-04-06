@@ -1,0 +1,350 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AppearanceController"
+provides-nominal:
+- "C4Tine20AppearanceController"
+provides-member:
+- ["C4Tine20AppearanceController", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "UITabBarItem"
+- !private "UIToolbar"
+- !private "UISegmentedControl"
+- "AppearanceController"
+- !private "UIColor"
+- !private "Dictionary"
+- !private "UIBarButtonItem"
+- !private "NSForegroundColorAttributeName"
+- !private "UINavigationBar"
+- !private "UITabBar"
+depends-member:
+- !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
+- !private ["Ps9AnyObject", "UIBarButtonItem"]
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UINavigationBar"]
+- !private ["Ps9AnyObject", "UISegmentedControl"]
+- !private ["Ps9AnyObject", "UITabBar"]
+- !private ["Ps9AnyObject", "UITabBarItem"]
+- !private ["Ps9AnyObject", "UIToolbar"]
+- !private ["Ps9AnyObject", "appearance"]
+- !private ["Ps9AnyObject", "backgroundColor"]
+- !private ["Ps9AnyObject", "barTintColor"]
+- !private ["Ps9AnyObject", "hunterOrange"]
+- !private ["Ps9AnyObject", "setTitleTextAttributes"]
+- !private ["Ps9AnyObject", "tintColor"]
+- !private ["Ps9AnyObject", "whiteColor"]
+- ["Ps9AnyObject", ""]
+- !private ["C4Tine20AppearanceController", "NSForegroundColorAttributeName"]
+- !private ["C4Tine20AppearanceController", "UIBarButtonItem"]
+- !private ["C4Tine20AppearanceController", "UIColor"]
+- !private ["C4Tine20AppearanceController", "UINavigationBar"]
+- !private ["C4Tine20AppearanceController", "UISegmentedControl"]
+- !private ["C4Tine20AppearanceController", "UITabBar"]
+- !private ["C4Tine20AppearanceController", "UITabBarItem"]
+- !private ["C4Tine20AppearanceController", "UIToolbar"]
+- ["C4Tine20AppearanceController", "deinit"]
+- ["C4Tine20AppearanceController", "init"]
+- ["C4Tine20AppearanceController", "initializaeAppearanceDefaults"]
+- !private ["Ps23ArrayLiteralConvertible", "Application"]
+- !private ["Ps23ArrayLiteralConvertible", "Normal"]
+- !private ["Ps23ArrayLiteralConvertible", "Selected"]
+- !private ["Ps11CVarArgType", "appearance"]
+- !private ["Ps11CVarArgType", "backgroundColor"]
+- !private ["Ps11CVarArgType", "barTintColor"]
+- !private ["Ps11CVarArgType", "hunterOrange"]
+- !private ["Ps11CVarArgType", "setTitleTextAttributes"]
+- !private ["Ps11CVarArgType", "tintColor"]
+- !private ["Ps11CVarArgType", "whiteColor"]
+- !private ["Ps14CollectionType", "Key"]
+- !private ["Ps14CollectionType", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "appearance"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
+- !private ["Ps28CustomDebugStringConvertible", "barTintColor"]
+- !private ["Ps28CustomDebugStringConvertible", "hunterOrange"]
+- !private ["Ps28CustomDebugStringConvertible", "setTitleTextAttributes"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
+- !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "appearance"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
+- !private ["Ps23CustomStringConvertible", "barTintColor"]
+- !private ["Ps23CustomStringConvertible", "hunterOrange"]
+- !private ["Ps23CustomStringConvertible", "setTitleTextAttributes"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
+- !private ["Ps23CustomStringConvertible", "whiteColor"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
+- !private ["Ps9Equatable", "Application"]
+- !private ["Ps9Equatable", "Normal"]
+- !private ["Ps9Equatable", "Selected"]
+- !private ["Ps9Equatable", "appearance"]
+- !private ["Ps9Equatable", "backgroundColor"]
+- !private ["Ps9Equatable", "barTintColor"]
+- !private ["Ps9Equatable", "hunterOrange"]
+- !private ["Ps9Equatable", "setTitleTextAttributes"]
+- !private ["Ps9Equatable", "tintColor"]
+- !private ["Ps9Equatable", "whiteColor"]
+- !private ["Ps8Hashable", "appearance"]
+- !private ["Ps8Hashable", "backgroundColor"]
+- !private ["Ps8Hashable", "barTintColor"]
+- !private ["Ps8Hashable", "hunterOrange"]
+- !private ["Ps8Hashable", "setTitleTextAttributes"]
+- !private ["Ps8Hashable", "tintColor"]
+- !private ["Ps8Hashable", "whiteColor"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["PSo8NSCoding", "appearance"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "barTintColor"]
+- !private ["PSo8NSCoding", "hunterOrange"]
+- !private ["PSo8NSCoding", "setTitleTextAttributes"]
+- !private ["PSo8NSCoding", "tintColor"]
+- !private ["PSo8NSCoding", "whiteColor"]
+- !private ["PSo9NSCopying", "hunterOrange"]
+- !private ["PSo9NSCopying", "whiteColor"]
+- !private ["CSo8NSObject", "appearance"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "barTintColor"]
+- !private ["CSo8NSObject", "hunterOrange"]
+- !private ["CSo8NSObject", "setTitleTextAttributes"]
+- !private ["CSo8NSObject", "tintColor"]
+- !private ["CSo8NSObject", "whiteColor"]
+- !private ["PSo16NSObjectProtocol", "appearance"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "barTintColor"]
+- !private ["PSo16NSObjectProtocol", "hunterOrange"]
+- !private ["PSo16NSObjectProtocol", "setTitleTextAttributes"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
+- !private ["PSo16NSObjectProtocol", "whiteColor"]
+- !private ["PSo14NSSecureCoding", "hunterOrange"]
+- !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["Ps13OptionSetType", "Application"]
+- !private ["Ps13OptionSetType", "Normal"]
+- !private ["Ps13OptionSetType", "Selected"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16RawRepresentable", "Application"]
+- !private ["Ps16RawRepresentable", "Normal"]
+- !private ["Ps16RawRepresentable", "Selected"]
+- !private ["Ps12SequenceType", "Key"]
+- !private ["Ps12SequenceType", "Value"]
+- !private ["Ps14SetAlgebraType", "Application"]
+- !private ["Ps14SetAlgebraType", "Normal"]
+- !private ["Ps14SetAlgebraType", "Selected"]
+- !private ["PSo29UIAccessibilityIdentification", "appearance"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
+- !private ["PSo29UIAccessibilityIdentification", "setTitleTextAttributes"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- !private ["PSo12UIAppearance", "appearance"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "barTintColor"]
+- !private ["PSo12UIAppearance", "setTitleTextAttributes"]
+- !private ["PSo12UIAppearance", "tintColor"]
+- !private ["PSo21UIAppearanceContainer", "appearance"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "barTintColor"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
+- !private ["CSo15UIBarButtonItem", "appearance"]
+- !private ["CSo15UIBarButtonItem", "setTitleTextAttributes"]
+- !private ["CSo9UIBarItem", "appearance"]
+- !private ["CSo9UIBarItem", "setTitleTextAttributes"]
+- !private ["PSo16UIBarPositioning", "appearance"]
+- !private ["PSo16UIBarPositioning", "backgroundColor"]
+- !private ["PSo16UIBarPositioning", "barTintColor"]
+- !private ["CSo7UIColor", "hunterOrange"]
+- !private ["CSo7UIColor", "whiteColor"]
+- !private ["CSo9UIControl", "appearance"]
+- !private ["CSo9UIControl", "tintColor"]
+- !private ["VSC14UIControlState", "Application"]
+- !private ["VSC14UIControlState", "Normal"]
+- !private ["VSC14UIControlState", "Selected"]
+- !private ["PSo17UICoordinateSpace", "appearance"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "barTintColor"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
+- !private ["PSo13UIDynamicItem", "appearance"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "barTintColor"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
+- !private ["PSo18UIFocusEnvironment", "appearance"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- !private ["PSo18UIFocusEnvironment", "barTintColor"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
+- !private ["CSo15UINavigationBar", "appearance"]
+- !private ["CSo15UINavigationBar", "backgroundColor"]
+- !private ["CSo15UINavigationBar", "barTintColor"]
+- !private ["CSo11UIResponder", "appearance"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- !private ["CSo11UIResponder", "barTintColor"]
+- !private ["CSo11UIResponder", "tintColor"]
+- !private ["CSo18UISegmentedControl", "appearance"]
+- !private ["CSo18UISegmentedControl", "tintColor"]
+- !private ["CSo8UITabBar", "appearance"]
+- !private ["CSo8UITabBar", "backgroundColor"]
+- !private ["CSo8UITabBar", "barTintColor"]
+- !private ["CSo8UITabBar", "tintColor"]
+- !private ["CSo12UITabBarItem", "appearance"]
+- !private ["CSo12UITabBarItem", "setTitleTextAttributes"]
+- !private ["CSo9UIToolbar", "appearance"]
+- !private ["CSo9UIToolbar", "barTintColor"]
+- !private ["PSo18UITraitEnvironment", "appearance"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- !private ["PSo18UITraitEnvironment", "barTintColor"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
+- !private ["CSo6UIView", "appearance"]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "barTintColor"]
+- !private ["CSo6UIView", "tintColor"]
+- !private ["Ps24_ColorLiteralConvertible", "hunterOrange"]
+- !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps12_Reflectable", "Key"]
+- !private ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "appearance"]
+- !private ["Ps12_Reflectable", "backgroundColor"]
+- !private ["Ps12_Reflectable", "barTintColor"]
+- !private ["Ps12_Reflectable", "tintColor"]
+depends-nominal:
+- "Ps9AnyObject"
+- "C4Tine20AppearanceController"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
+- !private "Ps9Equatable"
+- !private "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Ps13OptionSetType"
+- !private "Sq"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps14SetAlgebraType"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "CSo15UIBarButtonItem"
+- !private "CSo9UIBarItem"
+- !private "PSo16UIBarPositioning"
+- !private "CSo7UIColor"
+- !private "CSo9UIControl"
+- !private "VSC14UIControlState"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo15UINavigationBar"
+- !private "CSo11UIResponder"
+- !private "CSo18UISegmentedControl"
+- !private "CSo8UITabBar"
+- !private "CSo12UITabBarItem"
+- !private "CSo9UIToolbar"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "Ps24_ColorLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE-Bridging-Header.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentityModel.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentityService.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentity.h"
+- "./AWSCore.framework/Headers/AWSSTSModel.h"
+- "./AWSCore.framework/Headers/AWSSTSService.h"
+- "./AWSCore.framework/Headers/AWSSTS.h"
+- "./AWSCore.framework/Headers/AWSFMDatabaseQueue.h"
+- "./AWSCore.framework/Headers/AWSFMDatabaseAdditions.h"
+- "./AWSCore.framework/Headers/AWSFMDatabasePool.h"
+- "./AWSCore.framework/Headers/AWSFMResultSet.h"
+- "./AWSCore.framework/Headers/AWSFMDatabase.h"
+- "./AWSCore.framework/Headers/AWSFMDB.h"
+- "./AWSCore.framework/Headers/AWSGZIP.h"
+- "./AWSCore.framework/Headers/AWSTaskCompletionSource.h"
+- "./AWSCore.framework/Headers/AWSTask.h"
+- "./AWSCore.framework/Headers/AWSExecutor.h"
+- "./AWSCore.framework/Headers/AWSCancellationTokenSource.h"
+- "./AWSCore.framework/Headers/AWSCancellationTokenRegistration.h"
+- "./AWSCore.framework/Headers/AWSCancellationToken.h"
+- "./AWSCore.framework/Headers/AWSBoltsVersion.h"
+- "./AWSCore.framework/Headers/AWSBolts.h"
+- "./AWSCore.framework/Headers/AWSSignature.h"
+- "./AWSCore.framework/Headers/AWSSynchronizedMutableDictionary.h"
+- "./AWSCore.framework/Headers/AWSClientContext.h"
+- "./AWSCore.framework/Headers/AWSLogging.h"
+- "./AWSCore.framework/Headers/AWSCategory.h"
+- "./AWSCore.framework/Headers/AWSIdentityProvider.h"
+- "./AWSCore.framework/Headers/AWSCredentialsProvider.h"
+- "./AWSCore.framework/Headers/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h"
+- "./AWSCore.framework/Headers/NSValueTransformer+AWSMTLInversionAdditions.h"
+- "./AWSCore.framework/Headers/NSObject+AWSMTLComparisonAdditions.h"
+- "./AWSCore.framework/Headers/NSDictionary+AWSMTLManipulationAdditions.h"
+- "./AWSCore.framework/Headers/NSArray+AWSMTLManipulationAdditions.h"
+- "./AWSCore.framework/Headers/AWSMTLValueTransformer.h"
+- "./AWSCore.framework/Headers/AWSMTLModel+NSCoding.h"
+- "./AWSCore.framework/Headers/AWSMTLModel.h"
+- "./AWSCore.framework/Headers/AWSMTLManagedObjectAdapter.h"
+- "./AWSCore.framework/Headers/AWSMTLJSONAdapter.h"
+- "./AWSCore.framework/Headers/AWSMantle.h"
+- "./AWSCore.framework/Headers/AWSModel.h"
+- "./AWSCore.framework/Headers/AWSNetworking.h"
+- "./AWSCore.framework/Headers/AWSService.h"
+- "./AWSCore.framework/Headers/AWSServiceEnum.h"
+- "./AWSCore.framework/Headers/AWSCore.h"
+- "./AWSCore.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "./AWSS3.framework/Headers/AWSS3TransferUtility.h"
+- "./AWSS3.framework/Headers/AWSS3PreSignedURL.h"
+- "./AWSS3.framework/Headers/AWSS3TransferManager.h"
+- "./AWSS3.framework/Headers/AWSS3Model.h"
+- "./AWSS3.framework/Headers/AWSS3Service.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/AWSCore.framework/Modules/module.modulemap"
+- "./AWSS3.framework/Headers/AWSS3.h"
+- "./AWSS3.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "./AWSCognito.framework/Headers/AWSCognitoConflict.h"
+- "./AWSCognito.framework/Headers/AWSCognitoRecord.h"
+- "./AWSCognito.framework/Headers/AWSCognitoDataset.h"
+- "./AWSCognito.framework/Headers/AWSCognitoSyncModel.h"
+- "./AWSCognito.framework/Headers/AWSCognitoSyncService.h"
+- "./AWSCognito.framework/Headers/AWSCognitoHandlers.h"
+- "./AWSCognito.framework/Headers/AWSCognitoService.h"
+- "./AWSCognito.framework/Headers/AWSCognito.h"
+- "./AWSCognito.framework/Modules/module.modulemap"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/Geofire.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFCircleQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFRegionQuery.h"
+- "./Firebase.framework/Headers/FConfig.h"
+- "./Firebase.framework/Headers/FirebaseServerValue.h"
+- "./Firebase.framework/Headers/FAuthType.h"
+- "./Firebase.framework/Headers/FAuthData.h"
+- "./Firebase.framework/Headers/FTransactionResult.h"
+- "./Firebase.framework/Headers/FMutableData.h"
+- "./Firebase.framework/Headers/FirebaseApp.h"
+- "./Firebase.framework/Headers/FDataSnapshot.h"
+- "./Firebase.framework/Headers/FEventType.h"
+- "./Firebase.framework/Headers/FQuery.h"
+- "./Firebase.framework/Headers/Firebase.h"
+- "./Firebase.framework/Modules/module.modulemap"
+interface-hash: "9dae05aed4bc6e162940d03281ce4c63"

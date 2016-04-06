@@ -9,21 +9,21 @@ provides-dynamic-lookup:
 - "shedImageView"
 - "shedColorLabel"
 - "didReceiveMemoryWarning"
-- "animalImageView"
 - "viewDidLoad"
+- "animalImageView"
 - "shedTypeLabel"
 depends-top-level:
 - !private "StringLiteralType"
+- "ShedDetailViewController"
+- !private "UIImage"
+- !private "=="
+- !private "~="
+- !private "BooleanLiteralType"
 - "UIImageView"
+- "Shed"
 - !private "UIColor"
 - "UILabel"
 - "UIViewController"
-- "Shed"
-- "ShedDetailViewController"
-- !private "~="
-- !private "=="
-- !private "BooleanLiteralType"
-- !private "UIImage"
 depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIImage"]

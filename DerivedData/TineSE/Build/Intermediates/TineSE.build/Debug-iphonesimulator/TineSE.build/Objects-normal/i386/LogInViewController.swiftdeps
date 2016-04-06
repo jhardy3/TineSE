@@ -9,70 +9,74 @@ provides-member:
 - ["O6TineSE9LogInMode", ""]
 - ["C6TineSE19logInViewController", ""]
 provides-dynamic-lookup:
+- "proceedButton"
+- "proceedButtonTapped"
+- "viewDidAppear"
+- "logInImageView"
+- "signIn"
+- "usernameTextField"
+- "emailTextField"
+- "errorAlert"
+- "displayBasedOnViewMode"
+- "loadImageView"
+- "setUpTextField"
+- "toggleModeButtonTapped"
+- "textFieldDidEndEditing"
+- "textFieldShouldReturn"
+- "blurEffect"
+- "checkForEmptiness"
+- "logInView"
+- "didReceiveMemoryWarning"
+- "passwordTextField"
+- "endAnimation"
+- "blurImageBackground"
+- "viewDidLoad"
+- "createAnimation"
 - "setupTextFields"
 - "signUp"
-- "passwordTextField"
-- "loadImageView"
-- "textFieldShouldReturn"
-- "logInView"
-- "viewDidAppear"
-- "blurImageBackground"
-- "errorAlert"
-- "endAnimation"
-- "proceedButtonTapped"
 - "termsButton"
 - "toggleModeButton"
-- "textFieldDidEndEditing"
-- "usernameTextField"
-- "signIn"
-- "didReceiveMemoryWarning"
-- "emailTextField"
-- "logInImageView"
-- "displayBasedOnViewMode"
-- "createAnimation"
-- "blurEffect"
-- "toggleModeButtonTapped"
-- "viewDidLoad"
-- "proceedButton"
-- "checkForEmptiness"
 depends-top-level:
-- !private "dispatch_group_create"
-- "Bool"
+- !private "BooleanLiteralType"
+- "logInViewController"
 - !private "!="
-- !private "UnicodeScalarType"
-- !private "dispatch_group_notify"
-- !private "UIBlurEffectStyle"
-- "UIView"
-- !private "CGPathCreateWithEllipseInRect"
-- !private "dispatch_group_enter"
-- !private "Float"
-- !private "ExtendedGraphemeClusterType"
-- "UITextField"
+- !private "Dictionary"
 - !private "UIBlurEffect"
+- "UIViewController"
+- !private "UIBlurEffectStyle"
+- !private "kCAAnimationRotateAuto"
+- "Bool"
+- !private "UIAlertController"
+- !private "dispatch_group_leave"
+- "UIImageView"
+- !private "NSAttributedString"
+- !private "dispatch_group_create"
+- !private "ExtendedGraphemeClusterType"
+- !private "UIAlertAction"
+- "AnyObject"
+- !private "UIColor"
+- !private "Float"
+- "UITextField"
+- !private "UnicodeScalarType"
+- "UIVisualEffectView"
+- !private "Array"
+- "UIButton"
+- !private "StringLiteralType"
+- !private "CGPathCreateWithEllipseInRect"
+- "LogInMode"
+- !private "Void"
+- "UITextFieldDelegate"
+- !private "CAKeyframeAnimation"
+- !private "dispatch_group_notify"
 - !private "CGRectMake"
 - !private "HunterController"
-- !private "BooleanLiteralType"
-- !private "CAKeyframeAnimation"
-- !private "dispatch_get_main_queue"
-- !private "UIAlertController"
-- "UITextFieldDelegate"
-- "=="
-- "LogInMode"
-- !private "Array"
-- "UIVisualEffectView"
+- !private "dispatch_group_enter"
+- !private "NSForegroundColorAttributeName"
 - "String"
-- "UIImageView"
-- !private "UIColor"
-- !private "StringLiteralType"
-- !private "Void"
-- !private "dispatch_group_leave"
-- !private "kCAAnimationRotateAuto"
-- "logInViewController"
+- "UIView"
 - !private "??"
-- "UIViewController"
-- "AnyObject"
-- "UIButton"
-- !private "UIAlertAction"
+- "=="
+- !private "dispatch_get_main_queue"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "infinity"]
 - !private ["Ps9AnyObject", "CAKeyframeAnimation"]
@@ -82,6 +86,8 @@ depends-member:
 - !private ["Ps9AnyObject", "Float"]
 - !private ["Ps9AnyObject", "HunterController"]
 - ["Ps9AnyObject", "LogInMode"]
+- !private ["Ps9AnyObject", "NSAttributedString"]
+- !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["Ps9AnyObject", "UIAlertAction"]
 - !private ["Ps9AnyObject", "UIAlertController"]
 - !private ["Ps9AnyObject", "UIBlurEffect"]
@@ -94,6 +100,7 @@ depends-member:
 - !private ["Ps9AnyObject", "additive"]
 - !private ["Ps9AnyObject", "alpha"]
 - !private ["Ps9AnyObject", "append"]
+- !private ["Ps9AnyObject", "attributedPlaceholder"]
 - !private ["Ps9AnyObject", "authenticateHunter"]
 - !private ["Ps9AnyObject", "autoresizingMask"]
 - ["Ps9AnyObject", "blurEffect"]
@@ -147,6 +154,7 @@ depends-member:
 - !private ["Ps9AnyObject", "resignFirstResponder"]
 - !private ["Ps9AnyObject", "rotationMode"]
 - !private ["Ps9AnyObject", "setTitle"]
+- ["Ps9AnyObject", "setUpTextField"]
 - ["Ps9AnyObject", "setupTextFields"]
 - !private ["Ps9AnyObject", "sharedInstance"]
 - ["Ps9AnyObject", "signIn"]
@@ -154,6 +162,7 @@ depends-member:
 - !private ["Ps9AnyObject", "speed"]
 - ["Ps9AnyObject", "termsButton"]
 - !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "textColor"]
 - ["Ps9AnyObject", "textField"]
 - ["Ps9AnyObject", "textFieldDidBeginEditing"]
 - ["Ps9AnyObject", "textFieldDidEndEditing"]
@@ -168,6 +177,7 @@ depends-member:
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidAppear"]
 - ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "whiteColor"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Element"]
 - !private ["Sa", "Generator"]
@@ -253,6 +263,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "HunterController"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - ["Ps11CVarArgType", "LogInMode"]
+- !private ["Ps11CVarArgType", "NSAttributedString"]
+- !private ["Ps11CVarArgType", "NSForegroundColorAttributeName"]
 - !private ["Ps11CVarArgType", "UIAlertAction"]
 - !private ["Ps11CVarArgType", "UIAlertController"]
 - !private ["Ps11CVarArgType", "UIBlurEffect"]
@@ -264,6 +276,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "additive"]
 - !private ["Ps11CVarArgType", "alpha"]
 - !private ["Ps11CVarArgType", "append"]
+- !private ["Ps11CVarArgType", "attributedPlaceholder"]
 - !private ["Ps11CVarArgType", "autoresizingMask"]
 - ["Ps11CVarArgType", "blurEffect"]
 - ["Ps11CVarArgType", "blurImageBackground"]
@@ -315,12 +328,14 @@ depends-member:
 - !private ["Ps11CVarArgType", "resignFirstResponder"]
 - !private ["Ps11CVarArgType", "rotationMode"]
 - !private ["Ps11CVarArgType", "setTitle"]
+- ["Ps11CVarArgType", "setUpTextField"]
 - ["Ps11CVarArgType", "setupTextFields"]
 - ["Ps11CVarArgType", "signIn"]
 - ["Ps11CVarArgType", "signUp"]
 - !private ["Ps11CVarArgType", "speed"]
 - ["Ps11CVarArgType", "termsButton"]
 - !private ["Ps11CVarArgType", "text"]
+- !private ["Ps11CVarArgType", "textColor"]
 - ["Ps11CVarArgType", "textField"]
 - ["Ps11CVarArgType", "textFieldDidBeginEditing"]
 - ["Ps11CVarArgType", "textFieldDidEndEditing"]
@@ -334,6 +349,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "view"]
 - ["Ps11CVarArgType", "viewDidAppear"]
 - ["Ps11CVarArgType", "viewDidLoad"]
+- !private ["Ps11CVarArgType", "whiteColor"]
 - ["Ps11CVarArgType", ""]
 - !private ["Vs9Character", "deinit"]
 - !private ["VSS13CharacterView", "Generator"]
@@ -343,7 +359,9 @@ depends-member:
 - !private ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "Key"]
 - !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "Value"]
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps10Comparable", "Distance"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
@@ -361,7 +379,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "HunterController"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
 - ["Ps28CustomDebugStringConvertible", "LogInMode"]
+- !private ["Ps28CustomDebugStringConvertible", "NSAttributedString"]
+- !private ["Ps28CustomDebugStringConvertible", "NSForegroundColorAttributeName"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
@@ -370,12 +391,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIBlurEffectStyle"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIVisualEffectView"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "addAction"]
 - !private ["Ps28CustomDebugStringConvertible", "addAnimation"]
 - !private ["Ps28CustomDebugStringConvertible", "additive"]
 - !private ["Ps28CustomDebugStringConvertible", "alpha"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "attributedPlaceholder"]
 - !private ["Ps28CustomDebugStringConvertible", "autoresizingMask"]
 - ["Ps28CustomDebugStringConvertible", "blurEffect"]
 - ["Ps28CustomDebugStringConvertible", "blurImageBackground"]
@@ -426,12 +449,14 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
 - !private ["Ps28CustomDebugStringConvertible", "rotationMode"]
 - !private ["Ps28CustomDebugStringConvertible", "setTitle"]
+- ["Ps28CustomDebugStringConvertible", "setUpTextField"]
 - ["Ps28CustomDebugStringConvertible", "setupTextFields"]
 - ["Ps28CustomDebugStringConvertible", "signIn"]
 - ["Ps28CustomDebugStringConvertible", "signUp"]
 - !private ["Ps28CustomDebugStringConvertible", "speed"]
 - ["Ps28CustomDebugStringConvertible", "termsButton"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - ["Ps28CustomDebugStringConvertible", "textField"]
 - ["Ps28CustomDebugStringConvertible", "textFieldDidBeginEditing"]
 - ["Ps28CustomDebugStringConvertible", "textFieldDidEndEditing"]
@@ -445,6 +470,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CAKeyframeAnimation"]
 - !private ["Ps23CustomStringConvertible", "CGColor"]
@@ -457,7 +483,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "HunterController"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Key"]
 - ["Ps23CustomStringConvertible", "LogInMode"]
+- !private ["Ps23CustomStringConvertible", "NSAttributedString"]
+- !private ["Ps23CustomStringConvertible", "NSForegroundColorAttributeName"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
 - !private ["Ps23CustomStringConvertible", "UIAlertController"]
@@ -465,6 +494,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIBlurEffectStyle"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIVisualEffectView"]
+- !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addAction"]
@@ -472,6 +502,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "additive"]
 - !private ["Ps23CustomStringConvertible", "alpha"]
 - !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "attributedPlaceholder"]
 - !private ["Ps23CustomStringConvertible", "autoresizingMask"]
 - ["Ps23CustomStringConvertible", "blurEffect"]
 - ["Ps23CustomStringConvertible", "blurImageBackground"]
@@ -523,12 +554,14 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
 - !private ["Ps23CustomStringConvertible", "rotationMode"]
 - !private ["Ps23CustomStringConvertible", "setTitle"]
+- ["Ps23CustomStringConvertible", "setUpTextField"]
 - ["Ps23CustomStringConvertible", "setupTextFields"]
 - ["Ps23CustomStringConvertible", "signIn"]
 - ["Ps23CustomStringConvertible", "signUp"]
 - !private ["Ps23CustomStringConvertible", "speed"]
 - ["Ps23CustomStringConvertible", "termsButton"]
 - !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "textColor"]
 - ["Ps23CustomStringConvertible", "textField"]
 - ["Ps23CustomStringConvertible", "textFieldDidBeginEditing"]
 - ["Ps23CustomStringConvertible", "textFieldDidEndEditing"]
@@ -542,7 +575,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidAppear"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "whiteColor"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- !private ["Ps28DictionaryLiteralConvertible", "Key"]
+- !private ["Ps28DictionaryLiteralConvertible", "Value"]
 - !private ["Ps9Equatable", "Alert"]
 - !private ["Ps9Equatable", "CAKeyframeAnimation"]
 - !private ["Ps9Equatable", "CGColor"]
@@ -560,6 +598,8 @@ depends-member:
 - !private ["Ps9Equatable", "Light"]
 - ["Ps9Equatable", "LogIn"]
 - ["Ps9Equatable", "LogInMode"]
+- !private ["Ps9Equatable", "NSAttributedString"]
+- !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
 - !private ["Ps9Equatable", "Normal"]
 - ["Ps9Equatable", "SignUp"]
 - !private ["Ps9Equatable", "UIAlertAction"]
@@ -574,6 +614,7 @@ depends-member:
 - !private ["Ps9Equatable", "additive"]
 - !private ["Ps9Equatable", "alpha"]
 - !private ["Ps9Equatable", "append"]
+- !private ["Ps9Equatable", "attributedPlaceholder"]
 - !private ["Ps9Equatable", "autoresizingMask"]
 - ["Ps9Equatable", "blurEffect"]
 - ["Ps9Equatable", "blurImageBackground"]
@@ -625,12 +666,14 @@ depends-member:
 - !private ["Ps9Equatable", "resignFirstResponder"]
 - !private ["Ps9Equatable", "rotationMode"]
 - !private ["Ps9Equatable", "setTitle"]
+- ["Ps9Equatable", "setUpTextField"]
 - ["Ps9Equatable", "setupTextFields"]
 - ["Ps9Equatable", "signIn"]
 - ["Ps9Equatable", "signUp"]
 - !private ["Ps9Equatable", "speed"]
 - ["Ps9Equatable", "termsButton"]
 - !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "textColor"]
 - ["Ps9Equatable", "textField"]
 - ["Ps9Equatable", "textFieldDidBeginEditing"]
 - ["Ps9Equatable", "textFieldDidEndEditing"]
@@ -644,6 +687,7 @@ depends-member:
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidAppear"]
 - ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "whiteColor"]
 - ["Ps9Equatable", ""]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "append"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "characters"]
@@ -670,6 +714,8 @@ depends-member:
 - !private ["Ps8Hashable", "Light"]
 - ["Ps8Hashable", "LogIn"]
 - ["Ps8Hashable", "LogInMode"]
+- !private ["Ps8Hashable", "NSAttributedString"]
+- !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
 - ["Ps8Hashable", "SignUp"]
 - !private ["Ps8Hashable", "UIAlertAction"]
 - !private ["Ps8Hashable", "UIAlertController"]
@@ -683,6 +729,7 @@ depends-member:
 - !private ["Ps8Hashable", "additive"]
 - !private ["Ps8Hashable", "alpha"]
 - !private ["Ps8Hashable", "append"]
+- !private ["Ps8Hashable", "attributedPlaceholder"]
 - !private ["Ps8Hashable", "autoresizingMask"]
 - ["Ps8Hashable", "blurEffect"]
 - ["Ps8Hashable", "blurImageBackground"]
@@ -734,12 +781,14 @@ depends-member:
 - !private ["Ps8Hashable", "resignFirstResponder"]
 - !private ["Ps8Hashable", "rotationMode"]
 - !private ["Ps8Hashable", "setTitle"]
+- ["Ps8Hashable", "setUpTextField"]
 - ["Ps8Hashable", "setupTextFields"]
 - ["Ps8Hashable", "signIn"]
 - ["Ps8Hashable", "signUp"]
 - !private ["Ps8Hashable", "speed"]
 - ["Ps8Hashable", "termsButton"]
 - !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "textColor"]
 - ["Ps8Hashable", "textField"]
 - ["Ps8Hashable", "textFieldDidBeginEditing"]
 - ["Ps8Hashable", "textFieldDidEndEditing"]
@@ -753,6 +802,7 @@ depends-member:
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidAppear"]
 - ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "whiteColor"]
 - ["Ps8Hashable", ""]
 - !private ["C6TineSE6Hunter", "deinit"]
 - !private ["C6TineSE6Hunter", "username"]
@@ -766,7 +816,9 @@ depends-member:
 - !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
@@ -807,6 +859,7 @@ depends-member:
 - !private ["Ps16MutableSliceable", "Index"]
 - !private ["Ps16MutableSliceable", "SubSequence"]
 - !private ["Ps16MutableSliceable", "_Element"]
+- !private ["CSo18NSAttributedString", "init"]
 - !private ["PSo8NSCoding", "CAKeyframeAnimation"]
 - !private ["PSo8NSCoding", "CGColor"]
 - !private ["PSo8NSCoding", "CGPathCreateWithEllipseInRect"]
@@ -814,6 +867,8 @@ depends-member:
 - !private ["PSo8NSCoding", "Float"]
 - !private ["PSo8NSCoding", "HunterController"]
 - ["PSo8NSCoding", "LogInMode"]
+- !private ["PSo8NSCoding", "NSAttributedString"]
+- !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertController"]
 - !private ["PSo8NSCoding", "UIBlurEffect"]
@@ -825,6 +880,7 @@ depends-member:
 - !private ["PSo8NSCoding", "additive"]
 - !private ["PSo8NSCoding", "alpha"]
 - !private ["PSo8NSCoding", "append"]
+- !private ["PSo8NSCoding", "attributedPlaceholder"]
 - !private ["PSo8NSCoding", "autoresizingMask"]
 - ["PSo8NSCoding", "blurEffect"]
 - ["PSo8NSCoding", "blurImageBackground"]
@@ -874,12 +930,14 @@ depends-member:
 - !private ["PSo8NSCoding", "resignFirstResponder"]
 - !private ["PSo8NSCoding", "rotationMode"]
 - !private ["PSo8NSCoding", "setTitle"]
+- ["PSo8NSCoding", "setUpTextField"]
 - ["PSo8NSCoding", "setupTextFields"]
 - ["PSo8NSCoding", "signIn"]
 - ["PSo8NSCoding", "signUp"]
 - !private ["PSo8NSCoding", "speed"]
 - ["PSo8NSCoding", "termsButton"]
 - !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "textColor"]
 - ["PSo8NSCoding", "textField"]
 - ["PSo8NSCoding", "textFieldDidBeginEditing"]
 - ["PSo8NSCoding", "textFieldDidEndEditing"]
@@ -893,6 +951,7 @@ depends-member:
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "whiteColor"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "CGColor"]
 - !private ["PSo9NSCopying", "additive"]
@@ -907,12 +966,15 @@ depends-member:
 - !private ["PSo9NSCopying", "repeatCount"]
 - !private ["PSo9NSCopying", "rotationMode"]
 - !private ["PSo9NSCopying", "speed"]
+- !private ["PSo9NSCopying", "whiteColor"]
 - !private ["PSo26NSExtensionRequestHandling", "CAKeyframeAnimation"]
 - !private ["PSo26NSExtensionRequestHandling", "CGPathCreateWithEllipseInRect"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
 - !private ["PSo26NSExtensionRequestHandling", "Float"]
 - !private ["PSo26NSExtensionRequestHandling", "HunterController"]
 - ["PSo26NSExtensionRequestHandling", "LogInMode"]
+- !private ["PSo26NSExtensionRequestHandling", "NSAttributedString"]
+- !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIBlurEffect"]
@@ -945,6 +1007,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
 - ["PSo26NSExtensionRequestHandling", "proceedButton"]
 - ["PSo26NSExtensionRequestHandling", "proceedButtonTapped"]
+- ["PSo26NSExtensionRequestHandling", "setUpTextField"]
 - ["PSo26NSExtensionRequestHandling", "setupTextFields"]
 - ["PSo26NSExtensionRequestHandling", "signIn"]
 - ["PSo26NSExtensionRequestHandling", "signUp"]
@@ -965,6 +1028,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "append"]
 - !private ["PSo16NSMutableCopying", "characters"]
+- !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "isEmpty"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
@@ -975,6 +1039,8 @@ depends-member:
 - !private ["CSo8NSObject", "Float"]
 - !private ["CSo8NSObject", "HunterController"]
 - ["CSo8NSObject", "LogInMode"]
+- !private ["CSo8NSObject", "NSAttributedString"]
+- !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIAlertAction"]
 - !private ["CSo8NSObject", "UIAlertController"]
@@ -992,6 +1058,7 @@ depends-member:
 - !private ["CSo8NSObject", "additive"]
 - !private ["CSo8NSObject", "alpha"]
 - !private ["CSo8NSObject", "append"]
+- !private ["CSo8NSObject", "attributedPlaceholder"]
 - !private ["CSo8NSObject", "autoresizingMask"]
 - ["CSo8NSObject", "blurEffect"]
 - ["CSo8NSObject", "blurImageBackground"]
@@ -1041,12 +1108,14 @@ depends-member:
 - !private ["CSo8NSObject", "resignFirstResponder"]
 - !private ["CSo8NSObject", "rotationMode"]
 - !private ["CSo8NSObject", "setTitle"]
+- ["CSo8NSObject", "setUpTextField"]
 - ["CSo8NSObject", "setupTextFields"]
 - ["CSo8NSObject", "signIn"]
 - ["CSo8NSObject", "signUp"]
 - !private ["CSo8NSObject", "speed"]
 - ["CSo8NSObject", "termsButton"]
 - !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "textColor"]
 - ["CSo8NSObject", "textField"]
 - ["CSo8NSObject", "textFieldDidBeginEditing"]
 - ["CSo8NSObject", "textFieldDidEndEditing"]
@@ -1060,6 +1129,7 @@ depends-member:
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["CSo8NSObject", "whiteColor"]
 - !private ["PSo16NSObjectProtocol", "CAKeyframeAnimation"]
 - !private ["PSo16NSObjectProtocol", "CGColor"]
 - !private ["PSo16NSObjectProtocol", "CGPathCreateWithEllipseInRect"]
@@ -1067,6 +1137,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "Float"]
 - !private ["PSo16NSObjectProtocol", "HunterController"]
 - ["PSo16NSObjectProtocol", "LogInMode"]
+- !private ["PSo16NSObjectProtocol", "NSAttributedString"]
+- !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
 - !private ["PSo16NSObjectProtocol", "UIBlurEffect"]
@@ -1078,6 +1150,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "additive"]
 - !private ["PSo16NSObjectProtocol", "alpha"]
 - !private ["PSo16NSObjectProtocol", "append"]
+- !private ["PSo16NSObjectProtocol", "attributedPlaceholder"]
 - !private ["PSo16NSObjectProtocol", "autoresizingMask"]
 - ["PSo16NSObjectProtocol", "blurEffect"]
 - ["PSo16NSObjectProtocol", "blurImageBackground"]
@@ -1127,12 +1200,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
 - !private ["PSo16NSObjectProtocol", "rotationMode"]
 - !private ["PSo16NSObjectProtocol", "setTitle"]
+- ["PSo16NSObjectProtocol", "setUpTextField"]
 - ["PSo16NSObjectProtocol", "setupTextFields"]
 - ["PSo16NSObjectProtocol", "signIn"]
 - ["PSo16NSObjectProtocol", "signUp"]
 - !private ["PSo16NSObjectProtocol", "speed"]
 - ["PSo16NSObjectProtocol", "termsButton"]
 - !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "textColor"]
 - ["PSo16NSObjectProtocol", "textField"]
 - ["PSo16NSObjectProtocol", "textFieldDidBeginEditing"]
 - ["PSo16NSObjectProtocol", "textFieldDidEndEditing"]
@@ -1146,6 +1221,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "CGColor"]
 - !private ["PSo14NSSecureCoding", "alpha"]
@@ -1158,6 +1234,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "isEmpty"]
 - !private ["PSo14NSSecureCoding", "removeFromSuperview"]
+- !private ["PSo14NSSecureCoding", "whiteColor"]
 - !private ["CSo8NSString", "append"]
 - !private ["CSo8NSString", "characters"]
 - !private ["CSo8NSString", "isEmpty"]
@@ -1190,7 +1267,9 @@ depends-member:
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "Key"]
 - !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "Value"]
 - !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps14SetAlgebraType", "Element"]
 - !private ["Ps14SetAlgebraType", "FlexibleHeight"]
@@ -1220,6 +1299,7 @@ depends-member:
 - !private ["Ps24StringLiteralConvertible", "characters"]
 - !private ["Ps24StringLiteralConvertible", "isEmpty"]
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
+- !private ["PSo29UIAccessibilityIdentification", "attributedPlaceholder"]
 - !private ["PSo29UIAccessibilityIdentification", "autoresizingMask"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
@@ -1234,6 +1314,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitle"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - !private ["CSo13UIAlertAction", "init"]
 - !private ["OSC18UIAlertActionStyle", "Default"]
 - !private ["OSC18UIAlertActionStyle", "Destructive"]
@@ -1241,6 +1322,7 @@ depends-member:
 - !private ["CSo17UIAlertController", "init"]
 - !private ["OSC22UIAlertControllerStyle", "Alert"]
 - !private ["PSo12UIAppearance", "alpha"]
+- !private ["PSo12UIAppearance", "attributedPlaceholder"]
 - !private ["PSo12UIAppearance", "autoresizingMask"]
 - !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "clipsToBounds"]
@@ -1254,12 +1336,15 @@ depends-member:
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
 - !private ["PSo12UIAppearance", "setTitle"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "textColor"]
 - !private ["PSo21UIAppearanceContainer", "CAKeyframeAnimation"]
 - !private ["PSo21UIAppearanceContainer", "CGPathCreateWithEllipseInRect"]
 - !private ["PSo21UIAppearanceContainer", "CGRectMake"]
 - !private ["PSo21UIAppearanceContainer", "Float"]
 - !private ["PSo21UIAppearanceContainer", "HunterController"]
 - ["PSo21UIAppearanceContainer", "LogInMode"]
+- !private ["PSo21UIAppearanceContainer", "NSAttributedString"]
+- !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
 - !private ["PSo21UIAppearanceContainer", "UIBlurEffect"]
@@ -1268,6 +1353,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIVisualEffectView"]
 - !private ["PSo21UIAppearanceContainer", "addAction"]
 - !private ["PSo21UIAppearanceContainer", "alpha"]
+- !private ["PSo21UIAppearanceContainer", "attributedPlaceholder"]
 - !private ["PSo21UIAppearanceContainer", "autoresizingMask"]
 - ["PSo21UIAppearanceContainer", "blurEffect"]
 - ["PSo21UIAppearanceContainer", "blurImageBackground"]
@@ -1304,11 +1390,13 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "removeFromSuperview"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
 - !private ["PSo21UIAppearanceContainer", "setTitle"]
+- ["PSo21UIAppearanceContainer", "setUpTextField"]
 - ["PSo21UIAppearanceContainer", "setupTextFields"]
 - ["PSo21UIAppearanceContainer", "signIn"]
 - ["PSo21UIAppearanceContainer", "signUp"]
 - ["PSo21UIAppearanceContainer", "termsButton"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "textColor"]
 - ["PSo21UIAppearanceContainer", "textField"]
 - ["PSo21UIAppearanceContainer", "textFieldDidBeginEditing"]
 - ["PSo21UIAppearanceContainer", "textFieldDidEndEditing"]
@@ -1331,12 +1419,15 @@ depends-member:
 - !private ["CSo8UIButton", "setTitle"]
 - !private ["CSo7UIColor", "CGColor"]
 - !private ["CSo7UIColor", "hunterOrange"]
+- !private ["CSo7UIColor", "whiteColor"]
 - !private ["PSo18UIContentContainer", "CAKeyframeAnimation"]
 - !private ["PSo18UIContentContainer", "CGPathCreateWithEllipseInRect"]
 - !private ["PSo18UIContentContainer", "CGRectMake"]
 - !private ["PSo18UIContentContainer", "Float"]
 - !private ["PSo18UIContentContainer", "HunterController"]
 - ["PSo18UIContentContainer", "LogInMode"]
+- !private ["PSo18UIContentContainer", "NSAttributedString"]
+- !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIContentContainer", "UIAlertAction"]
 - !private ["PSo18UIContentContainer", "UIAlertController"]
 - !private ["PSo18UIContentContainer", "UIBlurEffect"]
@@ -1369,6 +1460,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "presentViewController"]
 - ["PSo18UIContentContainer", "proceedButton"]
 - ["PSo18UIContentContainer", "proceedButtonTapped"]
+- ["PSo18UIContentContainer", "setUpTextField"]
 - ["PSo18UIContentContainer", "setupTextFields"]
 - ["PSo18UIContentContainer", "signIn"]
 - ["PSo18UIContentContainer", "signUp"]
@@ -1387,6 +1479,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "attributedPlaceholder"]
 - !private ["CSo9UIControl", "clipsToBounds"]
 - !private ["CSo9UIControl", "delegate"]
 - !private ["CSo9UIControl", "hidden"]
@@ -1394,8 +1487,10 @@ depends-member:
 - !private ["CSo9UIControl", "resignFirstResponder"]
 - !private ["CSo9UIControl", "setTitle"]
 - !private ["CSo9UIControl", "text"]
+- !private ["CSo9UIControl", "textColor"]
 - !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "alpha"]
+- !private ["PSo17UICoordinateSpace", "attributedPlaceholder"]
 - !private ["PSo17UICoordinateSpace", "autoresizingMask"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "clipsToBounds"]
@@ -1409,7 +1504,9 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
 - !private ["PSo17UICoordinateSpace", "setTitle"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "textColor"]
 - !private ["PSo13UIDynamicItem", "alpha"]
+- !private ["PSo13UIDynamicItem", "attributedPlaceholder"]
 - !private ["PSo13UIDynamicItem", "autoresizingMask"]
 - !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "clipsToBounds"]
@@ -1423,12 +1520,15 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
 - !private ["PSo13UIDynamicItem", "setTitle"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "textColor"]
 - !private ["PSo18UIFocusEnvironment", "CAKeyframeAnimation"]
 - !private ["PSo18UIFocusEnvironment", "CGPathCreateWithEllipseInRect"]
 - !private ["PSo18UIFocusEnvironment", "CGRectMake"]
 - !private ["PSo18UIFocusEnvironment", "Float"]
 - !private ["PSo18UIFocusEnvironment", "HunterController"]
 - ["PSo18UIFocusEnvironment", "LogInMode"]
+- !private ["PSo18UIFocusEnvironment", "NSAttributedString"]
+- !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertController"]
 - !private ["PSo18UIFocusEnvironment", "UIBlurEffect"]
@@ -1437,6 +1537,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIVisualEffectView"]
 - !private ["PSo18UIFocusEnvironment", "addAction"]
 - !private ["PSo18UIFocusEnvironment", "alpha"]
+- !private ["PSo18UIFocusEnvironment", "attributedPlaceholder"]
 - !private ["PSo18UIFocusEnvironment", "autoresizingMask"]
 - ["PSo18UIFocusEnvironment", "blurEffect"]
 - ["PSo18UIFocusEnvironment", "blurImageBackground"]
@@ -1473,11 +1574,13 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "removeFromSuperview"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
 - !private ["PSo18UIFocusEnvironment", "setTitle"]
+- ["PSo18UIFocusEnvironment", "setUpTextField"]
 - ["PSo18UIFocusEnvironment", "setupTextFields"]
 - ["PSo18UIFocusEnvironment", "signIn"]
 - ["PSo18UIFocusEnvironment", "signUp"]
 - ["PSo18UIFocusEnvironment", "termsButton"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "textColor"]
 - ["PSo18UIFocusEnvironment", "textField"]
 - ["PSo18UIFocusEnvironment", "textFieldDidBeginEditing"]
 - ["PSo18UIFocusEnvironment", "textFieldDidEndEditing"]
@@ -1496,10 +1599,14 @@ depends-member:
 - !private ["CSo11UIImageView", "hidden"]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo11UIImageView", "layer"]
+- !private ["PSo10UIKeyInput", "attributedPlaceholder"]
+- !private ["PSo10UIKeyInput", "clipsToBounds"]
 - !private ["PSo10UIKeyInput", "delegate"]
 - !private ["PSo10UIKeyInput", "hidden"]
+- !private ["PSo10UIKeyInput", "layer"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "text"]
+- !private ["PSo10UIKeyInput", "textColor"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CAKeyframeAnimation"]
@@ -1508,6 +1615,8 @@ depends-member:
 - !private ["CSo11UIResponder", "Float"]
 - !private ["CSo11UIResponder", "HunterController"]
 - ["CSo11UIResponder", "LogInMode"]
+- !private ["CSo11UIResponder", "NSAttributedString"]
+- !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIAlertAction"]
 - !private ["CSo11UIResponder", "UIAlertController"]
@@ -1522,6 +1631,7 @@ depends-member:
 - !private ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "addAction"]
 - !private ["CSo11UIResponder", "alpha"]
+- !private ["CSo11UIResponder", "attributedPlaceholder"]
 - !private ["CSo11UIResponder", "autoresizingMask"]
 - ["CSo11UIResponder", "blurEffect"]
 - ["CSo11UIResponder", "blurImageBackground"]
@@ -1558,11 +1668,13 @@ depends-member:
 - !private ["CSo11UIResponder", "removeFromSuperview"]
 - !private ["CSo11UIResponder", "resignFirstResponder"]
 - !private ["CSo11UIResponder", "setTitle"]
+- ["CSo11UIResponder", "setUpTextField"]
 - ["CSo11UIResponder", "setupTextFields"]
 - ["CSo11UIResponder", "signIn"]
 - ["CSo11UIResponder", "signUp"]
 - ["CSo11UIResponder", "termsButton"]
 - !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "textColor"]
 - ["CSo11UIResponder", "textField"]
 - ["CSo11UIResponder", "textFieldDidBeginEditing"]
 - ["CSo11UIResponder", "textFieldDidEndEditing"]
@@ -1582,6 +1694,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "Float"]
 - !private ["PSo16UIStateRestoring", "HunterController"]
 - ["PSo16UIStateRestoring", "LogInMode"]
+- !private ["PSo16UIStateRestoring", "NSAttributedString"]
+- !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
 - !private ["PSo16UIStateRestoring", "UIAlertAction"]
 - !private ["PSo16UIStateRestoring", "UIAlertController"]
 - !private ["PSo16UIStateRestoring", "UIBlurEffect"]
@@ -1614,6 +1728,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "presentViewController"]
 - ["PSo16UIStateRestoring", "proceedButton"]
 - ["PSo16UIStateRestoring", "proceedButtonTapped"]
+- ["PSo16UIStateRestoring", "setUpTextField"]
 - ["PSo16UIStateRestoring", "setupTextFields"]
 - ["PSo16UIStateRestoring", "signIn"]
 - ["PSo16UIStateRestoring", "signUp"]
@@ -1632,16 +1747,22 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITextField", "attributedPlaceholder"]
+- !private ["CSo11UITextField", "clipsToBounds"]
 - !private ["CSo11UITextField", "delegate"]
 - !private ["CSo11UITextField", "hidden"]
+- !private ["CSo11UITextField", "layer"]
 - !private ["CSo11UITextField", "resignFirstResponder"]
 - !private ["CSo11UITextField", "text"]
+- !private ["CSo11UITextField", "textColor"]
 - !private ["PSo19UITextFieldDelegate", "CAKeyframeAnimation"]
 - !private ["PSo19UITextFieldDelegate", "CGPathCreateWithEllipseInRect"]
 - !private ["PSo19UITextFieldDelegate", "CGRectMake"]
 - !private ["PSo19UITextFieldDelegate", "Float"]
 - !private ["PSo19UITextFieldDelegate", "HunterController"]
 - ["PSo19UITextFieldDelegate", "LogInMode"]
+- !private ["PSo19UITextFieldDelegate", "NSAttributedString"]
+- !private ["PSo19UITextFieldDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo19UITextFieldDelegate", "UIAlertAction"]
 - !private ["PSo19UITextFieldDelegate", "UIAlertController"]
 - !private ["PSo19UITextFieldDelegate", "UIBlurEffect"]
@@ -1668,6 +1789,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "performSegueWithIdentifier"]
 - !private ["PSo19UITextFieldDelegate", "presentViewController"]
 - !private ["PSo19UITextFieldDelegate", "proceedButton"]
+- !private ["PSo19UITextFieldDelegate", "setUpTextField"]
 - !private ["PSo19UITextFieldDelegate", "setupTextFields"]
 - !private ["PSo19UITextFieldDelegate", "signIn"]
 - !private ["PSo19UITextFieldDelegate", "signUp"]
@@ -1683,20 +1805,30 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "usernameTextField"]
 - !private ["PSo19UITextFieldDelegate", "view"]
 - ["PSo19UITextFieldDelegate", ""]
+- !private ["PSo11UITextInput", "attributedPlaceholder"]
+- !private ["PSo11UITextInput", "clipsToBounds"]
 - !private ["PSo11UITextInput", "delegate"]
 - !private ["PSo11UITextInput", "hidden"]
+- !private ["PSo11UITextInput", "layer"]
 - !private ["PSo11UITextInput", "resignFirstResponder"]
 - !private ["PSo11UITextInput", "text"]
+- !private ["PSo11UITextInput", "textColor"]
+- !private ["PSo17UITextInputTraits", "attributedPlaceholder"]
+- !private ["PSo17UITextInputTraits", "clipsToBounds"]
 - !private ["PSo17UITextInputTraits", "delegate"]
 - !private ["PSo17UITextInputTraits", "hidden"]
+- !private ["PSo17UITextInputTraits", "layer"]
 - !private ["PSo17UITextInputTraits", "resignFirstResponder"]
 - !private ["PSo17UITextInputTraits", "text"]
+- !private ["PSo17UITextInputTraits", "textColor"]
 - !private ["PSo18UITraitEnvironment", "CAKeyframeAnimation"]
 - !private ["PSo18UITraitEnvironment", "CGPathCreateWithEllipseInRect"]
 - !private ["PSo18UITraitEnvironment", "CGRectMake"]
 - !private ["PSo18UITraitEnvironment", "Float"]
 - !private ["PSo18UITraitEnvironment", "HunterController"]
 - ["PSo18UITraitEnvironment", "LogInMode"]
+- !private ["PSo18UITraitEnvironment", "NSAttributedString"]
+- !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UITraitEnvironment", "UIAlertAction"]
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
 - !private ["PSo18UITraitEnvironment", "UIBlurEffect"]
@@ -1705,6 +1837,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIVisualEffectView"]
 - !private ["PSo18UITraitEnvironment", "addAction"]
 - !private ["PSo18UITraitEnvironment", "alpha"]
+- !private ["PSo18UITraitEnvironment", "attributedPlaceholder"]
 - !private ["PSo18UITraitEnvironment", "autoresizingMask"]
 - ["PSo18UITraitEnvironment", "blurEffect"]
 - ["PSo18UITraitEnvironment", "blurImageBackground"]
@@ -1741,11 +1874,13 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "removeFromSuperview"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
 - !private ["PSo18UITraitEnvironment", "setTitle"]
+- ["PSo18UITraitEnvironment", "setUpTextField"]
 - ["PSo18UITraitEnvironment", "setupTextFields"]
 - ["PSo18UITraitEnvironment", "signIn"]
 - ["PSo18UITraitEnvironment", "signUp"]
 - ["PSo18UITraitEnvironment", "termsButton"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "textColor"]
 - ["PSo18UITraitEnvironment", "textField"]
 - ["PSo18UITraitEnvironment", "textFieldDidBeginEditing"]
 - ["PSo18UITraitEnvironment", "textFieldDidEndEditing"]
@@ -1761,6 +1896,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "alpha"]
+- !private ["CSo6UIView", "attributedPlaceholder"]
 - !private ["CSo6UIView", "autoresizingMask"]
 - !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "clipsToBounds"]
@@ -1774,6 +1910,7 @@ depends-member:
 - !private ["CSo6UIView", "resignFirstResponder"]
 - !private ["CSo6UIView", "setTitle"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "textColor"]
 - !private ["VSC18UIViewAutoresizing", "Element"]
 - !private ["VSC18UIViewAutoresizing", "FlexibleHeight"]
 - !private ["VSC18UIViewAutoresizing", "FlexibleWidth"]
@@ -1785,6 +1922,8 @@ depends-member:
 - !private ["CSo16UIViewController", "Float"]
 - !private ["CSo16UIViewController", "HunterController"]
 - ["CSo16UIViewController", "LogInMode"]
+- !private ["CSo16UIViewController", "NSAttributedString"]
+- !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIAlertAction"]
 - !private ["CSo16UIViewController", "UIAlertController"]
@@ -1823,6 +1962,7 @@ depends-member:
 - !private ["CSo16UIViewController", "presentViewController"]
 - ["CSo16UIViewController", "proceedButton"]
 - ["CSo16UIViewController", "proceedButtonTapped"]
+- ["CSo16UIViewController", "setUpTextField"]
 - ["CSo16UIViewController", "setupTextFields"]
 - ["CSo16UIViewController", "signIn"]
 - ["CSo16UIViewController", "signUp"]
@@ -1877,6 +2017,7 @@ depends-member:
 - !private ["Ps22_CVarArgPassedAsDouble", "infinity"]
 - !private ["Ps24_ColorLiteralConvertible", "CGColor"]
 - !private ["Ps24_ColorLiteralConvertible", "hunterOrange"]
+- !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
 - !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps24_DestructorSafeContainer", "Generator"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
@@ -1897,7 +2038,9 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Generator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
@@ -1914,12 +2057,15 @@ depends-member:
 - !private ["Ps12_Reflectable", "Generator"]
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Key"]
 - ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "Value"]
 - !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "alpha"]
 - !private ["Ps12_Reflectable", "append"]
+- !private ["Ps12_Reflectable", "attributedPlaceholder"]
 - !private ["Ps12_Reflectable", "autoresizingMask"]
 - !private ["Ps12_Reflectable", "bounds"]
 - !private ["Ps12_Reflectable", "characters"]
@@ -1937,6 +2083,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "resignFirstResponder"]
 - !private ["Ps12_Reflectable", "setTitle"]
 - !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "textColor"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps18_SignedIntegerType", "hashValue"]
@@ -1948,6 +2095,8 @@ depends-member:
 - !private ["C6TineSE19logInViewController", "Float"]
 - !private ["C6TineSE19logInViewController", "HunterController"]
 - ["C6TineSE19logInViewController", "LogInMode"]
+- !private ["C6TineSE19logInViewController", "NSAttributedString"]
+- !private ["C6TineSE19logInViewController", "NSForegroundColorAttributeName"]
 - ["C6TineSE19logInViewController", "String"]
 - !private ["C6TineSE19logInViewController", "UIAlertAction"]
 - !private ["C6TineSE19logInViewController", "UIAlertController"]
@@ -1986,6 +2135,7 @@ depends-member:
 - !private ["C6TineSE19logInViewController", "presentViewController"]
 - ["C6TineSE19logInViewController", "proceedButton"]
 - ["C6TineSE19logInViewController", "proceedButtonTapped"]
+- ["C6TineSE19logInViewController", "setUpTextField"]
 - ["C6TineSE19logInViewController", "setupTextFields"]
 - ["C6TineSE19logInViewController", "signIn"]
 - ["C6TineSE19logInViewController", "signUp"]
@@ -2028,6 +2178,8 @@ depends-nominal:
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Ps28DictionaryLiteralConvertible"
 - "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - !private "P6TineSE12FirebaseType"
@@ -2052,6 +2204,7 @@ depends-nominal:
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
 - !private "Ps16MutableSliceable"
+- !private "CSo18NSAttributedString"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
@@ -2223,4 +2376,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "4428bdd2a0cdbbc4648818f8a00546ac"
+interface-hash: "11aa3181865bcdce95a0bcbbf487362d"
