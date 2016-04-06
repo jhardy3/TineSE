@@ -22,6 +22,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     // Hunter for profile View
     var hunter: Hunter?
     var sheds =  [Shed]()
+    var viewingDetail = false
     
     let kMargin = CGFloat(1.0)
     
@@ -58,7 +59,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        
+        viewingDetail = false
         // Updates with current hunter because (s)he is viewing own profile
         
         if tabBarController!.selectedIndex == 4 {
@@ -73,7 +74,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     override func viewWillDisappear(animated: Bool) {
-        if viewMode != .User {
+        if viewMode != .User && !viewingDetail {
             self.navigationController?.popViewControllerAnimated(true)
         }
     }
@@ -182,6 +183,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
                 self.hunterProfileImage.layer.cornerRadius = 20.0
                 self.hunterProfileImage.clipsToBounds = true
                 print("Hunter Received")
+                self.sheds = []
             }
             dispatch_group_leave(groupNew)
         }
@@ -236,7 +238,6 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     func shedDeletedUpdateView() {
         if let hunterID = self.hunter?.identifier {
-            self.sheds = []
             self.collectionView.reloadData()
             self.updateWithIdentifier(hunterID)
         }
@@ -244,7 +245,6 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     func updateWithHunter() {
         if let hunterID = HunterController.sharedInstance.currentHunter?.identifier {
-            self.sheds = []
             self.updateWithIdentifier(hunterID)
         }
     }
@@ -260,11 +260,12 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toShedDetail" {
+            viewingDetail = true
             let destinationView = segue.destinationViewController as? ShedDetailViewController
             if let shedCell = sender as? ImageCollectionViewCell {
                 guard let indexPath = collectionView.indexPathForCell(shedCell)?.row else { return }
                 let shed = sheds[indexPath]
-                self.sheds = []
+                
                 destinationView?.shed = shed
                 print(shed.username)
             }

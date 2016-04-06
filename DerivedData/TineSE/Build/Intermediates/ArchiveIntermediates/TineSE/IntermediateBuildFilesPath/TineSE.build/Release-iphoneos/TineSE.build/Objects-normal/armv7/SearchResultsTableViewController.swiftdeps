@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C6TineSE32SearchResultsTableViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "numberOfSectionsInTableView"
+- "viewDidLoad"
 - "tableView"
 - "tableView"
 - "tableView"
 depends-top-level:
-- "UITableViewCell"
-- "UITableView"
-- "Hunter"
+- "NSIndexPath"
 - "UITableViewController"
 - "SearchResultsTableViewController"
-- "NSIndexPath"
+- "Hunter"
+- "UITableViewCell"
 - "Int"
+- "UITableView"
 - !private "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "Hunter"]

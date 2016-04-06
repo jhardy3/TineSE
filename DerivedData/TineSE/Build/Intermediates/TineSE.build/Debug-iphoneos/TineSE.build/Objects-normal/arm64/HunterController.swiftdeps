@@ -7,29 +7,33 @@ provides-member:
 - ["C6TineSE16HunterController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "dispatch_group_notify"
-- "Void"
-- !private "dispatch_group_leave"
-- !private "=="
 - !private "FirebaseController"
-- !private ">"
+- !private "NSUserDefaults"
+- !private "dispatch_group_leave"
+- "HunterController"
 - "String"
 - !private "AnyObject"
-- !private "dispatch_get_main_queue"
-- !private "Int"
-- !private "..<"
 - !private "dispatch_group_create"
+- !private "dispatch_get_main_queue"
+- "Hunter"
+- "BooleanLiteralType"
 - "Array"
 - !private "print"
-- !private "dispatch_group_enter"
-- "Hunter"
-- "HunterController"
+- "Void"
 - "Bool"
-- "BooleanLiteralType"
+- !private "dispatch_group_notify"
+- !private "dispatch_group_enter"
+- !private "..<"
+- !private "=="
+- !private ">"
+- !private "Int"
+- "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "FirebaseController"]
 - !private ["Ps9AnyObject", "Hunter"]
 - ["Ps9AnyObject", "HunterController"]
+- !private ["Ps9AnyObject", "NSUserDefaults"]
+- !private ["Ps9AnyObject", "authData"]
 - !private ["Ps9AnyObject", "authUser"]
 - !private ["Ps9AnyObject", "createUser"]
 - !private ["Ps9AnyObject", "currentHunter"]
@@ -43,13 +47,20 @@ depends-member:
 - !private ["Ps9AnyObject", "firebase"]
 - !private ["Ps9AnyObject", "identifier"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "jsonValue"]
+- !private ["Ps9AnyObject", "kHunter"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "removeObjectForKey"]
 - !private ["Ps9AnyObject", "save"]
+- !private ["Ps9AnyObject", "setValue"]
 - !private ["Ps9AnyObject", "sharedInstance"]
+- !private ["Ps9AnyObject", "standardUserDefaults"]
+- !private ["Ps9AnyObject", "synchronize"]
 - !private ["Ps9AnyObject", "trackedIDs"]
 - !private ["Ps9AnyObject", "trackingIDs"]
 - !private ["Ps9AnyObject", "uid"]
 - !private ["Ps9AnyObject", "unauth"]
+- !private ["Ps9AnyObject", "valueForKey"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Element"]
 - !private ["Sa", "Generator"]
@@ -87,11 +98,17 @@ depends-member:
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "_DisabledRangeIndex"]
+- !private ["Ps11CVarArgType", "authData"]
 - !private ["Ps11CVarArgType", "authUser"]
 - !private ["Ps11CVarArgType", "createUser"]
 - !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "removeObjectForKey"]
+- !private ["Ps11CVarArgType", "setValue"]
+- !private ["Ps11CVarArgType", "standardUserDefaults"]
+- !private ["Ps11CVarArgType", "synchronize"]
 - !private ["Ps11CVarArgType", "uid"]
 - !private ["Ps11CVarArgType", "unauth"]
+- !private ["Ps11CVarArgType", "valueForKey"]
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Generator"]
@@ -115,15 +132,21 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "authData"]
 - !private ["Ps28CustomDebugStringConvertible", "authUser"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "createUser"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "keys"]
 - !private ["Ps28CustomDebugStringConvertible", "removeAtIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "removeObjectForKey"]
+- !private ["Ps28CustomDebugStringConvertible", "setValue"]
+- !private ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "synchronize"]
 - !private ["Ps28CustomDebugStringConvertible", "uid"]
 - !private ["Ps28CustomDebugStringConvertible", "unauth"]
+- !private ["Ps28CustomDebugStringConvertible", "valueForKey"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Generator"]
@@ -135,15 +158,21 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "authData"]
 - !private ["Ps23CustomStringConvertible", "authUser"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "createUser"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "keys"]
 - !private ["Ps23CustomStringConvertible", "removeAtIndex"]
+- !private ["Ps23CustomStringConvertible", "removeObjectForKey"]
+- !private ["Ps23CustomStringConvertible", "setValue"]
+- !private ["Ps23CustomStringConvertible", "standardUserDefaults"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "synchronize"]
 - !private ["Ps23CustomStringConvertible", "uid"]
 - !private ["Ps23CustomStringConvertible", "unauth"]
+- !private ["Ps23CustomStringConvertible", "valueForKey"]
 - !private ["Vs10Dictionary", "Generator"]
 - !private ["Vs10Dictionary", "Index"]
 - !private ["Vs10Dictionary", "SubSequence"]
@@ -166,16 +195,24 @@ depends-member:
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "authData"]
 - !private ["Ps9Equatable", "authUser"]
 - !private ["Ps9Equatable", "createUser"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "removeObjectForKey"]
+- !private ["Ps9Equatable", "setValue"]
+- !private ["Ps9Equatable", "standardUserDefaults"]
+- !private ["Ps9Equatable", "synchronize"]
 - !private ["Ps9Equatable", "uid"]
 - !private ["Ps9Equatable", "unauth"]
+- !private ["Ps9Equatable", "valueForKey"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["CSo9FAuthData", "uid"]
+- !private ["CSo6FQuery", "authData"]
 - !private ["CSo6FQuery", "authUser"]
 - !private ["CSo6FQuery", "createUser"]
 - !private ["CSo6FQuery", "unauth"]
+- !private ["CSo8Firebase", "authData"]
 - !private ["CSo8Firebase", "authUser"]
 - !private ["CSo8Firebase", "createUser"]
 - !private ["CSo8Firebase", "unauth"]
@@ -183,6 +220,7 @@ depends-member:
 - !private ["C6TineSE18FirebaseController", "firebase"]
 - !private ["P6TineSE12FirebaseType", "identifier"]
 - !private ["P6TineSE12FirebaseType", "init"]
+- !private ["P6TineSE12FirebaseType", "jsonValue"]
 - !private ["P6TineSE12FirebaseType", "save"]
 - !private ["P6TineSE12FirebaseType", "trackedIDs"]
 - !private ["P6TineSE12FirebaseType", "trackingIDs"]
@@ -197,14 +235,21 @@ depends-member:
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "authData"]
 - !private ["Ps8Hashable", "authUser"]
 - !private ["Ps8Hashable", "createUser"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "removeObjectForKey"]
+- !private ["Ps8Hashable", "setValue"]
+- !private ["Ps8Hashable", "standardUserDefaults"]
+- !private ["Ps8Hashable", "synchronize"]
 - !private ["Ps8Hashable", "uid"]
 - !private ["Ps8Hashable", "unauth"]
+- !private ["Ps8Hashable", "valueForKey"]
 - !private ["C6TineSE6Hunter", "deinit"]
 - !private ["C6TineSE6Hunter", "identifier"]
 - !private ["C6TineSE6Hunter", "init"]
+- !private ["C6TineSE6Hunter", "jsonValue"]
 - !private ["C6TineSE6Hunter", "save"]
 - !private ["C6TineSE6Hunter", "trackedIDs"]
 - !private ["C6TineSE6Hunter", "trackingIDs"]
@@ -214,6 +259,7 @@ depends-member:
 - ["C6TineSE16HunterController", "Hunter"]
 - ["C6TineSE16HunterController", "HunterController"]
 - !private ["C6TineSE16HunterController", "Int"]
+- !private ["C6TineSE16HunterController", "NSUserDefaults"]
 - ["C6TineSE16HunterController", "String"]
 - ["C6TineSE16HunterController", "Void"]
 - ["C6TineSE16HunterController", "authenticateHunter"]
@@ -231,6 +277,7 @@ depends-member:
 - ["C6TineSE16HunterController", "hunterTrackHunter"]
 - ["C6TineSE16HunterController", "hunterUntrackHunter"]
 - ["C6TineSE16HunterController", "init"]
+- !private ["C6TineSE16HunterController", "kHunter"]
 - !private ["C6TineSE16HunterController", "print"]
 - ["C6TineSE16HunterController", "sharedInstance"]
 - ["C6TineSE16HunterController", "unauthHunter"]
@@ -307,19 +354,36 @@ depends-member:
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "authData"]
 - !private ["CSo8NSObject", "authUser"]
 - !private ["CSo8NSObject", "createUser"]
 - !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "removeObjectForKey"]
+- !private ["CSo8NSObject", "setValue"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "synchronize"]
 - !private ["CSo8NSObject", "uid"]
 - !private ["CSo8NSObject", "unauth"]
+- !private ["CSo8NSObject", "valueForKey"]
+- !private ["PSo16NSObjectProtocol", "authData"]
 - !private ["PSo16NSObjectProtocol", "authUser"]
 - !private ["PSo16NSObjectProtocol", "createUser"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "removeObjectForKey"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "synchronize"]
 - !private ["PSo16NSObjectProtocol", "uid"]
 - !private ["PSo16NSObjectProtocol", "unauth"]
+- !private ["PSo16NSObjectProtocol", "valueForKey"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
+- !private ["CSo14NSUserDefaults", "removeObjectForKey"]
+- !private ["CSo14NSUserDefaults", "setValue"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "synchronize"]
+- !private ["CSo14NSUserDefaults", "valueForKey"]
 - ["Ps21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
@@ -511,6 +575,7 @@ depends-nominal:
 - !private "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- !private "CSo14NSUserDefaults"
 - "Ps21NilLiteralConvertible"
 - "Sq"
 - !private "Ps16OutputStreamType"
@@ -640,4 +705,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "a690ecdfc2ce4aa17079bf5520b1b58d"
+interface-hash: "7c534b5574c9ff3108e9bcc28cb432ab"

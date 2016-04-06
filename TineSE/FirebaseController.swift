@@ -118,7 +118,6 @@ extension FirebaseType {
         
         // Update value at endpointBase path with objects jsonValue
         endpointBase.updateChildValues(jsonValue)
-        
     }
     
     // Uses endpoint and identifier to construct a path and remove jsonValue at the path's value

@@ -12,14 +12,14 @@ provides-dynamic-lookup:
 - "tableView"
 - "numberOfSectionsInTableView"
 depends-top-level:
-- "SearchResultsTableViewController"
 - "Hunter"
 - "Int"
+- "NSIndexPath"
+- "SearchResultsTableViewController"
 - !private "StringLiteralType"
-- "UITableView"
 - "UITableViewController"
 - "UITableViewCell"
-- "NSIndexPath"
+- "UITableView"
 depends-member:
 - ["Ps9AnyObject", "Hunter"]
 - !private ["Ps9AnyObject", "cellForRowAtIndexPath"]

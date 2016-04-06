@@ -9,72 +9,74 @@ provides-member:
 - ["O6TineSE9LogInMode", ""]
 - ["C6TineSE19logInViewController", ""]
 provides-dynamic-lookup:
-- "createAnimation"
-- "proceedButton"
-- "errorAlert"
-- "displayBasedOnViewMode"
-- "proceedButtonTapped"
 - "setupTextFields"
-- "usernameTextField"
-- "textFieldShouldReturn"
-- "logInImageView"
 - "signUp"
-- "loadImageView"
-- "emailTextField"
-- "blurImageBackground"
-- "blurEffect"
-- "logInView"
-- "endAnimation"
-- "viewDidAppear"
-- "textFieldDidEndEditing"
-- "toggleModeButtonTapped"
-- "checkForEmptiness"
-- "didReceiveMemoryWarning"
-- "toggleModeButton"
-- "viewDidLoad"
 - "passwordTextField"
+- "loadImageView"
+- "textFieldShouldReturn"
+- "logInView"
+- "viewDidAppear"
+- "blurImageBackground"
+- "errorAlert"
+- "endAnimation"
+- "proceedButtonTapped"
+- "termsButton"
+- "toggleModeButton"
+- "textFieldDidEndEditing"
+- "usernameTextField"
 - "signIn"
+- "didReceiveMemoryWarning"
+- "emailTextField"
+- "logInImageView"
+- "displayBasedOnViewMode"
+- "createAnimation"
+- "blurEffect"
+- "toggleModeButtonTapped"
+- "viewDidLoad"
+- "proceedButton"
+- "checkForEmptiness"
 depends-top-level:
-- !private "Array"
-- !private "Void"
-- !private "CGRectMake"
-- !private "dispatch_group_leave"
-- !private "UIBlurEffect"
-- !private "UIAlertAction"
-- "AnyObject"
-- !private "ExtendedGraphemeClusterType"
-- !private "??"
-- !private "UIBlurEffectStyle"
-- !private "kCAAnimationRotateAuto"
-- !private "UIAlertController"
-- !private "BooleanLiteralType"
+- !private "dispatch_group_create"
 - "Bool"
-- !private "Float"
+- !private "!="
+- !private "UnicodeScalarType"
 - !private "dispatch_group_notify"
+- !private "UIBlurEffectStyle"
 - "UIView"
+- !private "CGPathCreateWithEllipseInRect"
+- !private "dispatch_group_enter"
+- !private "Float"
+- !private "ExtendedGraphemeClusterType"
+- "UITextField"
+- !private "UIBlurEffect"
+- !private "CGRectMake"
+- !private "HunterController"
+- !private "BooleanLiteralType"
+- !private "CAKeyframeAnimation"
+- !private "dispatch_get_main_queue"
+- !private "UIAlertController"
+- "UITextFieldDelegate"
+- "=="
+- "LogInMode"
+- !private "Array"
 - "UIVisualEffectView"
 - "String"
 - "UIImageView"
-- !private "dispatch_group_enter"
-- !private "HunterController"
-- "UITextField"
-- "logInViewController"
-- !private "!="
-- "=="
-- !private "CAKeyframeAnimation"
-- "UIViewController"
-- !private "StringLiteralType"
 - !private "UIColor"
-- !private "dispatch_group_create"
-- !private "dispatch_get_main_queue"
-- "UITextFieldDelegate"
-- "LogInMode"
+- !private "StringLiteralType"
+- !private "Void"
+- !private "dispatch_group_leave"
+- !private "kCAAnimationRotateAuto"
+- "logInViewController"
+- !private "??"
+- "UIViewController"
+- "AnyObject"
 - "UIButton"
-- !private "UnicodeScalarType"
-- !private "CGPathCreateWithEllipseInRect"
+- !private "UIAlertAction"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "infinity"]
 - !private ["Ps9AnyObject", "CAKeyframeAnimation"]
+- !private ["Ps9AnyObject", "CGColor"]
 - !private ["Ps9AnyObject", "CGPathCreateWithEllipseInRect"]
 - !private ["Ps9AnyObject", "CGRectMake"]
 - !private ["Ps9AnyObject", "Float"]
@@ -96,9 +98,13 @@ depends-member:
 - !private ["Ps9AnyObject", "autoresizingMask"]
 - ["Ps9AnyObject", "blurEffect"]
 - ["Ps9AnyObject", "blurImageBackground"]
+- !private ["Ps9AnyObject", "borderColor"]
+- !private ["Ps9AnyObject", "borderWidth"]
 - !private ["Ps9AnyObject", "bounds"]
 - !private ["Ps9AnyObject", "characters"]
 - ["Ps9AnyObject", "checkForEmptiness"]
+- !private ["Ps9AnyObject", "clipsToBounds"]
+- !private ["Ps9AnyObject", "cornerRadius"]
 - ["Ps9AnyObject", "createAnimation"]
 - !private ["Ps9AnyObject", "createHunter"]
 - !private ["Ps9AnyObject", "currentHunter"]
@@ -146,6 +152,7 @@ depends-member:
 - ["Ps9AnyObject", "signIn"]
 - ["Ps9AnyObject", "signUp"]
 - !private ["Ps9AnyObject", "speed"]
+- ["Ps9AnyObject", "termsButton"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "textField"]
 - ["Ps9AnyObject", "textFieldDidBeginEditing"]
@@ -211,9 +218,15 @@ depends-member:
 - !private ["CSo19CAKeyframeAnimation", "rotationMode"]
 - !private ["CSo19CAKeyframeAnimation", "speed"]
 - !private ["CSo7CALayer", "addAnimation"]
+- !private ["CSo7CALayer", "borderColor"]
+- !private ["CSo7CALayer", "borderWidth"]
+- !private ["CSo7CALayer", "cornerRadius"]
 - !private ["CSo7CALayer", "removeAnimationForKey"]
 - !private ["PSo13CAMediaTiming", "addAnimation"]
 - !private ["PSo13CAMediaTiming", "additive"]
+- !private ["PSo13CAMediaTiming", "borderColor"]
+- !private ["PSo13CAMediaTiming", "borderWidth"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
 - !private ["PSo13CAMediaTiming", "duration"]
 - !private ["PSo13CAMediaTiming", "init"]
 - !private ["PSo13CAMediaTiming", "keyPath"]
@@ -232,6 +245,7 @@ depends-member:
 - !private ["CSo19CAPropertyAnimation", "speed"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["Ps11CVarArgType", "CAKeyframeAnimation"]
+- !private ["Ps11CVarArgType", "CGColor"]
 - !private ["Ps11CVarArgType", "CGPathCreateWithEllipseInRect"]
 - !private ["Ps11CVarArgType", "CGRectMake"]
 - !private ["Ps11CVarArgType", "Distance"]
@@ -253,9 +267,13 @@ depends-member:
 - !private ["Ps11CVarArgType", "autoresizingMask"]
 - ["Ps11CVarArgType", "blurEffect"]
 - ["Ps11CVarArgType", "blurImageBackground"]
+- !private ["Ps11CVarArgType", "borderColor"]
+- !private ["Ps11CVarArgType", "borderWidth"]
 - !private ["Ps11CVarArgType", "bounds"]
 - !private ["Ps11CVarArgType", "characters"]
 - ["Ps11CVarArgType", "checkForEmptiness"]
+- !private ["Ps11CVarArgType", "clipsToBounds"]
+- !private ["Ps11CVarArgType", "cornerRadius"]
 - ["Ps11CVarArgType", "createAnimation"]
 - !private ["Ps11CVarArgType", "delegate"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
@@ -301,6 +319,7 @@ depends-member:
 - ["Ps11CVarArgType", "signIn"]
 - ["Ps11CVarArgType", "signUp"]
 - !private ["Ps11CVarArgType", "speed"]
+- ["Ps11CVarArgType", "termsButton"]
 - !private ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", "textField"]
 - ["Ps11CVarArgType", "textFieldDidBeginEditing"]
@@ -334,6 +353,7 @@ depends-member:
 - !private ["Ps10Comparable", "infinity"]
 - !private ["Ps10Comparable", "isEmpty"]
 - !private ["Ps28CustomDebugStringConvertible", "CAKeyframeAnimation"]
+- !private ["Ps28CustomDebugStringConvertible", "CGColor"]
 - !private ["Ps28CustomDebugStringConvertible", "CGPathCreateWithEllipseInRect"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRectMake"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
@@ -359,9 +379,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "autoresizingMask"]
 - ["Ps28CustomDebugStringConvertible", "blurEffect"]
 - ["Ps28CustomDebugStringConvertible", "blurImageBackground"]
+- !private ["Ps28CustomDebugStringConvertible", "borderColor"]
+- !private ["Ps28CustomDebugStringConvertible", "borderWidth"]
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - !private ["Ps28CustomDebugStringConvertible", "characters"]
 - ["Ps28CustomDebugStringConvertible", "checkForEmptiness"]
+- !private ["Ps28CustomDebugStringConvertible", "clipsToBounds"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - ["Ps28CustomDebugStringConvertible", "createAnimation"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
@@ -406,6 +430,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "signIn"]
 - ["Ps28CustomDebugStringConvertible", "signUp"]
 - !private ["Ps28CustomDebugStringConvertible", "speed"]
+- ["Ps28CustomDebugStringConvertible", "termsButton"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "textField"]
 - ["Ps28CustomDebugStringConvertible", "textFieldDidBeginEditing"]
@@ -422,6 +447,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CAKeyframeAnimation"]
+- !private ["Ps23CustomStringConvertible", "CGColor"]
 - !private ["Ps23CustomStringConvertible", "CGPathCreateWithEllipseInRect"]
 - !private ["Ps23CustomStringConvertible", "CGRectMake"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
@@ -449,9 +475,13 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "autoresizingMask"]
 - ["Ps23CustomStringConvertible", "blurEffect"]
 - ["Ps23CustomStringConvertible", "blurImageBackground"]
+- !private ["Ps23CustomStringConvertible", "borderColor"]
+- !private ["Ps23CustomStringConvertible", "borderWidth"]
 - !private ["Ps23CustomStringConvertible", "bounds"]
 - !private ["Ps23CustomStringConvertible", "characters"]
 - ["Ps23CustomStringConvertible", "checkForEmptiness"]
+- !private ["Ps23CustomStringConvertible", "clipsToBounds"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - ["Ps23CustomStringConvertible", "createAnimation"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -497,6 +527,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "signIn"]
 - ["Ps23CustomStringConvertible", "signUp"]
 - !private ["Ps23CustomStringConvertible", "speed"]
+- ["Ps23CustomStringConvertible", "termsButton"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "textField"]
 - ["Ps23CustomStringConvertible", "textFieldDidBeginEditing"]
@@ -514,6 +545,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "Alert"]
 - !private ["Ps9Equatable", "CAKeyframeAnimation"]
+- !private ["Ps9Equatable", "CGColor"]
 - !private ["Ps9Equatable", "CGPathCreateWithEllipseInRect"]
 - !private ["Ps9Equatable", "CGRectMake"]
 - !private ["Ps9Equatable", "Default"]
@@ -545,9 +577,13 @@ depends-member:
 - !private ["Ps9Equatable", "autoresizingMask"]
 - ["Ps9Equatable", "blurEffect"]
 - ["Ps9Equatable", "blurImageBackground"]
+- !private ["Ps9Equatable", "borderColor"]
+- !private ["Ps9Equatable", "borderWidth"]
 - !private ["Ps9Equatable", "bounds"]
 - !private ["Ps9Equatable", "characters"]
 - ["Ps9Equatable", "checkForEmptiness"]
+- !private ["Ps9Equatable", "clipsToBounds"]
+- !private ["Ps9Equatable", "cornerRadius"]
 - ["Ps9Equatable", "createAnimation"]
 - !private ["Ps9Equatable", "delegate"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
@@ -593,6 +629,7 @@ depends-member:
 - ["Ps9Equatable", "signIn"]
 - ["Ps9Equatable", "signUp"]
 - !private ["Ps9Equatable", "speed"]
+- ["Ps9Equatable", "termsButton"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "textField"]
 - ["Ps9Equatable", "textFieldDidBeginEditing"]
@@ -621,6 +658,7 @@ depends-member:
 - !private ["Ps13GeneratorType", "Element"]
 - !private ["Ps8Hashable", "Alert"]
 - !private ["Ps8Hashable", "CAKeyframeAnimation"]
+- !private ["Ps8Hashable", "CGColor"]
 - !private ["Ps8Hashable", "CGPathCreateWithEllipseInRect"]
 - !private ["Ps8Hashable", "CGRectMake"]
 - !private ["Ps8Hashable", "Default"]
@@ -648,9 +686,13 @@ depends-member:
 - !private ["Ps8Hashable", "autoresizingMask"]
 - ["Ps8Hashable", "blurEffect"]
 - ["Ps8Hashable", "blurImageBackground"]
+- !private ["Ps8Hashable", "borderColor"]
+- !private ["Ps8Hashable", "borderWidth"]
 - !private ["Ps8Hashable", "bounds"]
 - !private ["Ps8Hashable", "characters"]
 - ["Ps8Hashable", "checkForEmptiness"]
+- !private ["Ps8Hashable", "clipsToBounds"]
+- !private ["Ps8Hashable", "cornerRadius"]
 - ["Ps8Hashable", "createAnimation"]
 - !private ["Ps8Hashable", "delegate"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
@@ -696,6 +738,7 @@ depends-member:
 - ["Ps8Hashable", "signIn"]
 - ["Ps8Hashable", "signUp"]
 - !private ["Ps8Hashable", "speed"]
+- ["Ps8Hashable", "termsButton"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "textField"]
 - ["Ps8Hashable", "textFieldDidBeginEditing"]
@@ -765,6 +808,7 @@ depends-member:
 - !private ["Ps16MutableSliceable", "SubSequence"]
 - !private ["Ps16MutableSliceable", "_Element"]
 - !private ["PSo8NSCoding", "CAKeyframeAnimation"]
+- !private ["PSo8NSCoding", "CGColor"]
 - !private ["PSo8NSCoding", "CGPathCreateWithEllipseInRect"]
 - !private ["PSo8NSCoding", "CGRectMake"]
 - !private ["PSo8NSCoding", "Float"]
@@ -784,9 +828,13 @@ depends-member:
 - !private ["PSo8NSCoding", "autoresizingMask"]
 - ["PSo8NSCoding", "blurEffect"]
 - ["PSo8NSCoding", "blurImageBackground"]
+- !private ["PSo8NSCoding", "borderColor"]
+- !private ["PSo8NSCoding", "borderWidth"]
 - !private ["PSo8NSCoding", "bounds"]
 - !private ["PSo8NSCoding", "characters"]
 - ["PSo8NSCoding", "checkForEmptiness"]
+- !private ["PSo8NSCoding", "clipsToBounds"]
+- !private ["PSo8NSCoding", "cornerRadius"]
 - ["PSo8NSCoding", "createAnimation"]
 - !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -830,6 +878,7 @@ depends-member:
 - ["PSo8NSCoding", "signIn"]
 - ["PSo8NSCoding", "signUp"]
 - !private ["PSo8NSCoding", "speed"]
+- ["PSo8NSCoding", "termsButton"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "textField"]
 - ["PSo8NSCoding", "textFieldDidBeginEditing"]
@@ -845,6 +894,7 @@ depends-member:
 - ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "CGColor"]
 - !private ["PSo9NSCopying", "additive"]
 - !private ["PSo9NSCopying", "append"]
 - !private ["PSo9NSCopying", "characters"]
@@ -898,6 +948,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "setupTextFields"]
 - ["PSo26NSExtensionRequestHandling", "signIn"]
 - ["PSo26NSExtensionRequestHandling", "signUp"]
+- ["PSo26NSExtensionRequestHandling", "termsButton"]
 - ["PSo26NSExtensionRequestHandling", "textField"]
 - ["PSo26NSExtensionRequestHandling", "textFieldDidBeginEditing"]
 - ["PSo26NSExtensionRequestHandling", "textFieldDidEndEditing"]
@@ -918,6 +969,7 @@ depends-member:
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CAKeyframeAnimation"]
+- !private ["CSo8NSObject", "CGColor"]
 - !private ["CSo8NSObject", "CGPathCreateWithEllipseInRect"]
 - !private ["CSo8NSObject", "CGRectMake"]
 - !private ["CSo8NSObject", "Float"]
@@ -943,9 +995,13 @@ depends-member:
 - !private ["CSo8NSObject", "autoresizingMask"]
 - ["CSo8NSObject", "blurEffect"]
 - ["CSo8NSObject", "blurImageBackground"]
+- !private ["CSo8NSObject", "borderColor"]
+- !private ["CSo8NSObject", "borderWidth"]
 - !private ["CSo8NSObject", "bounds"]
 - !private ["CSo8NSObject", "characters"]
 - ["CSo8NSObject", "checkForEmptiness"]
+- !private ["CSo8NSObject", "clipsToBounds"]
+- !private ["CSo8NSObject", "cornerRadius"]
 - ["CSo8NSObject", "createAnimation"]
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
@@ -989,6 +1045,7 @@ depends-member:
 - ["CSo8NSObject", "signIn"]
 - ["CSo8NSObject", "signUp"]
 - !private ["CSo8NSObject", "speed"]
+- ["CSo8NSObject", "termsButton"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "textField"]
 - ["CSo8NSObject", "textFieldDidBeginEditing"]
@@ -1004,6 +1061,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CAKeyframeAnimation"]
+- !private ["PSo16NSObjectProtocol", "CGColor"]
 - !private ["PSo16NSObjectProtocol", "CGPathCreateWithEllipseInRect"]
 - !private ["PSo16NSObjectProtocol", "CGRectMake"]
 - !private ["PSo16NSObjectProtocol", "Float"]
@@ -1023,9 +1081,13 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "autoresizingMask"]
 - ["PSo16NSObjectProtocol", "blurEffect"]
 - ["PSo16NSObjectProtocol", "blurImageBackground"]
+- !private ["PSo16NSObjectProtocol", "borderColor"]
+- !private ["PSo16NSObjectProtocol", "borderWidth"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
 - !private ["PSo16NSObjectProtocol", "characters"]
 - ["PSo16NSObjectProtocol", "checkForEmptiness"]
+- !private ["PSo16NSObjectProtocol", "clipsToBounds"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - ["PSo16NSObjectProtocol", "createAnimation"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -1069,6 +1131,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "signIn"]
 - ["PSo16NSObjectProtocol", "signUp"]
 - !private ["PSo16NSObjectProtocol", "speed"]
+- ["PSo16NSObjectProtocol", "termsButton"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "textField"]
 - ["PSo16NSObjectProtocol", "textFieldDidBeginEditing"]
@@ -1084,6 +1147,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "CGColor"]
 - !private ["PSo14NSSecureCoding", "alpha"]
 - !private ["PSo14NSSecureCoding", "append"]
 - !private ["PSo14NSSecureCoding", "autoresizingMask"]
@@ -1158,6 +1222,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "autoresizingMask"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "hidden"]
@@ -1178,6 +1243,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "alpha"]
 - !private ["PSo12UIAppearance", "autoresizingMask"]
 - !private ["PSo12UIAppearance", "bounds"]
+- !private ["PSo12UIAppearance", "clipsToBounds"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "hidden"]
@@ -1207,6 +1273,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "blurImageBackground"]
 - !private ["PSo21UIAppearanceContainer", "bounds"]
 - ["PSo21UIAppearanceContainer", "checkForEmptiness"]
+- !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
 - ["PSo21UIAppearanceContainer", "createAnimation"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -1240,6 +1307,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "setupTextFields"]
 - ["PSo21UIAppearanceContainer", "signIn"]
 - ["PSo21UIAppearanceContainer", "signUp"]
+- ["PSo21UIAppearanceContainer", "termsButton"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "textField"]
 - ["PSo21UIAppearanceContainer", "textFieldDidBeginEditing"]
@@ -1257,7 +1325,11 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo12UIBlurEffect", "init"]
 - !private ["OSC17UIBlurEffectStyle", "Light"]
+- !private ["CSo8UIButton", "clipsToBounds"]
+- !private ["CSo8UIButton", "hidden"]
+- !private ["CSo8UIButton", "layer"]
 - !private ["CSo8UIButton", "setTitle"]
+- !private ["CSo7UIColor", "CGColor"]
 - !private ["CSo7UIColor", "hunterOrange"]
 - !private ["PSo18UIContentContainer", "CAKeyframeAnimation"]
 - !private ["PSo18UIContentContainer", "CGPathCreateWithEllipseInRect"]
@@ -1300,6 +1372,7 @@ depends-member:
 - ["PSo18UIContentContainer", "setupTextFields"]
 - ["PSo18UIContentContainer", "signIn"]
 - ["PSo18UIContentContainer", "signUp"]
+- ["PSo18UIContentContainer", "termsButton"]
 - ["PSo18UIContentContainer", "textField"]
 - ["PSo18UIContentContainer", "textFieldDidBeginEditing"]
 - ["PSo18UIContentContainer", "textFieldDidEndEditing"]
@@ -1314,8 +1387,10 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "clipsToBounds"]
 - !private ["CSo9UIControl", "delegate"]
 - !private ["CSo9UIControl", "hidden"]
+- !private ["CSo9UIControl", "layer"]
 - !private ["CSo9UIControl", "resignFirstResponder"]
 - !private ["CSo9UIControl", "setTitle"]
 - !private ["CSo9UIControl", "text"]
@@ -1323,6 +1398,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "alpha"]
 - !private ["PSo17UICoordinateSpace", "autoresizingMask"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
+- !private ["PSo17UICoordinateSpace", "clipsToBounds"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "hidden"]
@@ -1336,6 +1412,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "autoresizingMask"]
 - !private ["PSo13UIDynamicItem", "bounds"]
+- !private ["PSo13UIDynamicItem", "clipsToBounds"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "hidden"]
@@ -1365,6 +1442,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "blurImageBackground"]
 - !private ["PSo18UIFocusEnvironment", "bounds"]
 - ["PSo18UIFocusEnvironment", "checkForEmptiness"]
+- !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
 - ["PSo18UIFocusEnvironment", "createAnimation"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
@@ -1398,6 +1476,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "setupTextFields"]
 - ["PSo18UIFocusEnvironment", "signIn"]
 - ["PSo18UIFocusEnvironment", "signUp"]
+- ["PSo18UIFocusEnvironment", "termsButton"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "textField"]
 - ["PSo18UIFocusEnvironment", "textFieldDidBeginEditing"]
@@ -1448,6 +1527,7 @@ depends-member:
 - ["CSo11UIResponder", "blurImageBackground"]
 - !private ["CSo11UIResponder", "bounds"]
 - ["CSo11UIResponder", "checkForEmptiness"]
+- !private ["CSo11UIResponder", "clipsToBounds"]
 - ["CSo11UIResponder", "createAnimation"]
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
@@ -1481,6 +1561,7 @@ depends-member:
 - ["CSo11UIResponder", "setupTextFields"]
 - ["CSo11UIResponder", "signIn"]
 - ["CSo11UIResponder", "signUp"]
+- ["CSo11UIResponder", "termsButton"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "textField"]
 - ["CSo11UIResponder", "textFieldDidBeginEditing"]
@@ -1536,6 +1617,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "setupTextFields"]
 - ["PSo16UIStateRestoring", "signIn"]
 - ["PSo16UIStateRestoring", "signUp"]
+- ["PSo16UIStateRestoring", "termsButton"]
 - ["PSo16UIStateRestoring", "textField"]
 - ["PSo16UIStateRestoring", "textFieldDidBeginEditing"]
 - ["PSo16UIStateRestoring", "textFieldDidEndEditing"]
@@ -1589,6 +1671,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "setupTextFields"]
 - !private ["PSo19UITextFieldDelegate", "signIn"]
 - !private ["PSo19UITextFieldDelegate", "signUp"]
+- !private ["PSo19UITextFieldDelegate", "termsButton"]
 - ["PSo19UITextFieldDelegate", "textField"]
 - ["PSo19UITextFieldDelegate", "textFieldDidBeginEditing"]
 - ["PSo19UITextFieldDelegate", "textFieldDidEndEditing"]
@@ -1627,6 +1710,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "blurImageBackground"]
 - !private ["PSo18UITraitEnvironment", "bounds"]
 - ["PSo18UITraitEnvironment", "checkForEmptiness"]
+- !private ["PSo18UITraitEnvironment", "clipsToBounds"]
 - ["PSo18UITraitEnvironment", "createAnimation"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -1660,6 +1744,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "setupTextFields"]
 - ["PSo18UITraitEnvironment", "signIn"]
 - ["PSo18UITraitEnvironment", "signUp"]
+- ["PSo18UITraitEnvironment", "termsButton"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "textField"]
 - ["PSo18UITraitEnvironment", "textFieldDidBeginEditing"]
@@ -1678,6 +1763,7 @@ depends-member:
 - !private ["CSo6UIView", "alpha"]
 - !private ["CSo6UIView", "autoresizingMask"]
 - !private ["CSo6UIView", "bounds"]
+- !private ["CSo6UIView", "clipsToBounds"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "hidden"]
@@ -1740,6 +1826,7 @@ depends-member:
 - ["CSo16UIViewController", "setupTextFields"]
 - ["CSo16UIViewController", "signIn"]
 - ["CSo16UIViewController", "signUp"]
+- ["CSo16UIViewController", "termsButton"]
 - ["CSo16UIViewController", "textField"]
 - ["CSo16UIViewController", "textFieldDidBeginEditing"]
 - ["CSo16UIViewController", "textFieldDidEndEditing"]
@@ -1788,6 +1875,7 @@ depends-member:
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "isEmpty"]
 - !private ["Ps19_CVarArgAlignedType", "infinity"]
 - !private ["Ps22_CVarArgPassedAsDouble", "infinity"]
+- !private ["Ps24_ColorLiteralConvertible", "CGColor"]
 - !private ["Ps24_ColorLiteralConvertible", "hunterOrange"]
 - !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps24_DestructorSafeContainer", "Generator"]
@@ -1835,6 +1923,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "autoresizingMask"]
 - !private ["Ps12_Reflectable", "bounds"]
 - !private ["Ps12_Reflectable", "characters"]
+- !private ["Ps12_Reflectable", "clipsToBounds"]
 - !private ["Ps12_Reflectable", "delegate"]
 - !private ["Ps12_Reflectable", "frame"]
 - !private ["Ps12_Reflectable", "hashValue"]
@@ -1900,6 +1989,7 @@ depends-member:
 - ["C6TineSE19logInViewController", "setupTextFields"]
 - ["C6TineSE19logInViewController", "signIn"]
 - ["C6TineSE19logInViewController", "signUp"]
+- ["C6TineSE19logInViewController", "termsButton"]
 - ["C6TineSE19logInViewController", "textField"]
 - ["C6TineSE19logInViewController", "textFieldDidBeginEditing"]
 - ["C6TineSE19logInViewController", "textFieldDidEndEditing"]
@@ -2133,4 +2223,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "1e54638c47dafe20910620e3dcd46d52"
+interface-hash: "4428bdd2a0cdbbc4648818f8a00546ac"

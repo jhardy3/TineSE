@@ -13,12 +13,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AnyObject"
-- "Void"
-- "Firebase"
-- "StringLiteralType"
-- "FirebaseController"
 - "FirebaseType"
+- "FirebaseController"
+- "Firebase"
 - "String"
+- "StringLiteralType"
+- "Void"
 depends-member:
 - ["Ps9AnyObject", "Firebase"]
 - ["Ps9AnyObject", "baseURL"]

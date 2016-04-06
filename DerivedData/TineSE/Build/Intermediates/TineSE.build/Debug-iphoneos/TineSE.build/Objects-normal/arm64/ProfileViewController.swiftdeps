@@ -9,86 +9,89 @@ provides-member:
 - ["O6TineSE14FollowingState", ""]
 - ["C6TineSE21ProfileViewController", ""]
 provides-dynamic-lookup:
-- "updateWithIdentifier"
-- "shedDeletedUpdateView"
 - "updateWithHunter"
-- "prepareForSegue"
-- "followButtonTapped"
-- "chalksCountLabel"
-- "viewWillAppear"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "kMargin"
-- "viewWillDisappear"
-- "viewDidAppear"
-- "trackingCount"
-- "brownsCountLabel"
-- "trackingCountLabel"
-- "viewLoaded"
-- "flowLayout"
-- "viewDidLoad"
-- "isFinished"
-- "trackersCountLabel"
-- "whitesCountLabel"
-- "followButton"
 - "shedCountLabel"
+- "viewDidLoad"
 - "hunterProfileImage"
+- "viewWillDisappear"
+- "prepareForSegue"
+- "viewingDetail"
+- "viewDidAppear"
+- "followButton"
+- "viewLoaded"
+- "viewWillAppear"
+- "whitesCountLabel"
+- "isFinished"
+- "shedDeletedUpdateView"
+- "trackingCountLabel"
+- "kMargin"
+- "trackersCountLabel"
+- "flowLayout"
+- "followButtonTapped"
+- "trackingCount"
+- "chalksCountLabel"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "updateWithIdentifier"
+- "brownsCountLabel"
 depends-top-level:
-- !private "dispatch_group_notify"
-- !private "Array"
-- "CGFloat"
-- "UIButton"
-- !private "/"
-- "UICollectionViewLayout"
-- !private "NSThread"
-- !private "dispatch_group_enter"
-- "=="
-- !private "dispatch_group_leave"
-- !private "dispatch_get_main_queue"
-- "UIImageView"
-- "UICollectionViewDelegate"
-- "UICollectionViewDataSource"
-- "String"
-- !private "NSNotificationCenter"
-- !private "ShedDetailViewController"
-- !private "Void"
-- "UICollectionView"
-- "CGSize"
-- !private "dispatch_group_create"
-- !private "-"
-- "ProfileViewController"
-- !private "NSForegroundColorAttributeName"
-- "AnyObject"
 - !private "CGSizeMake"
-- "Bool"
-- "UIStoryboardSegue"
-- !private "print"
-- "Hunter"
 - "Shed"
-- "BooleanLiteralType"
-- !private "*"
 - "Int"
 - !private ">"
-- "UICollectionViewCell"
-- !private "!="
-- "UILabel"
-- !private "ImageCollectionViewCell"
+- !private "UIEdgeInsetsMake"
+- !private "&&"
+- "UIButton"
+- "UICollectionView"
+- !private "+"
+- !private "Void"
+- !private "dispatch_group_create"
+- "UICollectionViewDelegate"
 - !private "HunterController"
+- "UICollectionViewDataSource"
+- "Hunter"
+- "String"
+- !private "dispatch_group_leave"
+- !private "dispatch_get_main_queue"
+- "UICollectionViewCell"
+- "CGSize"
+- !private "-"
+- !private "print"
+- "ProfileViewController"
+- "UILabel"
+- !private "ShedDetailViewController"
+- "UIViewController"
+- !private "NSThread"
+- !private "UIColor"
+- !private "StringLiteralType"
+- !private "NSForegroundColorAttributeName"
+- "BooleanLiteralType"
+- "NSIndexPath"
+- !private "Dictionary"
+- "UIStoryboardSegue"
 - !private "ShedController"
 - "UICollectionViewFlowLayout"
-- "UIViewController"
-- !private "Dictionary"
-- !private "UIEdgeInsetsMake"
+- !private "*"
+- !private "NSNotificationCenter"
 - "UICollectionViewDelegateFlowLayout"
+- "CGFloat"
+- !private "ImageCollectionViewCell"
 - "FollowingState"
-- !private "UIColor"
-- !private "+"
-- "NSIndexPath"
-- !private "StringLiteralType"
+- "Array"
+- !private "/"
+- "UIImageView"
+- !private "dispatch_group_notify"
+- "UICollectionViewLayout"
+- "Bool"
+- "AnyObject"
+- "=="
+- !private "dispatch_group_enter"
+- !private "!="
+- !private "!"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -200,6 +203,7 @@ depends-member:
 - ["Ps9AnyObject", "viewMode"]
 - ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", "viewWillDisappear"]
+- ["Ps9AnyObject", "viewingDetail"]
 - !private ["Ps9AnyObject", "whiteColor"]
 - !private ["Ps9AnyObject", "whiteCount"]
 - ["Ps9AnyObject", "whitesCountLabel"]
@@ -350,6 +354,7 @@ depends-member:
 - ["Ps11CVarArgType", "viewMode"]
 - ["Ps11CVarArgType", "viewWillAppear"]
 - ["Ps11CVarArgType", "viewWillDisappear"]
+- ["Ps11CVarArgType", "viewingDetail"]
 - !private ["Ps11CVarArgType", "whiteColor"]
 - ["Ps11CVarArgType", "whitesCountLabel"]
 - ["Ps11CVarArgType", ""]
@@ -480,6 +485,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewMode"]
 - ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewWillDisappear"]
+- ["Ps28CustomDebugStringConvertible", "viewingDetail"]
 - !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
 - ["Ps28CustomDebugStringConvertible", "whitesCountLabel"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -595,6 +601,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewMode"]
 - ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", "viewWillDisappear"]
+- ["Ps23CustomStringConvertible", "viewingDetail"]
 - !private ["Ps23CustomStringConvertible", "whiteColor"]
 - ["Ps23CustomStringConvertible", "whitesCountLabel"]
 - ["Ps23CustomStringConvertible", ""]
@@ -706,6 +713,7 @@ depends-member:
 - ["Ps9Equatable", "viewMode"]
 - ["Ps9Equatable", "viewWillAppear"]
 - ["Ps9Equatable", "viewWillDisappear"]
+- ["Ps9Equatable", "viewingDetail"]
 - !private ["Ps9Equatable", "whiteColor"]
 - ["Ps9Equatable", "whitesCountLabel"]
 - !private ["Ps9Equatable", "width"]
@@ -835,6 +843,7 @@ depends-member:
 - ["Ps8Hashable", "viewMode"]
 - ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", "viewWillDisappear"]
+- ["Ps8Hashable", "viewingDetail"]
 - !private ["Ps8Hashable", "whiteColor"]
 - ["Ps8Hashable", "whitesCountLabel"]
 - ["Ps8Hashable", ""]
@@ -1015,6 +1024,7 @@ depends-member:
 - ["PSo8NSCoding", "viewMode"]
 - ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", "viewWillDisappear"]
+- ["PSo8NSCoding", "viewingDetail"]
 - !private ["PSo8NSCoding", "whiteColor"]
 - ["PSo8NSCoding", "whitesCountLabel"]
 - ["PSo8NSCoding", ""]
@@ -1089,6 +1099,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewMode"]
 - ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewWillDisappear"]
+- ["PSo26NSExtensionRequestHandling", "viewingDetail"]
 - ["PSo26NSExtensionRequestHandling", "whitesCountLabel"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "row"]
@@ -1207,6 +1218,7 @@ depends-member:
 - ["CSo8NSObject", "viewMode"]
 - ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "viewWillDisappear"]
+- ["CSo8NSObject", "viewingDetail"]
 - !private ["CSo8NSObject", "whiteColor"]
 - ["CSo8NSObject", "whitesCountLabel"]
 - !private ["PSo16NSObjectProtocol", "CGColor"]
@@ -1304,6 +1316,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewMode"]
 - ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", "viewWillDisappear"]
+- ["PSo16NSObjectProtocol", "viewingDetail"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - ["PSo16NSObjectProtocol", "whitesCountLabel"]
 - ["PSo16NSObjectProtocol", ""]
@@ -1399,6 +1412,7 @@ depends-member:
 - ["C6TineSE21ProfileViewController", "viewMode"]
 - ["C6TineSE21ProfileViewController", "viewWillAppear"]
 - ["C6TineSE21ProfileViewController", "viewWillDisappear"]
+- ["C6TineSE21ProfileViewController", "viewingDetail"]
 - ["C6TineSE21ProfileViewController", "whitesCountLabel"]
 - ["Ps21RandomAccessIndexType", "Distance"]
 - ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
@@ -1564,6 +1578,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewMode"]
 - ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
+- ["PSo21UIAppearanceContainer", "viewingDetail"]
 - ["PSo21UIAppearanceContainer", "whitesCountLabel"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo16UIBarPositioning", "tintColor"]
@@ -1635,6 +1650,7 @@ depends-member:
 - ["PSo26UICollectionViewDataSource", "viewForZoomingInScrollView"]
 - !private ["PSo26UICollectionViewDataSource", "viewLoaded"]
 - !private ["PSo26UICollectionViewDataSource", "viewMode"]
+- !private ["PSo26UICollectionViewDataSource", "viewingDetail"]
 - !private ["PSo26UICollectionViewDataSource", "whitesCountLabel"]
 - ["PSo26UICollectionViewDataSource", ""]
 - ["PSo24UICollectionViewDelegate", "CGFloat"]
@@ -1692,6 +1708,7 @@ depends-member:
 - ["PSo24UICollectionViewDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo24UICollectionViewDelegate", "viewLoaded"]
 - !private ["PSo24UICollectionViewDelegate", "viewMode"]
+- !private ["PSo24UICollectionViewDelegate", "viewingDetail"]
 - !private ["PSo24UICollectionViewDelegate", "whitesCountLabel"]
 - ["PSo24UICollectionViewDelegate", ""]
 - ["PSo34UICollectionViewDelegateFlowLayout", "CGFloat"]
@@ -1749,6 +1766,7 @@ depends-member:
 - ["PSo34UICollectionViewDelegateFlowLayout", "viewForZoomingInScrollView"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "viewLoaded"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "viewMode"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "viewingDetail"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "whitesCountLabel"]
 - ["PSo34UICollectionViewDelegateFlowLayout", ""]
 - !private ["CSo26UICollectionViewFlowLayout", "minimumInteritemSpacing"]
@@ -1827,6 +1845,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewMode"]
 - ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", "viewWillDisappear"]
+- ["PSo18UIContentContainer", "viewingDetail"]
 - ["PSo18UIContentContainer", "whitesCountLabel"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "clipsToBounds"]
@@ -1939,6 +1958,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewMode"]
 - ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", "viewWillDisappear"]
+- ["PSo18UIFocusEnvironment", "viewingDetail"]
 - ["PSo18UIFocusEnvironment", "whitesCountLabel"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo11UIImageView", "clipsToBounds"]
@@ -2046,6 +2066,7 @@ depends-member:
 - ["CSo11UIResponder", "viewMode"]
 - ["CSo11UIResponder", "viewWillAppear"]
 - ["CSo11UIResponder", "viewWillDisappear"]
+- ["CSo11UIResponder", "viewingDetail"]
 - ["CSo11UIResponder", "whitesCountLabel"]
 - !private ["CSo12UIScrollView", "backgroundColor"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithReuseIdentifier"]
@@ -2106,6 +2127,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo20UIScrollViewDelegate", "viewLoaded"]
 - !private ["PSo20UIScrollViewDelegate", "viewMode"]
+- !private ["PSo20UIScrollViewDelegate", "viewingDetail"]
 - !private ["PSo20UIScrollViewDelegate", "whitesCountLabel"]
 - ["PSo20UIScrollViewDelegate", ""]
 - ["PSo16UIStateRestoring", "CGFloat"]
@@ -2175,6 +2197,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewMode"]
 - ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", "viewWillDisappear"]
+- ["PSo16UIStateRestoring", "viewingDetail"]
 - ["PSo16UIStateRestoring", "whitesCountLabel"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo17UIStoryboardSegue", "destinationViewController"]
@@ -2261,6 +2284,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewMode"]
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", "viewWillDisappear"]
+- ["PSo18UITraitEnvironment", "viewingDetail"]
 - ["PSo18UITraitEnvironment", "whitesCountLabel"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "backgroundColor"]
@@ -2361,6 +2385,7 @@ depends-member:
 - ["CSo16UIViewController", "viewMode"]
 - ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", "viewWillDisappear"]
+- ["CSo16UIViewController", "viewingDetail"]
 - ["CSo16UIViewController", "whitesCountLabel"]
 - ["CSo16UIViewController", ""]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
@@ -2694,4 +2719,4 @@ depends-external:
 - "./Firebase.framework/Headers/FQuery.h"
 - "./Firebase.framework/Headers/Firebase.h"
 - "./Firebase.framework/Modules/module.modulemap"
-interface-hash: "70b956dd211e9cc928443d4905cc5451"
+interface-hash: "e1804845ad111a8ef43f1464679961f8"

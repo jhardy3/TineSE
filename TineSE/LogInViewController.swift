@@ -17,6 +17,7 @@ class logInViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - IBOutlets
     
+    @IBOutlet weak var termsButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -41,18 +42,35 @@ class logInViewController: UIViewController, UITextFieldDelegate {
         
         self.proceedButton.layer.cornerRadius = 7.0
         self.toggleModeButton.layer.cornerRadius = 7.0
-        self.proceedButton.layer.borderWidth = 2.0
-        self.toggleModeButton.layer.borderWidth = 2.0
+        self.proceedButton.layer.borderWidth = 1.0
+        self.toggleModeButton.layer.borderWidth = 1.0
         self.proceedButton.layer.borderColor = UIColor.hunterOrange().CGColor
         self.toggleModeButton.layer.borderColor = UIColor.hunterOrange().CGColor
         self.toggleModeButton.clipsToBounds = true
         self.proceedButton.clipsToBounds = true
+        
+        setUpTextField(usernameTextField)
+        setUpTextField(emailTextField)
+        setUpTextField(passwordTextField)
+        
+        usernameTextField.attributedPlaceholder = NSAttributedString(string: "Enter Username...", attributes: [NSForegroundColorAttributeName: UIColor.hunterOrange()])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Enter Password...", attributes: [NSForegroundColorAttributeName: UIColor.hunterOrange()])
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "Enter Email...", attributes: [NSForegroundColorAttributeName: UIColor.hunterOrange()])
         
         
         self.loadImageView.image = self.loadImageView.image?.imageWithColor(UIColor.hunterOrange())
         self.loadImageView.hidden = true
         displayBasedOnViewMode()
         setupTextFields()
+    }
+    
+    func setUpTextField(textField: UITextField) {
+        textField.layer.borderWidth = 1.0
+        textField.layer.cornerRadius = 7.0
+        textField.clipsToBounds = true
+        textField.layer.borderColor = UIColor.hunterOrange().CGColor
+        textField.textColor = UIColor.whiteColor()
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -236,12 +254,14 @@ class logInViewController: UIViewController, UITextFieldDelegate {
             passwordTextField.hidden = false
             proceedButton.setTitle("Log In", forState: .Normal)
             toggleModeButton.setTitle("Need an account?", forState: .Normal)
+            termsButton.hidden = true
         } else {
             usernameTextField.hidden = false
             emailTextField.hidden = false
             passwordTextField.hidden = false
             proceedButton.setTitle("Sign Up", forState: .Normal)
             toggleModeButton.setTitle("Have an account already?", forState: .Normal)
+            termsButton.hidden = false
         }
     }
     

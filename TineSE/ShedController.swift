@@ -52,6 +52,7 @@ class ShedController {
                     break
                 }
                 
+                HunterController.sharedInstance.currentHunter = currentHunter
                 currentHunter.save()
                 
                 // Complete true
@@ -99,6 +100,7 @@ class ShedController {
         currentHunter.shedCount = currentHunter.shedCount - 1
         var saveHunter = currentHunter
         saveHunter.save()
+        HunterController.sharedInstance.currentHunter = saveHunter
         
         guard let shedIdentifier = shed.identifier else { return }
         // Delete the shed from firebase

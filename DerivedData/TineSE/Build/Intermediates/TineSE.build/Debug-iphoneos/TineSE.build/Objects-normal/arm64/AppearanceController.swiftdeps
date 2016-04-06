@@ -8,15 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "UITabBarItem"
-- !private "NSForegroundColorAttributeName"
+- !private "UIColor"
 - !private "UINavigationBar"
 - !private "UIToolbar"
-- !private "Dictionary"
 - !private "UISegmentedControl"
-- !private "UIColor"
-- !private "UITabBar"
-- !private "UIBarButtonItem"
 - "AppearanceController"
+- !private "NSForegroundColorAttributeName"
+- !private "UIBarButtonItem"
+- !private "Dictionary"
+- !private "UITabBar"
 depends-member:
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]

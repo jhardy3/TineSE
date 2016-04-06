@@ -35,6 +35,10 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        if image == nil {
+            self.clearShedButton.setTitle("Tap Reticle For Camera", forState: .Normal)
+            self.shedImageView.image = UIImage(named: "Skull")
+        }
         
     }
     
@@ -54,14 +58,10 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if image == nil {
-            self.clearShedButton.setTitle("", forState: .Normal)
-            self.shedImageView.image = UIImage(named: "Skull")
-        }
         
-        shedView.layer.borderWidth = 1.0
+        shedView.layer.borderWidth = 2.0
         shedView.layer.borderColor = UIColor.hunterOrange().CGColor
-        self.clearShedButton.layer.opacity = 0.0
+        self.clearShedButton.layer.opacity = 1.0
         shedColorPickerView.delegate = self
         shedTypePickerView.delegate = self
         
@@ -104,7 +104,7 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
                         
                         NSNotificationCenter.defaultCenter().postNotificationName("shedAdded", object: self)
                         self.image = nil
-                        self.clearShedButton.hidden = true
+//                        self.clearShedButton.hidden = true
                         self.postButtonTapped = false
                         
                         dispatch_async(dispatch_get_main_queue(), { () -> Void in
@@ -165,7 +165,7 @@ class CameraViewController: UIViewController, UITextViewDelegate, UIImagePickerC
         self.image = squareImage
         self.shedImageView.image = squareImage
         
-        self.clearShedButton.setTitle("Post Shed", forState: .Normal)
+        self.clearShedButton.setTitle("Share", forState: .Normal)
         self.clearShedButton.layer.opacity = 1.0
         
         // Dismiss camera view controller

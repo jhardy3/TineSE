@@ -10,18 +10,18 @@ provides-member:
 - ["Sa", "deleteItem"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "??"
-- !private "BooleanLiteralType"
-- "Int"
-- "String"
-- "Array"
-- !private "=="
-- !private "..<"
 - !private "Dictionary"
+- !private "BooleanLiteralType"
+- !private "??"
+- "Int"
+- !private "=="
+- "Array"
 - "AnyObject"
-- "Hunter"
-- "StringLiteralType"
+- "String"
+- !private "..<"
 - "FirebaseType"
+- "StringLiteralType"
+- "Hunter"
 depends-member:
 - !private ["Ps9AnyObject", "Array"]
 - ["Ps9AnyObject", "String"]

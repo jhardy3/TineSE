@@ -44,7 +44,7 @@ class ShedDetailViewController: UIViewController {
             case "Moose":
                 animalImageView.image = UIImage(named: "Moose")
             case "Elk":
-                animalImageView.image = UIImage(named: "Elk")
+                animalImageView.image = UIImage(named: "elk")
             case "Deer":
                 animalImageView.image = UIImage(named: "Deer")
         default:

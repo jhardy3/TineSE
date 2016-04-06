@@ -8,29 +8,29 @@ provides-member:
 - ["CSo11UIImageView", ""]
 - ["CSo11UIImageView", "downloadImageFrom"]
 provides-dynamic-lookup:
-- "cropToSquare"
 - "downloadImageFrom"
+- "cropToSquare"
 depends-top-level:
-- !private "/"
-- !private "CGRectMake"
-- "UIImage"
-- !private "CGRect"
-- !private "NSURLSession"
-- !private "CGFloat"
-- !private "NSURL"
-- !private ">"
-- "ImageUitilies"
 - !private "dispatch_async"
-- "UIImageView"
-- "String"
+- !private "NSURL"
 - "UIViewContentMode"
+- "String"
 - !private "dispatch_get_main_queue"
 - !private "CGSize"
-- !private "CGImageCreateWithImageInRect"
-- "NSObject"
 - !private "-"
+- !private "CGImageCreateWithImageInRect"
+- !private "NSURLSession"
+- "UIImage"
 - !private "CGImageRef"
 - !private "Void"
+- "UIImageView"
+- "NSObject"
+- !private "CGRectMake"
+- !private "CGFloat"
+- !private "/"
+- !private "CGRect"
+- "ImageUitilies"
+- !private ">"
 depends-member:
 - !private ["Ps9AnyObject", "CGImage"]
 - !private ["Ps9AnyObject", "CGImageCreateWithImageInRect"]

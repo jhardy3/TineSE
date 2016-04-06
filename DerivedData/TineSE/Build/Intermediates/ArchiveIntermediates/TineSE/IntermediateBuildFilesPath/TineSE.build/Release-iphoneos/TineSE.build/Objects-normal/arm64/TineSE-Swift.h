@@ -215,15 +215,15 @@ SWIFT_CLASS("_TtC6TineSE25LeaderboardViewController")
 @end
 
 @class UICollectionView;
-@class UILabel;
 @class UICollectionViewFlowLayout;
+@class UILabel;
 
 SWIFT_CLASS("_TtC6TineSE21ProfileViewController")
 @interface ProfileViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
+@property (nonatomic) BOOL viewingDetail;
 @property (nonatomic, readonly) CGFloat kMargin;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified followButton;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
 @property (nonatomic, weak) IBOutlet UICollectionViewFlowLayout * _Null_unspecified flowLayout;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified hunterProfileImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified brownsCountLabel;
@@ -234,6 +234,7 @@ SWIFT_CLASS("_TtC6TineSE21ProfileViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified trackingCountLabel;
 @property (nonatomic) BOOL viewLoaded;
 @property (nonatomic) NSInteger trackingCount;
+@property (nonatomic) BOOL isFinished;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLoad;
@@ -296,6 +297,7 @@ SWIFT_CLASS("_TtC6TineSE24ShedDetailViewController")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified shedImageView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedColorLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedTypeLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified animalImageView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -377,10 +379,22 @@ SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 - (void)downloadImageFromLink:(NSString * _Nonnull)link contentMode:(UIViewContentMode)contentMode;
 @end
 
+
+SWIFT_CLASS("_TtC6TineSE27UserAgreementViewController")
+@interface UserAgreementViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified tineLabel;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)agreeButtonTapped:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIVisualEffectView;
 
 SWIFT_CLASS("_TtC6TineSE19logInViewController")
 @interface logInViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified termsButton;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTextField;
@@ -391,6 +405,7 @@ SWIFT_CLASS("_TtC6TineSE19logInViewController")
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified logInView;
 @property (nonatomic, strong) UIVisualEffectView * _Nullable blurEffect;
 - (void)viewDidLoad;
+- (void)setUpTextField:(UITextField * _Nonnull)textField;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (IBAction)proceedButtonTapped:(UIButton * _Nonnull)sender;

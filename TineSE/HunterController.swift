@@ -12,9 +12,34 @@ import Foundation
 
 class HunterController {
     
+    private let kHunter = "User"
+    
     static let sharedInstance = HunterController()
     
-    var currentHunter: Hunter?
+    var currentHunter: Hunter? {
+        get {
+            
+            guard let uid = FirebaseController.firebase?.authData?.uid,
+                let userDictionary = NSUserDefaults.standardUserDefaults().valueForKey(kHunter) as? [String: AnyObject] else {
+                    
+                    return nil
+            }
+            
+            return Hunter(json: userDictionary, identifier: uid)
+        }
+        
+        set {
+            
+            if let newValue = newValue {
+                NSUserDefaults.standardUserDefaults().setValue(newValue.jsonValue, forKey: kHunter)
+                NSUserDefaults.standardUserDefaults().synchronize()
+            } else {
+                NSUserDefaults.standardUserDefaults().removeObjectForKey(kHunter)
+                NSUserDefaults.standardUserDefaults().synchronize()
+            }
+        }
+    }
+
     
     // MARK: - Authentication && Creation
     
@@ -204,6 +229,7 @@ class HunterController {
         // Add hunter to be tracked to current hunters tracking IDs array. Save Current Hunter
         currentHunter.trackingIDs.append(trackedHunterID)
         currentHunter.save()
+        HunterController.sharedInstance.currentHunter = currentHunter
         
         // Add current hunter ID to recently tracked hunter's trackedID's array. Save hunter
         hunter.trackedIDs.append(currentHunterID)
@@ -259,6 +285,7 @@ class HunterController {
         // Save both objects to firebase with newly altered arrays
         thisHunter.save()
         currentHunter.save()
+        HunterController.sharedInstance.currentHunter = currentHunter
     }
     
     // MARK: - Query for leaderboard

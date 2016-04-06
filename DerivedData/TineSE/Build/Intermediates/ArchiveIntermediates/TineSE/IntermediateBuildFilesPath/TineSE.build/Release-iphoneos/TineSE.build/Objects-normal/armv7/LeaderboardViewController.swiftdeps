@@ -6,47 +6,50 @@ provides-nominal:
 provides-member:
 - ["C6TineSE25LeaderboardViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "isTracking"
-- "fetchAllHuntersForLeaderBoard"
-- "prepareForSegue"
-- "segmentedControlChanged"
+- "viewWillAppear"
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
 - "fetchTrackedHuntersForLeaderBoard"
-- "viewWillAppear"
 - "segmentedControl"
+- "prepareForSegue"
+- "tableView"
+- "tableView"
+- "tableView"
+- "segmentedControlChanged"
+- "fetchAllHuntersForLeaderBoard"
+- "isTracking"
 depends-top-level:
-- "LeaderboardViewController"
-- !private "dispatch_async"
-- "BooleanLiteralType"
-- !private "String"
-- "NSIndexPath"
+- !private "UIColor"
 - !private "dispatch_get_main_queue"
-- "UITableView"
-- "AnyObject"
-- "UIViewController"
-- !private "ProfileViewController"
-- !private "Void"
-- "Bool"
+- "UISegmentedControl"
 - "Hunter"
-- "UITableViewDataSource"
-- !private "StringLiteralType"
-- !private "!"
 - "UITableViewDelegate"
 - "Int"
-- "UISegmentedControl"
-- "UIStoryboardSegue"
-- !private "=="
+- "UITableViewDataSource"
+- "BooleanLiteralType"
+- !private "String"
 - "UITableViewCell"
+- "AnyObject"
+- !private "Void"
+- !private "dispatch_async"
+- "NSIndexPath"
 - !private "HunterController"
+- !private "ProfileViewController"
+- !private "StringLiteralType"
+- "Bool"
+- "LeaderboardViewController"
+- "UIStoryboardSegue"
+- !private "!"
+- !private "+"
 - !private ">"
+- !private "=="
+- "UITableView"
+- "UIViewController"
 depends-member:
 - ["Ps9AnyObject", "Hunter"]
 - !private ["Ps9AnyObject", "HunterController"]
 - !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "currentHunter"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps9AnyObject", "destinationViewController"]
@@ -59,6 +62,7 @@ depends-member:
 - !private ["Ps9AnyObject", "fetchHuntersWithIdentifierArray"]
 - ["Ps9AnyObject", "fetchTrackedHuntersForLeaderBoard"]
 - ["Ps9AnyObject", "filteredHunters"]
+- !private ["Ps9AnyObject", "hunterOrange"]
 - ["Ps9AnyObject", "hunters"]
 - !private ["Ps9AnyObject", "identifier"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
@@ -89,6 +93,7 @@ depends-member:
 - !private ["Ps9AnyObject", "shedCount"]
 - ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "textColor"]
 - !private ["Ps9AnyObject", "textLabel"]
 - !private ["Ps9AnyObject", "trackingIDs"]
 - !private ["Ps9AnyObject", "updateWithIdentifier"]
@@ -124,6 +129,7 @@ depends-member:
 - ["Ps21BitwiseOperationsType", "Distance"]
 - ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - ["Ps11CVarArgType", "Distance"]
@@ -131,6 +137,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "HunterController"]
 - ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "String"]
+- !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps11CVarArgType", "destinationViewController"]
 - !private ["Ps11CVarArgType", "detailTextLabel"]
@@ -140,6 +147,7 @@ depends-member:
 - ["Ps11CVarArgType", "fetchAllHuntersForLeaderBoard"]
 - ["Ps11CVarArgType", "fetchTrackedHuntersForLeaderBoard"]
 - ["Ps11CVarArgType", "filteredHunters"]
+- !private ["Ps11CVarArgType", "hunterOrange"]
 - ["Ps11CVarArgType", "hunters"]
 - !private ["Ps11CVarArgType", "identifier"]
 - ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
@@ -168,12 +176,14 @@ depends-member:
 - !private ["Ps11CVarArgType", "separatorStyle"]
 - ["Ps11CVarArgType", "tableView"]
 - !private ["Ps11CVarArgType", "text"]
+- !private ["Ps11CVarArgType", "textColor"]
 - !private ["Ps11CVarArgType", "textLabel"]
 - !private ["Ps11CVarArgType", "updateWithIdentifier"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", "viewForZoomingInScrollView"]
 - ["Ps11CVarArgType", "viewWillAppear"]
 - ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
 - ["Ps14CollectionType", "Generator"]
 - ["Ps14CollectionType", "Index"]
 - ["Ps14CollectionType", "SubSequence"]
@@ -193,6 +203,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
 - ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
@@ -205,6 +216,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "fetchAllHuntersForLeaderBoard"]
 - ["Ps28CustomDebugStringConvertible", "fetchTrackedHuntersForLeaderBoard"]
 - ["Ps28CustomDebugStringConvertible", "filteredHunters"]
+- !private ["Ps28CustomDebugStringConvertible", "hunterOrange"]
 - ["Ps28CustomDebugStringConvertible", "hunters"]
 - !private ["Ps28CustomDebugStringConvertible", "identifier"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
@@ -235,6 +247,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - !private ["Ps28CustomDebugStringConvertible", "textLabel"]
 - !private ["Ps28CustomDebugStringConvertible", "updateWithIdentifier"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
@@ -249,6 +262,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "String"]
 - ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
 - ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
@@ -262,6 +276,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "fetchAllHuntersForLeaderBoard"]
 - ["Ps23CustomStringConvertible", "fetchTrackedHuntersForLeaderBoard"]
 - ["Ps23CustomStringConvertible", "filteredHunters"]
+- !private ["Ps23CustomStringConvertible", "hunterOrange"]
 - ["Ps23CustomStringConvertible", "hunters"]
 - !private ["Ps23CustomStringConvertible", "identifier"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
@@ -292,18 +307,21 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "textColor"]
 - !private ["Ps23CustomStringConvertible", "textLabel"]
 - !private ["Ps23CustomStringConvertible", "updateWithIdentifier"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
 - ["Ps9Equatable", "Distance"]
 - ["Ps9Equatable", "Hunter"]
 - !private ["Ps9Equatable", "HunterController"]
 - ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "None"]
 - !private ["Ps9Equatable", "String"]
+- !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps9Equatable", "destinationViewController"]
@@ -314,6 +332,7 @@ depends-member:
 - ["Ps9Equatable", "fetchAllHuntersForLeaderBoard"]
 - ["Ps9Equatable", "fetchTrackedHuntersForLeaderBoard"]
 - ["Ps9Equatable", "filteredHunters"]
+- !private ["Ps9Equatable", "hunterOrange"]
 - ["Ps9Equatable", "hunters"]
 - !private ["Ps9Equatable", "identifier"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
@@ -342,6 +361,7 @@ depends-member:
 - !private ["Ps9Equatable", "separatorStyle"]
 - ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "textColor"]
 - !private ["Ps9Equatable", "textLabel"]
 - !private ["Ps9Equatable", "updateWithIdentifier"]
 - ["Ps9Equatable", "viewDidLoad"]
@@ -353,6 +373,7 @@ depends-member:
 - !private ["P6TineSE12FirebaseType", "shedCount"]
 - !private ["P6TineSE12FirebaseType", "trackingIDs"]
 - !private ["P6TineSE12FirebaseType", "username"]
+- !private ["Sf", "deinit"]
 - ["Ps16ForwardIndexType", "Distance"]
 - ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - ["Ps13GeneratorType", "Element"]
@@ -362,6 +383,7 @@ depends-member:
 - ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "None"]
 - !private ["Ps8Hashable", "String"]
+- !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps8Hashable", "destinationViewController"]
@@ -372,6 +394,7 @@ depends-member:
 - ["Ps8Hashable", "fetchAllHuntersForLeaderBoard"]
 - ["Ps8Hashable", "fetchTrackedHuntersForLeaderBoard"]
 - ["Ps8Hashable", "filteredHunters"]
+- !private ["Ps8Hashable", "hunterOrange"]
 - ["Ps8Hashable", "hunters"]
 - !private ["Ps8Hashable", "identifier"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
@@ -400,6 +423,7 @@ depends-member:
 - !private ["Ps8Hashable", "separatorStyle"]
 - ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "textColor"]
 - !private ["Ps8Hashable", "textLabel"]
 - !private ["Ps8Hashable", "updateWithIdentifier"]
 - ["Ps8Hashable", "viewDidLoad"]
@@ -429,6 +453,10 @@ depends-member:
 - ["Si", "Distance"]
 - ["Si", "IntegerLiteralType"]
 - !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
 - ["Ps21IntegerArithmeticType", "Distance"]
 - ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
 - ["Ps25IntegerLiteralConvertible", "Distance"]
@@ -443,6 +471,7 @@ depends-member:
 - ["C6TineSE25LeaderboardViewController", "NSIndexPath"]
 - !private ["C6TineSE25LeaderboardViewController", "ProfileViewController"]
 - !private ["C6TineSE25LeaderboardViewController", "String"]
+- !private ["C6TineSE25LeaderboardViewController", "UIColor"]
 - ["C6TineSE25LeaderboardViewController", "UISegmentedControl"]
 - ["C6TineSE25LeaderboardViewController", "UIStoryboardSegue"]
 - ["C6TineSE25LeaderboardViewController", "UITableView"]
@@ -513,6 +542,7 @@ depends-member:
 - ["PSo8NSCoding", "Hunter"]
 - !private ["PSo8NSCoding", "HunterController"]
 - !private ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo8NSCoding", "detailTextLabel"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -521,6 +551,7 @@ depends-member:
 - ["PSo8NSCoding", "fetchAllHuntersForLeaderBoard"]
 - ["PSo8NSCoding", "fetchTrackedHuntersForLeaderBoard"]
 - ["PSo8NSCoding", "filteredHunters"]
+- !private ["PSo8NSCoding", "hunterOrange"]
 - ["PSo8NSCoding", "hunters"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo8NSCoding", "indexPathForSelectedRow"]
@@ -548,16 +579,20 @@ depends-member:
 - !private ["PSo8NSCoding", "separatorStyle"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "textColor"]
 - !private ["PSo8NSCoding", "textLabel"]
 - !private ["PSo8NSCoding", "updateWithIdentifier"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "hunterOrange"]
+- !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "row"]
 - ["PSo26NSExtensionRequestHandling", "Hunter"]
 - !private ["PSo26NSExtensionRequestHandling", "HunterController"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
@@ -592,6 +627,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo11NSIndexPath", "row"]
+- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "Hunter"]
@@ -600,6 +636,7 @@ depends-member:
 - ["CSo8NSObject", "NSIndexPath"]
 - !private ["CSo8NSObject", "ProfileViewController"]
 - !private ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UISegmentedControl"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITableView"]
@@ -614,6 +651,7 @@ depends-member:
 - ["CSo8NSObject", "fetchAllHuntersForLeaderBoard"]
 - ["CSo8NSObject", "fetchTrackedHuntersForLeaderBoard"]
 - ["CSo8NSObject", "filteredHunters"]
+- !private ["CSo8NSObject", "hunterOrange"]
 - ["CSo8NSObject", "hunters"]
 - !private ["CSo8NSObject", "identifier"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
@@ -642,6 +680,7 @@ depends-member:
 - !private ["CSo8NSObject", "separatorStyle"]
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "textColor"]
 - !private ["CSo8NSObject", "textLabel"]
 - !private ["CSo8NSObject", "updateWithIdentifier"]
 - ["CSo8NSObject", "viewDidLoad"]
@@ -650,6 +689,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "Hunter"]
 - !private ["PSo16NSObjectProtocol", "HunterController"]
 - !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "destinationViewController"]
 - !private ["PSo16NSObjectProtocol", "detailTextLabel"]
@@ -659,6 +699,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "fetchAllHuntersForLeaderBoard"]
 - ["PSo16NSObjectProtocol", "fetchTrackedHuntersForLeaderBoard"]
 - ["PSo16NSObjectProtocol", "filteredHunters"]
+- !private ["PSo16NSObjectProtocol", "hunterOrange"]
 - ["PSo16NSObjectProtocol", "hunters"]
 - !private ["PSo16NSObjectProtocol", "identifier"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
@@ -687,13 +728,17 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "separatorStyle"]
 - ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "textColor"]
 - !private ["PSo16NSObjectProtocol", "textLabel"]
 - !private ["PSo16NSObjectProtocol", "updateWithIdentifier"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "hunterOrange"]
+- !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "row"]
+- !private ["CSo8NSString", "init"]
 - ["Ps21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
@@ -741,6 +786,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "separatorStyle"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - !private ["PSo29UIAccessibilityIdentification", "textLabel"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "detailTextLabel"]
@@ -748,10 +794,12 @@ depends-member:
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "separatorStyle"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "textColor"]
 - !private ["PSo12UIAppearance", "textLabel"]
 - ["PSo21UIAppearanceContainer", "Hunter"]
 - !private ["PSo21UIAppearanceContainer", "HunterController"]
 - !private ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo21UIAppearanceContainer", "detailTextLabel"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -786,6 +834,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "separatorStyle"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "textColor"]
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
 - !private ["PSo21UIAppearanceContainer", "updateWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
@@ -795,9 +844,11 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "updateWithIdentifier"]
 - !private ["PSo24UICollectionViewDelegate", "updateWithIdentifier"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "updateWithIdentifier"]
+- !private ["CSo7UIColor", "hunterOrange"]
 - ["PSo18UIContentContainer", "Hunter"]
 - !private ["PSo18UIContentContainer", "HunterController"]
 - !private ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "UIColor"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dispatch_async"]
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
@@ -837,6 +888,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "separatorStyle"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "textColor"]
 - !private ["PSo17UICoordinateSpace", "textLabel"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "detailTextLabel"]
@@ -844,10 +896,12 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "separatorStyle"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "textColor"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
 - ["PSo18UIFocusEnvironment", "Hunter"]
 - !private ["PSo18UIFocusEnvironment", "HunterController"]
 - !private ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo18UIFocusEnvironment", "detailTextLabel"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
@@ -882,6 +936,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "separatorStyle"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "textColor"]
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
 - !private ["PSo18UIFocusEnvironment", "updateWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
@@ -891,6 +946,7 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "detailTextLabel"]
 - !private ["PSo27UIGestureRecognizerDelegate", "textLabel"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo7UILabel", "textColor"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "Hunter"]
@@ -899,6 +955,7 @@ depends-member:
 - ["CSo11UIResponder", "NSIndexPath"]
 - !private ["CSo11UIResponder", "ProfileViewController"]
 - !private ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UISegmentedControl"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITableView"]
@@ -938,6 +995,7 @@ depends-member:
 - !private ["CSo11UIResponder", "separatorStyle"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "textColor"]
 - !private ["CSo11UIResponder", "textLabel"]
 - !private ["CSo11UIResponder", "updateWithIdentifier"]
 - ["CSo11UIResponder", "viewDidLoad"]
@@ -950,6 +1008,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "Hunter"]
 - !private ["PSo20UIScrollViewDelegate", "HunterController"]
 - !private ["PSo20UIScrollViewDelegate", "String"]
+- !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_async"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo20UIScrollViewDelegate", "fetchAllHuntersForLeaderBoard"]
@@ -979,6 +1038,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "Hunter"]
 - !private ["PSo16UIStateRestoring", "HunterController"]
 - !private ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dispatch_async"]
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
@@ -1024,6 +1084,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "Hunter"]
 - !private ["PSo21UITableViewDataSource", "HunterController"]
 - !private ["PSo21UITableViewDataSource", "String"]
+- !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "dispatch_async"]
 - !private ["PSo21UITableViewDataSource", "dispatch_get_main_queue"]
 - !private ["PSo21UITableViewDataSource", "fetchAllHuntersForLeaderBoard"]
@@ -1052,6 +1113,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "Hunter"]
 - !private ["PSo19UITableViewDelegate", "HunterController"]
 - !private ["PSo19UITableViewDelegate", "String"]
+- !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "dispatch_async"]
 - !private ["PSo19UITableViewDelegate", "dispatch_get_main_queue"]
 - !private ["PSo19UITableViewDelegate", "fetchAllHuntersForLeaderBoard"]
@@ -1080,6 +1142,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "Hunter"]
 - !private ["PSo18UITraitEnvironment", "HunterController"]
 - !private ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo18UITraitEnvironment", "detailTextLabel"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -1114,6 +1177,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "separatorStyle"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "textColor"]
 - !private ["PSo18UITraitEnvironment", "textLabel"]
 - !private ["PSo18UITraitEnvironment", "updateWithIdentifier"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
@@ -1126,6 +1190,7 @@ depends-member:
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "separatorStyle"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "textColor"]
 - !private ["CSo6UIView", "textLabel"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
@@ -1135,6 +1200,7 @@ depends-member:
 - ["CSo16UIViewController", "NSIndexPath"]
 - !private ["CSo16UIViewController", "ProfileViewController"]
 - !private ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIColor"]
 - ["CSo16UIViewController", "UISegmentedControl"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITableView"]
@@ -1174,6 +1240,12 @@ depends-member:
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - ["Ps10_ArrayType", "Generator"]
 - ["Ps10_ArrayType", "Index"]
@@ -1191,6 +1263,7 @@ depends-member:
 - !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps24_ColorLiteralConvertible", "hunterOrange"]
 - ["Ps24_DestructorSafeContainer", "Generator"]
 - ["Ps24_DestructorSafeContainer", "Index"]
 - ["Ps24_DestructorSafeContainer", "SubSequence"]
@@ -1240,6 +1313,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "sort"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "textColor"]
 - !private ["Ps12_Reflectable", "textLabel"]
 - ["Ps18_SignedIntegerType", "Distance"]
 - ["Ps18_SignedIntegerType", "IntegerLiteralType"]
@@ -1254,13 +1328,16 @@ depends-nominal:
 - !private "Ps25BooleanLiteralConvertible"
 - !private "Ps11BooleanType"
 - "Ps11CVarArgType"
+- !private "Vs9Character"
 - "Ps14CollectionType"
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- !private "Sd"
 - "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - !private "P6TineSE12FirebaseType"
+- !private "Sf"
 - "Ps16ForwardIndexType"
 - "Ps13GeneratorType"
 - "Ps8Hashable"
@@ -1270,6 +1347,10 @@ depends-nominal:
 - "Ps9Indexable"
 - "Vs17IndexingGenerator"
 - "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
 - "Ps21IntegerArithmeticType"
 - "Ps25IntegerLiteralConvertible"
 - "Ps11IntegerType"
@@ -1282,9 +1363,11 @@ depends-nominal:
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - !private "CSo11NSIndexPath"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - "Ps21NilLiteralConvertible"
 - "Sq"
 - !private "Ps16OutputStreamType"
@@ -1307,6 +1390,7 @@ depends-nominal:
 - !private "PSo26UICollectionViewDataSource"
 - !private "PSo24UICollectionViewDelegate"
 - !private "PSo34UICollectionViewDelegateFlowLayout"
+- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
@@ -1326,6 +1410,12 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
 - "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
@@ -1334,6 +1424,7 @@ depends-nominal:
 - !private "Ps32_BuiltinStringLiteralConvertible"
 - !private "Ps37_BuiltinUTF16StringLiteralConvertible"
 - !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_ColorLiteralConvertible"
 - "Ps24_DestructorSafeContainer"
 - "Ps14_Incrementable"
 - "Ps22_IntegerArithmeticType"

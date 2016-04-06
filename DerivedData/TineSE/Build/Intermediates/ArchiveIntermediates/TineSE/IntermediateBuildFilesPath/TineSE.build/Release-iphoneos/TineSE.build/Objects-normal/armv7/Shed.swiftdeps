@@ -10,13 +10,13 @@ depends-top-level:
 - "String"
 - !private "??"
 - "UIImage"
-- !private "Array"
-- !private "Dictionary"
-- !private "PhotoController"
+- !private "Void"
 - "FirebaseType"
 - "AnyObject"
-- !private "Void"
+- !private "PhotoController"
+- !private "Dictionary"
 - "StringLiteralType"
+- !private "Array"
 - "Shed"
 depends-member:
 - !private ["Ps9AnyObject", "Array"]

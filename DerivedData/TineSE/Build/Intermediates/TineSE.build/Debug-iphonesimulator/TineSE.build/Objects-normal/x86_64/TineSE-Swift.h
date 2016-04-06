@@ -220,6 +220,7 @@ SWIFT_CLASS("_TtC6TineSE25LeaderboardViewController")
 
 SWIFT_CLASS("_TtC6TineSE21ProfileViewController")
 @interface ProfileViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
+@property (nonatomic) BOOL viewingDetail;
 @property (nonatomic, readonly) CGFloat kMargin;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified followButton;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
