@@ -43,7 +43,8 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("leaderboardCell", forIndexPath: indexPath)
         if isTracking == false {
-            cell.textLabel?.text = hunters[indexPath.row].username
+            cell.textLabel?.textColor = UIColor.hunterOrange()
+            cell.textLabel?.text = "\(indexPath.row + 1). \(hunters[indexPath.row].username)"
             cell.detailTextLabel?.text = String(hunters[indexPath.row].shedCount)
         } else {
             cell.textLabel?.text = filteredHunters[indexPath.row].username

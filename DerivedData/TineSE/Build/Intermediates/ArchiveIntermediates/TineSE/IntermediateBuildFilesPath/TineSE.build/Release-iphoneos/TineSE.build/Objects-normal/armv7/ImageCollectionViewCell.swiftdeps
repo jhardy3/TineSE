@@ -1,0 +1,408 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ImageCollectionViewCell"
+provides-nominal:
+- "C6TineSE23ImageCollectionViewCell"
+provides-member:
+- ["C6TineSE23ImageCollectionViewCell", ""]
+provides-dynamic-lookup:
+- "awakeFromNib"
+- "delegate"
+- "shedImage"
+depends-top-level:
+- "UIImageView"
+- "ProfileViewController"
+- "Shed"
+- "ImageCollectionViewCell"
+- "UICollectionViewCell"
+depends-member:
+- !private ["Ps9AnyObject", "autoresizingMask"]
+- ["Ps9AnyObject", "awakeFromNib"]
+- !private ["Ps9AnyObject", "contentView"]
+- ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "downloadImageFrom"]
+- !private ["Ps9AnyObject", "image"]
+- !private ["Ps9AnyObject", "imageIdentifier"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "shedImage"]
+- ["Ps9AnyObject", "updateWith"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "FlexibleHeight"]
+- !private ["Ps23ArrayLiteralConvertible", "FlexibleWidth"]
+- !private ["Ps23ArrayLiteralConvertible", "insert"]
+- !private ["Ps11CVarArgType", "autoresizingMask"]
+- ["Ps11CVarArgType", "awakeFromNib"]
+- !private ["Ps11CVarArgType", "contentView"]
+- ["Ps11CVarArgType", "delegate"]
+- !private ["Ps11CVarArgType", "downloadImageFrom"]
+- !private ["Ps11CVarArgType", "image"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "shedImage"]
+- ["Ps11CVarArgType", "updateWith"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "autoresizingMask"]
+- ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- !private ["Ps28CustomDebugStringConvertible", "contentView"]
+- ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "downloadImageFrom"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "shedImage"]
+- ["Ps28CustomDebugStringConvertible", "updateWith"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "autoresizingMask"]
+- ["Ps23CustomStringConvertible", "awakeFromNib"]
+- !private ["Ps23CustomStringConvertible", "contentView"]
+- ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "downloadImageFrom"]
+- !private ["Ps23CustomStringConvertible", "image"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "shedImage"]
+- ["Ps23CustomStringConvertible", "updateWith"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Element"]
+- !private ["Ps9Equatable", "FlexibleHeight"]
+- !private ["Ps9Equatable", "FlexibleWidth"]
+- !private ["Ps9Equatable", "ScaleAspectFit"]
+- !private ["Ps9Equatable", "autoresizingMask"]
+- ["Ps9Equatable", "awakeFromNib"]
+- !private ["Ps9Equatable", "contentView"]
+- ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "downloadImageFrom"]
+- !private ["Ps9Equatable", "image"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "insert"]
+- ["Ps9Equatable", "shedImage"]
+- ["Ps9Equatable", "updateWith"]
+- ["Ps9Equatable", ""]
+- !private ["P6TineSE12FirebaseType", "imageIdentifier"]
+- !private ["P6TineSE12FirebaseType", "shedImage"]
+- !private ["Ps8Hashable", "ScaleAspectFit"]
+- !private ["Ps8Hashable", "autoresizingMask"]
+- ["Ps8Hashable", "awakeFromNib"]
+- !private ["Ps8Hashable", "contentView"]
+- ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "downloadImageFrom"]
+- !private ["Ps8Hashable", "image"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "shedImage"]
+- ["Ps8Hashable", "updateWith"]
+- ["Ps8Hashable", ""]
+- ["C6TineSE23ImageCollectionViewCell", "ProfileViewController"]
+- ["C6TineSE23ImageCollectionViewCell", "Shed"]
+- ["C6TineSE23ImageCollectionViewCell", "UIImageView"]
+- ["C6TineSE23ImageCollectionViewCell", "awakeFromNib"]
+- !private ["C6TineSE23ImageCollectionViewCell", "contentView"]
+- ["C6TineSE23ImageCollectionViewCell", "deinit"]
+- ["C6TineSE23ImageCollectionViewCell", "delegate"]
+- ["C6TineSE23ImageCollectionViewCell", "init"]
+- ["C6TineSE23ImageCollectionViewCell", "shedImage"]
+- ["C6TineSE23ImageCollectionViewCell", "updateWith"]
+- !private ["PSo8NSCoding", "autoresizingMask"]
+- ["PSo8NSCoding", "awakeFromNib"]
+- !private ["PSo8NSCoding", "contentView"]
+- ["PSo8NSCoding", "delegate"]
+- !private ["PSo8NSCoding", "downloadImageFrom"]
+- !private ["PSo8NSCoding", "image"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "shedImage"]
+- ["PSo8NSCoding", "updateWith"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "ProfileViewController"]
+- ["CSo8NSObject", "Shed"]
+- ["CSo8NSObject", "UIImageView"]
+- !private ["CSo8NSObject", "autoresizingMask"]
+- ["CSo8NSObject", "awakeFromNib"]
+- !private ["CSo8NSObject", "contentView"]
+- ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "downloadImageFrom"]
+- !private ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "shedImage"]
+- ["CSo8NSObject", "updateWith"]
+- !private ["PSo16NSObjectProtocol", "autoresizingMask"]
+- ["PSo16NSObjectProtocol", "awakeFromNib"]
+- !private ["PSo16NSObjectProtocol", "contentView"]
+- ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "downloadImageFrom"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "shedImage"]
+- ["PSo16NSObjectProtocol", "updateWith"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Ps21NilLiteralConvertible", "Some"]
+- !private ["Ps13OptionSetType", "Element"]
+- !private ["Ps13OptionSetType", "FlexibleHeight"]
+- !private ["Ps13OptionSetType", "FlexibleWidth"]
+- !private ["Ps13OptionSetType", "insert"]
+- ["Sq", "Some"]
+- !private ["Ps16RawRepresentable", "Element"]
+- !private ["Ps16RawRepresentable", "FlexibleHeight"]
+- !private ["Ps16RawRepresentable", "FlexibleWidth"]
+- !private ["Ps16RawRepresentable", "ScaleAspectFit"]
+- !private ["Ps16RawRepresentable", "insert"]
+- !private ["Ps14SetAlgebraType", "Element"]
+- !private ["Ps14SetAlgebraType", "FlexibleHeight"]
+- !private ["Ps14SetAlgebraType", "FlexibleWidth"]
+- !private ["Ps14SetAlgebraType", "insert"]
+- !private ["C6TineSE4Shed", "imageIdentifier"]
+- !private ["C6TineSE4Shed", "shedImage"]
+- !private ["PSo29UIAccessibilityIdentification", "autoresizingMask"]
+- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- !private ["PSo29UIAccessibilityIdentification", "contentView"]
+- ["PSo29UIAccessibilityIdentification", "delegate"]
+- !private ["PSo29UIAccessibilityIdentification", "downloadImageFrom"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "shedImage"]
+- ["PSo29UIAccessibilityIdentification", "updateWith"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "autoresizingMask"]
+- ["PSo12UIAppearance", "awakeFromNib"]
+- !private ["PSo12UIAppearance", "contentView"]
+- ["PSo12UIAppearance", "delegate"]
+- !private ["PSo12UIAppearance", "downloadImageFrom"]
+- !private ["PSo12UIAppearance", "image"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "shedImage"]
+- ["PSo12UIAppearance", "updateWith"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "autoresizingMask"]
+- ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- !private ["PSo21UIAppearanceContainer", "contentView"]
+- ["PSo21UIAppearanceContainer", "delegate"]
+- !private ["PSo21UIAppearanceContainer", "downloadImageFrom"]
+- !private ["PSo21UIAppearanceContainer", "image"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "shedImage"]
+- ["PSo21UIAppearanceContainer", "updateWith"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo24UICollectionReusableView", "ProfileViewController"]
+- ["CSo24UICollectionReusableView", "Shed"]
+- ["CSo24UICollectionReusableView", "UIImageView"]
+- ["CSo24UICollectionReusableView", "awakeFromNib"]
+- !private ["CSo24UICollectionReusableView", "contentView"]
+- ["CSo24UICollectionReusableView", "delegate"]
+- ["CSo24UICollectionReusableView", "init"]
+- ["CSo24UICollectionReusableView", "shedImage"]
+- ["CSo24UICollectionReusableView", "updateWith"]
+- ["CSo20UICollectionViewCell", "ProfileViewController"]
+- ["CSo20UICollectionViewCell", "Shed"]
+- ["CSo20UICollectionViewCell", "UIImageView"]
+- ["CSo20UICollectionViewCell", "awakeFromNib"]
+- !private ["CSo20UICollectionViewCell", "contentView"]
+- ["CSo20UICollectionViewCell", "delegate"]
+- ["CSo20UICollectionViewCell", "init"]
+- ["CSo20UICollectionViewCell", "shedImage"]
+- ["CSo20UICollectionViewCell", "updateWith"]
+- ["CSo20UICollectionViewCell", ""]
+- !private ["PSo17UICoordinateSpace", "autoresizingMask"]
+- ["PSo17UICoordinateSpace", "awakeFromNib"]
+- !private ["PSo17UICoordinateSpace", "contentView"]
+- ["PSo17UICoordinateSpace", "delegate"]
+- !private ["PSo17UICoordinateSpace", "downloadImageFrom"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "shedImage"]
+- ["PSo17UICoordinateSpace", "updateWith"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "autoresizingMask"]
+- ["PSo13UIDynamicItem", "awakeFromNib"]
+- !private ["PSo13UIDynamicItem", "contentView"]
+- ["PSo13UIDynamicItem", "delegate"]
+- !private ["PSo13UIDynamicItem", "downloadImageFrom"]
+- !private ["PSo13UIDynamicItem", "image"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "shedImage"]
+- ["PSo13UIDynamicItem", "updateWith"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "autoresizingMask"]
+- ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- !private ["PSo18UIFocusEnvironment", "contentView"]
+- ["PSo18UIFocusEnvironment", "delegate"]
+- !private ["PSo18UIFocusEnvironment", "downloadImageFrom"]
+- !private ["PSo18UIFocusEnvironment", "image"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "shedImage"]
+- ["PSo18UIFocusEnvironment", "updateWith"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIImageView", "downloadImageFrom"]
+- !private ["CSo11UIImageView", "image"]
+- ["CSo11UIResponder", "ProfileViewController"]
+- ["CSo11UIResponder", "Shed"]
+- ["CSo11UIResponder", "UIImageView"]
+- !private ["CSo11UIResponder", "autoresizingMask"]
+- ["CSo11UIResponder", "awakeFromNib"]
+- !private ["CSo11UIResponder", "contentView"]
+- ["CSo11UIResponder", "delegate"]
+- !private ["CSo11UIResponder", "downloadImageFrom"]
+- !private ["CSo11UIResponder", "image"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "shedImage"]
+- ["CSo11UIResponder", "updateWith"]
+- !private ["PSo18UITraitEnvironment", "autoresizingMask"]
+- ["PSo18UITraitEnvironment", "awakeFromNib"]
+- !private ["PSo18UITraitEnvironment", "contentView"]
+- ["PSo18UITraitEnvironment", "delegate"]
+- !private ["PSo18UITraitEnvironment", "downloadImageFrom"]
+- !private ["PSo18UITraitEnvironment", "image"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "shedImage"]
+- ["PSo18UITraitEnvironment", "updateWith"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "ProfileViewController"]
+- ["CSo6UIView", "Shed"]
+- ["CSo6UIView", "UIImageView"]
+- !private ["CSo6UIView", "autoresizingMask"]
+- ["CSo6UIView", "awakeFromNib"]
+- !private ["CSo6UIView", "contentView"]
+- ["CSo6UIView", "delegate"]
+- !private ["CSo6UIView", "downloadImageFrom"]
+- !private ["CSo6UIView", "image"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "shedImage"]
+- ["CSo6UIView", "updateWith"]
+- !private ["VSC18UIViewAutoresizing", "Element"]
+- !private ["VSC18UIViewAutoresizing", "FlexibleHeight"]
+- !private ["VSC18UIViewAutoresizing", "FlexibleWidth"]
+- !private ["VSC18UIViewAutoresizing", "insert"]
+- !private ["OSC17UIViewContentMode", "ScaleAspectFit"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "autoresizingMask"]
+- ["Ps12_Reflectable", "awakeFromNib"]
+- !private ["Ps12_Reflectable", "contentView"]
+- ["Ps12_Reflectable", "delegate"]
+- !private ["Ps12_Reflectable", "downloadImageFrom"]
+- !private ["Ps12_Reflectable", "image"]
+- ["Ps12_Reflectable", "init"]
+- ["Ps12_Reflectable", "shedImage"]
+- ["Ps12_Reflectable", "updateWith"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps23ArrayLiteralConvertible"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "P6TineSE12FirebaseType"
+- "Ps8Hashable"
+- "C6TineSE23ImageCollectionViewCell"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Ps21NilLiteralConvertible"
+- !private "Ps13OptionSetType"
+- "Sq"
+- !private "Ps16RawRepresentable"
+- !private "Ps14SetAlgebraType"
+- !private "C6TineSE4Shed"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo24UICollectionReusableView"
+- "CSo20UICollectionViewCell"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo11UIImageView"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "VSC18UIViewAutoresizing"
+- !private "OSC17UIViewContentMode"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/TineSE-Bridging-Header.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentityModel.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentityService.h"
+- "./AWSCore.framework/Headers/AWSCognitoIdentity.h"
+- "./AWSCore.framework/Headers/AWSSTSModel.h"
+- "./AWSCore.framework/Headers/AWSSTSService.h"
+- "./AWSCore.framework/Headers/AWSSTS.h"
+- "./AWSCore.framework/Headers/AWSFMDatabaseQueue.h"
+- "./AWSCore.framework/Headers/AWSFMDatabaseAdditions.h"
+- "./AWSCore.framework/Headers/AWSFMDatabasePool.h"
+- "./AWSCore.framework/Headers/AWSFMResultSet.h"
+- "./AWSCore.framework/Headers/AWSFMDatabase.h"
+- "./AWSCore.framework/Headers/AWSFMDB.h"
+- "./AWSCore.framework/Headers/AWSGZIP.h"
+- "./AWSCore.framework/Headers/AWSTaskCompletionSource.h"
+- "./AWSCore.framework/Headers/AWSTask.h"
+- "./AWSCore.framework/Headers/AWSExecutor.h"
+- "./AWSCore.framework/Headers/AWSCancellationTokenSource.h"
+- "./AWSCore.framework/Headers/AWSCancellationTokenRegistration.h"
+- "./AWSCore.framework/Headers/AWSCancellationToken.h"
+- "./AWSCore.framework/Headers/AWSBoltsVersion.h"
+- "./AWSCore.framework/Headers/AWSBolts.h"
+- "./AWSCore.framework/Headers/AWSSignature.h"
+- "./AWSCore.framework/Headers/AWSSynchronizedMutableDictionary.h"
+- "./AWSCore.framework/Headers/AWSClientContext.h"
+- "./AWSCore.framework/Headers/AWSLogging.h"
+- "./AWSCore.framework/Headers/AWSCategory.h"
+- "./AWSCore.framework/Headers/AWSIdentityProvider.h"
+- "./AWSCore.framework/Headers/AWSCredentialsProvider.h"
+- "./AWSCore.framework/Headers/NSValueTransformer+AWSMTLPredefinedTransformerAdditions.h"
+- "./AWSCore.framework/Headers/NSValueTransformer+AWSMTLInversionAdditions.h"
+- "./AWSCore.framework/Headers/NSObject+AWSMTLComparisonAdditions.h"
+- "./AWSCore.framework/Headers/NSDictionary+AWSMTLManipulationAdditions.h"
+- "./AWSCore.framework/Headers/NSArray+AWSMTLManipulationAdditions.h"
+- "./AWSCore.framework/Headers/AWSMTLValueTransformer.h"
+- "./AWSCore.framework/Headers/AWSMTLModel+NSCoding.h"
+- "./AWSCore.framework/Headers/AWSMTLModel.h"
+- "./AWSCore.framework/Headers/AWSMTLManagedObjectAdapter.h"
+- "./AWSCore.framework/Headers/AWSMTLJSONAdapter.h"
+- "./AWSCore.framework/Headers/AWSMantle.h"
+- "./AWSCore.framework/Headers/AWSModel.h"
+- "./AWSCore.framework/Headers/AWSNetworking.h"
+- "./AWSCore.framework/Headers/AWSService.h"
+- "./AWSCore.framework/Headers/AWSServiceEnum.h"
+- "./AWSCore.framework/Headers/AWSCore.h"
+- "./AWSCore.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+- "./AWSS3.framework/Headers/AWSS3TransferUtility.h"
+- "./AWSS3.framework/Headers/AWSS3PreSignedURL.h"
+- "./AWSS3.framework/Headers/AWSS3TransferManager.h"
+- "./AWSS3.framework/Headers/AWSS3Model.h"
+- "./AWSS3.framework/Headers/AWSS3Service.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/AWSCore.framework/Modules/module.modulemap"
+- "./AWSS3.framework/Headers/AWSS3.h"
+- "./AWSS3.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "./AWSCognito.framework/Headers/AWSCognitoConflict.h"
+- "./AWSCognito.framework/Headers/AWSCognitoRecord.h"
+- "./AWSCognito.framework/Headers/AWSCognitoDataset.h"
+- "./AWSCognito.framework/Headers/AWSCognitoSyncModel.h"
+- "./AWSCognito.framework/Headers/AWSCognitoSyncService.h"
+- "./AWSCognito.framework/Headers/AWSCognitoHandlers.h"
+- "./AWSCognito.framework/Headers/AWSCognitoService.h"
+- "./AWSCognito.framework/Headers/AWSCognito.h"
+- "./AWSCognito.framework/Modules/module.modulemap"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/Geofire.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFCircleQuery.h"
+- "/Users/JLH/Desktop/Personal Projects/TineSE/./Geofire.framework/Headers/GFRegionQuery.h"
+- "./Firebase.framework/Headers/FConfig.h"
+- "./Firebase.framework/Headers/FirebaseServerValue.h"
+- "./Firebase.framework/Headers/FAuthType.h"
+- "./Firebase.framework/Headers/FAuthData.h"
+- "./Firebase.framework/Headers/FTransactionResult.h"
+- "./Firebase.framework/Headers/FMutableData.h"
+- "./Firebase.framework/Headers/FirebaseApp.h"
+- "./Firebase.framework/Headers/FDataSnapshot.h"
+- "./Firebase.framework/Headers/FEventType.h"
+- "./Firebase.framework/Headers/FQuery.h"
+- "./Firebase.framework/Headers/Firebase.h"
+- "./Firebase.framework/Modules/module.modulemap"
+interface-hash: "eab2cdedda5808ff4c1a13d2dbfb0adf"

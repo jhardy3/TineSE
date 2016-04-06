@@ -28,7 +28,6 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     // MARK: - IBOutlet Properties
     @IBOutlet weak var followButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
     @IBOutlet weak var hunterProfileImage: UIImageView!
@@ -44,6 +43,11 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     var viewLoaded = false
     var viewMode = FollowingState.User
     var trackingCount = 0
+    var isFinished: Bool = false {
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
     
     
     // is Following Bool checks for following status based on button title text
@@ -76,6 +80,8 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         
         followButton.layer.cornerRadius = 7.0
         followButton.clipsToBounds = true
@@ -166,7 +172,6 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             // If hunter is prevalent set hunter property to retrieved hunter
             if let hunter = hunter {
                 self.hunter = hunter
-                self.usernameLabel.text = hunter.username.lowercaseString
                 self.brownsCountLabel.text = "Browns: " + (String(hunter.brownCount))
                 self.whitesCountLabel.text = "Whites: " + (String(hunter.whiteCount))
                 self.chalksCountLabel.text = "Chalks: " + (String(hunter.chalkCount))
@@ -202,7 +207,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             
             // check for hunter
             if let hunter = self.hunter {
-                
+                hunter.shedIDs.sortInPlace { $0 > $1 }
                 // If hunter exists grab all shed IDs and fetch shed ; enter dispatch group
                 for id in hunter.shedIDs {
                     dispatch_group_enter(group)
@@ -224,7 +229,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             // Once async calls finish reload data
             dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
                 self.sheds.sortInPlace { $0.0.identifier > $0.1.identifier }
-                self.collectionView.reloadData()
+                self.isFinished = true
             }
         }
     }

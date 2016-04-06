@@ -39,6 +39,16 @@ class logInViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.proceedButton.layer.cornerRadius = 7.0
+        self.toggleModeButton.layer.cornerRadius = 7.0
+        self.proceedButton.layer.borderWidth = 2.0
+        self.toggleModeButton.layer.borderWidth = 2.0
+        self.proceedButton.layer.borderColor = UIColor.hunterOrange().CGColor
+        self.toggleModeButton.layer.borderColor = UIColor.hunterOrange().CGColor
+        self.toggleModeButton.clipsToBounds = true
+        self.proceedButton.clipsToBounds = true
+        
+        
         self.loadImageView.image = self.loadImageView.image?.imageWithColor(UIColor.hunterOrange())
         self.loadImageView.hidden = true
         displayBasedOnViewMode()
@@ -151,7 +161,7 @@ class logInViewController: UIViewController, UITextFieldDelegate {
     
     func signUp() {
         // Guard for username, email and password or return
-        guard let username = usernameTextField.text, let email = emailTextField.text, let password = passwordTextField.text where username.isEmpty == false else { return }
+        guard let username = usernameTextField.text, let email = emailTextField.text, let password = passwordTextField.text else { return }
         
         
         

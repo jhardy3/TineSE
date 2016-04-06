@@ -13,6 +13,7 @@ class ShedDetailViewController: UIViewController {
     @IBOutlet weak var shedImageView: UIImageView!
     @IBOutlet weak var shedColorLabel: UILabel!
     @IBOutlet weak var shedTypeLabel: UILabel!
+    @IBOutlet weak var animalImageView: UIImageView!
     
     var shed: Shed?
     
@@ -20,7 +21,7 @@ class ShedDetailViewController: UIViewController {
         super.viewDidLoad()
         shedColorLabel.textColor = UIColor.hunterOrange()
         shedTypeLabel.textColor = UIColor.hunterOrange()
-        if let shed = shed {
+        if let shed = self.shed {
             updateWithShed(shed)
         }
 
@@ -34,10 +35,28 @@ class ShedDetailViewController: UIViewController {
     
     func updateWithShed(shed: Shed) {
 
+        self.navigationController?.navigationBar.topItem?.title = shed.username
         self.shedImageView.image = shed.shedImage
-        self.shedTypeLabel.text = shed.shedType.capitalizedString
-        self.shedColorLabel.text = shed.shedColor.capitalizedString
-
+        self.shedTypeLabel.text = "Shed Type: \(shed.shedType)"
+        self.shedColorLabel.text = "Shed Color: \(shed.shedColor)"
+        
+        switch shed.shedType {
+            case "Moose":
+                animalImageView.image = UIImage(named: "Moose")
+            case "Elk":
+                animalImageView.image = UIImage(named: "Elk")
+            case "Deer":
+                animalImageView.image = UIImage(named: "Deer")
+        default:
+                animalImageView.image = UIImage(named: "llama")
+        }
+        
+        if shed.shedColor == "Non-Shed" {
+            self.shedTypeLabel.text = "...not all sheds can be found..."
+            self.shedColorLabel.hidden = true
+            animalImageView.image = UIImage(named: "llama")
+        }
+        
     }
 
     /*

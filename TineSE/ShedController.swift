@@ -41,15 +41,17 @@ class ShedController {
                 switch shedColor {
                 case "Brown" :
                     currentHunter.brownCount = currentHunter.brownCount + 1
+                    currentHunter.shedCount = currentHunter.shedCount + 1
                 case "White" :
                     currentHunter.whiteCount = currentHunter.whiteCount + 1
+                    currentHunter.shedCount = currentHunter.shedCount + 1
                 case "Chalk" :
                     currentHunter.chalkCount = currentHunter.chalkCount + 1
+                    currentHunter.shedCount = currentHunter.shedCount + 1
                 default :
-                    return
+                    break
                 }
                 
-                currentHunter.shedCount = currentHunter.shedCount + 1
                 currentHunter.save()
                 
                 // Complete true

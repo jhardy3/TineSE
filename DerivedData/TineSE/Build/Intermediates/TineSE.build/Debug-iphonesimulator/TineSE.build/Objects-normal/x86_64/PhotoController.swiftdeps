@@ -7,21 +7,21 @@ provides-member:
 - ["C6TineSE15PhotoController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "AnyObject"
-- "UIImage"
-- !private "NSProcessInfo"
-- !private "NSURL"
-- !private "UIImageJPEGRepresentation"
 - "StringLiteralType"
-- !private "NSTemporaryDirectory"
-- !private "AWSS3TransferManager"
-- !private "print"
-- "PhotoController"
 - !private "AWSS3TransferManagerUploadRequest"
-- "String"
-- !private "BooleanLiteralType"
-- !private "!="
+- !private "AnyObject"
+- !private "print"
+- !private "NSURL"
 - "Void"
+- !private "NSTemporaryDirectory"
+- "String"
+- "UIImage"
+- !private "UIImageJPEGRepresentation"
+- !private "NSProcessInfo"
+- !private "AWSS3TransferManager"
+- !private "BooleanLiteralType"
+- "PhotoController"
+- !private "!="
 - !private "NSURLSession"
 depends-member:
 - !private ["PSo21AWSMTLJSONSerializing", "body"]

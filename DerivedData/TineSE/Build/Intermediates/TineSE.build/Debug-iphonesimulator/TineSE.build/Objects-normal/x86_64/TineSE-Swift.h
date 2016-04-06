@@ -166,6 +166,7 @@ SWIFT_CLASS("_TtC6TineSE20CameraViewController")
 - (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 - (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)errorAlert:(NSArray<NSString *> * _Nonnull)errorMessages addCancel:(BOOL)addCancel addMessage:(NSString * _Nullable)addMessage;
 - (void)createAnimation;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -214,15 +215,14 @@ SWIFT_CLASS("_TtC6TineSE25LeaderboardViewController")
 @end
 
 @class UICollectionView;
-@class UILabel;
 @class UICollectionViewFlowLayout;
+@class UILabel;
 
 SWIFT_CLASS("_TtC6TineSE21ProfileViewController")
 @interface ProfileViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
 @property (nonatomic, readonly) CGFloat kMargin;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified followButton;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
 @property (nonatomic, weak) IBOutlet UICollectionViewFlowLayout * _Null_unspecified flowLayout;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified hunterProfileImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified brownsCountLabel;
@@ -233,6 +233,7 @@ SWIFT_CLASS("_TtC6TineSE21ProfileViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified trackingCountLabel;
 @property (nonatomic) BOOL viewLoaded;
 @property (nonatomic) NSInteger trackingCount;
+@property (nonatomic) BOOL isFinished;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLoad;
@@ -292,10 +293,10 @@ SWIFT_CLASS("_TtC6TineSE25SearchTableViewController")
 
 SWIFT_CLASS("_TtC6TineSE24ShedDetailViewController")
 @interface ShedDetailViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified shedImageView;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedTypeLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedColorLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedTypeLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified animalImageView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -310,8 +311,6 @@ SWIFT_CLASS("_TtC6TineSE17ShedTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameTextField;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified shedImageView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified reportButton;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedTypeTextLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified shedColorTextLabel;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (void)prepareForReuse;
 - (IBAction)utilitiesButtonTapped:(UIButton * _Nonnull)sender;
@@ -379,6 +378,7 @@ SWIFT_CLASS("_TtC6TineSE22TinelineViewController")
 - (void)downloadImageFromLink:(NSString * _Nonnull)link contentMode:(UIViewContentMode)contentMode;
 @end
 
+@class UIVisualEffectView;
 
 SWIFT_CLASS("_TtC6TineSE19logInViewController")
 @interface logInViewController : UIViewController <UITextFieldDelegate>
@@ -387,17 +387,26 @@ SWIFT_CLASS("_TtC6TineSE19logInViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTextField;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified proceedButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified toggleModeButton;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified loadImageView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified logInImageView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified logInView;
+@property (nonatomic, strong) UIVisualEffectView * _Nullable blurEffect;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (IBAction)proceedButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)toggleModeButtonTapped:(UIButton * _Nonnull)sender;
+- (void)blurImageBackground:(id _Nonnull)item;
+- (void)createAnimation;
+- (void)endAnimation;
 - (void)signIn;
 - (void)signUp;
+- (BOOL)checkForEmptiness:(NSString * _Nonnull)string;
 - (void)displayBasedOnViewMode;
 - (void)setupTextFields;
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
+- (void)errorAlert:(NSArray<NSString *> * _Nonnull)errorMessages addCancel:(BOOL)addCancel addMessage:(NSString * _Nullable)addMessage;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

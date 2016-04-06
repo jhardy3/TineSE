@@ -67,6 +67,7 @@ class TinelineViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         self.tableView.rowHeight = self.view.frame.height / 1.6
         setupLocationManagerAndGrabLocalSheds()
         fetchShedsFirstLoad()

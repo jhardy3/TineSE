@@ -39,6 +39,7 @@ class ShedTableViewCell: UITableViewCell {
     // Update View with passed in shed
     func updateWith(shed: Shed) {
         self.shed = shed
+        self.usernameTextField.textColor = UIColor.hunterOrange()
         
         // If shed image exists, set shedImageView to image
         if shed.shedImage == nil {
