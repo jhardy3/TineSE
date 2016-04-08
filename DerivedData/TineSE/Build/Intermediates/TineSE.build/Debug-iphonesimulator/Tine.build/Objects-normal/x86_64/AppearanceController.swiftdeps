@@ -7,16 +7,16 @@ provides-member:
 - ["C4Tine20AppearanceController", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "Dictionary"
+- !private "UINavigationBar"
 - !private "UITabBarItem"
 - !private "UIToolbar"
+- !private "UIColor"
 - !private "UISegmentedControl"
 - "AppearanceController"
-- !private "UIColor"
-- !private "Dictionary"
-- !private "UIBarButtonItem"
 - !private "NSForegroundColorAttributeName"
-- !private "UINavigationBar"
 - !private "UITabBar"
+- !private "UIBarButtonItem"
 depends-member:
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
@@ -26,6 +26,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UITabBar"]
 - !private ["Ps9AnyObject", "UITabBarItem"]
 - !private ["Ps9AnyObject", "UIToolbar"]
+- !private ["Ps9AnyObject", "alpha"]
 - !private ["Ps9AnyObject", "appearance"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "barTintColor"]
@@ -48,6 +49,8 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "Application"]
 - !private ["Ps23ArrayLiteralConvertible", "Normal"]
 - !private ["Ps23ArrayLiteralConvertible", "Selected"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps11CVarArgType", "alpha"]
 - !private ["Ps11CVarArgType", "appearance"]
 - !private ["Ps11CVarArgType", "backgroundColor"]
 - !private ["Ps11CVarArgType", "barTintColor"]
@@ -59,6 +62,7 @@ depends-member:
 - !private ["Ps14CollectionType", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "alpha"]
 - !private ["Ps28CustomDebugStringConvertible", "appearance"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "barTintColor"]
@@ -68,6 +72,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "alpha"]
 - !private ["Ps23CustomStringConvertible", "appearance"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "barTintColor"]
@@ -82,6 +87,7 @@ depends-member:
 - !private ["Ps9Equatable", "Application"]
 - !private ["Ps9Equatable", "Normal"]
 - !private ["Ps9Equatable", "Selected"]
+- !private ["Ps9Equatable", "alpha"]
 - !private ["Ps9Equatable", "appearance"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "barTintColor"]
@@ -89,6 +95,7 @@ depends-member:
 - !private ["Ps9Equatable", "setTitleTextAttributes"]
 - !private ["Ps9Equatable", "tintColor"]
 - !private ["Ps9Equatable", "whiteColor"]
+- !private ["Ps8Hashable", "alpha"]
 - !private ["Ps8Hashable", "appearance"]
 - !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "barTintColor"]
@@ -98,6 +105,7 @@ depends-member:
 - !private ["Ps8Hashable", "whiteColor"]
 - !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "Value"]
+- !private ["PSo8NSCoding", "alpha"]
 - !private ["PSo8NSCoding", "appearance"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "barTintColor"]
@@ -107,6 +115,7 @@ depends-member:
 - !private ["PSo8NSCoding", "whiteColor"]
 - !private ["PSo9NSCopying", "hunterOrange"]
 - !private ["PSo9NSCopying", "whiteColor"]
+- !private ["CSo8NSObject", "alpha"]
 - !private ["CSo8NSObject", "appearance"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "barTintColor"]
@@ -114,6 +123,7 @@ depends-member:
 - !private ["CSo8NSObject", "setTitleTextAttributes"]
 - !private ["CSo8NSObject", "tintColor"]
 - !private ["CSo8NSObject", "whiteColor"]
+- !private ["PSo16NSObjectProtocol", "alpha"]
 - !private ["PSo16NSObjectProtocol", "appearance"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "barTintColor"]
@@ -135,16 +145,19 @@ depends-member:
 - !private ["Ps14SetAlgebraType", "Application"]
 - !private ["Ps14SetAlgebraType", "Normal"]
 - !private ["Ps14SetAlgebraType", "Selected"]
+- !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "appearance"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
 - !private ["PSo29UIAccessibilityIdentification", "setTitleTextAttributes"]
 - !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- !private ["PSo12UIAppearance", "alpha"]
 - !private ["PSo12UIAppearance", "appearance"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "barTintColor"]
 - !private ["PSo12UIAppearance", "setTitleTextAttributes"]
 - !private ["PSo12UIAppearance", "tintColor"]
+- !private ["PSo21UIAppearanceContainer", "alpha"]
 - !private ["PSo21UIAppearanceContainer", "appearance"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "barTintColor"]
@@ -153,6 +166,7 @@ depends-member:
 - !private ["CSo15UIBarButtonItem", "setTitleTextAttributes"]
 - !private ["CSo9UIBarItem", "appearance"]
 - !private ["CSo9UIBarItem", "setTitleTextAttributes"]
+- !private ["PSo16UIBarPositioning", "alpha"]
 - !private ["PSo16UIBarPositioning", "appearance"]
 - !private ["PSo16UIBarPositioning", "backgroundColor"]
 - !private ["PSo16UIBarPositioning", "barTintColor"]
@@ -163,27 +177,33 @@ depends-member:
 - !private ["VSC14UIControlState", "Application"]
 - !private ["VSC14UIControlState", "Normal"]
 - !private ["VSC14UIControlState", "Selected"]
+- !private ["PSo17UICoordinateSpace", "alpha"]
 - !private ["PSo17UICoordinateSpace", "appearance"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "barTintColor"]
 - !private ["PSo17UICoordinateSpace", "tintColor"]
+- !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "appearance"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "barTintColor"]
 - !private ["PSo13UIDynamicItem", "tintColor"]
+- !private ["PSo18UIFocusEnvironment", "alpha"]
 - !private ["PSo18UIFocusEnvironment", "appearance"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "barTintColor"]
 - !private ["PSo18UIFocusEnvironment", "tintColor"]
+- !private ["CSo15UINavigationBar", "alpha"]
 - !private ["CSo15UINavigationBar", "appearance"]
 - !private ["CSo15UINavigationBar", "backgroundColor"]
 - !private ["CSo15UINavigationBar", "barTintColor"]
+- !private ["CSo11UIResponder", "alpha"]
 - !private ["CSo11UIResponder", "appearance"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "barTintColor"]
 - !private ["CSo11UIResponder", "tintColor"]
 - !private ["CSo18UISegmentedControl", "appearance"]
 - !private ["CSo18UISegmentedControl", "tintColor"]
+- !private ["CSo8UITabBar", "alpha"]
 - !private ["CSo8UITabBar", "appearance"]
 - !private ["CSo8UITabBar", "backgroundColor"]
 - !private ["CSo8UITabBar", "barTintColor"]
@@ -192,10 +212,12 @@ depends-member:
 - !private ["CSo12UITabBarItem", "setTitleTextAttributes"]
 - !private ["CSo9UIToolbar", "appearance"]
 - !private ["CSo9UIToolbar", "barTintColor"]
+- !private ["PSo18UITraitEnvironment", "alpha"]
 - !private ["PSo18UITraitEnvironment", "appearance"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "barTintColor"]
 - !private ["PSo18UITraitEnvironment", "tintColor"]
+- !private ["CSo6UIView", "alpha"]
 - !private ["CSo6UIView", "appearance"]
 - !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "barTintColor"]
@@ -206,6 +228,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps12_Reflectable", "Key"]
 - !private ["Ps12_Reflectable", "Value"]
+- !private ["Ps12_Reflectable", "alpha"]
 - !private ["Ps12_Reflectable", "appearance"]
 - !private ["Ps12_Reflectable", "backgroundColor"]
 - !private ["Ps12_Reflectable", "barTintColor"]
@@ -214,6 +237,7 @@ depends-nominal:
 - "Ps9AnyObject"
 - "C4Tine20AppearanceController"
 - !private "Ps23ArrayLiteralConvertible"
+- !private "V12CoreGraphics7CGFloat"
 - !private "Ps11CVarArgType"
 - !private "Ps14CollectionType"
 - !private "Ps28CustomDebugStringConvertible"

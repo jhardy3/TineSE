@@ -11,7 +11,7 @@
         <!--Leaderboard View Controller-->
         <scene sceneID="fgQ-iB-yN2">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="gF3-p6-3eT" customClass="LeaderboardViewController" customModule="TineSE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="gF3-p6-3eT" customClass="LeaderboardViewController" customModule="Tine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="01R-lV-rTp"/>
                         <viewControllerLayoutGuide type="bottom" id="Qsb-fV-iWV"/>
@@ -139,7 +139,7 @@
         <!--Tineline View Controller-->
         <scene sceneID="w8N-u3-OhC">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="J5h-3Y-IZb" customClass="TinelineViewController" customModule="TineSE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="J5h-3Y-IZb" customClass="TinelineViewController" customModule="Tine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wAK-m4-51t"/>
                         <viewControllerLayoutGuide type="bottom" id="31y-Yf-mRu"/>
@@ -152,11 +152,11 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="shedCell" rowHeight="445" id="qfe-AQ-OIA" customClass="ShedTableViewCell" customModule="TineSE" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="464"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="shedCell" rowHeight="445" id="qfe-AQ-OIA" customClass="ShedTableViewCell" customModule="Tine" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="445"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qfe-AQ-OIA" id="55h-xy-9vS">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="463.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="444.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzP-6p-IY2">
@@ -237,6 +237,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.85579097014808791" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="8ro-Y5-LUp" firstAttribute="centerX" secondItem="55h-xy-9vS" secondAttribute="centerX" id="1My-kk-pds"/>
                                                 <constraint firstItem="tzP-6p-IY2" firstAttribute="top" secondItem="55h-xy-9vS" secondAttribute="topMargin" constant="8" id="34Y-AN-AMr">
@@ -408,7 +409,7 @@
         <!--Profile View Controller-->
         <scene sceneID="ltc-tt-37I">
             <objects>
-                <viewController id="fkd-a4-Gbf" customClass="ProfileViewController" customModule="TineSE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fkd-a4-Gbf" customClass="ProfileViewController" customModule="Tine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bV5-YS-CHy"/>
                         <viewControllerLayoutGuide type="bottom" id="7hE-1f-Gfm"/>
@@ -447,7 +448,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="shedCell" id="53e-4g-sGc" customClass="ImageCollectionViewCell" customModule="TineSE" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="shedCell" id="53e-4g-sGc" customClass="ImageCollectionViewCell" customModule="Tine" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -795,22 +796,50 @@
                                 <exclude reference="bhA-aM-VlV"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="B0c-TI-XnR"/>
-                                <exclude reference="kDq-AS-wHR"/>
+                                <exclude reference="YN7-dg-fEw"/>
+                                <exclude reference="edD-UK-p51"/>
+                                <exclude reference="Bet-Lo-zry"/>
+                                <exclude reference="QAh-wl-2sq"/>
+                                <exclude reference="xUN-pf-Yld"/>
+                                <exclude reference="zxN-au-p6p"/>
                                 <exclude reference="kIa-Ab-tEh"/>
                                 <exclude reference="lJL-yf-op3"/>
                                 <exclude reference="qFx-US-ftK"/>
                                 <exclude reference="vXS-S3-D02"/>
+                                <exclude reference="2x0-3I-XeL"/>
+                                <exclude reference="EjO-By-rVA"/>
+                                <exclude reference="IVO-ns-sbO"/>
+                                <exclude reference="e9N-0J-enA"/>
+                                <exclude reference="ylg-gK-DML"/>
+                                <exclude reference="JM0-bn-NCJ"/>
+                                <exclude reference="LrX-D5-I7X"/>
+                                <exclude reference="bX9-b6-2lM"/>
+                                <exclude reference="kIM-J9-X8d"/>
                                 <exclude reference="C64-ZR-YHI"/>
                                 <exclude reference="KjI-zD-AQd"/>
                                 <exclude reference="pUb-83-PPX"/>
                                 <exclude reference="9J8-GE-BKd"/>
                                 <exclude reference="oSS-Ra-2Jj"/>
                                 <exclude reference="wFh-He-wvQ"/>
-                                <exclude reference="Bet-Lo-zry"/>
-                                <exclude reference="QAh-wl-2sq"/>
-                                <exclude reference="xUN-pf-Yld"/>
-                                <exclude reference="zxN-au-p6p"/>
+                                <exclude reference="Wbf-3T-HuV"/>
+                                <exclude reference="ar9-ph-3fV"/>
+                                <exclude reference="o5M-KR-v6E"/>
+                                <exclude reference="wvZ-9d-uRT"/>
+                                <exclude reference="74w-QT-bHc"/>
+                                <exclude reference="TYf-sF-ew9"/>
+                                <exclude reference="cWC-ms-J3Q"/>
+                                <exclude reference="hWz-0a-klf"/>
+                                <exclude reference="mfv-7B-ApP"/>
+                                <exclude reference="4eb-wF-vLW"/>
+                                <exclude reference="DQk-Hg-1XQ"/>
+                                <exclude reference="Lad-JU-qtQ"/>
+                                <exclude reference="nod-Yx-d4i"/>
+                                <exclude reference="6JU-tR-AEb"/>
+                                <exclude reference="7X0-O8-nXj"/>
+                                <exclude reference="ktS-Xc-3Sl"/>
+                                <exclude reference="QW9-70-Qtq"/>
+                                <exclude reference="edP-MF-MJz"/>
+                                <exclude reference="zHa-Nc-glW"/>
                                 <exclude reference="4eg-5e-R5m"/>
                                 <exclude reference="4op-iq-p4e"/>
                                 <exclude reference="8aD-Ff-ehD"/>
@@ -819,36 +848,8 @@
                                 <exclude reference="TId-Hb-KCf"/>
                                 <exclude reference="W3v-Lt-HyD"/>
                                 <exclude reference="aVQ-lV-Cg9"/>
-                                <exclude reference="JM0-bn-NCJ"/>
-                                <exclude reference="LrX-D5-I7X"/>
-                                <exclude reference="bX9-b6-2lM"/>
-                                <exclude reference="kIM-J9-X8d"/>
-                                <exclude reference="74w-QT-bHc"/>
-                                <exclude reference="TYf-sF-ew9"/>
-                                <exclude reference="cWC-ms-J3Q"/>
-                                <exclude reference="hWz-0a-klf"/>
-                                <exclude reference="mfv-7B-ApP"/>
-                                <exclude reference="6JU-tR-AEb"/>
-                                <exclude reference="7X0-O8-nXj"/>
-                                <exclude reference="ktS-Xc-3Sl"/>
-                                <exclude reference="Wbf-3T-HuV"/>
-                                <exclude reference="ar9-ph-3fV"/>
-                                <exclude reference="o5M-KR-v6E"/>
-                                <exclude reference="wvZ-9d-uRT"/>
-                                <exclude reference="QW9-70-Qtq"/>
-                                <exclude reference="edP-MF-MJz"/>
-                                <exclude reference="zHa-Nc-glW"/>
-                                <exclude reference="4eb-wF-vLW"/>
-                                <exclude reference="DQk-Hg-1XQ"/>
-                                <exclude reference="Lad-JU-qtQ"/>
-                                <exclude reference="nod-Yx-d4i"/>
-                                <exclude reference="2x0-3I-XeL"/>
-                                <exclude reference="EjO-By-rVA"/>
-                                <exclude reference="IVO-ns-sbO"/>
-                                <exclude reference="e9N-0J-enA"/>
-                                <exclude reference="ylg-gK-DML"/>
-                                <exclude reference="YN7-dg-fEw"/>
-                                <exclude reference="edD-UK-p51"/>
+                                <exclude reference="B0c-TI-XnR"/>
+                                <exclude reference="kDq-AS-wHR"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -868,22 +869,50 @@
                                 <include reference="bhA-aM-VlV"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="B0c-TI-XnR"/>
-                                <include reference="kDq-AS-wHR"/>
+                                <include reference="YN7-dg-fEw"/>
+                                <include reference="edD-UK-p51"/>
+                                <include reference="Bet-Lo-zry"/>
+                                <include reference="QAh-wl-2sq"/>
+                                <include reference="xUN-pf-Yld"/>
+                                <exclude reference="zxN-au-p6p"/>
                                 <include reference="kIa-Ab-tEh"/>
                                 <include reference="lJL-yf-op3"/>
                                 <include reference="qFx-US-ftK"/>
                                 <include reference="vXS-S3-D02"/>
+                                <include reference="2x0-3I-XeL"/>
+                                <exclude reference="EjO-By-rVA"/>
+                                <exclude reference="IVO-ns-sbO"/>
+                                <exclude reference="e9N-0J-enA"/>
+                                <include reference="ylg-gK-DML"/>
+                                <include reference="JM0-bn-NCJ"/>
+                                <include reference="LrX-D5-I7X"/>
+                                <include reference="bX9-b6-2lM"/>
+                                <exclude reference="kIM-J9-X8d"/>
                                 <include reference="C64-ZR-YHI"/>
                                 <include reference="KjI-zD-AQd"/>
                                 <include reference="pUb-83-PPX"/>
                                 <include reference="9J8-GE-BKd"/>
                                 <include reference="oSS-Ra-2Jj"/>
                                 <exclude reference="wFh-He-wvQ"/>
-                                <include reference="Bet-Lo-zry"/>
-                                <include reference="QAh-wl-2sq"/>
-                                <include reference="xUN-pf-Yld"/>
-                                <exclude reference="zxN-au-p6p"/>
+                                <exclude reference="Wbf-3T-HuV"/>
+                                <include reference="ar9-ph-3fV"/>
+                                <exclude reference="o5M-KR-v6E"/>
+                                <include reference="wvZ-9d-uRT"/>
+                                <include reference="74w-QT-bHc"/>
+                                <include reference="TYf-sF-ew9"/>
+                                <exclude reference="cWC-ms-J3Q"/>
+                                <include reference="hWz-0a-klf"/>
+                                <include reference="mfv-7B-ApP"/>
+                                <include reference="4eb-wF-vLW"/>
+                                <include reference="DQk-Hg-1XQ"/>
+                                <exclude reference="Lad-JU-qtQ"/>
+                                <include reference="nod-Yx-d4i"/>
+                                <include reference="6JU-tR-AEb"/>
+                                <include reference="7X0-O8-nXj"/>
+                                <include reference="ktS-Xc-3Sl"/>
+                                <include reference="QW9-70-Qtq"/>
+                                <include reference="edP-MF-MJz"/>
+                                <include reference="zHa-Nc-glW"/>
                                 <exclude reference="4eg-5e-R5m"/>
                                 <include reference="4op-iq-p4e"/>
                                 <include reference="8aD-Ff-ehD"/>
@@ -892,36 +921,8 @@
                                 <exclude reference="TId-Hb-KCf"/>
                                 <include reference="W3v-Lt-HyD"/>
                                 <include reference="aVQ-lV-Cg9"/>
-                                <include reference="JM0-bn-NCJ"/>
-                                <include reference="LrX-D5-I7X"/>
-                                <include reference="bX9-b6-2lM"/>
-                                <exclude reference="kIM-J9-X8d"/>
-                                <include reference="74w-QT-bHc"/>
-                                <include reference="TYf-sF-ew9"/>
-                                <exclude reference="cWC-ms-J3Q"/>
-                                <include reference="hWz-0a-klf"/>
-                                <include reference="mfv-7B-ApP"/>
-                                <include reference="6JU-tR-AEb"/>
-                                <include reference="7X0-O8-nXj"/>
-                                <include reference="ktS-Xc-3Sl"/>
-                                <exclude reference="Wbf-3T-HuV"/>
-                                <include reference="ar9-ph-3fV"/>
-                                <exclude reference="o5M-KR-v6E"/>
-                                <include reference="wvZ-9d-uRT"/>
-                                <include reference="QW9-70-Qtq"/>
-                                <include reference="edP-MF-MJz"/>
-                                <include reference="zHa-Nc-glW"/>
-                                <include reference="4eb-wF-vLW"/>
-                                <include reference="DQk-Hg-1XQ"/>
-                                <exclude reference="Lad-JU-qtQ"/>
-                                <include reference="nod-Yx-d4i"/>
-                                <include reference="2x0-3I-XeL"/>
-                                <exclude reference="EjO-By-rVA"/>
-                                <exclude reference="IVO-ns-sbO"/>
-                                <exclude reference="e9N-0J-enA"/>
-                                <include reference="ylg-gK-DML"/>
-                                <include reference="YN7-dg-fEw"/>
-                                <include reference="edD-UK-p51"/>
+                                <include reference="B0c-TI-XnR"/>
+                                <include reference="kDq-AS-wHR"/>
                             </mask>
                         </variation>
                     </view>
@@ -946,12 +947,13 @@
         <!--Shed Detail View Controller-->
         <scene sceneID="DEW-TQ-KXp">
             <objects>
-                <viewController id="wqs-bJ-quM" customClass="ShedDetailViewController" customModule="TineSE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wqs-bJ-quM" customClass="ShedDetailViewController" customModule="Tine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2WN-Jc-vER"/>
                         <viewControllerLayoutGuide type="bottom" id="1rl-Me-sVm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gyp-JE-enl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rGf-51-jN8">
@@ -1049,19 +1051,19 @@
                                 <exclude reference="pJK-PA-xq1"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="NKx-gc-66W"/>
-                                <exclude reference="S8z-BB-jvO"/>
-                                <exclude reference="qqT-25-mdl"/>
+                                <exclude reference="b5H-lN-oGS"/>
                                 <exclude reference="Bhh-73-1YE"/>
                                 <exclude reference="e3J-Bx-pU6"/>
                                 <exclude reference="wpY-LK-nwf"/>
-                                <exclude reference="JPA-gA-9kc"/>
-                                <exclude reference="ach-zv-0xS"/>
-                                <exclude reference="lOc-v7-BRe"/>
                                 <exclude reference="8Ie-Fl-HBF"/>
                                 <exclude reference="cO5-lg-zvi"/>
                                 <exclude reference="hUG-vM-pNW"/>
-                                <exclude reference="b5H-lN-oGS"/>
+                                <exclude reference="JPA-gA-9kc"/>
+                                <exclude reference="ach-zv-0xS"/>
+                                <exclude reference="lOc-v7-BRe"/>
+                                <exclude reference="NKx-gc-66W"/>
+                                <exclude reference="S8z-BB-jvO"/>
+                                <exclude reference="qqT-25-mdl"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1072,19 +1074,19 @@
                                 <include reference="pJK-PA-xq1"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="NKx-gc-66W"/>
-                                <include reference="S8z-BB-jvO"/>
-                                <include reference="qqT-25-mdl"/>
+                                <include reference="b5H-lN-oGS"/>
                                 <include reference="Bhh-73-1YE"/>
                                 <exclude reference="e3J-Bx-pU6"/>
                                 <include reference="wpY-LK-nwf"/>
-                                <include reference="JPA-gA-9kc"/>
-                                <include reference="ach-zv-0xS"/>
-                                <include reference="lOc-v7-BRe"/>
                                 <include reference="8Ie-Fl-HBF"/>
                                 <exclude reference="cO5-lg-zvi"/>
                                 <include reference="hUG-vM-pNW"/>
-                                <include reference="b5H-lN-oGS"/>
+                                <include reference="JPA-gA-9kc"/>
+                                <include reference="ach-zv-0xS"/>
+                                <include reference="lOc-v7-BRe"/>
+                                <include reference="NKx-gc-66W"/>
+                                <include reference="S8z-BB-jvO"/>
+                                <include reference="qqT-25-mdl"/>
                             </mask>
                         </variation>
                     </view>
@@ -1102,7 +1104,7 @@
         <!--Log In View Controller-->
         <scene sceneID="Dl6-j9-e1o">
             <objects>
-                <viewController id="LCZ-FI-MhX" customClass="logInViewController" customModule="TineSE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LCZ-FI-MhX" customClass="logInViewController" customModule="Tine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c9l-mT-TRH"/>
                         <viewControllerLayoutGuide type="bottom" id="R4f-Lk-1YL"/>
@@ -1136,7 +1138,7 @@
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
                                         <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
-                                            <rect key="frame" x="0.0" y="8" width="360" height="37"/>
+                                            <rect key="frame" x="0.0" y="8" width="360" height="30"/>
                                         </variation>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qCk-k9-JhD">
@@ -1201,8 +1203,8 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7037621897163121" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="21"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert"/>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
-                                            <rect key="frame" x="0.0" y="53" width="360" height="30"/>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="53" width="360" height="37"/>
                                         </variation>
                                     </textField>
                                 </subviews>
@@ -1350,6 +1352,10 @@
                                 <exclude reference="upL-bF-JDd"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="dvX-Ua-Adq"/>
+                                <exclude reference="osW-3W-sgF"/>
+                                <exclude reference="HZI-R1-hal"/>
+                                <exclude reference="wQb-zG-fck"/>
                                 <exclude reference="3FA-C1-6ij"/>
                                 <exclude reference="8yo-Np-YF0"/>
                                 <exclude reference="Sx6-h9-zez"/>
@@ -1361,10 +1367,6 @@
                                 <exclude reference="dvi-Tg-xSq"/>
                                 <exclude reference="nfy-ca-Ozn"/>
                                 <exclude reference="q8p-nW-6K8"/>
-                                <exclude reference="HZI-R1-hal"/>
-                                <exclude reference="wQb-zG-fck"/>
-                                <exclude reference="dvX-Ua-Adq"/>
-                                <exclude reference="osW-3W-sgF"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1375,6 +1377,10 @@
                                 <include reference="upL-bF-JDd"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="dvX-Ua-Adq"/>
+                                <exclude reference="osW-3W-sgF"/>
+                                <include reference="HZI-R1-hal"/>
+                                <include reference="wQb-zG-fck"/>
                                 <include reference="3FA-C1-6ij"/>
                                 <include reference="8yo-Np-YF0"/>
                                 <include reference="Sx6-h9-zez"/>
@@ -1386,10 +1392,6 @@
                                 <include reference="dvi-Tg-xSq"/>
                                 <include reference="nfy-ca-Ozn"/>
                                 <include reference="q8p-nW-6K8"/>
-                                <include reference="HZI-R1-hal"/>
-                                <include reference="wQb-zG-fck"/>
-                                <include reference="dvX-Ua-Adq"/>
-                                <exclude reference="osW-3W-sgF"/>
                             </mask>
                         </variation>
                     </view>
@@ -1414,12 +1416,13 @@
         <!--User Agreement View Controller-->
         <scene sceneID="BY9-5d-94I">
             <objects>
-                <viewController id="wg3-qA-CBy" customClass="UserAgreementViewController" customModule="TineSE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wg3-qA-CBy" customClass="UserAgreementViewController" customModule="Tine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vew-r3-Mb6"/>
                         <viewControllerLayoutGuide type="bottom" id="i9c-De-lP1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3AX-9Z-slW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jes-cQ-ktz">
@@ -1431,12 +1434,32 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VEK-Cg-EEY">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Hi there! Thanks for using Tine. Tine exists to help you and your significant other find friends in your area. We want to give you the best experience possible, so please feel free to give us feedback on the App Store after use. In order to use this app, you'll need to agree to the below statement. Just to sum it up for you: don't post anything inappropriate, and recognize the limits of the app. That's about it. Have fun! Tine App End User License AgreementThis End User License Agreement (“Agreement”) is between you and Tine and governs use of this app made available through the Apple App Store. By installing the Tine App, you agree to be bound by this Agreement and understand that there is no tolerance for objectionable content. If you do not agree with the terms and conditions of this Agreement, you are not entitled to use the Tine App.In order to ensure Tine provides the best experience possible for everyone, we strongly enforce a no tolerance policy for objectionable content. If you see inappropriate content, please use the “Report as offensive” feature found under each profile.1. PartiesThis Agreement is between you and Tine only, and not Apple, Inc. (“Apple”). Notwithstanding the foregoing, you acknowledge that Apple and its subsidiaries are third party beneficiaries of this Agreement and Apple has the right to enforce this Agreement against you. Tine, not Apple, is solely responsible for the Tine App and its content.2. PrivacyTine may collect and use information about your usage of the Tine App, including certain types of information from and about your device. Tine may use this information, as long as it is in a form that does not personally identify you, to measure the use and performance of the Tine App.3. Limited LicenseTine grants you a limited, non-exclusive, non-transferable, revocable license to use the Tine App for your personal, non-commercial purposes. You may only use the Tine App on Apple devices that you own or control and as permitted by the App Store Terms of Service.4. Age RestrictionsBy using the Tine App, you represent and warrant that (a) you are 12 years of age or older and you agree to be bound by this Agreement; and (b) your use of the Tine App does not violate any applicable law or regulation. Your access to the Tine App may be terminated without warning if Tine believes, in its sole discretion, that you are under the age of 12 years.5. Objectionable Content PolicyObjectionable content may not be submitted to Tine, who will moderate all content and ultimately decide whether or not to post a submission to the extent such content includes, is in conjunction with, or alongside any, Objectionable Content. Objectionable Content includes, but is not limited to: (i) sexually explicit materials; (ii) obscene, defamatory, libelous, slanderous, violent and/or unlawful content or profanity; (iii) content that infringes upon the rights of any third party, including copyright, trademark, privacy, publicity or other personal or proprietary right, or that is deceptive or fraudulent; (iv) content that promotes the use or sale of illegal or regulated substances, tobacco products, ammunition and/or firearms; and (v) gambling, including without limitation, any online casino, sports books, bingo or poker.6. WarrantyTine disclaims all warranties about the Tine App to the fullest extent permitted by law. To the extent any warranty exists under law that cannot be disclaimed, Tine, not Apple, shall be solely responsible for such warranty.7. Maintenance and SupportTine does provide minimal maintenance or support for it but not to the extent that any maintenance or support is required by applicable law, Tine, not Apple, shall be obligated to furnish any such maintenance or support.8. Product ClaimsTine, not Apple, is responsible for addressing any claims by you relating to the Tine App or use of it, including, but not limited to: (i) any product liability claim; (ii) any claim that the Tine App fails to conform to any applicable legal or regulatory requirement; and (iii) any claim arising under consumer protection or similar legislation. Nothing in this Agreement shall be deemed an admission that you may have such claims.9. Third Party Intellectual Property ClaimsTine shall not be obligated to indemnify or defend you with respect to any third party claim arising out or relating to the Tine App. To the extent Tine is required to provide indemnification by applicable law, Tine, not Apple, shall be solely responsible for the investigation, defense, settlement and discharge of any claim that the Tine App or your use of it infringes any third party intellectual property right.</mutableString>
+                                <string key="text">Hi there! Thanks for using Tine. Tine exists to help you and your significant other find friends in your area. We want to give you the best experience possible, so please feel free to give us feedback on the App Store after use. In order to use this app, you'll need to agree to the below statement. Just to sum it up for you: don't post anything inappropriate, and recognize the limits of the app. That's about it. Have fun!
+
+ Tine App End User License Agreement
+This End User License Agreement (“Agreement”) is between you and Tine and governs use of this app made available through the Apple App Store. By installing the Tine App, you agree to be bound by this Agreement and understand that there is no tolerance for objectionable content. If you do not agree with the terms and conditions of this Agreement, you are not entitled to use the Tine App.
+In order to ensure Tine provides the best experience possible for everyone, we strongly enforce a no tolerance policy for objectionable content. If you see inappropriate content, please use the “Report as offensive” feature found under each profile.
+1. Parties
+This Agreement is between you and Tine only, and not Apple, Inc. (“Apple”). Notwithstanding the foregoing, you acknowledge that Apple and its subsidiaries are third party beneficiaries of this Agreement and Apple has the right to enforce this Agreement against you. Tine, not Apple, is solely responsible for the Tine App and its content.
+2. Privacy
+Tine may collect and use information about your usage of the Tine App, including certain types of information from and about your device. Tine may use this information, as long as it is in a form that does not personally identify you, to measure the use and performance of the Tine App.
+3. Limited License
+Tine grants you a limited, non-exclusive, non-transferable, revocable license to use the Tine App for your personal, non-commercial purposes. You may only use the Tine App on Apple devices that you own or control and as permitted by the App Store Terms of Service.
+4. Age Restrictions
+By using the Tine App, you represent and warrant that (a) you are 12 years of age or older and you agree to be bound by this Agreement; and (b) your use of the Tine App does not violate any applicable law or regulation. Your access to the Tine App may be terminated without warning if Tine believes, in its sole discretion, that you are under the age of 12 years.
+5. Objectionable Content Policy
+Objectionable content may not be submitted to Tine, who will moderate all content and ultimately decide whether or not to post a submission to the extent such content includes, is in conjunction with, or alongside any, Objectionable Content. Objectionable Content includes, but is not limited to: (i) sexually explicit materials; (ii) obscene, defamatory, libelous, slanderous, violent and/or unlawful content or profanity; (iii) content that infringes upon the rights of any third party, including copyright, trademark, privacy, publicity or other personal or proprietary right, or that is deceptive or fraudulent; (iv) content that promotes the use or sale of illegal or regulated substances, tobacco products, ammunition and/or firearms; and (v) gambling, including without limitation, any online casino, sports books, bingo or poker.
+6. Warranty
+Tine disclaims all warranties about the Tine App to the fullest extent permitted by law. To the extent any warranty exists under law that cannot be disclaimed, Tine, not Apple, shall be solely responsible for such warranty.
+7. Maintenance and Support
+Tine does provide minimal maintenance or support for it but not to the extent that any maintenance or support is required by applicable law, Tine, not Apple, shall be obligated to furnish any such maintenance or support.
+8. Product Claims
+Tine, not Apple, is responsible for addressing any claims by you relating to the Tine App or use of it, including, but not limited to: (i) any product liability claim; (ii) any claim that the Tine App fails to conform to any applicable legal or regulatory requirement; and (iii) any claim arising under consumer protection or similar legislation. Nothing in this Agreement shall be deemed an admission that you may have such claims.
+9. Third Party Intellectual Property Claims
+Tine shall not be obligated to indemnify or defend you with respect to any third party claim arising out or relating to the Tine App. To the extent Tine is required to provide indemnification by applicable law, Tine, not Apple, shall be solely responsible for the investigation, defense, settlement and discharge of any claim that the Tine App or your use of it infringes any third party intellectual property right.
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="133" width="400" height="1553.5"/>
-                                </variation>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axU-0b-lS3">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -1471,13 +1494,13 @@
                                 <exclude reference="axU-0b-lS3"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="1pY-W9-gz1"/>
+                                <exclude reference="ImO-TX-8Fr"/>
+                                <exclude reference="UF4-Zf-vxY"/>
                                 <exclude reference="47L-8E-BTW"/>
                                 <exclude reference="ii0-6p-o8M"/>
                                 <exclude reference="p3D-TH-uKB"/>
                                 <exclude reference="rc1-Se-rvR"/>
-                                <exclude reference="1pY-W9-gz1"/>
-                                <exclude reference="ImO-TX-8Fr"/>
-                                <exclude reference="UF4-Zf-vxY"/>
                                 <exclude reference="0QG-XA-Q3l"/>
                                 <exclude reference="1JB-n8-iK5"/>
                                 <exclude reference="FFE-4F-Tnx"/>
@@ -1495,13 +1518,13 @@
                                 <include reference="axU-0b-lS3"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="1pY-W9-gz1"/>
+                                <include reference="ImO-TX-8Fr"/>
+                                <include reference="UF4-Zf-vxY"/>
                                 <include reference="47L-8E-BTW"/>
                                 <include reference="ii0-6p-o8M"/>
                                 <include reference="p3D-TH-uKB"/>
                                 <include reference="rc1-Se-rvR"/>
-                                <include reference="1pY-W9-gz1"/>
-                                <include reference="ImO-TX-8Fr"/>
-                                <include reference="UF4-Zf-vxY"/>
                                 <exclude reference="0QG-XA-Q3l"/>
                                 <include reference="1JB-n8-iK5"/>
                                 <exclude reference="FFE-4F-Tnx"/>
@@ -1524,7 +1547,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="F6K-EG-yQn">
             <objects>
-                <tabBarController id="IH3-0E-UY0" customClass="TabBarController" customModule="TineSE" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="IH3-0E-UY0" customClass="TabBarController" customModule="Tine" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="25M-gR-xLz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1545,7 +1568,7 @@
         <!--Camera View Controller-->
         <scene sceneID="udY-Ni-pgY">
             <objects>
-                <viewController id="dVG-Ew-X5O" customClass="CameraViewController" customModule="TineSE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dVG-Ew-X5O" customClass="CameraViewController" customModule="Tine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="620-6n-Byl"/>
                         <viewControllerLayoutGuide type="bottom" id="9uF-be-iWc"/>
@@ -1557,7 +1580,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 4-6-16 at 10.38 AM" translatesAutoresizingMaskIntoConstraints="NO" id="aeu-e2-pub">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPc-Zc-mDq">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iPc-Zc-mDq">
                                 <rect key="frame" x="20" y="74" width="560" height="128"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hg7-md-LAQ">
@@ -1677,7 +1700,6 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="g65-J8-mrq"/>
-                                        <exclude reference="5Ul-pU-oLQ"/>
                                         <exclude reference="231-Tr-Qv2"/>
                                         <exclude reference="5D0-PR-x1C"/>
                                         <exclude reference="Esn-yx-5wL"/>
@@ -1686,6 +1708,7 @@
                                         <exclude reference="QlV-ie-W8c"/>
                                         <exclude reference="WHr-cI-wM9"/>
                                         <exclude reference="p1e-TQ-N2Y"/>
+                                        <exclude reference="5Ul-pU-oLQ"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -1694,8 +1717,6 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="g65-J8-mrq"/>
-                                        <include reference="5Ul-pU-oLQ"/>
-                                        <exclude reference="iug-he-PGy"/>
                                         <include reference="231-Tr-Qv2"/>
                                         <exclude reference="5D0-PR-x1C"/>
                                         <include reference="Esn-yx-5wL"/>
@@ -1704,6 +1725,8 @@
                                         <exclude reference="QlV-ie-W8c"/>
                                         <include reference="WHr-cI-wM9"/>
                                         <exclude reference="p1e-TQ-N2Y"/>
+                                        <include reference="5Ul-pU-oLQ"/>
+                                        <exclude reference="iug-he-PGy"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -1799,11 +1822,16 @@
                                 <exclude reference="OYd-gI-WXE"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="5Uo-zE-rVI"/>
+                                <exclude reference="Cvh-ug-gbF"/>
+                                <exclude reference="Q8m-Et-rEq"/>
+                                <exclude reference="f7v-tE-HWx"/>
+                                <exclude reference="mj1-0c-dor"/>
+                                <exclude reference="mkE-0v-cGB"/>
                                 <exclude reference="CpN-he-nEU"/>
                                 <exclude reference="Eqr-D0-eii"/>
                                 <exclude reference="Te7-bc-r1M"/>
                                 <exclude reference="Tqv-vv-4kE"/>
+                                <exclude reference="5Uo-zE-rVI"/>
                                 <exclude reference="6iS-UG-3mb"/>
                                 <exclude reference="VzJ-Tx-pD0"/>
                                 <exclude reference="bux-Qb-scO"/>
@@ -1812,11 +1840,6 @@
                                 <exclude reference="h1w-2d-gA3"/>
                                 <exclude reference="jkx-zV-15m"/>
                                 <exclude reference="yAF-bb-CVZ"/>
-                                <exclude reference="Cvh-ug-gbF"/>
-                                <exclude reference="Q8m-Et-rEq"/>
-                                <exclude reference="f7v-tE-HWx"/>
-                                <exclude reference="mj1-0c-dor"/>
-                                <exclude reference="mkE-0v-cGB"/>
                                 <exclude reference="cyW-r6-sAi"/>
                             </mask>
                         </variation>
@@ -1826,11 +1849,16 @@
                                 <include reference="OYd-gI-WXE"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="5Uo-zE-rVI"/>
+                                <exclude reference="Cvh-ug-gbF"/>
+                                <exclude reference="Q8m-Et-rEq"/>
+                                <exclude reference="f7v-tE-HWx"/>
+                                <include reference="mj1-0c-dor"/>
+                                <include reference="mkE-0v-cGB"/>
                                 <include reference="CpN-he-nEU"/>
                                 <include reference="Eqr-D0-eii"/>
                                 <include reference="Te7-bc-r1M"/>
                                 <include reference="Tqv-vv-4kE"/>
+                                <exclude reference="5Uo-zE-rVI"/>
                                 <include reference="6iS-UG-3mb"/>
                                 <exclude reference="VzJ-Tx-pD0"/>
                                 <exclude reference="Ydx-Ag-ybB"/>
@@ -1841,11 +1869,6 @@
                                 <include reference="h1w-2d-gA3"/>
                                 <exclude reference="jkx-zV-15m"/>
                                 <exclude reference="yAF-bb-CVZ"/>
-                                <exclude reference="Cvh-ug-gbF"/>
-                                <exclude reference="Q8m-Et-rEq"/>
-                                <exclude reference="f7v-tE-HWx"/>
-                                <include reference="mj1-0c-dor"/>
-                                <include reference="mkE-0v-cGB"/>
                                 <include reference="cyW-r6-sAi"/>
                                 <exclude reference="jde-Cn-V9K"/>
                             </mask>
@@ -1922,7 +1945,7 @@
         <!--Search Table View Controller-->
         <scene sceneID="r3q-hJ-cEh">
             <objects>
-                <tableViewController id="xOC-cO-hT2" customClass="SearchTableViewController" customModule="TineSE" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="xOC-cO-hT2" customClass="SearchTableViewController" customModule="Tine" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pUy-kb-V6n">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1970,7 +1993,7 @@
         <!--Search Results Table View Controller-->
         <scene sceneID="dfs-1Y-6wE">
             <objects>
-                <tableViewController storyboardIdentifier="UserSearchResultsTableViewController" id="AbE-oj-404" customClass="SearchResultsTableViewController" customModule="TineSE" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="UserSearchResultsTableViewController" id="AbE-oj-404" customClass="SearchResultsTableViewController" customModule="Tine" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mRX-rM-bLu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

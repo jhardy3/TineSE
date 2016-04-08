@@ -11,6 +11,7 @@ import UIKit
 class ImageCollectionViewCell: UICollectionViewCell {
     
     var delegate: ProfileViewController?
+    var indexPath: NSIndexPath?
     @IBOutlet weak var shedImage: UIImageView!
     
     override func awakeFromNib() {
@@ -24,6 +25,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
         if let shedImage = shed.shedImage {
             self.shedImage.image = shedImage
         } else {
+            self.shedImage.image = UIImage(named: "seeThrough")
             shedImage.downloadImageFrom(link: shed.imageIdentifier, contentMode: .ScaleAspectFit)
             shed.shedImage = shedImage.image
         }

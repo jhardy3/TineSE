@@ -115,6 +115,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             let shed = sheds[indexPath.row]
             cell.updateWith(shed)
             cell.delegate = self
+            cell.indexPath = indexPath
             return cell
         } else {
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier("shedCell", forIndexPath: indexPath)

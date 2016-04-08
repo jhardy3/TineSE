@@ -18,6 +18,7 @@ class AppearanceController {
         UISegmentedControl.appearance().tintColor = UIColor.whiteColor()
         UISegmentedControl.appearance()
         UINavigationBar.appearance().backgroundColor = UIColor.whiteColor()
+        
         UITabBar.appearance().barTintColor = UIColor.hunterOrange()
         UITabBar.appearance().backgroundColor = UIColor.whiteColor()
         UITabBar.appearance().tintColor = UIColor.whiteColor()
