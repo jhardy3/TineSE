@@ -11,17 +11,17 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "FirebaseType"
-- "Int"
-- !private "BooleanLiteralType"
-- !private "??"
-- "Hunter"
-- !private "..<"
-- "String"
-- "StringLiteralType"
-- "Array"
-- !private "Dictionary"
-- "AnyObject"
 - !private "=="
+- "AnyObject"
+- "Hunter"
+- !private "Dictionary"
+- "Array"
+- "StringLiteralType"
+- "Int"
+- !private "??"
+- "String"
+- !private "BooleanLiteralType"
+- !private "..<"
 depends-member:
 - !private ["Ps9AnyObject", "Array"]
 - ["Ps9AnyObject", "String"]

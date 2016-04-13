@@ -9,89 +9,89 @@ provides-member:
 - ["O4Tine14FollowingState", ""]
 - ["C4Tine21ProfileViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "shedDeletedUpdateView"
-- "followButton"
-- "prepareForSegue"
-- "whitesCountLabel"
-- "chalksCountLabel"
-- "viewingDetail"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "viewDidAppear"
-- "hunterProfileImage"
-- "shedCountLabel"
-- "followButtonTapped"
-- "brownsCountLabel"
-- "viewWillAppear"
-- "isFinished"
-- "updateWithIdentifier"
-- "kMargin"
-- "updateWithHunter"
-- "viewLoaded"
-- "trackingCount"
 - "trackersCountLabel"
-- "viewWillDisappear"
-- "trackingCountLabel"
 - "flowLayout"
+- "viewLoaded"
+- "brownsCountLabel"
+- "viewDidLoad"
+- "whitesCountLabel"
+- "followButton"
+- "trackingCountLabel"
+- "isFinished"
+- "shedDeletedUpdateView"
+- "viewWillDisappear"
+- "updateWithIdentifier"
+- "viewingDetail"
+- "prepareForSegue"
+- "chalksCountLabel"
+- "hunterProfileImage"
+- "trackingCount"
+- "updateWithHunter"
+- "viewDidAppear"
+- "kMargin"
+- "followButtonTapped"
+- "viewWillAppear"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "shedCountLabel"
 depends-top-level:
-- "UIViewController"
-- "FollowingState"
-- "CGFloat"
-- !private "!="
-- "UIButton"
-- "UILabel"
-- !private "/"
-- !private "dispatch_group_enter"
-- !private "ShedDetailViewController"
-- !private "!"
-- !private "&&"
-- "Array"
-- !private "dispatch_group_notify"
-- "UIStoryboardSegue"
-- !private "dispatch_get_main_queue"
-- !private "ShedController"
-- "Hunter"
-- !private "NSForegroundColorAttributeName"
-- "NSIndexPath"
-- "Int"
-- "String"
-- !private "Void"
-- "CGSize"
-- !private "StringLiteralType"
-- !private "-"
-- "ProfileViewController"
-- "AnyObject"
-- "Bool"
-- "BooleanLiteralType"
-- "UIImageView"
-- !private "print"
-- "Shed"
-- "UICollectionViewFlowLayout"
-- "UICollectionViewDataSource"
-- !private "NSThread"
-- !private "+"
-- !private "UIEdgeInsetsMake"
-- !private ">"
 - "UICollectionViewCell"
-- "UICollectionViewDelegate"
-- "UICollectionViewDelegateFlowLayout"
-- !private "UIColor"
-- !private "CGSizeMake"
-- !private "ImageCollectionViewCell"
-- "UICollectionViewLayout"
-- "UICollectionView"
-- !private "*"
-- "=="
-- !private "NSNotificationCenter"
-- !private "dispatch_group_leave"
-- !private "Dictionary"
-- !private "dispatch_group_create"
 - !private "HunterController"
+- !private "dispatch_group_enter"
+- "Array"
+- "UILabel"
+- !private "+"
+- "Shed"
+- !private "UIColor"
+- !private "NSForegroundColorAttributeName"
+- !private "dispatch_group_notify"
+- "Int"
+- !private "ShedController"
+- "UICollectionViewDelegateFlowLayout"
+- "BooleanLiteralType"
+- !private "NSThread"
+- "ProfileViewController"
+- "NSIndexPath"
+- "FollowingState"
+- !private "&&"
+- !private "UIEdgeInsetsMake"
+- "Bool"
+- "UICollectionView"
+- !private "Void"
+- "String"
+- !private "dispatch_get_main_queue"
+- !private "StringLiteralType"
+- "CGFloat"
+- !private "/"
+- "UIImageView"
+- !private "!"
+- !private "CGSizeMake"
+- "UICollectionViewLayout"
+- !private "!="
+- !private "ImageCollectionViewCell"
+- "UIButton"
+- !private "dispatch_group_leave"
+- !private "*"
+- !private "print"
+- !private "-"
+- "CGSize"
+- "UIViewController"
+- !private "ShedDetailViewController"
+- !private "NSNotificationCenter"
+- "UICollectionViewDataSource"
+- "UIStoryboardSegue"
+- "=="
+- !private "dispatch_group_create"
+- "UICollectionViewFlowLayout"
+- "AnyObject"
+- "UICollectionViewDelegate"
+- !private ">"
+- "Hunter"
+- !private "Dictionary"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -141,6 +141,7 @@ depends-member:
 - !private ["Ps9AnyObject", "hunterTrackHunter"]
 - !private ["Ps9AnyObject", "hunterUntrackHunter"]
 - !private ["Ps9AnyObject", "identifier"]
+- !private ["Ps9AnyObject", "indexPath"]
 - !private ["Ps9AnyObject", "indexPathForCell"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps9AnyObject", "init"]
@@ -299,6 +300,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "hunterOrange"]
 - ["Ps11CVarArgType", "hunterProfileImage"]
 - !private ["Ps11CVarArgType", "identifier"]
+- !private ["Ps11CVarArgType", "indexPath"]
 - !private ["Ps11CVarArgType", "indexPathForCell"]
 - ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps11CVarArgType", "init"]
@@ -428,6 +430,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "hunterOrange"]
 - ["Ps28CustomDebugStringConvertible", "hunterProfileImage"]
 - !private ["Ps28CustomDebugStringConvertible", "identifier"]
+- !private ["Ps28CustomDebugStringConvertible", "indexPath"]
 - !private ["Ps28CustomDebugStringConvertible", "indexPathForCell"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -544,6 +547,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "hunterOrange"]
 - ["Ps23CustomStringConvertible", "hunterProfileImage"]
 - !private ["Ps23CustomStringConvertible", "identifier"]
+- !private ["Ps23CustomStringConvertible", "indexPath"]
 - !private ["Ps23CustomStringConvertible", "indexPathForCell"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -658,6 +662,7 @@ depends-member:
 - !private ["Ps9Equatable", "hunterOrange"]
 - ["Ps9Equatable", "hunterProfileImage"]
 - !private ["Ps9Equatable", "identifier"]
+- !private ["Ps9Equatable", "indexPath"]
 - !private ["Ps9Equatable", "indexPathForCell"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps9Equatable", "init"]
@@ -788,6 +793,7 @@ depends-member:
 - !private ["Ps8Hashable", "hunterOrange"]
 - ["Ps8Hashable", "hunterProfileImage"]
 - !private ["Ps8Hashable", "identifier"]
+- !private ["Ps8Hashable", "indexPath"]
 - !private ["Ps8Hashable", "indexPathForCell"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps8Hashable", "init"]
@@ -863,6 +869,7 @@ depends-member:
 - !private ["C4Tine16HunterController", "sharedInstance"]
 - !private ["C4Tine16HunterController", "unauthHunter"]
 - !private ["C4Tine23ImageCollectionViewCell", "delegate"]
+- !private ["C4Tine23ImageCollectionViewCell", "indexPath"]
 - !private ["C4Tine23ImageCollectionViewCell", "updateWith"]
 - !private ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Element"]
@@ -971,6 +978,7 @@ depends-member:
 - ["PSo8NSCoding", "hunter"]
 - !private ["PSo8NSCoding", "hunterOrange"]
 - ["PSo8NSCoding", "hunterProfileImage"]
+- !private ["PSo8NSCoding", "indexPath"]
 - !private ["PSo8NSCoding", "indexPathForCell"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo8NSCoding", "init"]
@@ -1163,6 +1171,7 @@ depends-member:
 - !private ["CSo8NSObject", "hunterOrange"]
 - ["CSo8NSObject", "hunterProfileImage"]
 - !private ["CSo8NSObject", "identifier"]
+- !private ["CSo8NSObject", "indexPath"]
 - !private ["CSo8NSObject", "indexPathForCell"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo8NSObject", "init"]
@@ -1261,6 +1270,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "hunterOrange"]
 - ["PSo16NSObjectProtocol", "hunterProfileImage"]
 - !private ["PSo16NSObjectProtocol", "identifier"]
+- !private ["PSo16NSObjectProtocol", "indexPath"]
 - !private ["PSo16NSObjectProtocol", "indexPathForCell"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo16NSObjectProtocol", "init"]
@@ -1477,6 +1487,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
+- !private ["PSo29UIAccessibilityIdentification", "indexPath"]
 - !private ["PSo29UIAccessibilityIdentification", "indexPathForCell"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
@@ -1490,6 +1501,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["PSo12UIAppearance", "frame"]
+- !private ["PSo12UIAppearance", "indexPath"]
 - !private ["PSo12UIAppearance", "indexPathForCell"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "reloadData"]
@@ -1529,6 +1541,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "hunter"]
 - ["PSo21UIAppearanceContainer", "hunterProfileImage"]
+- !private ["PSo21UIAppearanceContainer", "indexPath"]
 - !private ["PSo21UIAppearanceContainer", "indexPathForCell"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo21UIAppearanceContainer", "init"]
@@ -1587,6 +1600,7 @@ depends-member:
 - !private ["CSo8UIButton", "layer"]
 - !private ["CSo8UIButton", "setTitle"]
 - !private ["CSo24UICollectionReusableView", "delegate"]
+- !private ["CSo24UICollectionReusableView", "indexPath"]
 - !private ["CSo24UICollectionReusableView", "updateWith"]
 - !private ["CSo16UICollectionView", "backgroundColor"]
 - !private ["CSo16UICollectionView", "dequeueReusableCellWithReuseIdentifier"]
@@ -1594,6 +1608,7 @@ depends-member:
 - !private ["CSo16UICollectionView", "reloadData"]
 - !private ["CSo20UICollectionViewCell", "deinit"]
 - !private ["CSo20UICollectionViewCell", "delegate"]
+- !private ["CSo20UICollectionViewCell", "indexPath"]
 - !private ["CSo20UICollectionViewCell", "updateWith"]
 - ["PSo26UICollectionViewDataSource", "CGFloat"]
 - !private ["PSo26UICollectionViewDataSource", "CGSizeMake"]
@@ -1857,6 +1872,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["PSo17UICoordinateSpace", "frame"]
+- !private ["PSo17UICoordinateSpace", "indexPath"]
 - !private ["PSo17UICoordinateSpace", "indexPathForCell"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
@@ -1870,6 +1886,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["PSo13UIDynamicItem", "frame"]
+- !private ["PSo13UIDynamicItem", "indexPath"]
 - !private ["PSo13UIDynamicItem", "indexPathForCell"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
@@ -1909,6 +1926,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - ["PSo18UIFocusEnvironment", "hunter"]
 - ["PSo18UIFocusEnvironment", "hunterProfileImage"]
+- !private ["PSo18UIFocusEnvironment", "indexPath"]
 - !private ["PSo18UIFocusEnvironment", "indexPathForCell"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo18UIFocusEnvironment", "init"]
@@ -2017,6 +2035,7 @@ depends-member:
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "hunter"]
 - ["CSo11UIResponder", "hunterProfileImage"]
+- !private ["CSo11UIResponder", "indexPath"]
 - !private ["CSo11UIResponder", "indexPathForCell"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo11UIResponder", "init"]
@@ -2235,6 +2254,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "hunter"]
 - ["PSo18UITraitEnvironment", "hunterProfileImage"]
+- !private ["PSo18UITraitEnvironment", "indexPath"]
 - !private ["PSo18UITraitEnvironment", "indexPathForCell"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo18UITraitEnvironment", "init"]
@@ -2292,6 +2312,7 @@ depends-member:
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["CSo6UIView", "frame"]
+- !private ["CSo6UIView", "indexPath"]
 - !private ["CSo6UIView", "indexPathForCell"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "reloadData"]
@@ -2483,6 +2504,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["Ps12_Reflectable", "frame"]
 - !private ["Ps12_Reflectable", "hashValue"]
+- !private ["Ps12_Reflectable", "indexPath"]
 - !private ["Ps12_Reflectable", "indexPathForCell"]
 - ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "layer"]

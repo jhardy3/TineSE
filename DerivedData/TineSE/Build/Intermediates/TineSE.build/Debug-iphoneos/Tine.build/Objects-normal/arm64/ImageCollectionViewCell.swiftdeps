@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C4Tine23ImageCollectionViewCell", ""]
 provides-dynamic-lookup:
-- "shedImage"
 - "awakeFromNib"
 - "delegate"
+- "shedImage"
 - "indexPath"
 depends-top-level:
-- "ImageCollectionViewCell"
-- "Shed"
-- !private "UIImage"
-- "UIImageView"
 - "ProfileViewController"
-- !private "StringLiteralType"
-- "NSIndexPath"
+- "Shed"
+- "UIImageView"
 - "UICollectionViewCell"
+- "NSIndexPath"
+- "ImageCollectionViewCell"
+- !private "UIImage"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "autoresizingMask"]

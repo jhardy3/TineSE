@@ -173,10 +173,12 @@ SWIFT_CLASS("_TtC4Tine20CameraViewController")
 @end
 
 @class ProfileViewController;
+@class NSIndexPath;
 
 SWIFT_CLASS("_TtC4Tine23ImageCollectionViewCell")
 @interface ImageCollectionViewCell : UICollectionViewCell
 @property (nonatomic, strong) ProfileViewController * _Nullable delegate;
+@property (nonatomic, strong) NSIndexPath * _Nullable indexPath;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified shedImage;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -191,7 +193,6 @@ SWIFT_CLASS("_TtC4Tine13ImageUitilies")
 @end
 
 @class UITableView;
-@class NSIndexPath;
 @class UITableViewCell;
 @class UISegmentedControl;
 @class UIStoryboardSegue;

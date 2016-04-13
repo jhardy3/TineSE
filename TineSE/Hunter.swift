@@ -107,8 +107,7 @@ extension Array {
         }
         return dicToReturn
     }
-    
-    
+
     mutating func deleteItem(item: Element) {
         for index in 0..<self.count {
             if String(self[index]) == String(item) {

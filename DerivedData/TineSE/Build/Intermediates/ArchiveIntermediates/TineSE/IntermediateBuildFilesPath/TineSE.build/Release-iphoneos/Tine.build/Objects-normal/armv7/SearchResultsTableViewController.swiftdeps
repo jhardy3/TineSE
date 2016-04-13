@@ -7,19 +7,19 @@ provides-member:
 - ["C4Tine32SearchResultsTableViewController", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
+- "tableView"
+- "tableView"
+- "tableView"
 - "numberOfSectionsInTableView"
-- "tableView"
-- "tableView"
-- "tableView"
 depends-top-level:
-- "UITableViewCell"
-- "UITableView"
-- "Hunter"
-- "SearchResultsTableViewController"
-- "UITableViewController"
-- !private "StringLiteralType"
-- "Int"
 - "NSIndexPath"
+- "Int"
+- !private "StringLiteralType"
+- "Hunter"
+- "UITableView"
+- "UITableViewCell"
+- "UITableViewController"
+- "SearchResultsTableViewController"
 depends-member:
 - ["Ps9AnyObject", "Hunter"]
 - !private ["Ps9AnyObject", "cellForRowAtIndexPath"]

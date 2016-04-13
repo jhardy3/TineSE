@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C4Tine27UserAgreementViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "tineLabel"
-- "didReceiveMemoryWarning"
 - "agreeButtonTapped"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "tineLabel"
 depends-top-level:
-- "UIViewController"
 - !private "BooleanLiteralType"
-- "UILabel"
 - "UserAgreementViewController"
+- "UILabel"
+- "UIViewController"
 - "UIButton"
 depends-member:
 - ["Ps9AnyObject", "agreeButtonTapped"]

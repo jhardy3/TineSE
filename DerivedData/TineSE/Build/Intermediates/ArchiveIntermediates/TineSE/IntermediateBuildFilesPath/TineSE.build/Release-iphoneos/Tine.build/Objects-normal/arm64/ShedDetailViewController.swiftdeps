@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C4Tine24ShedDetailViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
-- "shedTypeLabel"
+- "didReceiveMemoryWarning"
+- "shedColorLabel"
 - "shedImageView"
 - "animalImageView"
-- "shedColorLabel"
+- "shedTypeLabel"
 depends-top-level:
-- "Shed"
-- !private "BooleanLiteralType"
-- "UIViewController"
-- "UILabel"
-- "UIImageView"
-- !private "~="
-- !private "=="
 - !private "UIImage"
+- !private "BooleanLiteralType"
+- "Shed"
 - !private "UIColor"
 - "ShedDetailViewController"
 - !private "StringLiteralType"
+- !private "~="
+- !private "=="
+- "UIViewController"
+- "UILabel"
+- "UIImageView"
 depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIImage"]
